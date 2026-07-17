@@ -34,7 +34,12 @@ export default (() => {
     const usesCustomOgImage = ctx.cfg.plugins.emitters.some(
       (e) => e.name === CustomOgImagesEmitterName,
     )
-    const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const socialImage = fileData.frontmatter?.socialImage
+    const ogImagePath = socialImage
+      ? socialImage.startsWith("http://") || socialImage.startsWith("https://")
+        ? socialImage
+        : joinSegments(url.toString(), socialImage)
+      : `https://${cfg.baseUrl}/static/og-image.png`
 
     return (
       <head>
@@ -64,12 +69,12 @@ export default (() => {
 
         {!usesCustomOgImage && (
           <>
-            <meta property="og:image" content={ogImageDefaultPath} />
-            <meta property="og:image:url" content={ogImageDefaultPath} />
-            <meta name="twitter:image" content={ogImageDefaultPath} />
+            <meta property="og:image" content={ogImagePath} />
+            <meta property="og:image:url" content={ogImagePath} />
+            <meta name="twitter:image" content={ogImagePath} />
             <meta
               property="og:image:type"
-              content={`image/${getFileExtension(ogImageDefaultPath) ?? "png"}`}
+              content={`image/${getFileExtension(ogImagePath)?.slice(1) ?? "png"}`}
             />
           </>
         )}

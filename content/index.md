@@ -1,6 +1,7 @@
 ---
 title: "The AI Revolution in Software Development"
 description: "A free public reading draft of Desmond Kwang's book on AI, software, abstraction, and economics."
+socialImage: "figures/cover.png"
 ---
 
 # The AI Revolution in Software Development
