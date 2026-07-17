@@ -88,6 +88,32 @@ In many organisations, the biggest cost is not writing new software. It is makin
 
 This is where technical debt and integration meet. A system can be valuable because it embodies business knowledge, while also expensive because that knowledge is trapped in forms that are hard to inspect, test, change, or connect. AI's opportunity is not merely to produce new code faster. It is to reduce the cost of recovering, documenting, testing, and safely changing knowledge already embedded in software.
 
+## What Integration Looks Like In Practice
+
+In a large bank, the new application is rarely allowed to reach directly into the core banking system. The usual architecture is layered.
+
+The customer might use a mobile app. The app calls an API gateway. The gateway routes requests to services. Those services pass through an integration layer. The integration layer may call message queues, event streams, batch jobs, databases, or mainframe transactions. Somewhere underneath all of that may still be COBOL, CICS, IMS, DB2, or another long-running core system.
+
+The point is not that every bank has exactly this architecture. The point is that enterprise systems usually meet through boundaries:
+
+| Boundary | Why it exists |
+|---|---|
+| API gateway | Controls and routes access to services |
+| Service layer | Separates modern applications from legacy internals |
+| Message queue or event stream | Decouples systems that cannot all change at the same speed |
+| Batch feed | Moves large volumes of records on a schedule |
+| Identity and permission system | Controls who and what may act |
+| Audit log | Records what happened and why |
+| Testing and validation layer | Proves that new behaviour matches required old behaviour |
+
+This is where system integration becomes more than "connecting A to B". It becomes the discipline of allowing new systems to cooperate with old systems without breaking the business.
+
+Public banking examples show the pattern. Google Cloud's Hong Leong Bank case study describes Gemini operating in a hybrid environment that includes legacy systems, using API calls to connect with existing databases and backend systems. For personalised post-login tasks, Gemini is described as a control layer that commands specialised agents to make secure calls to backend APIs and retrieve real-time data from the core banking system. In other words, the AI does not simply replace the bank. It enters through governed integration points.
+
+Publicis Sapient describes a different part of the same problem: a major global bank needed to understand legacy COBOL systems spanning hundreds of programs and more than 300 batch feeds. Its AI-assisted code-to-spec work focused on extracting business rules, producing reviewable specifications, creating traceability, and reducing modernisation risk. Citi has also publicly been reported as using AI to support system upgrades, data migration, coding automation, and faster testing during legacy modernisation.
+
+These examples are vendor and media reports, so they should not be treated as universal proof. But they support the engineering thesis of this chapter. In serious enterprises, AI usually arrives as one participant in a complicated ecosystem of old software, new services, APIs, queues, data stores, permissions, test evidence, regulators, and human accountability.
+
 ## Where AI Enters
 
 AI is usually discussed as a way to create new software.
@@ -209,3 +235,11 @@ We do not yet know how reliably AI can analyse very large legacy systems with in
 We do not yet know how much AI can reduce migration cost and risk in regulated industries.
 
 We do not yet know whether organisations will have the data governance and engineering discipline needed to use AI safely in legacy modernisation.
+
+## Case Study Sources
+
+- [Google Cloud - Hong Leong Bank case study](https://cloud.google.com/customers/hongleongbank)
+- [Publicis Sapient - Financial services legacy modernisation with Slingshot](https://www.publicissapient.com/customers/stories/financial-services-slingshot-legacy-modernization)
+- [QA Financial - Citi AI-driven testing and legacy modernisation](https://qa-financial.com/citi-ramps-up-ai-driven-testing-as-bank-races-to-modernise-legacy-systems/)
+- [Envadel - Core banking modernisation with zero downtime](https://envadel.com/en/case-studies/banking-fintech/)
+- [Coforge - UK bank legacy-system modernisation](https://www.coforge.com/what-we-do/success-stories/modernizing-legacy-systems-uk-banks-transition-scalable-cloud-ready-platform)
