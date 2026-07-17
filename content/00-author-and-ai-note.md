@@ -1,5 +1,5 @@
 ---
-title: "Author and AI Note"
+title: "Who Is the Author? Me or AI?"
 ---
 
 # Author and AI Note
