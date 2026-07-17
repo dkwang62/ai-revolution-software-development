@@ -4,81 +4,31 @@ title: "The Economics of Trust"
 
 # The Economics of Trust
 
-AI does not enter serious software systems simply because it becomes more intelligent.
+AI does not enter serious software systems simply because it becomes more intelligent. It enters when people and organisations become willing to rely on it, and that is a different threshold.
 
-It enters when people and organisations become willing to rely on it.
-
-That difference matters.
-
-A model can be impressive in a demonstration and still be unusable in production. It may write elegant code, summarise complex documents, answer difficult questions, and reason through business problems, yet still be rejected by an enterprise if the organisation cannot answer a more practical question:
+A model can be impressive in a demonstration and still be unusable in production. It may write elegant code, summarise complex documents, answer difficult questions, and reason through business problems, yet still be rejected if the organisation cannot answer a more practical question:
 
 > Can we trust this system enough to use it where mistakes are expensive?
 
-Trust is not sentiment.
+Trust, in this sense, is not sentiment, optimism, or faith in a model's intelligence. It is an engineering and economic condition. A system becomes trustworthy when its behaviour is bounded, monitored, verified, governed, audited, and understood well enough that people are willing to depend on it.
 
-It is not optimism.
-
-It is not faith in a model's intelligence.
-
-Trust is an engineering and economic condition.
-
-It exists when a system's behaviour is bounded, monitored, verified, governed, audited, and understood well enough that people are willing to depend on it.
-
-This is why trust deserves its own place in the economics of AI.
-
-Capability creates possibility.
-
-Trust creates adoption.
+Capability creates possibility. Trust creates adoption.
 
 ## Intelligence Is Not Enough
 
-Many discussions about AI focus on intelligence.
+Many discussions about AI focus on intelligence: how well the model reasons, how much code it writes, how large its context window is, or how many benchmarks it beats. Those questions matter, but they are not enough.
 
-How well can the model reason?
+In low-risk settings, raw usefulness may be sufficient. If AI helps draft an email, summarise an article, brainstorm product names, or explain a programming concept, the cost of error is usually low. The user can read the answer, reject it, edit it, or try again.
 
-How much code can it write?
+Enterprise software is different. If AI modifies production code, recommends a medical treatment, approves a loan, files a regulatory report, changes a factory-control system, interprets a legal contract, or moves money, the cost of error can be enormous. The question changes from whether AI can produce an answer to whether it can produce an answer that is safe enough, correct enough, explainable enough, and governed enough for the situation.
 
-How large is its context window?
+That is why trust belongs in the economics of AI. An untrusted model can be clever and still have little production value. A trusted system, even with narrower capability, can become part of real work.
 
-How many benchmarks does it beat?
+## Trust as an Economic Boundary
 
-Those questions matter, but they are not sufficient.
+Every organisation lives with risk. Banks accept credit risk, hospitals accept operational risk, airlines accept scheduling risk, and software companies accept defect risk. The issue is never whether risk exists. The issue is whether the expected benefit of an action exceeds its expected cost, including the cost of failure.
 
-In low-risk settings, intelligence may be enough. If AI helps draft an email, summarise an article, brainstorm product names, or explain a programming concept, the cost of error is usually low. The user can read the answer, reject it, edit it, or try again.
-
-Enterprise software is different.
-
-If AI modifies production code, recommends a medical treatment, approves a loan, files a regulatory report, changes a factory-control system, interprets a legal contract, or moves money, the cost of error can be enormous.
-
-The question changes from:
-
-> Can AI produce an answer?
-
-to:
-
-> Can AI produce an answer that is safe enough, correct enough, explainable enough, and governed enough for this situation?
-
-That is not just a technical question.
-
-It is an economic question.
-
-## Trust As An Economic Boundary
-
-Every organisation lives with risk.
-
-Banks accept some credit risk.
-
-Hospitals accept some operational risk.
-
-Airlines accept some scheduling risk.
-
-Software companies accept some defect risk.
-
-The issue is not whether risk exists. The issue is whether the expected benefit of an action exceeds its expected cost, including the cost of failure.
-
-AI adoption follows the same logic.
-
-For any workflow, an organisation implicitly asks:
+AI adoption follows the same logic. For any workflow, an organisation is implicitly asking:
 
 ```text
 Expected benefit
@@ -89,297 +39,65 @@ Cost of implementation
 + expected cost of failure
 ```
 
-If the answer is yes, adoption becomes economically rational.
+If the answer is yes, adoption becomes economically rational. If the answer is no, the AI remains a demonstration, a pilot, or a personal productivity tool.
 
-If the answer is no, the AI may remain a demonstration, a pilot, or a personal productivity tool.
+This is why trust sits at the boundary between experimental AI and production AI. The more valuable the workflow, the more trust it demands.
 
-This is why trust sits at the boundary between experimental AI and production AI.
+## A Radix-Scale Example
 
-The more valuable the workflow, the more trust is required.
+The same principle appears even in a small product like Radix.
+
+For the AI-generated quiz feature, I did not need the model to be trusted with everything. I needed it to be trusted within a boundary. It could generate quiz questions from captured Chinese material, choose varied practice styles, explain answers, and adapt the interaction to the learner. But it should not reveal the answer too early, ignore the source material, put pinyin in the wrong place, invent unsupported content, or produce output the app could not handle.
+
+That distinction mattered. I was willing to let AI behave like a flexible teacher inside the quiz interaction. I was not willing to let it silently rewrite the app's data model, bypass the user interface, change stored material, or make irreversible decisions. The surrounding software still handled the interface, storage, model selection, import flow, and user control. The prompt defined the desired behaviour; the app constrained where that behaviour could matter.
+
+This is bounded reliance. AI was useful because it was given room to be flexible, but not unlimited authority. The lesson scales upward. A bank, hospital, airline, or government agency faces more complex risks, but the underlying question is the same: what may AI do, under which constraints, with what checks, and with whose approval?
 
 ## Bounded Reliance
 
-The right goal is not blind trust.
+The right goal is not blind trust. It is bounded reliance.
 
-The right goal is bounded reliance.
+An organisation may trust AI to draft a document but not send it, suggest code but not deploy it, classify support tickets but not close high-risk cases, summarise contracts but not approve legal obligations, query internal knowledge but not expose confidential customer records, or recommend a migration plan but not modify a legacy system without review.
 
-An organisation rarely trusts a system absolutely. It trusts a system within limits.
-
-It may trust AI:
-
-- To draft a document but not send it.
-- To suggest code but not deploy it.
-- To classify support tickets but not close high-risk cases.
-- To summarise contracts but not approve legal obligations.
-- To query internal knowledge but not access confidential customer records.
-- To recommend a migration plan but not modify a legacy system without review.
-
-This is how serious software has always worked.
-
-Systems are trusted when their authority is bounded.
-
-They are trusted when permissions are clear.
-
-They are trusted when failures are detectable.
-
-They are trusted when humans know where responsibility lies.
-
-AI does not abolish that discipline.
-
-It makes it more important.
+This is how serious software has always worked. Systems earn trust when their authority is bounded, their permissions are clear, their failures are detectable, and humans know where responsibility lies. AI does not abolish that discipline. It makes it more important.
 
 ## The Components of Trust
 
-Trust in AI-enabled software is built from several components.
+Trust in AI-enabled software is built from several components. None is sufficient alone. Together, they determine whether AI can move from experimentation to valuable work.
 
-None is sufficient alone.
+**Verification** asks whether an output, action, or system can be relied upon. Traditional software verification often involves unit tests, integration tests, regression tests, type checks, static analysis, and acceptance tests. AI makes this harder because its output is probabilistic. The same prompt may not always produce the same result, and a model may be correct in one case, plausible but wrong in another, and confidently misleading in a third.
 
-Together they determine whether AI can move from experimentation to valuable work.
+That does not make AI unusable. It means AI must sit inside systems that verify what matters. Generated code can be compiled, tested, reviewed, linted, benchmarked, and scanned for security issues. Generated documents can be checked against source material. Generated database queries can be sandboxed. Generated actions can require approval. In short: AI suggests; reliable systems verify.
 
-## Verification
+**Governance** defines who may use AI, for what purpose, with what data, under what rules, and with what oversight. Without governance, adoption becomes chaotic. Employees paste sensitive data into tools without understanding the consequences. Teams build disconnected pilots. Prompts become undocumented business logic. Generated outputs enter workflows without review. No one knows which model version produced which decision, or who is accountable for it. Governance is how organisations turn raw capability into controlled capability.
 
-Verification asks whether an output, action, or system can be relied upon.
+**Security** matters because AI systems often sit between humans, data, tools, and enterprise systems. A conventional application usually does what its code says. An AI-enabled application may interpret instructions, retrieve documents, call tools, generate code, send messages, or operate across systems. That creates attack surfaces such as prompt injection, data leakage, excessive tool permissions, insecure retrieval, model poisoning, untrusted documents influencing behaviour, confidential information leaking into outputs, and agents acting beyond their intended authority. An isolated chatbot can make a mistake. An AI agent connected to enterprise systems can cause damage.
 
-For traditional software, verification often involves unit tests, integration tests, regression tests, type checks, static analysis, and acceptance tests.
+**Auditability** is the ability to reconstruct what happened. Serious organisations need to know who asked the AI, what context it received, which documents it retrieved, which model produced the output, what tools it called, what action it took, who approved it, and what changed afterward. Banks, hospitals, governments, insurers, airlines, and manufacturers cannot operate on "the AI did it." They need records, traceability, logs, and escalation paths.
 
-For AI, verification becomes harder because the output is probabilistic. The same prompt may not always produce the same result. A model may be correct in one case, plausible but wrong in another, and confidently misleading in a third.
+**Explainability** does not always mean exposing the internal mathematics of a model. In most practical settings, it means the system can provide reasons, sources, evidence, assumptions, confidence levels, alternatives considered, known limitations, and escalation triggers. If AI recommends a software architecture, the team does not need to inspect every neural-network parameter, but it does need to know why that architecture was recommended, what trade-offs it implies, and what evidence supports it. If AI summarises a contract, the lawyer needs citations to the clauses. If AI explains a legacy system, the engineer needs links to the relevant code.
 
-This does not make AI unusable.
+**Human approval** is not a sign that AI has failed. In high-value workflows, it may be the mechanism that makes AI economically useful. If AI reduces a five-hour contract review to one hour, the human still reviews the result, but the economics have changed. If AI produces a first draft of a migration plan, engineers still evaluate it, but the cost of planning falls. The question is not whether humans remain in the loop. The question is where human judgement creates the most value.
 
-It means AI must be placed inside systems that verify what matters.
+## Trust and Agents
 
-Generated code can be compiled, tested, reviewed, linted, benchmarked, and scanned for security issues.
+Trust becomes especially important when AI moves from answering questions to taking actions. A chatbot can be wrong. An agent can be wrong and do something about it.
 
-Generated documents can be checked against source material.
+An AI agent may open files, modify code, run commands, query databases, create tickets, send emails, call APIs, update documents, or trigger workflows. Each capability increases usefulness, and each also increases risk. Therefore agentic systems need stronger boundaries than simple assistants: sandboxes, permission levels, human approval gates, tool restrictions, action logs, rollback mechanisms, monitoring, and escalation paths.
 
-Generated database queries can be sandboxed.
+An unconstrained agent may be impressive in a demo. A bounded agent is more likely to be useful in production.
 
-Generated actions can require approval.
+## Trust and Legacy Systems
 
-Generated classifications can be sampled and audited.
+The trust problem becomes sharper when AI touches legacy systems. These systems often contain decades of accumulated business knowledge: payments, policies, reservations, claims, trades, medical records, tax records, or factory operations. Many are poorly documented, written in older languages, full of hidden dependencies, and correct for reasons no one fully remembers.
 
-In other words:
+AI may help explain, document, test, and modernise these systems. But organisations will not allow AI to change mission-critical infrastructure simply because it sounds confident. They will need tests, staged migration, rollback plans, audit trails, and human accountability.
 
-> AI suggests. Reliable systems verify.
-
-## Governance
-
-Governance defines who is allowed to use AI, for what purpose, with what data, under what rules, and with what oversight.
-
-Without governance, AI adoption becomes chaotic.
-
-Employees paste sensitive data into tools without understanding the consequences.
-
-Teams build disconnected pilots.
-
-Prompts become undocumented business logic.
-
-Generated outputs enter workflows without review.
-
-No one knows which model version produced which decision.
-
-No one knows who is accountable.
-
-Governance is not bureaucracy for its own sake.
-
-It is how organisations turn capability into controlled capability.
-
-## Security
-
-AI security is broader than ordinary software security because AI systems often sit between humans, data, tools, and enterprise systems.
-
-A conventional application usually does what its code says.
-
-An AI-enabled application may interpret instructions, retrieve documents, call tools, generate code, send messages, or operate across systems.
-
-That creates new attack surfaces.
-
-Important risks include:
-
-- Prompt injection.
-- Data leakage.
-- Excessive tool permissions.
-- Insecure retrieval.
-- Model poisoning.
-- Untrusted documents influencing AI behaviour.
-- Confidential information appearing in outputs.
-- Agents taking actions beyond their intended authority.
-
-The more connected AI becomes, the more security matters.
-
-An isolated chatbot can make mistakes.
-
-An AI agent connected to enterprise systems can cause damage.
-
-That is why security belongs inside the economics of trust.
-
-Risk is a cost.
-
-Security is one of the mechanisms that makes the cost manageable.
-
-## Auditability
-
-Enterprises need to know what happened.
-
-Who asked the AI?
-
-What context did it receive?
-
-Which documents did it retrieve?
-
-Which model produced the output?
-
-What tools did it call?
-
-What action did it take?
-
-Who approved it?
-
-What changed afterward?
-
-These questions matter because serious organisations operate under accountability.
-
-Banks, hospitals, governments, insurers, airlines, and manufacturers cannot simply say:
-
-> The AI did it.
-
-They need records.
-
-They need traceability.
-
-They need logs.
-
-They need escalation paths.
-
-Auditability turns AI from an opaque assistant into part of an accountable system.
-
-## Explainability
-
-Explainability does not always mean exposing the internal mathematics of a model.
-
-In many practical settings, explainability means something more modest and more useful.
-
-It means the system can provide:
-
-- Reasons.
-- Sources.
-- Evidence.
-- Assumptions.
-- Confidence levels.
-- Alternatives considered.
-- Known limitations.
-- Escalation triggers.
-
-If AI recommends a software architecture, the team may not need to inspect every neural-network parameter. But they do need to know why that architecture was recommended, what trade-offs it implies, what risks it introduces, and what evidence supports it.
-
-If AI summarises a contract, the lawyer needs citations to the clauses.
-
-If AI explains a legacy system, the engineer needs links to the relevant code.
-
-If AI generates a migration plan, the organisation needs assumptions and dependencies.
-
-Explainability creates trust because it lets humans judge the output.
-
-## Human Approval
-
-Human approval is not a sign that AI has failed.
-
-It is often the mechanism that makes AI economically useful.
-
-In high-value workflows, AI may create most of the work product while humans retain approval authority.
-
-That can still be enormously valuable.
-
-If AI reduces a five-hour contract review to one hour, a human still reviews the result, but the economics change.
-
-If AI produces a first draft of a migration plan, engineers still evaluate it, but the cost of planning falls.
-
-If AI finds likely defects in a codebase, developers still decide what to fix, but attention is directed more efficiently.
-
-The question is not whether humans remain in the loop.
-
-The question is where human judgement creates the most value.
-
-## Trust And Agents
-
-Trust becomes especially important when AI moves from answering questions to taking actions.
-
-A chatbot can be wrong.
-
-An agent can be wrong and do something.
-
-That difference is enormous.
-
-An AI agent may:
-
-- Open files.
-- Modify code.
-- Run commands.
-- Query databases.
-- Create tickets.
-- Send emails.
-- Call APIs.
-- Update documents.
-- Trigger workflows.
-
-Each capability increases usefulness.
-
-Each also increases risk.
-
-Therefore agentic systems require stronger boundaries:
-
-- Sandboxes.
-- Permission levels.
-- Human approval gates.
-- Tool restrictions.
-- Action logs.
-- Rollback mechanisms.
-- Monitoring.
-- Escalation paths.
-
-An unconstrained agent may be impressive.
-
-A bounded agent is more likely to be useful.
-
-## Trust And Legacy Systems
-
-The trust problem becomes even sharper when AI touches legacy systems.
-
-Legacy systems often contain decades of accumulated business knowledge. They may process payments, policies, reservations, claims, trades, medical records, tax records, or factory operations.
-
-Many are poorly documented.
-
-Some are written in older languages.
-
-Some have hidden dependencies.
-
-Some behave correctly for reasons no one fully remembers.
-
-AI may help explain, document, test, and modernise these systems.
-
-But organisations will not allow AI to change mission-critical infrastructure simply because it sounds confident.
-
-They will need proof.
-
-They will need tests.
-
-They will need staged migration.
-
-They will need rollback plans.
-
-They will need audit trails.
-
-They will need human accountability.
-
-That is why trust is the bridge between AI capability and legacy modernisation.
+Trust is the bridge between AI capability and legacy modernisation. Without it, AI can describe the old system. With it, AI can help change the old system safely.
 
 ## The Trust Equation
 
-Trust is not binary.
-
-It increases as uncertainty and risk are reduced.
-
-A simple way to think about it is:
+Trust is not binary. It increases as uncertainty and risk are reduced. A simple way to think about it is:
 
 ```text
 Trust
@@ -393,25 +111,13 @@ Trust
 - uncertainty
 ```
 
-This is not a mathematical formula.
+This is not a mathematical formula. It is a way of remembering that model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
 
-It is a way of remembering that model intelligence is only one component.
-
-An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
-
-This is one reason enterprise AI may not be won simply by the smartest model.
-
-It may be won by the system that makes AI most trustworthy in valuable workflows.
+That is one reason enterprise AI may not be won simply by the smartest model. It may be won by the system that makes AI most trustworthy in valuable workflows.
 
 ## The Economics of Trust
 
-Trust changes adoption because it changes expected value.
-
-If AI is untrusted, it can only be used where mistakes are cheap.
-
-If AI is partially trusted, it can assist humans under supervision.
-
-If AI is highly trusted within bounded workflows, it can take on more valuable work.
+Trust changes adoption because it changes expected value. Untrusted AI can only be used where mistakes are cheap. Partially trusted AI can assist humans under supervision. Highly trusted AI, inside bounded workflows, can take on more valuable work.
 
 The progression looks like this:
 
@@ -427,29 +133,25 @@ Bounded production use
 High-value enterprise adoption
 ```
 
-This is why the future of AI in software development will not be determined by capability alone.
-
-It will be determined by the relationship between capability and trust.
-
-The more an AI system can be verified, governed, secured, audited, and explained, the more valuable work it can perform.
+This is why the future of AI in software development will not be determined by capability alone. It will be determined by the relationship between capability and trust. The more an AI system can be verified, governed, secured, audited, and explained, the more valuable work it can perform.
 
 ## What We Know
 
-We know that AI systems can produce useful outputs while also making mistakes.
+AI systems can produce useful outputs while also making mistakes.
 
-We know that enterprise software environments require security, governance, auditability, and accountability.
+Enterprise software environments require security, governance, auditability, and accountability.
 
-We know that AI agents and tool-using systems increase both capability and risk.
+AI agents and tool-using systems increase both capability and risk.
 
-We know that verification and human review remain essential in high-stakes workflows.
+Verification and human review remain essential in high-stakes workflows.
 
 ## What We Infer
 
-We infer that trust will become one of the major economic bottlenecks in enterprise AI adoption.
+Trust will become one of the major economic bottlenecks in enterprise AI adoption.
 
-We infer that organisations will adopt AI first in bounded workflows where risk is manageable and verification is practical.
+Organisations will adopt AI first in bounded workflows where risk is manageable and verification is practical.
 
-We infer that the most valuable AI systems may not be the most autonomous systems, but the systems that combine capability with reliable trust boundaries.
+The most valuable AI systems may not be the most autonomous systems, but the systems that combine capability with reliable trust boundaries.
 
 ## What We Do Not Yet Know
 

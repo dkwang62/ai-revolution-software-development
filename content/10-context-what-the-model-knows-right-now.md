@@ -585,7 +585,7 @@ That is the question behind Enterprise Knowledge Architecture.
 
 The context window is only the final layer. The real competitive advantage may lie in the earlier layers: knowledge quality, organisation, indexing, retrieval, governance, permissions, provenance, and freshness.
 
-This suggests a further architectural layer: Enterprise Intelligence Layer.
+This suggests a further architectural layer: [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]].
 
 Most enterprises probably do not need to build their own frontier model. They can rent general intelligence from foundation-model providers, much as companies rent cloud infrastructure or buy standard software platforms.
 
@@ -711,13 +711,13 @@ Communication becomes part of software development itself.
 - Context as the Missing Ingredient
 - Enterprise Context
 - Enterprise Knowledge Architecture
-- Enterprise Intelligence Layer
+- [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]]
 - [[06-what-is-an-ai-model|AI Models]]
 - [[09-economics-of-models|Inference]]
 - [[09-economics-of-models|Training]]
 - [[11-communication-becomes-the-interface|Prompt Engineering]]
 - [[12-requirements-engineering|Requirements Engineering]]
-- AI Agents
+- [[16-agents-tools-and-integrated-systems|AI Agents]]
 - [[15-legacy-problem|System Integration]]
 - [[13-precision-and-probabilistic-ai|Software Verification]]
 - [[11-communication-becomes-the-interface|09 Communication Becomes the Interface]]

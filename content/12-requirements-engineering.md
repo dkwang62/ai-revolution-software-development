@@ -143,7 +143,7 @@ Modern AI applications may use:
 
 These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
 
-Memory therefore connects [[12-requirements-engineering|Requirements Engineering]] to [[10-context-what-the-model-knows-right-now|Context Windows]], [[15-legacy-problem|System Integration]], AI Agents, and [[13-precision-and-probabilistic-ai|Software Verification]]. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
+Memory therefore connects [[12-requirements-engineering|Requirements Engineering]] to [[10-context-what-the-model-knows-right-now|Context Windows]], [[15-legacy-problem|System Integration]], [[16-agents-tools-and-integrated-systems|AI Agents]], and [[13-precision-and-probabilistic-ai|Software Verification]]. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
 
 ## Agents Require Requirements Discipline
 

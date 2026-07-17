@@ -336,7 +336,7 @@ If enterprises can turn organisational knowledge into an AI-usable asset, the fi
 
 ## Related Notes
 
-- Enterprise Intelligence Layer
+- [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]]
 - Enterprise Knowledge Architecture
 - Enterprise AI ROI
 - Emergent Enterprise Intelligence Layer

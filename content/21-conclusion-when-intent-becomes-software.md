@@ -266,7 +266,7 @@ Artificial intelligence lowering the cost of expressing it.
 - The Law of Abstraction
 - [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]]
 - [[14-economics-of-trust|The Economics of Trust]]
-- Enterprise Intelligence Layer
+- [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]]
 - [[17-what-becomes-scarce-when-code-becomes-cheap|What Becomes Scarce When Code Becomes Cheap]]
 - [[18-future-of-programmers|The Future of Programmers]]
 - AGI and Human Intent
