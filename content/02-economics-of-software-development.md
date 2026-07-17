@@ -76,6 +76,20 @@ The eighth cost is integration. Most software does not live alone. It must commu
 
 These costs explain why software development has historically required specialised labour. The programmer was never merely a typist of code. The programmer was a translator, designer, detective, systems thinker, tester, maintainer, and often an accidental business analyst.
 
+## What One Software Employee Costs
+
+To make the bottleneck concrete, imagine a mid-career software developer in the IT department of a large enterprise: a bank, manufacturer, logistics company, hospital group, or industrial firm. In the United States, the Bureau of Labor Statistics says software developers, quality assurance analysts, and testers typically need a bachelor's degree in computer and information technology or a related field, while some employers prefer a master's degree. BLS reported a median annual wage of $133,080 for software developers in May 2024, and $102,610 for software quality assurance analysts and testers.
+
+That salary is only the visible part of the cost. The employer also pays for benefits, payroll taxes, recruiting, training, laptops, development tools, cloud environments, security systems, office or remote-work support, and management overhead. A developer with a $130,000 salary can easily represent a substantially higher annual cost to the organisation. If that person works roughly 220 to 230 effective workdays after weekends, holidays, leave, training, meetings, support work, and administration, every week spent on a project is expensive.
+
+At the high end, the number becomes startling. Levels.fyi, a crowd-sourced compensation site, reported in July 2026 that a Google software engineer in the United States ranged from about $210,000 in total annual compensation at L3 to about $293,000 at L4 and about $415,000 at L5. These are not ordinary enterprise averages, and stock-heavy compensation should not be confused with salary. But they illustrate the same economic point: advanced software expertise is expensive because it packages years of education, accumulated experience, scarce judgement, and familiarity with complex systems.
+
+A large industrial company gives a more ordinary comparison. Crowd-sourced salary sites are not official company records, but Glassdoor listed an OTIS software engineer total-pay range in the United States of about $110,000 to $149,000 a year, with a median total pay estimate of $127,000. The exact number matters less than the shape of the example. Even outside Big Tech, professional software labour is not cheap.
+
+Now imagine a modest internal project requiring five people for six months: two developers, one tester, one product or business analyst, and one manager or architect. Even before cloud costs, software licences, security review, procurement, legal review, and long-term maintenance, the human cost can reach hundreds of thousands of dollars. That is why many useful ideas never become software. The organisation may want the tool, but not enough to justify consuming that much scarce expertise.
+
+AI matters economically if it changes this arithmetic. If one expert with AI can produce, test, and maintain work that previously required a larger team, or if AI can reduce weeks of implementation and debugging to days, more ideas cross the boundary from uneconomic to worth building. The question is not whether human expertise has no value. It is whether AI can multiply that expertise enough to change which software becomes affordable.
+
 ## The Cost Equation
 
 Historically, the path from idea to software looked like this:
