@@ -23,7 +23,7 @@ Inference spends capability.
 
 Training is the expensive process that creates or improves a model.
 
-It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. Epoch AI estimates that frontier language-model training compute has grown at about 5x per year since 2020, and that frontier training costs have risen about 3.5x per year over the same period. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race. See AI Model Economics.
+It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. Epoch AI estimates that frontier language-model training compute has grown at about 5x per year since 2020, and that frontier training costs have risen about 3.5x per year over the same period. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race. See [[AI Model Economics]].
 
 Economically, training resembles capital investment. A company spends heavily upfront to create an asset: a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
 
@@ -78,7 +78,7 @@ This is why the future will likely contain many models rather than one universal
 
 ## Context Windows as Working Memory
 
-The [[10-context-what-the-model-knows-right-now|context window]] is the amount of information a model can consider during inference.
+The [[Context Windows|context window]] is the amount of information a model can consider during inference.
 
 For software development, context is crucial. A model asked to modify one function may need only a small amount of context. A model asked to refactor a module may need more. A model asked to reason about an entire codebase may need much more.
 
@@ -90,7 +90,7 @@ Economically, a larger context window is valuable when it allows the model to so
 
 For software, long context matters because real systems are interconnected. A bug may depend on a data model, a configuration file, a test, a framework convention, and an old design decision. If AI cannot see enough of the system, it may make local changes that break global behaviour.
 
-This leads to a distinction developed further in The Economics of Context.
+This leads to a distinction developed further in [[The Economics of Context]].
 
 Raw context is the maximum number of tokens a model can read.
 
@@ -108,7 +108,7 @@ It is:
 
 ## Multimodality
 
-Multimodal Models can work across text, images, audio, video, code, and other forms of input or output.
+[[Multimodal Models]] can work across text, images, audio, video, code, and other forms of input or output.
 
 This matters because software development is not purely textual. Requirements may appear in screenshots, diagrams, whiteboards, mockups, logs, tables, documents, and user recordings. A developer may need to convert a sketch into an interface, a screenshot into a bug report, a chart into code, or a video of a user session into product insight.
 
@@ -134,9 +134,57 @@ For a trivial formatting change, expensive reasoning is wasteful. For a database
 
 This suggests that future AI software tools may route tasks dynamically. Simple tasks may go to small fast models. Complex tasks may go to more capable models or multi-step workflows. High-risk tasks may require verification, tool use, and human approval.
 
+## Why Some Tasks Consume More Tokens
+
+Not every AI task costs the same.
+
+A short prompt can be cheap:
+
+```text
+Summarise this paragraph in one sentence.
+```
+
+A harder prompt may be much more expensive:
+
+```text
+Read these five documents, compare their assumptions, identify contradictions, propose a migration plan, estimate risks, write tests, and explain your reasoning.
+```
+
+The second task costs more because it asks the model to process more information and do more work.
+
+There are four main sources of token cost.
+
+First, input tokens. The model must read the prompt, conversation history, retrieved documents, source files, screenshots, logs, specifications, or examples. A task involving a large codebase, long contract, or enterprise policy pack may require far more input than a simple question.
+
+Second, output tokens. A one-sentence answer is cheap. A detailed migration plan, software design, test suite, or chapter draft requires many generated tokens.
+
+Third, reasoning work. Some tasks require the model to compare alternatives, hold multiple constraints in mind, decompose the problem, check intermediate conclusions, or reason through a sequence. Even when the final answer is short, the system may spend extra computation on intermediate reasoning.
+
+Fourth, tool loops. An agent may search files, run tests, read errors, edit code, run tests again, inspect logs, and revise. Each step adds more input and output. The cost is not one prompt. It is a chain of inference calls.
+
+This is why reasoning can be expensive. It is not just "thinking harder" in a human sense. It often means reading more context, generating more intermediate work, using more model steps, calling more tools, and checking more results.
+
+For example:
+
+| Task | Why It May Be Cheap Or Expensive |
+| --- | --- |
+| Translate one sentence | Little input, little output, familiar pattern |
+| Summarise a short email | Small input and short output |
+| Explain a programming error | Moderate input, some reasoning, usually short output |
+| Refactor a module | Many files, dependencies, tests, and revision loops |
+| Analyse a legacy system | Large context, unknown rules, high verification cost |
+| Plan a database migration | Many constraints, risk analysis, tests, rollback planning |
+| Build an agent workflow | Repeated inference, tool calls, permissions, monitoring, validation |
+
+The economic lesson is simple:
+
+> AI cost depends less on how impressive the prompt sounds and more on how much information the model must process, how much output it must generate, how much reasoning it must perform, and how many steps are required to verify the result.
+
+This matters for software because serious engineering tasks are rarely one-step answers. They involve context, planning, implementation, testing, and review. That is why the future of AI software tools will not be only about cheaper tokens. It will also be about using tokens intelligently.
+
 ## Model Evolution
 
-Model Evolution creates a new kind of software maintenance problem.
+[[Model Evolution]] creates a new kind of software maintenance problem.
 
 Traditional software changes when developers edit code. If they are careful, they can preserve backward compatibility. A new version of a library may add features while attempting not to break old behaviour.
 
@@ -182,7 +230,7 @@ The book should teach readers to ask: what cost is being paid, what capability i
 
 ## The Economics of Intelligence
 
-The phrase economics of intelligence means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
+The phrase [[ECONOMICS_OF_INTELLIGENCE|economics of intelligence]] means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
 
 Training produces machine capability.
 
@@ -194,7 +242,7 @@ Hardware, data centres, energy, chips, and engineering teams determine cost.
 
 Applications determine value.
 
-The hardware shift is visible in company financials. NVIDIA reported Q1 fiscal 2027 revenue of $81.6 billion for the quarter ended April 26, 2026, including $75.2 billion in data center revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. Gartner also forecast worldwide AI spending of $2.59 trillion in 2026, a broad figure that includes many AI categories and should not be confused with model training alone. See AI Model Economics.
+The hardware shift is visible in company financials. NVIDIA reported Q1 fiscal 2027 revenue of $81.6 billion for the quarter ended April 26, 2026, including $75.2 billion in data center revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. Gartner also forecast worldwide AI spending of $2.59 trillion in 2026, a broad figure that includes many AI categories and should not be confused with model training alone. See [[AI Model Economics]].
 
 Software development is the clearest case study because it is already a knowledge-intensive activity. If AI lowers the cost of applying software-engineering knowledge, it changes the economics of the software industry.
 

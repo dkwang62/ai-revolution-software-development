@@ -249,7 +249,7 @@ This means the most important race may not be simply larger context windows. It 
 
 The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The real competitive advantage may lie in earlier layers: knowledge quality, organisation, indexing, retrieval, governance, permissions, provenance, and freshness.
 
-This suggests a further architectural layer: [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]].
+This suggests a further architectural layer: [[Enterprise Intelligence Layer]].
 
 Most enterprises probably do not need to build their own frontier model. They can rent general intelligence from foundation-model providers, much as companies rent cloud infrastructure or buy standard software platforms. What they need to own is their specialised intelligence: the representation of their own business reality.
 

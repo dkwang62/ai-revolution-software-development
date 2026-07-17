@@ -34,6 +34,12 @@ I could describe a feature, discuss the design, ask questions, test the result, 
 
 At times, the experience felt like having a genie in a bottle.
 
+For me, that genie increasingly had a name: Codex.
+
+Not because Codex is the only AI tool that matters. It is not. ChatGPT, Claude, Gemini, Cursor, GitHub Copilot, Claude Code, and many other systems belong to the same larger movement. But Codex became the clearest embodiment of the mystery because it did not merely answer questions about software. It could work inside the software environment itself. It could inspect files, search code, run commands, read errors, revise changes, and participate in the verification loop.
+
+That made the metaphor more concrete.
+
 I described what I wanted, and software began to appear.
 
 But the real mystery was not that AI could write code. The real mystery was how.
@@ -103,6 +109,12 @@ Finally, the book looks forward. It does not pretend to know the future. Instead
 This book is not trying to be a Python, Swift, or JavaScript tutorial; a prompt cookbook; a mathematical textbook on neural networks; or a product guide to ChatGPT, Claude, Gemini, Codex, or any other current tool.
 
 Those tools will change. Some may disappear. New ones will arrive. The durable subject is not any particular product. The durable subject is the movement of programming upward, away from machine-oriented instructions and closer to human intent.
+
+Still, every book needs a door into its subject.
+
+Codex is that door for this book.
+
+Codex is the genie I met. The book is about what the genie reveals.
 
 This book is for readers who sense that something fundamental has changed but want to understand what it is.
 

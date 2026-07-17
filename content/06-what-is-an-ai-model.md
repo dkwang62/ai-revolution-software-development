@@ -48,7 +48,7 @@ The model is a map, not the territory.
 
 ## Training Creates the Model
 
-An AI model does not appear fully formed. It is created through [[09-economics-of-models|Training]].
+An AI model does not appear fully formed. It is created through [[Training]].
 
 Imagine, very loosely, showing a child enormous numbers of books, conversations, diagrams, code examples, explanations, questions, answers, images, and corrections. Over time, the child begins to recognise patterns. They learn grammar, style, facts, procedures, cause and effect, social cues, and relationships among ideas.
 
@@ -74,7 +74,7 @@ This helps explain why AI companies invest in training. Training is expensive be
 
 ## Inference Uses the Model
 
-[[09-economics-of-models|Inference]] is the use of a trained model to produce an output.
+[[Inference]] is the use of a trained model to produce an output.
 
 When a user asks an AI system to write a Swift function, explain a legal clause, summarise a report, translate a sentence, or generate a quiz, the system is not retraining itself from scratch. It is using the trained model.
 
@@ -144,9 +144,21 @@ Context windows are a trade-off. A longer context lets the model consider more i
 
 Multimodality is a trade-off. A model that can handle text, images, audio, and video may be more useful, but training and serving such a model is more complex.
 
+But multimodality is not only a technical feature. It is also an access layer.
+
+Text-based computing has always favoured people who are comfortable typing, writing, reading screens, using files, and translating messy experience into structured language. That excludes more knowledge than we usually admit. Much human expertise is spoken, shown, demonstrated, remembered, sketched, corrected in context, or carried through years of practical experience.
+
+This matters especially in an ageing world. Many older experts possess deep domain knowledge but may never have been fully comfortable expressing that knowledge through formal computer interfaces. A retired factory supervisor may understand a machine by its sound. A nurse may understand a workflow through sequence and habit. A small-business owner may explain a process better in conversation than in a spreadsheet. An executive may have decades of judgement but little patience for typing detailed prompts.
+
+Voice, image, video, screen sharing, diagrams, and gestures create a different path. They let people communicate with AI in forms closer to how they already think and work. The AI can then translate that interaction into notes, requirements, process maps, documentation, software specifications, or workflows.
+
+This is not just convenience. It is the same kind of interface shift that changed office work when professionals moved from dictating paperwork to secretaries toward using email, calendars, spreadsheets, and enterprise systems directly. The work did not disappear. The interface changed, and the translation layer shrank.
+
+This is why [[Multimodal Models]] may become economically important. They do not merely allow AI to see pictures or hear speech. They may unlock expertise that text-first computing left outside the software economy.
+
 Reasoning is a trade-off. More careful reasoning may produce better answers, but can require more inference time and compute.
 
-These trade-offs are why ECONOMICS_OF_INTELLIGENCE matters. Every improvement should be analysed as cost versus benefit. The question is not merely whether a model is more impressive. The question is what new value the improvement creates, what cost it introduces, who pays that cost, and whether the benefit justifies the investment.
+These trade-offs are why [[ECONOMICS_OF_INTELLIGENCE]] matters. Every improvement should be analysed as cost versus benefit. The question is not merely whether a model is more impressive. The question is what new value the improvement creates, what cost it introduces, who pays that cost, and whether the benefit justifies the investment.
 
 ## Why This Matters for the Book
 

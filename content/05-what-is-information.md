@@ -58,7 +58,7 @@ Computers have always transformed information too, but traditional software usua
 
 Modern AI changes the nature of the transformation. It can move between representations without a human writing explicit rules for every case. It can summarise text, translate languages, describe images, generate code, explain errors, classify documents, and answer questions because it has learned patterns among representations.
 
-That is why the idea in Information is central to the book:
+That is why the idea in [[Information]] is central to the book:
 
 > Information is deeper than any particular human language, programming language, image, sound, or symbol system.
 
@@ -86,7 +86,7 @@ Modern AI works differently.
 
 Modern AI stores learned relationships.
 
-This is the distinction captured in Rules vs Relationships. Traditional software says:
+This is the distinction captured in [[Rules vs Relationships]]. Traditional software says:
 
 ```text
 IF A

@@ -36,9 +36,9 @@ They may use obsolete languages, old databases, outdated operating systems, frag
 
 The system still works, but the organisation no longer fully understands it.
 
-This is not only a technical inconvenience. It is an economic drag. Research on software quality and technical debt suggests that poor-quality and hard-to-change code can impose large downstream costs. The Consortium for Information & Software Quality estimated U.S. accumulated software technical debt at about $1.52 trillion in 2022, while McKinsey has reported CIO estimates that technical debt can amount to 20% to 40% of the value of a technology estate before depreciation. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works. See Software Maintenance and Quality Costs.
+This is not only a technical inconvenience. It is an economic drag. Research on software quality and technical debt suggests that poor-quality and hard-to-change code can impose large downstream costs. The Consortium for Information & Software Quality estimated U.S. accumulated software technical debt at about $1.52 trillion in 2022, while McKinsey has reported CIO estimates that technical debt can amount to 20% to 40% of the value of a technology estate before depreciation. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works. See [[Software Maintenance and Quality Costs]].
 
-Public-sector audits make the problem more concrete. GAO identified 10 critical U.S. federal legacy systems in 2019 that ranged from 8 to 51 years old; GAO later reported that those systems collectively cost about $337 million annually to operate and maintain. Several used older languages such as COBOL, and agency modernisation plans were often incomplete. The UK government has also created a formal Legacy IT Risk Assessment Framework, while the National Audit Office reported that, in March 2024, departments did not have fully funded plans to remediate around half of government's legacy IT assets. See Legacy Systems and Modernisation.
+Public-sector audits make the problem more concrete. GAO identified 10 critical U.S. federal legacy systems in 2019 that ranged from 8 to 51 years old; GAO later reported that those systems collectively cost about $337 million annually to operate and maintain. Several used older languages such as COBOL, and agency modernisation plans were often incomplete. The UK government has also created a formal Legacy IT Risk Assessment Framework, while the National Audit Office reported that, in March 2024, departments did not have fully funded plans to remediate around half of government's legacy IT assets. See [[Legacy Systems and Modernisation]].
 
 ## Software as Accumulated Business Knowledge
 
@@ -74,7 +74,7 @@ This is why "big bang" replacement is dangerous. Switching everything at once co
 
 Because organisations cannot replace everything overnight, new systems must coexist with old ones.
 
-This creates [[15-legacy-problem|System Integration]].
+This creates [[System Integration]].
 
 Modern applications must communicate with mainframes, COBOL systems, Oracle databases, SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms.
 
@@ -142,7 +142,7 @@ Migrate gradually
 
 AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software.
 
-The market is already moving in this direction. Legacy Systems and Modernisation tracks current vendor evidence from AWS and Google Cloud showing AI-assisted tools aimed at code assessment, documentation generation, dependency mapping, business-rule extraction, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
+The market is already moving in this direction. [[Legacy Systems and Modernisation]] tracks current vendor evidence from AWS and Google Cloud showing AI-assisted tools aimed at code assessment, documentation generation, dependency mapping, business-rule extraction, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
 
 ## Gradual Migration
 
@@ -180,7 +180,7 @@ It helps old systems communicate with new ones.
 
 It may turn legacy software from a burden into a source of recoverable institutional knowledge.
 
-This is why System Integration - The Forgotten Side of the AI Revolution belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in greenfield applications. It will be built in contact with old systems.
+This is why [[System Integration - The Forgotten Side of the AI Revolution]] belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in greenfield applications. It will be built in contact with old systems.
 
 ## Five Years
 
@@ -235,11 +235,3 @@ We do not yet know how reliably AI can analyse very large legacy systems with in
 We do not yet know how much AI can reduce migration cost and risk in regulated industries.
 
 We do not yet know whether organisations will have the data governance and engineering discipline needed to use AI safely in legacy modernisation.
-
-## Case Study Sources
-
-- [Google Cloud - Hong Leong Bank case study](https://cloud.google.com/customers/hongleongbank)
-- [Publicis Sapient - Financial services legacy modernisation with Slingshot](https://www.publicissapient.com/customers/stories/financial-services-slingshot-legacy-modernization)
-- [QA Financial - Citi AI-driven testing and legacy modernisation](https://qa-financial.com/citi-ramps-up-ai-driven-testing-as-bank-races-to-modernise-legacy-systems/)
-- [Envadel - Core banking modernisation with zero downtime](https://envadel.com/en/case-studies/banking-fintech/)
-- [Coforge - UK bank legacy-system modernisation](https://www.coforge.com/what-we-do/success-stories/modernizing-legacy-systems-uk-banks-transition-scalable-cloud-ready-platform)

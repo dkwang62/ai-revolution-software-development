@@ -16,6 +16,8 @@ Who is the author of a book whose words were largely drafted with artificial int
 
 This book was developed through a collaboration between Desmond Kwang and artificial intelligence systems including ChatGPT, Codex, and other AI tools.
 
+Codex deserves special mention because it became more than a drafting assistant in this project. It became the practical embodiment of the book's genie-in-the-bottle metaphor: an AI agent that could operate inside the working environment, inspect files, edit text and code, run commands, report failures, and help turn intention into a verified artifact.
+
 That collaboration raises an honest question:
 
 Who wrote this book?
@@ -55,11 +57,12 @@ The same pattern appears in software. AI can generate code, but the harder quest
 
 ## Related Notes
 
-- Introduction - Writing a Book the Same Way I Built an App
-- AGI and Human Intent
-- [[11-communication-becomes-the-interface|Natural Language Programming]]
-- [[11-communication-becomes-the-interface|Communication Becomes the Interface]]
-- [[18-future-of-programmers|The Future of Programmers]]
+- [[Introduction - Writing a Book the Same Way I Built an App]]
+- [[CODEX_AS_THE_GENIE]]
+- [[AGI and Human Intent]]
+- [[Natural Language Programming]]
+- [[Communication Becomes the Interface]]
+- [[The Future of Programmers]]
 
 ## Future Work
 

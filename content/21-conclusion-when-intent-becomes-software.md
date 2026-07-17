@@ -8,6 +8,10 @@ This book began with a practical mystery: how can an idea expressed in ordinary 
 
 At first, the answer seems to belong entirely to artificial intelligence. Large language models can generate code, explain APIs, debug errors, and translate requirements into functions, tests, and user interfaces. But the deeper answer is not only technical. It is historical and economic.
 
+For me, that mystery became concrete through Codex.
+
+Codex is the genie I met. It did not merely tell me how software might be written. It could operate inside the world where the software lived: files, terminal commands, builds, screenshots, errors, tests, and revisions. It turned the metaphor into a workflow.
+
 For seventy years, computing has moved in one direction: away from the machine and toward the human. Machine code gave way to assembly language. Assembly language gave way to high-level languages. High-level languages were surrounded by libraries, frameworks, operating systems, databases, cloud platforms, low-code tools, and now AI assistants. Each generation hid more complexity from the person trying to create software.
 
 The complexity did not disappear. It moved downward. That is abstraction.
@@ -90,6 +94,20 @@ Writing this manuscript with AI felt surprisingly similar to building Radix with
 
 The human role was to ask questions, reject weak answers, reorganise the structure, demand clearer explanations, decide what belonged, and keep returning to the central thesis. AI accelerated the process, expanded the range of possible explanations, made drafting faster, and helped organise complexity.
 
+Codex made that process unusually visible because it worked across both worlds. It helped with the software project, and it helped organise the book project. In one case the artifact was an app. In the other, it was a manuscript and a public website. The underlying pattern was the same:
+
+```text
+intent
+↓
+context
+↓
+AI-assisted action
+↓
+verification
+↓
+human judgement
+```
+
 But it did not decide that the book should exist.
 
 That distinction may matter for software too. Today, AI can help implement intent. It does not yet independently decide which human problems are worth solving, which trade-offs should be accepted, which values should govern the system, or which products deserve to exist.
@@ -111,6 +129,8 @@ That is enough to matter.
 When the cost of creating software falls, the world does not simply build the same software more cheaply. It builds software that was previously uneconomic: software for one company, one classroom, one doctor, one researcher, one family, one small business, or one person.
 
 That is why the genie-in-the-bottle metaphor is so compelling. The magic is not that AI can write code. The magic is that ideas that once died because implementation was too expensive may now have a path into reality.
+
+Codex is not the whole revolution. But it is the form in which I encountered it most clearly.
 
 The future of software development is therefore not only about programmers. It is about what happens when more people can turn intent into systems.
 

@@ -88,7 +88,7 @@ Traditional programming languages force precision. They cannot accept "worrying"
 
 AI-assisted programming changes the process. The user may begin with ordinary language, and the AI may infer missing structure, ask clarifying questions, propose rules, or generate a first version. But the final system still needs precision. Natural language becomes useful as a high-level interface only when it is refined into specifications, examples, tests, constraints, and executable behaviour.
 
-This is why [[11-communication-becomes-the-interface|Natural Language Programming]] should not be understood as casual conversation with a machine. It is closer to disciplined specification. A prompt that controls software behaviour may need to define objectives, rules, constraints, formats, edge cases, failure modes, and unacceptable outputs. In that sense, the prompt becomes a high-level programming artefact.
+This is why [[Natural Language Programming]] should not be understood as casual conversation with a machine. It is closer to disciplined specification. A prompt that controls software behaviour may need to define objectives, rules, constraints, formats, edge cases, failure modes, and unacceptable outputs. In that sense, the prompt becomes a high-level programming artefact.
 
 The language is English, but the discipline remains engineering.
 
@@ -106,7 +106,7 @@ AI systems are trained on enormous amounts of text, code, documentation, example
 
 The AI is not simply memorising one correct answer. It is learning relationships.
 
-This connects to Rules vs Relationships. Traditional software stores explicit rules written by humans. AI models store learned mathematical relationships discovered from examples. Traditional software says:
+This connects to [[Rules vs Relationships]]. Traditional software stores explicit rules written by humans. AI models store learned mathematical relationships discovered from examples. Traditional software says:
 
 ```text
 IF A
@@ -135,7 +135,7 @@ This difference explains both AI's power and its weakness.
 
 The power is flexibility. AI can handle variation. It can translate, summarise, explain, infer, rewrite, classify, and generate. It can move from English to code, from code to explanation, from error message to likely cause, from screenshot to interface suggestion, from vague idea to structured plan. It is not limited to a hand-written rule for every possible case.
 
-The weakness is uncertainty. Because AI works through learned relationships rather than explicit deterministic rules, it can produce plausible mistakes. It may infer the wrong requirement, choose an inappropriate pattern, invent a non-existent API, or generate code that looks right but fails under real conditions. This is why later chapters on [[13-precision-and-probabilistic-ai|Precision]] and [[13-precision-and-probabilistic-ai|Software Verification]] are not optional. They are central to the engineering story.
+The weakness is uncertainty. Because AI works through learned relationships rather than explicit deterministic rules, it can produce plausible mistakes. It may infer the wrong requirement, choose an inappropriate pattern, invent a non-existent API, or generate code that looks right but fails under real conditions. This is why later chapters on [[Precision]] and [[Software Verification]] are not optional. They are central to the engineering story.
 
 AI's ability to write software is therefore not magic. It is the consequence of representing information and procedures in a way that allows movement between forms.
 
@@ -187,7 +187,7 @@ This role has been valuable because the machine's language was difficult. Users 
 
 AI narrows the gap. A teacher, doctor, accountant, lawyer, scientist, entrepreneur, or small-business owner can now describe a problem to an AI system and receive something closer to software. The user may not need to explain the idea to a human programmer first. In some cases, the user can iterate directly.
 
-This is the strongest version of the argument in The Human Programmer as Intermediary: the person closest to the problem may become more directly involved in creating the software that solves it.
+This is the strongest version of the argument in [[The Human Programmer as Intermediary]]: the person closest to the problem may become more directly involved in creating the software that solves it.
 
 But the argument needs caution. Users are not automatically good programmers simply because AI can generate code. They may know the problem but fail to specify edge cases, security requirements, integration constraints, data quality issues, or long-term maintenance needs. They may accept software that appears to work but is fragile underneath.
 
@@ -205,7 +205,7 @@ When a person writes:
 
 they are not merely chatting. If the instruction controls software behaviour, it is a specification. It defines rules, sequence, formatting, constraints, and forbidden behaviour. It may need to be tested and refined like code.
 
-This is the insight behind [[11-communication-becomes-the-interface|Natural Language Programming]]. In AI-driven features, prompts can become executable specifications. The model acts like a probabilistic compiler for intent.
+This is the insight behind [[Natural Language Programming]]. In AI-driven features, prompts can become executable specifications. The model acts like a probabilistic compiler for intent.
 
 The analogy is useful but imperfect. A conventional compiler has formal rules. The same source code should compile consistently. An AI model interprets prompts probabilistically. Wording, context, model version, examples, and configuration can change behaviour. Therefore natural-language programming needs verification even more urgently than traditional programming.
 

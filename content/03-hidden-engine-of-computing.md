@@ -10,7 +10,7 @@ Every major breakthrough in computing has tried to hide something.
 
 That is easy to miss because the history of computing is usually told as a history of inventions: the transistor, the microprocessor, the operating system, the programming language, the database, the Internet, the cloud, the smartphone, and now artificial intelligence. Each invention seems different. Each belongs to its own technical world. Yet underneath the differences runs one repeated pattern: computing advances when humans can stop thinking about one layer of complexity and begin working at a higher level.
 
-This pattern has a name: Abstraction.
+This pattern has a name: [[Abstraction]].
 
 Abstraction sounds like a dry computer-science term, but it may be the most important idea in the history of software. Without abstraction, modern software would be impossible. No human being can think simultaneously about transistors, machine instructions, memory addresses, operating-system calls, network protocols, database indexes, user interfaces, payment rules, privacy requirements, and customer workflows. The human mind needs layers. It needs simplification. It needs the ability to ignore details that are not relevant to the task at hand.
 
@@ -94,7 +94,7 @@ AI-assisted development
 
 This is not a perfect ladder. The layers overlap. Older layers remain important. Expert programmers still sometimes need to understand lower-level behaviour. But the historical movement is clear. Computing repeatedly moves complexity away from the human at the top and into tools, languages, platforms, and systems beneath them.
 
-This recurring pattern is captured by The Law of Abstraction:
+This recurring pattern is captured by [[The Law of Abstraction]]:
 
 > Every successful generation of computing hides more complexity than the generation before it.
 
@@ -140,7 +140,7 @@ Every abstraction hides information. Sometimes the hidden information matters. A
 
 Abstraction can also reduce visibility. When something fails, the user may not know which layer is responsible: the application, the framework, the database, the operating system, the network, the cloud provider, or an external API. It can hide performance costs, because a simple command may trigger expensive operations underneath. It can create false confidence, because a simple interface can make hidden assumptions look safer than they are.
 
-This is why The Cost of Abstraction is a necessary companion to The Law of Abstraction. The history of computing is not a story of everything becoming easier without consequence. It is a story of trade-offs. Each layer gives something and takes something.
+This is why [[The Cost of Abstraction]] is a necessary companion to [[The Law of Abstraction]]. The history of computing is not a story of everything becoming easier without consequence. It is a story of trade-offs. Each layer gives something and takes something.
 
 The question is not whether abstraction is free. It is whether the gain is worth the cost.
 

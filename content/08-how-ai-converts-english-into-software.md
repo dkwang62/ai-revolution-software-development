@@ -14,6 +14,10 @@ At first, the experience feels almost magical. A person describes a feature. The
 
 But the point of this book is not to admire the magic. It is to understand how the trick works.
 
+Codex is the practical doorway into that mystery for this book. A simple chat model can show the reader that English can become code. Codex shows something stronger: English can become a supervised software workflow. The prompt does not merely produce a snippet. It can lead to file inspection, code edits, terminal commands, build errors, revisions, and verification.
+
+That is why Codex is the genie in the bottle here. It makes the abstract claim visible.
+
 The explanation is neither memorisation nor secret fluency in Swift, Python, JavaScript, or SQL.
 
 The explanation is representation. Software is a representation of procedure, and AI models can learn relationships among different representations of procedure: English, examples, pseudocode, documentation, source code, tests, errors, and explanations.
@@ -91,7 +95,7 @@ Swift
 
 The model receives text, represents it internally through numerical structures, and generates output based on learned relationships. Swift is not what the model fundamentally understands. English is not what it fundamentally understands. Both are external symbolic forms.
 
-This helps answer the question from Programming:
+This helps answer the question from [[Programming]]:
 
 > How can a machine that does not think in Swift still produce useful Swift code?
 
@@ -111,6 +115,385 @@ This is why precise context matters. If the user gives vague instructions, the m
 
 AI does not remove the need to think clearly. It rewards clear thinking.
 
+## A Worked Example: English To Python
+
+Let us slow the process down and use a tiny example.
+
+Suppose the user writes:
+
+```text
+Write a Python function that takes a list of numbers and returns the average.
+```
+
+A useful answer might be:
+
+```python
+def average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+```
+
+That looks like a direct translation:
+
+```text
+English request
+↓
+Python code
+```
+
+But internally, the process is closer to this:
+
+```text
+English prompt
+↓
+tokens
+↓
+numerical representations
+↓
+layers of learned relationships
+↓
+probable software structure
+↓
+Python output tokens
+↓
+code
+```
+
+This is not the exact private machinery of any particular AI system. Different models use different architectures and implementation details. But this is the right mental model for what is happening.
+
+For a chatbot, this may be where the example ends: prompt in, code out.
+
+For Codex, the more important pattern is larger:
+
+```text
+English prompt
+↓
+repository context
+↓
+plan
+↓
+code change
+↓
+test or build
+↓
+error feedback
+↓
+revision
+↓
+verified change
+```
+
+That difference matters. The genie is not merely a model producing text. It is a model connected to tools, context, and feedback.
+
+### Step 1: The Prompt Is Broken Into Tokens
+
+The model does not receive the sentence as human meaning.
+
+It receives pieces.
+
+The prompt might be broken roughly like this:
+
+```text
+Write | a | Python | function | that | takes | a | list | of | numbers | and | returns | the | average | .
+```
+
+The exact tokens depend on the model's tokenizer. Some words may be whole tokens. Some may be split into fragments. Punctuation may be its own token.
+
+For the reader, the important point is that the model begins with tokenised symbols, not with a human understanding of the whole sentence.
+
+### Step 2: Tokens Become Numbers
+
+Each token is converted into a numerical representation.
+
+The token `Python` becomes numbers.
+
+The token `function` becomes numbers.
+
+The token `average` becomes numbers.
+
+Those numbers do not simply mean "dictionary definition of Python" or "dictionary definition of average". They represent learned relationships from training: how those tokens have appeared in code, tutorials, documentation, examples, questions, answers, and surrounding language.
+
+The model now has a numerical version of the prompt.
+
+### Step 3: The Network Builds A Representation Of The Task
+
+The prompt passes through layers.
+
+Early processing may recognise local patterns:
+
+```text
+Python
+function
+list of numbers
+returns
+average
+```
+
+Later processing can combine these into a task structure:
+
+```text
+language = Python
+artifact = function
+input = list of numbers
+operation = compute average
+output = number
+```
+
+The model may also infer common programming concerns:
+
+```text
+Need a function name.
+Need a parameter.
+Need sum(numbers).
+Need len(numbers).
+Need division.
+Maybe handle empty list.
+```
+
+No programmer wrote a special rule saying:
+
+```text
+If user says "average of list", write sum(numbers) / len(numbers).
+```
+
+Instead, the model has learned from many examples that requests about averages, lists, and Python functions are often represented with `sum`, `len`, parameters, return statements, and division.
+
+### Step 4: The Model Predicts The Output One Token At A Time
+
+The model does not generate the whole function in one single act.
+
+It generates output step by step.
+
+It may begin by predicting that a likely first token is:
+
+```python
+def
+```
+
+Given:
+
+```python
+def
+```
+
+and the original prompt, a likely continuation is a function name:
+
+```python
+average
+```
+
+Then:
+
+```python
+(
+```
+
+Then:
+
+```python
+numbers
+```
+
+Then:
+
+```python
+):
+```
+
+The output grows:
+
+```python
+def average(numbers):
+```
+
+At each step, the model uses the prompt, the tokens it has already generated, and its learned relationships to predict the next useful token.
+
+This is why AI-generated code can look intentional even though it is produced token by token. Each token is conditioned by the task representation and the preceding output.
+
+### Step 5: The Output Becomes A Symbolic Program
+
+Eventually the generated tokens form valid Python:
+
+```python
+def average(numbers):
+    if not numbers:
+        return 0
+    return sum(numbers) / len(numbers)
+```
+
+Python is a symbolic language. The interpreter can execute it because the generated text obeys Python's syntax and semantics.
+
+The AI did not "become Python". It generated a symbolic representation that Python can execute.
+
+That is the central idea:
+
+```text
+Human intent
+↓
+learned mathematical representation
+↓
+generated symbolic program
+↓
+machine execution
+```
+
+### Step 6: Verification Still Matters
+
+The answer may look correct, but it still contains choices.
+
+Should an empty list return `0`?
+
+Should it raise an error?
+
+Should it return `None`?
+
+Should it handle decimals?
+
+Should it reject non-numeric values?
+
+Should it use type hints?
+
+The prompt did not say.
+
+So the model filled the gap with a plausible assumption.
+
+That is why requirements and verification matter. The model can generate a likely implementation, but someone must decide whether the assumptions match the intended behaviour.
+
+## Short Prompt Versus Long Prompt
+
+Now compare the short prompt with a more precise one:
+
+```text
+Write a Python function called average_score that takes a list of numbers.
+If the list is empty, raise ValueError.
+Ignore None values.
+Return the result rounded to two decimal places.
+Include type hints and a docstring.
+```
+
+This prompt has more tokens, but it also gives the model more constraints.
+
+The model now has to represent more requirements:
+
+```text
+function name = average_score
+input = list of numbers
+ignore None
+empty list after filtering = error
+round output to 2 decimal places
+include type hints
+include docstring
+```
+
+A plausible output becomes:
+
+```python
+from typing import Iterable
+
+
+def average_score(scores: Iterable[float | None]) -> float:
+    """Return the average score rounded to two decimal places, ignoring None values."""
+    valid_scores = [score for score in scores if score is not None]
+    if not valid_scores:
+        raise ValueError("average_score requires at least one numeric score")
+    return round(sum(valid_scores) / len(valid_scores), 2)
+```
+
+The longer prompt costs more because the model must read and represent more input tokens. The output also costs more because it generates more code and explanation.
+
+But the longer prompt may reduce ambiguity. It may prevent the model from inventing the wrong behaviour.
+
+This is the trade-off:
+
+```text
+Short prompt
+↓
+fewer tokens
+↓
+cheaper
+↓
+more assumptions
+
+Longer precise prompt
+↓
+more tokens
+↓
+more expensive
+↓
+fewer hidden assumptions
+```
+
+The cheapest prompt is not always the most economical prompt. If a vague prompt produces wrong software, the cost returns later as debugging, testing, rework, or failure.
+
+## What Changes With A Harder Prompt?
+
+Now imagine a harder request:
+
+```text
+Review this Python billing module, identify why some customers are charged twice,
+write a safer implementation, generate tests, and explain the migration risk.
+```
+
+This is not merely a longer version of the average function.
+
+The model may need:
+
+- source files
+- database schema
+- logs
+- test failures
+- billing rules
+- previous discussion
+- edge cases
+- existing naming conventions
+- security constraints
+- migration requirements
+
+It must also perform more reasoning:
+
+```text
+What is the billing workflow?
+Where can duplicate charges occur?
+Which code path is risky?
+What change is safest?
+What tests prove the fix?
+What migration risk remains?
+```
+
+The output may include:
+
+- explanation
+- code changes
+- tests
+- migration notes
+- risk assessment
+- rollback plan
+
+That is why some AI tasks are expensive. The cost is not only the length of the user's prompt. It is the amount of context, reasoning, generated output, tool use, and verification needed to produce a useful result.
+
+In a coding agent, the process may involve multiple loops:
+
+```text
+read files
+↓
+infer architecture
+↓
+edit code
+↓
+run tests
+↓
+read errors
+↓
+revise code
+↓
+summarise result
+```
+
+Each loop consumes more tokens and compute.
+
+This is why "reasoning" has an economic meaning. It is not just intelligence. It is work performed by the model.
+
 ## The Role of Context
 
 AI does not generate software from the prompt alone. It uses the prompt plus whatever context is available.
@@ -129,7 +512,7 @@ Context may include:
 - Test output.
 - Project conventions.
 
-The [[10-context-what-the-model-knows-right-now|context window]] is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
+The [[Context Windows|context window]] is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
 
 This is why AI-assisted software development often works best as an iterative process. The human supplies context, examines output, adds correction, narrows the task, tests the result, and asks for revision. The model generates proposals. The human and surrounding tools evaluate them.
 
@@ -171,7 +554,7 @@ A generated function may compile but mishandle edge cases. A database query may 
 
 The model's output is a proposal, not a guarantee.
 
-This is why [[13-precision-and-probabilistic-ai|Software Verification]] becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
+This is why [[Software Verification]] becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
 
 AI can help with verification too. It can write tests, explain failures, identify suspicious code, and suggest edge cases. But AI-generated tests must themselves be reviewed. The system cannot be trusted merely because the same technology generated both the code and the test.
 
@@ -185,7 +568,7 @@ For example, a language-learning application might contain an AI quiz feature. I
 
 That prompt is not casual conversation. It is a behavioural specification.
 
-This is [[11-communication-becomes-the-interface|Natural Language Programming]]. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
+This is [[Natural Language Programming]]. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
 
 ## Radix Field Note: The Prompt Became the Program
 

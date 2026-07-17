@@ -32,6 +32,10 @@ An AI model is a mathematical representation of patterns learned from data. It i
 
 Architecture is the high-level structure of a software system: its components, boundaries, data flows, responsibilities, integrations, trade-offs, and constraints. As AI makes code easier to generate, architecture becomes more important because someone still has to decide how the system should fit together.
 
+## Codex
+
+Codex is the AI coding agent used in this book as the recurring concrete example of the "genie in the bottle." It represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
+
 ## Context
 
 Context is information that helps an AI system interpret a task. The word has several meanings in the book:
@@ -110,6 +114,14 @@ Software verification is the process of checking whether software behaves correc
 
 System integration is the work of making different software systems communicate and operate together. It is especially important in enterprises with legacy systems, databases, packaged applications, APIs, and custom software built over many decades.
 
+## Token
+
+A token is a piece of information processed by an AI model. In text, a token may be a word, part of a word, punctuation mark, number, or code fragment. In multimodal systems, images, audio, and video may be broken into different kinds of processable units. Tokens matter because context windows, inference cost, latency, and model behaviour are all affected by how much information the model must process.
+
+## Tokenizer
+
+A tokenizer is the system that breaks input into tokens before the model processes it. Different tokenizers may split the same text or code differently. The important point is that the model does not receive human meaning directly; it receives numerical representations of tokens.
+
 ## Training
 
 Training is the process by which an AI model learns patterns from data. It requires large amounts of computation and adjusts the model's parameters. Training is usually a capital-intensive process; inference is the ongoing cost of using the trained model.
@@ -120,16 +132,18 @@ Trust is the degree to which people and organisations are willing to rely on AI 
 
 ## Related Notes
 
-- TERMINOLOGY
-- Three Meanings of Context
-- [[06-what-is-an-ai-model|What Is an AI Model]]
-- Neural Networks
-- [[09-economics-of-models|Training]]
-- [[09-economics-of-models|Inference]]
-- [[14-economics-of-trust|The Economics of Trust]]
+- [[TERMINOLOGY]]
+- [[Three Meanings of Context]]
+- [[What Is an AI Model]]
+- [[Neural Networks]]
+- [[Tokens]]
+- [[Training]]
+- [[Inference]]
+- [[The Economics of Trust]]
+- [[CODEX_AS_THE_GENIE]]
 
 ## Future Work
 
 - Add page references after the manuscript stabilises.
 - Decide whether glossary entries should include short examples.
-- Align this glossary with TERMINOLOGY before publication.
+- Align this glossary with [[TERMINOLOGY]] before publication.
