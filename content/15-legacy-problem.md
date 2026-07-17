@@ -74,7 +74,7 @@ This is why "big bang" replacement is dangerous. Switching everything at once co
 
 Because organisations cannot replace everything overnight, new systems must coexist with old ones.
 
-This creates System Integration.
+This creates [[15-legacy-problem|System Integration]].
 
 Modern applications must communicate with mainframes, COBOL systems, Oracle databases, SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms.
 

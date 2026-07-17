@@ -56,7 +56,7 @@ It can query a database, run a compiler, call an API, send an email, modify a fi
 
 Anthropic's tool-use documentation makes this boundary clear: the model selects a structured tool call, and the surrounding application or server-side environment executes it. OpenAI's Agents SDK similarly treats repeated tool calls, branching, handoffs, tracing, guardrails, and approval pauses as parts of agent engineering. The Model Context Protocol pushes the same idea into system integration by standardising how AI applications connect to external data sources, tools, and workflows. See AI Agents Tool Use and Reliability.
 
-This is where System Integration becomes central. An AI agent is valuable only if it connects to real systems. But every connection creates risk. What data can it access? What actions can it take? Which permissions apply? What happens if it misunderstands? How are actions logged? Can a human review before execution? Can the system roll back mistakes?
+This is where [[15-legacy-problem|System Integration]] becomes central. An AI agent is valuable only if it connects to real systems. But every connection creates risk. What data can it access? What actions can it take? Which permissions apply? What happens if it misunderstands? How are actions logged? Can a human review before execution? Can the system roll back mistakes?
 
 The more capable the agent, the more important the boundaries.
 
@@ -64,7 +64,7 @@ The more capable the agent, the more important the boundaries.
 
 Agents depend on context.
 
-They need to know the goal, the available tools, the current state, previous steps, constraints, user preferences, relevant documents, and system rules. The context window becomes working memory.
+They need to know the goal, the available tools, the current state, previous steps, constraints, user preferences, relevant documents, and system rules. The [[10-context-what-the-model-knows-right-now|context window]] becomes working memory.
 
 For simple tasks, context may be small. For complex engineering work, context may include many files, test results, design notes, issue history, logs, and previous decisions. If the agent lacks context, it may act confidently on incomplete information. If it has too much context, it may focus on the wrong details.
 

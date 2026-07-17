@@ -6,6 +6,23 @@ title: "Context: What the Model Knows Right Now"
 
 ![Three meanings of context](figures/FIG-09-01 Three Meanings of Context.png)
 
+## Purpose
+
+This chapter explains context from first principles.
+
+The previous chapters explained what an AI model is, how neural networks learn relationships, how AI can convert English into software, and why model capability has economic cost. But one crucial idea still needs its own foundation:
+
+> An AI model's behaviour depends not only on what it learned during training, but on what information it is given at the moment it is used.
+
+That surrounding information is context.
+
+Without this idea, many later arguments in the book remain incomplete. Context explains why prompts matter, why requirements matter, why long context windows matter, why AI agents need memory, why senior engineers still have advantages, why enterprise knowledge may become a strategic asset, and why AI can be brilliant in general while still making poor decisions inside a specific project.
+
+## Central Question
+
+What does an AI need to know right now in order to act intelligently in a particular situation?
+
+## Core Ideas
 
 - Context is the surrounding information that gives an instruction meaning.
 - A model's training gives it general capability; context gives it situation-specific relevance.
@@ -30,7 +47,7 @@ Once context is understood, the next question becomes clearer:
 
 > If context gives AI its situation-specific intelligence, how should humans communicate intent, requirements, constraints, and examples clearly enough for AI to act on them?
 
-That leads naturally to 09 Communication Becomes the Interface.
+That leads naturally to [[11-communication-becomes-the-interface|09 Communication Becomes the Interface]].
 
 ## The Simplest Definition
 
@@ -107,7 +124,7 @@ This knowledge persists across conversations. When a new conversation begins, th
 
 ### Context 2: The Context Window
 
-The second meaning is the context window.
+The second meaning is the [[10-context-what-the-model-knows-right-now|context window]].
 
 This is the information available to the model during the current inference session.
 
@@ -253,7 +270,7 @@ When an AI model is used, it does not automatically have access to everything it
 
 It has access to the information placed into its current working area.
 
-That working area is usually called the context window.
+That working area is usually called the [[10-context-what-the-model-knows-right-now|context window]].
 
 The context window contains the information the model can consider during inference. It may include:
 
@@ -684,3 +701,33 @@ If context determines what the model can understand in a specific situation, the
 In the age of AI, communication is no longer a preliminary step before software development.
 
 Communication becomes part of software development itself.
+
+## Related Notes
+
+- [[10-context-what-the-model-knows-right-now|Context Windows]]
+- AI Memory
+- Three Meanings of Context
+- The Economics of Context
+- Context as the Missing Ingredient
+- Enterprise Context
+- Enterprise Knowledge Architecture
+- Enterprise Intelligence Layer
+- [[06-what-is-an-ai-model|AI Models]]
+- [[09-economics-of-models|Inference]]
+- [[09-economics-of-models|Training]]
+- [[11-communication-becomes-the-interface|Prompt Engineering]]
+- [[12-requirements-engineering|Requirements Engineering]]
+- AI Agents
+- [[15-legacy-problem|System Integration]]
+- [[13-precision-and-probabilistic-ai|Software Verification]]
+- [[11-communication-becomes-the-interface|09 Communication Becomes the Interface]]
+- [[12-requirements-engineering|09A Requirements Engineering]]
+- [[16-agents-tools-and-integrated-systems|12 Agents Tools and Integrated Systems]]
+
+## Future Work
+
+- Add a diagram showing model knowledge, prompt, context window, retrieval, memory, tools, and enterprise data sources.
+- Research current context-window cost, latency, and retrieval trade-offs before publication.
+- Add a concrete Radix example showing how missing context changes an AI-generated result.
+- Add a production example where stale documentation or missing project context leads to a software error.
+- Decide whether this chapter remains `08A` or becomes Chapter 9 in Version 0.2, with later Part IV chapters renumbered.

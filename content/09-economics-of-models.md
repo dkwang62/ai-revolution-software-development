@@ -78,7 +78,7 @@ This is why the future will likely contain many models rather than one universal
 
 ## Context Windows as Working Memory
 
-The context window is the amount of information a model can consider during inference.
+The [[10-context-what-the-model-knows-right-now|context window]] is the amount of information a model can consider during inference.
 
 For software development, context is crucial. A model asked to modify one function may need only a small amount of context. A model asked to refactor a module may need more. A model asked to reason about an entire codebase may need much more.
 

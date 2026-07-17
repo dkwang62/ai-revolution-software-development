@@ -4,6 +4,15 @@ title: "Conclusion: When Intent Becomes Software"
 
 # Conclusion: When Intent Becomes Software
 
+## Purpose
+
+Bring the book's argument to a close by connecting software economics, abstraction, AI models, human intent, enterprise knowledge, and the future of programming.
+
+## Central Question
+
+What has really changed when ordinary language can begin to produce working software?
+
+## Core Ideas
 
 This book began with a practical mystery.
 
@@ -249,3 +258,21 @@ Artificial intelligence lowering the cost of expressing it.
 - Enterprise advantage may come from organising knowledge so that AI can use it safely and effectively.
 - As code becomes cheaper, judgement, trust, requirements, architecture, and domain knowledge become more valuable.
 - Human intent remains central, but the machinery for expressing that intent is changing.
+
+## Related Notes
+
+- BOOK_THESIS
+- The Economic Adoption Principle
+- The Law of Abstraction
+- [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]]
+- [[14-economics-of-trust|The Economics of Trust]]
+- Enterprise Intelligence Layer
+- [[17-what-becomes-scarce-when-code-becomes-cheap|What Becomes Scarce When Code Becomes Cheap]]
+- [[18-future-of-programmers|The Future of Programmers]]
+- AGI and Human Intent
+
+## Future Work
+
+- Tune the emotional ending after the rest of Version 0.2 is revised.
+- Decide whether the final sentence should return explicitly to Radix.
+- Add one final illustration: `Idea -> Context -> AI -> Verification -> Software`.

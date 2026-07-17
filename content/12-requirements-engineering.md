@@ -10,7 +10,7 @@ That description is too small.
 
 The deeper shift is from programming languages toward requirements. If AI can produce code quickly, the most important question is no longer only whether humans can write the implementation. It is whether humans can define the intended behaviour clearly enough for the system to build, evaluate, and maintain it.
 
-This is why Requirements Engineering deserves its own place in the book. It is not the same as Prompt Engineering. Prompt engineering is one visible technique. Requirements engineering is the larger discipline of deciding what the system should do, why it should do it, under which conditions it should behave differently, and how anyone will know whether the result is correct.
+This is why [[12-requirements-engineering|Requirements Engineering]] deserves its own place in the book. It is not the same as [[11-communication-becomes-the-interface|Prompt Engineering]]. Prompt engineering is one visible technique. Requirements engineering is the larger discipline of deciding what the system should do, why it should do it, under which conditions it should behave differently, and how anyone will know whether the result is correct.
 
 Traditional software often followed a path like this:
 
@@ -143,7 +143,7 @@ Modern AI applications may use:
 
 These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
 
-Memory therefore connects Requirements Engineering to Context Windows, System Integration, AI Agents, and Software Verification. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
+Memory therefore connects [[12-requirements-engineering|Requirements Engineering]] to [[10-context-what-the-model-knows-right-now|Context Windows]], [[15-legacy-problem|System Integration]], AI Agents, and [[13-precision-and-probabilistic-ai|Software Verification]]. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
 
 ## Agents Require Requirements Discipline
 

@@ -4,7 +4,7 @@ title: "Bibliography and Evidence Notes"
 
 # Bibliography and Evidence Notes
 
-This draft is primarily an explanatory manuscript, not an academic textbook. Still, several of its major claims depend on external evidence. The notes below identify the main sources used in this version and explain how they should be interpreted.
+This draft is primarily an explanatory manuscript, not an academic textbook. Still, several of its major claims depend on external evidence. The notes below identify the main sources used in this version and explain how they should be interpreted. They also separate measured evidence, estimates, and inference so the book does not overclaim.
 
 ## Software Labour Market
 
@@ -60,18 +60,26 @@ How this book uses them:
 - To support the argument that productivity must be measured at the system level, not just by code output.
 - To explain why verification, architecture, trust, and maintainability become more important when generation becomes cheaper.
 
-## Software Quality and Maintenance
+## Software Quality, Maintenance, and Technical Debt
 
-The draft uses existing research notes on software quality, maintenance, technical debt, and poor software quality costs. These should be strengthened before publication with final source review and exact citations.
+The draft uses evidence on software quality, maintenance, technical debt, and poor software quality costs to show that the cost of software does not end when the first version is written.
+
+Sources:
+
+- [Consortium for Information & Software Quality, The Cost of Poor Software Quality in the US: A 2022 Report](https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2022-report.htm)
+- [McKinsey, Tech debt: Reclaiming tech equity](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity)
 
 How this book uses them:
 
 - To support the claim that software cost continues after initial development.
 - To explain why AI-generated code is not automatically cheap if it creates quality, security, or maintenance burdens.
+- To frame legacy modernisation as capital preservation, not merely old-code cleanup.
 
 ## Capital Allocation
 
 The book treats major AI infrastructure investment as evidence of belief rather than proof of success. Large capital commitments by AI labs, cloud providers, chip companies, and platform firms show what informed actors consider worth betting on.
+
+Sources for this theme should include annual reports, earnings calls, investor presentations, capital-expenditure announcements, and infrastructure disclosures from companies such as Microsoft, Alphabet, Amazon, Meta, NVIDIA, OpenAI, Anthropic, and xAI. The specific figures will need updating close to publication because AI capital expenditure is changing quickly.
 
 How this book uses it:
 
@@ -81,6 +89,16 @@ How this book uses it:
 Important caveat:
 
 Capital expenditure is not proof that the investment will pay off. It is evidence that major firms believe the expected returns justify the risk.
+
+## Enterprise AI ROI
+
+The strongest current evidence for Enterprise AI ROI is project-based rather than enterprise-wide. This book therefore treats enterprise-wide intelligence layers as a hypothesis built from narrower use cases, not as a proven universal outcome.
+
+How this book uses current evidence:
+
+- Software-development assistants, customer-support automation, legal review, document analysis, and internal search can each be analysed as separate business cases.
+- If many separate use cases require the same retrieval, governance, permissions, evaluation, and orchestration infrastructure, a shared Enterprise Intelligence Layer may emerge economically.
+- The book's stronger claim is incremental: small ROI cases can accumulate into shared infrastructure. The weaker claim would be pretending that every company can already prove enterprise-wide transformation in advance.
 
 ## Claims Discipline
 

@@ -4,6 +4,15 @@ title: "Author and AI Note"
 
 # Author and AI Note
 
+## Purpose
+
+This note explains how this manuscript was created and why the authorship question is part of the book rather than a footnote to it.
+
+## Central Question
+
+Who is the author of a book whose words were largely drafted with artificial intelligence, but whose questions, structure, judgement, and purpose came from a human being?
+
+## Core Ideas
 
 This book was developed through a collaboration between Desmond Kwang and artificial intelligence systems including ChatGPT, Codex, and other AI tools.
 
@@ -43,3 +52,17 @@ By that standard, this is a human-authored book written with artificial intellig
 ## Bridge to Introduction
 
 The same pattern appears in software. AI can generate code, but the harder question is still what should be built, why it should exist, and whether it achieves its purpose. That is where this book begins.
+
+## Related Notes
+
+- Introduction - Writing a Book the Same Way I Built an App
+- AGI and Human Intent
+- [[11-communication-becomes-the-interface|Natural Language Programming]]
+- [[11-communication-becomes-the-interface|Communication Becomes the Interface]]
+- [[18-future-of-programmers|The Future of Programmers]]
+
+## Future Work
+
+- Decide whether this note belongs before the introduction, after the introduction, or in the appendix.
+- Add final disclosure language before publication.
+- Review publisher and platform requirements for AI-assisted authorship disclosure.

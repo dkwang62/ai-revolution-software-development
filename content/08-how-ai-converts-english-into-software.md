@@ -14,11 +14,9 @@ At first, the experience feels almost magical. A person describes a feature. The
 
 But the point of this book is not to admire the magic. It is to understand how the trick works.
 
-The answer is not that AI has memorised every possible program. It has not.
+The explanation is neither memorisation nor secret fluency in Swift, Python, JavaScript, or SQL.
 
-The answer is not that AI thinks in Swift, Python, JavaScript, or SQL. It does not.
-
-The answer is that software is a representation of procedure, and AI models can learn relationships among different representations of procedure: English, examples, pseudocode, documentation, source code, tests, errors, and explanations.
+The explanation is representation. Software is a representation of procedure, and AI models can learn relationships among different representations of procedure: English, examples, pseudocode, documentation, source code, tests, errors, and explanations.
 
 ## Software Is Procedure
 
@@ -131,7 +129,7 @@ Context may include:
 - Test output.
 - Project conventions.
 
-The context window is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
+The [[10-context-what-the-model-knows-right-now|context window]] is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
 
 This is why AI-assisted software development often works best as an iterative process. The human supplies context, examines output, adds correction, narrows the task, tests the result, and asks for revision. The model generates proposals. The human and surrounding tools evaluate them.
 
@@ -173,7 +171,7 @@ A generated function may compile but mishandle edge cases. A database query may 
 
 The model's output is a proposal, not a guarantee.
 
-This is why Software Verification becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
+This is why [[13-precision-and-probabilistic-ai|Software Verification]] becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
 
 AI can help with verification too. It can write tests, explain failures, identify suspicious code, and suggest edge cases. But AI-generated tests must themselves be reviewed. The system cannot be trusted merely because the same technology generated both the code and the test.
 
@@ -187,7 +185,17 @@ For example, a language-learning application might contain an AI quiz feature. I
 
 That prompt is not casual conversation. It is a behavioural specification.
 
-This is Natural Language Programming. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
+This is [[11-communication-becomes-the-interface|Natural Language Programming]]. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
+
+## Radix Field Note: The Prompt Became the Program
+
+This became obvious while building the quiz feature in Radix.
+
+The feature looked simple from the outside: choose captured Chinese material and ask the AI to create a practice quiz. But the real behaviour was not simple at all. The quiz had to draw from the learner's material, use Chinese and English in controlled ways, avoid giving away the answer too early, manage pinyin carefully, ask one question at a time, and keep the interaction moving like a patient teacher rather than a generic chatbot.
+
+I could have tried to encode every rule directly in Swift or Python. Instead, much of the behaviour moved into a long English specification. When the quiz behaved badly, I did not always debug a function. Sometimes I debugged the instruction: a missing constraint, an ambiguous phrase, an unstated edge case, or an output format the app could not safely consume.
+
+That was the moment when "prompt" became too small a word. The text was acting like a program, but at a higher level of abstraction.
 
 This does not mean all software becomes prompts. Conventional code remains essential for user interfaces, databases, security, networking, payments, permissions, performance, and deterministic execution. But for tasks involving language, reasoning, classification, generation, or explanation, natural-language specifications can become part of the software's behaviour.
 

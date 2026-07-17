@@ -80,7 +80,7 @@ In a world of cheap generation, judgement becomes a central human contribution.
 
 The more software we generate, the more we need to know what can be trusted.
 
-This is the lesson from Software Verification and Precision. AI can produce code, explanations, tests, summaries, and decisions quickly. But speed does not prove correctness.
+This is the lesson from [[13-precision-and-probabilistic-ai|Software Verification]] and [[13-precision-and-probabilistic-ai|Precision]]. AI can produce code, explanations, tests, summaries, and decisions quickly. But speed does not prove correctness.
 
 Trust requires evidence. Tests, reviews, monitoring, structured outputs, validations, audits, and human oversight become more important when output becomes abundant.
 

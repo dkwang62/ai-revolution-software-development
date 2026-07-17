@@ -6,6 +6,15 @@ title: "The Enterprise Intelligence Layer"
 
 ![The enterprise intelligence layer](figures/FIG-17-01 Enterprise Intelligence Layer.png)
 
+## Purpose
+
+Explain why the next major enterprise software platform may not be another application, but a layer that connects AI models to organisational knowledge, workflows, permissions, and verification.
+
+## Central Question
+
+If companies can rent general intelligence from frontier AI providers, what must they still own?
+
+## Core Ideas
 
 For most organisations, the strategic question is not whether they should build their own GPT, Claude, Gemini, or Grok.
 
@@ -324,3 +333,24 @@ Without the vehicle, the engine has nowhere useful to go.
 ## Bridge to Next Chapter
 
 If enterprises can turn organisational knowledge into an AI-usable asset, the final question becomes larger than software. What happens when human intent, institutional memory, and machine intelligence become part of the same creative system?
+
+## Related Notes
+
+- Enterprise Intelligence Layer
+- Enterprise Knowledge Architecture
+- Enterprise AI ROI
+- Emergent Enterprise Intelligence Layer
+- Enterprise Throughput
+- Three Meanings of Context
+- The Economics of Context
+- [[10-context-what-the-model-knows-right-now|Context Windows]]
+- [[15-legacy-problem|Legacy Systems]]
+- [[15-legacy-problem|System Integration]]
+- [[14-economics-of-trust|The Economics of Trust]]
+
+## Future Work
+
+- Add sourced examples of focused enterprise AI ROI.
+- Add a figure comparing context window, effective context, enterprise knowledge, and enterprise intelligence layer.
+- Add a figure comparing ERP and Enterprise AI.
+- Decide whether this chapter belongs before or after `What Becomes Scarce When Code Becomes Cheap`.

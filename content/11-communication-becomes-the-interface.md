@@ -4,7 +4,7 @@ title: "Communication Becomes the Interface"
 
 # Communication Becomes the Interface
 
-The previous chapters explained how AI can convert human intent into software, why model capability has economic cost, and why context determines what the model knows right now. That ability changes the technical process of software development, but it also changes the human process.
+The previous chapters explained how AI can convert human intent into software, why model capability has economic cost, and why [[10-context-what-the-model-knows-right-now|context]] determines what the model knows right now. That ability changes the technical process of software development, but it also changes the human process.
 
 If AI can translate ordinary language into code, then language itself becomes part of the development environment.
 
@@ -20,9 +20,7 @@ The phrase "prompt engineering" can make the work sound new and exotic. Sometime
 
 But for many users, prompt engineering is an old discipline under a new name.
 
-It is communication.
-
-It is the ability to define the objective, provide context, explain constraints, give examples, specify format, identify edge cases, state what should not happen, and evaluate whether the result satisfies the need.
+Much of it is disciplined communication: defining the objective, providing context, explaining constraints, giving examples, specifying format, identifying edge cases, stating what should not happen, and evaluating whether the result satisfies the need.
 
 This is not a soft skill sitting outside technology. In AI-assisted software development, communication becomes the interface through which human expertise reaches machine intelligence.
 
@@ -38,7 +36,7 @@ AI reduces friction. That is one of its great strengths.
 
 It also means bad ideas can become working prototypes very quickly.
 
-This makes Requirements Engineering more important, not less. If AI can produce software from a description, the quality of the description matters enormously. The user must define what the system should do, for whom, under which conditions, with which exceptions, using which data, and with which constraints.
+This makes [[12-requirements-engineering|Requirements Engineering]] more important, not less. If AI can produce software from a description, the quality of the description matters enormously. The user must define what the system should do, for whom, under which conditions, with which exceptions, using which data, and with which constraints.
 
 The question changes from:
 
@@ -77,11 +75,13 @@ A production prompt may need to specify:
 
 At that point, the prompt is no longer a casual request. It is a behavioural contract.
 
-This is the core idea in Natural Language Programming. Some software behaviour can now be expressed through carefully engineered natural-language specifications interpreted by a model.
+This is the core idea in [[11-communication-becomes-the-interface|Natural Language Programming]]. Some software behaviour can now be expressed through carefully engineered natural-language specifications interpreted by a model.
 
 The language is English, but the discipline resembles programming.
 
 ## The Radix Example
+
+![Radix AI Create Quiz prompt](figures/radix-ai-create-quiz-prompt.png)
 
 The Radix quiz prompt is a useful example because it shows natural language becoming operational.
 
@@ -89,7 +89,7 @@ The prompt does not merely ask the AI to be helpful. It defines a task: create a
 
 That is software behaviour expressed in ordinary language.
 
-The screenshot stored as Radix AI Create Quiz Prompt.png should eventually appear in this chapter because it makes the argument concrete. The reader can see that the prompt is not a magic phrase. It is a structured specification.
+The screenshot matters because the reader can see the difference between a magic phrase and a specification. The task is surrounded by rules, sequence, exclusions, source material, and expected interaction. That is the hidden labour behind a feature that may feel effortless to the user.
 
 This example also shows why the term "programming" is changing. The author was not implementing the quiz entirely in Swift or Python. He was defining behaviour through a prompt that the AI model would interpret during use. The result still depended on conventional software around it: user interface, storage, captured text, model selection, and result handling. But part of the behaviour moved upward into natural language.
 

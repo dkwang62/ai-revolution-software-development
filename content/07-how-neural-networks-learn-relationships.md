@@ -129,7 +129,7 @@ The adjustable-dials analogy helps. Imagine a machine with vast numbers of dials
 
 Those settings are not a readable rulebook. They are distributed mathematical relationships.
 
-This is why Training is expensive. It requires data, computation, specialised hardware, engineering judgement, experimentation, and evaluation. It is not simply "installing knowledge" into a computer. It is an industrial process for producing a useful learned representation.
+This is why [[09-economics-of-models|Training]] is expensive. It requires data, computation, specialised hardware, engineering judgement, experimentation, and evaluation. It is not simply "installing knowledge" into a computer. It is an industrial process for producing a useful learned representation.
 
 ## Vectors and Neighbourhoods
 

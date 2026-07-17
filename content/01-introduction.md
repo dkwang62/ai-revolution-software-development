@@ -14,7 +14,7 @@ The deeper change is this:
 
 For the first time in computing history, ordinary human intent can be translated into working software with far less direct contact with programming languages than before.
 
-That does not mean programming has become easy. It does not mean software engineering is obsolete. It does not mean anyone can casually describe a vague idea and receive a reliable production system. But it does mean the boundary between human intention and machine execution has moved.
+That does not make programming easy, or software engineering obsolete, or vague ideas magically reliable. It does mean the boundary between human intention and machine execution has moved.
 
 That boundary has been moving for seventy years.
 
@@ -100,13 +100,7 @@ Finally, the book looks forward. It does not pretend to know the future. Instead
 
 ## What This Book Is Not
 
-This is not a tutorial on Python, Swift, or JavaScript.
-
-It is not a prompt cookbook.
-
-It is not a mathematical textbook on neural networks.
-
-It is not a product guide to ChatGPT, Claude, Gemini, Codex, or any other current tool.
+This book is not trying to be a Python, Swift, or JavaScript tutorial; a prompt cookbook; a mathematical textbook on neural networks; or a product guide to ChatGPT, Claude, Gemini, Codex, or any other current tool.
 
 Those tools will change. Some may disappear. New ones will arrive. The durable subject is not any particular product. The durable subject is the movement of programming upward, away from machine-oriented instructions and closer to human intent.
 

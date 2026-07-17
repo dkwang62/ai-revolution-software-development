@@ -48,7 +48,7 @@ The model is a map, not the territory.
 
 ## Training Creates the Model
 
-An AI model does not appear fully formed. It is created through Training.
+An AI model does not appear fully formed. It is created through [[09-economics-of-models|Training]].
 
 Imagine, very loosely, showing a child enormous numbers of books, conversations, diagrams, code examples, explanations, questions, answers, images, and corrections. Over time, the child begins to recognise patterns. They learn grammar, style, facts, procedures, cause and effect, social cues, and relationships among ideas.
 
@@ -74,7 +74,7 @@ This helps explain why AI companies invest in training. Training is expensive be
 
 ## Inference Uses the Model
 
-Inference is the use of a trained model to produce an output.
+[[09-economics-of-models|Inference]] is the use of a trained model to produce an output.
 
 When a user asks an AI system to write a Swift function, explain a legal clause, summarise a report, translate a sentence, or generate a quiz, the system is not retraining itself from scratch. It is using the trained model.
 

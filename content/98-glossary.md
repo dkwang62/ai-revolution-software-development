@@ -4,6 +4,17 @@ title: "Glossary"
 
 # Glossary
 
+## Purpose
+
+Define the most important terms in plain English so that intelligent readers without a computer science background can follow the book's argument.
+
+This glossary is intentionally practical rather than academic. It defines terms as they are used in this book.
+
+## Central Question
+
+Which terms must readers understand before the book's central argument becomes clear?
+
+## Key Terms
 
 ## Abstraction
 
@@ -106,3 +117,19 @@ Training is the process by which an AI model learns patterns from data. It requi
 ## Trust
 
 Trust is the degree to which people and organisations are willing to rely on AI in real workflows. Trust is not created by intelligence alone. It depends on reliability, security, governance, auditability, explainability, verification, and human accountability.
+
+## Related Notes
+
+- TERMINOLOGY
+- Three Meanings of Context
+- [[06-what-is-an-ai-model|What Is an AI Model]]
+- Neural Networks
+- [[09-economics-of-models|Training]]
+- [[09-economics-of-models|Inference]]
+- [[14-economics-of-trust|The Economics of Trust]]
+
+## Future Work
+
+- Add page references after the manuscript stabilises.
+- Decide whether glossary entries should include short examples.
+- Align this glossary with TERMINOLOGY before publication.

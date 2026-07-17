@@ -18,7 +18,7 @@ This creates the central engineering tension of AI-assisted software:
 
 > How can probabilistic intelligence be used inside systems that require reliable behaviour?
 
-The answer is not to pretend AI is deterministic. The answer is to design hybrid systems.
+The solution is not to pretend AI is deterministic. The solution is to design hybrid systems.
 
 There is another distinction underneath this problem. Truth and Fitness for Purpose asks why AI often gives similar answers when explaining established knowledge, such as Einstein's theory of relativity, but produces very different answers when asked to design a hotel reservation system. The reason is not simply that one task is deterministic and the other is probabilistic.
 
@@ -71,6 +71,16 @@ evidence: short explanation
 Structure reduces ambiguity. It allows conventional software to validate fields, reject invalid values, require missing data, and route cases appropriately.
 
 Structured output does not make AI correct. A model can place the wrong value into a valid field. But structure makes mistakes easier to detect and contain.
+
+## Radix Field Note: Testing Behaviour, Not Syntax
+
+The Radix quiz feature also shows why precision changes shape in AI systems.
+
+The problem was not only whether a generated prompt looked well written. The real test was behavioural. Did the quiz ask one question and then stop? Did it avoid revealing the answer before the learner replied? Did it keep pinyin out of the wrong places? Did it use the captured material rather than drifting into generic Chinese practice? Did the result remain useful when opened in Gemini, Claude, ChatGPT, or another model?
+
+Those questions are closer to product tests than grammar checks. A prompt can be fluent and still fail the feature. A model response can be impressive and still violate the rules. The engineering task is to define which behaviours are allowed, which are forbidden, and which failures should cause the app to ask for correction, retry, or hand control back to the user.
+
+That is why AI precision cannot mean identical output every time. It has to mean dependable behaviour inside a controlled boundary.
 
 ## Validation
 
@@ -126,7 +136,7 @@ Evaluation must therefore measure outcome, not only string equality.
 
 Developers may need datasets of representative cases, edge cases, adversarial examples, safety checks, format checks, groundedness checks, and human review. They may need to monitor production outputs over time because model behaviour can drift or change after upgrades.
 
-This is why Software Verification becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
+This is why [[13-precision-and-probabilistic-ai|Software Verification]] becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
 
 ## Versioning Models and Prompts
 

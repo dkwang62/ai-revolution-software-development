@@ -86,6 +86,10 @@ This person may not have a traditional computer-science background. They may not
 
 The author's experience with Radix belongs in this category. A non-professional programmer, driven by a specific domain problem, used AI to build increasingly sophisticated software. That was much less realistic before modern AI coding tools.
 
+Radix is also a useful caution against an overly cheerful version of the story. The tools were available, but the tools were not enough. Building the app still required months of product decisions, testing, debugging, migration, and stubborn refinement. The project moved from Streamlit on the web to Swift for Apple platforms. It involved databases, OCR capture, stroke animation, pinyin search, component decomposition, AI prompt templates, and commercial product decisions.
+
+That is not what happens when "anyone" casually asks AI for an app over a weekend. The more accurate lesson is subtler: AI allows a determined domain expert to reach much further than before, but the scarce human qualities do not disappear. Clarity, taste, persistence, judgement, and willingness to test the result still matter enormously.
+
 This category matters because it changes who can initiate software projects. Entrepreneurs, teachers, researchers, doctors, consultants, small-business owners, and hobbyists may build prototypes or even serious tools without first assembling a conventional engineering team.
 
 But the best AI-assisted builders will still need discipline. They must test, question, iterate, and learn. AI is an amplifier, not an autopilot.
