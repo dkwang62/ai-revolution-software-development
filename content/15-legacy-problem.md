@@ -132,6 +132,10 @@ The economic benefit is risk reduction.
 
 Replacing software is not only a development cost. It is business risk. A failed migration can disrupt operations, damage customers, attract regulatory attention, and destroy trust. If AI can reduce the uncertainty around old systems, it preserves capital.
 
+The same principle appeared at a much smaller scale while building Radix. After many AI-assisted changes, the app did not need one dramatic rewrite. It needed cautious refactoring. Codex and I moved one slice at a time: preference storage behind service boundaries, platform checks behind a shared platform facade, Study state behind a single enum, and fragile UI behaviour behind clearer rules. Each change was narrow, built, tested, and committed as a separate unit.
+
+That is app-scale evidence for the larger enterprise pattern. The safest improvement is often not to replace the whole system, but to understand one boundary, improve it, verify it, and then move to the next. AI made the work faster by inspecting code, suggesting refactors, and running through the change loop, but the discipline came from doing the migration gradually.
+
 ## Capital Preservation
 
 The phrase "capital preservation" is usually used in finance, but it applies to software.
