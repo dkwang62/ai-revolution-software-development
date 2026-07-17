@@ -99,17 +99,17 @@ Trust is the bridge between AI capability and legacy modernisation. Without it, 
 
 Trust is not binary. It increases as uncertainty and risk are reduced. A simple way to think about it is:
 
-```text
-Trust
-= capability
-+ verification
-+ governance
-+ security
-+ auditability
-+ explainability
-- risk
-- uncertainty
-```
+> [!summary] The Trust Equation
+> **Trust = useful capability + protective controls - unmanaged exposure**
+>
+> | What raises trust | What lowers trust |
+> |---|---|
+> | Capability | Risk |
+> | Verification | Uncertainty |
+> | Governance | Unclear accountability |
+> | Security | Unbounded access |
+> | Auditability | Invisible actions |
+> | Explainability | Unexplained behaviour |
 
 This is not a mathematical formula. It is a way of remembering that model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
 
@@ -121,17 +121,13 @@ Trust changes adoption because it changes expected value. Untrusted AI can only 
 
 The progression looks like this:
 
-```text
-Low trust
-↓
-Low-risk tasks
-↓
-Human-supervised workflows
-↓
-Bounded production use
-↓
-High-value enterprise adoption
-```
+> [!example] Trust Changes What AI Is Allowed To Do
+> | Trust level | Typical use |
+> |---|---|
+> | Low trust | Low-risk tasks where mistakes are cheap |
+> | Moderate trust | Human-supervised workflows |
+> | High trust | Bounded production use |
+> | Institutional trust | High-value enterprise adoption |
 
 This is why the future of AI in software development will not be determined by capability alone. It will be determined by the relationship between capability and trust. The more an AI system can be verified, governed, secured, audited, and explained, the more valuable work it can perform.
 
