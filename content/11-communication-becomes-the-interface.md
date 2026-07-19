@@ -93,11 +93,11 @@ This is the core idea of **natural-language programming**: some software behavio
 
 The language is English, but the discipline resembles programming.
 
-## The Radix Example
+## A Language-Learning Example
 
-![Radix AI Create Quiz prompt](figures/radix-ai-create-quiz-prompt.png)
+![Instructions for creating a Chinese-language quiz](figures/chinese-quiz-instructions.png)
 
-The Radix quiz prompt is a useful example because it shows natural language becoming operational.
+The quiz instructions are useful because they show natural language becoming operational.
 
 The prompt does not merely ask the AI to be helpful. It defines a task: create a language-learning quiz. It defines constraints: use the captured material, include Chinese and English appropriately, avoid revealing the answer too early, control pinyin usage, ask one question at a time, and follow a sequence.
 
@@ -111,7 +111,7 @@ That is abstraction in practice.
 
 Codex adds another layer to this example.
 
-The Radix quiz prompt shows natural language controlling behaviour inside the app. Codex shows natural language controlling the development of the app itself. I could say what was wrong, show a screenshot, ask for a change, or describe the behaviour I wanted. Codex could then inspect the project, find the relevant files, edit code, run checks, and report what happened.
+The quiz instructions show natural language controlling behaviour inside the application. Codex shows natural language controlling the development of the application itself. I could say what was wrong, show a screenshot, ask for a change, or describe the behaviour I wanted. Codex could then inspect the project, find the relevant files, edit code, run checks, and report what happened.
 
 That is why communication becomes more than prompting. It becomes supervision.
 

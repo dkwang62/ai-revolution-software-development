@@ -570,9 +570,9 @@ That prompt is not casual conversation. It is a behavioural specification.
 
 This is Natural Language Programming. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
 
-## Radix Field Note: The Prompt Became the Program
+## Field Note: The Prompt Became the Program
 
-This became obvious while building the quiz feature in Radix.
+This became obvious while building a quiz feature for the language-learning application.
 
 The feature looked simple from the outside: choose captured Chinese material and ask the AI to create a practice quiz. But the real behaviour was not simple at all. The quiz had to draw from the learner's material, use Chinese and English in controlled ways, avoid giving away the answer too early, manage pinyin carefully, ask one question at a time, and keep the interaction moving like a patient teacher rather than a generic chatbot.
 

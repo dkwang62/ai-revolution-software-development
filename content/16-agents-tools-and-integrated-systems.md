@@ -4,9 +4,9 @@ title: "Agents, Tools, and Integrated Systems"
 
 # Agents, Tools, and Integrated Systems
 
-The keyboard covered the Etymology field in Radix. That was my entire diagnosis. I knew what was wrong for the user; I did not know which SwiftUI container controlled the screen or how the keyboard should change its layout.
+In the language-learning application, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
 
-The Genie searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built Radix again. The second build succeeded.
+The Genie searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
 
 This episode gave me a practical definition of a word that is now everywhere in AI: **agentic**. A chatbot produces a response. An agent pursues an objective through actions and feedback:
 
@@ -47,21 +47,21 @@ This is why agent engineering includes sandboxes, read-only modes, scoped creden
 
 ## Why Codex Felt Different
 
-ChatGPT could suggest code and help me reason about Radix. But I usually had to carry the technical situation into the conversation: paste the relevant file, copy the error, run the command, and return with the result.
+ChatGPT could suggest code and help me reason about the application. But I usually had to carry the technical situation into the conversation: paste the relevant file, copy the error, run the command, and return with the result.
 
-Codex could work where the software lived. It could inspect Radix, search its files, edit Swift or Python, run a build, read the error, and revise its own change. That made the interaction feel less like consulting an answer box and more like supervising a software worker.
+Codex could work where the software lived. It could inspect the project, search its files, edit Swift or Python, run a build, read the error, and revise its own change. That made the interaction feel less like consulting an answer box and more like supervising a software worker.
 
 The difference was not a claim that one product possessed intelligence and another did not. It was an architectural difference. The model had been connected to an environment and given tools under rules. Claude Code, Cursor, GitHub Copilot, and future systems belong to the same wider movement.
 
-Another Radix request made tool use tangible. I wanted My Data to collect essential JSON, database, and text files into a ZIP archive. I did not specify the files or the implementation. The Genie traced the existing export path, found the service and resources, added a manifest, changed the relevant source files, and ran an Xcode build. A language model could describe a ZIP export. An agent with tools could participate in building and checking one.
+Another request made tool use tangible. I wanted an export command to collect the learner's essential data into one compressed file for backup. I did not specify every file or the implementation. The Genie traced the existing export path, found the relevant services and resources, added a list of the included files, changed the source code, and ran an application build. A language model could describe an export feature. An agent with tools could participate in building and checking one.
 
-These examples should not be mistaken for autonomy without supervision. I supplied the objective, decided which behaviour mattered, controlled permissions, and judged the result. The Genie lowered the cost of implementation; it did not inherit responsibility for Radix.
+These examples should not be mistaken for autonomy without supervision. I supplied the objective, decided which behaviour mattered, controlled permissions, and judged the result. The Genie lowered the cost of implementation; it did not inherit responsibility for the application.
 
 ## Grounding: Finding the Real Problem
 
 Agents need more than a request. They need **grounding**: relevant evidence from the world in which they are acting.
 
-I once reported that a highlighted character in Radix's Browse view was not working correctly. A superficial response would have rewritten the highlighting code. Inspection showed that highlighting already worked. The defect was navigation: Radix did not move to the page containing the character, so the user could not see the existing highlight.
+I once reported that a highlighted Chinese character was not working correctly while browsing a document. A superficial response would have rewritten the highlighting code. Inspection showed that highlighting already worked. The defect was navigation: the application did not move to the page containing the character, so the learner could not see the existing highlight.
 
 That diagnosis depended on the current project rather than general training. The agent retrieved the relevant code, followed the state changes, and compared the intended workflow with the implemented one. Retrieval-augmented generation, usually shortened to **RAG**, describes the broader pattern of supplying a model with relevant external material at the time of the task. In coding, retrieval may mean repository search, documentation, logs, tests, or previous decisions.
 
@@ -69,9 +69,9 @@ More context is not automatically better. An agent can be distracted by irreleva
 
 ## Human in the Loop Is a Design Choice
 
-Phrase Discovery in Radix uses AI to identify useful Chinese phrases from captured material. The model is good at proposing candidates, but the surrounding application does not silently accept every proposal.
+A phrase-discovery feature uses AI to identify useful Chinese phrases in text the learner has photographed or imported. The model is good at proposing candidates, but the surrounding application does not silently accept every proposal.
 
-Radix preserves the source context, filters phrases it already knows, presents candidates for selection, and protects its core data. The human decides what belongs in the learning collection. These are examples of **guardrails**—constraints placed around model behaviour—and of a **human-in-the-loop** workflow.
+The application preserves the original passage, removes phrases already in the learner's collection, presents the remaining candidates for selection, and protects its stored data. The learner decides what to keep. These are examples of **guardrails**—constraints placed around model behaviour—and of a **human-in-the-loop** workflow.
 
 The phrase can sound like a vague promise that a person will somehow catch mistakes. A serious design says exactly where intervention occurs and what the human can see. Approval before a database change is different from discovering the change afterward. A concise candidate list is different from asking a person to audit an invisible chain of model calls.
 
@@ -81,7 +81,7 @@ Human review should be reserved for consequential or ambiguous decisions. If eve
 
 Agentic systems are uneven. They can solve complicated logic and still miss an obvious visual defect.
 
-This happened repeatedly while building Radix and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank node where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
+This happened repeatedly while building the language-learning application and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
 Once I supplied screenshots, the Genie could recognise many of the defects and correct them. The missing capability was not necessarily vision. The workflow had stopped before rendering and inspecting its own output.
 
@@ -105,7 +105,7 @@ human judges the experience
 
 Frameworks and design systems prevent predictable mistakes. Browser and UI tests can render several screen sizes. Screenshot comparisons can expose unintended change. Accessibility tools can detect many measurable defects. AI can run these checks, interpret results, and attempt repairs. Humans should increasingly judge whether the experience is clear and worthwhile rather than repeatedly finding that a button is too narrow.
 
-My retrospective estimate is that UI work consumed about 80 per cent of my Radix development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the Genie accelerated underlying implementation more than it accelerated the final work of arranging and judging the interface.
+My retrospective estimate is that work on the screens and controls consumed about 80 per cent of my development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the Genie accelerated underlying implementation more than it accelerated the final work of arranging and judging what the learner would see and touch.
 
 That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgement about people and purpose.
 
@@ -113,9 +113,9 @@ That proportion should fall as multimodal agents close the render–inspect–co
 
 An agent can fail at any step, and early errors can create later state. Trust cannot come from the model sounding confident. It must come from observable process.
 
-During one Radix recovery task, the Genie identified nineteen missing files. It recovered one exact file from a 253-file archive, verified its checksum, and confirmed that the missing count had fallen to eighteen. The value was not eloquence. Each claim corresponded to evidence the system could expose.
+During one data-recovery task, the Genie identified nineteen missing files. It recovered one exact file from an archive containing 253 files, compared its digital fingerprint with the expected fingerprint, and confirmed that the missing count had fallen to eighteen. The value was not eloquence. Each claim corresponded to evidence the system could expose.
 
-The same principle applies to ordinary development. A credible completion report should identify what changed and what was checked. Builds, tests, diffs, checksums, screenshots, and logs turn an agent's activity into something a person can inspect.
+The same principle applies to ordinary development. A credible completion report should identify what changed and what was checked. Builds, tests, records of the changed lines, digital fingerprints of files, screenshots, and activity logs turn an agent's work into something a person can inspect.
 
 This also explains why agents will not sweep traditional software engineering away. Compilers, schemas, version control, test suites, security scanners, permissions, and observability are narrow tools. Their narrowness gives them precision. The strongest system combines the model's breadth with their certainty.
 

@@ -102,21 +102,21 @@ AI can generate many alternatives. That increases the need to choose.
 
 When production becomes easy, curation becomes valuable.
 
-The Radix interface offered a small example. Once the Genie accelerated functional implementation, more of my attention moved to what remained visible to the user: spacing, labels, screen sizes, workflow clarity, and the feeling of the finished product. User-interface refinement became a larger share of the human work because the machinery underneath had become faster to produce. That allocation need not be permanent. Tested design components, automated layout checks, and agents that render and inspect their own work can remove much of the mechanical correction, leaving people to concentrate on whether the experience serves its purpose.
+The language-learning application's interface offered a small example. Once the Genie accelerated functional implementation, more of my attention moved to what remained visible to the learner: spacing, labels, screen sizes, workflow clarity, and the feeling of the finished product. Interface refinement became a larger share of the human work because the machinery underneath had become faster to produce. That allocation need not be permanent. Tested design components, automated layout checks, and agents that render and inspect their own work can remove much of the mechanical correction, leaving people to concentrate on whether the experience serves its purpose.
 
-## Radix: A Scarcity Shift in Practice
+## A Scarcity Shift in Practice
 
-During parts of the Radix project, I estimate that interface work consumed about 80% of my time. The figure is personal rather than a measured industry statistic, but the experience reveals how a bottleneck moves.
+During parts of the language-learning project, I estimate that interface work consumed about 80% of my time. The figure is personal rather than a measured industry statistic, but the experience reveals how a bottleneck moves.
 
 Codex could construct screens, connect data, migrate code, and implement logic at a speed I could not have approached alone. That made another kind of work more visible. Labels overflowed their boxes. Buttons became too narrow and wrapped words vertically. A keyboard covered the field being edited. A layout that looked acceptable on one screen failed on another. Sometimes the source code appeared reasonable until a screenshot exposed the combined spatial result.
 
 The constraint was no longer whether code could be produced. It was whether the experience made sense to a learner. I had to decide which controls deserved space, what could be removed, which phrase was understandable, and whether an educational interaction worked as intended. Those decisions mixed taste with domain knowledge; a generic coding pattern could not settle them.
 
-Traditional software tools still mattered. SwiftUI supplied tested layout behaviour. Accessibility settings exposed stress cases. Preview and screenshot tools made the result visible. Reusable components reduced variation. Automated UI tests could verify that an element existed and was tappable, while snapshot and visual-regression tests could detect unintended changes. The agent could also render the screen, inspect the image, and revise its own output.
+Traditional software tools still mattered. Apple's screen-layout framework supplied tested behaviour. Accessibility settings exposed stress cases. Preview and screenshot tools made the result visible. Reusable components reduced variation. Automated interface tests could verify that an element existed and could be tapped, while picture-comparison tests could detect unintended visual changes. The agent could also render the screen, inspect the image, and revise its own output.
 
 Together, those mechanisms can reduce human effort dramatically. They turn “make it look right” into a constrained loop with observable evidence. But the final purpose remains human: the framework can keep text inside a box; it cannot decide by itself whether the box belongs in the learner's journey.
 
-Radix therefore demonstrates the larger economic shift. As implementation became cheaper, interface judgement, educational quality, architectural coherence, and verification became the binding constraints. Better AI may lower those costs too. Scarcity will move again rather than disappear.
+The project therefore demonstrates the larger economic shift. As implementation became cheaper, interface judgement, educational quality, architectural coherence, and verification became the binding constraints. Better AI may lower those costs too. Scarcity will move again rather than disappear.
 
 ## The New Software Economy
 

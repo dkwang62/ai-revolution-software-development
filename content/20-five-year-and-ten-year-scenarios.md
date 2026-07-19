@@ -6,7 +6,7 @@ title: "Five-Year and Ten-Year Scenarios"
 
 ![Five-year and ten-year scenarios](<figures/FIG-19-01 Future Scenarios.png>)
 
-The rate of change is breathtaking. Tasks that defeated the Genie during my first year with Radix later became routine. A Streamlit-to-Xcode migration that initially failed became achievable roughly a year later as models, agent environments, tools, feedback, and my own supervision improved together.
+The rate of change is breathtaking. Tasks that defeated the Genie during my first year building the language-learning application later became routine. Moving the project from a simple web framework to native Apple software initially failed, then became achievable roughly a year later as models, agent environments, tools, feedback, and my own supervision improved together.
 
 That experience makes me suspicious of confident forecasts—including my own. Five years of change may not resemble five equal annual steps. Yet “anything could happen” is not useful either. Scenarios help us ask which forces would have to change for different futures to emerge.
 
@@ -56,7 +56,7 @@ If capability improves rapidly while verification and integration remain expensi
 
 AI produces impressive applications, migrations, and interfaces quickly. Small teams attempt portfolios that once required much larger organisations. But code generation outpaces the capacity to review dependencies, permissions, data handling, user experience, and maintenance consequences.
 
-This is the quadrant in which my Radix UI experience becomes economically important. Producing another interface variation is cheap; judging whether it works across screens, languages, accessibility settings, and real learning behaviour remains costly. Organisations may create fragile systems faster than they can understand them. Security incidents and maintenance burdens could erase apparent productivity gains.
+This is the quadrant in which my experience designing the language-learning screens becomes economically important. Producing another interface variation is cheap; judging whether it works across screen sizes, languages, accessibility settings, and real learning behaviour remains costly. Organisations may create fragile systems faster than they can understand them. Security incidents and maintenance burdens could erase apparent productivity gains.
 
 The limiting factor is neither typing nor model intelligence. It is disciplined acceptance: evidence that the generated system is fit to keep.
 

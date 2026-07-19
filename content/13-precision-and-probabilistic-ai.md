@@ -72,9 +72,9 @@ Structure reduces ambiguity. It allows conventional software to validate fields,
 
 Structured output does not make AI correct. A model can place the wrong value into a valid field. But structure makes mistakes easier to detect and contain.
 
-## Radix Field Note: Testing Behaviour, Not Syntax
+## Field Note: Testing Behaviour, Not Syntax
 
-The Radix quiz feature also shows why precision changes shape in AI systems.
+A Chinese-character quiz feature also shows why precision changes shape in AI systems.
 
 The problem was not only whether a generated prompt looked well written. The real test was behavioural. Did the quiz ask one question and then stop? Did it avoid revealing the answer before the learner replied? Did it keep pinyin out of the wrong places? Did it use the captured material rather than drifting into generic Chinese practice? Did the result remain useful when opened in Gemini, Claude, ChatGPT, or another model?
 

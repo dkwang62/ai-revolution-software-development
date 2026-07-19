@@ -6,7 +6,7 @@ title: "What Is an AI Model?"
 
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
-When Radix displays the Chinese character 木, a learner sees a shape associated with *tree* or *wood*. Inside the application, that character is also a Unicode number, bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
+When a language-learning application displays the Chinese character 木, a learner sees a shape associated with *tree* or *wood*. Inside the application, that character is also a Unicode number, bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
 
 These are different **representations** of the same thing. Software has always moved information among representations:
 
@@ -26,9 +26,9 @@ Traditional software relies mainly on procedures people specify. An AI model add
 
 An AI model is not a huge database, a search engine, or millions of handwritten IF–THEN rules. It is a **learned mathematical representation of patterns found in data**.
 
-I encountered this distinction while working on Radix Phrase Discovery. Radix could send the same Chinese passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in the Radix database. It was using learned relationships among characters, phrases, context, pinyin, and meaning to generate a plausible result.
+I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin, and meaning to generate a plausible result.
 
-Radix then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the user to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
+The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
 ## A Map, Not the Territory
 
@@ -68,7 +68,7 @@ A **neural network** is the mathematical machinery commonly used to learn those 
 
 Before entering the network, information is divided into manageable units. Language models use **tokens**, which may be words, parts of words, punctuation, or pieces of code. Images can be divided into patches; audio can be represented as segments of a signal. Each unit becomes numbers that the network transforms through layers.
 
-Those numerical representations are often described as **vectors**—ordered lists of numbers. Training arranges and transforms them so that useful relationships can be expressed. Words used in related contexts may occupy related regions in a high-dimensional space. A request about a Radix quiz can activate relationships involving quizzes, distractors, user interfaces, Chinese characters, state, and tests even if the model has never seen that exact request.
+Those numerical representations are often described as **vectors**—ordered lists of numbers. Training arranges and transforms them so that useful relationships can be expressed. Words used in related contexts may occupy related regions in a high-dimensional space. A request for a Chinese-character quiz can activate relationships involving quizzes, plausible wrong answers, user interfaces, Chinese characters, state, and tests even if the model has never seen that exact request.
 
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
@@ -102,7 +102,7 @@ A model trained across code, explanations, tutorials, bug reports, and technical
 
 The model is not executing a complete hidden program that it retrieves from memory. It generates a proposal token by token, conditioned on the request, its learned parameters, the available project context, and what it has already generated.
 
-When I ask Codex to alter Radix, learned relationships help it locate likely SwiftUI patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether those relationships produced a change worth keeping.
+When I ask Codex to alter the language-learning application, learned relationships help it locate likely screen-layout patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether those relationships produced a change worth keeping.
 
 That surrounding evidence matters because code can be syntactically correct yet educationally wrong. A quiz may compile and still teach the wrong distinction. A button may work while covering another control on an iPhone. The model shortens the distance from intention to implementation; it does not remove the need to judge the destination.
 
@@ -112,7 +112,7 @@ Models increasingly work across text, images, audio, video, diagrams, screens, a
 
 A screenshot can expose overflowing text that the source code does not make obvious. A screen recording can show a navigation sequence. A sketch can communicate an intended layout. A spoken explanation can capture domain knowledge from someone who would never write a formal specification. The model can translate these inputs into observations, requirements, code changes, or tests.
 
-This does not guarantee spatial judgement. During the Radix and book work, I sometimes had to show Codex a rendered screen before it recognised that words had escaped a box or that controls were squeezed into an unusable space. Source code describes constraints; the rendered picture reveals their combined result. The practical solution is a feedback loop: generate, render, inspect at relevant sizes, test, and revise. Visual regression tools and established interface frameworks can automate much of that loop, while human review remains important where taste or purpose is involved.
+This does not guarantee spatial judgement. While building the application and producing this book, I sometimes had to show Codex a rendered screen before it recognised that words had escaped a box or that controls were squeezed into an unusable space. Source code describes constraints; the rendered picture reveals their combined result. The practical solution is a feedback loop: generate, render, inspect at relevant sizes, test, and revise. Visual regression tools and established interface frameworks can automate much of that loop, while human review remains important where taste or purpose is involved.
 
 Multimodality therefore expands the Genie's senses, not its authority. It gives the system more evidence from which to reason. The same rule still applies: successful generation is not successful rendering, and a convincing appearance is not proof of correct behaviour.
 
@@ -136,7 +136,7 @@ The economic question is therefore not which model looks most impressive in isol
 
 Training data can contain errors and bias. Average performance does not guarantee reliability in a rare or consequential case. Larger models and better training can improve capability without eliminating fabricated references, outdated practices, insecure code, or misunderstandings of local purpose.
 
-Radix's optical character recognition is useful because the surrounding application can preserve the image, validate extracted text, filter known phrases, and let the learner decide what to keep. Neural networks reduce the cost of tasks for which exhaustive rules would be too expensive or brittle. They do not make rules, tests, or responsibility obsolete.
+One feature lets a learner photograph printed Chinese and turns the characters in the image into editable text. The application keeps the original picture, checks the extracted text, removes phrases the learner has already saved, and lets the learner choose what to keep. A learned system makes this possible across changing fonts, lighting, camera angles, and image quality—variations that would be extremely difficult to describe through exhaustive rules. Rules, tests, and human responsibility still matter around the learned result.
 
 This is the central bargain. A learned model handles ambiguity that conventional software struggles to enumerate. Conventional software, tools, and people supply the constraints and evidence the model lacks.
 

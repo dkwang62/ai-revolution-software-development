@@ -4,13 +4,13 @@ title: "Conclusion: When Intent Becomes Software"
 
 # Conclusion: When Intent Becomes Software
 
-Before the Genie, many of my ideas for Radix would have ended as notes.
+Before the Genie, many of my ideas for a Chinese-language learning application would have ended as notes.
 
 I could describe the learning problem, sketch the behaviour, and imagine how an application might help. The remaining distance—from intention to architecture, code, debugging, and a working interface—was too great for me to cross alone.
 
 AI shortened that distance. It did not remove it.
 
-The difference can be seen in a small Radix feature. I wanted a quiz that used visually plausible Chinese characters rather than random wrong answers. The first statement of the idea was easy. Turning it into useful software required decisions: which characters were genuinely confusable, whether Simplified and Traditional forms should mix, how choices should remain stable, what happened when the candidate pool was small, and whether the screen responded quickly enough.
+The difference can be seen in one small feature. I wanted a quiz that used visually plausible Chinese characters rather than random wrong answers. The first statement of the idea was easy. Turning it into useful software required decisions: which characters were genuinely confusable, whether Simplified and Traditional forms should mix, how choices should remain stable, what happened when too few suitable alternatives existed, and whether the screen responded quickly enough.
 
 The Genie could turn each refinement into implementation. I still had to recognise what counted as a good learning experience. The resulting feature was neither my work alone nor an autonomous creation of the model. It emerged from a loop of intention, generation, observation, correction, and verification.
 
@@ -44,7 +44,7 @@ When implementation becomes cheaper, the value does not vanish. It moves.
 
 The scarce work increasingly lies in choosing worthwhile problems, expressing requirements, designing coherent systems, supplying organizational context, verifying behaviour, integrating with existing software, and earning trust. Domain knowledge becomes more valuable because the person who understands the problem can participate more directly in building the solution. Architecture becomes more valuable because abundant changes can produce abundant disorder. Taste becomes more visible because a functional screen is not necessarily a humane one.
 
-Radix made that shift tangible to me. AI dramatically accelerated logic and implementation, while user-interface refinement consumed most of my time. That balance will change as multimodal agents learn to render, inspect, and correct their own work. The mechanical defects should shrink. The responsibility for deciding what the experience ought to be will remain.
+The language-learning project made that shift tangible to me. AI dramatically accelerated logic and implementation, while refinement of the screens and controls consumed most of my time. That balance will change as agents become better at rendering, inspecting, and correcting their own visual work. The mechanical defects should shrink. The responsibility for deciding what the experience ought to be will remain.
 
 Organisations face the same pattern at larger scale. Their advantage will not come from renting access to the same general model as everyone else. It will come from connecting models to proprietary knowledge, reliable systems, permissions, provenance, and workflows without losing control of the decisions embedded in them.
 
@@ -56,7 +56,7 @@ A teacher may test a learning method without first raising money for a developme
 
 The future of programming is therefore not captured by the question of whether AI will replace programmers. Tasks, roles, and pathways will change. Experts may gain enormous leverage; newcomers may enter through domain knowledge and supervision; organisations may need fewer people for some forms of routine implementation and more capacity for review, integration, security, and product judgement.
 
-I began Radix because the application I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, the Genie made production possible. It did not decide what was worth producing, notice every mistake, or accept responsibility for the result.
+I began the software project because the application I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, the Genie made production possible. It did not decide what was worth producing, notice every mistake, or accept responsibility for the result.
 
 That remains the human part of the bargain.
 

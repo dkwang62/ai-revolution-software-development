@@ -16,7 +16,7 @@ An agent is an AI system that does more than answer a question. It can use tools
 
 ## Agentic AI
 
-Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building Radix, the Genie displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
+Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building a language-learning application, the Genie displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
 
 ## Agentic Loop
 
@@ -66,7 +66,7 @@ A foundation model is a large general-purpose AI model trained on broad data and
 
 ## Grounding
 
-Grounding means connecting an AI response to relevant evidence rather than relying only on what the model learned during training. When the Genie inspects the actual Radix source files before proposing a change, the project grounds its conclusion.
+Grounding means connecting an AI response to relevant evidence rather than relying only on what the model learned during training. When the Genie inspects the application's actual source files before proposing a change, those files ground its conclusion.
 
 ## Guardrail
 
@@ -82,7 +82,7 @@ Inference is the process of using a trained model to produce an output. When a u
 
 ## Human In The Loop
 
-Human in the loop means that a person remains part of an AI-assisted decision or action. In Radix Phrase Discovery, AI proposes possible phrases, conventional software filters them, and the user decides which phrases should be saved.
+Human in the loop means that a person remains part of an AI-assisted decision or action. In a feature that finds useful phrases in photographed Chinese text, AI proposes candidates, conventional software filters them, and the learner decides which phrases should be saved.
 
 ## Model Context Protocol (MCP)
 
@@ -90,7 +90,7 @@ The Model Context Protocol is a standard for connecting AI applications to exter
 
 ## Multi-Agent System
 
-A multi-agent system coordinates two or more agents, often with specialised roles. A future Radix workflow might use one agent to inspect the interface, another to examine its databases, and another to test the result. That is a possible application, not a claim about how Radix is currently built.
+A multi-agent system coordinates two or more agents, often with specialised roles. A future development workflow might use one agent to inspect the interface, another to examine stored data, and another to test the result. That is a possible application, not a description of the current application.
 
 ## Model Parameters
 
@@ -158,7 +158,7 @@ Training is the process by which an AI model learns patterns from data. It requi
 
 ## Tool Use
 
-Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, running an Xcode build, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
+Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, building an application, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
 
 ## Trust
 

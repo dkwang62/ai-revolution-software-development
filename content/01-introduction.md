@@ -4,7 +4,7 @@ title: "Introduction"
 
 # Introduction
 
-Radix began with dissatisfaction. I was learning Chinese and wanted an application that worked the way I thought a learner needed to work: moving among characters, components, phrases, pronunciation, and the material I encountered in daily life. I could not find that application, and I did not have the conventional programming background required to build it.
+The project began with dissatisfaction. I was learning Chinese and wanted an application that worked the way I thought a learner needed to work: moving among characters, components, phrases, pronunciation, and the material I encountered in daily life. I could not find that application, and I did not have the conventional programming background required to build it.
 
 Then I began describing what I wanted to artificial intelligence.
 
@@ -34,7 +34,7 @@ Software is an unusually revealing place to study AI because the work is digital
 
 Software also sits beneath modern organisations. It contains accumulated decisions about customers, payments, products, risk, logistics, and work. Lowering the cost of changing software can therefore alter more than the software industry. It can change who is able to build, which ideas are attempted, how organisations preserve knowledge, and where economic scarcity moves next.
 
-Radix is the recurring field case because it is where I crossed the boundary this book examines. It is not proof that anyone can safely build any system by talking to AI. It is evidence that a motivated domain expert can participate much more directly in software creation by supplying intent, evaluating behaviour, refining requirements, and supervising an AI engineering collaborator.
+The language-learning application is the recurring field case because it is where I crossed the boundary this book examines. It is not proof that anyone can safely build any system by talking to AI. It is evidence that a motivated domain expert can participate much more directly in software creation by supplying intent, evaluating behaviour, refining requirements, and supervising an AI engineering collaborator.
 
 The Genie in this book is Codex, the coding agent I used most directly, but the argument is not about one vendor. Claude Code, Cursor, GitHub Copilot, and systems still to come belong to the same transition from AI as adviser to AI as supervised actor.
 

@@ -14,7 +14,7 @@ Who wrote this book?
 
 On one level, much of the prose was generated, revised, organised, and refined with the help of AI. The AI acted as drafting partner, editor, explainer, critic, research assistant, and structural collaborator.
 
-On another level, the book exists because of human curiosity. The questions came from lived experience: building Radix, struggling to understand why AI could generate software, watching programming become conversational, and asking what this means for the future of software development. The direction of the book, the choice of topics, the level of explanation, the target reader, the acceptance or rejection of arguments, and the final responsibility for the work remain human.
+On another level, the book exists because of human curiosity. The questions came from lived experience: building a Chinese-language learning application, struggling to understand why AI could generate software, watching programming become conversational, and asking what this means for the future of software development. The direction of the book, the choice of topics, the level of explanation, the target reader, the acceptance or rejection of arguments, and the final responsibility for the work remain human.
 
 AI did not wake up one morning and decide that this book needed to exist. It did not become fascinated by abstraction, software economics, or the mystery of how ordinary language can become working code. It did not experience the frustration of debugging an app without formal programming training, or the surprise of watching a feature emerge from a conversation.
 

@@ -84,19 +84,19 @@ A new category is emerging: the AI-assisted builder.
 
 This person may not have a traditional computer-science background. They may not read code fluently at first. But they have domain knowledge, product vision, persistence, and enough technical curiosity to collaborate with AI tools.
 
-The author's experience with Radix belongs in this category. A non-professional programmer, driven by a specific domain problem, used AI to build increasingly sophisticated software. That was much less realistic before modern AI coding tools.
+My experience belongs in this category. As a non-professional programmer driven by the problem of learning Chinese, I used AI to build increasingly sophisticated software. That was much less realistic before modern AI coding tools.
 
-Radix is also a useful caution against an overly cheerful version of the story. The tools were available, but the tools were not enough. Building the app still required months of product decisions, testing, debugging, migration, and stubborn refinement. The project moved from Streamlit on the web to Swift for Apple platforms. It involved databases, OCR capture, stroke animation, pinyin search, component decomposition, AI prompt templates, and commercial product decisions.
+The project also cautions against an overly cheerful version of the story. The tools were available, but the tools were not enough. Building the application still required months of product decisions, testing, debugging, migration, and stubborn refinement. It moved from a simple web application to native software for Apple devices. It involved stored learning data, extracting Chinese text from photographs, animated stroke order, pronunciation search, analysis of character components, AI instructions, and commercial product decisions.
 
 ## One Year Changed What Felt Possible
 
-The speed of improvement became real to me during Radix's movement from Streamlit to Swift and Xcode.
+The speed of improvement became real to me while moving the application from a web-based system to native Apple software.
 
-Streamlit had allowed me to turn a Python prototype into a working web application. Moving that application into Apple's development environment was a much larger step. It was not enough to translate Python statements into Swift. The new version needed an Xcode project, application structure, data models, navigation, persistent state, platform-specific controls, database access, and a different way of constructing the interface.
+A simple web framework had allowed me to turn a Python prototype into a working application in a browser. Moving it into Apple's native development environment was a much larger step. It was not enough to translate statements from one programming language into another. The new version needed an Apple application project, an overall structure, ways to represent and store data, navigation, memory of the user's current state, device-specific controls, database access, and a different method of constructing each screen.
 
 My early attempt to use AI to scaffold that migration failed. The model could produce fragments and explain what ought to happen, but it could not reliably hold the whole migration together. Debugging often entered a loop: the AI proposed a fix, the build failed, and the next attempt remained too close to the previous one. Although I was the non-technical participant, I sometimes had to suggest the technical direction that allowed the model to escape.
 
-About a year later, that pattern had become rare. A newer Codex workflow could inspect the working projects, search across files, create or modify the Xcode scaffolding, read compiler failures, change its hypothesis, rebuild, and continue. The migration still required gradual work and many decisions, but a task that had crossed the earlier system's capability boundary had become tractable.
+About a year later, that pattern had become rare. A newer Codex workflow could inspect the working projects, search across files, create or modify the basic structure required by an Apple application, read compiler failures, change its hypothesis, rebuild, and continue. The migration still required gradual work and many decisions, but a task that had crossed the earlier system's capability boundary had become tractable.
 
 I found this astonishing. The change was not simply that the same answer arrived a little faster. The range of problems I could reasonably attempt had expanded.
 
@@ -114,11 +114,11 @@ a more capable model
 a task crosses from impractical to achievable
 ~~~
 
-The practical result still matters. Earlier in the Radix journey, I sometimes had to supply a technical escape route when the AI became trapped. More recently, Codex usually gathers evidence and finds that route itself. Human intervention has moved away from proposing low-level fixes and toward defining the desired behaviour, noticing when the outcome is wrong, and deciding what should be kept.
+The practical result still matters. Earlier in the project, I sometimes had to supply a technical escape route when the AI became trapped. More recently, Codex usually gathers evidence and finds that route itself. Human intervention has moved away from proposing low-level fixes and toward defining the desired behaviour, noticing when the outcome is wrong, and deciding what should be kept.
 
 This experience is also a warning about writing a book during a period of rapid change. A limitation observed last year may already be reduced this year. Claims about what AI “cannot do” may age faster than claims about why the task is difficult. The durable subject is not a fixed list of capabilities. It is the accelerating movement of the boundary between human intention and machine execution.
 
-Codex is the clearest reason this example belongs in the future-of-programmers chapter. It did not simply answer questions about Radix. It could enter the working environment: inspect files, search the codebase, run commands, interpret failures, edit the project, and help verify changes.
+Codex is the clearest reason this example belongs in the future-of-programmers chapter. It did not simply answer questions about the application. It could enter the working environment: inspect files, search the codebase, run commands, interpret failures, edit the project, and help verify changes.
 
 That makes the future role easier to see.
 
