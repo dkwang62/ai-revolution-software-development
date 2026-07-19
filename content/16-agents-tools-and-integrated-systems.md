@@ -641,7 +641,11 @@ The short-term weakness is incomplete perception and verification. The longer-te
 
 This has a direct economic consequence. AI may make a functional feature dramatically faster to produce without reducing the final mile of product work by the same amount. Someone still has to use the feature, notice that the button is cramped, test the smaller screen, rewrite the label, check accessibility, and decide whether the interaction feels coherent.
 
-During the present transition, a large amount of human time can therefore move into user-interface refinement. The UI has not necessarily become more expensive in absolute terms. It becomes a larger share of the remaining work because code generation has accelerated more quickly. The same shift appears in editing, testing, integration, governance, and review. This is a current cost, not an unavoidable destination: better component frameworks, automated checks, and agentic self-inspection should progressively remove much of the mechanical rework.
+During the present transition, a large amount of human time can therefore move into user-interface refinement. Looking back on the development of Radix, I would estimate that UI work consumed about 80 per cent of my time. That is a retrospective personal estimate, not a measurement from time-tracking software, but the scale is important. Much of the effort went into arranging screens, fitting controls onto different devices, shortening labels, clarifying what could be tapped, exposing the right information at the right moment, and checking whether a change actually appeared in the layout the user saw.
+
+The UI had not necessarily become more expensive in absolute terms. It had become a much larger share of the remaining work because the Genie accelerated the underlying implementation more than it accelerated visual refinement. The same shift can appear in editing, testing, integration, governance, and review.
+
+This is a current cost, not an unavoidable destination. Better component frameworks, automated checks, and agentic self-inspection should progressively remove much of the mechanical rework. The 80 per cent figure describes my experience of building Radix with the available tools; it should not be treated as a prediction that future AI-assisted projects must spend the same proportion.
 
 This is another form of the scarcity shift developed later in the book. When production becomes abundant, inspection, taste, and responsibility become more valuable.
 
