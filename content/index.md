@@ -36,28 +36,26 @@ Codex is the genie I met. The book is about what the genie reveals.
 
 ### Part III - The Economics of Intelligence
 
-- [[05-what-is-information|Chapter 4: What Is Information?]]
-- [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
-- [[07-how-neural-networks-learn-relationships|Chapter 6: How Neural Networks Learn Relationships]]
-- [[08-how-ai-converts-english-into-software|Chapter 7: How AI Converts English Into Software]]
-- [[09-economics-of-models|Chapter 8: The Economics of Models]]
-- [[10-context-what-the-model-knows-right-now|Chapter 9: Context: What the Model Knows Right Now]]
+- [[06-what-is-an-ai-model|Chapter 4: What Is an AI Model?]]
+- [[08-how-ai-converts-english-into-software|Chapter 5: How AI Converts English Into Software]]
+- [[09-economics-of-models|Chapter 6: The Economics of Models]]
+- [[10-context-what-the-model-knows-right-now|Chapter 7: Context: What the Model Knows Right Now]]
 
 ### Part IV - Engineering with AI
 
-- [[11-communication-becomes-the-interface|Chapter 10: Communication Becomes the Interface]]
-- [[12-requirements-engineering|Chapter 11: Requirements Engineering]]
-- [[13-precision-and-probabilistic-ai|Chapter 12: Precision and Probabilistic AI]]
-- [[14-economics-of-trust|Chapter 13: The Economics of Trust]]
-- [[15-legacy-problem|Chapter 14: The Legacy Problem]]
-- [[16-agents-tools-and-integrated-systems|Chapter 15: Agents, Tools, and Integrated Systems]]
+- [[11-communication-becomes-the-interface|Chapter 8: Communication Becomes the Interface]]
+- [[12-requirements-engineering|Chapter 9: Requirements Engineering]]
+- [[13-precision-and-probabilistic-ai|Chapter 10: Precision and Probabilistic AI]]
+- [[14-economics-of-trust|Chapter 11: The Economics of Trust]]
+- [[15-legacy-problem|Chapter 12: The Legacy Problem]]
+- [[16-agents-tools-and-integrated-systems|Chapter 13: Agents, Tools, and Integrated Systems]]
 
 ### Part V - The Future
 
-- [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 16: What Becomes Scarce When Code Becomes Cheap?]]
-- [[18-future-of-programmers|Chapter 17: The Future of Programmers]]
-- [[19-enterprise-intelligence-layer|Chapter 18: The Enterprise Intelligence Layer]]
-- [[20-five-year-and-ten-year-scenarios|Chapter 19: Five-Year and Ten-Year Scenarios]]
+- [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 14: What Becomes Scarce When Code Becomes Cheap?]]
+- [[18-future-of-programmers|Chapter 15: The Future of Programmers]]
+- [[19-enterprise-intelligence-layer|Chapter 16: The Enterprise Intelligence Layer]]
+- [[20-five-year-and-ten-year-scenarios|Chapter 17: Five-Year and Ten-Year Scenarios]]
 - [[21-conclusion-when-intent-becomes-software|Conclusion: When Intent Becomes Software]]
 
 ### Reference

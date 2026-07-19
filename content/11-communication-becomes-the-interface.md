@@ -89,7 +89,7 @@ A production prompt may need to specify:
 
 At that point, the prompt is no longer a casual request. It is a behavioural contract.
 
-This is the core idea in Natural Language Programming. Some software behaviour can now be expressed through carefully engineered natural-language specifications interpreted by a model.
+This is the core idea of **natural-language programming**: some software behaviour can now be expressed through carefully engineered natural-language specifications interpreted by a model.
 
 The language is English, but the discipline resembles programming.
 

@@ -6,234 +6,102 @@ title: "Five-Year and Ten-Year Scenarios"
 
 ![Five-year and ten-year scenarios](<figures/FIG-19-01 Future Scenarios.png>)
 
-The future should be approached with humility.
+The rate of change is breathtaking. Tasks that defeated the Genie during my first year with Radix later became routine. A Streamlit-to-Xcode migration that initially failed became achievable roughly a year later as models, agent environments, tools, feedback, and my own supervision improved together.
 
-AI is changing quickly. Model capabilities, costs, tools, regulations, business models, and social expectations are all unstable. Any confident prediction about a specific product, company, or model version is likely to age badly.
+That experience makes me suspicious of confident forecasts—including my own. Five years of change may not resemble five equal annual steps. Yet “anything could happen” is not useful either. Scenarios help us ask which forces would have to change for different futures to emerge.
 
-But careful scenarios can still be useful.
+Two forces matter most:
 
-A scenario is not a prophecy. It is a structured way to ask what might happen if certain economic and technical trends continue. The purpose is not to predict exactly. It is to identify the forces that matter.
-
-The forces this book has followed are:
-
-- The cost of producing software.
-- The level of abstraction available to humans.
-- The cost of training and inference.
-- The reliability of AI systems.
-- The quality of integration with real software.
-- The skills that remain scarce.
-
-One more force belongs at the centre: whether AI can move from assisting individual tasks to coordinating software work across teams and workflows. The useful question is not whether a branded vision of an autonomous company succeeds. It is whether software production is partly an information-processing system that agents can help coordinate under human authority.
-
-Two variables create a more disciplined scenario matrix:
+1. How quickly AI capability improves.
+2. How much verification and integration cost after the AI generates something.
 
 | | Verification and integration remain expensive | Verification and integration become much cheaper |
 |---|---|---|
-| **Capability improves gradually** | AI remains a valuable assistant, but adoption concentrates in bounded and low-risk work. | AI becomes ordinary development infrastructure across most organisations. |
-| **Capability improves rapidly** | Generation races ahead while review, security, and maintenance become the binding constraints. | Intent-driven creation and agentic software organisations become plausible. |
+| **Capability improves gradually** | **Bounded assistant:** valuable in well-specified, low-risk tasks, with humans carrying most review and integration. | **Ordinary infrastructure:** AI becomes as routine as compilers, search, and version control across much of development. |
+| **Capability improves rapidly** | **Generation outruns trust:** output explodes, but security, review, maintenance, and coherence become the bottlenecks. | **Agentic organisation:** intent-driven creation and coordinated software work become plausible under human authority. |
 
-The future may move between these quadrants by domain. A marketing prototype and a payment system can inhabit different worlds at the same time.
+Different domains can occupy different quadrants simultaneously. A disposable marketing prototype and a payment system may inhabit different futures even inside the same company.
 
-## The Current Position
+## Where We Are Now
 
-At the current stage, AI can already assist with many software tasks: explanation, code generation, debugging, refactoring, tests, documentation, requirements clarification, and prototyping.
+AI already assists with explanation, code generation, debugging, refactoring, tests, documentation, requirements, and prototyping. It performs best when the task is well specified, the relevant context is available, the risk is manageable, and the output can be checked.
 
-It is not equally reliable across all tasks. It works best when the task is well specified, the context is available, the risk is manageable, and the output can be checked.
+Codex-like systems show why the model alone is the wrong unit of analysis. They connect a model to repositories, terminals, browsers, tests, permissions, and project context. The Genie becomes operational: it can act, gather feedback, and revise within boundaries.
 
-The strongest near-term value is not full autonomy. It is acceleration. AI helps people move faster through understanding, drafting, exploring, and iterating.
+The unsettled evidence reinforces the need for scenarios. Productivity varies by task, developer, codebase, tool, and quality threshold. Technical capability may move quickly while organisational adoption, regulation, and trust move slowly. The future is more likely to branch than to arrive everywhere at once.
 
-Codex-like systems show the direction of travel. They are not merely better chat interfaces. They connect models to repositories, terminals, browsers, tests, permissions, and project context. That makes them early examples of the genie becoming operational: not just answering, but acting within boundaries.
+## Scenario One: The Bounded Assistant
 
-The main constraints are verification, context, integration, cost, trust, and organisational adoption.
+If capability improves gradually while verification and integration remain costly, AI becomes a powerful but uneven assistant.
 
-The labour-market signal is still mixed. Labour-Market Effects on Programmers suggests that the near-term impact may appear first in skills, role expectations, and hiring patterns rather than in a simple collapse of programmer employment. Official projections can still show growth while the content of the job changes substantially.
+Developers use it to explain unfamiliar code, draft tests, produce documentation, and implement bounded changes. Non-programmers create prototypes, but experienced engineers remain essential for architecture, security, integration, and long-lived systems. High-stakes organisations restrict agents to narrow permissions and require substantial human review.
 
-## The Forecast May Be Too Small
+The economics remain attractive where failure is cheap and feedback is fast. They remain weak where mistakes are difficult to detect or costly to reverse. AI adoption grows, but concentrates in tasks whose output can be tested objectively.
 
-The greatest weakness in any five- or ten-year scenario may be that it imagines today's AI becoming gradually better. My experience with Radix suggests a less comfortable possibility: the boundary of what is feasible can move dramatically within a single year.
+**Signals to watch:** persistent model instability; review time rising with generated volume; weak performance in large unfamiliar repositories; tight organisational limits on agent authority.
 
-The failed attempt to scaffold the Streamlit-to-Xcode migration and the later success were not separated by a generation of computing. They were separated by roughly a year of progress in models, agent environments, tools, feedback, project context, and my own ability to supervise the work. If a difficult task can cross from impractical to achievable on that timescale, a five-year forecast cannot safely assume five similar annual increments.
+## Scenario Two: Ordinary Development Infrastructure
 
-Several forms of improvement can reinforce one another:
+If capability improves gradually while verification and integration become cheaper, AI becomes ordinary development infrastructure.
 
-~~~text
+Frameworks, typed interfaces, policy engines, visual regression tests, security scanners, and automated evaluation make generated work easier to constrain. Developers use AI as routinely as search, compilers, package managers, and version control. Hybrid systems become normal: probabilistic models interpret requests while deterministic software validates data, permissions, calculations, and execution.
+
+Non-programmers build more internal tools. Legacy modernisation becomes a major use case because AI can document old systems, map dependencies, generate characterization tests, and work through governed APIs. The job of the programmer moves upward toward requirements, architecture, evaluation, and stewardship.
+
+**Signals to watch:** falling cost per successfully completed task; stable model interfaces; widespread automated evaluation; strong visual and behavioural testing integrated into agent workflows.
+
+## Scenario Three: Generation Outruns Trust
+
+If capability improves rapidly while verification and integration remain expensive, the world receives far more software than it can safely absorb.
+
+AI produces impressive applications, migrations, and interfaces quickly. Small teams attempt portfolios that once required much larger organisations. But code generation outpaces the capacity to review dependencies, permissions, data handling, user experience, and maintenance consequences.
+
+This is the quadrant in which my Radix UI experience becomes economically important. Producing another interface variation is cheap; judging whether it works across screens, languages, accessibility settings, and real learning behaviour remains costly. Organisations may create fragile systems faster than they can understand them. Security incidents and maintenance burdens could erase apparent productivity gains.
+
+The limiting factor is neither typing nor model intelligence. It is disciplined acceptance: evidence that the generated system is fit to keep.
+
+**Signals to watch:** growth in AI-generated vulnerabilities and technical debt; larger review queues; rapid prototype growth without durable deployment; developers spending more time auditing than creating.
+
+## Scenario Four: The Agentic Software Organisation
+
+If capability improves rapidly and verification and integration also become much cheaper, software creation becomes more intent-driven.
+
+A domain expert describes an application through conversation, screenshots, examples, business rules, and corrections. Agents scaffold the project, choose tested components, construct the data model, implement features, run builds and tests, render the interface at several sizes, prepare deployment, and maintain an audit trail. Professional developers supervise architecture, security, difficult integrations, and consequential decisions.
+
+Natural language, observed work, and organisational records become source material for software. Code still exists, but much of it may be produced and revised without a person reading every line. Human-facing artefacts shift toward goals, policies, examples, acceptance criteria, prohibited actions, and evidence of behaviour.
+
+A software organisation is partly an information-processing system. It receives signals from customers, incidents, regulations, and markets, then turns them into priorities, designs, code, tests, releases, and support. Coordinated agents could perform a meaningful portion of that cycle.
+
+The future unit of production may therefore be neither the unaided programmer nor a single coding assistant. It may be a human objective connected to agents, deterministic services, repositories, tests, institutional context, and governance.
+
+This does not create a human company. Agents do not acquire culture, responsibility, friendship, fear, or moral standing because they coordinate tasks. Capability must still be separated from authority, and people remain accountable for what the organisation permits the system to do.
+
+**Signals to watch:** agents maintaining real products over time; safe coordination across specialised agents; automatic rollback and audit; evidence that generated systems remain coherent after repeated change.
+
+## Why the Forecast May Still Be Too Small
+
+The four scenarios are not an upper bound. Several improvements can reinforce one another:
+
+```text
 models reason and code better
 ↓
 agents use more tools and gather better evidence
 ↓
 verification becomes more automatic
 ↓
-successful work produces better context and reusable components
+successful work creates reusable context and components
 ↓
 more people attempt larger projects
 ↓
-tools improve around the new patterns of use
-~~~
+tools improve around those new patterns of use
+```
 
-This does not prove that progress will continue at the same rate. Bottlenecks, cost, regulation, energy, data, reliability, security, and diminishing returns could slow it. Adoption by organisations may also move much more slowly than technical capability.
+This loop does not prove perpetual acceleration. Cost, energy, data, regulation, security, diminishing returns, and organisational resistance could slow it. But forecasts can underestimate change when they treat the model as a single product. The whole system is improving across models, agents, tools, hardware, context, frameworks, verification, and human practice.
 
-But the opposite error matters too. Forecasts can underestimate compounding change because they evaluate the model as a single product. The real system is improving across several layers at once: model, agent, tools, hardware, context, frameworks, verification, and human practice.
+## What Remains Scarce in Every Scenario
 
-The ordinary-infrastructure and intent-driven scenarios later in this chapter should therefore be read as a middle branch, not an upper bound.
+No quadrant eliminates the need to choose what is worth building. Requirements, domain knowledge, architecture, taste, verification, integration, and responsibility remain important; their relative cost changes.
 
-## Five-Year Acceleration Branch
+The most useful indicator is therefore not tokens, benchmark scores, or lines of generated code. It is **cost per successfully completed task**: the total cost of specification, generation, checking, integration, correction, operation, and failure.
 
-In a more dramatic five-year scenario, AI is not merely ordinary development infrastructure. For many bounded projects, it becomes the primary implementer.
-
-A domain expert may describe an application through conversation, screenshots, examples, business rules, and corrections. An agent system scaffolds the project, chooses tested components, constructs the data model, writes the first implementation, runs builds and tests, renders the interface at several sizes, corrects visual defects, prepares deployment, and maintains an audit trail. Professional developers supervise architecture, security, difficult integrations, and the projects whose consequences justify deeper control.
-
-Small teams may operate software portfolios that previously required much larger engineering organisations. Temporary and highly specialised software becomes economical because the cost of creating and later discarding it falls sharply. Applications may be generated for one classroom, one research investigation, one legal matter, one patient workflow, or one short-lived business process.
-
-This branch does not require a machine with every human intellectual capability. It requires agent systems that are sufficiently reliable inside bounded environments, surrounded by frameworks, tests, permissions, and rollback.
-
-## Ten-Year Acceleration Branch
-
-A dramatic ten-year branch is harder to picture precisely because its products may not resemble today's development tools.
-
-Natural language, examples, observed work, and organisational records could become the normal source material for software. Code would still exist, but much of it might be produced, tested, revised, and retired without a person reading every line. The important human artefacts would increasingly be goals, policies, acceptance criteria, prohibited actions, and evidence that the resulting system behaves appropriately.
-
-Agent systems might coordinate large portions of the software lifecycle: research, requirements, design, implementation, testing, deployment, monitoring, support, migration, documentation, and continuous improvement. A small number of people could direct something that resembles a software organisation assembled from specialised agents and deterministic services.
-
-If that occurs, the most dramatic change would not be faster programming. It would be a large expansion in the quantity and specificity of software humanity can afford to create. Many activities that now adapt themselves to general-purpose products could instead receive software shaped around the activity.
-
-This remains speculation. Ten years could also bring disappointment, fragmentation, regulation, or a reliability ceiling. The purpose of the acceleration branch is not to claim that the most dramatic outcome will occur. It is to acknowledge that the changes already observed over one year make today's apparently ambitious forecast an unreliable upper limit.
-
-## Five-Year Scenario: AI as Ordinary Development Infrastructure
-
-In a plausible five-year scenario, AI becomes ordinary infrastructure for software development.
-
-Developers use AI assistants as routinely as they use search engines, compilers, documentation, package managers, and version control. AI helps read code, write tests, explain errors, generate migrations, update documentation, and suggest designs.
-
-Non-programmers build more prototypes and internal tools. Some become serious AI-assisted builders. Organisations create policies for model use, data sharing, prompt templates, evaluation, and security.
-
-AI features appear inside more applications, but production systems increasingly use hybrid designs: probabilistic AI for interpretation and deterministic software for validation, permissions, calculations, and execution.
-
-Legacy modernisation becomes a major use case. AI helps document old systems, generate tests, map dependencies, and create integration layers.
-
-Agents become useful in bounded workflows, especially where tools, permissions, and test environments are clear.
-
-The main assumption behind this scenario is that model capability continues improving while inference becomes affordable enough for everyday development workflows.
-
-## Five-Year Risks
-
-The five-year scenario could disappoint if verification costs remain too high, organisations fail to integrate AI safely, model behaviour remains unstable, data-security concerns restrict usage, or productivity gains prove uneven.
-
-There may also be a wave of poor-quality AI-generated software. If generation becomes cheap but engineering discipline does not improve, many organisations may create fragile systems faster than they can maintain them.
-
-The limiting factor may not be AI capability. It may be human and organisational discipline.
-
-## Ten-Year Scenario: Intent-Driven Software Creation
-
-In a plausible ten-year scenario, software creation becomes far more intent-driven.
-
-Humans describe goals, workflows, constraints, data, examples, and desired outcomes. AI systems propose architectures, generate implementations, run tests, integrate tools, monitor behaviour, and explain trade-offs.
-
-Programming languages still exist, but many humans interact with them less directly. Code becomes an intermediate representation that AI can generate, inspect, and revise. Humans focus more on intent, design, verification, domain knowledge, and accountability.
-
-Personal, niche, temporary, and organisation-specific software becomes more common. A teacher creates a classroom tool. A doctor prototypes a workflow aid. A researcher builds a specialised analysis interface. A family creates a private coordination app. A small business builds internal systems that previously would have been uneconomic.
-
-Enterprise AI systems may reason across larger portions of organisations: finance, inventory, compliance, operations, customer service, and software infrastructure. Agents may coordinate workflows across tools, but serious systems still require permissions, logs, human review, testing, and governance.
-
-Enterprise Context sharpens this scenario. The competitive advantage of future enterprises may depend less on the raw number of software engineers they employ and more on the quality, completeness, and accessibility of the organisational context available to their AI systems. Companies may compete by turning source code, documentation, architecture decisions, incidents, customer complaints, regulations, and business policies into machine-readable institutional memory.
-
-The main assumption behind this scenario is that AI reliability, context management, tool use, and integration improve enough for organisations to trust AI with larger workflows.
-
-## The Agentic Software Organisation
-
-The more radical scenario is not that AI writes more code.
-
-It is that AI begins to coordinate more of the software organisation itself.
-
-A software company is usually described as a collection of people: executives, product managers, designers, engineers, testers, support teams, technical writers, security specialists, sales engineers, and operations staff. But from another angle, a software company is an information-processing system. It receives signals from customers, competitors, regulations, incidents, and markets. It turns those signals into priorities, requirements, designs, code, tests, documentation, releases, support responses, and future plans.
-
-That is the organisational question.
-
-Can an AI system simulate enough of that information-processing machinery to become something like a software company?
-
-Not a human company. Not a company with culture, ambition, politics, friendship, fear, pride, or moral responsibility. But a functional approximation of some company processes: gathering requirements, generating designs, writing code, running tests, triaging bugs, drafting documentation, monitoring usage, answering support questions, and proposing improvements.
-
-The first version would not replace Microsoft. It would probably look much smaller and more practical. It might build internal tools. It might maintain dashboards. It might refactor code. It might update documentation. It might translate customer complaints into bug reports. It might coordinate a swarm of specialised agents around one product team.
-
-But if that works, the unit of software production changes.
-
-The old unit was the programmer.
-
-The current unit is the AI-assisted programmer.
-
-The future unit may be the agentic software organisation: a human objective connected to a coordinated system of agents, tools, tests, repositories, context, and governance.
-
-This scenario matters because it turns the question from "Can AI write code?" into "Can AI coordinate the work required to create and maintain software?"
-
-If that answer becomes yes, even partially, then the economics of software change again.
-
-Companies would not merely ask how many programmers they need. They would ask what work should be done by employees, what work should be done by AI agents, what context those agents need, what systems they may touch, what tests constrain them, and who remains accountable for the result.
-
-The true test is therefore not code generation.
-
-The true test is whether AI can handle ambiguity, priority, integration, verification, trust, and maintenance.
-
-Those are the things software companies actually do.
-
-## Ten-Year Risks
-
-The ten-year scenario could fail or fragment.
-
-AI may remain excellent at prototypes but unreliable at long-lived systems. Verification may dominate cost in high-stakes domains. Regulation may slow adoption. Security risks may limit tool use. Model providers may become infrastructure bottlenecks. Organisations may accumulate unmaintainable AI-generated systems. Human expertise may erode in dangerous ways if people rely on AI without understanding enough to evaluate it.
-
-There may also be inequality in capability. People and organisations with strong domain knowledge, good data, engineering discipline, and access to powerful tools may benefit greatly. Others may use the same tools poorly and receive disappointing results.
-
-## What Should We Watch?
-
-The future depends on several signals.
-
-First, cost per useful task. Not cost per token, model size, or benchmark score alone, but the cost of completing valuable work reliably.
-
-Second, verification methods. If AI systems become easier to test, monitor, constrain, and audit, adoption in serious software will accelerate.
-
-Third, context and memory. If models can reliably use larger, more relevant context, they can work on larger software systems.
-
-Fourth, tool integration. The more safely AI can use tools, the more it can move from answering to acting.
-
-Fifth, model stability. If behaviour changes unpredictably across versions, production use becomes harder.
-
-Sixth, education. If people learn to specify, verify, and collaborate with AI, the benefits spread. If they treat AI as magic, failures multiply.
-
-Seventh, labour-market composition. Watch whether employers reduce routine coding roles, increase demand for AI-literate developers, create more evaluation and governance roles, compress junior career ladders, or broaden software creation to product managers and domain experts.
-
-Eighth, enterprise context. Watch whether organisations invest in code indexing, knowledge graphs, retrieval systems, documentation quality, meeting and decision capture, data governance, and AI-access policies as seriously as they once invested in cloud infrastructure.
-
-Ninth, agentic organisation. Watch whether AI systems move beyond individual coding assistance into coordinated multi-agent workflows: product agents, testing agents, documentation agents, support agents, security agents, deployment agents, and planning agents working together under human supervision.
-
-Tenth, company simulation. Watch whether any organisation demonstrates that AI can reliably perform a meaningful slice of a software-company function, not merely a task. The signal is not a demo where an agent builds a toy app. The signal is a system that maintains, improves, supports, and governs real software over time.
-
-## The Industrialisation of Intelligence
-
-The broader frame for this book may be the industrialisation of intelligence.
-
-The Industrial Revolution mechanised physical work. AI begins to mechanise certain kinds of cognitive work: translation, drafting, summarisation, coding, classification, explanation, and planning.
-
-Software development is the clearest case study because it is both knowledge work and machine work. It requires human intent, symbolic representation, formal execution, and economic value. If AI changes software creation, it shows how machine intelligence can alter the production of useful cognitive artefacts.
-
-But the lesson is larger than software.
-
-When intelligence becomes cheaper to access, the scarce resource shifts. The future belongs not merely to those who can produce output, but to those who know what output is worth producing, how to judge it, and how to connect it safely to the real world.
-
-## The Final Question
-
-The genie in the bottle is not simply that AI writes code.
-
-The deeper mystery is that human intent can increasingly be transformed into working systems through conversation, examples, feedback, and machine-learned representation.
-
-Codex gives that mystery a practical form. It is the genie I met: a system that could take intent, inspect the surrounding software world, use tools, revise code, and keep going until the work became something I could test.
-
-That transformation is technical, but its consequences are economic.
-
-It changes who can build software, what can be built, how quickly ideas become systems, and where human judgement creates value.
-
-The future is not a world without programmers. It is a world in which programming moves upward, closer to intent, and software creation becomes available to more kinds of people.
-
-The question is not whether AI will change software development.
-
-It already has.
-
-The question is whether we will understand the change deeply enough to use it well.
+The future of programming is not settled by whether the Genie can produce an answer. It is settled by whether the surrounding system can turn that answer into dependable action—and whether people can justify the action that follows.

@@ -46,6 +46,31 @@ How this book uses it:
 - To avoid claiming that all software development becomes 55.8 percent faster.
 - To reinforce the distinction between code generation and production engineering.
 
+METR's randomized early-2025 study examined experienced open-source developers completing real issues in repositories they knew well. AI use increased completion time by 19% in that specific setting. In February 2026, METR reported that late-2025 tools probably improved on that result, but selection effects and concurrent-agent use made the new estimate unreliable. The book presents both results because capability and measurement conditions are changing together.
+
+Sources:
+
+- [METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)
+- [METR, We Are Changing Our Developer Productivity Experiment Design](https://metr.org/blog/2026-02-24-uplift-update/)
+
+DORA measures a different level: software delivery inside organisations. Its 2024 report associated increasing AI adoption with lower throughput and stability despite individual benefits. Its 2025 report found a changed pattern—higher throughput alongside continued instability—and described AI as an amplifier of the organisation around it.
+
+Sources:
+
+- [DORA, 2024 Accelerate State of DevOps Report](https://dora.dev/research/2024/dora-report/)
+- [DORA, 2025 State of AI-Assisted Software Development](https://dora.dev/research/2025/dora-report/)
+- [DORA, Balancing AI Tensions](https://dora.dev/insights/balancing-ai-tensions/)
+
+The 2025 Stack Overflow Developer Survey provides perception evidence rather than controlled productivity measurement. It records widespread adoption alongside frustration with nearly-correct answers and time-consuming debugging.
+
+Source: [Stack Overflow, 2025 Developer Survey: AI](https://survey.stackoverflow.co/2025/ai)
+
+How this book interprets the combined evidence:
+
+- Bounded experiments, familiar-repository studies, surveys, and delivery metrics answer different questions.
+- No single percentage represents “AI productivity” across software development.
+- Evidence should be dated and revisited because models, agent tools, and user practices change quickly.
+
 ## Cautionary Evidence on AI Coding
 
 More recent studies suggest that AI coding tools may produce mixed effects in real-world collaborative software settings, including coordination, review, and maintenance burdens.
