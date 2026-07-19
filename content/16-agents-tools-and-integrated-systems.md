@@ -538,7 +538,7 @@ The unevenness helps explain several otherwise puzzling experiences with AI. A m
 
 The first example came from Radix on an iPhone:
 
-![Radix iPhone controls squeezed by the available width](<figures/FIG-14-02 Radix Crowded iPhone Controls.png>)
+![Radix iPhone controls squeezed by the available width](<figures/CASE-14-01 Radix Crowded iPhone Controls.png>)
 
 The screen worked, but the row beneath the character strip did not read like a deliberate interface. “Memory” and “Phrases” were forced into two lines, with hyphens appearing where the words broke. “Components” became “Compon...”. The help text and navigation competed with the character grid for the same small screen.
 
@@ -546,11 +546,11 @@ The first attempted correction also taught a second lesson. Codex changed the la
 
 The next two examples came from this book. In the first version of the English-to-software diagram, the words “Mathematical representation” extended beyond the green box. The sentence at the bottom crossed both sides of its container:
 
-![Text escaping from the English-to-software diagram](<figures/FIG-14-03 Diagram Overflow English To Software.png>)
+![Text escaping from the English-to-software diagram](<figures/CASE-14-02 Diagram Overflow English To Software.png>)
 
 In the AI-model figure, the small sentence beneath the main diagram was wider than the box drawn to contain it:
 
-![Text escaping from the AI-model diagram](<figures/FIG-14-04 Diagram Overflow AI Model.png>)
+![Text escaping from the AI-model diagram](<figures/CASE-14-03 Diagram Overflow AI Model.png>)
 
 Other figures failed differently. One contained a blank oval where “Procedure” should have appeared. Another left “Probabilistic AI” out of the main node. The human-expertise figure contained words that were clipped at the bottom of their boxes. Each file existed. Each image opened. Each page could be published. A production check concerned only with file generation would have declared success.
 
