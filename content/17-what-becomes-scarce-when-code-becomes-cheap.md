@@ -102,6 +102,8 @@ AI can generate many alternatives. That increases the need to choose.
 
 When production becomes easy, curation becomes valuable.
 
+The Radix interface offered a small example. Once the Genie accelerated functional implementation, more of my attention moved to what remained visible to the user: spacing, labels, screen sizes, workflow clarity, and the feeling of the finished product. User-interface refinement became a larger share of the human work because the machinery underneath had become faster to produce.
+
 ## The New Software Economy
 
 If software becomes cheaper, the economy of software creation changes.

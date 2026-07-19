@@ -517,6 +517,79 @@ A future Radix might also combine flexible model judgement with exact rules: the
 
 These possibilities belong in the book because they connect my experience to the wider AI world. They must remain visibly labelled as possibilities. The Genie metaphor should make unfamiliar ideas understandable, not make speculation look like accomplished fact.
 
+## Field Note: The Genie's Uneven Magic
+
+While preparing this book for publication, I noticed that several diagrams contained boxes whose labels escaped across their borders. The same kind of problem had appeared in Radix. Codex could implement the logic of a feature, yet squeeze a button until its words wrapped awkwardly or arrange controls correctly in principle but badly in the available space. Microsoft Word templates created another version of the problem: the content was present, but fixed fields, pagination, anchors, and font metrics refused to behave as expected.
+
+These were small failures beside the amount of work the Genie could accomplish. They were also revealing. The model could understand the relationship among the parts without reliably judging the finished whole. It knew that a label belonged inside a button. It did not always anticipate the exact space the rendered words would occupy.
+
+The problem is broader than visual layout. The Genie's powers are uneven in four recurring ways:
+
+| The Genie is strong at | Where it remains less dependable |
+|---|---|
+| Generating a plausible result | Establishing that the result is correct |
+| Following the stated instruction | Inferring the intention and missing context behind it |
+| Constructing individual components | Anticipating interactions across the whole system |
+| Producing an artefact | Judging whether it is useful, safe, polished, and finished |
+
+The unevenness helps explain several otherwise puzzling experiences with AI. A model can produce hundreds of lines of coherent code and overlook an unusual permission case. It can rewrite a chapter fluently and introduce a contradiction with an earlier chapter. It can obey “make the button smaller” even when the real intention was to make the interface feel less crowded. It can generate a finished-looking document without noticing that a heading has been stranded at the bottom of a page.
+
+### Why the Genie misses what people see
+
+Code logic is often expressed in symbols with outcomes that can be checked. If a payment succeeds, does the order change state? If an imported phrase already exists, is it duplicated? A test can supply an input and compare the observed result with the expected one.
+
+Visual quality depends on geometry and perception. The width of a label changes with the typeface, font size, operating system, language, browser, screen size, accessibility settings, padding, and the words themselves. A layout that works on a laptop can fail on a telephone. A Word paragraph moving by one line may push a table onto the next page.
+
+Current models can interpret images, but they do not continuously experience the screen as a person does while they generate code. Unless the workflow renders the result and returns it for inspection, the model may treat valid source code as a completed interface. Even when shown the screen, it can identify the obvious overflow while missing balance, hierarchy, or the accumulated irritation of using a cramped workflow repeatedly.
+
+Other limitations have the same structure. Missing context prevents the model from seeing the whole project. Probabilistic generation produces convincing errors. Long tasks allow terminology and design decisions to drift. Novel situations provide fewer established patterns to draw upon. Most importantly, the model does not live with the consequences of a bad release, a misleading claim, or a damaging decision.
+
+### The older machinery still matters
+
+The answer is not to ask another model whether the first model did a good job. Software engineering already has a large collection of deterministic tools designed to catch particular classes of failure.
+
+Compilers and type checkers reject inconsistent program structures. Linters detect suspicious patterns. Unit, integration, and end-to-end tests compare behaviour with expected outcomes. Schemas constrain data exchanged between systems. Security scanners look for known vulnerabilities. Version control exposes exactly what changed and allows a change to be reversed. Permissions and sandboxes limit the damage a tool can cause.
+
+Visual work also has automated safeguards. Browser tests can render the same interface at several screen sizes and measure whether text extends beyond its container. [Playwright's visual comparisons](https://playwright.dev/docs/test-snapshots) can compare a new screenshot with an approved reference image. [axe-core](https://github.com/dequelabs/axe-core) can automatically identify many accessibility defects in rendered web interfaces, while deliberately reporting some cases for human review. Design systems provide tested components with minimum sizes, spacing rules, and predictable responsive behaviour.
+
+Documents have partial safeguards rather than a complete solution. Templates, paragraph styles, table rules, preflight checks, and PDF rendering can reduce errors. Microsoft's Open XML tools can [validate the structure of a Word document](https://learn.microsoft.com/en-us/office/open-xml/word/how-to-validate-a-word-processing-document), but Microsoft also states that the SDK does not reproduce Word's layout behaviour. A structurally valid file can therefore remain visually poor. The dependable workflow is still to render the final pages and inspect them.
+
+These tools are narrower than AI, and that is their advantage. A schema does not understand the purpose of Radix, but it can say with precision that required data is missing. A screenshot comparison has no taste, but it can prove that pixels changed. A test suite does not know whether a feature is worth building, but it can establish whether previously agreed behaviour survived.
+
+The strongest system combines the Genie's breadth with the older machinery's narrow certainty:
+
+```text
+human intention
+↓
+AI generation
+↓
+deterministic checks
+↓
+rendered inspection
+↓
+human judgement and approval
+```
+
+### Temporary weakness or lasting boundary?
+
+Some of the problem is likely to be temporary. Multimodal models are improving at reading screens. Coding agents can open browsers, capture screenshots, inspect the document structure, test multiple viewport sizes, and revise their own work. Overflow detection, automated test generation, retrieval of project decisions, and comparison across files should all become more reliable.
+
+A deeper boundary will remain even if the obvious defects disappear. Detecting that text crossed a border is measurable. Deciding whether a learning screen feels calm, whether an explanation is humane, whether a workflow deserves the user's trust, or whether a feature should exist requires judgement about people and purposes. Better models may become strong advisers on these questions, but the questions do not collapse into geometry.
+
+The short-term weakness is incomplete perception and verification. The longer-term boundary is responsibility for what “good” should mean.
+
+### Where the human time moves
+
+This has a direct economic consequence. AI may make a functional feature dramatically faster to produce without reducing the final mile of product work by the same amount. Someone still has to use the feature, notice that the button is cramped, test the smaller screen, rewrite the label, check accessibility, and decide whether the interaction feels coherent.
+
+A large amount of human time can therefore move into user-interface refinement. The UI has not necessarily become more expensive in absolute terms. It becomes a larger share of the remaining work because code generation has accelerated more quickly. The same shift appears in editing, testing, integration, governance, and review.
+
+This is another form of the scarcity shift developed later in the book. When production becomes abundant, inspection, taste, and responsibility become more valuable.
+
+The practical rule is simple: never declare visual or document work complete because the file was generated. Render it at the size in which a person will encounter it. Measure what can be measured. Use deterministic checks wherever they exist. Then let a person judge the experience.
+
+The Genie can help with every step. It should not be allowed to skip them.
+
 ### Claude Code, Cursor, And The Coding-Agent Race
 
 Codex is not alone.
