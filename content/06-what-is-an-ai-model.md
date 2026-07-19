@@ -160,6 +160,127 @@ This is not just convenience. It is the same kind of interface shift that change
 
 This is why [[Multimodal Models]] may become economically important. They do not merely allow AI to see pictures or hear speech. They may unlock expertise that text-first computing left outside the software economy.
 
+## When the Genie Learned to See, Hear, Speak, and Perform
+
+My own experience of the Genie has been dominated by words and software. I used conversation to write this book and used Codex to help build Radix. That experience is real, but it is not a boundary around the technology.
+
+The first mass encounter with generative AI was largely textual: a person typed words and received words. That beginning now looks misleadingly narrow. Multimodal AI can work across text, images, voices, music, video, diagrams, screens, and code. More importantly, it can connect them. A spoken description can become a transcript. A photograph can become a moving scene. A sketch can become an interface. A voice can be translated while some of its timing and emotion are preserved. A screenshot of a broken layout can lead to a change in the code that produced it.
+
+The Genie is not simply acquiring more output formats. It is gaining access to more of the ways human beings perceive, remember, explain, and create.
+
+### From a Picture of Rome to a Moving World
+
+I understood the significance more clearly when I saw online videos that appeared to reconstruct ancient Rome. These were not stationary illustrations. The camera moved through streets and buildings. Human figures walked through the scene. Clothing, light, architecture, and faces combined into something that looked, at first glance, like filmed history.
+
+I did not make those videos, and I cannot verify the particular production process from viewing the finished result. The honest claim is not that one prompt recreated Rome accurately. It is that moving historical simulation of this kind has become possible for creators without physically rebuilding Rome.
+
+A likely workflow may combine several systems and many human decisions:
+
+~~~text
+historical research and references
+↓
+script and shot descriptions
+↓
+concept images, locations, characters, and costumes
+↓
+image-to-video or text-to-video generation
+↓
+camera movement, dialogue, voices, music, and sound
+↓
+selection, correction, continuity work, and editing
+↓
+finished sequence
+~~~
+
+That distinction matters. The striking result may look like one act of machine magic, but it is often a production pipeline. AI lowers the cost of several stages and lets one person attempt work that previously demanded many specialised people, physical resources, or both.
+
+By 2025, Google was describing Flow explicitly as an AI filmmaking tool combining its Veo video model, Imagen image generation, and Gemini. Its announced controls included reusable visual ingredients, camera movement, scene extension, consistent characters, and generated sound. Later versions added dialogue, richer audio, reference images, longer shots, and tools to insert or remove elements. Runway separately demonstrated consistent characters, objects, and locations generated from reference images. Adobe placed generated video and the extension of existing footage inside its established creative-production tools.
+
+These are company demonstrations and product claims, not proof that a model can independently make a coherent feature film. But together they show the direction of travel: generation is moving from isolated clips towards an integrated audiovisual workflow.
+
+### Voice Is Part of the Performance
+
+Voice deserves equal attention. Speech is not merely text read aloud. It carries identity, age, accent, hesitation, rhythm, emphasis, and emotion.
+
+Current systems can transcribe speech, generate voices, clone a voice with permission, translate it, and dub audiovisual work into other languages. Providers now claim to preserve more of the original timing and emotional delivery during translation. This could let a teacher reach students in several languages, help a small creator distribute work internationally, restore speech for someone who has lost it, or give a fictional character a repeatable voice.
+
+It also creates the machinery of impersonation. A familiar voice can be made to say words its owner never spoke. The same capability that expands access can enable fraud, political deception, harassment, or the unauthorised replacement of performers. Multimodal capability enlarges both the means of creation and the burden of verification.
+
+### The Artificial Movie Star
+
+It is now possible to imagine a movie star who was never born.
+
+The industry term **synthetic performer** refers to a wholly digital person who does not resemble a recognisable real performer and is not voiced by one. This differs from a **digital replica**, which reproduces the voice or likeness of an identifiable person. The distinction is already present in performers' union terminology and contracts. It is therefore not merely a distant science-fiction question.
+
+A synthetic performer might appear at any age, speak many languages, work in impossible locations, and remain available across a long-running series. A small studio could build stories around a licensed artificial cast. Audiences might form attachments to fictional performers just as they already do to animated characters, except that the new performer could look photographic and behave as though captured by a camera.
+
+But an artificial star is not automatically free of copyright or other rights. It may avoid the biology, schedule, and physical location of a human actor, yet still be governed by:
+
+- copyright in human-authored character design, scripts, music, settings, and finished editing;
+- trademark and contractual control over the character as a commercial identity;
+- rights of publicity or privacy if it resembles a real person;
+- consent and compensation rules if a person's face, voice, or performance contributed to it;
+- licences and restrictions attached to training material, models, and production tools; and
+- uncertainty about how much copyright protection a largely machine-generated performance receives without sufficient human authorship.
+
+The United States Copyright Office has treated copyrightability, training data, and digital replicas as separate questions. It has also recommended stronger protection against unauthorised realistic replicas. The safer conclusion is not that synthetic performers exist outside ownership. It is that ownership, authorship, and performance rights are being rearranged.
+
+### A Movie Is More Than a Plausible Clip
+
+The progress is breathtaking, but a convincing few seconds should not be confused with a finished film.
+
+Long-form storytelling requires a world to persist. A character must remain the same person across shots. Objects must stay where the story left them. Injuries, clothing, lighting, geography, and time must remain consistent. Actions must have consequences. Dialogue must support character and plot. Emotional development must survive more than one spectacular scene.
+
+Research benchmarks still identify long-duration coherence, event ordering, object identity, prompt adherence, and narrative consistency as difficult problems. Generated historical video introduces another weakness: visual plausibility is not historical evidence. A beautiful reconstruction can confidently combine the wrong architecture, clothing, social behaviour, language, or period. The more realistic it looks, the easier it may be to mistake invention for observation.
+
+For the foreseeable future, serious production therefore remains an act of direction and verification. Humans choose the purpose, research the subject, establish the visual language, judge performances, reject weak generations, maintain continuity, edit the sequence, clear rights, and decide what the work means. AI can greatly reduce the cost of rendering alternatives without possessing taste, historical accountability, or the intention behind the story.
+
+### The Economic Change Is Who Gets to Attempt the Work
+
+The most important change may not be that large studios make the same films more cheaply. It may be that far more people can attempt forms of expression previously closed to them.
+
+A historian might create a walk through an ancient city. A teacher might turn a lesson into a multilingual visual story. An architect might let a client move through a building before it exists. A small company might produce demonstrations without a film crew. A novelist might test characters and scenes before approaching a studio. A child might direct a story rather than merely describe it.
+
+This resembles the Radix story at a different scale. I did not become a conventional software engineer before attempting software. The Genie reduced the distance between intention and implementation. Multimodal AI may reduce the distance between imagination and audiovisual production.
+
+That does not eliminate craft. When the cost of producing an image or clip falls, judgement becomes more important because the number of possible outputs explodes. The scarce capability moves towards deciding what is worth making, identifying what is false or derivative, maintaining coherence, and turning generated fragments into a work that deserves attention.
+
+### When Seeing Is No Longer Believing
+
+There is also a social price. Photography, recorded speech, and video have never been perfect proof, but they carried a presumption that some event stood before a camera or microphone. Synthetic media weakens that presumption.
+
+Technical responses already exist. Watermarks, detection systems, and the C2PA standard for **Content Credentials** can record information about the origin and editing history of a media asset. Such provenance can help a viewer assess where material came from. It cannot by itself prove that every claim in the picture is true, and metadata may be removed or lost. NIST therefore treats provenance, watermarking, detection, testing, and public understanding as complementary measures rather than a complete solution.
+
+This creates a paradox. The Genie can make human imagination more visible while making visible evidence less trustworthy. Society will need both greater creative literacy and greater verification literacy.
+
+### What I Know, What I Observed, and What I Infer
+
+This part of the revolution lies beyond my deepest direct experience. That should be disclosed, but it should not cause the book to ignore a transformation already under way.
+
+Three kinds of claim must remain separate:
+
+1. **Experience:** I used multimodal Codex workflows when screenshots of Radix or book diagrams revealed problems that text alone had not communicated adequately.
+2. **Documented observation:** current systems demonstrably generate and edit images, voices, audio, and moving video, while production tools increasingly connect these capabilities.
+3. **Inference:** synthetic performers, individual filmmaking, personalised visual worlds, and radically smaller production teams are plausible consequences, not settled outcomes.
+
+The responsible response is neither to dismiss a capability because I have not personally mastered it nor to describe every demonstration as a completed revolution. The task is to show what has crossed into reality, what remains difficult, and why the economic boundary is moving.
+
+The Genie learned to converse first. It is now learning to perform.
+
+### Sources for This Section
+
+- Google, [Introducing Flow: Google's AI filmmaking tool designed for Veo](https://blog.google/innovation-and-ai/products/google-flow-veo-ai-filmmaking-tool/).
+- Google DeepMind, [Veo](https://deepmind.google/technologies/veo/).
+- Runway, [Gen-4: AI Video Generation with World Consistency](https://runwayml.com/research/introducing-runway-gen-4).
+- Adobe, [Meet the Firefly Video Model](https://blog.adobe.com/en/publish/2025/02/12/meet-firefly-video-model-ai-powered-creation-with-unparalleled-creative-control).
+- ElevenLabs, [Introducing Dubbing v2](https://elevenlabs.io/blog/introducing-dubbing-v2).
+- SAG-AFTRA, [Terms to Know](https://www.sagaftra.org/terms-know).
+- U.S. Copyright Office, [Copyright and Artificial Intelligence](https://www.copyright.gov/ai/?category=23).
+- International Labour Organization, [Generative AI and the media and culture industry](https://www.ilo.org/publications/generative-ai-and-media-and-culture-industry).
+- NIST, [Reducing Risks Posed by Synthetic Content](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content).
+- C2PA, [Content Credentials explainer](https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html).
+- Zheng and others, [LoCoT2V-Bench: A Benchmark for Long-Form and Complex Text-to-Video Generation](https://arxiv.org/abs/2510.26412).
+
 Reasoning is a trade-off. More careful reasoning may produce better answers, but can require more inference time and compute.
 
 These trade-offs are why [[ECONOMICS_OF_INTELLIGENCE]] matters. Every improvement should be analysed as cost versus benefit. The question is not merely whether a model is more impressive. The question is what new value the improvement creates, what cost it introduces, who pays that cost, and whether the benefit justifies the investment.
