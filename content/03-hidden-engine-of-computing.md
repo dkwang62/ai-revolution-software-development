@@ -10,7 +10,7 @@ Every major breakthrough in computing has tried to hide something.
 
 That is easy to miss because the history of computing is usually told as a history of inventions: the transistor, the microprocessor, the operating system, the programming language, the database, the Internet, the cloud, the smartphone, and now artificial intelligence. Each invention seems different. Each belongs to its own technical world. Yet underneath the differences runs one repeated pattern: computing advances when humans can stop thinking about one layer of complexity and begin working at a higher level.
 
-This pattern has a name: [[Abstraction]].
+This pattern has a name: Abstraction.
 
 Abstraction sounds like a dry computer-science term, but it may be the most important idea in the history of software. Without abstraction, modern software would be impossible. No human being can think simultaneously about transistors, machine instructions, memory addresses, operating-system calls, network protocols, database indexes, user interfaces, payment rules, privacy requirements, and customer workflows. The human mind needs layers. It needs simplification. It needs the ability to ignore details that are not relevant to the task at hand.
 
@@ -94,7 +94,7 @@ AI-assisted development
 
 This is not a perfect ladder. The layers overlap. Older layers remain important. Expert programmers still sometimes need to understand lower-level behaviour. But the historical movement is clear. Computing repeatedly moves complexity away from the human at the top and into tools, languages, platforms, and systems beneath them.
 
-This recurring pattern is captured by [[The Law of Abstraction]]:
+This recurring pattern is captured by The Law of Abstraction:
 
 > Every successful generation of computing hides more complexity than the generation before it.
 
@@ -140,7 +140,7 @@ Every abstraction hides information. Sometimes the hidden information matters. A
 
 Abstraction can also reduce visibility. When something fails, the user may not know which layer is responsible: the application, the framework, the database, the operating system, the network, the cloud provider, or an external API. It can hide performance costs, because a simple command may trigger expensive operations underneath. It can create false confidence, because a simple interface can make hidden assumptions look safer than they are.
 
-This is why [[The Cost of Abstraction]] is a necessary companion to [[The Law of Abstraction]]. The history of computing is not a story of everything becoming easier without consequence. It is a story of trade-offs. Each layer gives something and takes something.
+This is why The Cost of Abstraction is a necessary companion to The Law of Abstraction. The history of computing is not a story of everything becoming easier without consequence. It is a story of trade-offs. Each layer gives something and takes something.
 
 The question is not whether abstraction is free. It is whether the gain is worth the cost.
 
@@ -161,6 +161,16 @@ Programming languages do not disappear. They remain essential because machines s
 Earlier abstraction layers translated one representation into another. Compilers translated high-level programming languages into machine instructions. Frameworks translated common application patterns into reusable structures. Cloud platforms translated infrastructure needs into services. AI begins to translate human intent into software structures.
 
 This is why AI is not a break from computing history. It is a continuation of its deepest pattern.
+
+## Is AI Really an Abstraction Layer?
+
+The strongest objection is that a conventional abstraction offers a stable contract. A compiler has syntax. An API specifies inputs and outputs. A framework constrains how components behave. Natural language is ambiguous, and a model may respond differently when the wording or context changes. How can something so leaky and probabilistic count as an abstraction?
+
+By itself, it cannot provide the kind of contract that earlier layers provide. AI is better understood as an **emerging, incomplete abstraction layer**. It raises the level at which people can express intent, but the missing precision must be supplied by the system around it: requirements, typed tools, schemas, tests, validators, permissions, design systems, and human approval.
+
+This qualification strengthens rather than weakens the thesis. The model performs a flexible translation that would be prohibitively expensive to encode as rules. Deterministic machinery then narrows, checks, and constrains the result. The abstraction is not the language model alone. It is the combined engineering system that turns informal intent into verified action.
+
+That contract will improve as models and agent workflows improve, but it will never be wise to confuse fluent interpretation with guaranteed execution.
 
 ## Why AI Feels Different
 

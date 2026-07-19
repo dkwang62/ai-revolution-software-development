@@ -4,17 +4,7 @@ title: "Glossary"
 
 # Glossary
 
-## Purpose
-
-Define the most important terms in plain English so that intelligent readers without a computer science background can follow the book's argument.
-
 This glossary is intentionally practical rather than academic. It defines terms as they are used in this book.
-
-## Central Question
-
-Which terms must readers understand before the book's central argument becomes clear?
-
-## Key Terms
 
 ## Abstraction
 

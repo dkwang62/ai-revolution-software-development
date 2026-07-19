@@ -171,16 +171,4 @@ That is why the future of AI in software may not be only about better code gener
 
 The frontier model is the engine. The enterprise intelligence layer is the vehicle. Without the engine, the vehicle does not move. Without the vehicle, the engine has nowhere useful to go.
 
-## Reader Takeaways
-
-- Most enterprises will probably rent general AI capability rather than train frontier models from scratch.
-- The enterprise's durable advantage may lie in its proprietary knowledge, context, workflows, and governance.
-- A context window is working memory; enterprise knowledge is organisational memory.
-- The key problem is effective context, not just larger raw context.
-- Enterprise AI ROI will likely emerge from a portfolio of focused use cases before becoming a shared platform.
-- ERP digitised transactions; Enterprise AI may digitise organisational knowledge.
-- The strategic asset of the AI era may be machine-readable organisational knowledge.
-
-## Bridge to Next Chapter
-
-If enterprises can turn organisational knowledge into an AI-usable asset, the final question becomes larger than software. What happens when human intent, institutional memory, and machine intelligence become part of the same creative system?
+ERP systems digitised transactions. Enterprise AI may begin to make organisational knowledge operational in a comparable way, but that is a hypothesis rather than a settled destination. Its value will be determined by specific workflows in which retrieval, permissions, provenance, validation, action, and audit work together. The next chapter treats the future as a set of scenarios and asks which observable changes would support—or weaken—that hypothesis.

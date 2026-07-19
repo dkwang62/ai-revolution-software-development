@@ -249,7 +249,7 @@ This means the most important race may not be simply larger context windows. It 
 
 The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The real competitive advantage may lie in earlier layers: knowledge quality, organisation, indexing, retrieval, governance, permissions, provenance, and freshness.
 
-This suggests a further architectural layer: [[Enterprise Intelligence Layer]].
+This suggests a further architectural layer: Enterprise Intelligence Layer.
 
 Most enterprises probably do not need to build their own frontier model. They can rent general intelligence from foundation-model providers, much as companies rent cloud infrastructure or buy standard software platforms. What they need to own is their specialised intelligence: the representation of their own business reality.
 
@@ -269,28 +269,4 @@ This is why context management becomes part of software engineering. The goal is
 
 In traditional software, data quality already mattered. In AI systems, context quality matters just as much because context directly shapes behaviour.
 
-## The First-Principles Stack
-
-The concept can now be summarised as a stack:
-
-```text
-Information -> Representation -> Model -> Training -> Inference -> Context -> Retrieval -> Enterprise Context
-```
-
-Part II explains abstraction: computing repeatedly hides complexity behind simpler interfaces. Part III explains information and models: AI can transform information because it has learned relationships among representations. This chapter explains context: the model's general capability becomes useful only when combined with the right situation-specific information.
-
-Part IV then explains engineering. Communication, requirements, precision, verification, agents, and integration are all ways of managing what AI is asked to do, what information it receives, and how its outputs are checked.
-
-## The Chapter Thesis
-
-Context is the bridge between general intelligence and useful action.
-
-A model trained on the world may know a great deal in general, but software engineering always happens in a particular place: a particular codebase, company, product, user group, architecture, budget, regulation, and history. The better an AI system understands that particular situation, the more useful it becomes.
-
-That is why context windows are growing, memory systems are being built, retrieval is becoming infrastructure, agents need state, and enterprises may increasingly compete on the quality of the knowledge they can make available to AI.
-
-The future of AI-assisted software development will not be determined by model intelligence alone. It will be determined by the combination of model capability, high-quality context, and engineering judgement.
-
-If context determines what the model can understand in a specific situation, then the human task becomes clearer: supply intent, requirements, constraints, examples, and judgement in a form the AI can use.
-
-In the age of AI, communication is no longer a preliminary step before software development. Communication becomes part of software development itself.
+Context is the bridge between general capability and useful action. Software work always happens inside a particular codebase, organisation, budget, regulation, and history. The next chapter examines the human side of that bridge: how intent and constraints must be communicated when language itself becomes part of the engineering interface.

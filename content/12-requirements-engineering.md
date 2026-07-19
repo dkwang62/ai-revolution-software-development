@@ -10,7 +10,7 @@ That description is too small.
 
 The deeper shift is from programming languages toward requirements. If AI can produce code quickly, the most important question is no longer only whether humans can write the implementation. It is whether humans can define the intended behaviour clearly enough for the system to build, evaluate, and maintain it.
 
-This is why [[Requirements Engineering]] deserves its own place in the book. It is not the same as [[Prompt Engineering]]. Prompt engineering is one visible technique. Requirements engineering is the larger discipline of deciding what the system should do, why it should do it, under which conditions it should behave differently, and how anyone will know whether the result is correct.
+This is why Requirements Engineering deserves its own place in the book. It is not the same as Prompt Engineering. Prompt engineering is one visible technique. Requirements engineering is the larger discipline of deciding what the system should do, why it should do it, under which conditions it should behave differently, and how anyone will know whether the result is correct.
 
 Traditional software often followed a path like this:
 
@@ -92,7 +92,7 @@ AI systems add another layer:
 - Model evaluation.
 - Continuous evaluation.
 
-This is not merely a theoretical distinction. [[AI Evaluation and Verification]] now tracks early research support for this chapter. NIST connects validation to requirements for a specific intended use. OpenAI describes evals as structured tests for measuring model performance despite generative variability. Google Cloud's evaluation documentation shows how production systems may use grounding, safety, fluency, exact match, custom rubrics, and custom functions. OWASP identifies risks such as insecure output handling and excessive agency when LLM outputs flow into applications and tools.
+This is not merely a theoretical distinction. AI Evaluation and Verification now tracks early research support for this chapter. NIST connects validation to requirements for a specific intended use. OpenAI describes evals as structured tests for measuring model performance despite generative variability. Google Cloud's evaluation documentation shows how production systems may use grounding, safety, fluency, exact match, custom rubrics, and custom functions. OWASP identifies risks such as insecure output handling and excessive agency when LLM outputs flow into applications and tools.
 
 Evaluation asks whether an AI system performed well across examples. Verification asks whether a particular result, workflow, or system can be trusted for its intended use.
 
@@ -143,7 +143,7 @@ Modern AI applications may use:
 
 These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
 
-Memory therefore connects [[Requirements Engineering]] to [[Context Windows]], [[System Integration]], [[AI Agents]], and [[Software Verification]]. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
+Memory therefore connects Requirements Engineering to Context Windows, System Integration, AI Agents, and Software Verification. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
 
 ## Agents Require Requirements Discipline
 

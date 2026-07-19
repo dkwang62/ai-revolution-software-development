@@ -95,7 +95,7 @@ Swift
 
 The model receives text, represents it internally through numerical structures, and generates output based on learned relationships. Swift is not what the model fundamentally understands. English is not what it fundamentally understands. Both are external symbolic forms.
 
-This helps answer the question from [[Programming]]:
+This helps answer the question from Programming:
 
 > How can a machine that does not think in Swift still produce useful Swift code?
 
@@ -512,7 +512,7 @@ Context may include:
 - Test output.
 - Project conventions.
 
-The [[Context Windows|context window]] is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
+The context window is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
 
 This is why AI-assisted software development often works best as an iterative process. The human supplies context, examines output, adds correction, narrows the task, tests the result, and asks for revision. The model generates proposals. The human and surrounding tools evaluate them.
 
@@ -554,7 +554,7 @@ A generated function may compile but mishandle edge cases. A database query may 
 
 The model's output is a proposal, not a guarantee.
 
-This is why [[Software Verification]] becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
+This is why Software Verification becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
 
 AI can help with verification too. It can write tests, explain failures, identify suspicious code, and suggest edge cases. But AI-generated tests must themselves be reviewed. The system cannot be trusted merely because the same technology generated both the code and the test.
 
@@ -568,7 +568,7 @@ For example, a language-learning application might contain an AI quiz feature. I
 
 That prompt is not casual conversation. It is a behavioural specification.
 
-This is [[Natural Language Programming]]. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
+This is Natural Language Programming. The prompt functions like a high-level programming layer. The model acts like a probabilistic interpreter of that specification. The process still requires precision, testing, iteration, and review.
 
 ## Radix Field Note: The Prompt Became the Program
 

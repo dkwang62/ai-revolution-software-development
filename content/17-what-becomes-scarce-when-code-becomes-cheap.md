@@ -80,7 +80,7 @@ In a world of cheap generation, judgement becomes a central human contribution.
 
 The more software we generate, the more we need to know what can be trusted.
 
-This is the lesson from [[Software Verification]] and [[Precision]]. AI can produce code, explanations, tests, summaries, and decisions quickly. But speed does not prove correctness.
+This is the lesson from Software Verification and Precision. AI can produce code, explanations, tests, summaries, and decisions quickly. But speed does not prove correctness.
 
 Trust requires evidence. Tests, reviews, monitoring, structured outputs, validations, audits, and human oversight become more important when output becomes abundant.
 
@@ -88,7 +88,7 @@ This is especially true in high-stakes domains. A hobby app and a medical system
 
 Cheap code does not make reliability cheap.
 
-Early productivity evidence supports this caution. [[AI-Assisted Developer Productivity]] shows that AI can accelerate bounded programming tasks and increase individual productivity in some settings, but system-level outcomes are more complex. DORA's 2024 research found individual benefits from AI adoption while also reporting negative effects on software delivery stability and throughput. Stack Overflow's 2025 survey shows high AI adoption but also frustration with answers that are almost right and the time required to debug AI-generated code.
+Early productivity evidence supports this caution. AI-Assisted Developer Productivity shows that AI can accelerate bounded programming tasks and increase individual productivity in some settings, but system-level outcomes are more complex. DORA's 2024 research found individual benefits from AI adoption while also reporting negative effects on software delivery stability and throughput. Stack Overflow's 2025 survey shows high AI adoption but also frustration with answers that are almost right and the time required to debug AI-generated code.
 
 In other words, cheap generation moves the bottleneck. It does not remove it.
 

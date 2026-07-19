@@ -23,23 +23,16 @@ The forces this book has followed are:
 - The quality of integration with real software.
 - The skills that remain scarce.
 
-There is one more force that now belongs at the centre of this chapter: whether AI can move from assisting individual tasks to coordinating software work at the level of teams, workflows, and eventually parts of organisations.
+One more force belongs at the centre: whether AI can move from assisting individual tasks to coordinating software work across teams and workflows. The useful question is not whether a branded vision of an autonomous company succeeds. It is whether software production is partly an information-processing system that agents can help coordinate under human authority.
 
-That is why the most useful speculative image for the future may be [[Macrohard Speculation Packet|Macrohard]].
+Two variables create a more disciplined scenario matrix:
 
-Macrohard may fail as a specific product, company, or Musk project. That would not surprise me. Many bold technology projects fail. But the concept is too important to dismiss. It asks whether a software company is ultimately a building full of people, or a system for turning goals, information, judgement, code, tests, support, and feedback into digital products.
+| | Verification and integration remain expensive | Verification and integration become much cheaper |
+|---|---|---|
+| **Capability improves gradually** | AI remains a valuable assistant, but adoption concentrates in bounded and low-risk work. | AI becomes ordinary development infrastructure across most organisations. |
+| **Capability improves rapidly** | Generation races ahead while review, security, and maintenance become the binding constraints. | Intent-driven creation and agentic software organisations become plausible. |
 
-If the answer is even partly the second, then AI agents may eventually simulate pieces of that system.
-
-That possibility is the heart of this book's Futures section.
-
-The fact that Macrohard was even proposed matters. It shows that this book's most ambitious speculation is not floating alone. The idea of an AI-run or AI-simulated software company has already entered public strategic imagination. Macrohard does not prove that such a company can work. It proves that the question has become serious enough for major AI actors to ask.
-
-There is also a more extreme branch of the same future: [[AGI Side Story - If The Genie Stops Waiting|AGI]].
-
-This book does not depend on AGI arriving. AI is already changing software development without it. But AGI would change the trajectory. The current revolution lowers the cost of turning human intent into software. AGI-like systems could lower the cost of organising the cognitive work around software: deciding, planning, coordinating, testing, improving, and learning.
-
-In that world, the question would no longer be only whether AI can write code. It would be whether AI can coordinate enough of the software organisation itself to become a new kind of production system.
+The future may move between these quadrants by domain. A marketing prototype and a payment system can inhabit different worlds at the same time.
 
 ## The Current Position
 
@@ -53,7 +46,7 @@ Codex-like systems show the direction of travel. They are not merely better chat
 
 The main constraints are verification, context, integration, cost, trust, and organisational adoption.
 
-The labour-market signal is still mixed. [[Labour-Market Effects on Programmers]] suggests that the near-term impact may appear first in skills, role expectations, and hiring patterns rather than in a simple collapse of programmer employment. Official projections can still show growth while the content of the job changes substantially.
+The labour-market signal is still mixed. Labour-Market Effects on Programmers suggests that the near-term impact may appear first in skills, role expectations, and hiring patterns rather than in a simple collapse of programmer employment. Official projections can still show growth while the content of the job changes substantially.
 
 ## The Forecast May Be Too Small
 
@@ -141,11 +134,11 @@ Personal, niche, temporary, and organisation-specific software becomes more comm
 
 Enterprise AI systems may reason across larger portions of organisations: finance, inventory, compliance, operations, customer service, and software infrastructure. Agents may coordinate workflows across tools, but serious systems still require permissions, logs, human review, testing, and governance.
 
-[[Enterprise Context]] sharpens this scenario. The competitive advantage of future enterprises may depend less on the raw number of software engineers they employ and more on the quality, completeness, and accessibility of the organisational context available to their AI systems. Companies may compete by turning source code, documentation, architecture decisions, incidents, customer complaints, regulations, and business policies into machine-readable institutional memory.
+Enterprise Context sharpens this scenario. The competitive advantage of future enterprises may depend less on the raw number of software engineers they employ and more on the quality, completeness, and accessibility of the organisational context available to their AI systems. Companies may compete by turning source code, documentation, architecture decisions, incidents, customer complaints, regulations, and business policies into machine-readable institutional memory.
 
 The main assumption behind this scenario is that AI reliability, context management, tool use, and integration improve enough for organisations to trust AI with larger workflows.
 
-## The Macrohard Scenario: The Software Company As An Agent System
+## The Agentic Software Organisation
 
 The more radical scenario is not that AI writes more code.
 
@@ -153,7 +146,7 @@ It is that AI begins to coordinate more of the software organisation itself.
 
 A software company is usually described as a collection of people: executives, product managers, designers, engineers, testers, support teams, technical writers, security specialists, sales engineers, and operations staff. But from another angle, a software company is an information-processing system. It receives signals from customers, competitors, regulations, incidents, and markets. It turns those signals into priorities, requirements, designs, code, tests, documentation, releases, support responses, and future plans.
 
-That is the Macrohard question.
+That is the organisational question.
 
 Can an AI system simulate enough of that information-processing machinery to become something like a software company?
 
@@ -169,13 +162,13 @@ The current unit is the AI-assisted programmer.
 
 The future unit may be the agentic software organisation: a human objective connected to a coordinated system of agents, tools, tests, repositories, context, and governance.
 
-That is why Macrohard matters. It is not important because its name is funny, or because one company may or may not build it. It is important because it gives the future a shape. It turns the question from "Can AI write code?" into "Can AI coordinate the work required to create and maintain software?"
+This scenario matters because it turns the question from "Can AI write code?" into "Can AI coordinate the work required to create and maintain software?"
 
 If that answer becomes yes, even partially, then the economics of software change again.
 
 Companies would not merely ask how many programmers they need. They would ask what work should be done by employees, what work should be done by AI agents, what context those agents need, what systems they may touch, what tests constrain them, and who remains accountable for the result.
 
-The true test of Macrohard is therefore not code generation.
+The true test is therefore not code generation.
 
 The true test is whether AI can handle ambiguity, priority, integration, verification, trust, and maintenance.
 

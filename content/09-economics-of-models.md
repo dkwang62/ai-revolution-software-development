@@ -23,7 +23,7 @@ Inference spends capability.
 
 Training is the expensive process that creates or improves a model.
 
-It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. Epoch AI estimates that frontier language-model training compute has grown at about 5x per year since 2020, and that frontier training costs have risen about 3.5x per year over the same period. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race. See [[AI Model Economics]].
+It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. Epoch AI estimates that frontier language-model training compute has grown at about 5x per year since 2020, and that frontier training costs have risen about 3.5x per year over the same period. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race. See AI Model Economics.
 
 Economically, training resembles capital investment. A company spends heavily upfront to create an asset: a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
 
@@ -78,7 +78,7 @@ This is why the future will likely contain many models rather than one universal
 
 ## Context Windows as Working Memory
 
-The [[Context Windows|context window]] is the amount of information a model can consider during inference.
+The context window is the amount of information a model can consider during inference.
 
 For software development, context is crucial. A model asked to modify one function may need only a small amount of context. A model asked to refactor a module may need more. A model asked to reason about an entire codebase may need much more.
 
@@ -90,7 +90,7 @@ Economically, a larger context window is valuable when it allows the model to so
 
 For software, long context matters because real systems are interconnected. A bug may depend on a data model, a configuration file, a test, a framework convention, and an old design decision. If AI cannot see enough of the system, it may make local changes that break global behaviour.
 
-This leads to a distinction developed further in [[The Economics of Context]].
+This leads to a distinction developed further in The Economics of Context.
 
 Raw context is the maximum number of tokens a model can read.
 
@@ -108,7 +108,7 @@ It is:
 
 ## Multimodality
 
-[[Multimodal Models]] can work across text, images, audio, video, code, and other forms of input or output.
+Multimodal Models can work across text, images, audio, video, code, and other forms of input or output.
 
 This matters because software development is not purely textual. Requirements may appear in screenshots, diagrams, whiteboards, mockups, logs, tables, documents, and user recordings. A developer may need to convert a sketch into an interface, a screenshot into a bug report, a chart into code, or a video of a user session into product insight.
 
@@ -184,7 +184,7 @@ This matters for software because serious engineering tasks are rarely one-step 
 
 ## Model Evolution
 
-[[Model Evolution]] creates a new kind of software maintenance problem.
+Model Evolution creates a new kind of software maintenance problem.
 
 Traditional software changes when developers edit code. If they are careful, they can preserve backward compatibility. A new version of a library may add features while attempting not to break old behaviour.
 
@@ -230,7 +230,7 @@ The book should teach readers to ask: what cost is being paid, what capability i
 
 ## The Economics of Intelligence
 
-The phrase [[ECONOMICS_OF_INTELLIGENCE|economics of intelligence]] means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
+The phrase economics of intelligence means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
 
 Training produces machine capability.
 
@@ -242,7 +242,7 @@ Hardware, data centres, energy, chips, and engineering teams determine cost.
 
 Applications determine value.
 
-The hardware shift is visible in company financials. NVIDIA reported Q1 fiscal 2027 revenue of $81.6 billion for the quarter ended April 26, 2026, including $75.2 billion in data center revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. Gartner also forecast worldwide AI spending of $2.59 trillion in 2026, a broad figure that includes many AI categories and should not be confused with model training alone. See [[AI Model Economics]].
+The hardware shift is visible in company financials. NVIDIA reported Q1 fiscal 2027 revenue of $81.6 billion for the quarter ended April 26, 2026, including $75.2 billion in data center revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. Gartner also forecast worldwide AI spending of $2.59 trillion in 2026, a broad figure that includes many AI categories and should not be confused with model training alone. See AI Model Economics.
 
 Software development is the clearest case study because it is already a knowledge-intensive activity. If AI lowers the cost of applying software-engineering knowledge, it changes the economics of the software industry.
 

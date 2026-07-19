@@ -4,16 +4,6 @@ title: "Who Is the Author? Me or AI?"
 
 # Author and AI Note
 
-## Purpose
-
-This note explains how this manuscript was created and why the authorship question is part of the book rather than a footnote to it.
-
-## Central Question
-
-Who is the author of a book whose words were largely drafted with artificial intelligence, but whose questions, structure, judgement, and purpose came from a human being?
-
-## Core Ideas
-
 This book was developed through a collaboration between Desmond Kwang and artificial intelligence systems including ChatGPT, Codex, and other AI tools.
 
 Codex deserves special mention because it became more than a drafting assistant in this project. It became the practical embodiment of the book's genie-in-the-bottle metaphor: an AI agent that could operate inside the working environment, inspect files, edit text and code, run commands, report failures, and help turn intention into a verified artifact.
@@ -43,14 +33,5 @@ That phrasing is deliberately transparent. It does not pretend that the manuscri
 Perhaps authorship in the AI era should not be reduced to who typed the sentences. A deeper definition may ask who supplied the curiosity, purpose, experience, judgement, and responsibility.
 
 By that standard, this is a human-authored book written with artificial intelligence.
-
-## Reader Takeaways
-
-- AI was used extensively in drafting, organising, editing, and refining this manuscript.
-- The questions, intellectual direction, structure, judgement, and responsibility remain human.
-- The authorship question is not incidental; it is one example of the transformation the book describes.
-- AI is best understood here as a collaborator that amplifies human intent rather than as an independent author.
-
-## Bridge to Introduction
 
 The same pattern appears in software. AI can generate code, but the harder question is still what should be built, why it should exist, and whether it achieves its purpose. That is where this book begins.
