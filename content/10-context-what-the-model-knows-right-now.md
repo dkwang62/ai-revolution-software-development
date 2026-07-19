@@ -4,7 +4,7 @@ title: "Context: What the Model Knows Right Now"
 
 # Context: What the Model Knows Right Now
 
-![Three meanings of context](figures/FIG-09-01 Three Meanings of Context.png)
+![Three meanings of context](<figures/FIG-09-01 Three Meanings of Context.png>)
 
 The previous chapters explained what an AI model is, how neural networks learn relationships, how AI can convert English into software, and why model capability has economic cost. One crucial idea now needs its own foundation: an AI model's behaviour depends not only on what it learned during training, but on what information it is given at the moment it is used.
 
@@ -215,7 +215,7 @@ That is a different economic story from simply "AI writes code." It suggests tha
 
 ## Context Window Versus Enterprise Knowledge
 
-![Enterprise knowledge to context window](figures/FIG-09-02 Enterprise Knowledge To Context Window.png)
+![Enterprise knowledge to context window](<figures/FIG-09-02 Enterprise Knowledge To Context Window.png>)
 
 A model's context window and an enterprise's knowledge base are closely related, but they are not identical. The context window is the information the AI can consider during one reasoning session. It is working memory. Enterprise knowledge is the much larger universe of information held by the organisation. It is closer to long-term memory.
 

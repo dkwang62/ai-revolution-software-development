@@ -4,7 +4,7 @@ title: "The Legacy Problem"
 
 # The Legacy Problem
 
-![Legacy systems as accumulated business knowledge](figures/FIG-13-01 Legacy Accumulated Knowledge.png)
+![Legacy systems as accumulated business knowledge](<figures/FIG-13-01 Legacy Accumulated Knowledge.png>)
 
 Imagine the chief executive of a major bank announcing that every computer system will be replaced over the weekend.
 

@@ -4,7 +4,7 @@ title: "Precision and Probabilistic AI"
 
 # Precision and Probabilistic AI
 
-![Reliable software around probabilistic AI](figures/FIG-12-01 Precision Wrapper.png)
+![Reliable software around probabilistic AI](<figures/FIG-12-01 Precision Wrapper.png>)
 
 Traditional software is built on a promise of repeatability.
 

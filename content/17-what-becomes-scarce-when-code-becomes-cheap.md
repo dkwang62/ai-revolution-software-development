@@ -4,7 +4,7 @@ title: "What Becomes Scarce When Code Becomes Cheap?"
 
 # What Becomes Scarce When Code Becomes Cheap?
 
-![Scarcity shift](figures/FIG-15-01 Scarcity Shift.png)
+![Scarcity shift](<figures/FIG-15-01 Scarcity Shift.png>)
 
 The first chapter asked a question that now deserves a fuller answer:
 

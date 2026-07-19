@@ -4,7 +4,7 @@ title: "How Neural Networks Learn Relationships"
 
 # How Neural Networks Learn Relationships
 
-![Rules versus relationships](figures/FIG-06-01 Rules Versus Relationships.png)
+![Rules versus relationships](<figures/FIG-06-01 Rules Versus Relationships.png>)
 
 The previous chapter described an AI model as a learned mathematical representation of patterns found in data.
 

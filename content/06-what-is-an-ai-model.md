@@ -4,7 +4,7 @@ title: "What Is an AI Model?"
 
 # What Is an AI Model?
 
-![What is an AI model](figures/FIG-05-01 What Is An AI Model.png)
+![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
 Most people hear names such as GPT, Claude, Gemini, or Llama and assume they are ordinary software programs.
 

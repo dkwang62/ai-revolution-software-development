@@ -4,7 +4,7 @@ title: "The Economics of Software Development"
 
 # The Economics of Software Development
 
-![The human expertise bottleneck](figures/FIG-01-02 Human Expertise Bottleneck.png)
+![The human expertise bottleneck](<figures/FIG-01-02 Human Expertise Bottleneck.png>)
 
 Software has become one of the basic materials of modern civilisation.
 

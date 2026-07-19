@@ -4,7 +4,7 @@ title: "The Enterprise Intelligence Layer"
 
 # The Enterprise Intelligence Layer
 
-![The enterprise intelligence layer](figures/FIG-17-01 Enterprise Intelligence Layer.png)
+![The enterprise intelligence layer](<figures/FIG-17-01 Enterprise Intelligence Layer.png>)
 
 The next major enterprise software platform may not be another application. It may be a layer that connects AI models to organisational knowledge, workflows, permissions, and verification.
 

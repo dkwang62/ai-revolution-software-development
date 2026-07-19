@@ -4,7 +4,7 @@ title: "How AI Converts English Into Software"
 
 # How AI Converts English Into Software
 
-![English to software](figures/FIG-07-01 English To Software.png)
+![English to software](<figures/FIG-07-01 English To Software.png>)
 
 We can now return to the question that motivated this book.
 

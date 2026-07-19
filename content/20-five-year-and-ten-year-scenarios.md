@@ -4,7 +4,7 @@ title: "Five-Year and Ten-Year Scenarios"
 
 # Five-Year and Ten-Year Scenarios
 
-![Five-year and ten-year scenarios](figures/FIG-19-01 Future Scenarios.png)
+![Five-year and ten-year scenarios](<figures/FIG-19-01 Future Scenarios.png>)
 
 The future should be approached with humility.
 
