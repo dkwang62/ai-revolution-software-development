@@ -534,6 +534,30 @@ The problem is broader than visual layout. The Genie's powers are uneven in four
 
 The unevenness helps explain several otherwise puzzling experiences with AI. A model can produce hundreds of lines of coherent code and overlook an unusual permission case. It can rewrite a chapter fluently and introduce a contradiction with an earlier chapter. It can obey “make the button smaller” even when the real intention was to make the interface feel less crowded. It can generate a finished-looking document without noticing that a heading has been stranded at the bottom of a page.
 
+### Three failures the reader can see
+
+The first example came from Radix on an iPhone:
+
+![Radix iPhone controls squeezed by the available width](<figures/FIG-14-02 Radix Crowded iPhone Controls.png>)
+
+The screen worked, but the row beneath the character strip did not read like a deliberate interface. “Memory” and “Phrases” were forced into two lines, with hyphens appearing where the words broke. “Components” became “Compon...”. The help text and navigation competed with the character grid for the same small screen.
+
+The first attempted correction also taught a second lesson. Codex changed the labels for a vertical or sidebar layout, but the screenshot showed the iPhone's horizontal header path. The code change was reasonable inside the component it had found; it simply did not affect the version of the interface that the user was looking at. Once the screenshot was supplied, Codex traced the actual rendered path and changed the visible labels to shorter forms such as “Mem”, “Phrase”, and “Root”.
+
+The next two examples came from this book. In the first version of the English-to-software diagram, the words “Mathematical representation” extended beyond the green box. The sentence at the bottom crossed both sides of its container:
+
+![Text escaping from the English-to-software diagram](<figures/FIG-14-03 Diagram Overflow English To Software.png>)
+
+In the AI-model figure, the small sentence beneath the main diagram was wider than the box drawn to contain it:
+
+![Text escaping from the AI-model diagram](<figures/FIG-14-04 Diagram Overflow AI Model.png>)
+
+Other figures failed differently. One contained a blank oval where “Procedure” should have appeared. Another left “Probabilistic AI” out of the main node. The human-expertise figure contained words that were clipped at the bottom of their boxes. Each file existed. Each image opened. Each page could be published. A production check concerned only with file generation would have declared success.
+
+A reader can see the failures immediately because people perceive the rendered whole. The source process had checked whether an image was produced, not whether every label remained legible inside the composition. After the screenshots were returned to Codex, the diagrams were rebuilt with measured boxes, deliberate line breaks, and visual inspection of the rendered PNGs.
+
+These examples clarify the limitation. The Genie was capable of recognizing and correcting the spatial defect. What failed was the workflow around it: creation was automatic, while looking at the creation was left to the human.
+
 ### Why the Genie misses what people see
 
 Code logic is often expressed in symbols with outcomes that can be checked. If a payment succeeds, does the order change state? If an imported phrase already exists, is it duplicated? A test can supply an input and compare the observed result with the expected one.
