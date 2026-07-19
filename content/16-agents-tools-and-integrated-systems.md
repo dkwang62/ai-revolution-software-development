@@ -570,6 +570,41 @@ rendered inspection
 human judgement and approval
 ```
 
+### This can be engineered away
+
+There is no fundamental reason a person must be the first to notice that a label has crossed a border. If the Genie can create an interface and interpret a screenshot, the surrounding agent can close the loop automatically:
+
+~~~text
+generate the interface
+↓
+render the real screen
+↓
+capture it at several sizes and states
+↓
+measure overflow and compare screenshots
+↓
+inspect the image
+↓
+revise and repeat
+~~~
+
+When I uploaded screenshots of the defective book figures, Codex could see the problem and correct it. The missing capability was not visual recognition. The earlier production process had stopped after generating the image. It had not required the Genie to look at its own finished work.
+
+Better training should improve the first attempt. Models can learn recurring design practices: adequate button padding, minimum target sizes, responsive grids, readable line lengths, accessible contrast, and deliberate text wrapping. Training provides patterns that usually work. It cannot prove that a particular label, font, device, language, or data value works in the screen being built. The relationship is the same as code: learning good programming patterns improves generated code, while compilation and testing establish whether this program works here.
+
+Frameworks can reduce the problem further by restricting what the model is allowed to invent. Radix could define approved buttons, cards, text styles, spacing, and navigation structures. Instead of choosing arbitrary widths for every feature, Codex would assemble tested Radix components whose rules already cover padding, accessibility, and different screen sizes. A diagram system could measure each label, wrap it deliberately, reject collisions, and fail the build if text leaves its container.
+
+The preferred division of labour is therefore:
+
+~~~text
+frameworks prevent predictable mistakes
+automated tests detect measurable mistakes
+AI inspects and corrects visible mistakes
+humans judge purpose, experience, and unusual cases
+~~~
+
+Human review does not disappear, but it should move upward. People should spend their attention deciding whether a learning screen is clear and worthwhile, not repeatedly discovering that a machine made a button too narrow.
+
 ### Temporary weakness or lasting boundary?
 
 Some of the problem is likely to be temporary. Multimodal models are improving at reading screens. Coding agents can open browsers, capture screenshots, inspect the document structure, test multiple viewport sizes, and revise their own work. Overflow detection, automated test generation, retrieval of project decisions, and comparison across files should all become more reliable.
@@ -582,7 +617,7 @@ The short-term weakness is incomplete perception and verification. The longer-te
 
 This has a direct economic consequence. AI may make a functional feature dramatically faster to produce without reducing the final mile of product work by the same amount. Someone still has to use the feature, notice that the button is cramped, test the smaller screen, rewrite the label, check accessibility, and decide whether the interaction feels coherent.
 
-A large amount of human time can therefore move into user-interface refinement. The UI has not necessarily become more expensive in absolute terms. It becomes a larger share of the remaining work because code generation has accelerated more quickly. The same shift appears in editing, testing, integration, governance, and review.
+During the present transition, a large amount of human time can therefore move into user-interface refinement. The UI has not necessarily become more expensive in absolute terms. It becomes a larger share of the remaining work because code generation has accelerated more quickly. The same shift appears in editing, testing, integration, governance, and review. This is a current cost, not an unavoidable destination: better component frameworks, automated checks, and agentic self-inspection should progressively remove much of the mechanical rework.
 
 This is another form of the scarcity shift developed later in the book. When production becomes abundant, inspection, taste, and responsibility become more valuable.
 
