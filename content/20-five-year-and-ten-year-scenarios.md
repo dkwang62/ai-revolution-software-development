@@ -6,7 +6,7 @@ title: "Five-Year and Ten-Year Scenarios"
 
 ![Five-year and ten-year scenarios](<figures/FIG-19-01 Future Scenarios.png>)
 
-The rate of change is breathtaking. Tasks that defeated the Genie during my first year building the language-learning application later became routine. Moving the project from a simple web framework to native Apple software initially failed, then became achievable roughly a year later as models, agent environments, tools, feedback, and my own supervision improved together.
+The rate of change is breathtaking. Tasks that defeated the AI coding agent during my first year building the language-learning application later became routine. Moving the project from a simple web framework to native Apple software initially failed, then became achievable roughly a year later as models, agent environments, tools, feedback, and my own supervision improved together.
 
 That experience makes me suspicious of confident forecasts—including my own. Five years of change may not resemble five equal annual steps. Yet “anything could happen” is not useful either. Scenarios help us ask which forces would have to change for different futures to emerge.
 
@@ -26,7 +26,7 @@ Different domains can occupy different quadrants simultaneously. A disposable ma
 
 AI already assists with explanation, code generation, debugging, refactoring, tests, documentation, requirements, and prototyping. It performs best when the task is well specified, the relevant context is available, the risk is manageable, and the output can be checked.
 
-Codex-like systems show why the model alone is the wrong unit of analysis. They connect a model to repositories, terminals, browsers, tests, permissions, and project context. The Genie becomes operational: it can act, gather feedback, and revise within boundaries.
+Codex-like systems show why the model alone is the wrong unit of analysis. They connect an AI model to repositories, terminals, browsers, tests, permissions, and project context. The resulting AI agent becomes operational: it can act, gather feedback, and revise within boundaries.
 
 The unsettled evidence reinforces the need for scenarios. Productivity varies by task, developer, codebase, tool, and quality threshold. Technical capability may move quickly while organisational adoption, regulation, and trust move slowly. The future is more likely to branch than to arrive everywhere at once.
 
@@ -104,4 +104,4 @@ No quadrant eliminates the need to choose what is worth building. Requirements, 
 
 The most useful indicator is therefore not tokens, benchmark scores, or lines of generated code. It is **cost per successfully completed task**: the total cost of specification, generation, checking, integration, correction, operation, and failure.
 
-The future of programming is not settled by whether the Genie can produce an answer. It is settled by whether the surrounding system can turn that answer into dependable action—and whether people can justify the action that follows.
+The future of programming is not settled by whether an AI model can produce an answer. It is settled by whether the surrounding system can turn that answer into dependable action—and whether people can justify the action that follows.

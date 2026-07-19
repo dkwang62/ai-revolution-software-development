@@ -16,7 +16,7 @@ But the point of this book is not to admire the magic. It is to understand how t
 
 Codex is the practical doorway into that mystery for this book. A simple chat model can show the reader that English can become code. Codex shows something stronger: English can become a supervised software workflow. The prompt does not merely produce a snippet. It can lead to file inspection, code edits, terminal commands, build errors, revisions, and verification.
 
-That is why Codex is the genie in the bottle here. It makes the abstract claim visible.
+That is why Codex, the AI coding agent used in this project, matters here. It makes the abstract claim visible.
 
 The explanation is neither memorisation nor secret fluency in Swift, Python, JavaScript, or SQL.
 
@@ -184,7 +184,7 @@ revision
 verified change
 ```
 
-That difference matters. The genie is not merely a model producing text. It is a model connected to tools, context, and feedback.
+That difference matters. An AI coding agent is not merely a model producing text. It is an AI model connected to tools, context, and feedback.
 
 ### Step 1: The Prompt Is Broken Into Tokens
 

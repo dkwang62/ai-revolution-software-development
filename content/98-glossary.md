@@ -16,7 +16,7 @@ An agent is an AI system that does more than answer a question. It can use tools
 
 ## Agentic AI
 
-Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building a language-learning application, the Genie displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
+Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building a language-learning application, the AI coding agent displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
 
 ## Agentic Loop
 
@@ -32,7 +32,7 @@ Architecture is the high-level structure of a software system: its components, b
 
 ## Codex
 
-Codex is the AI coding agent used in this book as the recurring concrete example of the "genie in the bottle." It represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
+Codex is the AI coding agent used as the recurring concrete example in this book. The “genie in the bottle” is only an analogy for the experience of turning an idea into software through conversation; it is not the name or technical description of Codex. Codex represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
 
 ## Context
 
@@ -66,7 +66,7 @@ A foundation model is a large general-purpose AI model trained on broad data and
 
 ## Grounding
 
-Grounding means connecting an AI response to relevant evidence rather than relying only on what the model learned during training. When the Genie inspects the application's actual source files before proposing a change, those files ground its conclusion.
+Grounding means connecting an AI response to relevant evidence rather than relying only on what the model learned during training. When the AI coding agent inspects the application's actual source files before proposing a change, those files ground its conclusion.
 
 ## Guardrail
 
@@ -86,7 +86,7 @@ Human in the loop means that a person remains part of an AI-assisted decision or
 
 ## Model Context Protocol (MCP)
 
-The Model Context Protocol is a standard for connecting AI applications to external tools and sources of information. A useful layman's analogy is a common socket that lets an authorised tool or data source connect to the Genie without every connection being invented from the beginning.
+The Model Context Protocol is a standard for connecting AI applications to external tools and sources of information. A useful layman's analogy is a common socket that lets an authorised tool or data source connect to an AI system without every connection being invented from the beginning.
 
 ## Multi-Agent System
 

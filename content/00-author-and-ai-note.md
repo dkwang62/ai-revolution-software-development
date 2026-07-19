@@ -6,7 +6,7 @@ title: "Who Is the Author? Me or AI?"
 
 This book was developed through a collaboration between Desmond Kwang and artificial intelligence systems including ChatGPT, Codex, and other AI tools.
 
-Codex deserves special mention because it became more than a drafting assistant in this project. It became the practical embodiment of the book's genie-in-the-bottle metaphor: an AI agent that could operate inside the working environment, inspect files, edit text and code, run commands, report failures, and help turn intention into a verified artifact.
+Codex deserves special mention because it became more than a drafting assistant in this project. It is an AI coding agent that could operate inside the working environment, inspect files, edit text and code, run commands, report failures, and help turn intention into a verified artefact. The book's genie-in-the-bottle language is an analogy for that experience, not the name of the software or a technical category.
 
 That collaboration raises an honest question:
 

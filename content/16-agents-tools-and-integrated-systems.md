@@ -6,7 +6,7 @@ title: "Agents, Tools, and Integrated Systems"
 
 In the language-learning application, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
 
-The Genie searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
+The AI coding agent searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
 
 This episode gave me a practical definition of a word that is now everywhere in AI: **agentic**. A chatbot produces a response. An agent pursues an objective through actions and feedback:
 
@@ -53,9 +53,9 @@ Codex could work where the software lived. It could inspect the project, search 
 
 The difference was not a claim that one product possessed intelligence and another did not. It was an architectural difference. The model had been connected to an environment and given tools under rules. Claude Code, Cursor, GitHub Copilot, and future systems belong to the same wider movement.
 
-Another request made tool use tangible. I wanted an export command to collect the learner's essential data into one compressed file for backup. I did not specify every file or the implementation. The Genie traced the existing export path, found the relevant services and resources, added a list of the included files, changed the source code, and ran an application build. A language model could describe an export feature. An agent with tools could participate in building and checking one.
+Another request made tool use tangible. I wanted an export command to collect the learner's essential data into one compressed file for backup. I did not specify every file or the implementation. The AI coding agent traced the existing export path, found the relevant services and resources, added a list of the included files, changed the source code, and ran an application build. A language model could describe an export feature. An agent with tools could participate in building and checking one.
 
-These examples should not be mistaken for autonomy without supervision. I supplied the objective, decided which behaviour mattered, controlled permissions, and judged the result. The Genie lowered the cost of implementation; it did not inherit responsibility for the application.
+These examples should not be mistaken for autonomy without supervision. I supplied the objective, decided which behaviour mattered, controlled permissions, and judged the result. The AI coding agent lowered the cost of implementation; it did not inherit responsibility for the application.
 
 ## Grounding: Finding the Real Problem
 
@@ -83,7 +83,7 @@ Agentic systems are uneven. They can solve complicated logic and still miss an o
 
 This happened repeatedly while building the language-learning application and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
-Once I supplied screenshots, the Genie could recognise many of the defects and correct them. The missing capability was not necessarily vision. The workflow had stopped before rendering and inspecting its own output.
+Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing capability was not necessarily vision. The workflow had stopped before rendering and inspecting its own output.
 
 Logic often has crisp tests: given this input, did the order change state? Visual quality depends on geometry, fonts, screen sizes, language, accessibility settings, hierarchy, and human perception. Valid source code does not prove that a screen is usable.
 
@@ -105,7 +105,7 @@ human judges the experience
 
 Frameworks and design systems prevent predictable mistakes. Browser and UI tests can render several screen sizes. Screenshot comparisons can expose unintended change. Accessibility tools can detect many measurable defects. AI can run these checks, interpret results, and attempt repairs. Humans should increasingly judge whether the experience is clear and worthwhile rather than repeatedly finding that a button is too narrow.
 
-My retrospective estimate is that work on the screens and controls consumed about 80 per cent of my development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the Genie accelerated underlying implementation more than it accelerated the final work of arranging and judging what the learner would see and touch.
+My retrospective estimate is that work on the screens and controls consumed about 80 per cent of my development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the AI coding agent accelerated underlying implementation more than it accelerated the final work of arranging and judging what the learner would see and touch.
 
 That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgement about people and purpose.
 
@@ -113,7 +113,7 @@ That proportion should fall as multimodal agents close the render–inspect–co
 
 An agent can fail at any step, and early errors can create later state. Trust cannot come from the model sounding confident. It must come from observable process.
 
-During one data-recovery task, the Genie identified nineteen missing files. It recovered one exact file from an archive containing 253 files, compared its digital fingerprint with the expected fingerprint, and confirmed that the missing count had fallen to eighteen. The value was not eloquence. Each claim corresponded to evidence the system could expose.
+During one data-recovery task, the AI coding agent identified nineteen missing files. It recovered one exact file from an archive containing 253 files, compared its digital fingerprint with the expected fingerprint, and confirmed that the missing count had fallen to eighteen. The value was not eloquence. Each claim corresponded to evidence the system could expose.
 
 The same principle applies to ordinary development. A credible completion report should identify what changed and what was checked. Builds, tests, records of the changed lines, digital fingerprints of files, screenshots, and activity logs turn an agent's work into something a person can inspect.
 
@@ -129,4 +129,4 @@ The best early uses are likely to have clear objectives, observable state, rever
 
 Agents make AI feel like a worker. That feeling should not obscure what they are: systems built from models, tools, memory, permissions, and feedback. Greater agency increases the need for engineering discipline.
 
-The Genie can act. It cannot be allowed to decide by itself what counts as acceptable magic.
+An AI agent can act. It cannot be allowed to decide by itself what counts as acceptable.

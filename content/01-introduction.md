@@ -10,7 +10,7 @@ Then I began describing what I wanted to artificial intelligence.
 
 At first, the results felt like magic. An idea expressed in ordinary language could appear as a working feature. The feeling did not last unchanged. A quiz that sounded simple required plausible distractors, script consistency, stable answer choices, and acceptable speed. A screen could contain the correct controls while being awkward to use. Code could compile while implementing the wrong educational behaviour.
 
-The productive moments occurred when the Genie and I contributed different things. I knew why a learning activity mattered and when its behaviour felt wrong. The Genie could search the project, translate requirements into code, run tools, read failures, and revise an implementation. The feature became useful only after intention, generation, and verification met.
+The productive moments occurred when the AI coding agent and I contributed different things. I knew why a learning activity mattered and when its behaviour felt wrong. The AI agent could search the project, translate requirements into code, run tools, read failures, and revise an implementation. The feature became useful only after intention, generation, and verification met.
 
 That experience produced the question behind this book:
 
@@ -36,8 +36,8 @@ Software also sits beneath modern organisations. It contains accumulated decisio
 
 The language-learning application is the recurring field case because it is where I crossed the boundary this book examines. It is not proof that anyone can safely build any system by talking to AI. It is evidence that a motivated domain expert can participate much more directly in software creation by supplying intent, evaluating behaviour, refining requirements, and supervising an AI engineering collaborator.
 
-The Genie in this book is Codex, the coding agent I used most directly, but the argument is not about one vendor. Claude Code, Cursor, GitHub Copilot, and systems still to come belong to the same transition from AI as adviser to AI as supervised actor.
+The genie is only the book's analogy. The actual system I used most directly was Codex, an AI coding agent, but the argument is not about one vendor. Claude Code, Cursor, GitHub Copilot, and systems still to come belong to the same transition from AI as adviser to AI as supervised actor.
 
 This is also not a manual of prompt tricks. Products and interfaces will change too quickly. The durable questions concern abstraction, representation, models, context, requirements, verification, integration, and economics.
 
-We begin where the practical mystery begins: with the historical cost of software. Until we understand why turning knowledge into reliable systems was expensive, we cannot understand what it means for a Genie to make part of that translation cheaper.
+We begin where the practical mystery begins: with the historical cost of software. Until we understand why turning knowledge into reliable systems was expensive, we cannot understand what it means for AI to make part of that translation cheaper.

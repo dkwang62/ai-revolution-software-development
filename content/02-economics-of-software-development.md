@@ -66,7 +66,7 @@ This reduces several kinds of cost:
 - **Iteration cost:** changing the draft after feedback.
 - **Coordination cost:** making an idea visible earlier so that people can respond to something concrete.
 
-My language-learning application illustrates the change at a small scale. I could describe a learning behaviour in ordinary English, observe a working version, and refine it without first mastering the programming language and development tools used to make Apple applications. The Genie compressed the journey from idea to testable artefact.
+My language-learning application illustrates the change at a small scale. I could describe a learning behaviour in ordinary English, observe a working version, and refine it without first mastering the programming language and development tools used to make Apple applications. The AI coding agent compressed the journey from idea to testable artefact.
 
 It did not eliminate the journey. A quiz still needed good educational rules. Generated code still required builds and testing. User interfaces still had to fit different screens. Rapid feature growth created pressure to refactor the architecture. AI reduced the cost of some expertise while exposing the value of other expertise.
 

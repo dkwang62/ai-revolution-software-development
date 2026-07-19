@@ -4,7 +4,7 @@ title: "Conclusion: When Intent Becomes Software"
 
 # Conclusion: When Intent Becomes Software
 
-Before the Genie, many of my ideas for a Chinese-language learning application would have ended as notes.
+Before AI coding agents, many of my ideas for a Chinese-language learning application would have ended as notes.
 
 I could describe the learning problem, sketch the behaviour, and imagine how an application might help. The remaining distance—from intention to architecture, code, debugging, and a working interface—was too great for me to cross alone.
 
@@ -12,7 +12,7 @@ AI shortened that distance. It did not remove it.
 
 The difference can be seen in one small feature. I wanted a quiz that used visually plausible Chinese characters rather than random wrong answers. The first statement of the idea was easy. Turning it into useful software required decisions: which characters were genuinely confusable, whether Simplified and Traditional forms should mix, how choices should remain stable, what happened when too few suitable alternatives existed, and whether the screen responded quickly enough.
 
-The Genie could turn each refinement into implementation. I still had to recognise what counted as a good learning experience. The resulting feature was neither my work alone nor an autonomous creation of the model. It emerged from a loop of intention, generation, observation, correction, and verification.
+The AI coding agent could turn each refinement into implementation. I still had to recognise what counted as a good learning experience. The resulting feature was neither my work alone nor an autonomous creation of the model. It emerged from a loop of intention, generation, observation, correction, and verification.
 
 That loop is the practical meaning of this book's argument.
 
@@ -56,10 +56,10 @@ A teacher may test a learning method without first raising money for a developme
 
 The future of programming is therefore not captured by the question of whether AI will replace programmers. Tasks, roles, and pathways will change. Experts may gain enormous leverage; newcomers may enter through domain knowledge and supervision; organisations may need fewer people for some forms of routine implementation and more capacity for review, integration, security, and product judgement.
 
-I began the software project because the application I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, the Genie made production possible. It did not decide what was worth producing, notice every mistake, or accept responsibility for the result.
+I began the software project because the application I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, AI made production possible. It did not decide what was worth producing, notice every mistake, or accept responsibility for the result.
 
 That remains the human part of the bargain.
 
 When ideas can become software more easily, the final question is no longer only *Can we build it?*
 
-It is *What should we ask the Genie to make—and what evidence will justify keeping it?*
+It is *What should we ask AI to help us make—and what evidence will justify keeping it?*

@@ -14,7 +14,7 @@ socialImage: "figures/cover.png"
 
 This is the public reading edition of a book about why artificial intelligence is transforming software development. The argument is not that AI is magic, or that programmers disappear. The argument is that AI changes the economics of turning human intent into working software.
 
-Codex is the genie I met. The book is about what the genie reveals.
+The genie is the analogy. Codex is the AI coding agent I used. The book is about what that experience reveals.
 
 [[00-author-and-ai-note|Start reading]]
 

@@ -102,7 +102,7 @@ AI can generate many alternatives. That increases the need to choose.
 
 When production becomes easy, curation becomes valuable.
 
-The language-learning application's interface offered a small example. Once the Genie accelerated functional implementation, more of my attention moved to what remained visible to the learner: spacing, labels, screen sizes, workflow clarity, and the feeling of the finished product. Interface refinement became a larger share of the human work because the machinery underneath had become faster to produce. That allocation need not be permanent. Tested design components, automated layout checks, and agents that render and inspect their own work can remove much of the mechanical correction, leaving people to concentrate on whether the experience serves its purpose.
+The language-learning application's interface offered a small example. Once the AI coding agent accelerated functional implementation, more of my attention moved to what remained visible to the learner: spacing, labels, screen sizes, workflow clarity, and the feeling of the finished product. Interface refinement became a larger share of the human work because the machinery underneath had become faster to produce. That allocation need not be permanent. Tested design components, automated layout checks, and agents that render and inspect their own work can remove much of the mechanical correction, leaving people to concentrate on whether the experience serves its purpose.
 
 ## A Scarcity Shift in Practice
 
