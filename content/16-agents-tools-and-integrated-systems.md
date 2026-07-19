@@ -24,7 +24,7 @@ revise
 verify or stop
 ```
 
-The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and learn from what the system returned. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
+The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and use the system's response as feedback for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
 
 ## From an Answer to an Action
 
@@ -75,7 +75,7 @@ Radix preserves the source context, filters phrases it already knows, presents c
 
 The phrase can sound like a vague promise that a person will somehow catch mistakes. A serious design says exactly where intervention occurs and what the human can see. Approval before a database change is different from discovering the change afterward. A concise candidate list is different from asking a person to audit an invisible chain of model calls.
 
-Human review should be reserved for consequential or ambiguous decisions. If every harmless step requires approval, the agent saves little time. If irreversible steps require none, the system is unsafe. Good orchestration places deterministic checks and human judgment where each has the greatest value.
+Human review should be reserved for consequential or ambiguous decisions. If every harmless step requires approval, the agent saves little time. If irreversible steps require none, the system is unsafe. Good orchestration places deterministic checks and human judgement where each has the greatest value.
 
 ## When the Agent Cannot See the Whole
 
@@ -107,7 +107,7 @@ Frameworks and design systems prevent predictable mistakes. Browser and UI tests
 
 My retrospective estimate is that UI work consumed about 80 per cent of my Radix development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the Genie accelerated underlying implementation more than it accelerated the final work of arranging and judging the interface.
 
-That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgment about people and purpose.
+That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgement about people and purpose.
 
 ## Verification Creates Trust
 

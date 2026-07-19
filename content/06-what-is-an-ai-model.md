@@ -140,4 +140,4 @@ Radix's optical character recognition is useful because the surrounding applicat
 
 This is the central bargain. A learned model handles ambiguity that conventional software struggles to enumerate. Conventional software, tools, and people supply the constraints and evidence the model lacks.
 
-The next chapter follows that bargain through one concrete transformation: an ordinary English request becoming executable source code.
+[[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows that bargain through one concrete transformation: an ordinary English request becoming executable source code.

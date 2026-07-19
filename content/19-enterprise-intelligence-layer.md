@@ -14,7 +14,7 @@ For most organisations, the strategic question is not whether they should build 
 
 That distinction is easy to miss because public attention focuses on frontier models. Model releases are visible. Benchmarks are visible. Context-window announcements are visible. Data centres, GPUs, and model races make dramatic headlines. But inside a bank, hospital, airline, manufacturer, government agency, or insurance company, the most valuable knowledge is usually private organisational knowledge: source code, business rules, policies, customer histories, product definitions, operational procedures, regulations, contracts, production incidents, architecture decisions, and decades of accumulated experience.
 
-A frontier model may understand Python, English, accounting principles, REST APIs, and general software architecture. It will not automatically understand the exact way a particular bank calculates risk, how a hospital routes clinical workflows, why an airline reservation system behaves strangely during edge cases, or which undocumented rule in a legacy system exists because of a regulatory change twenty years ago.
+A frontier model may work effectively with patterns in Python, English, accounting principles, REST APIs, and general software architecture. That shorthand is sometimes described as understanding, but it does not give the model automatic knowledge of the exact way a particular bank calculates risk, how a hospital routes clinical workflows, why an airline reservation system behaves strangely during edge cases, or which undocumented rule in a legacy system exists because of a regulatory change twenty years ago.
 
 That knowledge lives inside the enterprise. The economic question is whether the organisation can make it usable by AI.
 
@@ -127,7 +127,7 @@ This is how many major enterprise technologies spread. Cloud computing did not a
 
 Enterprise AI should not be justified by vague claims that everyone will become more productive. A more serious method is to treat it as a portfolio of use cases.
 
-This is also how current evidence should be read. McKinsey estimated in 2023 that generative AI could add US$2.6 trillion to US$4.4 trillion annually across 63 use cases, with much of the value concentrated in customer operations, marketing and sales, software engineering, and research and development. That is not proof of realised enterprise-wide ROI. It is evidence that the most credible business cases are likely to begin with specific workflows that have measurable outcomes.
+This is also how current evidence should be read. [McKinsey estimated in 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases, with much of the potential concentrated in customer operations, marketing and sales, software engineering, and research and development. That estimate is not proof of realised enterprise-wide returns. It suggests that credible business cases should begin with specific workflows whose outcomes can be measured.
 
 For each workflow, the organisation can estimate the current cost base, the share of work addressable by AI, the measured productivity improvement, realistic adoption, how much of the improvement becomes financial value, and the cost of subscriptions, inference, integration, governance, security, training, and change management.
 
@@ -171,4 +171,4 @@ That is why the future of AI in software may not be only about better code gener
 
 The frontier model is the engine. The enterprise intelligence layer is the vehicle. Without the engine, the vehicle does not move. Without the vehicle, the engine has nowhere useful to go.
 
-ERP systems digitised transactions. Enterprise AI may begin to make organisational knowledge operational in a comparable way, but that is a hypothesis rather than a settled destination. Its value will be determined by specific workflows in which retrieval, permissions, provenance, validation, action, and audit work together. The next chapter treats the future as a set of scenarios and asks which observable changes would support—or weaken—that hypothesis.
+ERP systems digitised transactions. Enterprise AI may begin to make organisational knowledge operational in a comparable way, but that is a hypothesis rather than a settled destination. Its value will be determined by specific workflows in which retrieval, permissions, provenance, validation, action, and audit work together. [[20-five-year-and-ten-year-scenarios|Five-Year and Ten-Year Scenarios]] asks which observable changes would support—or weaken—that hypothesis.

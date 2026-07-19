@@ -140,7 +140,7 @@ Every abstraction hides information. Sometimes the hidden information matters. A
 
 Abstraction can also reduce visibility. When something fails, the user may not know which layer is responsible: the application, the framework, the database, the operating system, the network, the cloud provider, or an external API. It can hide performance costs, because a simple command may trigger expensive operations underneath. It can create false confidence, because a simple interface can make hidden assumptions look safer than they are.
 
-This is why The Cost of Abstraction is a necessary companion to The Law of Abstraction. The history of computing is not a story of everything becoming easier without consequence. It is a story of trade-offs. Each layer gives something and takes something.
+The cost of abstraction is the necessary companion to its benefit. Computing history is not a story of everything becoming easier without consequence, but of trade-offs in which each layer gives something and takes something.
 
 The question is not whether abstraction is free. It is whether the gain is worth the cost.
 
@@ -212,4 +212,4 @@ If a person says, "Build a tool that tracks attendance and alerts a counsellor w
 
 To answer that, we need to examine programming itself. Programming languages are not the essence of programming. They are one way of representing procedures. Once we understand that, AI's ability to generate code becomes less mysterious.
 
-That is the subject of the next chapter.
+[[04-programming-as-representation|Programming as Representation]] examines that translation more closely.

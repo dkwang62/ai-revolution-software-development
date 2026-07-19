@@ -636,4 +636,4 @@ Inference uses the model and context to generate a likely useful output.
 
 But this mechanism has costs. Larger models cost more. Longer contexts cost more. Better reasoning may cost more. Multimodal capability costs more. Training is different from inference. Model versions change. Different models behave differently.
 
-The next chapter turns from the mechanism to the economics of models.
+[[09-economics-of-models|The Economics of Models]] turns from mechanism to cost.

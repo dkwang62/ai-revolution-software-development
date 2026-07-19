@@ -26,7 +26,7 @@ AI continues that history, but imperfectly. A language model can connect an info
 
 The interface is powerful because it is flexible. It is unreliable for the same reason. Ordinary language is ambiguous, models are probabilistic, and a project contains constraints that may never appear in the prompt. AI does not provide the stable contract of a traditional abstraction by itself. Tests, schemas, tools, permissions, frameworks, and human review help supply that contract.
 
-This is the central tension of the book. AI can make implementation dramatically cheaper without making judgment, trust, or responsibility cheap.
+This is the central tension of the book. AI can make implementation dramatically cheaper without making judgement, trust, or responsibility cheap.
 
 ## Why Software Comes First
 

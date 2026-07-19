@@ -135,7 +135,7 @@ This difference explains both AI's power and its weakness.
 
 The power is flexibility. AI can handle variation. It can translate, summarise, explain, infer, rewrite, classify, and generate. It can move from English to code, from code to explanation, from error message to likely cause, from screenshot to interface suggestion, from vague idea to structured plan. It is not limited to a hand-written rule for every possible case.
 
-The weakness is uncertainty. Because AI works through learned relationships rather than explicit deterministic rules, it can produce plausible mistakes. It may infer the wrong requirement, choose an inappropriate pattern, invent a non-existent API, or generate code that looks right but fails under real conditions. This is why later chapters on Precision and Software Verification are not optional. They are central to the engineering story.
+The weakness is uncertainty. Because AI works through learned relationships rather than explicit deterministic rules, it can produce plausible mistakes. It may infer the wrong requirement, choose an inappropriate pattern, invent a non-existent API, or generate code that looks right but fails under real conditions. [[13-precision-and-probabilistic-ai|Precision and Probabilistic AI]] therefore belongs at the centre of the engineering story.
 
 AI's ability to write software is therefore not magic. It is the consequence of representing information and procedures in a way that allows movement between forms.
 
@@ -243,7 +243,7 @@ Every software project contains translation work:
 
 Historically, much of this translation required skilled human intermediaries. AI does not eliminate those intermediaries everywhere, but it can reduce their load, speed their work, and allow more people to participate in earlier stages.
 
-This changes the cost equation introduced in the previous chapter. The scarce resource was not only code-writing ability. It was the ability to move reliably between human intention and machine behaviour. AI attacks that bottleneck by learning relationships among the many representations used in software development.
+This changes the cost equation introduced in [[03-hidden-engine-of-computing|The Hidden Engine of Computing]]. The scarce resource was not only code-writing ability. It was the ability to move reliably between human intention and machine behaviour. AI attacks that bottleneck by learning relationships among the many representations used in software development.
 
 If that capability improves, the value of software work shifts upward. The important human questions become:
 

@@ -20,7 +20,7 @@ This creates the central engineering tension of AI-assisted software:
 
 The solution is not to pretend AI is deterministic. The solution is to design hybrid systems.
 
-There is another distinction underneath this problem. Truth and Fitness for Purpose asks why AI often gives similar answers when explaining established knowledge, such as Einstein's theory of relativity, but produces very different answers when asked to design a hotel reservation system. The reason is not simply that one task is deterministic and the other is probabilistic.
+Another distinction lies underneath this problem. AI often gives similar answers when explaining established knowledge, such as Einstein's theory of relativity, but produces different answers when asked to design a hotel reservation system. The difference is not captured by calling one task deterministic and the other probabilistic.
 
 AI does not possess direct access to objective truth. It constructs responses from patterns learned across the body of human knowledge represented in its training data. Where humanity has reached broad agreement, AI tends to produce consistent answers. Where experts disagree, AI should reflect disagreement. Where no established answer exists, AI generates new possibilities by combining learned patterns.
 
@@ -136,7 +136,7 @@ Evaluation must therefore measure outcome, not only string equality.
 
 Developers may need datasets of representative cases, edge cases, adversarial examples, safety checks, format checks, groundedness checks, and human review. They may need to monitor production outputs over time because model behaviour can drift or change after upgrades.
 
-This is why Software Verification becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
+Software verification therefore becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
 
 ## Versioning Models and Prompts
 

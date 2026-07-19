@@ -4,7 +4,7 @@ title: "The Economics of Models"
 
 # The Economics of Models
 
-The previous chapters explained the mechanism. AI can assist software development because information can be represented mathematically, models learn relationships, neural networks build those models, and inference uses them to transform intent into useful outputs.
+[[06-what-is-an-ai-model|What Is an AI Model?]] and [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] explained the mechanism: models learn mathematical relationships that inference can use to transform intent into useful output.
 
 But this book is not only asking how AI works.
 
@@ -23,7 +23,7 @@ Inference spends capability.
 
 Training is the expensive process that creates or improves a model.
 
-It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. [Epoch AI estimates](https://epoch.ai/data-insights/ai-training-costs) that frontier language-model training compute has grown at about 5x per year since 2020, and that frontier training costs have risen about 3.5x per year over the same period. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race.
+It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. [Epoch AI estimates](https://epoch.ai/trends) that frontier-model training compute has grown at roughly 4–5x per year and that frontier language-model training costs have risen about 3.5x per year since 2020. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race.
 
 Economically, training resembles capital investment. A company spends heavily upfront to create an asset: a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
 
@@ -242,7 +242,7 @@ Hardware, data centres, energy, chips, and engineering teams determine cost.
 
 Applications determine value.
 
-The hardware shift is visible in company financials. [NVIDIA reported](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) Q1 fiscal 2027 revenue of $81.6 billion for the quarter ended April 26, 2026, including $75.2 billion in data-centre revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. Gartner also forecast worldwide AI spending of $2.59 trillion in 2026, a broad figure that includes many AI categories and should not be confused with model training alone.
+The hardware shift is visible in company financials. [NVIDIA reported](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) Q1 fiscal 2027 revenue of \$81.6 billion for the quarter ended April 26, 2026, including \$75.2 billion in data-centre revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. [Gartner forecast](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) worldwide AI spending of \$2.59 trillion in 2026, a broad figure that includes services, software, models, data, development platforms, and infrastructure. It should not be confused with model training alone.
 
 Software development is the clearest case study because it is already a knowledge-intensive activity. If AI lowers the cost of applying software-engineering knowledge, it changes the economics of the software industry.
 

@@ -80,7 +80,7 @@ In a world of cheap generation, judgement becomes a central human contribution.
 
 The more software we generate, the more we need to know what can be trusted.
 
-Chapter 10 established the engineering lesson: AI can produce code, explanations, tests, summaries, and decisions quickly, but speed does not prove correctness.
+[[13-precision-and-probabilistic-ai|Precision and Probabilistic AI]] established the engineering lesson: AI can produce code, explanations, tests, summaries, and decisions quickly, but speed does not prove correctness.
 
 Trust requires evidence. Tests, reviews, monitoring, structured outputs, validations, audits, and human oversight become more important when output becomes abundant.
 
@@ -88,7 +88,7 @@ This is especially true in high-stakes domains. A hobby app and a medical system
 
 Cheap code does not make reliability cheap.
 
-Productivity evidence supports this caution. Bounded experiments show that AI can accelerate some programming tasks, while repository-level and delivery-level outcomes are more complex. DORA's 2024 research found individual benefits alongside lower delivery stability and throughput. Its 2025 report found higher throughput but continued instability. In the [2025 Stack Overflow survey](https://survey.stackoverflow.co/2025/ai), 66% of respondents described AI answers that were almost right as a frustration, and 45% cited the time required to debug AI-generated code.
+Productivity evidence supports this caution. Bounded experiments show that AI can accelerate some programming tasks, while repository-level and delivery-level outcomes are more complex. [DORA's 2024 research](https://dora.dev/research/2024/dora-report/) found individual benefits alongside lower delivery stability and throughput. Its [2025 report](https://dora.dev/research/2025/dora-report/) found higher throughput but continued instability. In the [2025 Stack Overflow survey](https://survey.stackoverflow.co/2025/ai), 66% of respondents described AI answers that were almost right as a frustration, and 45% cited the time required to debug AI-generated code.
 
 In other words, cheap generation moves the bottleneck. It does not remove it.
 

@@ -92,7 +92,7 @@ AI systems add another layer:
 - Model evaluation.
 - Continuous evaluation.
 
-This is not merely a theoretical distinction. AI Evaluation and Verification now tracks early research support for this chapter. NIST connects validation to requirements for a specific intended use. OpenAI describes evals as structured tests for measuring model performance despite generative variability. Google Cloud's evaluation documentation shows how production systems may use grounding, safety, fluency, exact match, custom rubrics, and custom functions. OWASP identifies risks such as insecure output handling and excessive agency when LLM outputs flow into applications and tools.
+This distinction has practical support. [NIST](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) defines validation through objective evidence that requirements for a specific intended use have been fulfilled. [OpenAI's evaluation guidance](https://platform.openai.com/docs/guides/evals) treats evals as structured tests for measuring variable model behaviour. [Google Cloud's evaluation documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) describes criteria such as grounding, safety, fluency, exact match, rubrics, and custom functions. [OWASP](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/) identifies improper output handling and [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) when model outputs flow into applications and tools.
 
 Evaluation asks whether an AI system performed well across examples. Verification asks whether a particular result, workflow, or system can be trusted for its intended use.
 
@@ -143,7 +143,7 @@ Modern AI applications may use:
 
 These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
 
-Memory therefore connects Requirements Engineering to Context Windows, System Integration, AI Agents, and Software Verification. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
+Memory therefore connects requirements engineering to context, integration, agents, and verification. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
 
 ## Agents Require Requirements Discipline
 

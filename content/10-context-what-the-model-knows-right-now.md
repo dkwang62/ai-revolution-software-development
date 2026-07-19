@@ -6,7 +6,7 @@ title: "Context: What the Model Knows Right Now"
 
 ![Three meanings of context](<figures/FIG-09-01 Three Meanings of Context.png>)
 
-The previous chapters explained what an AI model is, how neural networks learn relationships, how AI can convert English into software, and why model capability has economic cost. One crucial idea now needs its own foundation: an AI model's behaviour depends not only on what it learned during training, but on what information it is given at the moment it is used.
+The preceding Part explained models, English-to-software transformation, and the economics of capability. One crucial idea needs its own foundation: a model's behaviour depends both on what it learned during training and on the information available when it is used.
 
 That surrounding information is context.
 
@@ -161,7 +161,7 @@ That is not merely a model problem. It is a context problem.
 
 ## Context as an Economic Bottleneck
 
-Earlier chapters argued that software has been expensive because expertise is scarce. AI changes that by making general software knowledge more available. A person can ask for help with Python, Swift, SQL, architecture, testing, debugging, or refactoring and receive useful assistance immediately.
+[[02-economics-of-software-development|The Economics of Software Development]] argued that software has been expensive because expertise is scarce. AI changes that by making general software knowledge more available. A person can ask for help with Python, Swift, SQL, architecture, testing, debugging, or refactoring and receive useful assistance immediately.
 
 But as general expertise becomes cheaper, another bottleneck becomes more visible:
 
@@ -249,7 +249,7 @@ This means the most important race may not be simply larger context windows. It 
 
 The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The real competitive advantage may lie in earlier layers: knowledge quality, organisation, indexing, retrieval, governance, permissions, provenance, and freshness.
 
-This suggests a further architectural layer, developed in Chapter 16: the **enterprise intelligence layer**.
+This suggests a further architectural layer, developed in [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]].
 
 Most enterprises probably do not need to build their own frontier model. They can rent general intelligence from foundation-model providers, much as companies rent cloud infrastructure or buy standard software platforms. What they need to own is their specialised intelligence: the representation of their own business reality.
 
@@ -269,4 +269,4 @@ This is why context management becomes part of software engineering. The goal is
 
 In traditional software, data quality already mattered. In AI systems, context quality matters just as much because context directly shapes behaviour.
 
-Context is the bridge between general capability and useful action. Software work always happens inside a particular codebase, organisation, budget, regulation, and history. The next chapter examines the human side of that bridge: how intent and constraints must be communicated when language itself becomes part of the engineering interface.
+Context is the bridge between general capability and useful action. Software work always happens inside a particular codebase, organisation, budget, regulation, and history. [[11-communication-becomes-the-interface|Communication Becomes the Interface]] examines the human side of that bridge: how intent and constraints must be expressed when language becomes part of engineering.

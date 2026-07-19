@@ -33,7 +33,7 @@ tools and formal representations
 ↓
 tests, validators, permissions, and observation
 ↓
-human judgment and responsibility
+human judgement and responsibility
 ```
 
 This is why “AI suggests; software decides” remains important even as agents become capable of action. A tool may execute a change, but its authority should be bounded. A model may propose a solution, but evidence should determine whether the solution survives.
@@ -52,9 +52,9 @@ Organisations face the same pattern at larger scale. Their advantage will not co
 
 The most important consequence of cheaper software may be the ideas that no longer die before implementation.
 
-A teacher may test a learning method without first raising money for a development team. A small organisation may build a tool for a workflow too specialised to interest a software vendor. A domain expert may turn years of tacit knowledge into a system others can use. Many experiments will fail. Some will create fragile software that should never be deployed. Lower barriers increase the need for judgment as well as the supply of possibilities.
+A teacher may test a learning method without first raising money for a development team. A small organisation may build a tool for a workflow too specialised to interest a software vendor. A domain expert may turn years of tacit knowledge into a system others can use. Many experiments will fail. Some will create fragile software that should never be deployed. Lower barriers increase the need for judgement as well as the supply of possibilities.
 
-The future of programming is therefore not captured by the question of whether AI will replace programmers. Tasks, roles, and pathways will change. Experts may gain enormous leverage; newcomers may enter through domain knowledge and supervision; organisations may need fewer people for some forms of routine implementation and more capacity for review, integration, security, and product judgment.
+The future of programming is therefore not captured by the question of whether AI will replace programmers. Tasks, roles, and pathways will change. Experts may gain enormous leverage; newcomers may enter through domain knowledge and supervision; organisations may need fewer people for some forms of routine implementation and more capacity for review, integration, security, and product judgement.
 
 I began Radix because the application I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, the Genie made production possible. It did not decide what was worth producing, notice every mistake, or accept responsibility for the result.
 

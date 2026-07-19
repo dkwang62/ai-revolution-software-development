@@ -4,140 +4,122 @@ title: "Bibliography and Evidence Notes"
 
 # Bibliography and Evidence Notes
 
-This draft is primarily an explanatory manuscript, not an academic textbook. Still, several of its major claims depend on external evidence. The notes below identify the main sources used in this version and explain how they should be interpreted. They also separate measured evidence, estimates, and inference so the book does not overclaim.
+This is an explanatory book rather than an academic textbook, but its factual claims still require traceable evidence. These notes identify the principal sources, the claims they support, and the limits of the evidence. Unless another date is given, mutable web sources were checked on **19 July 2026**.
 
-## Software Labour Market
+## Software labour and the human-expertise bottleneck
 
-The U.S. Bureau of Labor Statistics is used as a country-level anchor for the scale and value of software labour. Its 2024 Occupational Outlook Handbook entry for software developers, quality assurance analysts, and testers reports employment, wages, projected growth, and job openings.
+- U.S. Bureau of Labor Statistics. [“Software Developers, Quality Assurance Analysts, and Testers.”](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) *Occupational Outlook Handbook*, 2024 employment and wage estimates; 2024–2034 projections.
 
-Source: [U.S. Bureau of Labor Statistics, Software Developers, Quality Assurance Analysts, and Testers](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm)
+Used in “The Economics of Software Development” and “The Future of Programmers” for the combined occupation group's 1.8955 million jobs in 2024, \$131,450 median annual pay, approximately 129,200 projected openings per year, and 15% projected employment growth. These are U.S. occupational statistics, not a global estimate and not a forecast of AI's isolated effect.
 
-How this book uses it:
+## Generative-AI economic potential
 
-- To show that software development depends on a large, specialised, highly paid workforce.
-- To support the argument that software cost is driven by scarce expertise, not typing speed.
-- To avoid simplistic claims that AI automatically eliminates software jobs.
+- McKinsey Global Institute. [“The Economic Potential of Generative AI: The Next Productivity Frontier.”](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) 14 June 2023.
 
-## Generative AI Economic Potential
+Used in “The Enterprise Intelligence Layer” for the estimate that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases. The figure is modelled potential, not realised enterprise profit or audited return on investment.
 
-McKinsey's 2023 report estimates that generative AI could add US$2.6 trillion to US$4.4 trillion in annual value across 63 use cases, with a large share of potential value concentrated in customer operations, marketing and sales, software engineering, and research and development.
+## AI-assisted developer productivity
 
-Source: [McKinsey, The economic potential of generative AI](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier)
+- Peng, Sida, et al. [“The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.”](https://arxiv.org/abs/2302.06590) arXiv preprint, 2023.
+- GitHub. [“Research: Quantifying GitHub Copilot's Impact on Developer Productivity and Happiness.”](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) 7 September 2022.
+- Cui, Zheyuan (Kevin), et al. [“The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers.”](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) Preprint, June 2025.
+- METR. [“Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity.”](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) 10 July 2025.
+- METR. [“We Are Changing Our Developer Productivity Experiment Design.”](https://metr.org/blog/2026-02-24-uplift-update/) 24 February 2026.
+- DORA. [*2024 Accelerate State of DevOps Report*.](https://dora.dev/research/2024/dora-report/) 2024.
+- DORA. [*State of AI-Assisted Software Development 2025*.](https://dora.dev/research/2025/dora-report/) 2025, corrected version 2025.2.
+- DORA. [“Balancing AI Tensions: Moving from AI Adoption to Effective SDLC Use.”](https://dora.dev/insights/balancing-ai-tensions/) 10 March 2026.
+- Stack Overflow. [*2025 Developer Survey: AI*.](https://survey.stackoverflow.co/2025/ai) 2025.
 
-How this book uses it:
+The Peng experiment supports the 55.8% improvement reported for one bounded JavaScript task. The Cui preprint combines three randomized field experiments involving 4,867 developers and estimates 26.08% more completed tasks, while noting that each individual experiment was noisy. METR's early-2025 study found a 19% slowdown among 16 experienced developers working in familiar open-source repositories. METR's 2026 update suggested later tools may have improved but judged the magnitude unreliable because of selection and measurement problems.
 
-- To support the claim that generative AI should be analysed as an economic force.
-- To frame Enterprise AI ROI as a portfolio of specific use cases.
-- To distinguish estimated potential value from already realised enterprise-wide returns.
+DORA measures organisational delivery rather than one programming task. Its 2024 report associated greater AI adoption with individual benefits but reduced throughput and stability. Its 2025 work found higher throughput alongside continued instability. Stack Overflow supplies perception and frustration data, not controlled productivity measurement.
 
-## AI-Assisted Developer Productivity
+These studies answer different questions. The book does not combine them into a universal “AI productivity” percentage.
 
-A controlled GitHub Copilot experiment found that developers with access to Copilot completed a bounded JavaScript task 55.8 percent faster than the control group.
+## Additional cautionary research
 
-Source: [Peng et al., The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590)
+- Song, Yang, Shuyang Agarwal, and Wen Wen. [“The Impact of Generative AI on Collaborative Open-Source Software Development.”](https://arxiv.org/abs/2410.02091) arXiv preprint, 2024.
+- Xu, Frank F., et al. [“AI-Assisted Programming May Decrease the Productivity of Experienced Developers by Increasing Maintenance Burden.”](https://arxiv.org/abs/2510.10165) arXiv preprint, 2025.
 
-GitHub's own research summary also reported improvements in perceived flow, satisfaction, and reduced mental effort among Copilot users.
+These working papers support the narrower claim that collaboration, review, and maintenance can absorb gains visible during initial generation. Their preprint status is explicit because the findings should not be treated as settled consensus.
 
-Source: [GitHub Blog, Research: quantifying GitHub Copilot's impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+## Evaluation, verification, and agent risk
 
-How this book uses it:
+- National Institute of Standards and Technology. [*Artificial Intelligence Risk Management Framework (AI RMF 1.0)*.](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10) NIST AI 100-1, 26 January 2023.
+- NIST AI Resource Center. [“Valid and Reliable.”](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) Accessed 19 July 2026.
+- OpenAI. [“Evaluation Best Practices.”](https://platform.openai.com/docs/guides/evals) Accessed 19 July 2026.
+- Google Cloud. [“Evaluate Generative AI Models and Applications.”](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) Accessed 19 July 2026.
+- OWASP GenAI Security Project. [“LLM05:2025 Improper Output Handling.”](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/) Accessed 19 July 2026.
+- OWASP GenAI Security Project. [“LLM06:2025 Excessive Agency.”](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) Accessed 19 July 2026.
 
-- To support the claim that AI can improve productivity in some software-development tasks.
-- To avoid claiming that all software development becomes 55.8 percent faster.
-- To reinforce the distinction between code generation and production engineering.
+Used in the requirements, precision, trust, and agents chapters. NIST supplies the intended-use meaning of validation; the evaluation guides supply practical measurement methods; OWASP supports the distinction between model capability and the permissions, functionality, and autonomy granted by the surrounding system.
 
-METR's randomized early-2025 study examined experienced open-source developers completing real issues in repositories they knew well. AI use increased completion time by 19% in that specific setting. In February 2026, METR reported that late-2025 tools probably improved on that result, but selection effects and concurrent-agent use made the new estimate unreliable. The book presents both results because capability and measurement conditions are changing together.
+## Software quality, maintenance, and technical debt
 
-Sources:
+- Consortium for Information & Software Quality. [*The Cost of Poor Software Quality in the US: A 2022 Report*.](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) 2022.
+- McKinsey & Company. [“Tech Debt: Reclaiming Tech Equity.”](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) 6 October 2020.
 
-- [METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)
-- [METR, We Are Changing Our Developer Productivity Experiment Design](https://metr.org/blog/2026-02-24-uplift-update/)
+Used in “The Legacy Problem” for broad estimates of accumulated technical debt. Neither source measures the cost of legacy systems alone, and the book labels the figures accordingly.
 
-DORA measures a different level: software delivery inside organisations. Its 2024 report associated increasing AI adoption with lower throughput and stability despite individual benefits. Its 2025 report found a changed pattern—higher throughput alongside continued instability—and described AI as an amplifier of the organisation around it.
+## Public-sector legacy systems
 
-Sources:
+- U.S. Government Accountability Office. [*Information Technology: Agencies Need to Continue Addressing Critical Legacy Systems*.](https://www.gao.gov/products/gao-23-106821) GAO-23-106821, 10 May 2023.
+- UK Government Digital Service and Central Digital and Data Office. [“Guidance on the Legacy IT Risk Assessment Framework.”](https://www.gov.uk/government/publications/guidance-on-the-legacy-it-risk-assessment-framework) 29 September 2023; updated 13 March 2025.
+- UK National Audit Office. [*Government Cyber Resilience*.](https://www.nao.org.uk/reports/government-cyber-resilience/) 29 January 2025.
 
-- [DORA, 2024 Accelerate State of DevOps Report](https://dora.dev/research/2024/dora-report/)
-- [DORA, 2025 State of AI-Assisted Software Development](https://dora.dev/research/2025/dora-report/)
-- [DORA, Balancing AI Tensions](https://dora.dev/insights/balancing-ai-tensions/)
+Used for the age, operating cost, modernisation planning, and remediation status of government legacy systems. The NAO's data cover 228 recorded systems supplied by 27 departments and do not represent every legacy system in central government.
 
-The 2025 Stack Overflow Developer Survey provides perception evidence rather than controlled productivity measurement. It records widespread adoption alongside frustration with nearly-correct answers and time-consuming debugging.
+## Legacy integration and modernisation cases
 
-Source: [Stack Overflow, 2025 Developer Survey: AI](https://survey.stackoverflow.co/2025/ai)
+- Google Cloud. [“Hong Leong Bank: Transforming Finance with AI Workloads on Google Cloud.”](https://cloud.google.com/customers/hongleongbank) Accessed 19 July 2026.
+- Publicis Sapient. [“Financial Services Legacy Modernization with Slingshot.”](https://www.publicissapient.com/customers/stories/financial-services-slingshot-legacy-modernization) Accessed 19 July 2026.
 
-How this book interprets the combined evidence:
+These vendor-published cases support the architectural examples in “The Legacy Problem”: governed API access to core systems, and AI-assisted recovery of business rules from legacy COBOL. They are evidence that these methods are being offered and reported in practice, not independent proof of general savings.
 
-- Bounded experiments, familiar-repository studies, surveys, and delivery metrics answer different questions.
-- No single percentage represents “AI productivity” across software development.
-- Evidence should be dated and revisited because models, agent tools, and user practices change quickly.
+## Model economics and AI infrastructure
 
-## Cautionary Evidence on AI Coding
+- Epoch AI. [“Trends in Artificial Intelligence.”](https://epoch.ai/trends) Accessed 19 July 2026.
+- NVIDIA. [“NVIDIA Announces Financial Results for First Quarter Fiscal 2027.”](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) 20 May 2026.
+- Gartner. [“Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026.”](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) 19 May 2026.
 
-More recent studies suggest that AI coding tools may produce mixed effects in real-world collaborative software settings, including coordination, review, and maintenance burdens.
+Used in “The Economics of Models.” Epoch's figures are modelled estimates, NVIDIA's figures are company financial results, and Gartner's US\$2.59 trillion forecast covers a broad market definition. The book keeps these categories separate.
 
-Sources:
+## Capital allocation as evidence of belief
 
-- [Song, Agarwal, and Wen, The Impact of Generative AI on Collaborative Open-Source Software Development](https://arxiv.org/abs/2410.02091)
-- [Xu et al., AI-assisted Programming May Decrease the Productivity of Experienced Developers by Increasing Maintenance Burden](https://arxiv.org/abs/2510.10165)
+- Microsoft Corporation. [*2025 Annual Report*.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.
+- Microsoft Corporation. [Form 10-K for the fiscal year ended 30 June 2025.](https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm)
+- Alphabet Inc. [Form 10-K for the year ended 31 December 2025.](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm)
+- NVIDIA. [“NVIDIA Announces Financial Results for First Quarter Fiscal 2027.”](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) 20 May 2026.
 
-How this book uses them:
+Microsoft states that it will continue investing in capital expenditure for cloud growth, AI infrastructure, and training. Alphabet reported US\$91.4 billion of 2025 capital expenditure, primarily for technical infrastructure, and said it was scaling infrastructure particularly for AI. NVIDIA's data-centre revenue shows demand reaching a major compute supplier.
 
-- To support the argument that productivity must be measured at the system level, not just by code output.
-- To explain why verification, architecture, trust, and maintainability become more important when generation becomes cheaper.
+These disclosures support a limited inference: informed companies are committing substantial capital because they believe the opportunity warrants the risk. Expenditure is evidence of belief, not proof that the investment will earn an adequate return.
 
-## Software Quality, Maintenance, and Technical Debt
+## Enterprise AI returns and shared infrastructure
 
-The draft uses evidence on software quality, maintenance, technical debt, and poor software quality costs to show that the cost of software does not end when the first version is written.
+- McKinsey Global Institute. [“The Economic Potential of Generative AI.”](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) 14 June 2023.
+- Cui, Zheyuan (Kevin), et al. [“The Effects of Generative AI on High-Skilled Work.”](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) Preprint, June 2025.
+- DORA. [*State of AI-Assisted Software Development 2025*.](https://dora.dev/research/2025/dora-report/) 2025.
+- Google Cloud. [“Wayfair Accelerates Developer Velocity and Reduces CI Fix Time with AI on Google Cloud.”](https://cloud.google.com/customers/wayfair-developer) Accessed 19 July 2026.
+- Google Cloud. [“FletcherTech Builds AI Foundation for Data-Driven Accuracy and Operational Efficiency.”](https://cloud.google.com/customers/fletchertech) Accessed 19 July 2026.
 
-Sources:
+The strongest evidence remains workflow-specific. The field experiments and DORA research provide broader measurement; the Wayfair and FletcherTech cases provide vendor-reported examples of CI remediation and internal knowledge retrieval. The case figures have not been independently audited for this book.
 
-- [Consortium for Information & Software Quality, The Cost of Poor Software Quality in the US: A 2022 Report](https://www.it-cisq.org/the-cost-of-poor-software-quality-in-the-us-a-2022-report.htm)
-- [McKinsey, Tech debt: Reclaiming tech equity](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity)
+The “enterprise intelligence layer” remains a hypothesis: if many useful workflows need the same retrieval, permissions, provenance, evaluation, orchestration, and audit infrastructure, organisations may find it economical to build a shared layer. The sources show the component business cases and organisational conditions; they do not prove that every enterprise should build the architecture.
 
-How this book uses them:
+## Claims discipline
 
-- To support the claim that software cost continues after initial development.
-- To explain why AI-generated code is not automatically cheap if it creates quality, security, or maintenance burdens.
-- To frame legacy modernisation as capital preservation, not merely old-code cleanup.
-
-## Capital Allocation
-
-The book treats major AI infrastructure investment as evidence of belief rather than proof of success. Large capital commitments by AI labs, cloud providers, chip companies, and platform firms show what informed actors consider worth betting on.
-
-Sources for this theme should include annual reports, earnings calls, investor presentations, capital-expenditure announcements, and infrastructure disclosures from companies such as Microsoft, Alphabet, Amazon, Meta, NVIDIA, OpenAI, Anthropic, and xAI. The specific figures will need updating close to publication because AI capital expenditure is changing quickly.
-
-How this book uses it:
-
-- To support the method: technology predicts what is possible; capital predicts what is probable.
-- To frame frontier models, GPUs, data centres, inference, and enterprise AI as economic systems.
-
-Important caveat:
-
-Capital expenditure is not proof that the investment will pay off. It is evidence that major firms believe the expected returns justify the risk.
-
-## Enterprise AI ROI
-
-The strongest current evidence for Enterprise AI ROI is project-based rather than enterprise-wide. This book therefore treats enterprise-wide intelligence layers as a hypothesis built from narrower use cases, not as a proven universal outcome.
-
-How this book uses current evidence:
-
-- Software-development assistants, customer-support automation, legal review, document analysis, and internal search can each be analysed as separate business cases.
-- If many separate use cases require the same retrieval, governance, permissions, evaluation, and orchestration infrastructure, a shared Enterprise Intelligence Layer may emerge economically.
-- The book's stronger claim is incremental: small ROI cases can accumulate into shared infrastructure. The weaker claim would be pretending that every company can already prove enterprise-wide transformation in advance.
-
-## Claims Discipline
-
-This book should continue to distinguish three levels of claim:
+The manuscript separates three kinds of statement:
 
 ```text
-What we know
-= supported by current evidence.
+Observed or measured
+= supported by a cited source or documented Radix experience.
 
-What we infer
-= a reasonable interpretation of evidence and trends.
+Inferred
+= an interpretation of evidence, economics, or technical direction.
 
-What we do not yet know
-= important uncertainty.
+Unknown
+= an uncertainty that scenarios or future research must resolve.
 ```
 
-That distinction is essential. The book's strongest position is not that it can predict the future perfectly. Its strongest position is that it gives readers a framework for understanding why AI may transform software development if the economics become too compelling to ignore.
+This distinction is central to the book's argument. AI capability, adoption, cost, and evidence are changing quickly. A finished citation records what supported a claim at publication; it does not make a volatile claim permanent.

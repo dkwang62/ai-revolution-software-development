@@ -20,7 +20,7 @@ That does not mean programmers disappear. It means the role changes.
 
 ## The Programmer as Intermediary
 
-Chapter 3 made a deliberately provocative argument: if part of programming is translating ideas into machine action, the user is often the original source of the idea. The teacher knows the attendance problem. The doctor knows the workflow. The business owner knows the process. The scientist knows the experiment.
+[[04-programming-as-representation|Programming as Representation]] made a deliberately provocative argument: if part of programming is translating ideas into machine action, the user is often the original source of the idea. The teacher knows the attendance problem. The doctor knows the workflow. The business owner knows the process. The scientist knows the experiment.
 
 Why should all of them need a human programmer to translate intent into software?
 
@@ -175,7 +175,7 @@ The outcome will vary by industry, risk level, organisation, and task type.
 
 A startup building a prototype may need fewer developers at first. A bank integrating AI into legacy systems may need more engineering discipline, not less. A small business may build tools without hiring a traditional team. A software company may ship faster but face greater verification demands.
 
-The emerging evidence is mixed but useful. A controlled GitHub Copilot experiment found developers completed one bounded JavaScript task 55.8% faster with Copilot. A later field experiment across Microsoft, Accenture, and a Fortune 100 company estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. But [METR's early-2025 randomized study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that 16 experienced open-source developers working in their own repositories took 19% longer when AI tools were allowed.
+The emerging evidence is mixed but useful. A controlled GitHub Copilot experiment found developers completed one bounded JavaScript task 55.8% faster with Copilot. A [2025 preprint reporting field experiments](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) across Microsoft, Accenture, and a Fortune 100 company estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. But [METR's early-2025 randomized study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that 16 experienced open-source developers working in their own repositories took 19% longer when AI tools were allowed.
 
 The evidence is moving. In [February 2026](https://metr.org/blog/2026-02-24-uplift-update/), METR said the early result no longer represented current tools. Its late-2025 data suggested possible speedups, but participant selection and unreliable time measurement made the size highly uncertain. DORA's [2024 report](https://dora.dev/research/2024/dora-report/) associated greater AI adoption with lower delivery throughput and stability; its [2025 research](https://dora.dev/research/2025/dora-report/) found higher throughput alongside continued instability. These findings are not contradictions that can be averaged into one productivity number. A short, bounded task, work inside a familiar repository, a developer survey, and organisation-level delivery measure different things. The question is always: faster at which task, for whom, under what quality standard, and with what downstream cost?
 

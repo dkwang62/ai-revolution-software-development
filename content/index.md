@@ -1,6 +1,6 @@
 ---
 title: "The AI Revolution in Software Development"
-description: "A free public reading draft of Desmond Kwang's book on AI, software, abstraction, Codex, and economics."
+description: "The public reading edition of Desmond Kwang's book on AI, software, abstraction, Codex, and economics."
 socialImage: "figures/cover.png"
 ---
 
@@ -12,7 +12,7 @@ socialImage: "figures/cover.png"
 
 ![Book cover](figures/cover.png)
 
-This is a free public reading draft of a book about why artificial intelligence is transforming software development. The argument is not that AI is magic, or that programmers disappear. The argument is that AI changes the economics of turning human intent into working software.
+This is the public reading edition of a book about why artificial intelligence is transforming software development. The argument is not that AI is magic, or that programmers disappear. The argument is that AI changes the economics of turning human intent into working software.
 
 Codex is the genie I met. The book is about what the genie reveals.
 
