@@ -637,31 +637,3 @@ Inference uses the model and context to generate a likely useful output.
 But this mechanism has costs. Larger models cost more. Longer contexts cost more. Better reasoning may cost more. Multimodal capability costs more. Training is different from inference. Model versions change. Different models behave differently.
 
 The next chapter turns from the mechanism to the economics of models.
-
-## What We Know
-
-AI can generate software because software is a representation of procedure and models learn relationships among natural language, code, documentation, examples, and software patterns.
-
-The model does not need to think in Swift or Python to generate Swift or Python. Those languages are external representations of procedures.
-
-Context strongly affects output.
-
-AI-generated code and AI-driven behaviour require verification.
-
-Natural-language prompts can become software specifications in AI-driven features.
-
-## What We Infer
-
-The main economic value of AI-assisted development comes from reducing translation cost between human intent and machine-executable behaviour.
-
-The human role shifts toward specifying intent, supplying context, evaluating output, and integrating reliable systems.
-
-Programming languages will remain important as deterministic execution layers even if humans interact with them less directly.
-
-## What We Do Not Yet Know
-
-We do not yet know how far AI can scale from small features and prototypes to large, long-lived, safety-critical systems.
-
-We do not yet know which forms of natural-language programming will become stable engineering practice.
-
-We do not yet know how much verification cost will offset generation cost savings in different software domains.

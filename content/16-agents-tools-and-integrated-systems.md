@@ -425,339 +425,97 @@ Codex can help discover what is wrong by examining the actual working system.
 
 This does not make the human less important. It makes the human's role different. I still decide what Radix should do, whether a capture workflow is legitimate, whether the behaviour is acceptable, and whether a change should be kept. Codex reduces the cost of moving from problem to tested change, but judgement and accountability remain human.
 
-### Ten Codex Examples: From Prompt To Code
+### Learning The Language Of Agents Through Radix
 
-The best way to understand Codex is not to list its features. It is to watch the journey from prompt to code.
+The vocabulary of artificial intelligence can make a fairly understandable activity sound remote. Terms such as _agentic loop_, _grounding_, _tool use_, _state_, _guardrails_, and _human in the loop_ are useful, but only after the reader can connect them to something that happened.
 
-Here are ten examples from the kind of work I experienced while building Radix and this book.
+Radix provides that connection. The examples below are not demonstrations invented after the fact. They come from the development record of the application. They show what I asked the Genie to do, what it actually did, and the name the wider AI world gives to that behaviour.
 
-#### 1. A vague feature becomes requirements
+#### Agentic behaviour: when the keyboard covered the work
 
-Prompt:
+At one point, the iPhone keyboard covered the Etymology field in Radix. My report was written as a user, not as a programmer: when I touched the field, I could no longer work with it properly.
 
-```text
-I want Radix to create Chinese quizzes from captured learning material. It should ask one question at a time and not reveal the answer too early.
-```
+The Genie found the interface code, saw that the lower fields had nowhere to scroll, changed the layout, and added controls for dismissing the keyboard and saving the result. The first attempted change did not compile. The Genie read the compiler's objection, recognised a SwiftUI view-building problem, adjusted the implementation, and built Radix again. The second build succeeded.
 
-Codex first turns the request into structure:
+In ordinary language, it tried to repair the problem, examined what happened, corrected itself, and checked again. In AI terminology, this was **agentic behaviour**. The repeated sequence is an **agentic loop**:
 
 ```text
-feature = AI-generated quiz
-source = captured Chinese material
-interaction = one question at a time
-constraints = no early answer, controlled pinyin, bilingual output
-```
-
-Only then does code appear. The change may become a prompt builder:
-
-```swift
-struct QuizPromptBuilder {
-    func buildQuizPrompt(from capture: CaptureItem) -> String {
-        """
-        Create Quiz
-
-        Use the captured Chinese material below.
-        Ask one question only.
-        Do not reveal the answer until the learner replies.
-
-        Captured text:
-        \(capture.text)
-        """
-    }
-}
-```
-
-This is not just code generation. It is requirements engineering through conversation.
-
-#### 2. Domain judgement becomes an algorithm
-
-Prompt:
-
-```text
-The quiz choices are too easy. Characters should be visually confusable, but not just because they share any component.
-```
-
-Codex searches for the distractor-selection code and turns the judgement into a ranking rule:
-
-```text
-bad rule:
-any shared component qualifies
-
-better rule:
-shared component + script match + visual similarity + not too generic
-```
-
-The result may look like:
-
-```swift
-func confusabilityScore(_ a: CharacterEntry, _ b: CharacterEntry) -> Int {
-    var score = 0
-    if a.script == b.script { score += 2 }
-    score += sharedSpecificComponents(a, b).count * 3
-    score -= sharedGenericComponents(a, b).count
-    return score
-}
-```
-
-The important input was not Swift syntax. It was the educational judgement that some shared components are too generic to create useful confusion.
-
-#### 3. A slow feature becomes a caching problem
-
-Prompt:
-
-```text
-The quiz works, but it feels slow when I move between questions.
-```
-
-Codex looks for repeated work during screen updates. It may find that answer choices are being rebuilt every time the interface redraws.
-
-Before:
-
-```swift
-var choices: [CharacterEntry] {
-    buildChoices(for: currentQuestion)
-}
-```
-
-After:
-
-```swift
-@State private var cachedChoices: [CharacterEntry] = []
-
-func loadQuestion(_ question: QuizQuestion) {
-    currentQuestion = question
-    cachedChoices = buildChoices(for: question)
-}
-```
-
-The first version may be logically correct. The second version is more usable. That difference is engineering.
-
-#### 4. A prompt becomes an API integration
-
-Prompt:
-
-```text
-This Gemini feature is not actually using the API. It should send the captured text to Gemini, receive structured JSON, and add phrases to the database.
-```
-
-Codex now has to inspect settings, network code, JSON parsing, error handling, and database insertion.
-
-The code shape changes from a standalone prompt to integration:
-
-```swift
-struct ExtractedPhrase: Decodable {
-    let chinese: String
-    let pinyin: String
-    let english: String
-}
-
-let phrases = try decoder.decode([ExtractedPhrase].self, from: data)
-try phraseStore.insert(phrases)
-```
-
-This is where AI stops being a chat window and becomes a component inside software.
-
-#### 5. A screenshot becomes a diagnosis
-
-Prompt:
-
-```text
-Here is a screenshot from Xcode. It says Cannot find CharacterStore in scope. Please fix it.
-```
-
-Codex can combine the screenshot with the repository:
-
-```text
-screenshot text
-+ highlighted file
-+ project structure
-+ source search
-+ build configuration
-```
-
-The fix may not be a clever algorithm. It may be an import, target-membership change, or shared-module boundary:
-
-```swift
-import SharedRadixCore
-```
-
-This is why multimodal agents matter. Real debugging evidence often arrives as a mixture of image, text, code, and project state.
-
-#### 6. A web-capture problem becomes a safe workflow
-
-Prompt:
-
-```text
-I am trying to capture learning material from a web page I can access, but Radix is not importing it cleanly. Help me diagnose the workflow.
-```
-
-The first step is not code. It is the permission boundary:
-
-```text
-Is the user authorised to access the page?
-Is the content allowed to be captured?
-Are credentials kept private?
-Is Codex observing only what the user approved?
-```
-
-Then Codex can inspect the technical path:
-
-```text
-web page or screenshot
+understand the objective
 ↓
-OCR or text extraction
+inspect the environment
 ↓
-parser
+take an action
 ↓
-normalisation
+observe the result
 ↓
-Radix import format
+revise the action
 ↓
-database insert
+verify the outcome
 ```
 
-The resulting code may be modest:
+Researchers and developers sometimes call the alternation between reasoning and action **ReAct**. The name is less important than the mechanism. The Genie did not produce a single answer and stop. It used feedback from the real system to decide what to do next.
 
-```swift
-func normaliseCapturedText(_ raw: String) -> String {
-    raw
-        .replacingOccurrences(of: "\u{00A0}", with: " ")
-        .trimmingCharacters(in: .whitespacesAndNewlines)
-}
-```
+#### Tool use: when a request became a ZIP export
 
-But the workflow is not modest. It connects authorised web access, capture, parsing, storage, and user verification.
+I asked for an option in Radix that would collect its essential JSON, database, and text files into a ZIP archive. I did not identify the Swift files that needed to change or describe how a ZIP file should be constructed.
 
-#### 7. Migration becomes behaviour preservation
+The Genie inspected the existing My Data screen, found the export service, identified the relevant application resources, and extended the existing design. It added a manifest explaining what the archive contained, changed three source files, ran an Xcode build, and checked that it had not mixed its work with unrelated changes already present in the project.
 
-Prompt:
+The language model supplied interpretation and judgement. Codex supplied access to files, search, editing, terminal commands, and the compiler. In AI terminology, these are **tools**. A model can discuss a ZIP export. An agent with tools can participate in building one.
 
-```text
-Compare the Streamlit RadixWeb version with the Swift version. The phrase cards and remembered phrases do not behave the same.
-```
+This distinction is central to the economics of agents. Intelligence becomes more valuable when it can be connected to action. It also becomes more dangerous. A system that can change files needs permissions, boundaries, records, and verification in a way that a system producing only prose may not.
 
-Codex has to compare two systems:
+#### Grounding: when the visible problem was not the real problem
 
-```text
-Streamlit behaviour
-Swift behaviour
-data model
-UI state
-search logic
-animation behaviour
-```
+I asked the Genie to highlight the position of a previewed character in Radix's Browse grid. After examining the code, it discovered that the highlight already existed. The real problem was that the grid did not move to the page on which the character appeared. The Genie changed the page-selection behaviour rather than building a second highlighting mechanism.
 
-The code may involve matching lookup rules:
+This is **grounding**: forming a conclusion from the actual project rather than from a plausible guess. The Genie retrieved the relevant files and placed their contents into its working context before deciding what to change.
 
-```swift
-func phraseMatches(_ phrase: Phrase, query: String) -> Bool {
-    phrase.chinese == query
-        || phrase.pinyin == query
-        || phrase.english.localizedCaseInsensitiveContains(query)
-}
-```
+This resembles the principle behind **retrieval-augmented generation**, usually shortened to **RAG**. A general model is supplemented with information relevant to the current question. But the terms should not be blurred. Searching source files is not by itself proof that Codex is implemented as a particular RAG architecture. The durable idea is that the answer became specific because the Genie could retrieve and inspect Radix itself.
 
-Migration is not copying code. It is preserving what the user experiences.
+#### Human in the loop: when AI proposed and the user decided
 
-#### 8. Refactoring becomes controlled change
+The Phrase Discovery Import feature provides an example inside Radix, not only in the way Radix was developed.
 
-Prompt:
+Radix preserves a passage of Chinese text captured through OCR. It identifies phrases already known to the application and prepares the full passage for an AI model, together with instructions to suggest useful new phrases. The returned candidates are parsed and checked again. Duplicates and invalid entries are removed. The user reviews the remaining phrases, edits them if necessary, and chooses which ones to save. Approved phrases go into an overlay database; the core database remains protected.
 
-```text
-Radix has grown quickly. Refactor the platform checks and preferences code, but do it cautiously and do not change behaviour.
-```
+In everyday language, AI proposes, software filters, and the human decides. The wider term is **human in the loop**. Human judgement has not disappeared. It has moved from producing every candidate to deciding which candidates deserve acceptance.
 
-Codex searches for repeated patterns and chooses a narrow slice.
+The surrounding restrictions are **guardrails**. The AI-assisted process may propose phrases, but it may not silently rewrite the protected database, invent missing information, or bypass the user's approval. The distinction between what a system is capable of doing and what it is authorised to do is one of the defining problems of agentic AI.
 
-Before:
+#### Observability and verification: when nineteen became eighteen
 
-```swift
-if UIDevice.current.userInterfaceIdiom == .pad {
-    showSidebar = true
-}
-```
+After source files were accidentally deleted, the Genie searched recovery folders and archives. It compared duplicate files byte for byte and ran a build. A signing failure initially obscured the source problem, so the Genie performed a compile-oriented check with signing disabled. That exposed nineteen missing Swift files.
 
-After:
+One archive contained none of them. Another contained 253 Swift files but only one of the missing files. The Genie extracted that one file, compared its checksum with the archived copy, and ran the check again. The number of missing files fell from nineteen to eighteen.
 
-```swift
-struct Platform {
-    static var isPad: Bool {
-        UIDevice.current.userInterfaceIdiom == .pad
-    }
-}
-```
+This was not complete success, and that is precisely why it is a useful example. The Genie kept a visible record of what it had examined and what each test established. In AI engineering, the ability to reconstruct an agent's actions and results is called **observability**. Checking whether the result is correct is **verification**.
 
-The value is not that Codex rewrites everything. The value is that it can help make small, reversible improvements.
+The episode also shows the boundary of agency. The Genie could search every source it was given. It could not recover information that was absent from all of them. Agentic AI expands the range of work a model can attempt; it does not abolish the limits imposed by missing evidence.
 
-#### 9. Tests become a safety net
+#### External memory: moving the Genie between machines
 
-Prompt:
+When I prepared to continue Radix on another computer, the Genie produced a handoff that recorded what had already changed, which files had been separated, what should not be repeated, which build command should be used, and what work remained. I also kept a handoff document in the project so a later Codex session could reconstruct the situation.
 
-```text
-Before changing this import logic, add tests that capture the current behaviour so we know if we break anything.
-```
+This is **external memory**. The model did not acquire permanent human recollection of the project. Important state was written outside the model and retrieved when needed. The chat history, the source tree, the project notes, and the handoff file each preserved a different part of the working context.
 
-Codex identifies edge cases before changing the code:
+The distinction matters because the word _memory_ is often used too casually in AI. Remembering a preference, retaining the current conversation, retrieving a project document, and changing a model through training are not the same process. My handoff file was closer to a carefully prepared briefing for the next worker than to a memory inside a brain.
 
-```text
-empty input
-duplicate phrases
-traditional characters
-pinyin fields
-malformed JSON
-```
+### Where The Radix Evidence Ends
 
-A test might look like:
+Not every term in the agentic-AI vocabulary has already appeared in the development of Radix. This book should not pretend otherwise. Where the development record is direct, I describe what happened. Where the connection is only an analogy, I say so. Where I describe a possible future, it is speculation rather than history.
 
-```swift
-func testImportSkipsDuplicatePhrase() throws {
-    let store = PhraseStore.inMemory()
-    try store.insert(Phrase(chinese: "你好", pinyin: "ni hao", english: "hello"))
+A future **multi-agent system**, for example, might assign one Genie to inspect Radix's interface, another to examine its databases, and a third to test the proposed change. A coordinating agent would divide the work and combine the results. That coordination is called **orchestration**. If the agents exchanged tasks and results directly, the wider industry might describe it as **agent-to-agent**, or **A2A**, communication.
 
-    try store.importPhrase(Phrase(chinese: "你好", pinyin: "ni hao", english: "hello"))
+The same idea could apply to this book. One agent might retrieve sources, another challenge the argument, another check technical language, and another edit for clarity. I would remain responsible for the thesis, the meaning, and the decision to accept or reject their work. The speculative economic question is not merely whether AI can imitate one worker. It is whether one person may increasingly be able to direct something resembling a small artificial organisation.
 
-    XCTAssertEqual(store.allPhrases().count, 1)
-}
-```
+Radix also offers a natural possible use for **GraphRAG**. Its characters, components, variants, pronunciations, meanings, and phrases form a network of relationships. Ordinary retrieval might find a passage containing a character. Graph-based retrieval could follow relationships to find characters sharing a phonetic component or phrases connected through their constituent characters. Radix does not need to be described as using GraphRAG today for the example to make the concept visible.
 
-Trust comes from verification, not from believing the model.
+**Reinforcement learning** provides another case where precision matters. If Radix records which proposed phrases a user accepts, it has stored feedback. It has not necessarily learned. It becomes reinforcement learning only if that feedback is used to alter a policy governing future choices. **PPO**, or Proximal Policy Optimization, is one mathematical method for making such adjustments without allowing each new lesson to change the system too violently. The mechanism belongs in the wider explanation; Radix is the imagined application, not evidence that the method is already present.
 
-#### 10. A manuscript becomes a website
+A future Radix might also combine flexible model judgement with exact rules: the model judges whether a phrase is natural, while conventional software enforces its permitted length, rejects duplicates, and protects the core database. The broad research term for combining learned neural judgement with explicit symbols or rules is **neuro-symbolic AI**. Whether a particular implementation deserves that label would depend on its architecture, but the Radix example explains why the combination is attractive: probabilistic intelligence and deterministic software compensate for each other's weaknesses.
 
-Prompt:
-
-```text
-Publish the Obsidian book manuscript as a public website using Quartz and GitHub Pages.
-```
-
-Codex treats this as a software workflow:
-
-```text
-vault structure
-↓
-Quartz configuration
-↓
-content folder
-↓
-build command
-↓
-GitHub Pages deployment
-↓
-broken-link checks
-```
-
-The output may include configuration:
-
-```ts
-const config: QuartzConfig = {
-  configuration: {
-    pageTitle: "The AI Revolution in Software Development",
-    baseUrl: "dkwang62.github.io/ai-revolution-software-development",
-  },
-}
-```
-
-This final example matters because it connects the book's method to its subject. The book itself is being built like software: structured, refactored, tested, published, and improved through an AI-assisted workflow.
+These possibilities belong in the book because they connect my experience to the wider AI world. They must remain visibly labelled as possibilities. The Genie metaphor should make unfamiliar ideas understandable, not make speculation look like accomplished fact.
 
 ### Claude Code, Cursor, And The Coding-Agent Race
 
@@ -892,29 +650,3 @@ What becomes scarce when software becomes cheaper?
 What happens to programmers?
 
 What might the next five and ten years look like?
-
-## What We Know
-
-Agents combine models, context, tools, goals, feedback, and repeated inference.
-
-Tool use turns AI output into action, which increases both value and risk.
-
-Agents require permissions, validation, logging, testing, rollback, and human oversight for high-impact actions.
-
-Software development is a natural domain for agents because many tasks are digital and tool-based.
-
-## What We Infer
-
-Agents will be economically valuable where they reduce workflow cost, not merely where they produce impressive demonstrations.
-
-Bounded agents with clear permissions and verification are likely to be more useful than unconstrained autonomous systems in serious software environments.
-
-Agents will make system integration and software verification even more important.
-
-## What We Do Not Yet Know
-
-We do not yet know which agent architectures will become standard.
-
-We do not yet know how much autonomy organisations will safely grant AI systems.
-
-We do not yet know how agent reliability will scale across long, complex workflows.

@@ -54,18 +54,3 @@ By that standard, this is a human-authored book written with artificial intellig
 ## Bridge to Introduction
 
 The same pattern appears in software. AI can generate code, but the harder question is still what should be built, why it should exist, and whether it achieves its purpose. That is where this book begins.
-
-## Related Notes
-
-- [[Introduction - Writing a Book the Same Way I Built an App]]
-- [[CODEX_AS_THE_GENIE]]
-- [[AGI and Human Intent]]
-- [[Natural Language Programming]]
-- [[Communication Becomes the Interface]]
-- [[The Future of Programmers]]
-
-## Future Work
-
-- Decide whether this note belongs before the introduction, after the introduction, or in the appendix.
-- Add final disclosure language before publication.
-- Review publisher and platform requirements for AI-assisted authorship disclosure.

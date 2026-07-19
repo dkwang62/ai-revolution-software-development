@@ -30,6 +30,10 @@ An AI model is a learned mathematical representation of patterns found in data.
 
 That sentence is the centre of this chapter.
 
+I encountered the distinction while working on Radix Phrase Discovery. Radix could send the same Chinese passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer stored in the Radix database. It was using learned relationships among characters, phrases, contexts, pinyin, and meanings to generate a plausible result.
+
+Radix then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the user to approve what should be saved. The episode made the boundary concrete: the model supplied flexible judgement; the application supplied records, rules, and authority.
+
 ## Models Before AI
 
 The word "model" did not begin with artificial intelligence.
@@ -134,9 +138,9 @@ This creates a new maintenance problem for software systems that depend on AI. M
 
 A model is not only a technical artefact. It is an economic artefact.
 
-Training is an upfront investment. It requires data, hardware, electricity, engineers, research, experimentation, and evaluation. The cost can be enormous, especially for frontier models. [SOURCE NEEDED: current estimates of frontier model training costs, with dates and caveats]
+Training is an upfront investment. It requires data, specialised hardware, electricity, engineers, research, experimentation, and evaluation. At the frontier, the full cost is rarely disclosed consistently and public estimates vary widely. The durable point is that training creates an expensive reusable asset before most users make their first request.
 
-Inference is an operating cost. Every time a user asks a question, generates code, analyses a document, or runs an AI feature, compute is consumed. The cost depends on model size, context length, output length, hardware efficiency, latency requirements, and scale. [SOURCE NEEDED: current inference-cost examples]
+Inference is an operating cost. Every time a user asks a question, generates code, analyses a document, or runs an AI feature, compute is consumed. Provider prices change quickly, but the underlying cost drivers remain: model size, context length, output length, hardware efficiency, latency requirements, and scale.
 
 Model size is a trade-off. Larger models may offer broader capability, but they cost more to train and run. Smaller models may be cheaper and faster but less capable.
 
@@ -181,31 +185,3 @@ The model is the central unit in the economics of AI.
 Now we need to look more closely at the machinery that creates it.
 
 That machinery is the neural network.
-
-## What We Know
-
-An AI model is not a database, encyclopedia, search engine, rulebook, or conventional program.
-
-An AI model is a learned mathematical representation of patterns found in data.
-
-Training creates or changes the model by adjusting parameters.
-
-Inference uses the trained model to generate outputs.
-
-Models differ because they are produced by different training choices, architectures, data, objectives, and deployment constraints.
-
-## What We Infer
-
-AI can generate software because software is information and models can learn relationships among intent, procedures, code, documentation, examples, and system behaviour.
-
-Model choice will become an engineering and economic decision, not merely a product preference.
-
-The model is a new economic unit in software development because it packages learned capability that can be used repeatedly through inference.
-
-## What We Do Not Yet Know
-
-We do not yet know the long-term cost curve for training and inference.
-
-We do not yet know how stable model behaviour will become across versions.
-
-We do not yet know which model capabilities will become cheap commodities and which will remain expensive strategic assets.

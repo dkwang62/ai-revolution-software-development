@@ -24,6 +24,14 @@ Abstraction is the process of hiding complexity behind a simpler interface. The 
 
 An agent is an AI system that does more than answer a question. It can use tools, follow multi-step instructions, inspect information, make intermediate decisions, and sometimes act on external systems. Agents require stronger boundaries, permissions, monitoring, and verification than ordinary chatbots.
 
+## Agentic AI
+
+Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building Radix, the Genie displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
+
+## Agentic Loop
+
+An agentic loop is the repeated cycle through which an agent understands a task, chooses an action, uses a tool, observes the result, and decides what to do next. It differs from a single AI response because evidence from one action influences the next.
+
 ## AI Model
 
 An AI model is a mathematical representation of patterns learned from data. It is not a database, search engine, encyclopedia, or collection of hand-written rules. During training, the model's internal parameters are adjusted so that it can later produce useful responses during inference.
@@ -66,6 +74,14 @@ The Enterprise Intelligence Layer is the shared architecture that connects AI mo
 
 A foundation model is a large general-purpose AI model trained on broad data and adaptable to many tasks. Examples include major language and multimodal models. Enterprises may use foundation models as rented general capability while connecting them to proprietary knowledge.
 
+## Grounding
+
+Grounding means connecting an AI response to relevant evidence rather than relying only on what the model learned during training. When the Genie inspects the actual Radix source files before proposing a change, the project grounds its conclusion.
+
+## Guardrail
+
+A guardrail is a rule or technical control that limits an AI system's actions or checks its outputs. Permissions, approval requirements, protected databases, validation rules, sandboxes, and human review can all serve as guardrails.
+
 ## Hallucination
 
 A hallucination is an AI output that appears plausible but is wrong, unsupported, fabricated, or misleading. Hallucination happens partly because generative models predict likely responses rather than retrieve guaranteed truth.
@@ -73,6 +89,18 @@ A hallucination is an AI output that appears plausible but is wrong, unsupported
 ## Inference
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
+
+## Human In The Loop
+
+Human in the loop means that a person remains part of an AI-assisted decision or action. In Radix Phrase Discovery, AI proposes possible phrases, conventional software filters them, and the user decides which phrases should be saved.
+
+## Model Context Protocol (MCP)
+
+The Model Context Protocol is a standard for connecting AI applications to external tools and sources of information. A useful layman's analogy is a common socket that lets an authorised tool or data source connect to the Genie without every connection being invented from the beginning.
+
+## Multi-Agent System
+
+A multi-agent system coordinates two or more agents, often with specialised roles. A future Radix workflow might use one agent to inspect the interface, another to examine its databases, and another to test the result. That is a possible application, not a claim about how Radix is currently built.
 
 ## Model Parameters
 
@@ -98,6 +126,14 @@ A prompt is an instruction, question, specification, or piece of context given t
 
 Probabilistic AI produces outputs based on learned likelihoods rather than fixed deterministic rules. This makes it flexible and powerful, but also means its outputs must be checked when correctness matters.
 
+## Observability
+
+Observability is the ability to reconstruct what an agent did and what happened: which information it inspected, which tools it used, which actions it attempted, and where it failed. Observability makes supervision, diagnosis, auditing, and improvement possible.
+
+## Orchestration
+
+Orchestration is the coordination of models, tools, workflows, and sometimes multiple agents. An orchestrator decides which participant should do what, in which order, with what information, and under which limits.
+
 ## Requirements Engineering
 
 Requirements engineering is the discipline of deciding what a system should do, what constraints it must satisfy, how success will be judged, and what edge cases must be handled. AI makes requirements more important because generation becomes cheaper while judging correctness remains difficult.
@@ -105,6 +141,10 @@ Requirements engineering is the discipline of deciding what a system should do, 
 ## Retrieval
 
 Retrieval is the process of finding relevant information and supplying it to an AI system. Good retrieval turns scattered knowledge into useful context. Poor retrieval can make even a strong model produce weak answers.
+
+## Retrieval-Augmented Generation (RAG)
+
+Retrieval-augmented generation supplies a model with information retrieved for the current task before it generates a response. The model remains general, but retrieved documents or records make its answer specific to a project, person, or organisation.
 
 ## Software Verification
 
@@ -126,24 +166,10 @@ A tokenizer is the system that breaks input into tokens before the model process
 
 Training is the process by which an AI model learns patterns from data. It requires large amounts of computation and adjusts the model's parameters. Training is usually a capital-intensive process; inference is the ongoing cost of using the trained model.
 
+## Tool Use
+
+Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, running an Xcode build, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
+
 ## Trust
 
 Trust is the degree to which people and organisations are willing to rely on AI in real workflows. Trust is not created by intelligence alone. It depends on reliability, security, governance, auditability, explainability, verification, and human accountability.
-
-## Related Notes
-
-- [[TERMINOLOGY]]
-- [[Three Meanings of Context]]
-- [[What Is an AI Model]]
-- [[Neural Networks]]
-- [[Tokens]]
-- [[Training]]
-- [[Inference]]
-- [[The Economics of Trust]]
-- [[CODEX_AS_THE_GENIE]]
-
-## Future Work
-
-- Add page references after the manuscript stabilises.
-- Decide whether glossary entries should include short examples.
-- Align this glossary with [[TERMINOLOGY]] before publication.

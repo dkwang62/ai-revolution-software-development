@@ -82,9 +82,7 @@ To make the bottleneck concrete, imagine a mid-career software developer in the 
 
 That salary is only the visible part of the cost. The employer also pays for benefits, payroll taxes, recruiting, training, laptops, development tools, cloud environments, security systems, office or remote-work support, and management overhead. A developer with a USD 130,000 salary can easily represent a substantially higher annual cost to the organisation. If that person works roughly 220 to 230 effective workdays after weekends, holidays, leave, training, meetings, support work, and administration, every week spent on a project is expensive.
 
-At the high end, the number becomes startling. Levels.fyi, a crowd-sourced compensation site, reported in July 2026 that a Google software engineer in the United States ranged from about USD 210,000 in total annual compensation at L3 to about USD 293,000 at L4 and about USD 415,000 at L5. These are not ordinary enterprise averages, and stock-heavy compensation should not be confused with salary. But they illustrate the same economic point: advanced software expertise is expensive because it packages years of education, accumulated experience, scarce judgement, and familiarity with complex systems.
-
-A large industrial company gives a more ordinary comparison. Crowd-sourced salary sites are not official company records, but Glassdoor listed an OTIS software engineer total-pay range in the United States of about USD 110,000 to USD 149,000 a year, with a median total pay estimate of USD 127,000. The exact number matters less than the shape of the example. Even outside Big Tech, professional software labour is not cheap.
+Public compensation sites suggest a much wider range beyond that national median, from ordinary enterprise roles to stock-heavy packages at major technology companies. Those figures are crowd-sourced, vary by level and location, and should not be mistaken for representative salaries. Their useful contribution is not a precise price tag. It is confirmation that experienced software labour can be a major organisational cost even before benefits, management, infrastructure, and long-term maintenance are included.
 
 Now imagine a modest internal project requiring five people for six months: two developers, one tester, one product or business analyst, and one manager or architect. Even before cloud costs, software licences, security review, procurement, legal review, and long-term maintenance, the human cost can reach hundreds of thousands of dollars. That is why many useful ideas never become software. The organisation may want the tool, but not enough to justify consuming that much scarce expertise.
 
@@ -251,35 +249,3 @@ It is called abstraction.
 If software has become progressively easier and cheaper to create over the past seventy years, why?
 
 That is the question for the next chapter.
-
-## What We Know
-
-Software is more than code. It represents procedures, rules, relationships, and accumulated business knowledge.
-
-Software development has historically been expensive because it requires scarce human expertise across requirements, design, implementation, testing, debugging, maintenance, communication, architecture, and integration.
-
-Software and IT are economically large enough that changes in software creation cost may have broad consequences. Gartner forecast worldwide software spending above USD 1.4 trillion in 2026, within more than USD 6 trillion in total IT spending. SlashData estimated 48.4 million developers worldwide in Q3 2025. These are dated estimates and should be rechecked before publication.
-
-Software quality, maintenance, and technical debt impose substantial economic costs after initial development. Available estimates vary, but they support the principle that software cost continues throughout a system's life.
-
-Lowering the cost of producing a valuable good tends to increase demand and make previously uneconomic uses viable.
-
-AI-assisted software development is economically important if it reduces the cost, time, labour, or expertise required to translate human intent into working software while maintaining acceptable quality.
-
-## What We Infer
-
-If AI substantially lowers software creation costs, the effect will extend beyond programmer productivity. It will change which ideas become worth implementing, who can participate in software creation, and where human value moves.
-
-As code generation becomes cheaper, the bottleneck is likely to shift towards ideas, domain knowledge, requirements, architecture, judgement, communication, trust, verification, and taste.
-
-The most durable explanation of AI's impact on software is economic rather than magical: AI changes the production function for software.
-
-## What We Do Not Yet Know
-
-We do not yet know how large the productivity gains will be across different kinds of software work.
-
-We do not yet know how much AI-assisted development will reduce total software cost after verification, integration, governance, training, and maintenance are included.
-
-We do not yet know which parts of software development will remain stubbornly expensive because they depend on organisational knowledge, regulation, safety, trust, or human judgement.
-
-We need current evidence for software industry size, employment, market capitalisation, maintenance costs, project failure rates, and AI-assisted productivity effects.

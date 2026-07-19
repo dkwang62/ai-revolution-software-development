@@ -270,31 +270,3 @@ That idea is strange at first. How can meaning become mathematics? How can proce
 To answer those questions, the book must move from the economics of software and the history of abstraction into the economics of intelligence.
 
 The next part begins with information itself.
-
-## What We Know
-
-Programming languages are formal symbolic representations of procedures.
-
-The same procedure can be represented in many forms, including English, pseudocode, diagrams, source code, tests, and machine instructions.
-
-AI-assisted software development depends on movement between representations: intent, requirement, design, code, explanation, test, and behaviour.
-
-Natural-language prompts can become software specifications when they define behaviour, constraints, formats, and edge cases.
-
-Formal programming languages remain important because they provide precision, repeatability, testability, and executable structure.
-
-## What We Infer
-
-AI can generate useful code because code is one representation of procedure, and AI models learn relationships among natural language, code, examples, documentation, and software patterns.
-
-The human role shifts upward when AI reduces the cost of translation between intent and implementation. Domain knowledge, requirements, architecture, verification, and judgement become more visible.
-
-Natural language may become the highest practical abstraction layer for many software tasks, but deterministic code will continue to anchor reliable systems.
-
-## What We Do Not Yet Know
-
-We do not yet know how far natural-language programming can scale before ambiguity, verification cost, and system complexity limit its usefulness.
-
-We do not yet know which software domains will remain primarily code-centric because of safety, performance, regulation, or auditability.
-
-We do not yet know how programming education should change if AI handles more syntax and implementation but humans remain responsible for judgement and system design.

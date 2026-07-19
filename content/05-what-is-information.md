@@ -30,6 +30,12 @@ A procedure can be described in English, drawn as a flowchart, written as pseudo
 
 AI becomes less mysterious once we see that language, code, images, sound, and diagrams are not separate universes. They are different ways of representing information.
 
+Radix made this visible before I had the vocabulary to describe it. A Chinese character appears on the screen as a shape, but the application may also hold its Unicode representation, pronunciation, English meaning, component relationships, stroke data, frequency, notes, and membership in phrases. None of those forms is the character by itself. Each preserves information needed for a different purpose.
+
+When I asked the Genie to change how Radix handled a character, it often had to follow that information across several representations: my description of the intended behaviour, the Swift structures used by the application, records in a database, and pixels finally displayed on the phone. The feature succeeded only when those representations still agreed about what the character meant and how the user should experience it.
+
+That is the practical doorway into this chapter. Information can survive a change of form, but every transformation must preserve the relationships that matter.
+
 ## Symbols and Meaning
 
 Humans usually handle information symbolically.
@@ -138,31 +144,3 @@ This is the conceptual bridge from abstraction to models.
 The next question is: where are these learned relationships stored?
 
 They are stored in an AI model.
-
-## What We Know
-
-Information is not identical to any one representation such as English, Chinese, source code, image, or sound.
-
-Human beings often store and communicate information symbolically.
-
-Traditional software usually stores explicit rules.
-
-Modern AI models store learned mathematical relationships among patterns in data.
-
-Software is information because it represents procedures, rules, relationships, and behaviour.
-
-## What We Infer
-
-AI can work with software because software is one form of representable information among many.
-
-AI-generated code is less mysterious once we understand that English, pseudocode, source code, and machine behaviour can all represent related procedures.
-
-The ability to move between representations is one of the foundations of AI-assisted software development.
-
-## What We Do Not Yet Know
-
-We do not yet know how far current mathematical representations can support reliable reasoning in complex software systems.
-
-We do not yet know which forms of meaning remain difficult for AI because they depend on embodied experience, institutional context, tacit knowledge, or human judgement.
-
-We do not yet know how best to teach information representation to non-technical readers without oversimplifying the mathematics.

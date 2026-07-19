@@ -130,31 +130,3 @@ The progression looks like this:
 > | Institutional trust | High-value enterprise adoption |
 
 This is why the future of AI in software development will not be determined by capability alone. It will be determined by the relationship between capability and trust. The more an AI system can be verified, governed, secured, audited, and explained, the more valuable work it can perform.
-
-## What We Know
-
-AI systems can produce useful outputs while also making mistakes.
-
-Enterprise software environments require security, governance, auditability, and accountability.
-
-AI agents and tool-using systems increase both capability and risk.
-
-Verification and human review remain essential in high-stakes workflows.
-
-## What We Infer
-
-Trust will become one of the major economic bottlenecks in enterprise AI adoption.
-
-Organisations will adopt AI first in bounded workflows where risk is manageable and verification is practical.
-
-The most valuable AI systems may not be the most autonomous systems, but the systems that combine capability with reliable trust boundaries.
-
-## What We Do Not Yet Know
-
-We do not yet know which governance patterns will become standard.
-
-We do not yet know how regulators will treat many AI-assisted decisions.
-
-We do not yet know how much trust infrastructure will cost relative to the productivity gains AI creates.
-
-We do not yet know whether future models will become reliable enough to reduce verification cost dramatically, or whether verification will remain a major constraint.

@@ -203,31 +203,3 @@ If a person says, "Build a tool that tracks attendance and alerts a counsellor w
 To answer that, we need to examine programming itself. Programming languages are not the essence of programming. They are one way of representing procedures. Once we understand that, AI's ability to generate code becomes less mysterious.
 
 That is the subject of the next chapter.
-
-## What We Know
-
-Abstraction hides lower-level complexity behind simpler interfaces.
-
-The hidden complexity does not disappear; it moves into lower layers maintained by tools, platforms, systems, and specialists.
-
-Computing history can be understood as a long movement toward higher levels of abstraction, from machine instructions to human intent.
-
-Successful abstractions have economic value because they reduce training time, development effort, error rates, maintenance burden, and dependence on scarce expertise.
-
-Every abstraction has costs, including loss of control, reduced visibility, dependency, performance trade-offs, and hidden failure modes.
-
-## What We Infer
-
-AI is best understood as the next major abstraction layer in software development because it begins to hide syntax, API discovery, boilerplate, some debugging, and some implementation decisions behind natural-language intent.
-
-AI will be adopted where its productivity gains exceed the new costs of verification, governance, integration, context management, and model uncertainty.
-
-The history of abstraction suggests that AI-assisted programming is not an isolated novelty. It is part of a long economic pattern in computing.
-
-## What We Do Not Yet Know
-
-We do not yet know which parts of programming AI will successfully abstract away in durable production environments.
-
-We do not yet know whether AI will reduce total software cost after verification, governance, maintenance, integration, and reliability costs are included.
-
-We do not yet know how much technical knowledge future software creators will need at different levels of complexity and risk.

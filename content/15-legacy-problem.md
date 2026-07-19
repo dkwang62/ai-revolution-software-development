@@ -207,31 +207,3 @@ It is easy to build a prototype. It is much harder to replace software that carr
 AI will matter in enterprise software not because it can generate impressive demos, but because it may reduce the cost of understanding, preserving, integrating, and carefully changing systems that cannot fail.
 
 That is a deeper economic story than "AI writes code".
-
-## What We Know
-
-Legacy systems often persist because they perform essential business functions reliably.
-
-Old software may contain decades of accumulated business knowledge that is poorly documented elsewhere.
-
-Replacing large systems can be risky because hidden rules and dependencies must be rediscovered.
-
-System integration is often where new software becomes expensive and risky.
-
-AI can assist with code explanation, documentation, dependency discovery, test generation, integration layers, and gradual migration.
-
-## What We Infer
-
-One of AI's largest economic contributions may be preserving and modernising existing software capital.
-
-AI-assisted modernisation is likely to favour gradual migration over big-bang replacement.
-
-The value of AI in enterprises will depend heavily on integration, verification, governance, and domain expertise.
-
-## What We Do Not Yet Know
-
-We do not yet know how reliably AI can analyse very large legacy systems with incomplete documentation.
-
-We do not yet know how much AI can reduce migration cost and risk in regulated industries.
-
-We do not yet know whether organisations will have the data governance and engineering discipline needed to use AI safely in legacy modernisation.

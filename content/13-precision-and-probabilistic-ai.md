@@ -213,29 +213,3 @@ Most valuable software does not run in isolation. It connects to databases, paym
 That leads to the next engineering problem: legacy systems and system integration.
 
 AI's greatest value may not be writing brand-new software. It may be helping organisations understand, preserve, and modernise the software they already depend on.
-
-## What We Know
-
-Traditional software is largely deterministic. Generative AI is probabilistic.
-
-AI creating software and AI operating inside finished software create different reliability problems.
-
-Reliable AI systems usually need deterministic safeguards: structured output, validation, tool use, evaluation, versioning, fallback, escalation, and human review.
-
-Precision in AI systems should mean consistently achieving required outcomes within acceptable tolerances.
-
-## What We Infer
-
-AI will be most reliable when used inside hybrid systems that combine probabilistic interpretation with deterministic enforcement.
-
-Verification may become more important as generation becomes cheaper.
-
-The cost of reliability will determine where AI can be used economically in production systems.
-
-## What We Do Not Yet Know
-
-We do not yet know which reliability patterns will become standard across industries.
-
-We do not yet know how regulators will treat AI-generated or AI-mediated decisions in high-stakes systems.
-
-We do not yet know how much verification cost will offset AI productivity gains in different domains.

@@ -175,29 +175,3 @@ The economic question is:
 > How clearly can human intent be expressed, transformed, tested, and maintained?
 
 That question leads directly to precision.
-
-## What We Know
-
-AI-assisted software development makes natural language a more important interface for expressing intent.
-
-Prompt engineering often overlaps with communication, requirements definition, examples, constraints, and context.
-
-Prompts can become behavioural specifications when they control AI-driven software features.
-
-Clear communication improves AI output but does not guarantee correctness.
-
-## What We Infer
-
-As AI lowers implementation cost, the value of clear requirements and precise communication increases.
-
-Domain experts may become more directly involved in software creation if they can express intent clearly and evaluate results.
-
-Professional developers may shift toward architecture, verification, integration, and managing the boundary between probabilistic AI and deterministic systems.
-
-## What We Do Not Yet Know
-
-We do not yet know which prompt/specification practices will become standard engineering disciplines.
-
-We do not yet know how organisations should version, review, test, and govern natural-language specifications.
-
-We do not yet know how much communication skill can compensate for lack of traditional programming knowledge in complex systems.

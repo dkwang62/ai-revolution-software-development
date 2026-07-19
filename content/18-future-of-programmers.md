@@ -172,29 +172,3 @@ The future programmer may be:
 This is not a demotion. It is a movement toward higher-leverage work.
 
 The danger is that people mistake code generation for software engineering. The opportunity is that more people can participate in software creation while professional engineers focus on the parts that require deeper expertise.
-
-## What We Know
-
-AI reduces the cost of translating intent into code and related software artefacts.
-
-Some routine programming tasks are likely to become less valuable as manual labour.
-
-Complex software still requires architecture, verification, integration, security, maintenance, and judgement.
-
-AI enables a new category of AI-assisted builders, but not everyone will be equally capable of using the tools effectively.
-
-## What We Infer
-
-Programmers are more likely to move upward than disappear entirely.
-
-The value of programming knowledge shifts from syntax production toward system judgement.
-
-The boundary between user and programmer will blur, especially for prototypes, internal tools, niche applications, and domain-specific workflows.
-
-## What We Do Not Yet Know
-
-We do not yet know how AI will affect software employment across different markets.
-
-We do not yet know how quickly education and hiring practices will adapt.
-
-We do not yet know which programming tasks will remain resistant to automation because of risk, complexity, regulation, or accountability.

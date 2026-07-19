@@ -41,6 +41,10 @@ Traditional rule-based software works well when the rules are stable and explici
 
 Neural networks became powerful because they learn patterns from examples rather than requiring humans to specify every rule.
 
+Radix's camera workflow offers a familiar example. A user can photograph Chinese text and ask the phone to recognise the characters. I did not write a catalogue of rules describing every permissible stroke thickness, camera angle, shadow, font, background, or printing defect. An OCR system has to recognise stable patterns despite all those variations.
+
+The result is not magical and it is not guaranteed. OCR can confuse similar characters or misread a poor image. Radix therefore preserves the captured text for inspection and places later checks around the workflow. But its ability to recognise unfamiliar images at all comes from learned relationships rather than an exhaustive handwritten description of every photograph it might encounter.
+
 ## Tiny Decision Makers
 
 A neural network is often explained through biology, but we do not need to begin there.
@@ -532,31 +536,3 @@ Now the original mystery becomes answerable:
 It can do so because English descriptions, software procedures, source code, documentation, examples, and error messages can all be represented within a learned mathematical structure. The model has learned relationships among them. When prompted, it can generate a plausible transformation from one representation to another.
 
 The next chapter develops that answer directly.
-
-## What We Know
-
-Neural networks learn patterns from examples rather than relying on humans to hand-write every rule.
-
-Layers allow simple features to combine into more complex representations.
-
-Training adjusts parameters so that the model becomes better at producing useful outputs.
-
-The learned knowledge is distributed across the model rather than stored as a readable rulebook.
-
-Neural networks are powerful where patterns are complex, varied, and difficult to specify explicitly.
-
-## What We Infer
-
-AI can assist software development because software work involves many learned relationships among intent, code, documentation, architecture, errors, and procedures.
-
-The shift from rules to relationships is one of the central differences between traditional software and modern AI.
-
-The economic value of neural networks comes from packaging learned capability so it can be reused through inference.
-
-## What We Do Not Yet Know
-
-We do not yet know which reasoning and software-engineering tasks neural networks will handle reliably at production standards.
-
-We do not yet know how interpretable future models will become.
-
-We do not yet know how the cost of training and inference will change over the next five to ten years.

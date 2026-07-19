@@ -186,31 +186,3 @@ Architecture answers questions that code generation alone cannot:
 AI can assist with these questions, but it does not make them disappear. If anything, it raises their importance because the volume of generated software may increase faster than organisations can govern it.
 
 This is another economic shift. When coding was expensive, writing code consumed much of the budget. When coding becomes cheaper, design, architecture, integration, verification, and judgement absorb more of the value.
-
-## What We Know
-
-AI reduces the cost of turning requirements into working software, but it does not remove the need for requirements.
-
-Prompt engineering is only one part of the larger requirements problem.
-
-Evaluation and verification are related but different disciplines.
-
-AI-enabled software must treat explainability, memory, permissions, and tool use as engineering requirements.
-
-Architecture becomes more valuable when code generation becomes cheaper.
-
-## What We Infer
-
-As AI improves, the bottleneck in software development is likely to move from writing code toward defining, evaluating, verifying, and integrating behaviour.
-
-Domain experts may become more important because they understand the real requirements closest to the problem.
-
-Professional developers may become more like architects, verifiers, evaluators, and integrators.
-
-## What We Do Not Yet Know
-
-We do not yet know which requirements practices will become standard for AI-assisted software development.
-
-We do not yet know how organisations should version, review, test, and audit natural-language specifications.
-
-We do not yet know how much of requirements engineering can itself be automated without creating new risks.

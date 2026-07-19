@@ -261,33 +261,3 @@ The next part of the book moves from capability to engineering.
 If AI lowers the cost of producing software, how should software engineering change?
 
 The answer begins with communication, requirements, precision, and verification.
-
-## What We Know
-
-Training and inference have different economics.
-
-Training is an upfront investment that creates model capability.
-
-Inference is an ongoing operating cost that uses model capability.
-
-Frontier model training, inference, and AI infrastructure are now large economic categories. Current estimates suggest rapidly rising frontier training costs, falling but uneven inference costs, and major capital allocation toward AI compute infrastructure. These claims should be rechecked before final publication because the market changes quickly.
-
-Larger models, longer context windows, multimodality, reasoning, and model evolution all involve cost-benefit trade-offs.
-
-Model upgrades can change behaviour and create regression risk.
-
-## What We Infer
-
-AI improvements will be adopted when their economic benefits exceed their costs in valuable use cases.
-
-Software engineering will need model selection, versioning, evaluation, and cost management as ordinary engineering concerns.
-
-The long-term impact of AI on software depends not only on model capability but on the cost per useful unit of intelligence.
-
-## What We Do Not Yet Know
-
-We do not yet know how quickly training and inference costs will fall relative to capability.
-
-We do not yet know which AI capabilities will become cheap commodities and which will remain expensive.
-
-We do not yet know how stable model behaviour can become across versions and providers.

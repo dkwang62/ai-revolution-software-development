@@ -194,33 +194,3 @@ The question is not whether AI will change software development.
 It already has.
 
 The question is whether we will understand the change deeply enough to use it well.
-
-## What We Know
-
-AI already assists with software explanation, generation, debugging, testing, documentation, and prototyping.
-
-AI is most useful where output can be checked and context is available.
-
-Future impact depends on cost, reliability, integration, verification, governance, and human skill.
-
-Software development is an early case study in the broader industrialisation of intelligence.
-
-## What We Infer
-
-In five years, AI is likely to become ordinary development infrastructure in many software workflows.
-
-In ten years, software creation may become substantially more intent-driven, with humans interacting less directly with code in many contexts.
-
-The scarce resources will be domain knowledge, judgement, requirements, architecture, verification, trust, and taste.
-
-The deepest future scenario is the Macrohard concept: software work organised by coordinated AI agents rather than by human teams alone.
-
-AGI is the high-acceleration version of that scenario. It is uncertain, but important enough to watch.
-
-## What We Do Not Yet Know
-
-We do not know the pace of capability improvement or cost reduction.
-
-We do not know how regulation, security, intellectual property, labour markets, and education will adapt.
-
-We do not know whether AI-generated software will improve maintainability or create new forms of technical debt.

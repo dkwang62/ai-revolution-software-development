@@ -121,29 +121,3 @@ The scarce work shifts toward:
 - Maintaining quality.
 
 This is the real transformation. AI does not make human skill irrelevant. It changes which human skills matter most.
-
-## What We Know
-
-When production cost falls, demand often increases and new uses become viable.
-
-AI may reduce the cost of translating intent into software.
-
-Cheap generation increases the importance of requirements, judgement, architecture, trust, verification, and taste.
-
-Software that was previously too niche, temporary, personal, or small may become economically viable.
-
-## What We Infer
-
-The future software economy will not be defined simply by more code. It will be defined by a shift in scarcity.
-
-People with strong domain knowledge and clear communication may gain new creative power.
-
-Professional engineering skills will remain important because reliability, architecture, integration, and verification become more visible bottlenecks.
-
-## What We Do Not Yet Know
-
-We do not yet know how far software creation costs will fall across different domains.
-
-We do not yet know which categories of personal, niche, or temporary software will become common.
-
-We do not yet know whether organisations will adapt their processes quickly enough to benefit from cheaper generation.

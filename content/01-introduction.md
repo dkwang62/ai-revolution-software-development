@@ -128,11 +128,9 @@ It is also for anyone who wants to understand AI without reducing it to hype or 
 
 ## The Central Argument
 
-Artificial intelligence represents the next major abstraction layer in the history of programming because it fundamentally changes the economics of software creation.
+The argument begins with a change I experienced directly: AI reduced the distance between describing the software I wanted and producing something I could test. If that reduction persists and spreads, it changes which ideas are affordable to turn into software.
 
-That sentence is the spine of the book.
-
-Everything else follows from it.
+The history of abstraction explains how the distance became shorter. The economics of software explains why that shortening matters.
 
 If AI is an abstraction layer, then we need to understand the history of abstraction.
 
@@ -142,7 +140,7 @@ If it can generate software, we need to understand how information, models, neur
 
 If it is probabilistic, we need to understand how reliable systems can be built around it.
 
-If it lowers the cost of software creation, we need to ask what becomes scarce next.
+And if it lowers the cost of software creation, we need to ask what becomes scarce next.
 
 The genie in the bottle is real enough to matter.
 
