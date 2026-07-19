@@ -58,7 +58,7 @@ This division of labour is central to reliable AI systems.
 
 One safeguard is structured output.
 
-Instead of asking an AI system to respond freely, software can require a specific schema:
+Instead of asking an AI system to respond freely, software can require named fields and permitted kinds of answers. Programmers call this required shape a **schema**:
 
 ```text
 category: refund_request | complaint | technical_support | other
@@ -144,7 +144,7 @@ In conventional software, teams version code. In AI systems, they must also vers
 
 A prompt that works with one model may fail with another. A new model may follow instructions more carefully in general but behave worse for one production workflow. A longer context window may improve some tasks and introduce new failure modes. A change in tool permissions may alter what an agent can do.
 
-Production AI systems need regression testing.
+Production AI systems therefore need repeated tests that reveal whether a change broke behaviour that previously worked. This is called **regression testing**.
 
 Before changing a model or prompt, teams should rerun evaluations. They should record which model and prompt produced which output. They should preserve the ability to investigate failures. In high-risk systems, they may need rollback plans.
 

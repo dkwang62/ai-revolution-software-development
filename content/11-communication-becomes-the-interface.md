@@ -14,13 +14,11 @@ AI has lowered the standard for polished prose while raising the standard for cl
 
 That is why communication becomes one of the central engineering skills of the AI era.
 
-## Prompt Engineering Is Often Communication
+## Clear Instructions Come Before Prompt Engineering
 
-The phrase "prompt engineering" can make the work sound new and exotic. Sometimes it is. Prompt design for production AI systems can involve templates, variables, retrieval, structured output, evaluation sets, model-specific tuning, safety constraints, and version control.
+Most people improve an AI result in familiar ways: say what outcome they want, provide the relevant background, explain limits, give an example, describe the desired form, identify unusual cases, state what must not happen, and check the result.
 
-But for many users, prompt engineering is an old discipline under a new name.
-
-Much of it is disciplined communication: defining the objective, providing context, explaining constraints, giving examples, specifying format, identifying edge cases, stating what should not happen, and evaluating whether the result satisfies the need.
+The industry often calls this **prompt engineering**. For many users, it is disciplined communication under a new name. In production systems the practice can become more technical: teams may reuse instruction templates, insert changing information, retrieve documents, require fixed output fields, maintain test cases, adapt instructions to a particular model, add safety rules, and track versions.
 
 This is not a soft skill sitting outside technology. In AI-assisted software development, communication becomes the interface through which human expertise reaches machine intelligence.
 
@@ -38,7 +36,7 @@ Over time, computers, email, word processors, spreadsheets, calendars, and enter
 
 The boss might know exactly what needed to be said, but the secretary knew how to operate the machinery of communication: typing, formatting, filing, routing, scheduling, and retrieving information. The secretary was not valuable because the boss lacked ideas. The secretary was valuable because the office systems required translation.
 
-AI changes software in a similar way. The business user, teacher, doctor, lawyer, engineer, or executive may know what outcome they want, but historically they had to explain that intent to analysts, IT staff, or programmers before the machine could act on it. If AI allows the user to speak more directly to the system, part of that translation layer becomes less necessary.
+AI changes software in a similar way. The business user, teacher, doctor, lawyer, engineer, or executive may know what outcome they want, but historically they had to explain that intent to analysts, information-technology (IT) staff, or programmers before the machine could act on it. If AI allows the user to speak more directly to the system, part of that translation layer becomes less necessary.
 
 This does not mean the IT function disappears. It means the valuable work moves upward into architecture, security, integration, governance, verification, and accountability. The old bottleneck was operating the machinery. The new bottleneck is deciding what the machinery should be allowed to do.
 

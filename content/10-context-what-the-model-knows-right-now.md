@@ -52,14 +52,14 @@ Training gives the model general capability. It has learned patterns involving p
 
 The context window is different. It is the information available to the model during the current inference session. The model is the map; the context window is the viewport.
 
-Imagine Google Maps. The map contains a representation of the world, but the phone screen shows only Singapore CBD, a neighbourhood, or a particular route. The model's learned knowledge is analogous to the larger map. The context window is the visible portion currently being used.
+Imagine Google Maps. The map contains a representation of the world, but the phone screen shows only Singapore's central business district, a neighbourhood, or a particular route. The model's learned knowledge is analogous to the larger map. The context window is the visible portion currently being used.
 
 If a user says:
 
 ```text
 The hotel has 100 rooms.
-VIP members receive special pricing.
-The system must support Singapore GST.
+Members in the highest customer tier receive special pricing.
+The system must support Singapore's goods and services tax (GST).
 Online payments are required.
 ```
 
@@ -76,7 +76,7 @@ Retrieved context is information brought into working memory from outside.
 
 ## Context Is Not the Same as Knowledge
 
-An AI model may know how authentication systems usually work. It may not know how your application handles authentication. It may know common database patterns. It may not know your schema. It may know how payment systems are generally designed. It may not know the business rules inside a particular bank's legacy system.
+An AI model may know how login systems usually confirm a user's identity. It may not know how your application does so. It may know common ways of storing data. It may not know your application's particular arrangement of tables, fields, and relationships—what programmers call its **database schema**. It may know how payment systems are generally designed. It may not know the business rules inside a particular bank's older software.
 
 Training gives the model general patterns. Context gives it the particular case.
 
@@ -88,7 +88,7 @@ In software engineering, those details matter enormously.
 
 Consider the instruction, "Make it faster."
 
-To a web developer, that might mean reducing page-load time. To a database engineer, it might mean adding an index. To a machine-learning engineer, it might mean reducing inference latency. To a product manager, it might mean shortening a user workflow. To a finance department, it might mean speeding up month-end reporting.
+To a web developer, that might mean reducing page-load time. To a database engineer, it might mean creating a faster way to find records. To a machine-learning engineer, it might mean reducing the waiting time for an AI response, known as **inference latency**. To a product manager, it might mean shortening the steps a user must take. To a finance department, it might mean speeding up month-end reporting.
 
 The instruction is identical. The correct action changes because the context changes.
 
@@ -108,7 +108,7 @@ The same is true for AI.
 
 ## Why Larger Context Windows Matter
 
-Larger context windows matter because real software systems are not isolated fragments. A small code change may depend on a database schema, type definition, UI convention, business rule, test fixture, configuration file, security requirement, migration script, old architectural decision, or production incident from last year.
+Larger context windows matter because real software systems are not isolated fragments. A small code change may depend on how data is organised, which kinds of values are allowed, how screens normally look, a business rule, sample data used in testing, a setting, a security requirement, instructions for moving old data, an earlier design decision, or a previous real-world failure. Programmers use terms such as **schema**, **type definition**, **user-interface convention**, **test fixture**, **configuration**, **migration script**, and **production incident** for these details.
 
 If the model sees only the function being edited, it may produce a locally plausible change that breaks the larger system.
 
@@ -169,7 +169,7 @@ But as general expertise becomes cheaper, another bottleneck becomes more visibl
 
 If a company cannot make its internal knowledge accessible to AI, the AI remains generic. It may write plausible code, but it cannot reliably make decisions that depend on the company's systems, customers, policies, risks, and history. If the company can make that knowledge accessible, the value of AI increases dramatically.
 
-This is why context windows, code indexing, document retrieval, vector databases, knowledge graphs, tool use, production telemetry, and enterprise search are not merely technical features. They are attempts to reduce the cost of supplying situation-specific knowledge to machine intelligence.
+This is why companies invest in ways to make code searchable, find relevant documents, connect related facts, use external tools, observe running systems, and search company knowledge. Industry names include **code indexing**, **document retrieval**, **vector databases**, **knowledge graphs**, **tool use**, **production telemetry**, and **enterprise search**. They all address the same practical problem: supplying the right situation-specific knowledge to AI.
 
 The economic pattern is:
 
@@ -247,7 +247,7 @@ A company may possess enormous amounts of knowledge, but the AI does not load al
 
 This means the most important race may not be simply larger context windows. It may be larger effective context. An organisation with a huge context window but poor retrieval may perform worse than an organisation with a smaller context window and excellent retrieval. The first can hold more information. The second supplies better information.
 
-The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The real competitive advantage may lie in earlier layers: knowledge quality, organisation, indexing, retrieval, governance, permissions, provenance, and freshness.
+The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The advantage may lie in accurate and current knowledge, good organisation and search, clear rules and permissions, and a record of where each fact came from. That record of origin is commonly called **provenance**.
 
 This suggests a further architectural layer, developed in [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]].
 

@@ -43,7 +43,7 @@ tests verify
 humans remain accountable
 ```
 
-This is why agent engineering includes sandboxes, read-only modes, scoped credentials, approval gates, rate limits, audit trails, rollback, and human review before irreversible actions. These mechanisms are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
+This is why an agent may be confined to a safe area, allowed to read but not change information, given access only to specified systems, required to ask before important actions, limited in how frequently it can act, recorded while it works, and provided with a way to undo changes. Industry terms include **sandbox**, **read-only mode**, **scoped credentials**, **approval gate**, **rate limit**, **audit trail**, and **rollback**. These protections are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
 
 ## Why Codex Felt Different
 
@@ -103,7 +103,7 @@ revise and repeat
 human judges the experience
 ```
 
-Frameworks and design systems prevent predictable mistakes. Browser and UI tests can render several screen sizes. Screenshot comparisons can expose unintended change. Accessibility tools can detect many measurable defects. AI can run these checks, interpret results, and attempt repairs. Humans should increasingly judge whether the experience is clear and worthwhile rather than repeatedly finding that a button is too narrow.
+Frameworks and design systems prevent predictable mistakes. Browser and **user-interface (UI) tests** can render several screen sizes. Screenshot comparisons can expose unintended change. Accessibility tools can detect many measurable defects. AI can run these checks, interpret results, and attempt repairs. Humans should increasingly judge whether the experience is clear and worthwhile rather than repeatedly finding that a button is too narrow.
 
 My retrospective estimate is that work on the screens and controls consumed about 80 per cent of my development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the AI coding agent accelerated underlying implementation more than it accelerated the final work of arranging and judging what the learner would see and touch.
 
@@ -117,7 +117,7 @@ During one data-recovery task, the AI coding agent identified nineteen missing f
 
 The same principle applies to ordinary development. A credible completion report should identify what changed and what was checked. Builds, tests, records of the changed lines, digital fingerprints of files, screenshots, and activity logs turn an agent's work into something a person can inspect.
 
-This also explains why agents will not sweep traditional software engineering away. Compilers, schemas, version control, test suites, security scanners, permissions, and observability are narrow tools. Their narrowness gives them precision. The strongest system combines the model's breadth with their certainty.
+This also explains why agents will not sweep traditional software engineering away. Compilers check code; schemas define permitted data; version control records changes; test suites check behaviour; security scanners find known risks; and permission systems limit access. Tools that reveal what a running system is doing provide **observability**. These narrow tools gain precision from their narrowness. The strongest system combines the model's breadth with their certainty.
 
 ## Integration Determines Economic Value
 

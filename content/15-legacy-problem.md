@@ -36,7 +36,7 @@ They may use obsolete languages, old databases, outdated operating systems, frag
 
 The system still works, but the organisation no longer fully understands it.
 
-This is not only a technical inconvenience. It is an economic drag. The [Consortium for Information & Software Quality](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) estimated U.S. accumulated software technical debt at about \$1.52 trillion in 2022, while [McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) reported CIO estimates that technical debt can amount to 20% to 40% of the value of a technology estate before depreciation. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works.
+This is not only a technical inconvenience. It is an economic drag. The [Consortium for Information & Software Quality](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) estimated U.S. accumulated software technical debt at about \$1.52 trillion in 2022, while [McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) reported estimates from chief information officers (CIOs) that technical debt can amount to 20% to 40% of the value of a technology estate before depreciation. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works.
 
 Public-sector audits make the problem more concrete. The [U.S. Government Accountability Office](https://www.gao.gov/products/gao-23-106821) identified 10 critical federal legacy systems in 2019 that ranged from 8 to 51 years old and collectively cost about \$337 million annually to operate and maintain. Several used older languages such as COBOL, and agency modernisation plans were often incomplete. The UK government created a formal [Legacy IT Risk Assessment Framework](https://www.gov.uk/government/publications/guidance-on-the-legacy-it-risk-assessment-framework), while its [National Audit Office](https://www.nao.org.uk/reports/government-cyber-resilience/) reported that departments lacked fully funded remediation plans for roughly half of government's recorded legacy IT assets in March 2024.
 
@@ -76,7 +76,7 @@ Because organisations cannot replace everything overnight, new systems must coex
 
 This creates System Integration.
 
-Modern applications must communicate with mainframes, COBOL systems, Oracle databases, SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms.
+Modern applications must communicate with mainframes, programs written in older languages such as COBOL, commercial database and business systems such as Oracle and SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms.
 
 Integration is not glamorous, but it is where software becomes economically real.
 
@@ -92,7 +92,7 @@ This is where technical debt and integration meet. A system can be valuable beca
 
 In a large bank, the new application is rarely allowed to reach directly into the core banking system. The usual architecture is layered.
 
-The customer might use a mobile app. The app calls an API gateway. The gateway routes requests to services. Those services pass through an integration layer. The integration layer may call message queues, event streams, batch jobs, databases, or mainframe transactions. Somewhere underneath all of that may still be COBOL, CICS, IMS, DB2, or another long-running core system.
+The customer might use a mobile app. Its request first passes through a controlled entrance that decides which internal service should receive it. Other connecting software may pass messages immediately, collect them for later processing, read databases, or reach a mainframe. Industry terms for these parts include **API gateway**, **integration layer**, **message queue**, **event stream**, and **batch job**. Deep underneath may be decades-old technologies with names such as **COBOL**, **CICS**, **IMS**, or **DB2**. The names matter less than the point: a simple tap may cross many boundaries before reaching the system that owns the record.
 
 The point is not that every bank has exactly this architecture. The point is that enterprise systems usually meet through boundaries:
 
@@ -142,7 +142,7 @@ Migrate gradually
 
 AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software.
 
-The market is already moving in this direction. Vendor offerings from AWS and Google Cloud include AI-assisted code assessment, documentation generation, dependency mapping, business-rule extraction, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
+The market is already moving in this direction. Vendor offerings from Amazon Web Services (AWS) and Google Cloud include AI-assisted code assessment, documentation generation, dependency mapping, business-rule extraction, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
 
 ## Gradual Migration
 

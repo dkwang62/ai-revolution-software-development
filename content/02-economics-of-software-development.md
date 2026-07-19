@@ -72,7 +72,7 @@ It did not eliminate the journey. A quiz still needed good educational rules. Ge
 
 ## The New Costs
 
-AI introduces its own economic terms: model fees, latency, context preparation, tool integration, security, evaluation, supervision, and the review of generated work. An organisation may generate code faster and then spend more time understanding, validating, or maintaining it.
+AI introduces costs of its own. Organisations pay to use models, prepare the information supplied to them, connect them to other tools, protect data, check results, supervise actions, and review generated work. They also care about waiting time—called **latency** in the industry. An organisation may generate code faster and then spend more time understanding, validating, or maintaining it.
 
 The relevant unit is therefore not the cost of generated tokens or lines of code. It is the **cost per successfully completed task** after correction, integration, and risk.
 

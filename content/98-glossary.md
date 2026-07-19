@@ -30,6 +30,10 @@ An AI model is a mathematical representation of patterns learned from data. It i
 
 Architecture is the high-level structure of a software system: its components, boundaries, data flows, responsibilities, integrations, trade-offs, and constraints. As AI makes code easier to generate, architecture becomes more important because someone still has to decide how the system should fit together.
 
+## Application Programming Interface (API)
+
+An application programming interface is an agreed way for one piece of software to request information or an action from another. A weather application, for example, may use an API to ask a weather service for today's forecast.
+
 ## Codex
 
 Codex is the AI coding agent used as the recurring concrete example in this book. The “genie in the bottle” is only an analogy for the experience of turning an idea into software through conversation; it is not the name or technical description of Codex. Codex represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
@@ -80,6 +84,10 @@ A hallucination is an AI output that appears plausible but is wrong, unsupported
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
 
+## Latency
+
+Latency is waiting time. In an AI system, it commonly means the delay between sending a request and receiving a usable response.
+
 ## Human In The Loop
 
 Human in the loop means that a person remains part of an AI-assisted decision or action. In a feature that finds useful phrases in photographed Chinese text, AI proposes candidates, conventional software filters them, and the learner decides which phrases should be saved.
@@ -112,6 +120,10 @@ A neural network is the machinery used to learn patterns from examples. It consi
 
 A prompt is an instruction, question, specification, or piece of context given to an AI model. In serious software work, prompts often become closer to requirements documents than casual commands.
 
+## Prompt Engineering
+
+Prompt engineering is the practice of designing and testing instructions for AI systems. For ordinary users it is often disciplined communication. In production software it may also involve reusable templates, retrieved information, fixed output fields, safety rules, evaluations, and version tracking.
+
 ## Probabilistic AI
 
 Probabilistic AI produces outputs based on learned likelihoods rather than fixed deterministic rules. This makes it flexible and powerful, but also means its outputs must be checked when correctness matters.
@@ -136,6 +148,10 @@ Retrieval is the process of finding relevant information and supplying it to an 
 
 Retrieval-augmented generation supplies a model with information retrieved for the current task before it generates a response. The model remains general, but retrieved documents or records make its answer specific to a project, person, or organisation.
 
+## Schema
+
+A schema describes the required shape of data: which fields exist, what kind of value each field may contain, and how pieces relate. It turns “return something useful” into a more precise contract.
+
 ## Software Verification
 
 Software verification is the process of checking whether software behaves correctly. In AI-assisted development, verification includes tests, validation, structured outputs, human review, monitoring, and safeguards around model behaviour.
@@ -143,6 +159,10 @@ Software verification is the process of checking whether software behaves correc
 ## System Integration
 
 System integration is the work of making different software systems communicate and operate together. It is especially important in enterprises with legacy systems, databases, packaged applications, APIs, and custom software built over many decades.
+
+## Technical Debt
+
+Technical debt is the future cost created when software takes shortcuts, accumulates duplication, or becomes difficult to understand and change. Like financial debt, it may speed progress today while creating continuing costs later.
 
 ## Token
 
@@ -159,6 +179,10 @@ Training is the process by which an AI model learns patterns from data. It requi
 ## Tool Use
 
 Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, building an application, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
+
+## User Interface (UI)
+
+The user interface is what a person sees, touches, types into, or otherwise uses to control software. Screens, buttons, menus, labels, forms, and gestures are all parts of the UI.
 
 ## Trust
 

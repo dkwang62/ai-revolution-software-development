@@ -56,7 +56,7 @@ In the AI era, requirements are not a bureaucratic prelude to programming. They 
 
 AI can generate code quickly. It cannot guarantee that the resulting system has a coherent architecture.
 
-Architecture is the discipline of making decisions that allow software to grow, change, integrate, and remain understandable. It includes boundaries, data models, interfaces, dependencies, permissions, deployment, observability, and failure handling.
+Software needs an overall structure that allows it to grow, change, connect to other systems, and remain understandable. The industry calls the discipline of designing that structure **software architecture**. It covers where one part ends and another begins, how data is represented, how parts communicate and depend on one another, who has permission to act, how software is released, how its behaviour is observed, and what happens when it fails.
 
 When software is small, architecture can seem unnecessary. When software grows, architecture becomes the difference between speed and chaos.
 
@@ -88,7 +88,7 @@ This is especially true in high-stakes domains. A hobby app and a medical system
 
 Cheap code does not make reliability cheap.
 
-Productivity evidence supports this caution. Bounded experiments show that AI can accelerate some programming tasks, while repository-level and delivery-level outcomes are more complex. [DORA's 2024 research](https://dora.dev/research/2024/dora-report/) found individual benefits alongside lower delivery stability and throughput. Its [2025 report](https://dora.dev/research/2025/dora-report/) found higher throughput but continued instability. In the [2025 Stack Overflow survey](https://survey.stackoverflow.co/2025/ai), 66% of respondents described AI answers that were almost right as a frustration, and 45% cited the time required to debug AI-generated code.
+Productivity evidence supports this caution. Small, bounded experiments show that AI can accelerate some programming tasks, while results across whole projects and releases are more complex. Google's DevOps Research and Assessment programme, known as **DORA**, found individual benefits alongside lower delivery stability and speed in its [2024 research](https://dora.dev/research/2024/dora-report/). Its [2025 report](https://dora.dev/research/2025/dora-report/) found higher speed but continued instability. In the [2025 Stack Overflow survey](https://survey.stackoverflow.co/2025/ai), 66% of respondents described AI answers that were almost right as a frustration, and 45% cited the time required to debug AI-generated code.
 
 In other words, cheap generation moves the bottleneck. It does not remove it.
 

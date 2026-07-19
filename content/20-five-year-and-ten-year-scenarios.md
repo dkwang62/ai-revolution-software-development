@@ -44,7 +44,7 @@ The economics remain attractive where failure is cheap and feedback is fast. The
 
 If capability improves gradually while verification and integration become cheaper, AI becomes ordinary development infrastructure.
 
-Frameworks, typed interfaces, policy engines, visual regression tests, security scanners, and automated evaluation make generated work easier to constrain. Developers use AI as routinely as search, compilers, package managers, and version control. Hybrid systems become normal: probabilistic models interpret requests while deterministic software validates data, permissions, calculations, and execution.
+Reusable software structures, precisely defined connections, automated rules, picture-comparison tests, security checks, and repeated evaluations make generated work easier to constrain. Industry terms include **frameworks**, **typed interfaces**, **policy engines**, **visual regression tests**, **security scanners**, and **automated evaluation**. Developers use AI as routinely as search and ordinary development tools. Mixed, or **hybrid**, systems become normal: probabilistic models interpret requests while deterministic software checks data, permissions, calculations, and execution.
 
 Non-programmers build more internal tools. Legacy modernisation becomes a major use case because AI can document old systems, map dependencies, generate characterization tests, and work through governed APIs. The job of the programmer moves upward toward requirements, architecture, evaluation, and stewardship.
 
@@ -60,7 +60,7 @@ This is the quadrant in which my experience designing the language-learning scre
 
 The limiting factor is neither typing nor model intelligence. It is disciplined acceptance: evidence that the generated system is fit to keep.
 
-**Signals to watch:** growth in AI-generated vulnerabilities and technical debt; larger review queues; rapid prototype growth without durable deployment; developers spending more time auditing than creating.
+**Signals to watch:** more security weaknesses and more accumulated shortcuts that make software expensive to maintain—known as **technical debt**; larger review queues; many prototypes but few dependable releases; and developers spending more time checking than creating.
 
 ## Scenario Four: The Agentic Software Organisation
 

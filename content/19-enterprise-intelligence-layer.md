@@ -14,7 +14,7 @@ For most organisations, the strategic question is not whether they should build 
 
 That distinction is easy to miss because public attention focuses on frontier models. Model releases are visible. Benchmarks are visible. Context-window announcements are visible. Data centres, GPUs, and model races make dramatic headlines. But inside a bank, hospital, airline, manufacturer, government agency, or insurance company, the most valuable knowledge is usually private organisational knowledge: source code, business rules, policies, customer histories, product definitions, operational procedures, regulations, contracts, production incidents, architecture decisions, and decades of accumulated experience.
 
-A frontier model may work effectively with patterns in Python, English, accounting principles, REST APIs, and general software architecture. That shorthand is sometimes described as understanding, but it does not give the model automatic knowledge of the exact way a particular bank calculates risk, how a hospital routes clinical workflows, why an airline reservation system behaves strangely during edge cases, or which undocumented rule in a legacy system exists because of a regulatory change twenty years ago.
+A frontier model may work effectively with patterns in Python, English, accounting principles, common ways for web services to communicate—often called **REST APIs**—and general software structure. That shorthand is sometimes described as understanding, but it does not give the model automatic knowledge of the exact way a particular bank calculates risk, how a hospital routes clinical work, why an airline reservation system behaves strangely in unusual cases, or which undocumented rule in older software exists because of a regulatory change twenty years ago.
 
 That knowledge lives inside the enterprise. The economic question is whether the organisation can make it usable by AI.
 
@@ -103,9 +103,9 @@ Governance turns this into an enterprise system rather than a clever search tool
 
 The architecture is therefore not simply "AI model plus documents." It is the combination of knowledge, organisation, retrieval, permissions, verification, workflow, and auditability.
 
-## ERP Digitised Transactions. AI Digitises Knowledge.
+## Business Systems Digitised Transactions. AI May Make Knowledge Usable.
 
-Enterprise software history provides a useful comparison. ERP systems digitised transactions. They standardised finance, procurement, inventory, manufacturing, sales, and reporting. Their value came from making business processes more visible, consistent, and measurable.
+Enterprise software history provides a useful comparison. Large integrated business systems brought finance, purchasing, inventory, manufacturing, sales, and reporting into shared processes. The industry calls them **enterprise resource planning (ERP) systems**. Their value came from making transactions more visible, consistent, and measurable.
 
 Enterprise AI is different. It does not merely digitise transactions. It digitises knowledge.
 
@@ -123,9 +123,9 @@ Over time, the organisation discovers that all these systems need similar infras
 
 This is how many major enterprise technologies spread. Cloud computing did not always begin as a single company-wide strategy. Often one application moved first, then another, then another. Eventually the platform became obvious. Enterprise AI may follow the same pattern.
 
-## The ROI Portfolio
+## A Portfolio of Measurable Returns
 
-Enterprise AI should not be justified by vague claims that everyone will become more productive. A more serious method is to treat it as a portfolio of use cases.
+Enterprise AI should not be justified by vague claims that everyone will become more productive. A more serious method is to examine a collection of specific uses and measure the benefit against the cost. Finance calls this **return on investment (ROI)**, so the collection can be treated as an ROI portfolio.
 
 This is also how current evidence should be read. [McKinsey estimated in 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases, with much of the potential concentrated in customer operations, marketing and sales, software engineering, and research and development. That estimate is not proof of realised enterprise-wide returns. It suggests that credible business cases should begin with specific workflows whose outcomes can be measured.
 

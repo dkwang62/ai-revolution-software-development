@@ -38,6 +38,8 @@ The language-learning application is the recurring field case because it is wher
 
 The genie is only the book's analogy. The actual system I used most directly was Codex, an AI coding agent, but the argument is not about one vendor. Claude Code, Cursor, GitHub Copilot, and systems still to come belong to the same transition from AI as adviser to AI as supervised actor.
 
+This book introduces technical language because readers will encounter it in courses, product announcements, workplaces, and public debate. But the term is never meant to carry the explanation. Each important idea should first be understandable as an ordinary action, problem, or relationship. The recognised industry term then gives the reader a label for something already understood. The glossary provides a place to return to those labels without interrupting the main argument.
+
 This is also not a manual of prompt tricks. Products and interfaces will change too quickly. The durable questions concern abstraction, representation, models, context, requirements, verification, integration, and economics.
 
 We begin where the practical mystery begins: with the historical cost of software. Until we understand why turning knowledge into reliable systems was expensive, we cannot understand what it means for AI to make part of that translation cheaper.

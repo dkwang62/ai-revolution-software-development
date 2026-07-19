@@ -46,7 +46,7 @@ The scarce work increasingly lies in choosing worthwhile problems, expressing re
 
 The language-learning project made that shift tangible to me. AI dramatically accelerated logic and implementation, while refinement of the screens and controls consumed most of my time. That balance will change as agents become better at rendering, inspecting, and correcting their own visual work. The mechanical defects should shrink. The responsibility for deciding what the experience ought to be will remain.
 
-Organisations face the same pattern at larger scale. Their advantage will not come from renting access to the same general model as everyone else. It will come from connecting models to proprietary knowledge, reliable systems, permissions, provenance, and workflows without losing control of the decisions embedded in them.
+Organisations face the same pattern at larger scale. Their advantage will not come from renting access to the same general model as everyone else. It will come from connecting models to their private knowledge, reliable systems, permission rules, working processes, and records showing where information came from. The industry calls that record of origin **provenance**.
 
 ## What Humans Choose to Build
 

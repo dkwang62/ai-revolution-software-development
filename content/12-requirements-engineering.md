@@ -10,7 +10,7 @@ That description is too small.
 
 The deeper shift is from programming languages toward requirements. If AI can produce code quickly, the most important question is no longer only whether humans can write the implementation. It is whether humans can define the intended behaviour clearly enough for the system to build, evaluate, and maintain it.
 
-This is why Requirements Engineering deserves its own place in the book. It is not the same as Prompt Engineering. Prompt engineering is one visible technique. Requirements engineering is the larger discipline of deciding what the system should do, why it should do it, under which conditions it should behave differently, and how anyone will know whether the result is correct.
+This is why the disciplined work of defining a system deserves its own place in the book. It asks what the system should do, why it should do it, when it should behave differently, and how anyone will know whether the result is correct. The industry calls this **requirements engineering**. It is broader than prompt engineering, which focuses on the instructions supplied to an AI system.
 
 Traditional software often followed a path like this:
 
@@ -81,7 +81,7 @@ That is why natural language does not remove engineering discipline. It moves en
 
 AI also changes the testing conversation.
 
-Traditional software relies on unit tests, integration tests, regression tests, acceptance tests, code review, static analysis, monitoring, and many other practices. These remain essential.
+Traditional software checks individual pieces, checks whether pieces work together, repeats old tests after changes, confirms that the finished behaviour meets the user's needs, reviews code, examines it for defects, and watches the running system. Industry terms include **unit**, **integration**, **regression**, and **acceptance testing**, along with **code review**, **static analysis**, and **monitoring**. These practices remain essential.
 
 AI systems add another layer:
 
@@ -92,7 +92,7 @@ AI systems add another layer:
 - Model evaluation.
 - Continuous evaluation.
 
-This distinction has practical support. [NIST](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) defines validation through objective evidence that requirements for a specific intended use have been fulfilled. [OpenAI's evaluation guidance](https://platform.openai.com/docs/guides/evals) treats evals as structured tests for measuring variable model behaviour. [Google Cloud's evaluation documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) describes criteria such as grounding, safety, fluency, exact match, rubrics, and custom functions. [OWASP](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/) identifies improper output handling and [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) when model outputs flow into applications and tools.
+This distinction has practical support. The [U.S. National Institute of Standards and Technology (NIST)](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) defines validation through objective evidence that requirements for a specific intended use have been fulfilled. [OpenAI's evaluation guidance](https://platform.openai.com/docs/guides/evals) treats evaluations—often shortened to **evals**—as structured tests for measuring variable model behaviour. [Google Cloud's evaluation documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) describes checks for whether an answer is supported by evidence, safe, readable, or exactly correct. The [Open Worldwide Application Security Project (OWASP)](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/) warns about unsafe handling of model output and [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/), meaning an AI system is given more power to act than it needs.
 
 Evaluation asks whether an AI system performed well across examples. Verification asks whether a particular result, workflow, or system can be trusted for its intended use.
 

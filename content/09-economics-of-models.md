@@ -54,7 +54,7 @@ The cost depends on many factors:
 
 This makes inference different from traditional software in an important way. Many conventional software operations are extremely cheap once the software is written. AI interactions can remain relatively expensive because each output requires substantial computation.
 
-This does not mean inference will always be expensive. Hardware improves. Models become more efficient. Smaller specialised models can handle narrower tasks. Caching, routing, distillation, quantisation, and optimisation may reduce cost. But inference cost is central to AI product economics because every user interaction spends compute.
+This does not mean inference will always be expensive. Hardware improves. Models become more efficient. A system can reuse an earlier result, send an easy request to a smaller model, teach a smaller model from a larger one, or represent the model's numbers more compactly. The industry calls these methods **caching**, **routing**, **distillation**, and **quantisation**. All can reduce cost. Inference cost nevertheless remains central to AI product economics because every new interaction uses computing resources.
 
 This is why inference must be analysed separately from training. Training is the upfront creation of capability; inference is the repeated spending of that capability. Epoch AI tracks inference-cost trends separately and reports rapid but uneven declines in the cost of inference at fixed performance levels. The direction matters: if inference becomes cheaper, more AI features become economically viable; if it remains expensive, AI use must be reserved for higher-value tasks.
 
@@ -96,7 +96,7 @@ Raw context is the maximum number of tokens a model can read.
 
 Effective context is the amount of relevant information the system can actually use to solve the problem.
 
-A model with a huge context window but poor retrieval may perform worse than a model with a smaller context window that receives exactly the right information. The economic race is therefore unlikely to be only about larger windows. It will also be about retrieval, summarisation, repository indexing, tool use, memory, and verification.
+A model with a huge context window but a poor way of finding relevant material may perform worse than a model with a smaller window that receives exactly the right information. Finding and supplying that material is called **retrieval**. Software teams also make projects searchable—often called **repository indexing**—and use summaries, external memory, tools, and checks to improve the information supplied.
 
 The important question is not simply:
 
@@ -192,7 +192,7 @@ AI models are different. A new model is not merely the old model plus a feature.
 
 This matters for software systems that depend on AI. A prompt template, evaluation suite, workflow, or agent loop may work well with one model and less well with another. Upgrading a model can resemble changing a dependency whose behaviour is difficult to specify fully.
 
-Therefore model evolution creates regression risk.
+Therefore a model upgrade can make an old workflow worse even while improving the model overall. Software engineers call this **regression risk**: something that worked before may stop working after a change.
 
 The economic benefit of upgrading is better capability or lower cost. The cost is testing, adaptation, monitoring, and possible behaviour change. Production systems need model versioning, evaluation, fallback, and change management.
 

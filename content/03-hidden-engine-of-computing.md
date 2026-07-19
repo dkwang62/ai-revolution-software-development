@@ -52,7 +52,7 @@ The bargain is worthwhile only when the benefits exceed the costs. That is why a
 
 Complexity is expensive. It takes time to learn, creates mistakes, slows communication, increases maintenance cost, makes systems harder to change, narrows the number of people capable of contributing, and creates dependency on rare experts.
 
-Abstraction reduces these costs by allowing people to work with simpler concepts. A programmer using a high-level language does not need to write raw processor instructions. A developer using a web framework does not need to implement every detail of HTTP routing, session handling, template rendering, form validation, and database access. A company using cloud infrastructure does not need to buy servers, wire data centres, manage cooling systems, or manually replace failed disks.
+Abstraction reduces these costs by allowing people to work with simpler concepts. A programmer using a high-level language does not need to write raw processor instructions. A developer using a web framework does not need to build every mechanism for sending web requests to the right place, remembering a visitor, assembling a page, checking a form, and reading stored data. Industry terms for some of these mechanisms include **HTTP routing**, **session handling**, **template rendering**, **form validation**, and **database access**. A company using cloud infrastructure does not need to buy servers, wire data centres, manage cooling systems, or manually replace failed disks.
 
 Each abstraction layer increases productivity by reducing what must be held in the user's mind. It lowers training cost, improves reuse, and broadens participation. Assembly language opened computing to people who did not want to write binary instructions. High-level languages opened programming to scientists and business users. Spreadsheets opened computation to office workers. Website builders opened publishing to non-programmers. AI-assisted tools may extend this pattern again.
 
@@ -138,7 +138,7 @@ Because abstraction is useful, it is tempting to describe it only positively. Th
 
 Every abstraction hides information. Sometimes the hidden information matters. A high-level framework may make common tasks easy but unusual tasks awkward. A cloud platform may make deployment simple but create dependency on pricing, service limits, and platform behaviour. A low-code tool may let a business user build quickly but make deep customisation difficult. An AI assistant may generate useful code quickly but obscure why a particular design was chosen.
 
-Abstraction can also reduce visibility. When something fails, the user may not know which layer is responsible: the application, the framework, the database, the operating system, the network, the cloud provider, or an external API. It can hide performance costs, because a simple command may trigger expensive operations underneath. It can create false confidence, because a simple interface can make hidden assumptions look safer than they are.
+Abstraction can also reduce visibility. When something fails, the user may not know which layer is responsible: the application, the reusable framework beneath it, stored data, the operating system, the network, the cloud provider, or an outside service connected through an **application programming interface (API)**. It can hide performance costs, because a simple command may trigger expensive operations underneath. It can create false confidence, because a simple interface can make hidden assumptions look safer than they are.
 
 The cost of abstraction is the necessary companion to its benefit. Computing history is not a story of everything becoming easier without consequence, but of trade-offs in which each layer gives something and takes something.
 
@@ -156,7 +156,7 @@ The person is expressing intent. The AI attempts to translate that intent into r
 
 This is abstraction because the human is no longer operating directly at the level of syntax, APIs, and file structures. Those details still exist. The software still ultimately runs as code on machines. But the human interface moves upward from code toward intent.
 
-Programming languages do not disappear. They remain essential because machines still need precise executable instructions. AI-generated software still becomes Swift, Python, JavaScript, SQL, configuration files, tests, database schemas, and deployment scripts. The difference is that more of the translation may be performed by AI.
+Programming languages do not disappear. They remain essential because machines still need precise executable instructions. AI-generated software still becomes languages such as Swift, Python, and JavaScript; database instructions written in **Structured Query Language (SQL)**; configuration files; tests; descriptions of stored data; and deployment scripts. The difference is that more of the translation may be performed by AI.
 
 Earlier abstraction layers translated one representation into another. Compilers translated high-level programming languages into machine instructions. Frameworks translated common application patterns into reusable structures. Cloud platforms translated infrastructure needs into services. AI begins to translate human intent into software structures.
 
@@ -164,7 +164,7 @@ This is why AI is not a break from computing history. It is a continuation of it
 
 ## Is AI Really an Abstraction Layer?
 
-The strongest objection is that a conventional abstraction offers a stable contract. A compiler has syntax. An API specifies inputs and outputs. A framework constrains how components behave. Natural language is ambiguous, and a model may respond differently when the wording or context changes. How can something so leaky and probabilistic count as an abstraction?
+The strongest objection is that a conventional abstraction offers a stable contract. A compiler has rules for how instructions must be written. An application programming interface specifies what information another piece of software may send and receive. A framework constrains how components behave. Natural language is ambiguous, and a model may respond differently when the wording or context changes. How can something so leaky and probabilistic count as an abstraction?
 
 By itself, it cannot provide the kind of contract that earlier layers provide. AI is better understood as an **emerging, incomplete abstraction layer**. It raises the level at which people can express intent, but the missing precision must be supplied by the system around it: requirements, typed tools, schemas, tests, validators, permissions, design systems, and human approval.
 
@@ -196,7 +196,7 @@ That is the same question every abstraction layer has faced.
 
 Earlier abstractions hid different things. Assembly language hid numeric machine instructions. High-level languages hid many details of processor architecture. Structured programming hid some chaos of uncontrolled jumps. Object-oriented programming hid complexity inside objects and interfaces. Libraries hid repeated implementation details. Frameworks hid common application structure. Cloud computing hid infrastructure operations. Low-code platforms hid some application-building mechanics.
 
-AI begins to hide parts of programming itself. It can hide syntax by translating intent into code, API discovery by selecting functions and libraries, some architecture decisions by proposing familiar patterns, debugging steps by explaining errors, boilerplate by generating repetitive code, and some documentation burden by summarising and explaining systems.
+AI begins to hide parts of programming itself. It can hide the exact writing rules of a programming language by translating intent into code. It can find suitable connections, functions, and reusable libraries; propose familiar system structures; explain errors; generate repetitive code; and summarise documentation. Programmers call these activities **syntax**, **API discovery**, **architecture**, **debugging**, and removal of **boilerplate**.
 
 But the word "hide" must be used carefully. AI does not remove the need for these things. It moves them into a new layer of machine-assisted translation. The programmer, user, or organisation still needs judgement. They must still decide whether the result is correct, maintainable, secure, ethical, legal, and useful.
 
