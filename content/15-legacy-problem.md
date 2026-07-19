@@ -96,15 +96,15 @@ The customer might use a mobile app. The app calls an API gateway. The gateway r
 
 The point is not that every bank has exactly this architecture. The point is that enterprise systems usually meet through boundaries:
 
-| Boundary | Why it exists |
-|---|---|
-| API gateway | Controls and routes access to services |
-| Service layer | Separates modern applications from legacy internals |
-| Message queue or event stream | Decouples systems that cannot all change at the same speed |
-| Batch feed | Moves large volumes of records on a schedule |
-| Identity and permission system | Controls who and what may act |
-| Audit log | Records what happened and why |
-| Testing and validation layer | Proves that new behaviour matches required old behaviour |
+| Boundary                       | Why it exists                                              |
+| ------------------------------ | ---------------------------------------------------------- |
+| API gateway                    | Controls and routes access to services                     |
+| Service layer                  | Separates modern applications from legacy internals        |
+| Message queue or event stream  | Decouples systems that cannot all change at the same speed |
+| Batch feed                     | Moves large volumes of records on a schedule               |
+| Identity and permission system | Controls who and what may act                              |
+| Audit log                      | Records what happened and why                              |
+| Testing and validation layer   | Proves that new behaviour matches required old behaviour   |
 
 This is where system integration becomes more than "connecting A to B". It becomes the discipline of allowing new systems to cooperate with old systems without breaking the business.
 

@@ -102,14 +102,14 @@ Trust is not binary. It increases as uncertainty and risk are reduced. A simple 
 > [!summary] The Trust Equation
 > **Trust = useful capability + protective controls - unmanaged exposure**
 >
-> | What raises trust | What lowers trust |
-> |---|---|
-> | Capability | Risk |
-> | Verification | Uncertainty |
-> | Governance | Unclear accountability |
-> | Security | Unbounded access |
-> | Auditability | Invisible actions |
-> | Explainability | Unexplained behaviour |
+> | What raises trust | What lowers trust      |
+> | ----------------- | ---------------------- |
+> | Capability        | Risk                   |
+> | Verification      | Uncertainty            |
+> | Governance        | Unclear accountability |
+> | Security          | Unbounded access       |
+> | Auditability      | Invisible actions      |
+> | Explainability    | Unexplained behaviour  |
 
 This is not a mathematical formula. It is a way of remembering that model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
 

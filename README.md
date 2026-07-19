@@ -1,6 +1,6 @@
 # The AI Revolution in Software Development - Public Website
 
-This repository publishes the public reading draft of *The AI Revolution in Software Development: The Genie in the Bottle: When Ideas Magically Become Software* using Quartz and GitHub Pages.
+This repository publishes the public reading draft of _The AI Revolution in Software Development: The Genie in the Bottle: When Ideas Magically Become Software_ using Quartz and GitHub Pages.
 
 The source manuscript lives in the Obsidian vault. The `content/` folder contains the public website edition only.
 

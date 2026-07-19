@@ -102,15 +102,15 @@ The model's ability to write software follows from the same principle that allow
 
 The difference between traditional software and AI models can be summarised like this:
 
-| Traditional Software | AI Model |
-| --- | --- |
-| Stores explicit rules | Stores learned mathematical relationships |
-| Humans write the rules | Learns patterns from data |
-| Mostly deterministic | Probabilistic |
-| Knowledge is symbolic and localised | Knowledge is distributed across parameters |
-| Modified by editing code | Modified by training, fine-tuning, prompting, or configuration |
-| Easier to inspect line by line | Harder to interpret internally |
-| Strong where rules are clear | Strong where patterns and variation matter |
+| Traditional Software                | AI Model                                                       |
+| ----------------------------------- | -------------------------------------------------------------- |
+| Stores explicit rules               | Stores learned mathematical relationships                      |
+| Humans write the rules              | Learns patterns from data                                      |
+| Mostly deterministic                | Probabilistic                                                  |
+| Knowledge is symbolic and localised | Knowledge is distributed across parameters                     |
+| Modified by editing code            | Modified by training, fine-tuning, prompting, or configuration |
+| Easier to inspect line by line      | Harder to interpret internally                                 |
+| Strong where rules are clear        | Strong where patterns and variation matter                     |
 
 This table explains a great deal.
 

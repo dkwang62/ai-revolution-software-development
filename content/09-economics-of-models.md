@@ -166,15 +166,15 @@ This is why reasoning can be expensive. It is not just "thinking harder" in a hu
 
 For example:
 
-| Task | Why It May Be Cheap Or Expensive |
-| --- | --- |
-| Translate one sentence | Little input, little output, familiar pattern |
-| Summarise a short email | Small input and short output |
-| Explain a programming error | Moderate input, some reasoning, usually short output |
-| Refactor a module | Many files, dependencies, tests, and revision loops |
-| Analyse a legacy system | Large context, unknown rules, high verification cost |
-| Plan a database migration | Many constraints, risk analysis, tests, rollback planning |
-| Build an agent workflow | Repeated inference, tool calls, permissions, monitoring, validation |
+| Task                        | Why It May Be Cheap Or Expensive                                    |
+| --------------------------- | ------------------------------------------------------------------- |
+| Translate one sentence      | Little input, little output, familiar pattern                       |
+| Summarise a short email     | Small input and short output                                        |
+| Explain a programming error | Moderate input, some reasoning, usually short output                |
+| Refactor a module           | Many files, dependencies, tests, and revision loops                 |
+| Analyse a legacy system     | Large context, unknown rules, high verification cost                |
+| Plan a database migration   | Many constraints, risk analysis, tests, rollback planning           |
+| Build an agent workflow     | Repeated inference, tool calls, permissions, monitoring, validation |
 
 The economic lesson is simple:
 
@@ -214,15 +214,15 @@ For software engineers, the lesson is clear: model upgrades must be tested like 
 
 Every major AI improvement should be examined through the same pattern:
 
-| Improvement | Cost | Benefit | Future Trend |
-| --- | --- | --- | --- |
-| Larger models | More training and inference compute | Broader capability and better reasoning | More efficient models may reduce cost per capability |
-| Longer context | More memory and compute | Ability to handle larger tasks and codebases | Context will likely expand but require better management |
-| Multimodality | More complex data and training | One system can work across text, image, audio, video, and code | More software workflows will mix modalities |
-| Better reasoning | More inference time or specialised methods | Better planning, debugging, and analysis | Systems may route reasoning depth by task |
-| Training | Large upfront capital cost | Creates reusable model capability | Cost per useful capability may fall, but frontier training may remain expensive |
-| Inference | Ongoing operating cost | Delivers capability to users | Hardware and model efficiency may lower cost |
-| Model evolution | Testing and compatibility risk | Better capability, safety, or cost | Model management becomes part of software engineering |
+| Improvement      | Cost                                       | Benefit                                                        | Future Trend                                                                    |
+| ---------------- | ------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Larger models    | More training and inference compute        | Broader capability and better reasoning                        | More efficient models may reduce cost per capability                            |
+| Longer context   | More memory and compute                    | Ability to handle larger tasks and codebases                   | Context will likely expand but require better management                        |
+| Multimodality    | More complex data and training             | One system can work across text, image, audio, video, and code | More software workflows will mix modalities                                     |
+| Better reasoning | More inference time or specialised methods | Better planning, debugging, and analysis                       | Systems may route reasoning depth by task                                       |
+| Training         | Large upfront capital cost                 | Creates reusable model capability                              | Cost per useful capability may fall, but frontier training may remain expensive |
+| Inference        | Ongoing operating cost                     | Delivers capability to users                                   | Hardware and model efficiency may lower cost                                    |
+| Model evolution  | Testing and compatibility risk             | Better capability, safety, or cost                             | Model management becomes part of software engineering                           |
 
 This table is not final research. It is a way of thinking.
 
