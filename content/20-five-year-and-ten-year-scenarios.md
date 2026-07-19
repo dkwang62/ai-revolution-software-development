@@ -55,6 +55,56 @@ The main constraints are verification, context, integration, cost, trust, and or
 
 The labour-market signal is still mixed. [[Labour-Market Effects on Programmers]] suggests that the near-term impact may appear first in skills, role expectations, and hiring patterns rather than in a simple collapse of programmer employment. Official projections can still show growth while the content of the job changes substantially.
 
+## The Forecast May Be Too Small
+
+The greatest weakness in any five- or ten-year scenario may be that it imagines today's AI becoming gradually better. My experience with Radix suggests a less comfortable possibility: the boundary of what is feasible can move dramatically within a single year.
+
+The failed attempt to scaffold the Streamlit-to-Xcode migration and the later success were not separated by a generation of computing. They were separated by roughly a year of progress in models, agent environments, tools, feedback, project context, and my own ability to supervise the work. If a difficult task can cross from impractical to achievable on that timescale, a five-year forecast cannot safely assume five similar annual increments.
+
+Several forms of improvement can reinforce one another:
+
+~~~text
+models reason and code better
+↓
+agents use more tools and gather better evidence
+↓
+verification becomes more automatic
+↓
+successful work produces better context and reusable components
+↓
+more people attempt larger projects
+↓
+tools improve around the new patterns of use
+~~~
+
+This does not prove that progress will continue at the same rate. Bottlenecks, cost, regulation, energy, data, reliability, security, and diminishing returns could slow it. Adoption by organisations may also move much more slowly than technical capability.
+
+But the opposite error matters too. Forecasts can underestimate compounding change because they evaluate the model as a single product. The real system is improving across several layers at once: model, agent, tools, hardware, context, frameworks, verification, and human practice.
+
+The ordinary-infrastructure and intent-driven scenarios later in this chapter should therefore be read as a middle branch, not an upper bound.
+
+## Five-Year Acceleration Branch
+
+In a more dramatic five-year scenario, AI is not merely ordinary development infrastructure. For many bounded projects, it becomes the primary implementer.
+
+A domain expert may describe an application through conversation, screenshots, examples, business rules, and corrections. An agent system scaffolds the project, chooses tested components, constructs the data model, writes the first implementation, runs builds and tests, renders the interface at several sizes, corrects visual defects, prepares deployment, and maintains an audit trail. Professional developers supervise architecture, security, difficult integrations, and the projects whose consequences justify deeper control.
+
+Small teams may operate software portfolios that previously required much larger engineering organisations. Temporary and highly specialised software becomes economical because the cost of creating and later discarding it falls sharply. Applications may be generated for one classroom, one research investigation, one legal matter, one patient workflow, or one short-lived business process.
+
+This branch does not require a machine with every human intellectual capability. It requires agent systems that are sufficiently reliable inside bounded environments, surrounded by frameworks, tests, permissions, and rollback.
+
+## Ten-Year Acceleration Branch
+
+A dramatic ten-year branch is harder to picture precisely because its products may not resemble today's development tools.
+
+Natural language, examples, observed work, and organisational records could become the normal source material for software. Code would still exist, but much of it might be produced, tested, revised, and retired without a person reading every line. The important human artefacts would increasingly be goals, policies, acceptance criteria, prohibited actions, and evidence that the resulting system behaves appropriately.
+
+Agent systems might coordinate large portions of the software lifecycle: research, requirements, design, implementation, testing, deployment, monitoring, support, migration, documentation, and continuous improvement. A small number of people could direct something that resembles a software organisation assembled from specialised agents and deterministic services.
+
+If that occurs, the most dramatic change would not be faster programming. It would be a large expansion in the quantity and specificity of software humanity can afford to create. Many activities that now adapt themselves to general-purpose products could instead receive software shaped around the activity.
+
+This remains speculation. Ten years could also bring disappointment, fragmentation, regulation, or a reliability ceiling. The purpose of the acceleration branch is not to claim that the most dramatic outcome will occur. It is to acknowledge that the changes already observed over one year make today's apparently ambitious forecast an unreliable upper limit.
+
 ## Five-Year Scenario: AI as Ordinary Development Infrastructure
 
 In a plausible five-year scenario, AI becomes ordinary infrastructure for software development.
