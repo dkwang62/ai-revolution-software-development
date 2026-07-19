@@ -534,6 +534,32 @@ The problem is broader than visual layout. The Genie's powers are uneven in four
 
 The unevenness helps explain several otherwise puzzling experiences with AI. A model can produce hundreds of lines of coherent code and overlook an unusual permission case. It can rewrite a chapter fluently and introduce a contradiction with an earlier chapter. It can obey “make the button smaller” even when the real intention was to make the interface feel less crowded. It can generate a finished-looking document without noticing that a heading has been stranded at the bottom of a page.
 
+### An old problem exposed by faster generation
+
+The Radix experience should not be read as evidence that AI created the difficulty of user-interface work. Programmers struggled with graphical interfaces long before generative models appeared. A Microsoft Research paper published in 1992 began from the observation that high-quality GUIs were difficult to build and described toolkits, standard widgets, and interactive layout editors as ways to make that work more manageable. The specific technology is old; the engineering response is still recognisable. [The study drew on extensive observation of more than 120 users.](https://www.microsoft.com/en-us/research/?p=154648)
+
+Modern frameworks contain entire systems for negotiating space because the underlying problem never vanished. Apple's SwiftUI documentation explains that text placed in a constrained area may wrap, tighten, shrink, or truncate. Developers are given line limits, minimum scale factors, truncation modes, flexible frames, grids, stacks, and custom layout containers because no single arrangement works for every word, device, language, and accessibility setting. Apple's Dynamic Type guidance explicitly tells developers to preview multiple text sizes and look for words clipped by fixed containers. [These are normal properties of rendered interfaces, not unusual defects unique to Radix.](https://developer.apple.com/videos/play/wwdc2024/10074/)
+
+AI enters this old problem unevenly. It can produce interface code quickly, but functional correctness and visual fidelity are different tests. The [VISTA benchmark](https://arxiv.org/abs/2605.26144) found that the two were only partially coupled in generated web applications: an application could behave correctly without closely matching the intended visual structure. Earlier [Design2Code research](https://salt-nlp.github.io/Design2Code/) reached a similar conclusion while testing hundreds of real webpages. Meanwhile, the 2025 Stack Overflow Developer Survey found that 66 per cent of respondents who answered its AI-frustration question complained about solutions that were almost right, while 45 per cent cited time spent debugging AI-generated code. Those figures cover AI-assisted development generally rather than UI alone, but they describe the same costly category of near-success. [Stack Overflow reports the survey population and question results on its AI results page.](https://survey.stackoverflow.co/2025/ai)
+
+This leads to a more precise conclusion than “AI is bad at UI.” Interface engineering was already difficult. AI makes the first implementation cheaper, exposes the unresolved visual work sooner, and can increase the volume of screens that need review. Current models can help with that work, but they do not make the older disciplines obsolete.
+
+Research also supports the possibility of improvement without claiming the problem has disappeared. A 2026 experiment called [*Coding with Eyes*](https://arxiv.org/abs/2604.19750) gave a coding system visual feedback and direct interaction with rendered GUI applications. Its task success and visual scores improved, but overall success remained far from complete. Another 2026 study used a fully automated visual critic to render webpages, inspect them, revise the code, and repeat; three refinement cycles improved performance by as much as 17.8 per cent. [The result supports automated self-correction while also showing why one-shot generation is insufficient.](https://arxiv.org/abs/2604.05839)
+
+The practical answer is therefore cumulative:
+
+~~~text
+learned design knowledge
++ established UI framework
++ reusable design system
++ responsive layout rules
++ automated functional and visual tests
++ AI render–inspect–correct loop
++ human judgement for purpose and experience
+~~~
+
+AI does not replace the framework. It becomes more dependable when working through one. It does not replace visual testing. It can help run and interpret the tests. It does not eliminate design judgement. It can remove more of the mechanical correction so that human attention is reserved for questions the framework cannot answer.
+
 ### Three failures the reader can see
 
 The first example came from Radix on an iPhone:
