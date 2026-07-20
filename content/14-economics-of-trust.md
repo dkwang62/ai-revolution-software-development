@@ -95,13 +95,11 @@ AI may help explain, document, test, and modernise these systems. But organisati
 
 Trust is the bridge between AI capability and legacy modernisation. Without it, AI can describe the old system. With it, AI can help change the old system safely.
 
-## The Trust Equation
+## What Raises and Lowers Trust
 
-Trust is not binary. It increases as uncertainty and risk are reduced. A simple way to think about it is:
+Trust is not binary. It grows when useful capability is surrounded by verification, governance, security, and clear accountability. It falls when exposure is unmanaged, actions are invisible, or nobody is clearly responsible.
 
-> [!summary] The Trust Equation
-> **Trust = useful capability + protective controls - unmanaged exposure**
->
+> [!summary] What Affects Trust
 > | What raises trust | What lowers trust      |
 > | ----------------- | ---------------------- |
 > | Capability        | Risk                   |
@@ -111,7 +109,7 @@ Trust is not binary. It increases as uncertainty and risk are reduced. A simple 
 > | Auditability      | Invisible actions      |
 > | Explainability    | Unexplained behaviour  |
 
-This is not a mathematical formula. It is a way of remembering that model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
+Model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
 
 That is one reason enterprise AI may not be won simply by the smartest model. It may be won by the system that makes AI most trustworthy in valuable workflows.
 

@@ -14,9 +14,7 @@ For most organisations, the strategic question is not whether they should build 
 
 That distinction is easy to miss because public attention focuses on frontier models. Model releases are visible. Benchmarks are visible. Context-window announcements are visible. Data centres, GPUs, and model races make dramatic headlines. But inside a bank, hospital, airline, manufacturer, government agency, or insurance company, the most valuable knowledge is usually private organisational knowledge: source code, business rules, policies, customer histories, product definitions, operational procedures, regulations, contracts, production incidents, architecture decisions, and decades of accumulated experience.
 
-A frontier model may work effectively with patterns in Python, English, accounting principles, common ways for web services to communicate—often called **REST APIs**—and general software structure. That shorthand is sometimes described as understanding, but it does not give the model automatic knowledge of the exact way a particular bank calculates risk, how a hospital routes clinical work, why an airline reservation system behaves strangely in unusual cases, or which undocumented rule in older software exists because of a regulatory change twenty years ago.
-
-That knowledge lives inside the enterprise. The economic question is whether the organisation can make it usable by AI.
+A frontier model may work effectively with patterns in Python, English, accounting principles, common ways for web services to communicate—often called **REST APIs**—and general software structure. That shorthand is sometimes described as understanding, but it does not give the model automatic knowledge of the exact way a particular bank calculates risk, how a hospital routes clinical work, why an airline reservation system behaves strangely in unusual cases, or which undocumented rule in older software exists because of a regulatory change twenty years ago. That knowledge lives inside the enterprise. The economic question is whether the organisation can make it usable by AI.
 
 ## The Model Is Not the Enterprise
 
@@ -48,9 +46,7 @@ If the bank simply connects a chatbot to a few documents, the result may be usef
 
 Now imagine a different architecture. The bank indexes its source code, design documents, database schemas, API specifications, architecture decisions, incident reports, compliance policies, test suites, customer-support issues, and release histories. It applies permissions so the AI can retrieve only what each user is allowed to see. It records which documents were used, which model produced the answer, which tools were called, and which human approved the action. It tests generated code before merging it, routes risky recommendations to human review, and keeps audit trails for regulated workflows.
 
-The AI model has not changed. The enterprise around it has changed. General intelligence has been connected to organisational memory, governance, and workflow.
-
-That is the Enterprise Intelligence Layer.
+The AI model has not changed; the enterprise around it has. General intelligence has been connected to organisational memory, governance, and workflow. That is the Enterprise Intelligence Layer.
 
 ## What the Enterprise Must Own
 

@@ -38,7 +38,7 @@ Developers use it to explain unfamiliar code, draft tests, produce documentation
 
 The economics remain attractive where failure is cheap and feedback is fast. They remain weak where mistakes are difficult to detect or costly to reverse. AI adoption grows, but concentrates in tasks whose output can be tested objectively.
 
-**Signals to watch:** persistent model instability; review time rising with generated volume; weak performance in large unfamiliar repositories; tight organisational limits on agent authority.
+**How we would recognise this future:** AI behaviour would remain unstable, and the time people spend checking generated work would rise as the volume grows. AI would continue to struggle with large, unfamiliar software projects, while organisations would keep strict limits on what agents may do.
 
 ## Scenario Two: Ordinary Development Infrastructure
 
@@ -48,7 +48,7 @@ Reusable software structures, precisely defined connections, automated rules, pi
 
 Non-programmers build more internal tools. Legacy modernisation becomes a major use case because AI can document old systems, map dependencies, generate **characterisation tests** that record what an existing system currently does, and work through governed APIs. The job of the programmer moves upward toward requirements, architecture, evaluation, and stewardship.
 
-**Signals to watch:** falling cost per successfully completed task; stable model interfaces; widespread automated evaluation; strong visual and behavioural testing integrated into agent workflows.
+**How we would recognise this future:** the total cost of completing a dependable task would keep falling—not merely the cost of generating code. Model upgrades would cause fewer disruptions, and automatic checks of behaviour, security, and screen design would become a normal part of AI-assisted work.
 
 ## Scenario Three: Generation Outruns Trust
 
@@ -60,7 +60,7 @@ This is the quadrant in which my experience designing the language-learning scre
 
 The limiting factor is neither typing nor model intelligence. It is disciplined acceptance: evidence that the generated system is fit to keep.
 
-**Signals to watch:** more security weaknesses and more accumulated shortcuts that make software expensive to maintain—known as **technical debt**; larger review queues; many prototypes but few dependable releases; and developers spending more time checking than creating.
+**How we would recognise this future:** organisations would produce many impressive prototypes but relatively few dependable releases. Security weaknesses and hard-to-maintain shortcuts would accumulate, review queues would grow, and developers would spend more time checking generated work than creating new things.
 
 ## Scenario Four: The Agentic Software Organisation
 
@@ -76,7 +76,7 @@ The future unit of production may therefore be neither the unaided programmer no
 
 This does not create a human company. Agents do not acquire culture, responsibility, friendship, fear, or moral standing because they coordinate tasks. Capability must still be separated from authority, and people remain accountable for what the organisation permits the system to do.
 
-**Signals to watch:** agents maintaining real products over time; safe coordination across specialised agents; automatic rollback and audit; evidence that generated systems remain coherent after repeated change.
+**How we would recognise this future:** agents would maintain real products successfully over long periods, not merely create demonstrations. Specialised agents would work together safely, systems could automatically record and reverse changes, and repeated AI modifications would not gradually make the software incoherent.
 
 ## Why the Forecast May Still Be Too Small
 

@@ -116,11 +116,7 @@ These examples are vendor and media reports, so they should not be treated as un
 
 ## Where AI Enters
 
-AI is usually discussed as a way to create new software.
-
-That may not be its largest economic opportunity.
-
-AI may be extraordinarily valuable because it can help humans understand existing software.
+AI is usually discussed as a way to create new software, but that may not be its largest economic opportunity. It may be extraordinarily valuable because it can help humans understand existing software.
 
 It can analyse source code, explain old functions, generate documentation, identify dependencies, suggest APIs, translate between programming languages, detect dead code, summarise database schemas, compare old and new behaviour, generate tests, and help engineers reason about migration paths.
 

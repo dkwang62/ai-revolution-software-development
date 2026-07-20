@@ -89,21 +89,7 @@ Once I supplied screenshots, the AI system could recognise many of the defects a
 
 Logic often has crisp tests: given this input, did the order change state? Visual quality depends on geometry, fonts, screen sizes, language, accessibility settings, hierarchy, and human perception. Valid source code does not prove that a screen is usable.
 
-The remedy is an engineering loop:
-
-```text
-generate
-↓
-render at realistic sizes and states
-↓
-measure overflow and run visual tests
-↓
-inspect the image
-↓
-revise and repeat
-↓
-human judges the experience
-```
+The remedy is an engineering loop: generate the interface, render it at realistic sizes and in realistic states, measure obvious defects, inspect the image, revise, and repeat. The final question—whether the experience is clear and worthwhile—still requires human judgement.
 
 Frameworks and design systems prevent predictable mistakes. Browser and **user-interface (UI) tests** can render several screen sizes. Screenshot comparisons can expose unintended change. Accessibility tools can detect many measurable defects. AI can run these checks, interpret results, and attempt repairs. Humans should increasingly judge whether the experience is clear and worthwhile rather than repeatedly finding that a button is too narrow.
 

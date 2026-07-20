@@ -22,7 +22,7 @@ The solution is not to pretend AI is deterministic. The solution is to design hy
 
 Another distinction lies underneath this problem. AI often gives similar answers when explaining established knowledge, such as Einstein's theory of relativity, but produces different answers when asked to design a hotel reservation system. The difference is not captured by calling one task deterministic and the other probabilistic.
 
-AI does not possess direct access to objective truth. It constructs responses from patterns learned across the body of human knowledge represented in its training data. Where humanity has reached broad agreement, AI tends to produce consistent answers. Where experts disagree, AI should reflect disagreement. Where no established answer exists, AI generates new possibilities by combining learned patterns.
+AI does not possess direct access to objective truth. It constructs responses from patterns learned across the body of human knowledge represented in its training data. Where humanity has reached broad agreement, AI tends to produce consistent answers. Where experts disagree, AI should reflect disagreement. Where no established answer exists, AI generates new possibilities by combining learned patterns. That is why two different designs for a hotel-booking system can both be reasonable, while two conflicting explanations of an established scientific theory usually signal that at least one explanation needs checking.
 
 Engineering sits largely in the second and third categories. It seeks fitness for purpose under constraints, not a single universal answer.
 
@@ -106,6 +106,8 @@ This is ordinary software engineering applied to AI output.
 
 The difference is that the AI layer may produce richer, more flexible, and less predictable proposals. The validation layer must decide which proposals can proceed.
 
+In the refund example, validation checks that the order exists, the customer is eligible, the permitted period has not expired, and the proposed amount matches the transaction. The AI identifies the kind of request; validation determines whether its proposal is allowed to continue.
+
 ## Tool Use
 
 AI should not be trusted to perform every operation from memory.
@@ -113,6 +115,8 @@ AI should not be trusted to perform every operation from memory.
 If exact calculation is required, use a calculator or deterministic function. If current information is required, query an authorised database or retrieval system. If code correctness matters, run tests. If syntax matters, use a compiler. If permissions matter, check the access-control system.
 
 AI can decide which tool may be useful, but the tool should provide the authoritative result.
+
+For the refund request, the AI may recognise that it needs the customer's order. An authorised order system—not the model's memory—must supply the real purchase date, amount, and status.
 
 This pattern combines probabilistic interpretation with deterministic execution:
 
@@ -152,6 +156,8 @@ Production AI systems therefore need repeated tests that reveal whether a change
 
 Before changing a model or prompt, teams should rerun evaluations. They should record which model and prompt produced which output. They should preserve the ability to investigate failures. In high-risk systems, they may need rollback plans.
 
+For example, a customer-service team can preserve a set of earlier refund requests, including difficult and unusual cases. Before adopting a new model or prompt, it reruns those cases to see whether the system still classifies them correctly and applies the same safeguards.
+
 Model behaviour is part of system behaviour.
 
 ## Fallback and Escalation
@@ -161,6 +167,8 @@ Reliable systems do not assume everything works.
 They ask what happens when it does not.
 
 If the model is uncertain, validation fails, required data is missing, or consequences are serious, the system should have fallback and escalation paths. It may retry with better context. It may switch to a more capable model. It may fall back to a deterministic workflow. It may ask the user for clarification. It may send the case to a human.
+
+If the refund email contains no order number, the system should not invent one or approve the payment. It can ask the customer for the missing information or send the case to a person who can investigate.
 
 Reliability does not require AI to be perfect. It requires the system to detect, contain, and recover from AI failure.
 

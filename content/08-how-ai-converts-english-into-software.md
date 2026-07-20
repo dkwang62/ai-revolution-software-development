@@ -388,6 +388,8 @@ include docstring
 
 A plausible output becomes:
 
+You do not need to understand every symbol in the code below. Notice only that the longer request produced code containing each rule the user specified: the name, missing values, the empty-list error, rounding, type information, and a short description.
+
 ```python
 from typing import Iterable
 
@@ -404,25 +406,7 @@ The longer prompt costs more because the model must read and represent more inpu
 
 But the longer prompt may reduce ambiguity. It may prevent the model from inventing the wrong behaviour.
 
-This is the trade-off:
-
-```text
-Short prompt
-↓
-fewer tokens
-↓
-cheaper
-↓
-more assumptions
-
-Longer precise prompt
-↓
-more tokens
-↓
-more expensive
-↓
-fewer hidden assumptions
-```
+This is the trade-off: a short prompt uses fewer tokens and costs less, but leaves more assumptions for the model to make. A longer, more precise prompt uses more tokens and may cost more, but exposes more of the intended behaviour.
 
 The cheapest prompt is not always the most economical prompt. If a vague prompt produces wrong software, the cost returns later as debugging, testing, rework, or failure.
 
