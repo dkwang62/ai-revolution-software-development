@@ -48,31 +48,29 @@
     }
   }
 
-  .book-contents-hint {
-    display: none;
-  }
-
   .book-contents-panel {
+    min-height: 0;
+    flex: 1 1 auto;
     overflow-y: auto;
     overscroll-behavior: contain;
-    padding: 0.25rem 0 1rem;
+    padding: 0 0 0.75rem;
     scrollbar-width: thin;
   }
 
   .book-contents-section {
-    margin-top: 1rem;
+    margin-top: 0.65rem;
 
     &:first-child {
-      margin-top: 0.75rem;
+      margin-top: 0.2rem;
     }
 
     h3 {
-      margin: 0 0 0.25rem;
+      margin: 0 0 0.15rem;
       color: var(--secondary);
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       font-weight: $boldWeight;
-      letter-spacing: 0.035em;
-      line-height: 1.35;
+      letter-spacing: 0.025em;
+      line-height: 1.25;
       text-transform: uppercase;
     }
 
@@ -91,10 +89,10 @@
       border-left: 3px solid transparent;
       border-radius: 0 0.35rem 0.35rem 0;
       color: var(--darkgray);
-      font-size: 0.91rem;
+      font-size: 0.84rem;
       font-weight: $normalWeight;
-      line-height: 1.3;
-      padding: 0.34rem 0.5rem 0.34rem 0.65rem;
+      line-height: 1.22;
+      padding: 0.22rem 0.45rem 0.22rem 0.55rem;
 
       &:hover {
         background: var(--highlight);
@@ -116,11 +114,7 @@
     }
 
     summary {
-      cursor: default;
-
-      &::after {
-        display: none;
-      }
+      display: none;
     }
   }
 
@@ -130,17 +124,22 @@
     order: -1;
 
     summary {
+      width: 2.5rem;
       min-height: 2.25rem;
+      box-sizing: border-box;
+      justify-content: center;
       border: 1px solid var(--lightgray);
       border-radius: 0.5rem;
-      padding: 0.25rem 0.65rem;
+      padding: 0.25rem;
 
-      .book-contents-hint {
-        display: inline;
-        margin-left: auto;
-        color: var(--secondary);
-        font-size: 0.8rem;
-        font-weight: $normalWeight;
+      &::after {
+        display: none;
+      }
+
+      .book-contents-menu-icon {
+        color: var(--darkgray);
+        font-size: 1.15rem;
+        line-height: 1;
       }
     }
 

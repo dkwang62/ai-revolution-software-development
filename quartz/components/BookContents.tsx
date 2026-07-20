@@ -11,9 +11,10 @@ const BookContents: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
 
   return (
     <details class={classNames(displayClass, "book-contents")}>
-      <summary>
-        <span>Table of contents</span>
-        <span class="book-contents-hint">Menu</span>
+      <summary aria-label="Open table of contents">
+        <span class="book-contents-menu-icon" aria-hidden="true">
+          ☰
+        </span>
       </summary>
       <nav class="book-contents-panel" aria-label="Book table of contents">
         {bookSections.map((section) => (
