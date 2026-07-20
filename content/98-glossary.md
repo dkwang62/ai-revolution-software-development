@@ -34,6 +34,10 @@ An agentic loop is the repeated cycle through which an agent understands a task,
 
 An AI model is a mathematical representation of patterns learned from data. It is not a database, search engine, encyclopedia, or collection of hand-written rules. During training, the model's internal parameters are adjusted so that it can later produce useful responses during inference.
 
+## AI Accelerator and Tensor Processing Unit (TPU)
+
+An AI accelerator is a processor designed especially for the mathematical operations used by AI. A Tensor Processing Unit, or TPU, is Google's name for its family of AI accelerators. GPUs can also accelerate AI, but they began as more general processors for graphics and parallel calculation. The different names matter less than the common purpose: perform large amounts of AI mathematics quickly and efficiently.
+
 ## Architecture
 
 Architecture is the high-level structure of a software system: its components, boundaries, data flows, responsibilities, integrations, trade-offs, and constraints. As AI makes code easier to generate, architecture becomes more important because someone still has to decide how the system should fit together.
@@ -188,6 +192,10 @@ A foundation model is a large general-purpose AI model trained on broad data and
 
 A library is reusable code that a program calls for a particular capability. A framework supplies a larger structure within which developers build an application. Both reduce the need to create common mechanisms from the beginning.
 
+## Floating-Point Precision and FP4
+
+Floating-point precision describes how many binary digits a computer uses to represent a number and therefore how much detail that number can retain. FP4 uses only four bits per number. Shorter numbers need less memory and can be moved and calculated more cheaply, but may lose accuracy. AI engineers therefore choose precision according to the task instead of assuming that more detail is always worth its cost.
+
 ## Governance
 
 Governance is the system of authority and oversight that decides who may use a technology, for what purpose, with which data, under which rules, and with whose approval. Good governance connects capability to responsibility.
@@ -219,6 +227,10 @@ High Bandwidth Memory is memory designed to move very large quantities of data t
 ## Inference
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
+
+## Hybrid AI Architecture
+
+A hybrid AI architecture combines different methods instead of depending on one technique for every job. A future system might use attention for relationships within the current material, a state-space method for efficient sequence processing, persistent memory for long projects, specialised models for particular tasks, and conventional software for exact checks.
 
 ## Latency
 
@@ -375,6 +387,10 @@ A stakeholder is a person or group affected by a project or able to influence it
 ## Startup
 
 A startup is a young organisation trying to discover and grow a repeatable business model, often under significant uncertainty. Not every new or small business is a startup in this sense.
+
+## State-Space Model
+
+A state-space model processes a sequence while carrying forward a changing internal summary, or “state,” of what it has encountered. Unlike standard attention, it does not need to compare every item directly with every other item. This can make long sequences more efficient, although the best current systems may combine state-space methods with attention rather than choosing only one.
 
 ## System Integration
 

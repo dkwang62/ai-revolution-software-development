@@ -97,6 +97,7 @@ These provider documents use different controls and labels, but support the same
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.
 - Microsoft Corporation. [Form 10-K for the fiscal year ended 30 June 2025.](https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm)
 - Alphabet Inc. [Form 10-K for the year ended 31 December 2025.](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm)
+- Microsoft Corporation. [“FY 2026 Third Quarter Earnings Conference Call.”](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3) 29 April 2026.
 - NVIDIA. [“NVIDIA Announces Financial Results for First Quarter Fiscal 2027.”](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) 20 May 2026.
 
 Microsoft states that it will continue investing in capital expenditure for cloud growth, AI infrastructure, and training. Alphabet reported US\$91.4 billion of 2025 capital expenditure, primarily for technical infrastructure, and said it was scaling infrastructure particularly for AI. NVIDIA's data-centre revenue shows demand reaching a major compute supplier.
@@ -106,20 +107,23 @@ These disclosures support a limited inference: informed companies are committing
 ## The unfinished revolution and its technical trajectory
 
 - Vaswani, Ashish, et al. [“Attention Is All You Need.”](https://research.google/pubs/attention-is-all-you-need/) _Advances in Neural Information Processing Systems 30_, 2017.
+- Gu, Albert, and Tri Dao. [“Mamba: Linear-Time Sequence Modeling with Selective State Spaces.”](https://arxiv.org/abs/2312.00752) arXiv preprint, 2023.
+- Behrouz, Ali, Peilin Zhong, and Vahab Mirrokni. [“Titans: Learning to Memorize at Test Time.”](https://research.google/pubs/titans-learning-to-memorize-at-test-time/) Google Research, 2025.
 - Micron Technology. [“HBM4.”](https://www.micron.com/products/memory/hbm/hbm4) Accessed 20 July 2026.
 - NVIDIA. [“NVIDIA Kicks Off the Next Generation of AI With Rubin.”](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer) 5 January 2026.
 - NVIDIA. [“Introducing NVIDIA BlueField-4-Powered CMX Context Memory Storage Platform for the Next Frontier of AI.”](https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/) 16 March 2026.
 
-Used in “Five-Year and Ten-Year Scenarios.” The Transformer paper supports the historical account of attention-based architecture. The hardware sources document current attempts to increase memory bandwidth, reduce data-movement bottlenecks, and retain agent context more economically. Micron and NVIDIA are describing their own products, so performance figures are attributed claims rather than independent measurements. The five- and ten-year implications remain explicitly conditional forecasts.
+Used in “Five-Year and Ten-Year Scenarios.” The Transformer paper supports the historical account of attention-based architecture. Mamba and Titans document two research directions intended to make long-sequence processing or memory more efficient; neither proves that the Transformer will be replaced. The hardware sources document current attempts to increase memory bandwidth, reduce data-movement bottlenecks, and retain agent context more economically. Micron and NVIDIA are describing their own products, so performance figures are attributed claims rather than independent measurements. The five- and ten-year implications remain explicitly conditional forecasts.
 
 ## Competing organisational strategies
 
 - Alphabet Inc. [“2025 Q4 Earnings Call.”](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx) 4 February 2026.
+- Anthropic. [“Anthropic Raises $30 Billion in Series G Funding at $380 Billion Post-Money Valuation.”](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) 12 February 2026.
 - Anthropic. [“Anthropic Raises $65 Billion in Series H Funding at $965 Billion Post-Money Valuation.”](https://www.anthropic.com/news/series-h) 28 May 2026.
 - SpaceX. [“xAI Joins SpaceX.”](https://x.ai/news/xai-joins-spacex) 2 February 2026.
 - NVIDIA. [“NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026.”](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/) 25 February 2026.
 
-These sources show distinct capital-allocation strategies: vertically integrated research, models, custom processors, cloud, and distribution at Alphabet; specialised model and agent development at Anthropic; the combination of xAI with SpaceX; and NVIDIA's expansion across processors, networking, and memory systems. They support analysis of strategic direction, not predictions of investment return or declarations of an eventual winner.
+These sources show distinct capital-allocation strategies: vertically integrated research, models, custom processors, cloud, and distribution at Alphabet; specialised model and agent development at Anthropic; the combination of xAI with SpaceX; and NVIDIA's expansion across processors, networking, and memory systems. Anthropic's coding-product figures are company-reported annualised revenue rates, not audited productivity measures. The sources support analysis of strategic direction, not predictions of investment return or declarations of an eventual winner.
 
 ## Enterprise AI returns and shared infrastructure
 
