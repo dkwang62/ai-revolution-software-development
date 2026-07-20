@@ -15,9 +15,11 @@ That means every technical feature of AI must be analysed economically. Larger m
 The economics of AI begins with a simple distinction:
 
 ```text
-Training creates capability.
-Inference spends capability.
+Training builds capability.
+Inference pays the running cost of using it.
 ```
+
+The trained model is reusable. Each request consumes electricity, chip time, and data-centre capacity—not a portion of the model's knowledge.
 
 ## Training as Capital Investment
 

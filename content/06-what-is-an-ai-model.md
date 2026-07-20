@@ -24,7 +24,7 @@ changes in the world
 
 Traditional software relies mainly on procedures people specify. An AI model adds a different mechanism: it learns numerical relationships from examples. That difference explains both its flexibility and its unreliability.
 
-An AI model is not a huge database, a search engine, or millions of handwritten IF–THEN rules. It is a **learned mathematical representation of patterns found in data**.
+An AI model is not a huge database, a search engine, or millions of handwritten IF–THEN rules. It is a vast collection of numerical settings shaped by examples. During training, those settings are adjusted until the model becomes useful at recognising or producing patterns in language, images, sound, or code. The technical description is that it is a **learned mathematical representation of patterns found in data**. The simpler idea is more important: examples shape the model instead of programmers writing every rule by hand.
 
 I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a plausible result.
 
@@ -64,7 +64,7 @@ Training is therefore different from a programmer entering facts into a database
 
 ## Neural Networks Learn the Relationships
 
-A **neural network** is the mathematical machinery commonly used to learn those relationships. The name comes from a loose historical analogy with connected biological neurons. It does not mean engineers have built a small human brain.
+A **neural network** is a mathematical system commonly used to learn those relationships. Before training, its numerical settings are mostly unhelpful. Training adjusts them; afterwards, the trained neural network is the AI model people use. In everyday technical discussion, people commonly use _network_ and _model_ for the same trained system. The name comes from a loose historical analogy with connected biological neurons. It does not mean engineers have built a small human brain.
 
 Before entering the network, information is divided into manageable units. Language models use **tokens**, which may be words, parts of words, punctuation, or pieces of code. Images can be divided into patches; audio can be represented as segments of a signal. Each unit becomes numbers that the network transforms through layers.
 

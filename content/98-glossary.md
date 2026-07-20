@@ -250,7 +250,7 @@ Natural language programming is the use of ordinary language to specify behaviou
 
 ## Neural Network
 
-A neural network is the machinery used to learn patterns from examples. It consists of layers of mathematical operations that gradually transform input into useful internal representations. In this book, the important point is not the mathematics but the shift from hand-written rules to learned relationships.
+A neural network is a mathematical system that learns patterns from examples. Training adjusts its numerical settings; afterwards, the trained neural network is commonly called an AI model. It consists of layers of mathematical operations that repeatedly transform numerical representations. In this book, the important point is the shift from hand-written rules to learned relationships.
 
 ## Open-Source Software
 

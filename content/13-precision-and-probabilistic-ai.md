@@ -58,7 +58,9 @@ This division of labour is central to reliable AI systems.
 
 One safeguard is structured output.
 
-Instead of asking an AI system to respond freely, software can require named fields and permitted kinds of answers. Programmers call this required shape a **schema**:
+Instead of asking an AI system to write an unrestricted paragraph, software can make it fill in a form. The form might have boxes for the type of request, the order number, the recommended next step, and the evidence. Ordinary software can then check whether every required box is filled and whether each answer is one of the allowed choices.
+
+Programmers call the formal definition of those fields and choices a **schema**:
 
 ```text
 category: refund_request | complaint | technical_support | other
@@ -67,6 +69,8 @@ order_id: string or null
 recommended_action: approve | reject | manual_review
 evidence: short explanation
 ```
+
+The vertical lines mean "choose one of these options," and `null` means that no order number was supplied.
 
 Structure reduces ambiguity. It allows conventional software to validate fields, reject invalid values, require missing data, and route cases appropriately.
 

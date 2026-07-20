@@ -93,9 +93,9 @@ This is the difference between raw context and effective context. Raw context is
 
 ## Enterprise Knowledge Architecture
 
-An Enterprise Intelligence Layer rests on four foundations: knowledge, organisation, retrieval, and governance.
+An Enterprise Intelligence Layer rests on four foundations: knowledge, organisation, retrieval, and governance. In ordinary language, a company must gather what it knows, organise it, fetch only what is relevant, and control how it may be used.
 
-The organisation first needs knowledge in machine-usable form: code, documents, decisions, policies, logs, contracts, diagrams, process descriptions, tickets, messages, meeting transcripts, and structured data. It then needs to organise that knowledge so AI systems do not reason from noise. Material must be cleaned, indexed, tagged, permissioned, updated, deduplicated, summarised, and connected.
+The organisation first needs knowledge in a form its software can find and use: code, documents, decisions, policies, logs, contracts, diagrams, process descriptions, tickets, messages, meeting transcripts, and structured data. It must remove duplicates, keep material current, connect related information, and mark who is allowed to see it. Formal techniques such as indexing and tagging help software find the right material later. Otherwise AI systems will reason from noise.
 
 Retrieval is the next foundation. The system must decide which knowledge matters for each task, because the AI should not receive everything. It should receive what is relevant, current, authorised, and useful.
 
@@ -130,6 +130,8 @@ Enterprise AI should not be justified by vague claims that everyone will become 
 This is also how current evidence should be read. [McKinsey estimated in 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases, with much of the potential concentrated in customer operations, marketing and sales, software engineering, and research and development. That estimate is not proof of realised enterprise-wide returns. It suggests that credible business cases should begin with specific workflows whose outcomes can be measured.
 
 For each workflow, the organisation can estimate its **cost base** (what the work costs today), the share that AI could assist, the measured productivity improvement, realistic **adoption** (how many people will actually use it), the **capture rate** (how much of the theoretical improvement becomes real financial value), and the cost of subscriptions, inference, integration, governance, security, training, and helping people adopt the new way of working.
+
+Suppose a task currently costs $1 million a year. AI can assist with half the work, half the staff actually adopt it, and half of the measured improvement becomes real financial value. The estimated annual gross benefit is $125,000—not $1 million. The organisation must still subtract the cost of the AI system, integration, checking, security, and training.
 
 The basic logic is:
 

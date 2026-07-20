@@ -43,6 +43,8 @@ tests verify
 humans remain accountable
 ```
 
+Giving an AI tools is like giving a worker keys. Permissions decide which rooms the keys can open. Approval rules decide which actions still require the owner's consent. The agent may be capable of an action without being authorised to perform it. That separation is deliberate.
+
 This is why an agent may be confined to a safe area, allowed to read but not change information, given access only to specified systems, required to ask before important actions, limited in how frequently it can act, recorded while it works, and provided with a way to undo changes. Industry terms include **sandbox** (an isolated working area), **read-only mode**, **scoped credentials** (login permissions limited to a specific purpose), **approval gate**, **rate limit**, **audit trail**, and **rollback** (restoring an earlier state). These protections are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
 
 ## Why Codex Felt Different

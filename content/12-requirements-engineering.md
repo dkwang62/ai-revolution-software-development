@@ -12,6 +12,8 @@ The deeper shift is from programming languages toward requirements. If AI can pr
 
 This is why the disciplined work of defining a system deserves its own place in the book. It asks what the system should do, why it should do it, when it should behave differently, and how anyone will know whether the result is correct. The industry calls this **requirements engineering**. It is broader than prompt engineering, which focuses on the instructions supplied to an AI system.
 
+The main terms form a simple ladder. A **prompt** says what you are asking the AI to do now. A **requirement** states what the finished system must do. A **specification** makes the requirements precise enough to build and test. **Evaluation** asks whether the result is useful. **Verification** asks whether it satisfied the stated rules. **Architecture** decides how the parts of the system will work together.
+
 Traditional software often followed a path like this:
 
 ```text
