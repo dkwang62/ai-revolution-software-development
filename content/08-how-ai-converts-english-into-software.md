@@ -220,6 +220,8 @@ The model now has a numerical version of the prompt.
 
 The prompt passes through layers.
 
+We cannot open the model and find the following English notes written inside it. They are a human-readable reconstruction: a teaching aid for the relationships that the model's numerical processing must somehow support.
+
 Early processing may recognise local patterns:
 
 ```text
@@ -240,7 +242,7 @@ operation = compute average
 output = number
 ```
 
-The model may also infer common programming concerns:
+Those numerical relationships may support conclusions that we can paraphrase as common programming concerns:
 
 ```text
 Need a function name.
@@ -476,7 +478,7 @@ summarise result
 
 Each loop consumes more tokens and compute.
 
-This is why "reasoning" has an economic meaning. It is not just intelligence. It is work performed by the model.
+This is why "reasoning" has an economic meaning. It is not a magic quantity called intelligence. It is additional work performed while the model connects constraints, explores possible steps, uses tools, checks results, and revises. That work may improve the chance of success, but it also consumes time and computation.
 
 ## The Role of Context
 

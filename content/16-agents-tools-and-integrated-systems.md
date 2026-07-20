@@ -26,6 +26,8 @@ verify or stop
 
 The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and use the system's response as feedback for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
 
+Reasoning becomes more valuable here because the agent is not merely composing an answer. It must decide what evidence to inspect, which authorised action to try, what the result means, and whether to continue. It also becomes more costly: each search, tool call, test, failure, and revision can add inference, waiting time, and verification work. Heavy reasoning is justified when those extra steps reduce the chance of a costly mistake; it is wasteful when a simple, well-specified action would do.
+
 ## From an Answer to an Action
 
 The word _agent_ is used loosely. For this book, an agent is not simply a clever chatbot or any program that calls a model. It is an engineered system that combines a model with a goal, context, tools, state, feedback, and rules for continuing or stopping.

@@ -124,17 +124,32 @@ For software development, the value is obvious in principle. Many software ideas
 
 ## Reasoning
 
-Reasoning is one of the most economically important and difficult AI capabilities.
+Reasoning is one of the most economically important and difficult AI capabilities. In plain language, it is the work of turning a goal into a sequence of decisions and checks.
 
 Software development requires multi-step reasoning. A model may need to understand a requirement, inspect existing code, infer architecture, identify risks, plan a change, generate code, write tests, interpret failures, and revise. Simple next-token fluency is not enough for reliable engineering.
 
-Better reasoning can produce better software assistance, but it may cost more. Some systems spend more inference time exploring alternatives, checking intermediate steps, or using tools. That can improve quality but increase latency and compute cost.
+Better reasoning can produce better software assistance, but it may cost more. Some systems allow the user or application to set a **reasoning effort**: a relative allowance for how much work the model may do before answering. Product labels vary, but they often resemble low, medium, and high. A higher setting can give the model more opportunity to explore alternatives, check intermediate steps, or decide how to use tools. It can also increase latency—the wait for an answer—and the number of billable tokens or other computing resources used.
 
 The economic question is whether the improved outcome justifies the extra inference cost.
 
 For a trivial formatting change, expensive reasoning is wasteful. For a database migration, security-sensitive change, or legacy-system analysis, deeper reasoning may be cheap compared with the cost of a mistake.
 
-This suggests that future AI software tools may route tasks dynamically. Simple tasks may go to small fast models. Complex tasks may go to more capable models or multi-step workflows. High-risk tasks may require verification, tool use, and human approval.
+This suggests that AI software tools may route tasks dynamically. Simple tasks may go to small fast models using light reasoning. Complex tasks may go to more capable models or heavier multi-step workflows. High-risk tasks may require verification, tool use, and human approval regardless of the reasoning level.
+
+### Choosing the Appropriate Reasoning Level
+
+The appropriate level is the lowest one that completes the task reliably enough to satisfy its acceptance criteria. More reasoning is not automatically better. It can become slow, expensive, or repetitive when the task is simple.
+
+| Reasoning level | Appropriate tasks | Book-writing examples |
+| --- | --- | --- |
+| **Light** | Direct extraction, classification, formatting, short summaries, or tightly specified changes | Correct spelling, reformat Markdown, change a heading, or update a build number |
+| **Balanced** | Comparing a few alternatives, revising a section, explaining a concept, or debugging a bounded problem | Improve one chapter, compare two passages, check clarity, or strengthen an example |
+| **Heavy** | Many interacting constraints, unfamiliar material, architecture, risk analysis, or work whose errors are costly | Test the whole book's argument, redesign chapter structure, reconcile conflicting reviews, or examine factual weaknesses |
+| **Maximum or extended** | Rare, difficult, quality-first work where an incremental improvement could materially affect the outcome and extra delay is acceptable | A final adversarial review of the entire manuscript or a consequential claim involving many sources |
+
+These are starting points, not laws. A short question can hide a difficult problem, while a long task can sometimes be mostly mechanical. The model, context, tools, and quality standard all matter. The only dependable method is to test representative tasks and compare success, waiting time, token use, human correction, and total cost.
+
+The economic comparison must include more than the price of one request. Heavy reasoning may cost more per attempt but reduce failed attempts, human review, or expensive mistakes. Light reasoning may be cheaper per attempt but expensive overall if the work must be repeated. The goal is not the cheapest answer. It is the lowest total cost for a completed and verified task.
 
 ## Why Some Tasks Consume More Tokens
 

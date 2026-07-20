@@ -84,6 +84,14 @@ These vendor-published cases support the architectural examples in “The Legacy
 
 Used in “The Economics of Models.” Epoch's figures are modelled estimates, NVIDIA's figures are company financial results, and Gartner's US\$2.59 trillion forecast covers a broad market definition. The book keeps these categories separate.
 
+## Reasoning effort, cost, and latency
+
+- OpenAI. [“Model Guidance.”](https://developers.openai.com/api/docs/guides/latest-model) Accessed 20 July 2026.
+- Google AI for Developers. [“Gemini Thinking.”](https://ai.google.dev/gemini-api/docs/generate-content/thinking) Accessed 20 July 2026.
+- Anthropic. [“Extended Thinking.”](https://platform.claude.com/docs/en/build-with-claude/extended-thinking) Accessed 20 July 2026.
+
+These provider documents use different controls and labels, but support the same limited conclusion: additional reasoning can improve difficult work while increasing token use, latency, or cost. They also recommend matching effort to the task and evaluating the trade-off on representative work. Product names, defaults, and available levels change, so the main text describes light, balanced, heavy, and maximum reasoning as durable categories rather than instructions for one interface.
+
 ## Capital allocation as evidence of belief
 
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.
@@ -94,6 +102,24 @@ Used in “The Economics of Models.” Epoch's figures are modelled estimates, N
 Microsoft states that it will continue investing in capital expenditure for cloud growth, AI infrastructure, and training. Alphabet reported US\$91.4 billion of 2025 capital expenditure, primarily for technical infrastructure, and said it was scaling infrastructure particularly for AI. NVIDIA's data-centre revenue shows demand reaching a major compute supplier.
 
 These disclosures support a limited inference: informed companies are committing substantial capital because they believe the opportunity warrants the risk. Expenditure is evidence of belief, not proof that the investment will earn an adequate return.
+
+## The unfinished revolution and its technical trajectory
+
+- Vaswani, Ashish, et al. [“Attention Is All You Need.”](https://research.google/pubs/attention-is-all-you-need/) _Advances in Neural Information Processing Systems 30_, 2017.
+- Micron Technology. [“HBM4.”](https://www.micron.com/products/memory/hbm/hbm4) Accessed 20 July 2026.
+- NVIDIA. [“NVIDIA Kicks Off the Next Generation of AI With Rubin.”](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer) 5 January 2026.
+- NVIDIA. [“Introducing NVIDIA BlueField-4-Powered CMX Context Memory Storage Platform for the Next Frontier of AI.”](https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/) 16 March 2026.
+
+Used in “Five-Year and Ten-Year Scenarios.” The Transformer paper supports the historical account of attention-based architecture. The hardware sources document current attempts to increase memory bandwidth, reduce data-movement bottlenecks, and retain agent context more economically. Micron and NVIDIA are describing their own products, so performance figures are attributed claims rather than independent measurements. The five- and ten-year implications remain explicitly conditional forecasts.
+
+## Competing organisational strategies
+
+- Alphabet Inc. [“2025 Q4 Earnings Call.”](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx) 4 February 2026.
+- Anthropic. [“Anthropic Raises $65 Billion in Series H Funding at $965 Billion Post-Money Valuation.”](https://www.anthropic.com/news/series-h) 28 May 2026.
+- SpaceX. [“xAI Joins SpaceX.”](https://x.ai/news/xai-joins-spacex) 2 February 2026.
+- NVIDIA. [“NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026.”](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/) 25 February 2026.
+
+These sources show distinct capital-allocation strategies: vertically integrated research, models, custom processors, cloud, and distribution at Alphabet; specialised model and agent development at Anthropic; the combination of xAI with SpaceX; and NVIDIA's expansion across processors, networking, and memory systems. They support analysis of strategic direction, not predictions of investment return or declarations of an eventual winner.
 
 ## Enterprise AI returns and shared infrastructure
 

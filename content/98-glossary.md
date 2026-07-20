@@ -38,6 +38,10 @@ An AI model is a mathematical representation of patterns learned from data. It i
 
 Architecture is the high-level structure of a software system: its components, boundaries, data flows, responsibilities, integrations, trade-offs, and constraints. As AI makes code easier to generate, architecture becomes more important because someone still has to decide how the system should fit together.
 
+## Attention
+
+Attention is a mechanism that helps an AI model determine which parts of its input are most relevant to one another. In the sentence “The student put the book into her bag because she needed it later,” attention helps the model connect “it” with “the book.” The Transformer architecture uses attention extensively to learn relationships across language, code, images, and other information.
+
 ## Audit Trail and Auditability
 
 An audit trail is a time-ordered record of what happened: who acted, what information was used, what changed, and who approved it. Auditability is the ability to use those records to reconstruct and check an event. These are important when software affects money, health, safety, or legal obligations.
@@ -73,6 +77,10 @@ A business rule states how an organisation has decided a process should work. Ex
 ## Capital Investment and Capital Expenditure
 
 Capital investment is money spent now to create or improve an asset expected to provide value over several years. Capital expenditure is the accounting term for much of this spending. Building a data centre or training a frontier AI model can require large capital investment.
+
+## Chiplet
+
+A chiplet is one smaller component of a processor package. Instead of manufacturing every function as one enormous chip, designers can combine several specialised chiplets closely together. This can improve manufacturing economics and allow processors, memory, and communications components to be designed for different purposes.
 
 ## Cloud Computing
 
@@ -204,6 +212,10 @@ A guardrail is a rule or technical control that limits an AI system's actions or
 
 A hallucination is an AI output that appears plausible but is wrong, unsupported, fabricated, or misleading. Hallucination happens partly because generative models predict likely responses rather than retrieve guaranteed truth.
 
+## High Bandwidth Memory (HBM)
+
+High Bandwidth Memory is memory designed to move very large quantities of data to and from a processor quickly. Its memory chips are stacked vertically and placed close to an AI processor. A useful analogy is a large pantry built immediately beside a busy kitchen, with many wide doors so ingredients can reach the cooks without delay.
+
 ## Inference
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
@@ -292,9 +304,17 @@ Requirements engineering is the discipline of deciding what a system should do, 
 
 Refactoring improves the internal structure of existing code without intentionally changing what users can do. It may make the code easier to understand, test, maintain, or extend.
 
+## Recurrent Neural Network
+
+A recurrent neural network is a neural-network design often used for sequences before Transformers became dominant. It commonly processes information step by step while carrying a numerical summary of earlier steps forward. This makes sequence order natural, but it can make training slower and distant relationships harder to preserve.
+
 ## Regression Testing
 
 Regression testing reruns earlier tests after a change to check that behaviour which worked before has not been broken. It matters especially when changing a model, prompt, dependency, or shared component.
+
+## Reasoning and Reasoning Effort
+
+In this book, reasoning means the work of connecting a goal to a conclusion or action through intermediate relationships, decisions, and checks. Reasoning effort is a setting available in some AI systems that gives the model relatively more or less opportunity to perform that work before answering. Higher effort may improve difficult analysis, planning, coding, and tool use, but it can also increase waiting time and computing cost. It does not guarantee correctness or replace verification and human judgement.
 
 ## Retrieval
 
@@ -383,6 +403,10 @@ A tokenizer is the system that breaks input into tokens before the model process
 ## Training
 
 Training is the process by which an AI model learns patterns from data. It requires large amounts of computation and adjusts the model's parameters. Training is usually a capital-intensive process; inference is the ongoing cost of using the trained model.
+
+## Transformer
+
+A Transformer is a neural-network architecture introduced in the 2017 paper _Attention Is All You Need_. It uses attention to learn which parts of an input relate to one another and can process many parts in parallel during training. Transformers did not invent generative AI, but they made it practical to build much larger and more capable language models and became a foundation of the current AI revolution.
 
 ## Tool Use
 

@@ -82,6 +82,12 @@ When I ask an AI model to write a Swift function, explain a legal clause, transl
 
 This explains why AI can answer a question it has never seen word for word. It also explains why it can be wrong. Prediction is not truth. A model may generate something plausible but outdated, unsafe, logically weak, or inappropriate for the user's actual situation.
 
+## What AI Reasoning Means
+
+In this book, **reasoning** means the work of connecting a goal to a conclusion or action through several intermediate relationships. For a software task, that may involve comparing requirements, finding dependencies, considering alternatives, choosing a next step, checking a result, and revising after failure.
+
+This is a practical description of capability, not a claim that the model thinks or understands exactly as a person does. Nor can we assume that an explanation produced by the model is a faithful transcript of its hidden internal process. The explanation is another generated output. It may be useful, but important conclusions still require evidence and checking.
+
 Traditional software and learned models therefore have complementary strengths:
 
 | Traditional software           | AI model                                                  |
