@@ -25,7 +25,7 @@ Training is the expensive process that creates or improves a model.
 
 It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. [Epoch AI estimates](https://epoch.ai/trends) that frontier-model training compute has grown at roughly 4–5x per year and that frontier language-model training costs have risen about 3.5x per year since 2020. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race.
 
-Economically, training resembles capital investment. A company spends heavily upfront to create an asset: a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
+Economically, training resembles capital investment: spending money now to create an asset expected to provide value for years. A company spends heavily upfront to create a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
 
 The investment is justified only if the model's future value exceeds the cost of creating and operating it.
 
@@ -35,7 +35,7 @@ Training is therefore not just a technical process. It is the industrial product
 
 ## Inference as Operating Cost
 
-Inference is the use of a trained model.
+Inference is the use of a trained model. It is an operating cost: a recurring expense created while providing the service, rather than the upfront cost of creating the model.
 
 Every time a user asks a question, generates code, summarises a document, analyses an image, or runs an AI feature inside an application, compute is consumed. That compute has cost.
 
@@ -50,11 +50,11 @@ The cost depends on many factors:
 - Number of users.
 - Tool calls.
 - Reasoning time.
-- Whether the model runs locally or in a data centre.
+- Whether the model runs locally or in a data centre, a building filled with networked computers, storage equipment, power systems, and cooling.
 
 This makes inference different from traditional software in an important way. Many conventional software operations are extremely cheap once the software is written. AI interactions can remain relatively expensive because each output requires substantial computation.
 
-This does not mean inference will always be expensive. Hardware improves. Models become more efficient. A system can reuse an earlier result, send an easy request to a smaller model, teach a smaller model from a larger one, or represent the model's numbers more compactly. The industry calls these methods **caching**, **routing**, **distillation**, and **quantisation**. All can reduce cost. Inference cost nevertheless remains central to AI product economics because every new interaction uses computing resources.
+This does not mean inference will always be expensive. Hardware improves. Models become more efficient. A system can reuse an earlier result (**caching**), send an easy request to a smaller model (**routing**), train a smaller model to reproduce useful behaviour from a larger one (**distillation**), or store the model's numbers in a more compact form (**quantisation**). All can reduce cost. Inference cost nevertheless remains central to AI product economics because every new interaction uses computing resources.
 
 This is why inference must be analysed separately from training. Training is the upfront creation of capability; inference is the repeated spending of that capability. Epoch AI tracks inference-cost trends separately and reports rapid but uneven declines in the cost of inference at fixed performance levels. The direction matters: if inference becomes cheaper, more AI features become economically viable; if it remains expensive, AI use must be reserved for higher-value tasks.
 
@@ -242,7 +242,7 @@ Hardware, data centres, energy, chips, and engineering teams determine cost.
 
 Applications determine value.
 
-The hardware shift is visible in company financials. [NVIDIA reported](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) Q1 fiscal 2027 revenue of \$81.6 billion for the quarter ended April 26, 2026, including \$75.2 billion in data-centre revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised compute infrastructure. [Gartner forecast](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) worldwide AI spending of \$2.59 trillion in 2026, a broad figure that includes services, software, models, data, development platforms, and infrastructure. It should not be confused with model training alone.
+The hardware shift is visible in company financial reports. [NVIDIA reported](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) Q1 fiscal 2027 revenue of \$81.6 billion for the quarter ended April 26, 2026, including \$75.2 billion in data-centre revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised computing infrastructure. [Gartner forecast](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) worldwide AI spending of \$2.59 trillion in 2026, a broad figure that includes services, software, models, data, development platforms, and infrastructure. It should not be confused with model training alone.
 
 Software development is the clearest case study because it is already a knowledge-intensive activity. If AI lowers the cost of applying software-engineering knowledge, it changes the economics of the software industry.
 

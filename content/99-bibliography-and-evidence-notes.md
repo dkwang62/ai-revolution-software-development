@@ -8,7 +8,7 @@ This is an explanatory book rather than an academic textbook, but its factual cl
 
 ## Software labour and the human-expertise bottleneck
 
-- U.S. Bureau of Labor Statistics. [“Software Developers, Quality Assurance Analysts, and Testers.”](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) *Occupational Outlook Handbook*, 2024 employment and wage estimates; 2024–2034 projections.
+- U.S. Bureau of Labor Statistics. [“Software Developers, Quality Assurance Analysts, and Testers.”](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) _Occupational Outlook Handbook_, 2024 employment and wage estimates; 2024–2034 projections.
 
 Used in “The Economics of Software Development” and “The Future of Programmers” for the combined occupation group's 1.8955 million jobs in 2024, \$131,450 median annual pay, approximately 129,200 projected openings per year, and 15% projected employment growth. These are U.S. occupational statistics, not a global estimate and not a forecast of AI's isolated effect.
 
@@ -25,10 +25,10 @@ Used in “The Enterprise Intelligence Layer” for the estimate that generative
 - Cui, Zheyuan (Kevin), et al. [“The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers.”](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) Preprint, June 2025.
 - METR. [“Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity.”](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) 10 July 2025.
 - METR. [“We Are Changing Our Developer Productivity Experiment Design.”](https://metr.org/blog/2026-02-24-uplift-update/) 24 February 2026.
-- DORA. [*2024 Accelerate State of DevOps Report*.](https://dora.dev/research/2024/dora-report/) 2024.
-- DORA. [*State of AI-Assisted Software Development 2025*.](https://dora.dev/research/2025/dora-report/) 2025, corrected version 2025.2.
+- DORA. [_2024 Accelerate State of DevOps Report_.](https://dora.dev/research/2024/dora-report/) 2024.
+- DORA. [_State of AI-Assisted Software Development 2025_.](https://dora.dev/research/2025/dora-report/) 2025, corrected version 2025.2.
 - DORA. [“Balancing AI Tensions: Moving from AI Adoption to Effective SDLC Use.”](https://dora.dev/insights/balancing-ai-tensions/) 10 March 2026.
-- Stack Overflow. [*2025 Developer Survey: AI*.](https://survey.stackoverflow.co/2025/ai) 2025.
+- Stack Overflow. [_2025 Developer Survey: AI_.](https://survey.stackoverflow.co/2025/ai) 2025.
 
 The Peng experiment supports the 55.8% improvement reported for one bounded JavaScript task. The Cui preprint combines three randomized field experiments involving 4,867 developers and estimates 26.08% more completed tasks, while noting that each individual experiment was noisy. METR's early-2025 study found a 19% slowdown among 16 experienced developers working in familiar open-source repositories. METR's 2026 update suggested later tools may have improved but judged the magnitude unreliable because of selection and measurement problems.
 
@@ -45,7 +45,7 @@ These working papers support the narrower claim that collaboration, review, and 
 
 ## Evaluation, verification, and agent risk
 
-- National Institute of Standards and Technology. [*Artificial Intelligence Risk Management Framework (AI RMF 1.0)*.](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10) NIST AI 100-1, 26 January 2023.
+- National Institute of Standards and Technology. [_Artificial Intelligence Risk Management Framework (AI RMF 1.0)_.](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10) NIST AI 100-1, 26 January 2023.
 - NIST AI Resource Center. [“Valid and Reliable.”](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) Accessed 19 July 2026.
 - OpenAI. [“Evaluation Best Practices.”](https://platform.openai.com/docs/guides/evals) Accessed 19 July 2026.
 - Google Cloud. [“Evaluate Generative AI Models and Applications.”](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) Accessed 19 July 2026.
@@ -56,16 +56,16 @@ Used in the requirements, precision, trust, and agents chapters. NIST supplies t
 
 ## Software quality, maintenance, and technical debt
 
-- Consortium for Information & Software Quality. [*The Cost of Poor Software Quality in the US: A 2022 Report*.](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) 2022.
+- Consortium for Information & Software Quality. [_The Cost of Poor Software Quality in the US: A 2022 Report_.](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) 2022.
 - McKinsey & Company. [“Tech Debt: Reclaiming Tech Equity.”](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) 6 October 2020.
 
 Used in “The Legacy Problem” for broad estimates of accumulated technical debt. Neither source measures the cost of legacy systems alone, and the book labels the figures accordingly.
 
 ## Public-sector legacy systems
 
-- U.S. Government Accountability Office. [*Information Technology: Agencies Need to Continue Addressing Critical Legacy Systems*.](https://www.gao.gov/products/gao-23-106821) GAO-23-106821, 10 May 2023.
+- U.S. Government Accountability Office. [_Information Technology: Agencies Need to Continue Addressing Critical Legacy Systems_.](https://www.gao.gov/products/gao-23-106821) GAO-23-106821, 10 May 2023.
 - UK Government Digital Service and Central Digital and Data Office. [“Guidance on the Legacy IT Risk Assessment Framework.”](https://www.gov.uk/government/publications/guidance-on-the-legacy-it-risk-assessment-framework) 29 September 2023; updated 13 March 2025.
-- UK National Audit Office. [*Government Cyber Resilience*.](https://www.nao.org.uk/reports/government-cyber-resilience/) 29 January 2025.
+- UK National Audit Office. [_Government Cyber Resilience_.](https://www.nao.org.uk/reports/government-cyber-resilience/) 29 January 2025.
 
 Used for the age, operating cost, modernisation planning, and remediation status of government legacy systems. The NAO's data cover 228 recorded systems supplied by 27 departments and do not represent every legacy system in central government.
 
@@ -86,7 +86,7 @@ Used in “The Economics of Models.” Epoch's figures are modelled estimates, N
 
 ## Capital allocation as evidence of belief
 
-- Microsoft Corporation. [*2025 Annual Report*.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.
+- Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.
 - Microsoft Corporation. [Form 10-K for the fiscal year ended 30 June 2025.](https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm)
 - Alphabet Inc. [Form 10-K for the year ended 31 December 2025.](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm)
 - NVIDIA. [“NVIDIA Announces Financial Results for First Quarter Fiscal 2027.”](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) 20 May 2026.
@@ -99,11 +99,11 @@ These disclosures support a limited inference: informed companies are committing
 
 - McKinsey Global Institute. [“The Economic Potential of Generative AI.”](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) 14 June 2023.
 - Cui, Zheyuan (Kevin), et al. [“The Effects of Generative AI on High-Skilled Work.”](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) Preprint, June 2025.
-- DORA. [*State of AI-Assisted Software Development 2025*.](https://dora.dev/research/2025/dora-report/) 2025.
+- DORA. [_State of AI-Assisted Software Development 2025_.](https://dora.dev/research/2025/dora-report/) 2025.
 - Google Cloud. [“Wayfair Accelerates Developer Velocity and Reduces CI Fix Time with AI on Google Cloud.”](https://cloud.google.com/customers/wayfair-developer) Accessed 19 July 2026.
 - Google Cloud. [“FletcherTech Builds AI Foundation for Data-Driven Accuracy and Operational Efficiency.”](https://cloud.google.com/customers/fletchertech) Accessed 19 July 2026.
 
-The strongest evidence remains workflow-specific. The field experiments and DORA research provide broader measurement; the Wayfair and FletcherTech cases provide vendor-reported examples of CI remediation and internal knowledge retrieval. The case figures have not been independently audited for this book.
+The strongest evidence remains workflow-specific. The field experiments and DORA research provide broader measurement; the Wayfair and FletcherTech cases provide vendor-reported examples of fixing continuous-integration (CI) failures in automated builds and tests, and of retrieving internal knowledge. The case figures have not been independently audited for this book.
 
 The “enterprise intelligence layer” remains a hypothesis: if many useful workflows need the same retrieval, permissions, provenance, evaluation, orchestration, and audit infrastructure, organisations may find it economical to build a shared layer. The sources show the component business cases and organisational conditions; they do not prove that every enterprise should build the architecture.
 

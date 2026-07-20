@@ -12,11 +12,11 @@ This is why software has historically been expensive.
 
 ## Software Is Accumulated Knowledge
 
-Code is the visible artifact, but a working system contains more than code. It embodies decisions about customers, products, exceptions, data, sequence, authority, and failure. Some decisions are explicit in requirements or tests. Others are scattered across old files, employee memory, database fields, and behaviour nobody dares to change.
+Code is the visible artefact—the thing produced—but a working system contains more than code. It embodies decisions about customers, products, exceptions, data, sequence, authority, and failure. Some decisions are explicit in requirements or tests. Others are scattered across old files, employee memory, database fields, and behaviour nobody dares to change.
 
 Software can therefore be understood as accumulated knowledge made operational. It is knowledge that causes things to happen repeatedly: a payment is accepted, a student is enrolled, an order is routed, a warning appears, or access is denied.
 
-Creating software is expensive because the knowledge must be discovered, negotiated, represented, tested, integrated, and maintained. Programming skill is one part of that work. Domain expertise, architecture, coordination, security, and verification are others.
+Creating software is expensive because the knowledge must be discovered, negotiated, represented, tested, integrated, and maintained. Programming skill is one part of that work. Domain expertise—deep knowledge of the real subject, such as teaching, banking, or medicine—architecture, coordination, security, and verification are others.
 
 ## The Human Expertise Bottleneck
 
@@ -30,7 +30,7 @@ The economic bottleneck was human expertise coordinated across that gap.
 
 The scale is visible in one national snapshot. The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) counted about 1.9 million software developers, quality-assurance analysts, and testers in 2024. Their median annual wage was \$131,450, with roughly 129,200 openings projected each year over the following decade. These numbers cover only three occupations in one country; they exclude product managers, designers, security specialists, operations staff, domain experts, and the cost of delay. They do not prove that software is inefficient. They show how much specialised human capacity society already devotes to turning knowledge into dependable machine behaviour.
 
-Salaries make the bottleneck visible but do not define it completely. An employee costs an organisation more than salary: benefits, equipment, management, recruiting, office and cloud services, coordination, and the delay before a team can deliver value. A project also carries the cost of requirements, design, security, testing, deployment, support, and maintenance.
+Salaries make the bottleneck visible but do not define it completely. An employee costs an organisation more than salary: benefits, equipment, management, recruiting, office and cloud services, coordination, and the delay before a team can deliver value. A project also carries the cost of requirements, design, security, testing, deployment—releasing the software for real use—support, and maintenance.
 
 A useful conceptual model is:
 
@@ -74,7 +74,7 @@ It did not eliminate the journey. A quiz still needed good educational rules. Ge
 
 AI introduces costs of its own. Organisations pay to use models, prepare the information supplied to them, connect them to other tools, protect data, check results, supervise actions, and review generated work. They also care about waiting time—called **latency** in the industry. An organisation may generate code faster and then spend more time understanding, validating, or maintaining it.
 
-The relevant unit is therefore not the cost of generated tokens or lines of code. It is the **cost per successfully completed task** after correction, integration, and risk.
+The relevant unit is therefore not the cost of generated tokens or lines of code. It is the **cost per successfully completed task** after correction, integration, and the expected cost of mistakes.
 
 For a low-stakes prototype, an imperfect first attempt may still be valuable. For a medical, financial, or safety-critical system, verification can dominate the economics. The same model capability has different value depending on the system around it.
 

@@ -32,7 +32,7 @@ When I worked at IBM in the 1980s, offices still had secretaries who handled muc
 
 That was not because managers lacked ideas. It was because the systems of the time were not easy for every professional to use directly.
 
-Over time, computers, email, word processors, spreadsheets, calendars, and enterprise systems changed the interface. Professionals began doing many of those tasks themselves. The secretary did not disappear overnight, but the role steadily shrank because the translation layer became less necessary.
+Over time, computers, email, word processors, spreadsheets, calendars, and enterprise systems—large shared systems used to run an organisation—changed the interface. Professionals began doing many of those tasks themselves. The secretary did not disappear overnight, but the role steadily shrank because the translation layer became less necessary.
 
 The boss might know exactly what needed to be said, but the secretary knew how to operate the machinery of communication: typing, formatting, filing, routing, scheduling, and retrieving information. The secretary was not valuable because the boss lacked ideas. The secretary was valuable because the office systems required translation.
 
@@ -64,7 +64,7 @@ That is a higher-level programming problem.
 
 In casual use, a prompt is simply an instruction to an AI system.
 
-In software development, a prompt can become something more serious. It can become a specification.
+In software development, a prompt can become something more serious. It can become a specification: a detailed description of required behaviour that people can inspect and test.
 
 Consider an AI-powered quiz feature inside a language-learning app. A casual prompt might say:
 
@@ -156,7 +156,7 @@ The user must increasingly:
 
 This is why domain knowledge becomes more valuable. A doctor, teacher, lawyer, engineer, accountant, scientist, or business owner may not know programming syntax, but they may know the problem deeply. AI gives them a new way to express that knowledge. The quality of the result depends on whether they can communicate the knowledge clearly enough for the model and surrounding software to use it.
 
-Professional software developers do not disappear in this process. Their role moves upward too. They may spend less time writing routine code and more time shaping requirements, designing systems, reviewing AI output, creating evaluation suites, managing integrations, and ensuring reliability.
+Professional software developers do not disappear in this process. Their role moves upward too. They may spend less time writing routine code and more time shaping requirements, designing systems, reviewing AI output, creating evaluation suites—collections of test cases used to measure AI behaviour—managing integrations, and ensuring reliability.
 
 ## The Economics of Communication
 

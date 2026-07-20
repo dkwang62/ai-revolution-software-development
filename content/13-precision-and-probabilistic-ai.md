@@ -34,7 +34,7 @@ There are two situations that are often confused.
 
 The first is AI creating software. A developer asks AI to write, modify, explain, or test code. The AI participates in development, but the output becomes conventional software. That code can be inspected, compiled, executed, tested, reviewed, and monitored. The AI may be probabilistic, but the resulting program can still be deterministic.
 
-The second is AI operating inside software. A running application calls a model to classify a document, generate a response, choose a tool, summarise a medical note, extract invoice data, write a SQL query, or decide what action to propose next. In this case, AI is part of the live system. Its uncertainty affects users and workflows directly.
+The second is AI operating inside software. A running application calls a model to classify a document, generate a response, choose a tool, summarise a medical note, extract invoice data, write a SQL query—an instruction for reading or changing information in a database—or decide what action to propose next. In this case, AI is part of the live system. Its uncertainty affects users and workflows directly.
 
 The second case is harder.
 
@@ -134,7 +134,7 @@ An AI summariser may produce different wording while preserving meaning. A codin
 
 Evaluation must therefore measure outcome, not only string equality.
 
-Developers may need datasets of representative cases, edge cases, adversarial examples, safety checks, format checks, groundedness checks, and human review. They may need to monitor production outputs over time because model behaviour can drift or change after upgrades.
+Developers may need datasets of representative cases, edge cases, adversarial examples designed to expose weaknesses, safety checks, format checks, checks that answers are supported by evidence, and human review. They may need to monitor production outputs—results from the live system used by real people—because model behaviour can drift or change after upgrades.
 
 Software verification therefore becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
 
@@ -144,7 +144,7 @@ In conventional software, teams version code. In AI systems, they must also vers
 
 A prompt that works with one model may fail with another. A new model may follow instructions more carefully in general but behave worse for one production workflow. A longer context window may improve some tasks and introduce new failure modes. A change in tool permissions may alter what an agent can do.
 
-Production AI systems therefore need repeated tests that reveal whether a change broke behaviour that previously worked. This is called **regression testing**.
+Production AI systems therefore need repeated tests that reveal whether a change broke behaviour that previously worked. This is called **regression testing**: after making a change, rerun earlier tests to make sure old capabilities still work.
 
 Before changing a model or prompt, teams should rerun evaluations. They should record which model and prompt produced which output. They should preserve the ability to investigate failures. In high-risk systems, they may need rollback plans.
 
@@ -192,7 +192,7 @@ AI should not replace the deterministic layer. It should sit above it, beside it
 
 Reliability is not free.
 
-Evaluation costs money. Validation costs money. Human review costs money. Monitoring costs money. Building safe tool-use systems costs money. Model upgrades require testing. Compliance requires documentation.
+Evaluation costs money. Validation costs money. Human review costs money. Monitoring costs money. Building safe tool-use systems costs money. Model upgrades require testing. Compliance—showing that the system follows laws, regulations, and organisational rules—requires documentation.
 
 These costs must be included in the economics of AI-assisted software.
 

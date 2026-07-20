@@ -70,7 +70,7 @@ Computers are literal machines. They do not understand intention in the human se
 
 Programming languages exist because humans cannot productively write everything in raw machine instructions. A language such as Python or Swift gives humans a more manageable way to express procedures. The language has syntax, rules, data structures, control flow, functions, types, libraries, and conventions. These features help humans organise instructions while still allowing the machine to execute them.
 
-A compiler or interpreter performs translation. It takes a higher-level representation and turns it into lower-level operations the machine can run.
+A compiler or interpreter performs translation. A compiler usually translates a whole program before it runs; an interpreter commonly reads and executes it as the program runs. Both turn a higher-level representation into lower-level operations the machine can perform.
 
 This is another form of abstraction. Humans write in a language closer to their thinking; tools translate downward toward the machine.
 
@@ -143,7 +143,7 @@ AI's ability to write software is therefore not magic. It is the consequence of 
 
 Programming has always involved translation, but translation is not its whole essence. Before anyone can express a procedure in code, someone must discover the real problem, negotiate competing needs, divide the system into parts, model state, choose an architecture, and decide what failure means.
 
-A user has a goal. A product person turns the goal into requirements. A designer turns requirements into workflows and interfaces. A programmer turns workflows into data structures and code. A compiler or interpreter turns code into executable operations. A processor turns operations into physical changes in hardware.
+A user has a goal. A product specialist decides which user problem the software should solve and turns the goal into requirements. A designer turns requirements into workflows and interfaces. A programmer turns workflows into data structures and code. A compiler or interpreter turns code into executable operations. A processor turns operations into physical changes in hardware.
 
 The chain looks like this:
 

@@ -34,7 +34,7 @@ But it is not the whole story.
 
 AI tools are available to many people. The capacity to build good software with them is not evenly distributed.
 
-The Limits of AI Democratization adds the necessary correction. Building useful software still requires product clarity, persistence, debugging instinct, tolerance for ambiguity, and the ability to evaluate behaviour. Complex software requires architecture, data modelling, security, integration, testing, and maintenance.
+The necessary correction is that wider access does not remove difficulty. Building useful software still requires product clarity, persistence, debugging instinct, tolerance for ambiguity, and the ability to evaluate behaviour. Complex software requires architecture, data modelling, security, integration, testing, and maintenance.
 
 Many people can ask AI to generate an app. Fewer can guide it through weeks or months of refinement, recognise when behaviour is subtly wrong, and make the thousands of product decisions required for a serious system.
 
@@ -42,11 +42,11 @@ AI broadens access. It does not make everyone equally capable.
 
 This distinction is crucial. The future is neither "programmers vanish" nor "nothing changes". The future is a redistribution of software-creation capability.
 
-The positive side of this argument is captured in Democratisation of Expertise. AI does not make a novice equal to the world's best programmer. But it can dramatically narrow the gap by making decades of accumulated programming knowledge available through conversation. Expertise begins to shift from residing only inside the programmer to being shared between the programmer and the AI. The human contributes goals, domain knowledge, constraints, judgement, and accountability. The AI contributes technical knowledge, established practices, rapid implementation, and iteration.
+The positive side is a democratisation of expertise: knowledge becomes accessible to more people. AI does not make a novice equal to the world's best programmer. But it can dramatically narrow the gap by making decades of accumulated programming knowledge available through conversation. Expertise begins to shift from residing only inside the programmer to being shared between the programmer and the AI. The human contributes goals, domain knowledge, constraints, judgement, and accountability. The AI contributes technical knowledge, established practices, rapid implementation, and iteration.
 
-Externalisation of Programming Expertise makes the same point more sharply: for seventy years, programming expertise was stored primarily in the minds of programmers. Today, an increasing proportion of that expertise is being externalised into AI models trained on the collective experience of the software engineering community. The question is not whether an expert programmer is better than AI, or whether AI is better than an expert programmer. The better question is who makes better decisions when they work together.
+Programming expertise is also being **externalised**: knowledge that once existed mainly in programmers' minds is increasingly represented in AI models trained on the collective work of the software engineering community. The question is not whether an expert programmer is better than AI, or whether AI is better than an expert programmer. The better question is who makes better decisions when they work together.
 
-Context as the Missing Ingredient adds the next refinement. Programming expertise has two layers: general software engineering knowledge and project-specific context. AI is increasingly strong at the first. Experienced engineers often retain an advantage in the second: business context, organisational memory, production history, unwritten requirements, and reasons earlier decisions were made. The sharper question is not whether AI lacks "human superiority," but which advantages of senior engineers come from better reasoning and which come from information the AI simply has not been given.
+Context provides the next refinement. Programming expertise has two layers: general software engineering knowledge and project-specific context. AI is increasingly strong at the first. Experienced engineers often retain an advantage in the second: business context, organisational memory, production history, unwritten requirements, and reasons earlier decisions were made. The sharper question is not whether AI lacks "human superiority," but which advantages of senior engineers come from better reasoning and which come from information the AI simply has not been given.
 
 That is why the future may not belong only to the best programmers. It may belong to those who are best at combining human judgement with the accumulated programming knowledge embodied in AI models.
 
@@ -94,7 +94,7 @@ The speed of improvement became real to me while moving the application from a w
 
 A simple web framework had allowed me to turn a Python prototype into a working application in a browser. Moving it into Apple's native development environment was a much larger step. It was not enough to translate statements from one programming language into another. The new version needed an Apple application project, an overall structure, ways to represent and store data, navigation, memory of the user's current state, device-specific controls, database access, and a different method of constructing each screen.
 
-My early attempt to use AI to scaffold that migration failed. The model could produce fragments and explain what ought to happen, but it could not reliably hold the whole migration together. Debugging often entered a loop: the AI proposed a fix, the build failed, and the next attempt remained too close to the previous one. Although I was the non-technical participant, I sometimes had to suggest the technical direction that allowed the model to escape.
+My early attempt to use AI to scaffold that migration—to create the project's basic structure and starting files—failed. The model could produce fragments and explain what ought to happen, but it could not reliably hold the whole migration together. Debugging often entered a loop: the AI proposed a fix, the build failed, and the next attempt remained too close to the previous one. Although I was the non-technical participant, I sometimes had to suggest the technical direction that allowed the model to escape.
 
 About a year later, that pattern had become rare. A newer Codex workflow could inspect the working projects, search across files, create or modify the basic structure required by an Apple application, read compiler failures, change its hypothesis, rebuild, and continue. The migration still required gradual work and many decisions, but a task that had crossed the earlier system's capability boundary had become tractable.
 
@@ -104,7 +104,7 @@ This is a personal observation rather than a controlled comparison. Several thin
 
 It would therefore be too simple to say that training alone solved the migration. A better description is:
 
-~~~text
+```text
 a more capable model
 + a stronger agent environment
 + better tools and feedback
@@ -112,7 +112,7 @@ a more capable model
 + a more experienced human supervisor
 ↓
 a task crosses from impractical to achievable
-~~~
+```
 
 The practical result still matters. Earlier in the project, I sometimes had to supply a technical escape route when the AI became trapped. More recently, Codex usually gathers evidence and finds that route itself. Human intervention has moved away from proposing low-level fixes and toward defining the desired behaviour, noticing when the outcome is wrong, and deciding what should be kept.
 
@@ -173,7 +173,7 @@ AI may reduce demand for some routine coding work. It may increase demand for so
 
 The outcome will vary by industry, risk level, organisation, and task type.
 
-A startup building a prototype may need fewer developers at first. A bank integrating AI into legacy systems may need more engineering discipline, not less. A small business may build tools without hiring a traditional team. A software company may ship faster but face greater verification demands.
+A startup—a young company designed to find and grow a new business model—building a prototype may need fewer developers at first. A bank integrating AI into legacy systems may need more engineering discipline, not less. A small business may build tools without hiring a traditional team. A software company may release updates faster but face greater verification demands.
 
 The emerging evidence is mixed but useful. A controlled GitHub Copilot experiment found developers completed one bounded JavaScript task 55.8% faster with Copilot. A [2025 preprint reporting field experiments](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) across Microsoft, Accenture, and a Fortune 100 company estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. But an [early-2025 study by the AI research organisation METR](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that 16 experienced open-source developers working in their own projects took 19% longer when AI tools were allowed.
 

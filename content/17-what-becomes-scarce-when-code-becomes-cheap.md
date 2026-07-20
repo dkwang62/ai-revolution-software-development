@@ -36,7 +36,7 @@ Generic software is easier to imagine than useful software.
 
 A teacher understands classroom routines. A doctor understands clinical workflow. A lawyer understands procedural risk. A factory manager understands exceptions on the production floor. A language learner understands where existing apps fail. A small-business owner understands the irritating manual process no commercial product quite fits.
 
-AI can help transform domain knowledge into software, but it cannot fully replace domain knowledge. It can infer, generalise, and suggest. It can ask questions. It can provide examples from patterns it has seen. But the person closest to the problem often knows which details matter.
+AI can help transform domain knowledge—deep understanding of the subject in which the software will be used—into software, but it cannot fully replace that knowledge. It can infer, generalise, and suggest. It can ask questions. It can provide examples from patterns it has seen. But the person closest to the problem often knows which details matter.
 
 As the cost of implementation falls, domain expertise becomes a more valuable input into software creation.
 
@@ -116,7 +116,7 @@ Traditional software tools still mattered. Apple's screen-layout framework suppl
 
 Together, those mechanisms can reduce human effort dramatically. They turn “make it look right” into a constrained loop with observable evidence. But the final purpose remains human: the framework can keep text inside a box; it cannot decide by itself whether the box belongs in the learner's journey.
 
-The project therefore demonstrates the larger economic shift. As implementation became cheaper, interface judgement, educational quality, architectural coherence, and verification became the binding constraints. Better AI may lower those costs too. Scarcity will move again rather than disappear.
+The project therefore demonstrates the larger economic shift. As implementation became cheaper, interface judgement, educational quality, architectural coherence, and verification became the **binding constraints**—the limits that held back further progress. Better AI may lower those costs too. Scarcity will move again rather than disappear.
 
 ## The New Software Economy
 

@@ -6,7 +6,7 @@ title: "What Is an AI Model?"
 
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
-When a language-learning application displays the Chinese character 木, a learner sees a shape associated with *tree* or *wood*. Inside the application, that character is also a Unicode number, bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
+When a language-learning application displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the application, that character is also a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
 
 These are different **representations** of the same thing. Software has always moved information among representations:
 
@@ -26,13 +26,13 @@ Traditional software relies mainly on procedures people specify. An AI model add
 
 An AI model is not a huge database, a search engine, or millions of handwritten IF–THEN rules. It is a **learned mathematical representation of patterns found in data**.
 
-I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin, and meaning to generate a plausible result.
+I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a plausible result.
 
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
 ## A Map, Not the Territory
 
-The word *model* did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.
+The word _model_ did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.
 
 None is the thing itself. Each simplifies reality in a form that helps somebody reason or act.
 
@@ -58,7 +58,7 @@ adjust many parameters slightly
 repeat
 ```
 
-The dials do not store knowledge like pages in a book. There is no single dial for *dog*, another for Swift syntax, and another for banking regulation. What the model has learned is distributed across many parameters. Its capability is real, but it is not stored in a human-readable rulebook.
+The dials do not store knowledge like pages in a book. There is no single dial for _dog_, another for Swift syntax, and another for banking regulation. What the model has learned is distributed across many parameters. Its capability is real, but it is not stored in a human-readable rulebook.
 
 Training is therefore different from a programmer entering facts into a database. The programmer chooses the data, architecture, training process, objectives, and evaluations; the learning process finds parameter values that capture useful statistical relationships.
 
@@ -68,7 +68,7 @@ A **neural network** is the mathematical machinery commonly used to learn those 
 
 Before entering the network, information is divided into manageable units. Language models use **tokens**, which may be words, parts of words, punctuation, or pieces of code. Images can be divided into patches; audio can be represented as segments of a signal. Each unit becomes numbers that the network transforms through layers.
 
-Those numerical representations are often described as **vectors**—ordered lists of numbers. Training arranges and transforms them so that useful relationships can be expressed. Words used in related contexts may occupy related regions in a high-dimensional space. A request for a Chinese-character quiz can activate relationships involving quizzes, plausible wrong answers, user interfaces, Chinese characters, state, and tests even if the model has never seen that exact request.
+Those numerical representations are often described as **vectors**—ordered lists of numbers. Training arranges and transforms them so that useful relationships can be expressed. Each position in the list acts like one direction, or dimension, in a mathematical space. Because a vector may have hundreds or thousands of positions, this is called a **high-dimensional space**. Words used in related contexts may occupy related regions within it. A request for a Chinese-character quiz can activate relationships involving quizzes, plausible wrong answers, user interfaces, Chinese characters, state, and tests even if the model has never seen that exact request.
 
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
@@ -84,12 +84,12 @@ This explains why AI can answer a question it has never seen word for word. It a
 
 Traditional software and learned models therefore have complementary strengths:
 
-| Traditional software | AI model |
-|---|---|
-| Executes explicit rules | Applies learned relationships |
-| Mostly deterministic | Probabilistic |
-| Easier to inspect line by line | Harder to interpret internally |
-| Strong where rules are clear | Strong where variation makes exhaustive rules costly |
+| Traditional software           | AI model                                                  |
+| ------------------------------ | --------------------------------------------------------- |
+| Executes explicit rules        | Applies learned relationships                             |
+| Mostly deterministic           | Probabilistic                                             |
+| Easier to inspect line by line | Harder to interpret internally                            |
+| Strong where rules are clear   | Strong where variation makes exhaustive rules costly      |
 | Changed mainly by editing code | Changed by training, tuning, prompting, and configuration |
 
 Real applications combine both. AI suggests; software decides.
@@ -134,7 +134,7 @@ The economic question is therefore not which model looks most impressive in isol
 
 ## What the Mechanism Does Not Guarantee
 
-Training data can contain errors and bias. Average performance does not guarantee reliability in a rare or consequential case. Larger models and better training can improve capability without eliminating fabricated references, outdated practices, insecure code, or misunderstandings of local purpose.
+Training data can contain errors and bias—systematic patterns that favour or disadvantage some answers, groups, or viewpoints. Average performance does not guarantee reliability in a rare or consequential case. Larger models and better training can improve capability without eliminating fabricated references, outdated practices, insecure code, or misunderstandings of local purpose.
 
 One feature lets a learner photograph printed Chinese and turns the characters in the image into editable text. The application keeps the original picture, checks the extracted text, removes phrases the learner has already saved, and lets the learner choose what to keep. A learned system makes this possible across changing fonts, lighting, camera angles, and image quality—variations that would be extremely difficult to describe through exhaustive rules. Rules, tests, and human responsibility still matter around the learned result.
 

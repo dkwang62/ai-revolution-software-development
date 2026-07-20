@@ -15,10 +15,10 @@ Two forces matter most:
 1. How quickly AI capability improves.
 2. How much verification and integration cost after the AI generates something.
 
-| | Verification and integration remain expensive | Verification and integration become much cheaper |
-|---|---|---|
-| **Capability improves gradually** | **Bounded assistant:** valuable in well-specified, low-risk tasks, with humans carrying most review and integration. | **Ordinary infrastructure:** AI becomes as routine as compilers, search, and version control across much of development. |
-| **Capability improves rapidly** | **Generation outruns trust:** output explodes, but security, review, maintenance, and coherence become the bottlenecks. | **Agentic organisation:** intent-driven creation and coordinated software work become plausible under human authority. |
+|                                   | Verification and integration remain expensive                                                                           | Verification and integration become much cheaper                                                                         |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Capability improves gradually** | **Bounded assistant:** valuable in well-specified, low-risk tasks, with humans carrying most review and integration.    | **Ordinary infrastructure:** AI becomes as routine as compilers, search, and version control across much of development. |
+| **Capability improves rapidly**   | **Generation outruns trust:** output explodes, but security, review, maintenance, and coherence become the bottlenecks. | **Agentic organisation:** intent-driven creation and coordinated software work become plausible under human authority.   |
 
 Different domains can occupy different quadrants simultaneously. A disposable marketing prototype and a payment system may inhabit different futures even inside the same company.
 
@@ -46,7 +46,7 @@ If capability improves gradually while verification and integration become cheap
 
 Reusable software structures, precisely defined connections, automated rules, picture-comparison tests, security checks, and repeated evaluations make generated work easier to constrain. Industry terms include **frameworks**, **typed interfaces**, **policy engines**, **visual regression tests**, **security scanners**, and **automated evaluation**. Developers use AI as routinely as search and ordinary development tools. Mixed, or **hybrid**, systems become normal: probabilistic models interpret requests while deterministic software checks data, permissions, calculations, and execution.
 
-Non-programmers build more internal tools. Legacy modernisation becomes a major use case because AI can document old systems, map dependencies, generate characterization tests, and work through governed APIs. The job of the programmer moves upward toward requirements, architecture, evaluation, and stewardship.
+Non-programmers build more internal tools. Legacy modernisation becomes a major use case because AI can document old systems, map dependencies, generate **characterisation tests** that record what an existing system currently does, and work through governed APIs. The job of the programmer moves upward toward requirements, architecture, evaluation, and stewardship.
 
 **Signals to watch:** falling cost per successfully completed task; stable model interfaces; widespread automated evaluation; strong visual and behavioural testing integrated into agent workflows.
 
@@ -66,9 +66,9 @@ The limiting factor is neither typing nor model intelligence. It is disciplined 
 
 If capability improves rapidly and verification and integration also become much cheaper, software creation becomes more intent-driven.
 
-A domain expert describes an application through conversation, screenshots, examples, business rules, and corrections. Agents scaffold the project, choose tested components, construct the data model, implement features, run builds and tests, render the interface at several sizes, prepare deployment, and maintain an audit trail. Professional developers supervise architecture, security, difficult integrations, and consequential decisions.
+A domain expert describes an application through conversation, screenshots, examples, business rules, and corrections. Agents scaffold the project by creating its basic structure, choose tested components, construct the data model, implement features, run builds and tests, render the interface at several sizes, prepare the software for release, and maintain an audit trail. Professional developers supervise architecture, security, difficult integrations, and consequential decisions.
 
-Natural language, observed work, and organisational records become source material for software. Code still exists, but much of it may be produced and revised without a person reading every line. Human-facing artefacts shift toward goals, policies, examples, acceptance criteria, prohibited actions, and evidence of behaviour.
+Natural language, observed work, and organisational records become source material for software. Code still exists, but much of it may be produced and revised without a person reading every line. The main records people inspect shift toward goals, policies, examples, **acceptance criteria** that state how success will be judged, prohibited actions, and evidence of behaviour.
 
 A software organisation is partly an information-processing system. It receives signals from customers, incidents, regulations, and markets, then turns them into priorities, designs, code, tests, releases, and support. Coordinated agents could perform a meaningful portion of that cycle.
 

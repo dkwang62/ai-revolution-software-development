@@ -32,9 +32,9 @@ Consider a simple request:
 
 > Build a feature that lets users save favourite Chinese characters and review them later.
 
-This sentence is not code, but it contains software structure. It implies a user. It implies a collection of characters. It implies a save action. It implies persistent storage. It implies a review screen. It may imply ordering, deletion, search, sync, backup, and user-interface states.
+This sentence is not code, but it contains software structure. It implies a user. It implies a collection of characters. It implies a save action. It implies persistent storage, meaning the information remains after the application closes. It implies a review screen. It may imply ordering, deletion, search, synchronisation between devices, backup, and different user-interface states such as loading, empty, or ready.
 
-A human developer hears the request and begins translating. What data model is needed? Where should favourites be stored? What happens if the same character is saved twice? How does the user remove one? Should favourites sync across devices? What if the database is unavailable?
+A human developer hears the request and begins translating. What data model—the organised description of the information and its relationships—is needed? Where should favourites be stored? What happens if the same character is saved twice? How does the user remove one? Should favourites sync across devices? What if the database is unavailable?
 
 AI performs a similar kind of translation, though not in the same way a human does. It uses learned relationships to infer likely structures and generate a representation in code.
 
@@ -164,7 +164,7 @@ This is not the exact private machinery of any particular AI system. Different m
 
 For a chatbot, this may be where the example ends: prompt in, code out.
 
-For Codex, the more important pattern is larger:
+For Codex, the more important pattern is larger. A **repository** is the project folder together with its recorded change history:
 
 ```text
 English prompt
@@ -234,7 +234,7 @@ Later processing can combine these into a task structure:
 
 ```text
 language = Python
-artifact = function
+artefact = function
 input = list of numbers
 operation = compute average
 output = number
@@ -590,7 +590,7 @@ The economic significance of AI-generated software is not that machines can prod
 
 Historically, that translation required scarce experts. A user had to explain a problem to a developer. The developer had to understand it, design a solution, implement it, test it, and revise it. Each handoff introduced cost and delay.
 
-AI can compress some of those steps. A domain expert can describe a workflow and receive a prototype. A developer can describe a refactoring and receive a draft. A founder can explore product ideas before hiring a full team. A student can build a tool while learning the concepts. A professional programmer can use AI to move faster through routine implementation and spend more attention on architecture and verification.
+AI can compress some of those steps. A domain expert—someone who knows the subject deeply—can describe a workflow and receive a prototype, or early working model. A developer can describe a refactoring, which improves the internal structure of code without intentionally changing what users can do, and receive a draft. A founder can explore product ideas before hiring a full team. A student can build a tool while learning the concepts. A professional programmer can use AI to move faster through routine implementation and spend more attention on architecture and verification.
 
 The cost reduction is uneven. Simple prototypes may become dramatically cheaper. Safety-critical systems may remain expensive because verification dominates. Enterprise systems may still be costly because integration and governance dominate. But even uneven cost reduction matters if it shifts enough projects across the threshold of economic viability.
 

@@ -10,6 +10,8 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
+**Version 1.0.0 · Build 1**
+
 ![Book cover](figures/cover.png)
 
 This is the public reading edition of a book about why artificial intelligence is transforming software development. The argument is not that AI is magic, or that programmers disappear. The argument is that AI changes the economics of turning human intent into working software.

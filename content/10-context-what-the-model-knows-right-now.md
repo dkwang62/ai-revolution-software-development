@@ -22,7 +22,7 @@ Context is the information surrounding a request that makes the request meaningf
 
 If I say, "Put it over there," the words are simple but the meaning is almost empty. What is "it"? Where is "there"? Am I speaking in a kitchen, a warehouse, a hospital, a classroom, or a software project? The sentence cannot be interpreted without the surrounding situation.
 
-Software work has the same problem. If a product manager says, "Add a search feature," the request points toward an intention but does not yet define a system. Search what: Chinese characters, customer records, hotel bookings, medical images, source code? Should spelling mistakes be tolerated? Should results be ranked by relevance, date, popularity, or exact match? Should permissions apply? Should it work offline? The implementation depends on the surrounding facts.
+Software work has the same problem. If the person responsible for deciding what a product should do says, "Add a search feature," the request points toward an intention but does not yet define a system. Search what: Chinese characters, customer records, hotel bookings, medical images, source code? Should spelling mistakes be tolerated? Should results be ranked by relevance, date, popularity, or exact match? Should permissions apply? Should it work offline? The implementation depends on the surrounding facts.
 
 That surrounding information is context.
 
@@ -88,7 +88,7 @@ In software engineering, those details matter enormously.
 
 Consider the instruction, "Make it faster."
 
-To a web developer, that might mean reducing page-load time. To a database engineer, it might mean creating a faster way to find records. To a machine-learning engineer, it might mean reducing the waiting time for an AI response, known as **inference latency**. To a product manager, it might mean shortening the steps a user must take. To a finance department, it might mean speeding up month-end reporting.
+To a web developer, that might mean reducing page-load time. To a database engineer, it might mean creating a faster way to find records. To a machine-learning engineer, it might mean reducing the waiting time for an AI response, known as **inference latency**. To a product manager, who decides which user problems and features matter, it might mean shortening the steps a user must take. To a finance department, which records and reports an organisation's money, it might mean speeding up the process of closing the accounts at the end of each month.
 
 The instruction is identical. The correct action changes because the context changes.
 
@@ -108,7 +108,7 @@ The same is true for AI.
 
 ## Why Larger Context Windows Matter
 
-Larger context windows matter because real software systems are not isolated fragments. A small code change may depend on how data is organised, which kinds of values are allowed, how screens normally look, a business rule, sample data used in testing, a setting, a security requirement, instructions for moving old data, an earlier design decision, or a previous real-world failure. Programmers use terms such as **schema**, **type definition**, **user-interface convention**, **test fixture**, **configuration**, **migration script**, and **production incident** for these details.
+Larger context windows matter because real software systems are not isolated fragments. A small code change may depend on how data is organised, which kinds of values are allowed, how screens normally look, a business rule, sample data used in testing, a setting, a security requirement, instructions for moving old data, an earlier design decision, or a previous real-world failure. Programmers call these details a **schema**, **type definition**, **user-interface convention**, **test fixture**, **configuration**, **migration script**, or **production incident**. The terms describe, respectively, the shape of data, the allowed values, an established screen pattern, reusable test data, system settings, instructions for moving old data, and a failure in the live system.
 
 If the model sees only the function being edited, it may produce a locally plausible change that breaks the larger system.
 
@@ -140,7 +140,7 @@ For software engineering, that is a strength. Most project knowledge should not 
 
 ## Project-Specific Context
 
-An experienced engineer does not merely know programming. They know the project.
+An experienced engineer does not merely know programming. They know the project and the history behind it.
 
 They know why a module is written in an awkward way, which customer depends on an old behaviour, why the migration failed three years ago, which test is flaky, which database table is dangerous to change casually, why the documentation is out of date, and which stakeholder will object if a workflow changes.
 
@@ -169,7 +169,7 @@ But as general expertise becomes cheaper, another bottleneck becomes more visibl
 
 If a company cannot make its internal knowledge accessible to AI, the AI remains generic. It may write plausible code, but it cannot reliably make decisions that depend on the company's systems, customers, policies, risks, and history. If the company can make that knowledge accessible, the value of AI increases dramatically.
 
-This is why companies invest in ways to make code searchable, find relevant documents, connect related facts, use external tools, observe running systems, and search company knowledge. Industry names include **code indexing**, **document retrieval**, **vector databases**, **knowledge graphs**, **tool use**, **production telemetry**, and **enterprise search**. They all address the same practical problem: supplying the right situation-specific knowledge to AI.
+This is why companies invest in ways to make code searchable, find relevant documents, connect related facts, use external tools, observe running systems, and search company knowledge. Industry names include **code indexing** (building a searchable guide to code), **document retrieval** (finding relevant documents), **vector databases** (finding items with mathematically similar meanings), **knowledge graphs** (maps of named things and their relationships), **tool use**, **production telemetry** (measurements and events reported by live systems), and **enterprise search** (search across an organisation's information). They all address the same practical problem: supplying the right situation-specific knowledge to AI.
 
 The economic pattern is:
 

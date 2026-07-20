@@ -28,9 +28,9 @@ The model was still generating language, but language was now connected to files
 
 ## From an Answer to an Action
 
-The word *agent* is used loosely. For this book, an agent is not simply a clever chatbot or any program that calls a model. It is an engineered system that combines a model with a goal, context, tools, state, feedback, and rules for continuing or stopping.
+The word _agent_ is used loosely. For this book, an agent is not simply a clever chatbot or any program that calls a model. It is an engineered system that combines a model with a goal, context, tools, state, feedback, and rules for continuing or stopping.
 
-A conventional assistant might explain how to repair a bug. A coding agent can search the repository, open the relevant files, make a bounded change, run a test, inspect the failure, and try again. A customer-service agent might retrieve an account record, draft a response, and—if its authority permits—update a case. The distinction is the passage from words to controlled action.
+A conventional assistant might explain how to repair a bug. A coding agent can search the repository—the project files and their recorded change history—open the relevant files, make a bounded change, run a test, inspect the failure, and try again. A customer-service agent might retrieve an account record, draft a response, and—if its authority permits—update a case. The distinction is the passage from words to controlled action.
 
 Tools create both the value and the danger. A model that can discuss a database cannot damage it. A model connected to a database may read private information, write an incorrect value, or delete something important. Capability must therefore be separated from authority.
 
@@ -43,7 +43,7 @@ tests verify
 humans remain accountable
 ```
 
-This is why an agent may be confined to a safe area, allowed to read but not change information, given access only to specified systems, required to ask before important actions, limited in how frequently it can act, recorded while it works, and provided with a way to undo changes. Industry terms include **sandbox**, **read-only mode**, **scoped credentials**, **approval gate**, **rate limit**, **audit trail**, and **rollback**. These protections are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
+This is why an agent may be confined to a safe area, allowed to read but not change information, given access only to specified systems, required to ask before important actions, limited in how frequently it can act, recorded while it works, and provided with a way to undo changes. Industry terms include **sandbox** (an isolated working area), **read-only mode**, **scoped credentials** (login permissions limited to a specific purpose), **approval gate**, **rate limit**, **audit trail**, and **rollback** (restoring an earlier state). These protections are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
 
 ## Why Codex Felt Different
 

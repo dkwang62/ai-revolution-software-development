@@ -83,7 +83,7 @@ AI also changes the testing conversation.
 
 Traditional software checks individual pieces, checks whether pieces work together, repeats old tests after changes, confirms that the finished behaviour meets the user's needs, reviews code, examines it for defects, and watches the running system. Industry terms include **unit**, **integration**, **regression**, and **acceptance testing**, along with **code review**, **static analysis**, and **monitoring**. These practices remain essential.
 
-AI systems add another layer:
+AI systems add another layer. Because AI may give different acceptable answers to the same request, teams test it across collections of representative examples rather than checking only one exact output:
 
 - Evaluation datasets.
 - Benchmarks.
@@ -130,16 +130,16 @@ AI also introduces a new kind of software memory.
 
 This is not only "ChatGPT memory" in the consumer-product sense. It is the broader question of how AI-enabled applications remember context, retrieve knowledge, and maintain continuity across interactions.
 
-Modern AI applications may use:
+Modern AI applications may use several ways of saving and finding information:
 
 - Retrieval-augmented generation.
 - Knowledge bases.
-- Vector databases.
-- Persistent context.
+- Vector databases, which find material with mathematically similar meaning.
+- Persistent context, meaning useful background is saved between sessions.
 - User profiles.
 - Document stores.
 - Conversation histories.
-- Application state.
+- Application state, meaning the information that records what the application is doing now.
 
 These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
 

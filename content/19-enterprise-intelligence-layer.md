@@ -115,7 +115,7 @@ If an organisation can make its knowledge usable by AI, the same layer can suppo
 
 ## How It Will Be Funded
 
-Most large enterprises will not begin by approving a vast Enterprise Intelligence Layer because the concept sounds impressive. CFOs do not buy visions. They buy business cases.
+Most large enterprises will not begin by approving a vast Enterprise Intelligence Layer because the concept sounds impressive. Chief financial officers (CFOs), the executives responsible for an organisation's finances, do not buy visions. They approve business cases that explain expected costs, benefits, and risks.
 
 The more likely path is incremental. A software engineering assistant saves engineering time. A customer-support assistant handles common enquiries. A legal assistant accelerates contract review. A compliance assistant helps prepare evidence and reports. Each project begins with its own return on investment.
 
@@ -129,7 +129,7 @@ Enterprise AI should not be justified by vague claims that everyone will become 
 
 This is also how current evidence should be read. [McKinsey estimated in 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases, with much of the potential concentrated in customer operations, marketing and sales, software engineering, and research and development. That estimate is not proof of realised enterprise-wide returns. It suggests that credible business cases should begin with specific workflows whose outcomes can be measured.
 
-For each workflow, the organisation can estimate the current cost base, the share of work addressable by AI, the measured productivity improvement, realistic adoption, how much of the improvement becomes financial value, and the cost of subscriptions, inference, integration, governance, security, training, and change management.
+For each workflow, the organisation can estimate its **cost base** (what the work costs today), the share that AI could assist, the measured productivity improvement, realistic **adoption** (how many people will actually use it), the **capture rate** (how much of the theoretical improvement becomes real financial value), and the cost of subscriptions, inference, integration, governance, security, training, and helping people adopt the new way of working.
 
 The basic logic is:
 
@@ -145,11 +145,11 @@ Then the organisation subtracts the cost of running and governing the system. Th
 
 ## Enterprise Throughput
 
-The most important metric may not be productivity alone. It may be enterprise throughput: the rate at which an organisation converts knowledge into business value.
+The most important measurement may not be productivity alone. It may be **enterprise throughput**: the amount of valuable work an organisation completes in a given time.
 
 For a bank, throughput might mean loans processed, risks analysed, regulations interpreted, software released, fraud cases investigated, customer requests resolved, and products launched. For a software company, it might mean features designed, code reviewed, bugs fixed, tests written, incidents resolved, documentation updated, and customers supported. For a hospital, it might mean records summarised, protocols followed, staffing decisions improved, compliance evidence gathered, and patient communication made clearer.
 
-AI may reduce labour cost, but that is not always the largest value. The larger value may be capacity expansion. If the same organisation can make better decisions, ship more software, serve more customers, clear more backlogs, and respond faster to change, the return may exceed simple headcount savings.
+AI may reduce labour cost, but that is not always the largest value. The larger value may be expanded capacity. If the same organisation can make better decisions, release more software, serve more customers, clear more unfinished work, and respond faster to change, the return may exceed savings from reducing the number of employees.
 
 ## The New Strategic Asset
 

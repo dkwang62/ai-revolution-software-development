@@ -60,6 +60,6 @@ I began the software project because the application I wanted did not exist. I b
 
 That remains the human part of the bargain.
 
-When ideas can become software more easily, the final question is no longer only *Can we build it?*
+When ideas can become software more easily, the final question is no longer only _Can we build it?_
 
-It is *What should we ask AI to help us make—and what evidence will justify keeping it?*
+It is _What should we ask AI to help us make—and what evidence will justify keeping it?_

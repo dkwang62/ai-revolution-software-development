@@ -6,7 +6,7 @@ title: "The Economics of Trust"
 
 AI does not enter serious software systems simply because it becomes more intelligent. It enters when people and organisations become willing to rely on it, and that is a different threshold.
 
-A model can be impressive in a demonstration and still be unusable in production. It may write elegant code, summarise complex documents, answer difficult questions, and reason through business problems, yet still be rejected if the organisation cannot answer a more practical question:
+A model can be impressive in a demonstration and still be unusable in **production**, meaning the live environment where real people and real data depend on it. It may write elegant code, summarise complex documents, answer difficult questions, and reason through business problems, yet still be rejected if the organisation cannot answer a more practical question:
 
 > Can we trust this system enough to use it where mistakes are expensive?
 
@@ -39,7 +39,7 @@ Cost of implementation
 + expected cost of failure
 ```
 
-If the answer is yes, adoption becomes economically rational. If the answer is no, the AI remains a demonstration, a pilot, or a personal productivity tool.
+If the answer is yes, adoption becomes economically rational. If the answer is no, the AI remains a demonstration, a pilot—a limited trial before wider use—or a personal productivity tool.
 
 This is why trust sits at the boundary between experimental AI and production AI. The more valuable the workflow, the more trust it demands.
 
@@ -73,7 +73,7 @@ An organisation must decide who may use AI, for what purpose, with what data, un
 
 **Security** matters because AI systems often sit between humans, data, tools, and company systems. A malicious instruction hidden in a document may try to redirect the AI; private information may escape; an agent may receive more authority than it needs; or corrupted training or reference material may influence its answers. Industry terms include **prompt injection**, **data leakage**, **excessive permissions**, and **model poisoning**. An isolated chatbot can make a mistake. An AI agent connected to real systems can cause damage.
 
-An organisation must be able to reconstruct what happened: who asked the AI, what information it received, which documents it found, which model answered, which tools it used, what it changed, and who approved the action. This ability is called **auditability**. Banks, hospitals, governments, insurers, airlines, and manufacturers cannot operate on “the AI did it.” They need records, activity logs, and a clear path for sending unusual cases to a responsible person.
+An organisation must be able to reconstruct what happened: who asked the AI, what information it received, which documents it found, which model answered, which tools it used, what it changed, and who approved the action. This ability is called **auditability**. An **audit trail** is the time-ordered record that makes such checking possible. Banks, hospitals, governments, insurers, airlines, and manufacturers cannot operate on “the AI did it.” They need records, activity logs, and a clear path for sending unusual cases to a responsible person.
 
 People also need reasons, sources, evidence, assumptions, uncertainty, alternatives, and known limitations. This practical ability is called **explainability**; it does not usually mean exposing all the internal mathematics of a model. If AI recommends a software structure, the team needs to know why, what compromises it involves, and what evidence supports it. If AI summarises a contract, the lawyer needs references to the clauses. If AI explains older software, the engineer needs links to the relevant code.
 
@@ -83,7 +83,7 @@ People also need reasons, sources, evidence, assumptions, uncertainty, alternati
 
 Trust becomes especially important when AI moves from answering questions to taking actions. A chatbot can be wrong. An agent can be wrong and do something about it.
 
-An AI agent may open files, modify code, run commands, query databases, create tickets, send emails, call APIs, update documents, or trigger workflows. Each capability increases usefulness, and each also increases risk. Therefore agentic systems need stronger boundaries than simple assistants: sandboxes, permission levels, human approval gates, tool restrictions, action logs, rollback mechanisms, monitoring, and escalation paths.
+An AI agent may open files, modify code, run commands, query databases, create support or work-tracking tickets, send emails, call APIs, update documents, or trigger workflows. Each capability increases usefulness, and each also increases risk. Therefore agentic systems need stronger boundaries than simple assistants: sandboxes, permission levels, human approval gates, tool restrictions, action logs, rollback mechanisms that restore an earlier state, monitoring, and escalation paths that hand difficult cases to a responsible person.
 
 An unconstrained agent may be impressive in a demo. A bounded agent is more likely to be useful in production.
 

@@ -36,7 +36,7 @@ They may use obsolete languages, old databases, outdated operating systems, frag
 
 The system still works, but the organisation no longer fully understands it.
 
-This is not only a technical inconvenience. It is an economic drag. The [Consortium for Information & Software Quality](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) estimated U.S. accumulated software technical debt at about \$1.52 trillion in 2022, while [McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) reported estimates from chief information officers (CIOs) that technical debt can amount to 20% to 40% of the value of a technology estate before depreciation. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works.
+This is not only a technical inconvenience. It is an economic drag. The [Consortium for Information & Software Quality](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) estimated U.S. accumulated software technical debt at about \$1.52 trillion in 2022, while [McKinsey](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/tech-debt-reclaiming-tech-equity) reported estimates from chief information officers (CIOs)—the executives responsible for an organisation's information technology—that technical debt can amount to 20% to 40% of the value of its technology systems before accounting for their loss of value with age. Those figures are broad estimates, not legacy-system measures specifically, but they help explain why old software can become expensive even when it still works.
 
 Public-sector audits make the problem more concrete. The [U.S. Government Accountability Office](https://www.gao.gov/products/gao-23-106821) identified 10 critical federal legacy systems in 2019 that ranged from 8 to 51 years old and collectively cost about \$337 million annually to operate and maintain. Several used older languages such as COBOL, and agency modernisation plans were often incomplete. The UK government created a formal [Legacy IT Risk Assessment Framework](https://www.gov.uk/government/publications/guidance-on-the-legacy-it-risk-assessment-framework), while its [National Audit Office](https://www.nao.org.uk/reports/government-cyber-resilience/) reported that departments lacked fully funded remediation plans for roughly half of government's recorded legacy IT assets in March 2024.
 
@@ -46,7 +46,7 @@ The most important point is that legacy software is not merely code.
 
 It is accumulated business knowledge.
 
-A bank's COBOL system is not valuable because of COBOL. It is valuable because it may contain decades of lending policies, risk calculations, accounting practices, regulatory responses, fraud-detection rules, exception handling, reporting requirements, and operational judgement.
+A bank's COBOL system is not valuable because of COBOL, an older programming language still used in many large organisations. It is valuable because it may contain decades of lending policies, risk calculations, accounting practices, regulatory responses, fraud-detection rules, exception handling, reporting requirements, and operational judgement.
 
 An airline reservation system contains more than seat data. It contains pricing rules, route structures, loyalty logic, rebooking policies, regulatory constraints, partner integrations, and decades of operational exceptions.
 
@@ -76,7 +76,7 @@ Because organisations cannot replace everything overnight, new systems must coex
 
 This creates System Integration.
 
-Modern applications must communicate with mainframes, programs written in older languages such as COBOL, commercial database and business systems such as Oracle and SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms.
+Modern applications must communicate with mainframes—large computers built to process enormous volumes of important transactions—programs written in older languages such as COBOL, commercial databases such as Oracle, enterprise resource planning systems such as SAP, custom applications, payment networks, medical devices, factory controllers, industrial robots, identity systems, reporting tools, and cloud platforms. An **enterprise resource planning (ERP) system** is shared software that connects activities such as finance, purchasing, inventory, manufacturing, sales, and human resources.
 
 Integration is not glamorous, but it is where software becomes economically real.
 
@@ -92,7 +92,7 @@ This is where technical debt and integration meet. A system can be valuable beca
 
 In a large bank, the new application is rarely allowed to reach directly into the core banking system. The usual architecture is layered.
 
-The customer might use a mobile app. Its request first passes through a controlled entrance that decides which internal service should receive it. Other connecting software may pass messages immediately, collect them for later processing, read databases, or reach a mainframe. Industry terms for these parts include **API gateway**, **integration layer**, **message queue**, **event stream**, and **batch job**. Deep underneath may be decades-old technologies with names such as **COBOL**, **CICS**, **IMS**, or **DB2**. The names matter less than the point: a simple tap may cross many boundaries before reaching the system that owns the record.
+The customer might use a mobile app. Its request first passes through a controlled entrance that decides which internal service should receive it. Other connecting software may pass messages immediately, collect them for later processing, read databases, or reach a mainframe. Industry terms for these parts include **API gateway**, **integration layer**, **message queue**, **event stream**, and **batch job**. A batch job processes a collection of work automatically, often at a scheduled time; a message queue holds messages until another system is ready to handle them. Deep underneath may be decades-old technologies with names such as **COBOL**, **CICS**, **IMS**, or **DB2**. The names matter less than the point: a simple tap may cross many boundaries before reaching the system that owns the record.
 
 The point is not that every bank has exactly this architecture. The point is that enterprise systems usually meet through boundaries:
 
@@ -146,7 +146,7 @@ The market is already moving in this direction. Vendor offerings from Amazon Web
 
 ## Gradual Migration
 
-The safest path for many organisations is gradual migration.
+The safest path for many organisations is gradual migration: moving from an old system to a new one in controlled stages.
 
 One module. One interface. One database. One workflow. One service. One report.
 
@@ -164,7 +164,7 @@ That is app-scale evidence for the larger enterprise pattern. The safest improve
 
 ## Capital Preservation
 
-The phrase "capital preservation" is usually used in finance, but it applies to software.
+The phrase "capital preservation" usually means protecting money or assets already accumulated. It also applies to software.
 
 Organisations have invested vast sums in software over decades. That investment includes code, data, processes, integrations, knowledge, training, and operational habits. Throwing it away is rarely simple.
 
@@ -180,7 +180,7 @@ It helps old systems communicate with new ones.
 
 It may turn legacy software from a burden into a source of recoverable institutional knowledge.
 
-This is why system integration belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in greenfield applications. It will be built in contact with old systems.
+This is why system integration belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in **greenfield applications**, projects started from a clean slate without an older system to preserve. It will be built in contact with old systems.
 
 ## Five Years
 
