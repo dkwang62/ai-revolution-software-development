@@ -1,5 +1,12 @@
 @use "../../styles/variables.scss" as *;
 
+@media all and not ($mobile) {
+  .page > #quartz-body .sidebar.left:has(.book-contents) {
+    gap: 0.8rem;
+    padding-top: 2rem;
+  }
+}
+
 @media all and ($mobile) {
   .page > #quartz-body .sidebar.left:has(.book-contents) {
     position: sticky;
@@ -8,11 +15,6 @@
     box-sizing: border-box;
     padding: 0.75rem 0;
     background: var(--light);
-
-    > .page-title,
-    > .spacer {
-      display: none;
-    }
   }
 }
 
