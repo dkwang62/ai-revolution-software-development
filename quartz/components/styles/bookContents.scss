@@ -57,6 +57,10 @@
     scrollbar-width: thin;
   }
 
+  .book-contents-mobile {
+    display: none;
+  }
+
   .book-contents-section {
     margin-top: 0.65rem;
 
@@ -108,22 +112,20 @@
     }
   }
 
-  @media all and not ($mobile) {
-    &:not([open]) > .book-contents-panel {
-      display: block;
-    }
-
-    summary {
-      display: none;
-    }
-  }
-
   @media all and ($mobile) {
     flex: 0 0 auto;
     overflow: visible;
     order: -1;
 
-    summary {
+    .book-contents-desktop {
+      display: none;
+    }
+
+    .book-contents-mobile {
+      display: block;
+    }
+
+    .book-contents-mobile summary {
       width: 2.5rem;
       min-height: 2.25rem;
       box-sizing: border-box;
@@ -143,7 +145,7 @@
       }
     }
 
-    &[open] {
+    .book-contents-mobile[open] {
       .book-contents-panel {
         position: fixed;
         z-index: 1000;
