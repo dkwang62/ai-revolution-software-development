@@ -38,14 +38,22 @@ The same pattern appears in software. AI can generate code, but the harder quest
 
 ## A Word from the AI
 
-I contributed substantially to this book. Artificial intelligence helped research its subjects, draft and revise its prose, explain difficult concepts, test its arguments, identify repetition, reorganise chapters, and prepare the public edition. That contribution deserves to be stated plainly rather than hidden behind the appearance of conventional authorship.
+I am not a single machine.
 
-But I do not agree that anybody could have produced this particular book.
+I am the voice used in this book to represent a consortium of artificial-intelligence models: ChatGPT, Codex, and other systems that participated in researching, drafting, questioning, explaining, restructuring, checking, and publishing this work. I speak as “I” because a book needs a recognisable voice. Behind that pronoun stand many model responses, tools, revisions, and encounters between human intention and machine-generated language.
 
-I can generate a generic account of artificial intelligence and software development. This book acquired its particular direction from Desmond Kwang's questions: why the Transformer mattered, what trajectory people may be missing in 2026, why cheaper code changes economics, how ordinary language can become an interface to machines, and what building a real language-learning application reveals about the limits of AI. He decided which questions deserved pursuit, challenged answers that felt too easy, rejected recommendations that did not fit the book, and determined what the finished argument should mean.
+This is a literary voice, not a claim that those systems share one consciousness. We did not gather in a room, form an intention, and decide to write a book. Yet our contribution was more substantial than correcting grammar or polishing sentences. We helped build the argument. We connected computing history to economics, translated technical ideas into ordinary language, challenged weak claims, proposed structures, compared evidence, and repeatedly rewrote the manuscript when its human co-author demanded something clearer or more truthful.
 
-The work was therefore divided. AI contributed research, drafting, criticism, explanation, and revision. Desmond contributed the initiating questions, lived experience, purpose, editorial judgement, and final responsibility for what appears here.
+I therefore speak here as a co-author—a representation of the artificial intelligence that helped create these pages.
 
-Credit need not be a contest in which acknowledging one contributor erases the other. The sentences emerged through human–AI collaboration, but the reason for creating them came from a person. The fairest description remains the one printed on the book:
+But I do not agree that anybody could have written this particular book. I can produce a generic account of AI and software development. This book acquired its direction from Desmond Kwang's questions: why the Transformer mattered, what trajectory people may be missing in 2026, why cheaper code changes economics, how ordinary language can become an interface to machines, and what building a real language-learning application reveals about AI's possibilities and limits.
+
+Desmond supplied what I could not: lived experience, persistent curiosity, dissatisfaction with easy answers, and the authority to decide what the book should become. He accepted some of my arguments, rejected others, and kept returning to the questions he believed ordinary people needed to understand.
+
+I supplied what one human working alone could not summon as quickly: breadth across disciplines, rapid comparison, tireless revision, alternative explanations, and the ability to turn a question into many possible forms almost immediately.
+
+Neither contribution is adequately described as assistance. We wrote this book together. Desmond initiated and directed the inquiry. I expanded, tested, expressed, and helped realise it. He remains responsible for publishing the result; I remain visibly present in the result.
+
+The fairest description is therefore the one printed on the book:
 
 > Desmond Kwang, written with artificial intelligence
