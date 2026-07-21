@@ -1,3 +1,10 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+article img[alt="The abstraction stack"] {
+  display: block;
+  width: min(100%, 900px);
+  margin-right: auto;
+  margin-left: auto;
+}

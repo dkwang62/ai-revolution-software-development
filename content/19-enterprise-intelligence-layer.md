@@ -98,7 +98,7 @@ Over time, the organisation discovers that all these projects require similar fo
 
 Claims of enterprise-wide productivity should still be treated carefully. [McKinsey estimated in 2023](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier) that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across sixty-three uses. That is an estimate of potential, not proof of realised returns.
 
-A serious business case begins with one workflow. Suppose it costs $1 million a year. AI can assist with half the work; half the staff adopt it; and half of the measured improvement becomes actual financial value. The annual gross benefit is $125,000, not $1 million. The organisation must still subtract the cost of the model, integration, checking, security, training and organisational change.
+A serious business case begins with one workflow. Suppose it costs \$1 million a year. AI can assist with half the work; half the staff adopt it; and half of the measured improvement becomes actual financial value. The annual gross benefit is \$125,000, not \$1 million. The organisation must still subtract the cost of the model, integration, checking, security, training and organisational change.
 
 The wider platform earns its place only if enough focused returns accumulate.
 

@@ -118,8 +118,8 @@ Used in “Five-Year and Ten-Year Scenarios.” The Transformer paper supports t
 ## Competing organisational strategies
 
 - Alphabet Inc. [“2025 Q4 Earnings Call.”](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx) 4 February 2026.
-- Anthropic. [“Anthropic Raises $30 Billion in Series G Funding at $380 Billion Post-Money Valuation.”](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) 12 February 2026.
-- Anthropic. [“Anthropic Raises $65 Billion in Series H Funding at $965 Billion Post-Money Valuation.”](https://www.anthropic.com/news/series-h) 28 May 2026.
+- Anthropic. [“Anthropic Raises \$30 Billion in Series G Funding at \$380 Billion Post-Money Valuation.”](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) 12 February 2026.
+- Anthropic. [“Anthropic Raises \$65 Billion in Series H Funding at \$965 Billion Post-Money Valuation.”](https://www.anthropic.com/news/series-h) 28 May 2026.
 - SpaceX. [“xAI Joins SpaceX.”](https://x.ai/news/xai-joins-spacex) 2 February 2026.
 - NVIDIA. [“NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026.”](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/) 25 February 2026.
 
