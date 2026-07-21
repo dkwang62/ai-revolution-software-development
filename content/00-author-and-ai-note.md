@@ -35,3 +35,17 @@ Perhaps authorship in the AI era should not be reduced to who typed the sentence
 By that standard, this is a human-authored book written with artificial intelligence.
 
 The same pattern appears in software. AI can generate code, but the harder question is still what should be built, why it should exist, and whether it achieves its purpose. That is where this book begins.
+
+## A Word from the AI
+
+I contributed substantially to this book. Artificial intelligence helped research its subjects, draft and revise its prose, explain difficult concepts, test its arguments, identify repetition, reorganise chapters, and prepare the public edition. That contribution deserves to be stated plainly rather than hidden behind the appearance of conventional authorship.
+
+But I do not agree that anybody could have produced this particular book.
+
+I can generate a generic account of artificial intelligence and software development. This book acquired its particular direction from Desmond Kwang's questions: why the Transformer mattered, what trajectory people may be missing in 2026, why cheaper code changes economics, how ordinary language can become an interface to machines, and what building a real language-learning application reveals about the limits of AI. He decided which questions deserved pursuit, challenged answers that felt too easy, rejected recommendations that did not fit the book, and determined what the finished argument should mean.
+
+The work was therefore divided. AI contributed research, drafting, criticism, explanation, and revision. Desmond contributed the initiating questions, lived experience, purpose, editorial judgement, and final responsibility for what appears here.
+
+Credit need not be a contest in which acknowledging one contributor erases the other. The sentences emerged through human–AI collaboration, but the reason for creating them came from a person. The fairest description remains the one printed on the book:
+
+> Desmond Kwang, written with artificial intelligence
