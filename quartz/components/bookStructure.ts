@@ -110,13 +110,18 @@ export const bookSections: BookSection[] = [
     ],
   },
   {
-    title: "Part V · The Future",
+    title: "Interlude",
     entries: [
       {
-        slug: "part-v-the-future" as FullSlug,
-        title: "Part V Introduction: The Future Is a System",
-        shortTitle: "Introduction",
+        slug: "interlude-a-machine-from-2026-arrives-in-1981" as FullSlug,
+        title: "Interlude: A Machine From 2026 Arrives in 1981",
+        shortTitle: "The Future Is a System",
       },
+    ],
+  },
+  {
+    title: "Part V · The Future",
+    entries: [
       {
         slug: "17-what-becomes-scarce-when-code-becomes-cheap" as FullSlug,
         title: "Chapter 14: What Becomes Scarce When Code Becomes Cheap?",

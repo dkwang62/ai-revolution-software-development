@@ -1,10 +1,10 @@
 ---
-title: "Part V: The Future"
+title: "Interlude: A Machine From 2026 Arrives in 1981"
+aliases:
+  - part-v-the-future
 ---
 
-# Part V: The Future
-
-## A Machine From 2026 Arrives in 1981
+# Interlude: A Machine From 2026 Arrives in 1981
 
 Imagine placing a modern smartphone on a desk in 1981.
 
@@ -20,4 +20,4 @@ We may be making the same mistake when we look at AI today. We stare at the mode
 
 The model is the astonishing object on the desk. The future is the system that allows its capability to reach everything else.
 
-Part V asks what happens as that surrounding system is built: which abilities become scarce when code becomes cheap, how the work of programmers changes, how organisations connect models to their own knowledge, and where these movements could lead in five and ten years. We begin with a basic economic rule: when one important cost falls, the bottleneck moves.
+Part V asks what happens as that surrounding system is built: which abilities become scarce when code becomes cheap, how the work of programmers changes, how organisations connect models to their own knowledge, and where these movements could lead in five and ten years. It begins with a basic economic rule: when one important cost falls, the bottleneck moves.
