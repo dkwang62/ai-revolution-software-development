@@ -10,7 +10,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 11**
+**Version 1.0.0 · Build 12**
 
 ![Book cover](figures/cover.png)
 

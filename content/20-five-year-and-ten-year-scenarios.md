@@ -95,43 +95,27 @@ The barriers can therefore be summarised in four sentences:
 
 ## Signals From 2026
 
-A forecast becomes more than a guess when it can point to visible forces already pushing in the same direction. In 2026, those forces can be seen in the mathematics, the machinery and the decisions of companies placing large bets.
+A forecast becomes more than a guess when visible forces are already pushing in the same direction. Four signals in 2026 ground the scenarios that follow.
 
-### The Mathematics Is Seeking Cheaper Memory
+First, the mathematics is seeking cheaper memory. The Transformer became powerful partly because **attention** lets a model compare different parts of an input. Ordinary attention, however, becomes expensive as the input grows. **State-space models** such as Mamba and memory research such as Google's Titans point towards hybrid systems in which attention works alongside recurrence, persistent memory, specialised models, tools, and extra computation for difficult questions. This does not prove that the Transformer will disappear. It suggests that it may be absorbed into a larger system. [Gu and Dao, _Mamba_](https://arxiv.org/abs/2312.00752); [Behrouz, Zhong and Mirrokni, _Titans_](https://research.google/pubs/titans-learning-to-memorize-at-test-time/)
 
-The Transformer became powerful partly because **attention** lets a model compare different parts of an input and decide what matters. The difficulty is that ordinary attention can become expensive as the input grows: doubling the length can create roughly four times as many pairwise relationships to examine.
+Second, reasoning is becoming adaptive. A system need not spend the same effort on every task. It can answer a simple request quickly and reserve more steps, tests, or competing attempts for a difficult one. The aim is not maximum reasoning everywhere, but the lowest total cost for a dependable result.
 
-Researchers are therefore exploring ways to preserve the Transformer's strengths without making attention do everything. **State-space models** such as Mamba carry a changing summary forward through a sequence and can scale linearly with its length. Google's Titans research combines attention with a learned long-term memory. These approaches do not prove that one architecture will replace the Transformer. They suggest a more likely path: attention survives as one component inside a hybrid system containing recurrence, persistent memory, specialised models, tools and extra computation for difficult questions. [Gu and Dao, _Mamba_](https://arxiv.org/abs/2312.00752); [Behrouz, Zhong and Mirrokni, _Titans_](https://research.google/pubs/titans-learning-to-memorize-at-test-time/)
+Third, the AI computer is becoming a coordinated system. Processors are useful only if enormous quantities of data can reach them quickly. High-bandwidth memory, chiplets, faster links, custom accelerators, and shorter numerical formats such as **FP4** all reduce movement and calculation. Manufacturers now describe complete platforms combining processors, networking, memory, and storage—not simply one faster chip. [Micron, “HBM4”](https://www.micron.com/products/memory/hbm/hbm4); [NVIDIA, “Rubin”](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer)
 
-Another change is **adaptive reasoning**. A system need not spend the same effort on every task. It can answer a simple question quickly, then allocate more steps, tests or competing attempts to a difficult one. This makes the future partly an economic problem: use expensive intelligence only where its expected benefit exceeds its added cost.
+Fourth, capital and integration are testing whether the ideas matter. Alphabet is combining models, its own Tensor Processing Units, cloud infrastructure, and mass-market products. NVIDIA is expanding from GPUs into complete computing platforms. Microsoft is integrating agents into cloud, office, and development tools. Anthropic's Claude Code represents a software-centred bet on agents that work across real projects. SpaceX and xAI represent the attempt to connect AI with physical engineering under common control.
 
-### The AI Computer Is Becoming a Coordinated System
+These companies are examples, not share recommendations. Large bets can produce advantage, waste, or both. Their importance is that mathematics, hardware, distribution, software integration, and physical capability are being pursued together. The direction is visible even though the winners are not. [Alphabet, 2025 Q4 earnings call](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx); [Microsoft, FY2026 Q3 earnings](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3); [Anthropic, Series G announcement](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation); [SpaceX, “xAI Joins SpaceX”](https://x.ai/news/xai-joins-spacex)
 
-The processor alone does not determine performance. An AI system must continually move enormous quantities of numbers among processors, memory and other machines. If data arrives too slowly, an expensive processor waits like a factory whose raw materials are stuck outside the gate.
+| Visible signal | Possible consequence |
+| --- | --- |
+| Adaptive reasoning | Difficult tasks receive more effort without charging every request the highest cost |
+| Hybrid memory | Agents remain coherent across longer projects |
+| HBM and custom accelerators | Cost and waiting time fall per useful result |
+| Coding agents | Software creation moves from isolated answers towards checked workflows |
+| Capital and integration | AI becomes ordinary infrastructure rather than a separate application |
 
-That is why the trajectory includes high-bandwidth memory, chiplets, faster links and custom AI accelerators as well as better GPUs. It also includes lower numerical precision. Using shorter numbers—such as four-bit floating-point numbers, often called **FP4**—can reduce storage, data movement and calculation, provided accuracy remains adequate for the job. Micron says its HBM4 memory can exceed 2.8 terabytes per second, while NVIDIA describes Rubin not as a single chip but as a platform combining processors, networking and storage. These are manufacturers' claims, not independent guarantees, but they reveal the engineering direction: the data centre is increasingly designed as one coordinated AI computer. [Micron, “HBM4”](https://www.micron.com/products/memory/hbm/hbm4); [NVIDIA, “Rubin”](https://nvidianews.nvidia.com/news/rubin-platform-ai-supercomputer)
-
-### Capital and Integration Test Whether the Ideas Matter
-
-Research papers reveal what may be possible. Capital expenditure and product integration reveal what organisations are prepared to risk in order to make it useful.
-
-- **Alphabet** is combining model research, its own Tensor Processing Units (TPUs), cloud infrastructure and mass-market products. It reported US\$91.4 billion of capital expenditure in 2025, mainly for technical infrastructure, and planned substantially more in 2026. This is a vertically integrated bet: improve several layers together.
-- **NVIDIA** is expanding from GPUs into processors, networking, memory systems and complete AI platforms. Its strategy is to supply much of the factory, not merely one machine inside it.
-- **Microsoft** is integrating models and agents into Azure, GitHub and Microsoft 365 while developing its own accelerators. In April 2026 it said its AI business had passed US\$37 billion in annual recurring revenue and that 140,000 organisations used GitHub Copilot. These company-reported figures show commercial adoption, not audited proof that every customer gained productivity.
-- **Anthropic** represents a more software-centred bet on capable models and agents. It reported in February 2026 that Claude Code's annualised revenue run rate had exceeded US\$2.5 billion. The importance of the example is not the precise figure; it is evidence that an AI tool able to work across a real codebase can become a substantial product.
-- **SpaceX and xAI** represent a different form of ambition: joining AI, computing infrastructure and physical engineering under common control. That may accelerate difficult experiments, but concentration also increases financial and governance risk.
-
-These are not recommendations about which company's shares to buy. Large expenditure can produce advantage, waste or both. The companies matter here because their contrasting strategies expose the race: mathematical intelligence, specialised hardware, distribution, integration and physical capability are being developed together. [Alphabet, 2025 Q4 earnings call](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx); [Microsoft, FY2026 Q3 earnings](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3); [Anthropic, Series G announcement](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation); [SpaceX, “xAI Joins SpaceX”](https://x.ai/news/xai-joins-spacex)
-
-| Visible signal | What is changing | Possible future consequence |
-| --- | --- | --- |
-| Adaptive reasoning | More computation is reserved for harder tasks | Better results without paying the highest cost for every request |
-| Hybrid memory | Attention is combined with recurrence or persistent memory | Agents can work coherently over longer projects |
-| HBM and custom accelerators | Data moves faster and hardware is designed around AI workloads | Lower cost and latency per useful result |
-| Coding agents | AI reads files, uses tools, runs tests and revises work | Software creation moves from isolated answers towards dependable workflows |
-| Capital and integration | Models, chips, cloud services and products are developed together | AI becomes ordinary infrastructure rather than a separate application |
-
-These developments do not prove the forecast. They show that the technical work, capital investment and commercial integration are already moving in the forecast's direction.
+These signals do not prove the forecast. They show that research, investment, and commercial integration are already moving in its direction.
 
 ## Five Years: Intelligence Becomes Ordinary Infrastructure
 

@@ -178,22 +178,6 @@ It may turn legacy software from a burden into a source of recoverable instituti
 
 This is why system integration belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in **greenfield applications**, projects started from a clean slate without an older system to preserve. It will be built in contact with old systems.
 
-## Five Years
-
-In a five-year scenario, AI becomes a normal assistant for software modernisation.
-
-Engineers use it to read old code, generate explanations, write tests, produce documentation, map dependencies, create adapters, and compare behaviours. It does not autonomously replace critical systems, but it reduces the labour required to understand them.
-
-The organisations that benefit most are likely to be those that combine AI with disciplined engineering: version control, tests, human review, domain expertise, staged migration, and strong governance.
-
-## Ten Years
-
-In a ten-year scenario, AI systems may understand larger portions of an enterprise.
-
-Not merely one application, but relationships across finance, inventory, compliance, logistics, customer management, manufacturing, and reporting. They may help identify redundant systems, propose migration paths, maintain documentation continuously, and detect integration risk before changes are made.
-
-This scenario depends on advances in context, retrieval, security, model reliability, tool use, and enterprise data governance. It is plausible, but not guaranteed.
-
 ## The Engineering Lesson
 
 Legacy systems teach humility.

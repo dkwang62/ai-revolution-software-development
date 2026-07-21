@@ -44,147 +44,84 @@ The programming language is no longer always the bottleneck. Understanding the p
 
 ## Why Requirements Become More Valuable
 
-When implementation is expensive, many ideas never reach software because the cost of programming exceeds the expected benefit. AI lowers that implementation cost, sometimes dramatically. That sounds as if software development becomes easier in every respect.
+AI can turn an unclear idea into a working prototype within minutes. That is an achievement, but it also makes ambiguity executable. A missing rule no longer waits quietly in a meeting note; it becomes software that confidently does the wrong thing.
 
-In one sense it does.
+When code was expensive, the main bottleneck was translating requirements into implementation. As generation becomes cheaper, the bottleneck moves upward: defining intended behaviour well enough to build, test, and maintain it. Requirements become an active engineering surface rather than paperwork completed before the real work begins.
 
-But the reduction in implementation cost exposes a different scarcity. If code is cheaper, unclear requirements become more expensive by comparison. A confused instruction can now become a confused prototype in seconds. A missing constraint can be converted into working but wrong behaviour. A vague description can produce an application that looks impressive while solving the wrong problem.
+## From a Vague Request to a Testable Specification
 
-This is not a minor inconvenience. It is a structural change in the economics of software.
+Consider the language-learning quiz used throughout this book. It begins with an ordinary request:
 
-In the old bottleneck, the scarce resource was the ability to translate requirements into code. In the new bottleneck, the scarce resource is the ability to define requirements well enough that AI-generated implementation can be trusted, tested, and improved.
+> Create a quiz from these Chinese characters.
 
-That means requirements are no longer just the document before software development begins. They become an active engineering surface.
+That is a useful prompt for exploration. It is not yet a dependable requirement. The AI could choose any material, show all questions at once, reveal the answer immediately, or return text the application cannot read.
 
-## Requirements Are Not Prompts
+The first step is to state the outcome from the learner's point of view:
 
-A prompt may express a requirement, but the two are not identical.
+> The learner can practise the Chinese material they selected, one question at a time, without seeing the answer before responding.
 
-A prompt is an instruction given to an AI system. A requirement is a claim about what the software must do. A prompt may be casual, temporary, and model-specific. A requirement should be inspectable, stable enough to discuss, and precise enough to test.
+Now the team can ask about boundaries and edge cases:
 
-This distinction matters because AI systems can make prompts feel deceptively powerful. A user can type a request and receive working code. That is remarkable, but it can also hide ambiguity. The generated result may satisfy the wording of the prompt while violating the real intention behind it.
-
-For example, "create a quiz" is a prompt. A requirement asks harder questions:
-
-- What material may the quiz use?
-- What level should the learner be tested at?
-- Should questions appear one at a time?
-- When may the answer be shown?
+- May the model use material that was not selected?
+- Where may pinyin appear?
+- What happens when there is too little source material?
 - What counts as a correct answer?
-- What mistakes must the system avoid?
-- What output format does the application require?
-- How should the system behave when the input is incomplete?
+- Can the learner skip a question?
+- What must the app do if the model returns an invalid format?
 
-Once those questions are answered, the prompt begins to resemble a specification.
+The answers become acceptance criteria—statements that can be checked:
 
-That is why natural language does not remove engineering discipline. It moves engineering discipline into language.
+```text
+Given selected source material,
+when the learner starts a quiz,
+then the system asks one question at a time.
+
+The question must not reveal its own answer.
+Pinyin may appear in the explanation but not in the choices.
+Every question must be traceable to the selected material.
+If the response has the wrong structure, the app must reject it safely.
+```
+
+Only then should the team decide how to implement the behaviour: which instructions the model receives, what information it may retrieve, what output fields it must return, what deterministic checks the app performs, and when a human must remain in control.
+
+The chain is the important part:
+
+```text
+vague request
+↓
+user outcome
+↓
+constraints and edge cases
+↓
+acceptance criteria
+↓
+testable specification
+↓
+implementation and verification
+```
+
+A prompt asks the AI to do something now. A requirement states what the finished system must do. A specification makes that behaviour precise enough to build and test. They can be written in the same language, but they serve different purposes.
+
+## Requirements for AI Behaviour
+
+AI adds questions that ordinary features may not raise. What should the system know or retrieve? What information must it ignore or forget? Must it cite its source? May it take an action, or only recommend one? What happens when it is uncertain? Which decisions require human approval?
+
+These are not separate technical distractions. They are requirements because they change what the user experiences and what risks the organisation accepts. A loan recommendation may require reasons and source evidence. A support agent may be allowed to draft a refund but not approve it. A quiz generator may propose content but never change the learner's stored material without consent.
+
+The greater the system's authority, the more explicit the boundary must be.
 
 ## Evaluation Is Not Verification
 
-AI also changes the testing conversation.
+Because an AI may produce several acceptable answers, teams evaluate it across representative examples. An evaluation can show that the quiz usually follows the expected level, source material, and sequence.
 
-Traditional software checks individual pieces, checks whether pieces work together, repeats old tests after changes, confirms that the finished behaviour meets the user's needs, reviews code, examines it for defects, and watches the running system. Industry terms include **unit**, **integration**, **regression**, and **acceptance testing**, along with **code review**, **static analysis**, and **monitoring**. These practices remain essential.
+Verification asks a narrower question: can this particular output be safely used now? Does it have the required fields? Did it expose the answer? Can the application parse it? Is every question grounded in permitted material?
 
-AI systems add another layer. Because AI may give different acceptable answers to the same request, teams test it across collections of representative examples rather than checking only one exact output:
+Evaluation measures general performance. Verification checks a particular result or system against its stated rules. Both depend on requirements; without an agreed target, a team can measure activity without knowing whether it succeeded.
 
-- Evaluation datasets.
-- Benchmarks.
-- Human feedback.
-- Prompt evaluation.
-- Model evaluation.
-- Continuous evaluation.
+## The New Economics of Definition
 
-This distinction has practical support. The [U.S. National Institute of Standards and Technology (NIST)](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) defines validation through objective evidence that requirements for a specific intended use have been fulfilled. [OpenAI's evaluation guidance](https://platform.openai.com/docs/guides/evals) treats evaluations—often shortened to **evals**—as structured tests for measuring variable model behaviour. [Google Cloud's evaluation documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) describes checks for whether an answer is supported by evidence, safe, readable, or exactly correct. The [Open Worldwide Application Security Project (OWASP)](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/) warns about unsafe handling of model output and [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/), meaning an AI system is given more power to act than it needs.
+Cheap generation can multiply both good ideas and confused ones. Clear requirements reduce rework because they give the model less room to invent the wrong behaviour and give humans a visible basis for checking the result.
 
-Evaluation asks whether an AI system performed well across examples. Verification asks whether a particular result, workflow, or system can be trusted for its intended use.
+This is where valuable human work moves. Architecture decides where data lives, which parts must be deterministic, and how failures are contained. Domain experts identify the rules that matter in education, banking, medicine, or law. Engineers turn those rules into testable boundaries. AI can assist all three, but it cannot decide by itself what the organisation should value or what risk is acceptable.
 
-The difference is crucial.
-
-An AI quiz generator might perform well across an evaluation set. It may usually create appropriate questions, usually avoid revealing answers, and usually follow the expected sequence. That is evaluation.
-
-Verification asks a sharper question: can this particular quiz result be imported into the app, shown to a learner, and trusted not to contain the answer in the question, use the wrong source material, or break the application's format?
-
-Evaluation measures performance. Verification establishes confidence.
-
-This distinction should become central to the book because it explains why AI-assisted software development is not merely about generating more code. The more AI participates in software creation, the more engineering effort shifts toward specifying, evaluating, verifying, and governing behaviour.
-
-## Explainability Becomes a Requirement
-
-In traditional software, explainability is often implicit. If a program rejects a transaction, calculates a tax amount, or displays a warning, engineers can usually inspect the relevant code path.
-
-AI makes this harder.
-
-Suppose an AI system recommends rejecting a loan. Why?
-
-Suppose it helps diagnose cancer. Why?
-
-Suppose it generates a software architecture. Why this architecture and not another one?
-
-In many domains, the answer cannot be "because the model said so." Explainability becomes an engineering requirement, especially when software affects money, health, safety, law, education, employment, or public services.
-
-This does not mean every AI system must expose its internal mathematics to the user. Most users would not understand that even if it were possible. But the system must often provide reasons, evidence, traceability, source references, confidence levels, logs, fallback paths, or human review mechanisms.
-
-Explainability is therefore not merely a philosophical problem. It is part of requirements engineering.
-
-## Memory Changes Software Behaviour
-
-AI also introduces a new kind of software memory.
-
-This is not only "ChatGPT memory" in the consumer-product sense. It is the broader question of how AI-enabled applications remember context, retrieve knowledge, and maintain continuity across interactions.
-
-Modern AI applications may use several ways of saving and finding information:
-
-- Retrieval-augmented generation.
-- Knowledge bases.
-- Vector databases, which find material with mathematically similar meaning.
-- Persistent context, meaning useful background is saved between sessions.
-- User profiles.
-- Document stores.
-- Conversation histories.
-- Application state, meaning the information that records what the application is doing now.
-
-These mechanisms change requirements. A conventional feature might ask, "What should the application do when the user clicks this button?" An AI-enabled feature must also ask, "What should the system know, remember, retrieve, ignore, forget, or cite?"
-
-Memory therefore connects requirements engineering to context, integration, agents, and verification. The behaviour of an AI system depends not only on the model but on what information surrounds it at the moment it acts.
-
-## Agents Require Requirements Discipline
-
-Agents should not be introduced as magic autonomous entities. They become possible when several capabilities are combined:
-
-- Tools.
-- Memory.
-- Planning.
-- Evaluation.
-- Verification.
-- Permissions.
-- Monitoring.
-
-Without those surrounding systems, an "agent" is just a model producing text. With them, it can take actions in the world: call APIs, update records, generate files, run workflows, or interact with other systems.
-
-That makes requirements more important, not less.
-
-An agent needs clear boundaries. What may it do? What must it ask permission for? What tools can it use? What data can it access? What should be logged? When must it stop? When must it escalate to a human?
-
-The more agency a system has, the more explicit its requirements must become.
-
-## Architecture Becomes More Valuable
-
-AI makes coding cheaper. It does not make architecture less important.
-
-In fact, architecture may become more valuable because cheap code increases the risk of building many disconnected pieces quickly. If every team, department, teacher, doctor, accountant, or entrepreneur can generate software, the question becomes how all that software fits together.
-
-Architecture answers questions that code generation alone cannot:
-
-- Where should the data live?
-- Which systems should be authoritative?
-- What should be deterministic?
-- Where is probabilistic AI acceptable?
-- How should errors be contained?
-- How should components communicate?
-- What must be observable?
-- What must be reversible?
-- What should be reused rather than regenerated?
-
-AI can assist with these questions, but it does not make them disappear. If anything, it raises their importance because the volume of generated software may increase faster than organisations can govern it.
-
-This is another economic shift. When coding was expensive, writing code consumed much of the budget. When coding becomes cheaper, design, architecture, integration, verification, and judgement absorb more of the value.
+The scarce skill is no longer merely telling a computer how to perform a procedure. It is deciding which procedure deserves to exist and describing it well enough that people and machines can tell when it is wrong.

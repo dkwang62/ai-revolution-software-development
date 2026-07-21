@@ -10,7 +10,7 @@ The preceding Part explained models, English-to-software transformation, and the
 
 That surrounding information is context.
 
-Without context, many later arguments in the book remain incomplete. Context explains why prompts matter, why requirements matter, why long context windows matter, why AI agents need memory, why senior engineers still have advantages, why enterprise knowledge may become a strategic asset, and why AI can be brilliant in general while still making poor decisions inside a specific project.
+Context explains why a model can be brilliant in general and still make a poor decision inside a particular project.
 
 The central question is simple:
 
@@ -108,15 +108,9 @@ The same is true for AI.
 
 ## Why Larger Context Windows Matter
 
-Larger context windows matter because real software systems are not isolated fragments. A small code change may depend on how data is organised, which kinds of values are allowed, how screens normally look, a business rule, sample data used in testing, a setting, a security requirement, instructions for moving old data, an earlier design decision, or a previous real-world failure. Programmers call these details a **schema**, **type definition**, **user-interface convention**, **test fixture**, **configuration**, **migration script**, or **production incident**. The terms describe, respectively, the shape of data, the allowed values, an established screen pattern, reusable test data, system settings, instructions for moving old data, and a failure in the live system.
+Real software systems are not isolated fragments. A small change may depend on stored data, screen conventions, business rules, security requirements, old decisions, or previous failures. If the model sees only the function being edited, it may produce a locally plausible change that breaks the larger system.
 
-If the model sees only the function being edited, it may produce a locally plausible change that breaks the larger system.
-
-Longer context can help because it allows more of the system to be visible at once. A model can inspect more files, read more requirements, consider more examples, and maintain more of the conversation. But larger context is not magic. More information can also mean more noise. The right fact may be buried among irrelevant material. The model may pay attention to the wrong detail, treat stale documentation as current, or miss a small but decisive constraint.
-
-The economic value of long context therefore depends on quality, not only quantity. The better question is not "How many tokens can the model accept?" but "Is the right information available at the right moment in a form the model can use?"
-
-That is a much deeper engineering problem.
+A larger context window can expose more files, requirements, examples, and conversation. It can also add noise. The model may follow stale documentation or miss one decisive constraint among thousands of irrelevant lines. The important question is therefore not only "How much can the model read?" but "Is the right information available at the right moment?"
 
 ## Memory and Retrieval
 
@@ -159,6 +153,14 @@ When AI fails at a software task, the failure is often described as lack of inte
 
 That is not merely a model problem. It is a context problem.
 
+## Field Note: The Highlight That Already Worked
+
+I once reported that a highlighted Chinese character was not working while I browsed a document in the language-learning application. A superficial response would have rewritten the highlighting code. Inspection showed that the highlight already existed. The real defect was navigation: the application did not move to the page containing it, so the learner could not see it.
+
+The diagnosis depended on the actual project rather than general programming knowledge. The AI coding agent searched the relevant files, followed the state changes, and compared the intended journey with the implemented one. This is **grounding**: connecting a conclusion to evidence from the situation in which the system is acting.
+
+The lesson is simple. A strong model with the wrong context can fix the wrong problem. A good engineering workflow gathers enough evidence to identify the real one.
+
 ## Context as an Economic Bottleneck
 
 [[02-economics-of-software-development|The Economics of Software Development]] argued that software has been expensive because expertise is scarce. AI changes that by making general software knowledge more available. A person can ask for help with Python, Swift, SQL, architecture, testing, debugging, or refactoring and receive useful assistance immediately.
@@ -195,29 +197,13 @@ Context also has cost. More tokens usually mean more computation, more memory, m
 
 That is why the race may shift from largest context to smartest context: better retrieval, better reasoning, better tool use, and better verification. The goal is not to stuff everything into the model's working memory. The goal is to supply the right information at the right time, at acceptable cost.
 
-## Enterprise Context
-
-The idea becomes even more powerful at organisational scale. A company is not just a collection of employees and software systems. It is also a collection of accumulated knowledge: source code, design documents, API specifications, architecture decisions, meeting notes, customer complaints, support tickets, production incidents, regulatory obligations, business policies, operational workflows, historical compromises, and undocumented rules.
-
-Much of this knowledge is fragmented. Some lives in databases. Some lives in documents. Some lives in code. Some lives in email. Some lives in ticketing systems. Some lives only in people's memories.
-
-Enterprise context asks what happens when more of this knowledge becomes machine-readable, searchable, governed, and available to AI systems. The company's competitive advantage may begin to depend not only on how many software engineers it employs, but on how complete, current, trustworthy, and accessible its organisational context is.
-
-This does not mean every company must train its own frontier model. Many companies may rent models from specialised AI providers. Their distinctive advantage may come from the context they can supply:
-
-```text
-Frontier model
-+ proprietary enterprise context
-= organisation-specific capability
-```
-
-That is a different economic story from simply "AI writes code." It suggests that the next scarce resource may be high-quality organisational knowledge arranged so that AI can use it.
-
-## Context Window Versus Enterprise Knowledge
+## From Enterprise Knowledge to Working Context
 
 ![Enterprise knowledge to context window](<figures/FIG-09-02 Enterprise Knowledge To Context Window.png>)
 
-A model's context window and an enterprise's knowledge base are closely related, but they are not identical. The context window is the information the AI can consider during one reasoning session. It is working memory. Enterprise knowledge is the much larger universe of information held by the organisation. It is closer to long-term memory.
+A company holds far more knowledge than any model can use at once: source code, policies, customer complaints, incident reports, workflows, decisions, and undocumented rules. The knowledge may be scattered across databases, documents, code, email, work-tracking systems, and people's memories.
+
+Enterprise knowledge is therefore not the same as a context window. The organisation may possess the information, yet the AI can use only the relevant pieces retrieved into its temporary working memory:
 
 The relationship looks like this:
 
@@ -243,19 +229,11 @@ AI Model
 Answer or Action
 ```
 
-A company may possess enormous amounts of knowledge, but the AI does not load all of it at once. It retrieves the relevant pieces and places them into the context window.
-
-This means the most important race may not be simply larger context windows. It may be larger effective context. An organisation with a huge context window but poor retrieval may perform worse than an organisation with a smaller context window and excellent retrieval. The first can hold more information. The second supplies better information.
-
-The deeper enterprise question is how an organisation should structure its knowledge so that AI systems receive the most relevant context at the right moment. The context window is only the final layer. The advantage may lie in accurate and current knowledge, good organisation and search, clear rules and permissions, and a record of where each fact came from. That record of origin is commonly called **provenance**.
+A huge context window with poor retrieval may be less useful than a smaller one supplied with exactly the right evidence. The organisational advantage may therefore lie in accurate knowledge, good search, clear permissions, and **provenance**—a record of where each fact came from.
 
 This suggests a further architectural layer, developed in [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]].
 
-Most enterprises probably do not need to build their own frontier model. They can rent general intelligence from foundation-model providers, much as companies rent cloud infrastructure or buy standard software platforms. What they need to own is their specialised intelligence: the representation of their own business reality.
-
-The foundation model may understand Python, physics, language, accounting principles, and general software engineering. The enterprise layer understands the bank, the hospital, the airline, the manufacturer, or the retailer.
-
-That leads to an economic thesis:
+Most enterprises need not build their own frontier model. They can rent general capability while owning the specialised context that describes their business reality. That leads to an economic thesis:
 
 > In the AI era, foundation models may become commodities. Enterprise knowledge becomes the competitive advantage.
 

@@ -186,181 +186,27 @@ verified change
 
 That difference matters. An AI coding agent is not merely a model producing text. It is an AI model connected to tools, context, and feedback.
 
-### Step 1: The Prompt Is Broken Into Tokens
+### From Tokens to Code
 
-The model does not receive the sentence as human meaning.
+The model first breaks the request into tokens—pieces that may be words, parts of words, punctuation, or code fragments. Each token becomes numbers representing relationships learned during training. Through many network layers, those representations are combined into patterns that support the task: Python, a function, a list of numbers, and an average.
 
-It receives pieces.
-
-The prompt might be broken roughly like this:
+The following description is a teaching aid, not English notes hidden inside the model:
 
 ```text
-Write | a | Python | function | that | takes | a | list | of | numbers | and | returns | the | average | .
-```
-
-The exact tokens depend on the model's tokenizer. Some words may be whole tokens. Some may be split into fragments. Punctuation may be its own token.
-
-For the reader, the important point is that the model begins with tokenised symbols, not with a human understanding of the whole sentence.
-
-### Step 2: Tokens Become Numbers
-
-Each token is converted into a numerical representation.
-
-The token `Python` becomes numbers.
-
-The token `function` becomes numbers.
-
-The token `average` becomes numbers.
-
-Those numbers do not simply mean "dictionary definition of Python" or "dictionary definition of average". They represent learned relationships from training: how those tokens have appeared in code, tutorials, documentation, examples, questions, answers, and surrounding language.
-
-The model now has a numerical version of the prompt.
-
-### Step 3: The Network Builds A Representation Of The Task
-
-The prompt passes through layers.
-
-We cannot open the model and find the following English notes written inside it. They are a human-readable reconstruction: a teaching aid for the relationships that the model's numerical processing must somehow support.
-
-Early processing may recognise local patterns:
-
-```text
-Python
-function
-list of numbers
-returns
-average
-```
-
-Later processing can combine these into a task structure:
-
-```text
-language = Python
-artefact = function
-input = list of numbers
-operation = compute average
-output = number
-```
-
-Those numerical relationships may support conclusions that we can paraphrase as common programming concerns:
-
-```text
-Need a function name.
-Need a parameter.
-Need sum(numbers).
-Need len(numbers).
-Need division.
-Maybe handle empty list.
-```
-
-No programmer wrote a special rule saying:
-
-```text
-If user says "average of list", write sum(numbers) / len(numbers).
-```
-
-Instead, the model has learned from many examples that requests about averages, lists, and Python functions are often represented with `sum`, `len`, parameters, return statements, and division.
-
-### Step 4: The Model Predicts The Output One Token At A Time
-
-The model does not generate the whole function in one single act.
-
-It generates output step by step.
-
-It may begin by predicting that a likely first token is:
-
-```python
-def
-```
-
-Given:
-
-```python
-def
-```
-
-and the original prompt, a likely continuation is a function name:
-
-```python
-average
-```
-
-Then:
-
-```python
-(
-```
-
-Then:
-
-```python
-numbers
-```
-
-Then:
-
-```python
-):
-```
-
-The output grows:
-
-```python
-def average(numbers):
-```
-
-At each step, the model uses the prompt, the tokens it has already generated, and its learned relationships to predict the next useful token.
-
-This is why AI-generated code can look intentional even though it is produced token by token. Each token is conditioned by the task representation and the preceding output.
-
-### Step 5: The Output Becomes A Symbolic Program
-
-Eventually the generated tokens form valid Python:
-
-```python
-def average(numbers):
-    if not numbers:
-        return 0
-    return sum(numbers) / len(numbers)
-```
-
-Python is a symbolic language. The interpreter can execute it because the generated text obeys Python's syntax and semantics.
-
-The AI did not "become Python". It generated a symbolic representation that Python can execute.
-
-That is the central idea:
-
-```text
-Human intent
+prompt tokens
 ↓
-learned mathematical representation
+numerical representations
 ↓
-generated symbolic program
+learned relationships among task, language, and code patterns
 ↓
-machine execution
+predicted output tokens
+↓
+Python program
 ```
 
-### Step 6: Verification Still Matters
+The model generates the answer one token at a time, using the request and everything it has produced so far. It may predict `def`, then a likely function name, parameters, and a body using `sum` and `len`. The finished text becomes a symbolic program that Python can execute.
 
-The answer may look correct, but it still contains choices.
-
-Should an empty list return `0`?
-
-Should it raise an error?
-
-Should it return `None`?
-
-Should it handle decimals?
-
-Should it reject non-numeric values?
-
-Should it use type hints?
-
-The prompt did not say.
-
-So the model filled the gap with a plausible assumption.
-
-That is why requirements and verification matter. The model can generate a likely implementation, but someone must decide whether the assumptions match the intended behaviour.
+The output still contains an unstated decision: an empty list returns `0`. The user might instead want an error, a missing value, or a special message. The model filled a gap with a plausible assumption. This is why generation must lead to requirements and verification, not directly to trust.
 
 ## Short Prompt Versus Long Prompt
 
@@ -482,25 +328,9 @@ This is why "reasoning" has an economic meaning. It is not a magic quantity call
 
 ## The Role of Context
 
-AI does not generate software from the prompt alone. It uses the prompt plus whatever context is available.
+AI uses the prompt together with available context: code, documentation, errors, examples, screenshots, constraints, test output, and earlier conversation. If a vital business rule or source file is missing, a plausible answer can still be wrong.
 
-Context may include:
-
-- The user's instruction.
-- Existing code.
-- Error messages.
-- Documentation.
-- File names.
-- Examples.
-- Screenshots.
-- Prior conversation.
-- Constraints.
-- Test output.
-- Project conventions.
-
-The context window is the model's working memory during inference. A larger context window can allow the model to consider more of a codebase, a longer specification, or more examples. But context is not infinite, and larger context can introduce cost and attention problems.
-
-This is why AI-assisted software development often works best as an iterative process. The human supplies context, examines output, adds correction, narrows the task, tests the result, and asks for revision. The model generates proposals. The human and surrounding tools evaluate them.
+This is why AI-assisted development works best as an iterative process. The human supplies evidence, examines the proposal, tests it, clarifies the requirement, and asks for revision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines this working memory and its economics in detail.
 
 The process is not:
 
@@ -579,24 +409,6 @@ Historically, that translation required scarce experts. A user had to explain a 
 AI can compress some of those steps. A domain expert—someone who knows the subject deeply—can describe a workflow and receive a prototype, or early working model. A developer can describe a refactoring, which improves the internal structure of code without intentionally changing what users can do, and receive a draft. A founder can explore product ideas before hiring a full team. A student can build a tool while learning the concepts. A professional programmer can use AI to move faster through routine implementation and spend more attention on architecture and verification.
 
 The cost reduction is uneven. Simple prototypes may become dramatically cheaper. Safety-critical systems may remain expensive because verification dominates. Enterprise systems may still be costly because integration and governance dominate. But even uneven cost reduction matters if it shifts enough projects across the threshold of economic viability.
-
-## What AI Is Actually Doing
-
-When AI converts English into software, it is performing several transformations at once.
-
-It interprets intent. It identifies what the user appears to want.
-
-It infers structure. It recognises entities, actions, relationships, data, sequence, and constraints.
-
-It maps the structure to software patterns. It may recognise that the problem requires a database, a state variable, a loop, an API call, a view model, a validation function, or a test.
-
-It generates a symbolic representation. That representation may be code, configuration, pseudocode, a test case, or an explanation.
-
-It uses context to fit the output to the project. Existing code, naming conventions, frameworks, errors, and prior discussion all shape the result.
-
-None of this requires the model to think in Swift. It requires learned relationships among intent, procedure, and representation.
-
-That is the essential mechanism.
 
 ## The Limits of the Mechanism
 

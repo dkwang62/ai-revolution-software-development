@@ -102,35 +102,9 @@ The complexity never vanishes. It moves downward.
 
 ## Abstraction Inside Modern Software
 
-Modern software is itself a stack of abstractions. A person using a mobile app sees buttons, lists, images, forms, and notifications. Beneath that interface sits application logic. Beneath the application logic sit frameworks. Beneath the frameworks sit libraries. Beneath the libraries sit operating-system services. Beneath the operating system sit compilers, runtimes, drivers, memory systems, processors, and physical circuits.
+Modern software is a stack. A mobile-app user sees buttons and forms. Beneath them sit application logic, frameworks, libraries, operating-system services, programming-language tools, machine code, processors, and physical circuits. No one holds every layer in mind at once. The stack divides attention so that a designer can focus on the interface, a database specialist on stored information, and a security specialist on permissions.
 
-One way to picture the stack is:
-
-```text
-User goal
-↓
-Application interface
-↓
-Application logic
-↓
-Frameworks
-↓
-Libraries
-↓
-Operating system
-↓
-Programming language runtime
-↓
-Machine code
-↓
-Processor
-↓
-Transistors
-```
-
-No single person thinks about all these layers at once. The layers allow division of attention. A database specialist may focus on storage and query performance. A front-end developer may focus on interface behaviour. A security specialist may focus on permissions and attack surfaces. A product manager may focus on user needs. Each role operates through abstractions created by others.
-
-Software development is therefore not only the creation of code. It is the creation, selection, and maintenance of abstractions.
+Software development is therefore not only the creation of code. It is also the creation, selection, and maintenance of abstractions.
 
 ## The Cost of Abstraction
 
@@ -194,13 +168,9 @@ That is the same question every abstraction layer has faced.
 
 ## What AI Is Hiding
 
-Earlier abstractions hid different things. Assembly language hid numeric machine instructions. High-level languages hid many details of processor architecture. Structured programming hid some chaos of uncontrolled jumps. Object-oriented programming hid complexity inside objects and interfaces. Libraries hid repeated implementation details. Frameworks hid common application structure. Cloud computing hid infrastructure operations. Low-code platforms hid some application-building mechanics.
+Earlier abstractions hid machine instructions, processor details, repeated code, common application structures, and infrastructure operations. AI begins to hide parts of programming itself: syntax, finding suitable software connections, repetitive supporting code, and some debugging.
 
-AI begins to hide parts of programming itself. It can hide the exact writing rules of a programming language by translating intent into code. It can find suitable connections, functions, and reusable libraries; propose familiar system structures; explain errors; generate repetitive supporting code; and summarise documentation. Programmers call these activities **syntax**, **API discovery**, **architecture**, **debugging**, and removal of **boilerplate**, meaning standard code that many projects need but that contains little of the project's distinctive idea.
-
-But the word "hide" must be used carefully. AI does not remove the need for these things. It moves them into a new layer of machine-assisted translation. The programmer, user, or organisation still needs judgement. They must still decide whether the result is correct, maintainable, secure, ethical, legal, and useful.
-
-AI hides complexity from the first act of creation. It does not abolish responsibility for the system created.
+The word "hide" must be used carefully. These details still exist, and someone must decide whether the result is correct, maintainable, secure, legal, and useful. AI can hide complexity from the first act of creation. It cannot hide responsibility for the system created.
 
 ## The Bridge to Programming
 

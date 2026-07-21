@@ -63,21 +63,20 @@ This is how serious software has always worked. Systems earn trust when their au
 
 ## The Components of Trust
 
-Trust in AI-enabled software is built from several components. None is sufficient alone. Together, they determine whether AI can move from experimentation to valuable work.
+Trust is not one property inside the model. It is assembled around the model:
 
-The first question is whether an output, action, or system can be relied upon. The industry calls this **verification**. Software teams check small pieces, check whether pieces work together, repeat old tests after changes, examine code without running it, and confirm that the finished behaviour meets the user's needs. The corresponding terms are **unit tests**, **integration tests**, **regression tests**, **static analysis**, and **acceptance tests**. AI makes checking harder because the same prompt may not always produce the same result: a model may be correct in one case, plausible but wrong in another, and confidently misleading in a third.
+| Component | Plain-language question | Typical mechanism |
+| --- | --- | --- |
+| **Verification** | Did the result satisfy the required rules? | Tests, validation, review, and source checking |
+| **Governance** | Who may use the system, for what, and under whose authority? | Policies, ownership, approval rules, and model records |
+| **Security** | Can information or authority be misused? | Limited permissions, protected data, and isolated execution |
+| **Auditability** | Can we reconstruct what happened? | Activity logs, source records, model versions, and approval history |
+| **Explainability** | Can a responsible person understand the reasons and evidence? | Sources, assumptions, alternatives, and stated limitations |
+| **Human approval** | Where must judgement remain with a person? | Review before consequential or irreversible action |
 
-That does not make AI unusable. It means AI must sit inside systems that verify what matters. Generated code can be compiled, tested, reviewed, linted, benchmarked, and scanned for security issues. Generated documents can be checked against source material. Generated database queries can be sandboxed. Generated actions can require approval. In short: AI suggests; reliable systems verify.
+None is sufficient alone. Generated code may pass tests yet expose private data. A secure system may still produce an unexplained recommendation. A complete audit trail may show exactly how a bad decision was made without preventing it.
 
-An organisation must decide who may use AI, for what purpose, with what data, under what rules, and with what oversight. This system of authority is called **governance**. Without it, adoption becomes chaotic. Employees paste sensitive data into tools without understanding the consequences. Teams build disconnected trials. Instructions become undocumented business rules. Generated outputs enter work without review. No one knows which model produced which decision or who is accountable. Governance turns raw capability into controlled capability.
-
-**Security** matters because AI systems often sit between humans, data, tools, and company systems. A malicious instruction hidden in a document may try to redirect the AI; private information may escape; an agent may receive more authority than it needs; or corrupted training or reference material may influence its answers. Industry terms include **prompt injection**, **data leakage**, **excessive permissions**, and **model poisoning**. An isolated chatbot can make a mistake. An AI agent connected to real systems can cause damage.
-
-An organisation must be able to reconstruct what happened: who asked the AI, what information it received, which documents it found, which model answered, which tools it used, what it changed, and who approved the action. This ability is called **auditability**. An **audit trail** is the time-ordered record that makes such checking possible. Banks, hospitals, governments, insurers, airlines, and manufacturers cannot operate on “the AI did it.” They need records, activity logs, and a clear path for sending unusual cases to a responsible person.
-
-People also need reasons, sources, evidence, assumptions, uncertainty, alternatives, and known limitations. This practical ability is called **explainability**; it does not usually mean exposing all the internal mathematics of a model. If AI recommends a software structure, the team needs to know why, what compromises it involves, and what evidence supports it. If AI summarises a contract, the lawyer needs references to the clauses. If AI explains older software, the engineer needs links to the relevant code.
-
-**Human approval** is not a sign that AI has failed. In high-value workflows, it may be the mechanism that makes AI economically useful. If AI reduces a five-hour contract review to one hour, the human still reviews the result, but the economics have changed. If AI produces a first draft of a migration plan, engineers still evaluate it, but the cost of planning falls. The question is not whether humans remain in the loop. The question is where human judgement creates the most value.
+Human approval is not evidence that AI has failed. If AI reduces a five-hour contract review to one hour, the professional still owns the decision, but the economics have changed. The design question is where human judgement adds enough value to justify its time.
 
 ## Trust and Agents
 

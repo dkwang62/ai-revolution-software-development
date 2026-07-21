@@ -82,31 +82,9 @@ This is why the future will likely contain many models rather than one universal
 
 The context window is the amount of information a model can consider during inference.
 
-For software development, context is crucial. A model asked to modify one function may need only a small amount of context. A model asked to refactor a module may need more. A model asked to reason about an entire codebase may need much more.
+A single function may require little context; a large codebase may require files, tests, specifications, and earlier decisions. More context can improve the result, but it also consumes memory, computation, waiting time, and money. It can introduce noise as well as evidence.
 
-Larger context windows allow AI systems to consider longer documents, more files, bigger specifications, extended conversations, and richer examples. That can improve usefulness. It can also reduce the need for users to repeatedly summarise background information.
-
-But context has cost. More context may require more memory and compute. It may increase latency. It may also introduce attention problems: the model may have more information available but still fail to use the right piece at the right moment.
-
-Economically, a larger context window is valuable when it allows the model to solve problems that would otherwise require expensive human effort or repeated interaction. It is not valuable merely because the number is larger.
-
-For software, long context matters because real systems are interconnected. A bug may depend on a data model, a configuration file, a test, a framework convention, and an old design decision. If AI cannot see enough of the system, it may make local changes that break global behaviour.
-
-This leads to a distinction developed further in The Economics of Context.
-
-Raw context is the maximum number of tokens a model can read.
-
-Effective context is the amount of relevant information the system can actually use to solve the problem.
-
-A model with a huge context window but a poor way of finding relevant material may perform worse than a model with a smaller window that receives exactly the right information. Finding and supplying that material is called **retrieval**. Software teams also make projects searchable—often called **repository indexing**—and use summaries, external memory, tools, and checks to improve the information supplied.
-
-The important question is not simply:
-
-> How much information can the model hold?
-
-It is:
-
-> How much useful information can be supplied at economically justified cost?
+The useful distinction is between **raw context**, the maximum amount a model can read, and **effective context**, the relevant information it can actually use. A smaller window supplied by good retrieval can outperform a larger one filled with irrelevant material. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] develops this problem in detail.
 
 ## Multimodality
 
@@ -153,35 +131,7 @@ The economic comparison must include more than the price of one request. Heavy r
 
 ## Why Some Tasks Consume More Tokens
 
-Not every AI task costs the same.
-
-A short prompt can be cheap:
-
-```text
-Summarise this paragraph in one sentence.
-```
-
-A harder prompt may be much more expensive:
-
-```text
-Read these five documents, compare their assumptions, identify contradictions, propose a migration plan, estimate risks, write tests, and explain your reasoning.
-```
-
-The second task costs more because it asks the model to process more information and do more work.
-
-There are four main sources of token cost.
-
-First, input tokens. The model must read the prompt, conversation history, retrieved documents, source files, screenshots, logs, specifications, or examples. A task involving a large codebase, long contract, or enterprise policy pack may require far more input than a simple question.
-
-Second, output tokens. A one-sentence answer is cheap. A detailed migration plan, software design, test suite, or chapter draft requires many generated tokens.
-
-Third, reasoning work. Some tasks require the model to compare alternatives, hold multiple constraints in mind, decompose the problem, check intermediate conclusions, or reason through a sequence. Even when the final answer is short, the system may spend extra computation on intermediate reasoning.
-
-Fourth, tool loops. An agent may search files, run tests, read errors, edit code, run tests again, inspect logs, and revise. Each step adds more input and output. The cost is not one prompt. It is a chain of inference calls.
-
-This is why reasoning can be expensive. It is not just "thinking harder" in a human sense. It often means reading more context, generating more intermediate work, using more model steps, calling more tools, and checking more results.
-
-For example:
+AI cost grows through four main channels: the information read, the answer generated, the reasoning performed, and the repeated tool calls used to inspect, test, and revise. A short answer can still be expensive if it required a long investigation; a long but mechanical answer may be relatively easy.
 
 | Task                        | Why It May Be Cheap Or Expensive                                    |
 | --------------------------- | ------------------------------------------------------------------- |
@@ -193,15 +143,11 @@ For example:
 | Plan a database migration   | Many constraints, risk analysis, tests, rollback planning           |
 | Build an agent workflow     | Repeated inference, tool calls, permissions, monitoring, validation |
 
-The economic lesson is simple:
+The price of one request is therefore a poor measure of value. The better measure is the total cost of reaching a completed, checked result. Future AI systems will compete not only by making tokens cheaper, but by avoiding unnecessary tokens, selecting the right model, and stopping when enough evidence has been gathered.
 
-> AI cost depends less on how impressive the prompt sounds and more on how much information the model must process, how much output it must generate, how much reasoning it must perform, and how many steps are required to verify the result.
+## Model Evolution and Compatibility
 
-This matters for software because serious engineering tasks are rarely one-step answers. They involve context, planning, implementation, testing, and review. That is why the future of AI software tools will not be only about cheaper tokens. It will also be about using tokens intelligently.
-
-## Model Evolution
-
-Model Evolution creates a new kind of software maintenance problem.
+Model evolution creates a new kind of software maintenance problem.
 
 Traditional software changes when developers edit code. If they are careful, they can preserve backward compatibility. A new version of a library may add features while attempting not to break old behaviour.
 
@@ -213,11 +159,7 @@ Therefore a model upgrade can make an old workflow worse even while improving th
 
 The economic benefit of upgrading is better capability or lower cost. The cost is testing, adaptation, monitoring, and possible behaviour change. Production systems need model versioning, evaluation, fallback, and change management.
 
-In other words, models become part of the software supply chain.
-
-## Why Backward Compatibility Is Hard
-
-Backward compatibility is difficult for AI because model behaviour is not a small set of explicit rules.
+In other words, models become part of the software supply chain. Backward compatibility is difficult because model behaviour is not a small set of explicit rules.
 
 If a conventional function adds two numbers, preserving behaviour is straightforward. If an AI model answers questions, writes code, follows policies, reasons through ambiguity, and interprets context, preserving every behaviour while improving capability is much harder.
 
@@ -265,16 +207,8 @@ Software development is the clearest case study because it is already a knowledg
 
 This is why the book is not simply about AI writing code. It is about the industrialisation of certain forms of cognitive work.
 
-## Bridge to Engineering
+## Bridge to Context
 
-Part III has explained why AI can participate in software creation.
+Part III has explained how models acquire capability and why different uses carry different costs. One missing factor determines whether that general capability becomes useful in a real project: what the model can see at the moment it works.
 
-But explanation is not the same as reliability.
-
-AI models are probabilistic. Software systems often need deterministic behaviour. AI can generate code quickly, but generated code must be tested. AI can operate inside applications, but its outputs must be constrained. AI can interpret intent, but intent must be specified clearly. AI can call tools, but tool use must be governed.
-
-The next part of the book moves from capability to engineering.
-
-If AI lowers the cost of producing software, how should software engineering change?
-
-The answer begins with communication, requirements, precision, and verification.
+A powerful model without the relevant files, rules, history, or examples may still make a poor decision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines that bridge between general intelligence and a particular task.

@@ -172,4 +172,4 @@ The economic question is:
 
 > How clearly can human intent be expressed, transformed, tested, and maintained?
 
-That question leads directly to precision.
+That question leads first to requirements: turning human intention into behaviour clear enough to build and test.

@@ -14,10 +14,6 @@ Abstraction is the process of hiding complexity behind a simpler interface. The 
 
 Acceptance criteria are specific conditions used to decide whether a feature is finished and acceptable. For a school attendance tool, they might state that an alert must be sent after four absences, must identify the correct student, and must not count weekends.
 
-## Algorithm
-
-An algorithm is a step-by-step method for solving a problem or completing a task. A recipe is an everyday example. In software, an algorithm might sort names, find the shortest route, or calculate an average.
-
 ## Agent
 
 An agent is an AI system that does more than answer a question. It can use tools, follow multi-step instructions, inspect information, make intermediate decisions, and sometimes act on external systems. Agents require stronger boundaries, permissions, monitoring, and verification than ordinary chatbots.
@@ -30,13 +26,21 @@ Agentic AI describes AI systems that can pursue an objective through a sequence 
 
 An agentic loop is the repeated cycle through which an agent understands a task, chooses an action, uses a tool, observes the result, and decides what to do next. It differs from a single AI response because evidence from one action influences the next.
 
+## AI Accelerator and Tensor Processing Unit (TPU)
+
+An AI accelerator is a processor designed especially for the mathematical operations used by AI. A Tensor Processing Unit, or TPU, is Google's name for its family of AI accelerators. GPUs can also accelerate AI, but they began as more general processors for graphics and parallel calculation. The different names matter less than the common purpose: perform large amounts of AI mathematics quickly and efficiently.
+
 ## AI Model
 
 An AI model is a mathematical representation of patterns learned from data. It is not a database, search engine, encyclopedia, or collection of hand-written rules. During training, the model's internal parameters are adjusted so that it can later produce useful responses during inference.
 
-## AI Accelerator and Tensor Processing Unit (TPU)
+## Algorithm
 
-An AI accelerator is a processor designed especially for the mathematical operations used by AI. A Tensor Processing Unit, or TPU, is Google's name for its family of AI accelerators. GPUs can also accelerate AI, but they began as more general processors for graphics and parallel calculation. The different names matter less than the common purpose: perform large amounts of AI mathematics quickly and efficiently.
+An algorithm is a step-by-step method for solving a problem or completing a task. A recipe is an everyday example. In software, an algorithm might sort names, find the shortest route, or calculate an average.
+
+## Application Programming Interface (API)
+
+An application programming interface is an agreed way for one piece of software to request information or an action from another. A weather application, for example, may use an API to ask a weather service for today's forecast.
 
 ## Architecture
 
@@ -90,13 +94,17 @@ A chiplet is one smaller component of a processor package. Instead of manufactur
 
 Cloud computing lets people rent computing power, storage, databases, or software over a network instead of buying and maintaining every machine themselves. The rented computers still exist physically; they usually operate in the provider's data centres.
 
+## COBOL, CICS, IMS, and DB2
+
+COBOL is an older programming language still used in many banks, governments, insurers, and other large organisations. CICS is software that helps mainframes process transactions. IMS and DB2 are long-established IBM systems for organising and retrieving data. Readers do not need to remember the names; they illustrate how current services may still depend on technology created decades ago.
+
 ## Codebase and Repository
 
 A codebase is the complete body of source code for a software project. A repository stores the project's files together with a history of changes, usually through a version-control system such as Git. In everyday development, people sometimes use the terms almost interchangeably.
 
-## COBOL, CICS, IMS, and DB2
+## Codex
 
-COBOL is an older programming language still used in many banks, governments, insurers, and other large organisations. CICS is software that helps mainframes process transactions. IMS and DB2 are long-established IBM systems for organising and retrieving data. Readers do not need to remember the names; they illustrate how current services may still depend on technology created decades ago.
+Codex is the AI coding agent used as the recurring concrete example in this book. The “genie in the bottle” is only an analogy for the experience of turning an idea into software through conversation; it is not the name or technical description of Codex. Codex represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
 
 ## Compiler and Interpreter
 
@@ -109,14 +117,6 @@ Compliance means following the laws, regulations, standards, contracts, and inte
 ## Configuration
 
 Configuration is the collection of settings that controls how software behaves without necessarily changing its main code. Examples include a selected AI model, a server address, a feature switch, or a permission rule.
-
-## Application Programming Interface (API)
-
-An application programming interface is an agreed way for one piece of software to request information or an action from another. A weather application, for example, may use an API to ask a weather service for today's forecast.
-
-## Codex
-
-Codex is the AI coding agent used as the recurring concrete example in this book. The “genie in the bottle” is only an analogy for the experience of turning an idea into software through conversation; it is not the name or technical description of Codex. Codex represents a broader class of tools that can move beyond answering questions and begin operating inside a development environment: reading files, editing code, running commands, inspecting errors, using tools, requesting approvals, and helping verify changes. The book is not a Codex product guide; Codex is the lived example through which the larger shift becomes visible.
 
 ## Context
 
@@ -132,10 +132,6 @@ These meanings are related but not identical.
 
 The context window is the amount of information a model can consider at one time during inference. It is like working memory. A larger context window can help the model consider more documents, code, or conversation, but relevance matters as much as size.
 
-## Database
-
-A database stores organised information so software can find, add, change, and remove it efficiently. A school database might contain student records, classes, attendance, and results. The database is the stored information system; an AI model is a learned pattern system, so the two are not interchangeable.
-
 ## Data Centre
 
 A data centre is a building or site filled with networked computers, storage equipment, power systems, cooling, and security. Cloud services and large AI models often run in data centres.
@@ -143,6 +139,10 @@ A data centre is a building or site filled with networked computers, storage equ
 ## Data Model
 
 A data model describes the kinds of information a system stores and how they relate. In a school system, it might describe students, teachers, classes, and the connections among them.
+
+## Database
+
+A database stores organised information so software can find, add, change, and remove it efficiently. A school database might contain student records, classes, attendance, and results. The database is the stored information system; an AI model is a learned pattern system, so the two are not interchangeable.
 
 ## Deployment and Production
 
@@ -184,6 +184,10 @@ Evaluation measures how well an AI system performs across a collection of exampl
 
 Explainability is the practical ability to provide understandable reasons, evidence, sources, assumptions, or limitations for a result. It does not necessarily mean exposing every internal calculation of an AI model.
 
+## Floating-Point Precision and FP4
+
+Floating-point precision describes how many binary digits a computer uses to represent a number and therefore how much detail that number can retain. FP4 uses only four bits per number. Shorter numbers need less memory and can be moved and calculated more cheaply, but may lose accuracy. AI engineers therefore choose precision according to the task instead of assuming that more detail is always worth its cost.
+
 ## Foundation Model
 
 A foundation model is a large general-purpose AI model trained on broad data and adaptable to many tasks. Examples include major language and multimodal models. Enterprises may use foundation models as rented general capability while connecting them to proprietary knowledge.
@@ -192,10 +196,6 @@ A foundation model is a large general-purpose AI model trained on broad data and
 
 A library is reusable code that a program calls for a particular capability. A framework supplies a larger structure within which developers build an application. Both reduce the need to create common mechanisms from the beginning.
 
-## Floating-Point Precision and FP4
-
-Floating-point precision describes how many binary digits a computer uses to represent a number and therefore how much detail that number can retain. FP4 uses only four bits per number. Shorter numbers need less memory and can be moved and calculated more cheaply, but may lose accuracy. AI engineers therefore choose precision according to the task instead of assuming that more detail is always worth its cost.
-
 ## Governance
 
 Governance is the system of authority and oversight that decides who may use a technology, for what purpose, with which data, under which rules, and with whose approval. Good governance connects capability to responsibility.
@@ -203,10 +203,6 @@ Governance is the system of authority and oversight that decides who may use a t
 ## Graphics Processing Unit (GPU)
 
 A graphics processing unit is a chip designed to perform many calculations in parallel. It was originally associated mainly with computer graphics, but the same ability makes GPUs useful for training and running AI models.
-
-## HTTP and REST API
-
-HTTP is the basic set of rules used to exchange information on the web. A REST API is a common style of web API in which software requests or changes named resources using standard web operations. The detail matters less than the function: it gives separate systems a predictable way to communicate.
 
 ## Grounding
 
@@ -224,13 +220,21 @@ A hallucination is an AI output that appears plausible but is wrong, unsupported
 
 High Bandwidth Memory is memory designed to move very large quantities of data to and from a processor quickly. Its memory chips are stacked vertically and placed close to an AI processor. A useful analogy is a large pantry built immediately beside a busy kitchen, with many wide doors so ingredients can reach the cooks without delay.
 
-## Inference
+## HTTP and REST API
 
-Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
+HTTP is the basic set of rules used to exchange information on the web. A REST API is a common style of web API in which software requests or changes named resources using standard web operations. The detail matters less than the function: it gives separate systems a predictable way to communicate.
+
+## Human In The Loop
+
+Human in the loop means that a person remains part of an AI-assisted decision or action. In a feature that finds useful phrases in photographed Chinese text, AI proposes candidates, conventional software filters them, and the learner decides which phrases should be saved.
 
 ## Hybrid AI Architecture
 
 A hybrid AI architecture combines different methods instead of depending on one technique for every job. A future system might use attention for relationships within the current material, a state-space method for efficient sequence processing, persistent memory for long projects, specialised models for particular tasks, and conventional software for exact checks.
+
+## Inference
+
+Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
 
 ## Latency
 
@@ -248,18 +252,6 @@ A mainframe is a large computer designed for highly reliable processing of enorm
 
 Migration is the process of moving data, software, or work from one system to another. A gradual migration replaces or connects one controlled part at a time; a “big bang” migration attempts the change all at once.
 
-## Human In The Loop
-
-Human in the loop means that a person remains part of an AI-assisted decision or action. In a feature that finds useful phrases in photographed Chinese text, AI proposes candidates, conventional software filters them, and the learner decides which phrases should be saved.
-
-## Model Context Protocol (MCP)
-
-The Model Context Protocol is a standard for connecting AI applications to external tools and sources of information. A useful layman's analogy is a common socket that lets an authorised tool or data source connect to an AI system without every connection being invented from the beginning.
-
-## Multi-Agent System
-
-A multi-agent system coordinates two or more agents, often with specialised roles. A future development workflow might use one agent to inspect the interface, another to examine stored data, and another to test the result. That is a possible application, not a description of the current application.
-
 ## Model Parameters
 
 Parameters are the internal adjustable numbers of an AI model. During training, these numbers are changed so that the model captures statistical relationships in the training data. A useful analogy is a vast machine with billions or trillions of tiny dials.
@@ -276,6 +268,10 @@ Natural language programming is the use of ordinary language to specify behaviou
 
 A neural network is a mathematical system that learns patterns from examples. Training adjusts its numerical settings; afterwards, the trained neural network is commonly called an AI model. It consists of layers of mathematical operations that repeatedly transform numerical representations. In this book, the important point is the shift from hand-written rules to learned relationships.
 
+## Observability
+
+Observability is the ability to reconstruct what an agent did and what happened: which information it inspected, which tools it used, which actions it attempted, and where it failed. Observability makes supervision, diagnosis, auditing, and improvement possible.
+
 ## Open-Source Software
 
 Open-source software makes its source code available under a licence that permits people to inspect, use, modify, and often redistribute it. Open source allows communities and companies to build on shared work instead of creating every component alone.
@@ -283,6 +279,14 @@ Open-source software makes its source code available under a licence that permit
 ## Operating Cost
 
 An operating cost is a recurring expense created while running a service or organisation. AI inference, electricity, cloud services, support, and monitoring can all be operating costs. This differs from upfront capital investment used to create a long-lived asset.
+
+## Orchestration
+
+Orchestration is the coordination of models, tools, workflows, and sometimes multiple agents. An orchestrator decides which participant should do what, in which order, with what information, and under which limits.
+
+## Probabilistic AI
+
+Probabilistic AI produces outputs based on learned likelihoods rather than fixed deterministic rules. This makes it flexible and powerful, but also means its outputs must be checked when correctness matters.
 
 ## Prompt
 
@@ -296,37 +300,29 @@ Prompt engineering is the practice of designing and testing instructions for AI 
 
 A prototype is an early version built to explore or demonstrate an idea. It can reveal whether the idea is useful, but it usually lacks some of the reliability, security, testing, performance, and polish required for production use.
 
-## Probabilistic AI
+## Provenance
 
-Probabilistic AI produces outputs based on learned likelihoods rather than fixed deterministic rules. This makes it flexible and powerful, but also means its outputs must be checked when correctness matters.
+Provenance is a record of where information came from and how it changed. In an AI system, provenance can show which source documents supported an answer, making the result easier to check.
 
-## Observability
+## Reasoning and Reasoning Effort
 
-Observability is the ability to reconstruct what an agent did and what happened: which information it inspected, which tools it used, which actions it attempted, and where it failed. Observability makes supervision, diagnosis, auditing, and improvement possible.
-
-## Orchestration
-
-Orchestration is the coordination of models, tools, workflows, and sometimes multiple agents. An orchestrator decides which participant should do what, in which order, with what information, and under which limits.
-
-## Requirements Engineering
-
-Requirements engineering is the discipline of deciding what a system should do, what constraints it must satisfy, how success will be judged, and what edge cases must be handled. AI makes requirements more important because generation becomes cheaper while judging correctness remains difficult.
-
-## Refactoring
-
-Refactoring improves the internal structure of existing code without intentionally changing what users can do. It may make the code easier to understand, test, maintain, or extend.
+In this book, reasoning means the work of connecting a goal to a conclusion or action through intermediate relationships, decisions, and checks. Reasoning effort is a setting available in some AI systems that gives the model relatively more or less opportunity to perform that work before answering. Higher effort may improve difficult analysis, planning, coding, and tool use, but it can also increase waiting time and computing cost. It does not guarantee correctness or replace verification and human judgement.
 
 ## Recurrent Neural Network
 
 A recurrent neural network is a neural-network design often used for sequences before Transformers became dominant. It commonly processes information step by step while carrying a numerical summary of earlier steps forward. This makes sequence order natural, but it can make training slower and distant relationships harder to preserve.
 
+## Refactoring
+
+Refactoring improves the internal structure of existing code without intentionally changing what users can do. It may make the code easier to understand, test, maintain, or extend.
+
 ## Regression Testing
 
 Regression testing reruns earlier tests after a change to check that behaviour which worked before has not been broken. It matters especially when changing a model, prompt, dependency, or shared component.
 
-## Reasoning and Reasoning Effort
+## Requirements Engineering
 
-In this book, reasoning means the work of connecting a goal to a conclusion or action through intermediate relationships, decisions, and checks. Reasoning effort is a setting available in some AI systems that gives the model relatively more or less opportunity to perform that work before answering. Higher effort may improve difficult analysis, planning, coding, and tool use, but it can also increase waiting time and computing cost. It does not guarantee correctness or replace verification and human judgement.
+Requirements engineering is the discipline of deciding what a system should do, what constraints it must satisfy, how success will be judged, and what edge cases must be handled. AI makes requirements more important because generation becomes cheaper while judging correctness remains difficult.
 
 ## Retrieval
 
@@ -352,33 +348,21 @@ Runtime means the period when a program is actually executing. It can also refer
 
 A sandbox is an isolated environment that limits what software or an AI agent can reach or change. It allows experimentation while protecting files, systems, or networks outside the boundary.
 
-## Security Terms for AI
-
-**Prompt injection** is a malicious instruction designed to redirect an AI system. **Data leakage** is the unintended exposure of private information. **Excessive permissions** give a person or agent more access than needed. **Model poisoning** attempts to corrupt training or reference material so that the model behaves improperly.
-
 ## Schema
 
 A schema describes the required shape of data: which fields exist, what kind of value each field may contain, and how pieces relate. It turns “return something useful” into a more precise contract.
 
-## Source Code and Machine Code
+## Security Terms for AI
 
-Source code is the human-readable form of a program written in a language such as Python or Swift. Machine code is the lower-level numerical instruction form executed by a computer's processor. Compilers and interpreters help bridge the two levels.
-
-## Static Analysis
-
-Static analysis checks source code for likely defects, security problems, or rule violations without running the program. A linter is a common static-analysis tool that checks code quality and style.
-
-## Structured Query Language (SQL)
-
-Structured Query Language is a language used to read and change information in many databases. A SQL query might ask for all orders placed today or update the delivery status of one order.
-
-## Syntax
-
-Syntax is the set of writing rules that determines which arrangements of symbols are valid in a language. Programming-language syntax is similar to grammar: code with invalid syntax cannot be interpreted correctly by the language tools.
+**Prompt injection** is a malicious instruction designed to redirect an AI system. **Data leakage** is the unintended exposure of private information. **Excessive permissions** give a person or agent more access than needed. **Model poisoning** attempts to corrupt training or reference material so that the model behaves improperly.
 
 ## Software Verification
 
 Software verification is the process of checking whether software behaves correctly. In AI-assisted development, verification includes tests, validation, structured outputs, human review, monitoring, and safeguards around model behaviour.
+
+## Source Code and Machine Code
+
+Source code is the human-readable form of a program written in a language such as Python or Swift. Machine code is the lower-level numerical instruction form executed by a computer's processor. Compilers and interpreters help bridge the two levels.
 
 ## Stakeholder
 
@@ -391,6 +375,18 @@ A startup is a young organisation trying to discover and grow a repeatable busin
 ## State-Space Model
 
 A state-space model processes a sequence while carrying forward a changing internal summary, or “state,” of what it has encountered. Unlike standard attention, it does not need to compare every item directly with every other item. This can make long sequences more efficient, although the best current systems may combine state-space methods with attention rather than choosing only one.
+
+## Static Analysis
+
+Static analysis checks source code for likely defects, security problems, or rule violations without running the program. A linter is a common static-analysis tool that checks code quality and style.
+
+## Structured Query Language (SQL)
+
+Structured Query Language is a language used to read and change information in many databases. A SQL query might ask for all orders placed today or update the delivery status of one order.
+
+## Syntax
+
+Syntax is the set of writing rules that determines which arrangements of symbols are valid in a language. Programming-language syntax is similar to grammar: code with invalid syntax cannot be interpreted correctly by the language tools.
 
 ## System Integration
 
@@ -416,6 +412,10 @@ A token is a piece of information processed by an AI model. In text, a token may
 
 A tokenizer is the system that breaks input into tokens before the model processes it. Different tokenizers may split the same text or code differently. The important point is that the model does not receive human meaning directly; it receives numerical representations of tokens.
 
+## Tool Use
+
+Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, building an application, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
+
 ## Training
 
 Training is the process by which an AI model learns patterns from data. It requires large amounts of computation and adjusts the model's parameters. Training is usually a capital-intensive process; inference is the ongoing cost of using the trained model.
@@ -424,13 +424,9 @@ Training is the process by which an AI model learns patterns from data. It requi
 
 A Transformer is a neural-network architecture introduced in the 2017 paper _Attention Is All You Need_. It uses attention to learn which parts of an input relate to one another and can process many parts in parallel during training. Transformers did not invent generative AI, but they made it practical to build much larger and more capable language models and became a foundation of the current AI revolution.
 
-## Tool Use
+## Trust
 
-Tool use occurs when an AI system calls an external capability to obtain information or affect a system. Reading a file, searching a project, building an application, querying a database, or using an authorised connector are examples. The model chooses or requests the action; the surrounding agentic system executes it.
-
-## Provenance
-
-Provenance is a record of where information came from and how it changed. In an AI system, provenance can show which source documents supported an answer, making the result easier to check.
+Trust is the degree to which people and organisations are willing to rely on AI in real workflows. Trust is not created by intelligence alone. It depends on reliability, security, governance, auditability, explainability, verification, and human accountability.
 
 ## User Interface (UI)
 
@@ -447,7 +443,3 @@ Version control records changes to files over time. It lets people compare versi
 ## Workflow
 
 A workflow is the sequence of steps through which work moves from beginning to completion. Processing an insurance claim, approving a purchase, or reviewing and releasing a software change are all workflows.
-
-## Trust
-
-Trust is the degree to which people and organisations are willing to rely on AI in real workflows. Trust is not created by intelligence alone. It depends on reliability, security, governance, auditability, explainability, verification, and human accountability.

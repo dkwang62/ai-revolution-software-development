@@ -61,16 +61,6 @@ Another request made tool use tangible. I wanted an export command to collect th
 
 These examples should not be mistaken for autonomy without supervision. I supplied the objective, decided which behaviour mattered, controlled permissions, and judged the result. The AI coding agent lowered the cost of implementation; it did not inherit responsibility for the application.
 
-## Grounding: Finding the Real Problem
-
-Agents need more than a request. They need **grounding**: relevant evidence from the world in which they are acting.
-
-I once reported that a highlighted Chinese character was not working correctly while browsing a document. A superficial response would have rewritten the highlighting code. Inspection showed that highlighting already worked. The defect was navigation: the application did not move to the page containing the character, so the learner could not see the existing highlight.
-
-That diagnosis depended on the current project rather than general training. The agent retrieved the relevant code, followed the state changes, and compared the intended workflow with the implemented one. Retrieval-augmented generation, usually shortened to **RAG**, describes the broader pattern of supplying a model with relevant external material at the time of the task. In coding, retrieval may mean repository search, documentation, logs, tests, or previous decisions.
-
-More context is not automatically better. An agent can be distracted by irrelevant files or stale instructions. Useful grounding is selective: enough evidence to identify the actual system and its constraints.
-
 ## Human in the Loop Is a Design Choice
 
 A phrase-discovery feature uses AI to identify useful Chinese phrases in text the learner has photographed or imported. The model is good at proposing candidates, but the surrounding application does not silently accept every proposal.

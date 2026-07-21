@@ -216,12 +216,8 @@ AI may dramatically reduce the cost of producing first drafts, prototypes, expla
 
 This is not a failure of AI. It is the normal economics of reliability.
 
-## Bridge to Existing Systems
+## Bridge to Trust
 
-Precision becomes even more important when AI interacts with existing systems.
+Precision is not valuable only because engineers admire correctness. It determines whether people will rely on the system when a mistake has consequences.
 
-Most valuable software does not run in isolation. It connects to databases, payment systems, customer records, legacy applications, regulatory workflows, factory equipment, medical devices, and enterprise platforms. A mistake at an integration boundary can have consequences far beyond a bad chat response.
-
-That leads to the next engineering problem: legacy systems and system integration.
-
-AI's greatest value may not be writing brand-new software. It may be helping organisations understand, preserve, and modernise the software they already depend on.
+Tests, structured outputs, validation, fallbacks, and human escalation turn a model's uncertain proposal into bounded behaviour. The next question is therefore economic as well as technical: when is that surrounding evidence strong enough for an organisation to trust the system?

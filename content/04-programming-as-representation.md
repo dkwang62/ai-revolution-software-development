@@ -123,21 +123,9 @@ That difference allows AI to generalise. When asked for a Swift function, it can
 
 This does not mean the AI understands software in the way a human engineer does. It means the model has learned enough statistical and structural relationships to produce useful transformations between representations.
 
-## From Rules to Relationships
+This difference explains both AI's power and weakness. Learned relationships let it handle variation without a hand-written rule for every case. They also let it produce plausible mistakes: a wrong requirement, an unsuitable pattern, a non-existent API, or code that looks right but fails. [[13-precision-and-probabilistic-ai|Precision and Probabilistic AI]] later explains how engineering contains that uncertainty.
 
-Traditional software is built by writing rules explicitly.
-
-A human programmer decides what the system should do and encodes that behaviour in a programming language. The machine then follows those instructions. If the programme says to add two numbers, it adds them. If the programme says to reject a login after too many failed attempts, it rejects the login. The knowledge lives in explicit symbolic form.
-
-AI models are different. Their knowledge is distributed across learned parameters. They are not a list of rules that can be read line by line. They are closer to a learned landscape of relationships. Words, phrases, concepts, code patterns, visual structures, and procedures become related through mathematical representation.
-
-This difference explains both AI's power and its weakness.
-
-The power is flexibility. AI can handle variation. It can translate, summarise, explain, infer, rewrite, classify, and generate. It can move from English to code, from code to explanation, from error message to likely cause, from screenshot to interface suggestion, from vague idea to structured plan. It is not limited to a hand-written rule for every possible case.
-
-The weakness is uncertainty. Because AI works through learned relationships rather than explicit deterministic rules, it can produce plausible mistakes. It may infer the wrong requirement, choose an inappropriate pattern, invent a non-existent API, or generate code that looks right but fails under real conditions. [[13-precision-and-probabilistic-ai|Precision and Probabilistic AI]] therefore belongs at the centre of the engineering story.
-
-AI's ability to write software is therefore not magic. It is the consequence of representing information and procedures in a way that allows movement between forms.
+AI's ability to write software is therefore not magic. It is movement between representations.
 
 ## Translation Is One Part of Programming
 
