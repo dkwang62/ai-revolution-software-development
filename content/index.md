@@ -10,7 +10,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 7**
+**Version 1.0.0 · Build 8**
 
 ![Book cover](figures/cover.png)
 
@@ -54,6 +54,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 
 ### Part V - The Future
 
+- [[part-v-the-future|Part V Introduction: The Future Is a System]]
 - [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 14: What Becomes Scarce When Code Becomes Cheap?]]
 - [[18-future-of-programmers|Chapter 15: The Future of Programmers]]
 - [[19-enterprise-intelligence-layer|Chapter 16: The Enterprise Intelligence Layer]]

@@ -113,6 +113,11 @@ export const bookSections: BookSection[] = [
     title: "Part V · The Future",
     entries: [
       {
+        slug: "part-v-the-future" as FullSlug,
+        title: "Part V Introduction: The Future Is a System",
+        shortTitle: "Introduction",
+      },
+      {
         slug: "17-what-becomes-scarce-when-code-becomes-cheap" as FullSlug,
         title: "Chapter 14: What Becomes Scarce When Code Becomes Cheap?",
         shortTitle: "14. What Becomes Scarce When Code Becomes Cheap?",
