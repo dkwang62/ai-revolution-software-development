@@ -120,6 +120,34 @@ AI is usually discussed as a way to create new software, but that may not be its
 
 It can analyse source code, explain old functions, generate documentation, identify dependencies, suggest APIs, translate between programming languages, detect dead code, summarise database schemas, compare old and new behaviour, generate tests, and help engineers reason about migration paths.
 
+For a non-technical reader, it helps to separate the work into five plain-English jobs.
+
+First, AI can act as a **translator**. It can read an old COBOL program, database schema, batch job, or interface definition and explain, in ordinary English, what the system appears to do. That does not mean the explanation is automatically correct, but it gives engineers a starting point that may otherwise require weeks of manual code reading.
+
+Second, AI can act as a **mapmaker**. Old systems often contain hidden pathways: one program updates a file, another reads it overnight, a third produces a regulatory report, and a fourth sends a feed to another system. AI tools can help trace those relationships and show which parts of the system depend on which other parts.
+
+Third, AI can act as a **documentation assistant**. Many legacy systems are under-documented because the system evolved over decades. AI can generate draft specifications, business-rule summaries, interface notes, and test descriptions that humans can review and correct.
+
+Fourth, AI can act as a **wrapper builder**. Instead of replacing the old system, engineers may expose a safe doorway into it: an API, service layer, adapter, or integration bridge. The old system keeps running, while new applications communicate with it through controlled interfaces.
+
+Fifth, AI can act as a **migration assistant**. It may help translate old code into a newer language, generate test cases, compare old and new outputs, and highlight places where behaviour does not match. This is where caution matters most. In a business-critical system, AI-generated transformation is not enough. The organisation still needs deterministic checks, parallel runs, audit trails, and human accountability.
+
+These five jobs are the important idea:
+
+```text
+Translate
+↓
+Map
+↓
+Document
+↓
+Wrap
+↓
+Migrate carefully
+```
+
+In other words, AI is not magic dust sprinkled over an old mainframe. It is a set of tools for reducing the cost of understanding, connecting, testing, and gradually changing software that cannot simply be switched off.
+
 This does not mean AI replaces legacy systems automatically. The more realistic and valuable role is assistance:
 
 ```text
@@ -138,7 +166,22 @@ Migrate gradually
 
 AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software.
 
-The market is already moving in this direction. Vendor offerings from Amazon Web Services (AWS) and Google Cloud include AI-assisted code assessment, documentation generation, dependency mapping, business-rule extraction, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
+The market is already moving in this direction. Vendor offerings from Amazon Web Services (AWS), [Google Cloud](https://cloud.google.com/solutions/mainframe-modernization), [IBM](https://www.ibm.com/products/watsonx-code-assistant-z), [OpenLegacy](https://www.openlegacy.com/), [Kodesage](https://kodesage.ai/), and [CloudFrame](https://cloudframe.com/CodeNavigator) point toward code assessment, documentation generation, dependency mapping, business-rule extraction, API generation, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
+
+There is also an important distinction between AI-assisted understanding and deterministic transformation.
+
+AI is useful when the organisation needs to understand what old software does. It can explain, summarise, map, classify, and propose. But when a bank or airline needs a new system to behave exactly like the old one, deterministic tools and formal tests become essential. CloudFrame, for example, emphasises deterministic COBOL-to-Java transformation. IBM describes watsonx Code Assistant for Z as combining AI and automation for mainframe modernisation. OpenLegacy emphasises AI-assisted API generation from legacy systems. Kodesage emphasises AI-driven understanding of old code, dependencies, and business logic.
+
+For the reader, the lesson is simple:
+
+```text
+AI helps humans understand.
+Automation helps transform.
+Tests prove what changed.
+Humans remain accountable.
+```
+
+That is the realistic version of AI in legacy modernisation.
 
 ## Gradual Migration
 
