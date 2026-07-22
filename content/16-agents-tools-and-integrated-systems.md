@@ -110,3 +110,7 @@ The best early uses are likely to have clear objectives, observable state, rever
 Agents make AI feel like a worker. That feeling should not obscure what they are: systems built from models, tools, memory, permissions, and feedback. Greater agency increases the need for engineering discipline.
 
 An AI agent can act. It cannot be allowed to decide by itself what counts as acceptable.
+
+This completes the engineering movement of the book. Communication, requirements, precision, trust, legacy modernisation, and agents all point to the same conclusion: AI becomes economically important only when it is embedded in a larger system of context, tools, safeguards, and human judgement.
+
+The final part of the book therefore widens the frame. The question is no longer only what AI can do inside one application or one development environment. It is what happens when the surrounding system around AI becomes powerful enough to change who can build, what can be built, and which human skills become scarce.

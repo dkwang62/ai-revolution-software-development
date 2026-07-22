@@ -271,7 +271,9 @@ This chapter has described the problem: valuable knowledge trapped inside system
 
 That distinction matters. Once a legacy system becomes legible, the enterprise can capture what was previously hidden: business rules, data definitions, dependency maps, interface behaviour, test evidence, approval logic, and migration paths. Those are not one-time project artefacts. They are reusable enterprise knowledge.
 
-That is the bridge to [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]]. Legacy integration is the wedge. Enterprise Intelligence is the platform that emerges when the knowledge recovered from one modernisation project becomes reusable across the next project, and the next, and the next.
+That is the bridge to a later enterprise argument. Legacy integration is the wedge. The [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]] is the platform that emerges when the knowledge recovered from one modernisation project becomes reusable across the next project, and the next, and the next.
+
+Before returning to that enterprise platform, we need one more engineering step: what happens when AI does not merely explain or generate, but acts through tools inside real systems?
 
 ## The Economic Lesson
 

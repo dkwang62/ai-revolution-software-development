@@ -8,6 +8,8 @@ title: "The Enterprise Intelligence Layer"
 
 The next major enterprise software platform may not begin as a grand AI strategy. It may begin with a very ordinary problem: an old business system that everybody depends on and nobody fully understands.
 
+This is the enterprise payoff chapter. It gathers several earlier threads—software as accumulated knowledge, context, trust, legacy systems, agents, and cost reduction—and follows them through one practical question: how can a company make its own knowledge usable by AI?
+
 Imagine a large manufacturing company that has used SAP for twenty-five years. SAP is not an abandoned product. The vendor still exists. The software is famous, widely used, and professionally supported. This is not the same as a small vendor disappearing and leaving customers stranded.
 
 The problem is subtler.
