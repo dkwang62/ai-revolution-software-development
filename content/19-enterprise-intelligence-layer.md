@@ -59,23 +59,13 @@ Perhaps a report no longer matches the finance team's reconciliation process. Pe
 
 Modernisation fails when the organisation discovers too late that the old system contained knowledge nobody had written down.
 
-## Not All Legacy Pain Is the Same
+## From the Legacy Problem to the Enterprise Layer
 
-There are several kinds of legacy pain. They often overlap, but separating them helps readers understand why system integration becomes so expensive.
+[[15-legacy-problem|Chapter 13]] described several kinds of legacy integration pain: abandoned systems, customised enterprise platforms, core banking and transaction systems, industrial-control systems, data-and-reporting conflicts, and integration sprawl. SAP migration and bank-core modernisation are two anchor examples, but they point to the same deeper problem.
 
-The first is the abandoned-system problem. A company depends on software whose vendor has disappeared, whose source code is poorly maintained, or whose technology is no longer supported. The pain is obvious: nobody wants to own it, nobody wants to change it, and every new requirement becomes dangerous.
+The organisation depends on software that embodies business knowledge, yet that knowledge is scattered across code, configuration, data, interfaces, documents, and people's memories.
 
-The second is the customised-enterprise-platform problem. SAP migration is the clearest example. The vendor may still be healthy, but the customer's own implementation has become unique after years of custom code, local rules, reports, interfaces, approvals, tax handling, and business exceptions. The pain is not "we have no vendor." It is "our version of the system has become part of how the business works."
-
-The third is the core-transaction-system problem. A bank's core banking system, an insurance policy administration system, or an airline reservation platform may process money, bookings, claims, balances, and customer commitments every day. The system may be old, but it is also authoritative. The danger is not only technical failure. It is financial, legal, and reputational failure.
-
-The fourth is the industrial-control problem. Factories, power stations, warehouses, hospitals, ports, and transport systems often contain specialised software connected to physical equipment: scanners, machines, robots, sensors, medical devices, or control systems. Here, integration is difficult because software changes may affect physical operations, safety, maintenance, and downtime.
-
-The fifth is the data-and-reporting problem. A company may have dozens of databases, spreadsheets, reporting tools, data warehouses, and departmental systems that disagree about customers, products, costs, inventory, or revenue. Modernisation then becomes less about replacing one program and more about reconciling what the organisation believes to be true.
-
-The sixth is the integration-sprawl problem. Over decades, companies connect systems through APIs, file transfers, message queues, nightly batch jobs, manual uploads, middleware, and one-off scripts. Each connection may have made sense when it was built. Together they become a maze.
-
-SAP ECC, old Oracle systems, customised ERPs, core banking systems, insurance platforms, airline reservation systems, hospital systems, government case-management systems, and manufacturing control environments are therefore not separate curiosities. They are examples of the same deeper pattern: the organisation depends on software that embodies business knowledge, but the knowledge is scattered across code, configuration, data, interfaces, documents, and people's memories.
+This chapter uses the customised SAP case for a different purpose. [[15-legacy-problem|Chapter 13]] asked why legacy systems are hard to replace. This chapter asks what an enterprise must build if it wants AI to help with that class of problem again and again, rather than treating each migration as a one-off rescue project.
 
 That distinction matters because it prevents the argument from becoming unfair to SAP or any other serious enterprise vendor. SAP itself has a real modernisation path. SAP has announced [mainstream maintenance for SAP Business Suite 7 core applications until the end of 2027](https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/maintenance-strategy/s4hana-business-suite7.html), with optional extended maintenance until the end of 2030. SAP also provides S/4HANA conversion guidance covering readiness checks, simplification items, add-on compatibility, sizing, and custom-code analysis.
 
@@ -117,7 +107,7 @@ The AI does not begin by replacing SAP. It begins by helping humans understand t
 
 This is not glamorous AI. It is economically powerful AI.
 
-## AI as Archaeologist, Translator, and Mapmaker
+## From One Project to Reusable Infrastructure
 
 For a lay reader, the easiest way to understand this is to imagine an old city.
 
@@ -127,9 +117,9 @@ You cannot demolish the city and rebuild it over a weekend. You need to modernis
 
 Enterprise systems are similar. A heavily customised SAP system, a core banking platform, or an old manufacturing system may still process essential work every day. The goal is not to tear it out recklessly. The goal is to understand it well enough to change it safely.
 
-AI can help in several practical roles.
+[[15-legacy-problem|Chapter 13]] described the practical AI jobs involved: translate old code, map dependencies, document business rules, wrap old functions behind safer interfaces, and migrate carefully. The enterprise-layer question is what remains after those jobs are done.
 
-As an archaeologist, it examines old code and documents to recover what happened. As a translator, it explains technical logic in ordinary language for business people. As a mapmaker, it traces dependencies between systems. As a documentation assistant, it turns code and tickets into clearer specifications. As a wrapper builder, it helps expose old functions through modern APIs. As a testing assistant, it helps create checks that compare old and new behaviour.
+If the company treats every modernisation project as isolated consulting work, the knowledge disappears again when the project ends. If it captures the recovered rules, maps, tests, approvals, and integration patterns in reusable form, the project becomes the beginning of an enterprise memory.
 
 The pattern looks like this:
 

@@ -88,6 +88,24 @@ In many organisations, the biggest cost is not writing new software. It is makin
 
 This is where technical debt and integration meet. A system can be valuable because it embodies business knowledge, while also expensive because that knowledge is trapped in forms that are hard to inspect, test, change, or connect. AI's opportunity is not merely to produce new code faster. It is to reduce the cost of recovering, documenting, testing, and safely changing knowledge already embedded in software.
 
+## Kinds of Legacy Integration Pain
+
+Legacy pain appears in several forms. They often overlap, but separating them helps explain why system integration becomes so expensive.
+
+The first is the abandoned-system problem. A company depends on software whose vendor has disappeared, whose source code is poorly maintained, or whose technology is no longer supported. Every change becomes risky because there may be no safe source of expertise.
+
+The second is the customised-enterprise-platform problem. SAP migration is a useful example. The vendor may still be healthy, but the customer's implementation has become unique after years of custom code, local rules, reports, interfaces, approvals, tax handling, and business exceptions. The pain is not "we have no vendor." It is "our version of the system has become part of how the business works."
+
+The third is the core-transaction-system problem. A bank's core banking system, an insurance policy administration system, or an airline reservation platform may process money, bookings, claims, balances, and customer commitments every day. The system may be old, but it is also authoritative. The danger is not only technical failure. It is financial, legal, and reputational failure.
+
+The fourth is the industrial-control problem. Factories, power stations, warehouses, hospitals, ports, and transport systems often contain specialised software connected to physical equipment: scanners, machines, robots, sensors, medical devices, or control systems. Here, integration is difficult because software changes may affect physical operations, safety, maintenance, and downtime.
+
+The fifth is the data-and-reporting problem. A company may have dozens of databases, spreadsheets, reporting tools, data warehouses, and departmental systems that disagree about customers, products, costs, inventory, or revenue. Modernisation then becomes less about replacing one program and more about reconciling what the organisation believes to be true.
+
+The sixth is the integration-sprawl problem. Over decades, companies connect systems through APIs, file transfers, message queues, nightly batch jobs, manual uploads, middleware, and one-off scripts. Each connection may have made sense when it was built. Together they become a maze.
+
+SAP systems, old Oracle applications, customised ERPs, bank cores, insurance platforms, airline reservation systems, hospital systems, government case-management systems, and manufacturing control environments are therefore not separate curiosities. They are examples of the same deeper pattern: organisations depend on software that embodies business knowledge, but the knowledge is scattered across code, configuration, data, interfaces, documents, and people's memories.
+
 ## What Integration Looks Like In Practice
 
 In a large bank, the new application is rarely allowed to reach directly into the core banking system. The usual architecture is layered.
@@ -220,6 +238,8 @@ It helps old systems communicate with new ones.
 It may turn legacy software from a burden into a source of recoverable institutional knowledge.
 
 This is why system integration belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in **greenfield applications**, projects started from a clean slate without an older system to preserve. It will be built in contact with old systems.
+
+This chapter has described the problem: valuable knowledge trapped inside systems that cannot simply be replaced. A later chapter, [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]], returns to the same material from a different angle. It asks what shared architecture an enterprise must build if it wants AI to use that recovered knowledge repeatedly across many projects.
 
 ## The Engineering Lesson
 
