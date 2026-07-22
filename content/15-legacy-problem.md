@@ -267,7 +267,11 @@ It may turn legacy software from a burden into a source of recoverable instituti
 
 This is why system integration belongs near the centre of the book's engineering argument. The future of AI in software will not be built only in **greenfield applications**, projects started from a clean slate without an older system to preserve. It will be built in contact with old systems.
 
-This chapter has described the problem: valuable knowledge trapped inside systems that cannot simply be replaced. A later chapter, [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]], returns to the same material from a different angle. It asks what shared architecture an enterprise must build if it wants AI to use that recovered knowledge repeatedly across many projects.
+This chapter has described the problem: valuable knowledge trapped inside systems that cannot simply be replaced. AI may not erase those systems, but it can make them legible again.
+
+That distinction matters. Once a legacy system becomes legible, the enterprise can capture what was previously hidden: business rules, data definitions, dependency maps, interface behaviour, test evidence, approval logic, and migration paths. Those are not one-time project artefacts. They are reusable enterprise knowledge.
+
+That is the bridge to [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]]. Legacy integration is the wedge. Enterprise Intelligence is the platform that emerges when the knowledge recovered from one modernisation project becomes reusable across the next project, and the next, and the next.
 
 ## The Engineering Lesson
 
