@@ -266,6 +266,30 @@ There is also a historical irony. The system integrators who once helped enterpr
 
 In that sense, system integrators are not merely building AI. They are translating the past so AI can use it.
 
+This is why the history of middleware matters. In the early 2000s, tools such as Forte, CORBA, enterprise application integration platforms, message brokers, and adapters were used to make heterogeneous enterprise systems communicate. [Forte's own interoperability documentation](https://docs.oracle.com/cd/E19957-01/806-6666-01/806-6666-01.pdf) described CORBA as a way for objects written in different languages and running on different operating systems and hardware to interact.
+
+A bank might have a mainframe, a relational database, a Java application server, a reporting system, and a new web front end. None of these systems naturally understood the others. The system integrator's job was to build the bridges.
+
+The AI version of that problem is similar, but not identical. The old middleware question was:
+
+```text
+How do we make different systems understand each other?
+```
+
+The new Enterprise AI question is:
+
+```text
+How do we make a model understand the enterprise?
+```
+
+The bridges are different. Instead of only message queues, adapters, service buses, and APIs, the new layer also needs retrieval systems, vector indexes, knowledge graphs, permission models, semantic search, prompt workflows, evaluation harnesses, audit logs, and human approval points.
+
+This can be thought of as intelligence middleware. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
+
+The work also explains why commodity AI is not enough. A public model can know programming, accounting terminology, or general business practice. It does not automatically know a bank's lending exceptions, a manufacturer's plant-specific maintenance procedures, an airline's reservation integrations, or a company's twenty years of SAP customisations. That knowledge has to be exposed safely, organised carefully, governed properly, and embedded into real workflows.
+
+This is the system integrator's opening. In the ERP era, the SI customised software and business processes around a packaged system. In the AI era, the SI may customise enterprise knowledge around a general model.
+
 That is why legacy modernisation can become more than an IT clean-up project. It can become the first practical route toward Enterprise Intelligence. Each recovered business rule, dependency map, API wrapper, test suite, permission model, and audit trail makes the next AI project easier to trust.
 
 ## The ROI Portfolio
