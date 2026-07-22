@@ -63,6 +63,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "5. What Is an AI Model?",
       },
       {
+        slug: "side-chapter-the-genie-is-not-all-powerful" as FullSlug,
+        title: "Side Chapter: The Genie Is Not All-Powerful",
+        shortTitle: "Side Chapter: The Genie Has Limits",
+      },
+      {
         slug: "08-how-ai-converts-english-into-software" as FullSlug,
         title: "Chapter 6: How AI Converts English Into Software",
         shortTitle: "6. How AI Converts English Into Software",

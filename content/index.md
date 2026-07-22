@@ -10,7 +10,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 14**
+**Version 1.0.0 · Build 15**
 
 ![Book cover](figures/cover.png)
 
@@ -40,6 +40,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 
 - [[05-what-is-information|Chapter 4: What Is Information?]]
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
+- [[side-chapter-the-genie-is-not-all-powerful|Side Chapter: The Genie Is Not All-Powerful]]
 - [[08-how-ai-converts-english-into-software|Chapter 6: How AI Converts English Into Software]]
 - [[09-economics-of-models|Chapter 7: The Economics of Models]]
 - [[10-context-what-the-model-knows-right-now|Chapter 8: Context: What the Model Knows Right Now]]

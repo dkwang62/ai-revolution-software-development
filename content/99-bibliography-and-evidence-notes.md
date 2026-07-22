@@ -76,6 +76,14 @@ Used for the age, operating cost, modernisation planning, and remediation status
 
 These vendor-published cases support the architectural examples in “The Legacy Problem”: governed API access to core systems, and AI-assisted recovery of business rules from legacy COBOL. They are evidence that these methods are being offered and reported in practice, not independent proof of general savings.
 
+## AI models, genome prediction, and biological limits
+
+- Avsec, Žiga, et al. “Advancing Regulatory Variant Effect Prediction with AlphaGenome.” _Nature_, 2026.
+- U.S. National Institute of Diabetes and Digestive and Kidney Diseases. “Gene Regulation and Development Section.” Accessed 23 July 2026.
+- U.S. National Institute of Environmental Health Sciences. “Gene and Environment Interaction.” Accessed 23 July 2026.
+
+Used in “The Genie Is Not All-Powerful.” AlphaGenome demonstrates how an AI model can predict many molecular effects from DNA sequence. The two NIH sources explain the importance of cell type, three-dimensional genome organisation, and gene–environment interactions. Together, they support the chapter's distinction between powerful pattern prediction and complete causal understanding. They support AI's value as a scientific instrument; they do not establish that a model can fully explain a living system.
+
 ## Model economics and AI infrastructure
 
 - Epoch AI. [“Trends in Artificial Intelligence.”](https://epoch.ai/trends) Accessed 19 July 2026.
