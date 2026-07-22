@@ -184,6 +184,8 @@ Migrate gradually
 
 AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software.
 
+Another way to say this is that AI-assisted modernisation is not one action. It is a collection of narrower jobs: code analysis, documentation, test generation, data mapping, API wrapping, security review, cloud preparation, monitoring, and gradual migration. Vendor roadmaps often package these activities under the single phrase "AI-driven legacy modernisation", but readers should hear the phrase carefully. The useful question is always: which part of the modernisation problem is AI helping with?
+
 The market is already moving in this direction. Vendor offerings from Amazon Web Services (AWS), [Google Cloud](https://cloud.google.com/solutions/mainframe-modernization), [IBM](https://www.ibm.com/products/watsonx-code-assistant-z), [OpenLegacy](https://www.openlegacy.com/), [Kodesage](https://kodesage.ai/), and [CloudFrame](https://cloudframe.com/CodeNavigator) point toward code assessment, documentation generation, dependency mapping, business-rule extraction, API generation, code transformation, functional-equivalence testing, and gradual migration. These are vendor claims and should be treated cautiously, but they reveal something important: the commercial opportunity is not only generating new code. It is recovering knowledge from old systems.
 
 There is also an important distinction between AI-assisted understanding and deterministic transformation.
