@@ -12,6 +12,27 @@ Imagine a large manufacturing company that has used SAP for twenty-five years. S
 
 The problem is subtler.
 
+To understand it, we first need to understand why ERP systems get customised at all.
+
+ERP stands for enterprise resource planning. In ordinary language, an ERP system is the large central software system a company uses to run important business processes such as finance, purchasing, inventory, manufacturing, sales, payroll, reporting, and compliance. SAP is one of the most famous ERP systems in the world.
+
+ERP systems are sold as standard packages, but no large company is completely standard. Two manufacturers may both make products, buy parts, pay suppliers, ship goods, and close their accounts every month. Yet the details differ. One company may approve purchases above $10,000 through a regional finance director. Another may require approval by product line, country, and factory. One warehouse may pick goods by pallet. Another may pick by serial number. One country may require a particular tax report. Another may require a different invoice format. One customer may receive special pricing because of a long-term contract. Another may require electronic delivery notices in a precise format before accepting a shipment.
+
+The ERP package provides the common foundation. Customisation makes it fit the actual business.
+
+For example, a company might customise SAP so that:
+
+- invoices above a certain value follow a special approval path;
+- purchases from approved suppliers move faster than purchases from new suppliers;
+- inventory is valued differently for different countries;
+- a factory receives production-planning reports in the exact format its managers use every morning;
+- a warehouse scanner updates stock in a non-standard way;
+- a bank payment file is generated in the format required by a local bank;
+- a sales report combines standard SAP data with data from a separate customer system;
+- an old acquisition continues using an interface built before the companies merged.
+
+None of these examples sound dramatic. That is the point. Enterprise software becomes complicated through thousands of small, reasonable decisions. Each decision solves a local business problem. Over decades, those decisions accumulate into a system that is no longer merely "SAP." It is that company's particular version of SAP.
+
 Over many years, the company has customised its SAP system to match the way it actually works. It has added custom reports, special approval rules, tax handling for different countries, warehouse exceptions, manufacturing workflows, supplier integrations, finance controls, old interfaces to banks, and thousands of lines of ABAP code. ABAP is SAP's programming language, used to extend and customise SAP systems.
 
 Some of those changes are well documented. Many are not. Some were introduced after acquisitions. Some were created to satisfy regulators. Some exist because a factory manager, finance director, or supply-chain team needed the system to behave in a very specific way. The people who made those decisions may have retired or moved on.
