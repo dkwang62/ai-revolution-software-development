@@ -88,6 +88,30 @@ In many organisations, the biggest cost is not writing new software. It is makin
 
 This is where technical debt and integration meet. A system can be valuable because it embodies business knowledge, while also expensive because that knowledge is trapped in forms that are hard to inspect, test, change, or connect. AI's opportunity is not merely to produce new code faster. It is to reduce the cost of recovering, documenting, testing, and safely changing knowledge already embedded in software.
 
+## The Cloud Did Not Erase Legacy
+
+It is natural to assume that the web, cloud computing, mobile apps, and modern APIs would have swept away these old systems by now. In some cases, they did. Many systems were replaced, simplified, or moved to modern platforms.
+
+But in many large organisations, the opposite happened. The industry built new layers on top of old foundations.
+
+A bank might add a mobile app while the account balance still lives in a core banking system. A manufacturer might add dashboards while planning and inventory still depend on a customised ERP system. A government agency might create an online portal while eligibility rules still run through older databases and batch processes. A cloud migration might move servers from one data centre to another without changing the shape of the application underneath.
+
+This is not failure in a simple sense. Often it is the safest economic choice. Replacing the old system would be too risky, so the organisation wraps it, connects it, extends it, and gradually builds around it.
+
+The result is a layered enterprise:
+
+```text
+Modern App
+        |
+API or Integration Layer
+        |
+Old System
+        |
+Embedded Business Knowledge
+```
+
+That layered history matters because AI enters the enterprise through the same paths. An AI agent cannot help a customer, approve a claim, reconcile an invoice, or explain a production problem unless it can reach the systems where the facts and rules live. The AI may be new, but the enterprise it must understand is old.
+
 ## Kinds of Legacy Integration Pain
 
 Legacy pain appears in several forms. They often overlap, but separating them helps explain why system integration becomes so expensive.

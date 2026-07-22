@@ -262,6 +262,12 @@ Over time, the organisation discovers that these projects require similar founda
 
 This is how many major enterprise technologies spread. Cloud computing did not always begin as a single company-wide strategy. Often one application moved first, then another, then another. Eventually the platform became obvious. Enterprise AI may follow the same pattern.
 
+There is also a historical irony. The system integrators who once helped enterprises connect mainframes to web applications, ERP systems to data warehouses, and old databases to mobile apps may now be asked to connect those same estates to AI. The work is different, but the pattern is familiar. Enterprises do not adopt new technology in a vacuum. They adopt it through the systems they already own.
+
+In that sense, system integrators are not merely building AI. They are translating the past so AI can use it.
+
+That is why legacy modernisation can become more than an IT clean-up project. It can become the first practical route toward Enterprise Intelligence. Each recovered business rule, dependency map, API wrapper, test suite, permission model, and audit trail makes the next AI project easier to trust.
+
 ## The ROI Portfolio
 
 Enterprise AI should not be justified by vague claims that everyone will become more productive. A more serious method is to treat it as a portfolio of use cases.
