@@ -92,6 +92,8 @@ This is where technical debt and integration meet. A system can be valuable beca
 
 Legacy pain appears in several forms. They often overlap, but separating them helps explain why system integration becomes so expensive.
 
+This list is not meant to be exhaustive, but it covers the recurring cases that appear across public audits, SAP migration material, banking modernisation examples, healthcare interoperability work, industrial-control guidance, and legacy-modernisation tooling. The details differ by industry. The underlying pattern is the same: old systems continue to perform essential work while new systems must connect to them safely.
+
 The first is the abandoned-system problem. A company depends on software whose vendor has disappeared, whose source code is poorly maintained, or whose technology is no longer supported. Every change becomes risky because there may be no safe source of expertise.
 
 The second is the customised-enterprise-platform problem. SAP migration is a useful example. The vendor may still be healthy, but the customer's implementation has become unique after years of custom code, local rules, reports, interfaces, approvals, tax handling, and business exceptions. The pain is not "we have no vendor." It is "our version of the system has become part of how the business works."
