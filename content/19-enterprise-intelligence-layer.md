@@ -381,3 +381,35 @@ Software development is one of the clearest early examples because software is a
 The customised SAP example shows the broader future. AI does not create value merely by writing new code. It creates value when it helps the enterprise understand what already exists, decide what must be preserved, and change systems without destroying the knowledge embedded inside them.
 
 The frontier model is the engine. The Enterprise Intelligence Layer is the vehicle. A painful legacy modernisation project may be the road that gets the vehicle moving.
+
+## The Economic Takeaway
+
+The technical architecture matters, but the economic conclusion matters more.
+
+The Enterprise Intelligence Layer is valuable because it may reduce the cost of software development inside the enterprise. It does this by reducing the cost of understanding the enterprise itself.
+
+Today, many large organisations pay repeatedly for the same kind of discovery work. A new SAP migration, compliance project, core banking integration, reporting change, customer-service upgrade, or cloud programme begins with consultants and internal teams trying to answer familiar questions:
+
+- What does the current system do?
+- Where are the business rules?
+- Which interfaces are fragile?
+- What custom code exists?
+- Which reports depend on which data?
+- What must not change?
+- How do we prove the new behaviour matches the old behaviour?
+
+Each project pays to recover part of the enterprise's memory. Too often, that memory is captured in slide decks, spreadsheets, project folders, tickets, and consultant deliverables that are difficult to reuse when the next project begins.
+
+The Enterprise Intelligence Layer changes the economic model:
+
+```text
+Before:
+Every project pays to rediscover the enterprise.
+
+After:
+Every project improves the enterprise's reusable memory.
+```
+
+That is why the payoff can be large. The first AI-assisted modernisation project may save only a modest percentage of its own cost. But if the recovered knowledge becomes reusable across future projects, the enterprise begins compounding knowledge instead of repeatedly buying discovery.
+
+In plain terms: EIS lowers the cost of software development by making the company easier to understand, easier to change, and less dependent on expensive rediscovery.

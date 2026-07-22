@@ -273,7 +273,7 @@ That distinction matters. Once a legacy system becomes legible, the enterprise c
 
 That is the bridge to [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]]. Legacy integration is the wedge. Enterprise Intelligence is the platform that emerges when the knowledge recovered from one modernisation project becomes reusable across the next project, and the next, and the next.
 
-## The Engineering Lesson
+## The Economic Lesson
 
 Legacy systems teach humility.
 
@@ -281,4 +281,10 @@ It is easy to build a prototype. It is much harder to replace software that carr
 
 AI will matter in enterprise software not because it can generate impressive demos, but because it may reduce the cost of understanding, preserving, integrating, and carefully changing systems that cannot fail.
 
-That is a deeper economic story than "AI writes code".
+That is the economic lesson.
+
+Enterprises already spend enormous sums on system integrators, SAP consultants, legacy specialists, testers, business analysts, architects, and migration teams because changing old software is expensive and risky. Much of that money is spent rediscovering knowledge the enterprise already owns but can no longer easily see.
+
+If AI can make old systems legible, the cost structure changes. The company no longer pays only to rewrite code or connect applications. It begins reducing the cost of understanding itself.
+
+That is a deeper economic story than "AI writes code". It is the possibility that AI may reduce one of the largest hidden costs in enterprise software: the cost of changing systems whose knowledge has become trapped.
