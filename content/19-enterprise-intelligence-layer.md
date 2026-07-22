@@ -314,6 +314,44 @@ Then the organisation subtracts the cost of running and governing the system. Th
 
 Legacy modernisation fits this portfolio well because the benefits are not only labour savings. They include reduced migration risk, faster documentation, fewer missed dependencies, better test coverage, safer integration, lower reliance on scarce specialists, and preservation of accumulated business knowledge.
 
+## A Conservative Cost-Reduction Estimate
+
+There is not yet enough independent evidence to say that an Enterprise Intelligence Layer reduces enterprise software-development cost by a precise percentage. The idea is too new, and most enterprise AI deployments are still reported as isolated projects rather than mature shared platforms.
+
+But a conservative estimate can still be built from evidence that does exist.
+
+[McKinsey has reported](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/breaking-technical-debts-vicious-cycle-to-modernize-your-business) that companies may pay an additional 10 percent to 20 percent on projects to address technical debt, and that CIOs estimate technical debt at 20 percent to 40 percent of the value of the technology estate before depreciation. McKinsey also gives examples where better technical-debt analysis produced hundreds of millions of dollars in trackable benefits over several years. Separately, [field experiments with GitHub Copilot at Microsoft and Accenture](https://mit-genai.pubpub.org/pub/v5iixksv/release/2) found suggestive productivity gains in completed pull requests, while [McKinsey found](https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/unleashing-developer-productivity-with-generative-ai) that generative AI can make some coding, documentation, refactoring, and code-generation tasks much faster.
+
+Those studies do not prove Enterprise Intelligence Layer ROI. They do show that the addressable cost pool is real: software teams lose time to understanding, rework, documentation gaps, testing, integration, technical debt, and old systems.
+
+For a large SAP migration, core banking integration, or legacy modernisation programme, a cautious estimate might look like this:
+
+```text
+Total programme cost:                         US$100 million
+Knowledge-heavy work:                         40% of programme
+AI/EIS productivity improvement:              25% on that work
+Value captured after review/governance cost:  50%
+
+Estimated direct saving:
+US$100m × 40% × 25% × 50% = US$5 million
+```
+
+That is only a 5 percent programme saving. It is deliberately cautious. It assumes that AI does not help every part of the project, that not every productivity gain becomes financial value, and that governance, integration, subscriptions, security, and change management all cost money.
+
+But the calculation changes when knowledge is reused.
+
+If the same recovered business rules, dependency maps, interface definitions, test cases, approval flows, and documentation are reused across five later projects, the value is no longer limited to the first programme. The enterprise is not merely reducing one consulting bill. It is turning repeated consulting work into institutional memory.
+
+That is why the realistic economic range might be:
+
+```text
+Early project-level saving:        5% to 15%
+Mature portfolio-level saving:     10% to 25%
+Strategic upside:                  faster change, lower risk, more enterprise throughput
+```
+
+These are estimates, not proven results. Their purpose is to show the economic logic. The payoff is potentially large because enterprises already spend heavily on system integrators, SAP consultants, legacy specialists, migration teams, testers, business analysts, and architects to rediscover knowledge that the organisation already owns.
+
 ## Beyond Cutting Labour
 
 Reducing cost is only one source of value. The larger opportunity may be expanding what an organisation can accomplish.
