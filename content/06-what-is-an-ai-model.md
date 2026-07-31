@@ -76,6 +76,28 @@ Those numerical representations are often described as **vectors**—ordered lis
 
 _A simplified picture of tokens, vectors, and high-dimensional space. The final panel is only a two-dimensional shadow: a real model uses far more dimensions than a drawing can show._
 
+### Beyond Text: Screens, Errors, and Diagrams
+
+The same basic idea applies when a user uploads an image instead of typing a message. A modern **multimodal model** can work with text and pictures together. It does not treat a screenshot as a tiny webpage that it can inspect perfectly. It divides the image into small visual patches, converts those patches into numerical representations, and combines them with any visible words and the user's question.
+
+Suppose a user uploads a screenshot of an error message and asks, “Why did this fail?” The model can often recognise the error text, the name of the application, warning symbols, buttons, and the surrounding screen. It can connect those clues with learned patterns from documentation, programming discussions, and previous examples. If the user also supplies the actual error text, that is usually even better: text can be copied, searched, and checked more precisely than a blurry image.
+
+Or suppose a user uploads a phone screen and says, “This button is out of alignment.” The model can use the picture as evidence of relationships that source code alone does not reveal: a label may be cut off, a button may overlap another control, or a row may be too crowded at that screen size. The internal representation is not a literal map with one point labelled “misaligned button.” It is a numerical pattern that helps the model relate shapes, positions, words, colours, and familiar interface conventions.
+
+```text
+screenshot, error message, or flowchart
+↓
+visual patches and visible text become numbers
+↓
+the model relates positions, labels, arrows, and patterns
+↓
+an observation, explanation, or proposed next step
+```
+
+A flowchart works similarly. Its boxes, arrows, and labels become visual and textual evidence from which the model can infer a likely sequence: start here, test this condition, then follow one of two branches. The model is not reading the diagram with human eyes or storing the whole image as one object. It is using learned numerical relationships to form a useful interpretation.
+
+This is powerful, but it remains evidence rather than proof. A screenshot may be cropped, blurry, outdated, or taken at a different device size. A visual model can miss a small alignment problem or misread a word. For important work, the best loop is still: show the image, inspect the actual screen or error text, test the proposed fix, and look again.
+
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
 For text generation, the immediate training task is often to predict the next token. That sounds modest. But predicting well across books, programs, documentation, conversations, and worked solutions requires the network to capture a great many regularities. At sufficient scale, that narrow training operation produces surprisingly broad behaviour.
