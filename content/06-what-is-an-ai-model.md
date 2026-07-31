@@ -100,7 +100,9 @@ This is powerful, but it remains evidence rather than proof. A screenshot may be
 
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
-For text generation, the immediate training task is often to predict the next token. That sounds modest. But predicting well across books, programs, documentation, conversations, and worked solutions requires the network to capture a great many regularities. At sufficient scale, that narrow training operation produces surprisingly broad behaviour.
+For text generation, the immediate training task is often to predict the next token. That sounds modest. Consider the unfinished sentence: “The capital of France is ___.” To predict _Paris_, the model needs a learned relationship between France and Paris. In code, predicting the next step after “if the list is empty” may require learned patterns about programming logic. In a screenshot, predicting what a label refers to may require recognising its position, a nearby button, and a visible error message.
+
+Training gives the model billions of these small prediction-and-correction exercises. Across books, code, diagrams, conversations, and worked examples, it gradually learns reusable patterns: facts often associated with one another, grammar, cause and effect, software conventions, visual layouts, and common ways people solve problems. This can produce surprisingly broad behaviour. But it is still pattern-based prediction, not human experience or a guarantee that every answer is correct.
 
 ## Inference Uses the Finished Model
 
