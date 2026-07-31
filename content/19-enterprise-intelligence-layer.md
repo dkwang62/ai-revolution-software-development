@@ -281,6 +281,66 @@ Had today's AI-assisted understanding, translation, testing, and knowledge retri
 
 The important future question is different: when business changes, must the business wait years for one central system to be replaced or customised? Or can the enterprise use its intelligence layer to understand the change, identify the affected systems, create and test the required connections, and adapt safely?
 
+## From Data to Decisions: The Enterprise Learning Loop
+
+Connecting systems is only the beginning. The deeper value of the Enterprise Intelligence Layer is that it can help an organisation learn from what its systems are already recording.
+
+Business analytics is often described through three increasingly demanding questions:
+
+```text
+Descriptive:  What happened?
+Predictive:   What is likely to happen next?
+Prescriptive: What should we do about it?
+```
+
+**Descriptive analytics** turns records into a useful picture of the present or past. A manufacturer may see that a production line stopped more often this month. A retailer may see that returns rose in one region. A bank may see that loan applications take longer to approve than they did last quarter.
+
+**Predictive analytics** uses patterns in past data to estimate what may happen. It may estimate which machine is more likely to fail, which customer may leave, which invoice may be late, or where demand may increase. A prediction is useful because it directs attention. It is not a fact about the future.
+
+**Prescriptive analytics** goes one step further: it considers possible actions. Should the manufacturer schedule maintenance now or wait? Should the retailer change stock levels? Should the bank add staff, simplify a process, or investigate one cause of delay? This step is not simply “let the model decide.” It combines evidence, constraints, costs, risks, and human objectives.
+
+The Enterprise Intelligence Layer can connect these stages. It can retrieve data and business context from many systems, explain why a pattern may matter, identify the affected workflow, draft possible actions, and record what was decided. But it must also know where its evidence came from, which system owns the official record, who has authority to act, and how the outcome will be measured.
+
+The full organisational loop is:
+
+```text
+business activity
+↓
+records and operational data
+↓
+description of what happened
+↓
+prediction or explanation of what may be changing
+↓
+human decision within rules and constraints
+↓
+action through enterprise systems
+↓
+measurement of the outcome
+↓
+improved business knowledge
+```
+
+This is why AI can improve organisational adaptability. It can shorten the time between an event in the market, an informed decision, a software or process change, and evidence about whether the change worked. Earlier in the book, this was called reducing **organisational lag**.
+
+### Prediction Is Not a Decision
+
+The distinction is essential. A model may predict that a customer is likely to cancel a contract. It cannot determine, by prediction alone, whether the company should offer a discount, improve service, accept the loss, or avoid contacting the customer at all. Those choices involve brand, fairness, profit, contracts, regulations, and human values.
+
+Nor is a historical pattern automatically a cause. Sales may have increased after a marketing campaign, but perhaps demand was already rising for another reason. A warehouse may have become faster after a new screen was introduced, but perhaps the workforce changed at the same time.
+
+This is where **experimentation** matters. When it is safe and ethical, an organisation can compare a proposed change with the previous method or with a carefully selected comparison group. Rather than asking only, “Did performance improve?” it asks, “Would performance have improved anyway?” That second question seeks a **counterfactual**: a reasonable picture of what would have happened without the change.
+
+The aim is not academic perfection. It is to prevent management from mistaking a persuasive dashboard, or a fluent AI explanation, for evidence that a decision created value.
+
+### The Data Foundation Beneath the Genie
+
+The genie cannot make poor records trustworthy simply by speaking elegantly about them.
+
+If one system records a customer as “active,” another records the same person as “closed,” and neither record is clearly authoritative, no model can honestly resolve the conflict without a business rule. If product codes change after an acquisition, a prediction may mix unlike products. If historical decisions were biased or poorly recorded, the AI can reproduce that history at scale.
+
+The practical foundations are unglamorous: clear data definitions, reliable identifiers, ownership of important records, documented changes, permissions, data-quality checks, and a way to trace an answer back to evidence. These are not alternatives to AI. They are what allow enterprise AI to become useful rather than merely impressive.
+
 ## ERP Digitised Transactions. AI Digitises Knowledge.
 
 Enterprise software history provides a useful comparison. ERP systems digitised transactions. They standardised finance, procurement, inventory, manufacturing, sales, and reporting. Their value came from making business processes more visible, consistent, and measurable.
@@ -358,6 +418,18 @@ Annual Gross Benefit
 ```
 
 Then the organisation subtracts the cost of running and governing the system. This prevents the book from claiming that enterprise-wide AI ROI is already proven. The evidence is stronger for focused workflows than for complete enterprise transformation.
+
+### Treat Each Use Case as a Testable Hypothesis
+
+An enterprise should not measure success by counting models, licences, chat messages, or demonstrations. It should begin with a business hypothesis.
+
+For example:
+
+> If AI helps support staff retrieve the correct policy and draft a first response, the average time to resolve a low-risk case will fall without reducing customer satisfaction or increasing compliance errors.
+
+That statement names the workflow, the expected benefit, the quality safeguards, and the measures that could prove it wrong. Before deployment, the organisation records a baseline: current resolution time, customer satisfaction, error rate, escalation rate, and cost. It then tests the new workflow on a bounded group or period, compares results, investigates unexpected effects, and decides whether to expand, revise, or stop.
+
+This is the business equivalent of the agentic loop in the previous chapter: act, observe, learn, revise. It prevents a company from confusing activity with value. A system that produces thousands of attractive answers but makes no decision faster, safer, or better has not yet earned its place.
 
 Legacy modernisation fits this portfolio well because the benefits are not only labour savings. They include reduced migration risk, faster documentation, fewer missed dependencies, better test coverage, safer integration, lower reliance on scarce specialists, and preservation of accumulated business knowledge.
 

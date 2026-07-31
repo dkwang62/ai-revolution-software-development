@@ -18,6 +18,12 @@ Used in “The Economics of Software Development” and “The Future of Program
 
 Used in “The Enterprise Intelligence Layer” for the estimate that generative AI could add US\$2.6 trillion to US\$4.4 trillion annually across 63 use cases. The figure is modelled potential, not realised enterprise profit or audited return on investment.
 
+## Business analytics, experimentation, and AI decisions
+
+- UC Berkeley Executive Education. [“AI and Business Analytics for Strategic Decision Making.”](https://em-executive.berkeley.edu/ai-business-analytics) Accessed 31 July 2026.
+
+Used in “The Enterprise Intelligence Layer” as a public curriculum reference for the distinction among descriptive, predictive, and prescriptive analytics; experimentation; responsible AI; and organisational decision-making. The book's explanation and examples are original. The course description is evidence of the topics commonly treated as part of executive business-analytics education, not evidence that the course endorses this book's arguments or wording.
+
 ## AI-assisted developer productivity
 
 - Peng, Sida, et al. [“The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.”](https://arxiv.org/abs/2302.06590) arXiv preprint, 2023.
