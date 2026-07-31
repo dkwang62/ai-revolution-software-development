@@ -8,3 +8,23 @@ article img[alt="The abstraction stack"] {
   margin-right: auto;
   margin-left: auto;
 }
+
+// Text-only code fences are explanatory sentences, not programs. On a narrow
+// phone or tablet screen they should wrap so the reader can see the whole idea.
+@media all and (max-width: 800px) {
+  pre[data-language="text"] {
+    overflow-x: hidden;
+  }
+
+  pre[data-language="text"] > code {
+    display: block !important;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+  }
+
+  pre[data-language="text"] > code > [data-line] {
+    display: block;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+}
