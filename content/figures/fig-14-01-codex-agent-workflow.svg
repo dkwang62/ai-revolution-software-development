@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1200" viewBox="0 0 2200 1200">
+  <defs>
+    <marker id="arrowGray" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#93a1b1"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#2f7544"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 52px; font-weight: 700; fill: #20242a; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 25px; fill: #657080; }
+      .boxlabel { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #20242a; }
+      .number { font-family: Arial, Helvetica, sans-serif; font-size: 36px; font-weight: 700; }
+      .hint { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #657080; }
+      .legendhead { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; }
+      .legendbody { font-family: Arial, Helvetica, sans-serif; font-size: 20px; fill: #657080; }
+      .caption { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #657080; }
+    </style>
+  </defs>
+
+  <rect width="2200" height="1200" fill="#faf9f6"/>
+  <text x="110" y="105" class="title">Codex as the Genie: Intent to Verified Software Change</text>
+  <text x="110" y="153" class="subtitle">A coding agent becomes powerful when language, tools, permission, and verification form one supervised loop.</text>
+
+  <!-- main path: left to right -->
+  <path d="M 456 356 H 505" stroke="#93a1b1" stroke-width="7" fill="none" marker-end="url(#arrowGray)"/>
+  <path d="M 851 356 H 900" stroke="#93a1b1" stroke-width="7" fill="none" marker-end="url(#arrowGray)"/>
+  <path d="M 1246 356 H 1295" stroke="#93a1b1" stroke-width="7" fill="none" marker-end="url(#arrowGray)"/>
+  <path d="M 1641 356 H 1690" stroke="#93a1b1" stroke-width="7" fill="none" marker-end="url(#arrowGray)"/>
+
+  <rect x="110" y="285" width="346" height="142" rx="24" fill="#d8f3f0" stroke="#147d76" stroke-width="5"/>
+  <text x="144" y="372" class="number" fill="#147d76">1</text>
+  <text x="205" y="372" class="boxlabel">Human intent</text>
+
+  <rect x="505" y="285" width="346" height="142" rx="24" fill="#dce9f8" stroke="#2f649e" stroke-width="5"/>
+  <text x="539" y="372" class="number" fill="#2f649e">2</text>
+  <text x="600" y="372" class="boxlabel">Codex agent</text>
+
+  <rect x="900" y="285" width="346" height="142" rx="24" fill="#fff1c7" stroke="#966000" stroke-width="5"/>
+  <text x="934" y="372" class="number" fill="#966000">3</text>
+  <text x="995" y="372" class="boxlabel">Tools + context</text>
+
+  <rect x="1295" y="285" width="346" height="142" rx="24" fill="#f9dede" stroke="#ad3030" stroke-width="5"/>
+  <text x="1329" y="372" class="number" fill="#ad3030">!</text>
+  <text x="1385" y="372" class="boxlabel">Permission gate</text>
+
+  <rect x="1690" y="285" width="400" height="142" rx="24" fill="#dff0dd" stroke="#2f7544" stroke-width="5"/>
+  <text x="1724" y="372" class="number" fill="#2f7544">4</text>
+  <text x="1785" y="372" class="boxlabel">Software change</text>
+
+  <!-- controlled action and clear review loop -->
+  <text x="1000" y="480" class="hint">the agent asks before an external action</text>
+  <text x="1330" y="520" class="hint">external action only after approval</text>
+  <path d="M 1890 430 V 540" stroke="#2f7544" stroke-width="7" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <rect x="1630" y="545" width="430" height="142" rx="24" fill="#dff0dd" stroke="#2f7544" stroke-width="5"/>
+  <text x="1664" y="632" class="number" fill="#2f7544">5</text>
+  <text x="1725" y="632" class="boxlabel">Verification</text>
+
+  <path d="M 1630 616 H 282 V 455" stroke="#2f7544" stroke-width="7" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="800" y="588" class="hint">tests, review, and evidence return to the person who set the intent</text>
+
+  <!-- concise legend -->
+  <rect x="110" y="810" width="590" height="74" rx="16" fill="#ffffff" stroke="#d2d8df" stroke-width="2"/>
+  <text x="136" y="856" class="legendhead" fill="#147d76">Intent</text>
+  <text x="268" y="856" class="legendbody">purpose, constraints, judgement</text>
+
+  <rect x="805" y="810" width="590" height="74" rx="16" fill="#ffffff" stroke="#d2d8df" stroke-width="2"/>
+  <text x="831" y="856" class="legendhead" fill="#2f649e">Agent</text>
+  <text x="962" y="856" class="legendbody">plans, edits, and runs tools</text>
+
+  <rect x="1500" y="810" width="590" height="74" rx="16" fill="#ffffff" stroke="#d2d8df" stroke-width="2"/>
+  <text x="1526" y="856" class="legendhead" fill="#2f7544">Verify</text>
+  <text x="1656" y="856" class="legendbody">tests, review, approval</text>
+
+  <line x1="110" y1="970" x2="2090" y2="970" stroke="#d9dee4" stroke-width="2"/>
+  <text x="110" y="1035" class="caption">Figure 14.1  Codex can operate inside a supervised software-development loop, not merely describe it.</text>
+</svg>
