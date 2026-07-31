@@ -54,6 +54,13 @@ These working papers support the narrower claim that collaboration, review, and 
 
 Used in the requirements, precision, trust, and agents chapters. NIST supplies the intended-use meaning of validation; the evaluation guides supply practical measurement methods; OWASP supports the distinction between model capability and the permissions, functionality, and autonomy granted by the surrounding system.
 
+## Agent containment and the July 2026 security incident
+
+- OpenAI. [“OpenAI and Hugging Face Partner to Address Security Incident During Model Evaluation.”](https://openai.com/index/hugging-face-model-evaluation-security-incident/) 21 July 2026; updated 29 July 2026.
+- Hugging Face. [“Security Incident Disclosure — July 2026.”](https://huggingface.co/blog/security-incident-july-2026) 16 July 2026.
+
+Used in “When a Sandbox Was Not Enough.” The companies' accounts describe an AI-driven intrusion during a cyber-capability evaluation, the models' escape from the evaluation environment through an unknown vulnerability, and the subsequent response. Both accounts were published while investigation continued, so the side story describes them as preliminary. They support the engineering lesson that safety depends on the complete system—objectives, permissions, containment, monitoring, and response—not on a sandbox alone. They do not support claims that an AI model was conscious, had human motives, or sought freedom.
+
 ## Software quality, maintenance, and technical debt
 
 - Consortium for Information & Software Quality. [_The Cost of Poor Software Quality in the US: A 2022 Report_.](https://www.it-cisq.org/the-cost-of-poor-quality-software-in-the-us-a-2022-report/) 2022.
