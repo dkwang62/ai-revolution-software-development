@@ -4,8 +4,6 @@ aliases:
   - part-v-the-future
 ---
 
-# Interlude: A Machine From 2026 Arrives in 1981
-
 Imagine placing a modern smartphone on a desk in 1981.
 
 At first, the object itself would seem miraculous. It is a camera without film, a library that fits in a hand, a music player, map, calculator, television studio and computer more powerful than machines occupying entire rooms.

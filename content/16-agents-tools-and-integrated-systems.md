@@ -2,8 +2,6 @@
 title: "Agents, Tools, and Integrated Systems"
 ---
 
-# Agents, Tools, and Integrated Systems
-
 In the language-learning application, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
 
 The AI coding agent searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.

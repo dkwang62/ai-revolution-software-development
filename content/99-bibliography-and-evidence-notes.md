@@ -2,8 +2,6 @@
 title: "Bibliography and Evidence Notes"
 ---
 
-# Bibliography and Evidence Notes
-
 This is an explanatory book rather than an academic textbook, but its factual claims still require traceable evidence. These notes identify the principal sources, the claims they support, and the limits of the evidence. Unless another date is given, mutable web sources were checked on **19 July 2026**.
 
 ## Software labour and the human-expertise bottleneck

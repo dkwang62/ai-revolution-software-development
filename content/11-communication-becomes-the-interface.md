@@ -2,8 +2,6 @@
 title: "Communication Becomes the Interface"
 ---
 
-# Communication Becomes the Interface
-
 Part III explained how AI can convert human intent into software, why capability has economic cost, and how context shapes model behaviour. That ability changes both the technical and human processes of software development.
 
 If AI can translate ordinary language into code, then language itself becomes part of the development environment.

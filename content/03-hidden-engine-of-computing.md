@@ -2,8 +2,6 @@
 title: "The Hidden Engine of Computing"
 ---
 
-# The Hidden Engine of Computing
-
 ![The abstraction stack](<figures/FIG-02-01 Abstraction Stack.png>)
 
 Every major breakthrough in computing has tried to hide something.

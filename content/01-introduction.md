@@ -2,8 +2,6 @@
 title: "Introduction"
 ---
 
-# Introduction
-
 The project began with dissatisfaction. I was learning Chinese and wanted an application that worked the way I thought a learner needed to work: moving among characters, components, phrases, pronunciation, and the material I encountered in daily life. I could not find that application, and I did not have the conventional programming background required to build it.
 
 Then I began describing what I wanted to artificial intelligence.

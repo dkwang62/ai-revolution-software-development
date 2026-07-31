@@ -2,8 +2,6 @@
 title: "The Economics of Trust"
 ---
 
-# The Economics of Trust
-
 AI does not enter serious software systems simply because it becomes more intelligent. It enters when people and organisations become willing to rely on it, and that is a different threshold.
 
 A model can be impressive in a demonstration and still be unusable in **production**, meaning the live environment where real people and real data depend on it. It may write elegant code, summarise complex documents, answer difficult questions, and reason through business problems, yet still be rejected if the organisation cannot answer a more practical question:

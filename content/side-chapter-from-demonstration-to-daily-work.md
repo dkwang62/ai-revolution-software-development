@@ -2,8 +2,6 @@
 title: "Side Chapter: From Demonstration to Daily Work"
 ---
 
-# Side Chapter: From Demonstration to Daily Work
-
 An AI demonstration can be astonishing. A model reads a document, drafts a report, writes a program, spots a pattern, or answers a difficult question in seconds. It is natural to assume that the organisation now possesses that capability.
 
 Usually, it does not—at least not yet.
@@ -158,4 +156,3 @@ Before calling an AI initiative successful, ask seven plain questions:
 7. What must be maintained when the business, data, model, or regulations change?
 
 These questions make AI less mystical. They turn it back into what it must become to create economic value: a well-designed part of a larger human system.
-

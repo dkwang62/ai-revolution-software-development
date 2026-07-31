@@ -2,8 +2,6 @@
 title: "Context: What the Model Knows Right Now"
 ---
 
-# Context: What the Model Knows Right Now
-
 ![Three meanings of context](<figures/FIG-09-01 Three Meanings of Context.png>)
 
 The preceding Part explained models, English-to-software transformation, and the economics of capability. One crucial idea needs its own foundation: a model's behaviour depends both on what it learned during training and on the information available when it is used.

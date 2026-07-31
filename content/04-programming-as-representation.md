@@ -2,8 +2,6 @@
 title: "Programming as Representation"
 ---
 
-# Programming as Representation
-
 ![One procedure, many representations](<figures/FIG-03-01 Procedure Many Representations.png>)
 
 If artificial intelligence is the next abstraction layer, we need to ask what it is abstracting.

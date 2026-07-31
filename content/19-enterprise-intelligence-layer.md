@@ -2,8 +2,6 @@
 title: "The Enterprise Intelligence Layer"
 ---
 
-# The Enterprise Intelligence Layer
-
 ![The enterprise intelligence layer](<figures/FIG-17-01 Enterprise Intelligence Layer.png>)
 
 The next major enterprise software platform may not begin as a grand AI strategy. It may begin with a very ordinary problem: an old business system that everybody depends on and nobody fully understands.

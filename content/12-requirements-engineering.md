@@ -2,8 +2,6 @@
 title: "Requirements Engineering"
 ---
 
-# Requirements Engineering
-
 AI-assisted software development is often described as a shift from coding to prompting.
 
 That description is too small.

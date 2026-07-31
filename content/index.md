@@ -4,13 +4,11 @@ description: "The public reading edition of Desmond Kwang's book on AI, software
 socialImage: "figures/cover.png"
 ---
 
-# The AI Revolution in Software Development
-
 ## The Genie in the Bottle: When Ideas Magically Become Software
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 25**
+**Version 1.0.0 · Build 26**
 
 ![Book cover](figures/cover.png)
 

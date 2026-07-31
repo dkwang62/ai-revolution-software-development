@@ -2,8 +2,6 @@
 title: "Five-Year and Ten-Year Scenarios"
 ---
 
-# Five-Year and Ten-Year Scenarios
-
 ![Five-year and ten-year scenarios](<figures/FIG-19-01 Future Scenarios.png>)
 
 ## A Glimpse of Abundant Intelligence

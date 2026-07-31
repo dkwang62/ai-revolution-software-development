@@ -2,8 +2,6 @@
 title: "The Economics of Software Development"
 ---
 
-# The Economics of Software Development
-
 Imagine a bank changing one apparently simple rule: customers who receive a particular kind of payment should become eligible for a different service.
 
 The visible change may be a line of text and a button. Behind it lie questions about customer identity, transaction history, regulation, fraud, permissions, databases, older systems, mobile screens, audit records, testing, and what happens when the rule is wrong. The cost is not primarily the number of characters a programmer types. It is the cost of understanding the organisation well enough to change its behaviour safely.

@@ -2,8 +2,6 @@
 title: "Side Chapter: The Genie Is Not All-Powerful"
 ---
 
-# Side Chapter: The Genie Is Not All-Powerful
-
 Once you have watched an AI model write software, interpret an image, explain biology, and answer questions across many subjects, it is easy to form a dangerous idea.
 
 Perhaps the model can eventually map everything.

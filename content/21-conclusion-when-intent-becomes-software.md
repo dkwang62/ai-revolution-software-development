@@ -2,8 +2,6 @@
 title: "Conclusion: When Intent Becomes Software"
 ---
 
-# Conclusion: When Intent Becomes Software
-
 The language-learning application began with an absence. The tool I wanted did not exist, and I did not possess the training to build it in the conventional way.
 
 Before AI coding agents, many of my ideas would have remained notes. I could describe the learning problem, sketch a screen and imagine how the application should behave. The distance from that intention to architecture, code, debugging and a working product was too great for me to cross alone.

@@ -2,8 +2,6 @@
 title: "What Becomes Scarce When Code Becomes Cheap?"
 ---
 
-# What Becomes Scarce When Code Becomes Cheap?
-
 ![Scarcity shift](<figures/FIG-15-01 Scarcity Shift.png>)
 
 During parts of the language-learning project, I estimate that interface work consumed about 80% of my time. This was not because the AI coding agent could not produce screens. It produced them quickly. The difficulty had moved somewhere else.

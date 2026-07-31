@@ -2,8 +2,6 @@
 title: "What Is an AI Model?"
 ---
 
-# What Is an AI Model?
-
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
 When a language-learning application displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the application, that character is also a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.

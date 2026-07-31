@@ -2,8 +2,6 @@
 title: "The Economics of Models"
 ---
 
-# The Economics of Models
-
 [[06-what-is-an-ai-model|What Is an AI Model?]] and [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] explained the mechanism: models learn mathematical relationships that inference can use to transform intent into useful output.
 
 But this book is not only asking how AI works.

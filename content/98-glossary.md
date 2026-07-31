@@ -2,8 +2,6 @@
 title: "Glossary"
 ---
 
-# Glossary
-
 This glossary is intentionally practical rather than academic. It defines terms as they are used in this book.
 
 ## Abstraction

@@ -2,8 +2,6 @@
 title: "What Is Information?"
 ---
 
-# What Is Information?
-
 Before we can understand how AI writes software, we need to ask a more basic question.
 
 What is information?
