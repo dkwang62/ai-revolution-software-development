@@ -236,6 +236,51 @@ Governance turns this into an enterprise system rather than a clever search tool
 
 These controls are not bureaucracy added after the fact. They are what allow AI to enter real work. A system that can suggest changes to finance workflows, procurement rules, production planning, or payment interfaces must be governed. Otherwise it is not enterprise software. It is a risk.
 
+## The Superglue: A Federated Enterprise
+
+For decades, the usual answer to enterprise complexity was to make the enterprise more uniform.
+
+The logic was understandable. If finance, purchasing, inventory, manufacturing, and sales all use one large system with one data model and one set of processes, there are fewer bridges to build. This was part of the economic attraction of major ERP programmes such as SAP. In the 1990s and early 2000s, connecting many independent systems was expensive. Each connection often required specialists, custom software, long projects, and continuous maintenance. A company could reasonably decide that imposing one common platform was cheaper than living with permanent integration work.
+
+But a real enterprise is not naturally one neat machine. It is a changing collection of businesses, countries, customers, products, regulators, suppliers, acquisitions, contracts, and exceptions. Its systems reflect that history. A company may use SAP for finance, a specialised warehouse system for operations, a customer system for sales, spreadsheets for local planning, cloud tools bought by individual teams, old databases that still perform one vital task, and newer services that did not exist when the central system was chosen.
+
+Trying to force every one of these activities into a single platform can create a different form of cost: long replacement programmes, disruption to working operations, lost local knowledge, and years in which the business must adapt to the software rather than the software adapting to the business.
+
+The likely AI-era alternative is not a completely integrated enterprise. It is a **federated enterprise**: a collection of specialised systems that remain separate where separation is useful, but can be understood and coordinated as one business when necessary.
+
+The Enterprise Intelligence Layer is the superglue that makes this more affordable.
+
+### What the Superglue Does
+
+Superglue does not turn separate objects into one object. It joins them well enough to work together. The Enterprise Intelligence Layer plays a similar role.
+
+It can help a company:
+
+- discover what systems exist and which ones exchange information;
+- read old code, reports, configuration files, and support tickets to recover hidden business rules;
+- translate between different data names and formats—for example, when one system calls a customer an “account” and another calls the same thing a “client”;
+- draft and test interfaces between systems;
+- explain the likely impact of a proposed business change across many applications;
+- preserve the reason a rule exists, not only the rule itself;
+- monitor whether connected systems are disagreeing or failing; and
+- help people change one part of the enterprise without accidentally breaking another.
+
+This is cheaper than the old approach only if the layer becomes reusable. The first connection may still require careful work. But the maps, definitions, permissions, test cases, interfaces, and business rules created for one project can make the next project faster. The economic prize is not a single miraculous integration. It is a falling marginal cost of understanding and adapting the enterprise over time.
+
+### What the Superglue Does Not Do
+
+The metaphor has limits. Glue cannot decide which of two conflicting records is correct. Neither can a model.
+
+An enterprise still needs **systems of record**: the authorised place where a particular fact is officially stored. The payroll system may be the system of record for salary. The finance system may be the system of record for posted transactions. A customer master-data system may be the system of record for a customer's legal identity. When two systems disagree, the organisation must decide which one has authority and how the difference is corrected.
+
+AI can identify a conflict, explain the surrounding evidence, and suggest a resolution. It should not silently invent the answer. Nor should it approve a payment, rewrite an accounting record, or alter a compliance rule merely because it has found a connection between systems. Those actions require permissions, deterministic checks, audit trails, and, where the consequence is serious, human approval.
+
+So the prediction is not that AI makes ERP unnecessary. ERP and other systems of record still provide transaction discipline, controls, shared data, and accountability. The prediction is narrower and more defensible: AI may reduce the economic pressure for a future company to launch a disruptive, SAP-scale replacement programme merely to achieve basic integration.
+
+Had today's AI-assisted understanding, translation, testing, and knowledge retrieval existed in the 1990s, some organisations might have chosen more gradual coordination of specialised systems rather than more centralisation around one packaged platform. That is a historical possibility, not a claim that SAP was a mistake. Given the cost and limitations of integration technology at the time, large ERP programmes often solved genuine problems.
+
+The important future question is different: when business changes, must the business wait years for one central system to be replaced or customised? Or can the enterprise use its intelligence layer to understand the change, identify the affected systems, create and test the required connections, and adapt safely?
+
 ## ERP Digitised Transactions. AI Digitises Knowledge.
 
 Enterprise software history provides a useful comparison. ERP systems digitised transactions. They standardised finance, procurement, inventory, manufacturing, sales, and reporting. Their value came from making business processes more visible, consistent, and measurable.
@@ -286,7 +331,7 @@ How do we make a model understand the enterprise?
 
 The bridges are different. Instead of only message queues, adapters, service buses, and APIs, the new layer also needs retrieval systems, vector indexes, knowledge graphs, permission models, semantic search, prompt workflows, evaluation harnesses, audit logs, and human approval points.
 
-This can be thought of as intelligence middleware. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
+This can be thought of as intelligence middleware—or, more memorably, enterprise superglue. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
 
 The work also explains why commodity AI is not enough. A public model can know programming, accounting terminology, or general business practice. It does not automatically know a bank's lending exceptions, a manufacturer's plant-specific maintenance procedures, an airline's reservation integrations, or a company's twenty years of SAP customisations. That knowledge has to be exposed safely, organised carefully, governed properly, and embedded into real workflows.
 
