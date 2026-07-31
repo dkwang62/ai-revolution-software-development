@@ -71,13 +71,33 @@ The phrase can sound like a vague promise that a person will somehow catch mista
 
 Human review should be reserved for consequential or ambiguous decisions. If every harmless step requires approval, the agent saves little time. If irreversible steps require none, the system is unsafe. Good orchestration places deterministic checks and human judgement where each has the greatest value.
 
-## When the Agent Cannot See the Whole
+## Side Story: Teaching an Agent to See Its Work
 
-Agentic systems are uneven. They can solve complicated logic and still miss an obvious visual defect.
+One of the next important improvements in agentic AI will not come only from a larger model. It will come from giving the agent a better way to observe the consequences of its own work.
+
+Agentic systems are uneven. They can solve complicated logic and still miss an obvious visual defect. A coding agent may write valid SwiftUI code, build an iPhone application, and report success while a button is clipped, a label wraps awkwardly, or the keyboard hides the field a person needs to use.
 
 This happened repeatedly while building the language-learning application and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
-Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing capability was not necessarily vision. The workflow had stopped before rendering and inspecting its own output.
+Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing step was not simply intelligence. The workflow had stopped before the agent rendered and inspected its own output.
+
+The future workflow is straightforward in principle. An agent working on an iPhone application can build the project, run it in the iPhone Simulator, capture screens at realistic sizes, inspect the images, compare them with the intended design, and revise the code. The loop is:
+
+```text
+build
+↓
+run
+↓
+render and inspect
+↓
+find a measurable defect
+↓
+revise
+↓
+test again
+```
+
+This is a small but important example of agentic progress. The model does not become all-powerful. It gains an additional source of evidence. A screenshot can show that text is cut off or a control is too close to an edge; it cannot, by itself, decide what experience people should have or what a product ought to mean.
 
 Logic often has crisp tests: given this input, did the order change state? Visual quality depends on geometry, fonts, screen sizes, language, accessibility settings, hierarchy, and human perception. Valid source code does not prove that a screen is usable.
 
@@ -87,7 +107,7 @@ Frameworks and design systems prevent predictable mistakes. Browser and **user-i
 
 My retrospective estimate is that work on the screens and controls consumed about 80 per cent of my development time. It was not measured by time-tracking software, so it should not be treated as a universal statistic. It describes a scarcity shift in one project: the AI coding agent accelerated underlying implementation more than it accelerated the final work of arranging and judging what the learner would see and touch.
 
-That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgement about people and purpose.
+That proportion should fall as multimodal agents close the render–inspect–correct loop. A deeper boundary remains. Overflow is measurable; deciding whether a learning screen feels calm, humane, or worth building is a judgement about people and purpose. Better tools make an agent a better collaborator. They do not remove the need for a human who understands the user and takes responsibility for the result.
 
 ## Verification Creates Trust
 
