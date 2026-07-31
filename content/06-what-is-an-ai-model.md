@@ -72,6 +72,10 @@ Before entering the network, information is divided into manageable units. Langu
 
 Those numerical representations are often described as **vectors**—ordered lists of numbers. Training arranges and transforms them so that useful relationships can be expressed. Each position in the list acts like one direction, or dimension, in a mathematical space. Because a vector may have hundreds or thousands of positions, this is called a **high-dimensional space**. Words used in related contexts may occupy related regions within it. A request for a Chinese-character quiz can activate relationships involving quizzes, plausible wrong answers, user interfaces, Chinese characters, state, and tests even if the model has never seen that exact request.
 
+![From text to a mathematical representation: tokens, vectors, and a two-dimensional shadow of a high-dimensional meaning space](<figures/FIG-05-03 Tokens Vectors and Meaning Space.png>)
+
+_A simplified picture of tokens, vectors, and high-dimensional space. The final panel is only a two-dimensional shadow: a real model uses far more dimensions than a drawing can show._
+
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
 For text generation, the immediate training task is often to predict the next token. That sounds modest. But predicting well across books, programs, documentation, conversations, and worked solutions requires the network to capture a great many regularities. At sufficient scale, that narrow training operation produces surprisingly broad behaviour.

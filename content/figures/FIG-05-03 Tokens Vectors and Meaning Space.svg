@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000">
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#8091a1"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #20242a; }
+      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 29px; font-weight: 700; fill: #20242a; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 23px; fill: #4f5d6a; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #20242a; }
+      .token { font-family: "IBM Plex Mono", Menlo, monospace; font-size: 21px; font-weight: 700; fill: #20242a; }
+      .number { font-family: "IBM Plex Mono", Menlo, monospace; font-size: 16px; fill: #20242a; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #667788; }
+      .point { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #26333d; }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1000" fill="#faf9f6"/>
+  <text x="95" y="88" class="title">From text to a mathematical representation</text>
+  <text x="95" y="130" class="body">This is a simplified teaching picture. Actual models use many more numbers and dimensions.</text>
+
+  <!-- Three panels -->
+  <rect x="80" y="190" width="500" height="635" rx="22" fill="#ffffff" stroke="#d9e0e6" stroke-width="3"/>
+  <rect x="650" y="190" width="500" height="635" rx="22" fill="#ffffff" stroke="#d9e0e6" stroke-width="3"/>
+  <rect x="1220" y="190" width="500" height="635" rx="22" fill="#ffffff" stroke="#d9e0e6" stroke-width="3"/>
+
+  <!-- Panel 1 -->
+  <circle cx="130" cy="248" r="24" fill="#d9f1ee" stroke="#147d76" stroke-width="3"/>
+  <text x="122" y="257" class="label" fill="#147d76">1</text>
+  <text x="172" y="258" class="panel-title">Tokens</text>
+  <text x="120" y="320" class="body">A model first divides text into</text>
+  <text x="120" y="352" class="body">manageable pieces called tokens.</text>
+  <text x="120" y="420" class="label">Example phrase</text>
+  <rect x="120" y="450" width="340" height="68" rx="12" fill="#f4f6f7" stroke="#c7d0d8" stroke-width="2"/>
+  <text x="145" y="494" class="token">responsible person</text>
+  <path d="M 290 535 V 580" stroke="#8091a1" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="120" y="600" width="108" height="66" rx="10" fill="#dce9f8" stroke="#2f649e" stroke-width="2"/>
+  <rect x="238" y="600" width="88" height="66" rx="10" fill="#fff1c7" stroke="#a26d05" stroke-width="2"/>
+  <rect x="336" y="600" width="124" height="66" rx="10" fill="#dff0dd" stroke="#2f7544" stroke-width="2"/>
+  <text x="132" y="642" class="token">respons</text>
+  <text x="259" y="642" class="token">ible</text>
+  <text x="352" y="642" class="token">person</text>
+  <text x="120" y="723" class="small">Illustrative only: token boundaries</text>
+  <text x="120" y="751" class="small">can differ between models.</text>
+
+  <!-- Panel 2 -->
+  <circle cx="700" cy="248" r="24" fill="#dce9f8" stroke="#2f649e" stroke-width="3"/>
+  <text x="692" y="257" class="label" fill="#2f649e">2</text>
+  <text x="742" y="258" class="panel-title">Vectors</text>
+  <text x="690" y="320" class="body">Each token is represented as a</text>
+  <text x="690" y="352" class="body">list of numbers: a vector.</text>
+  <text x="690" y="420" class="label">A simplified vector</text>
+  <text x="690" y="462" class="small">“responsible” →</text>
+  <rect x="690" y="500" width="64" height="68" fill="#dce9f8" stroke="#2f649e" stroke-width="2"/>
+  <rect x="754" y="500" width="64" height="68" fill="#e9f1fa" stroke="#2f649e" stroke-width="2"/>
+  <rect x="818" y="500" width="64" height="68" fill="#dce9f8" stroke="#2f649e" stroke-width="2"/>
+  <rect x="882" y="500" width="64" height="68" fill="#e9f1fa" stroke="#2f649e" stroke-width="2"/>
+  <rect x="946" y="500" width="64" height="68" fill="#dce9f8" stroke="#2f649e" stroke-width="2"/>
+  <rect x="1010" y="500" width="64" height="68" fill="#e9f1fa" stroke="#2f649e" stroke-width="2"/>
+  <text x="701" y="542" class="number">0.12</text>
+  <text x="765" y="542" class="number">−0.57</text>
+  <text x="836" y="542" class="number">0.08</text>
+  <text x="901" y="542" class="number">0.91</text>
+  <text x="965" y="542" class="number">−0.34</text>
+  <text x="1031" y="542" class="number">…</text>
+  <text x="690" y="645" class="body">A vector can have hundreds or</text>
+  <text x="690" y="677" class="body">thousands of positions. No single</text>
+  <text x="690" y="709" class="body">number means “responsible.” The</text>
+  <text x="690" y="741" class="body">pattern across the whole list matters.</text>
+
+  <!-- Panel 3 -->
+  <circle cx="1270" cy="248" r="24" fill="#fff1c7" stroke="#a26d05" stroke-width="3"/>
+  <text x="1262" y="257" class="label" fill="#a26d05">3</text>
+  <text x="1312" y="258" class="panel-title">Meaning space</text>
+  <text x="1260" y="320" class="body">Similar patterns can be near one</text>
+  <text x="1260" y="352" class="body">another in a high-dimensional space.</text>
+  <line x1="1305" y1="690" x2="1305" y2="430" stroke="#a8b3bd" stroke-width="2"/>
+  <line x1="1305" y1="690" x2="1660" y2="690" stroke="#a8b3bd" stroke-width="2"/>
+  <text x="1280" y="420" class="small">A 2D shadow of a much larger space</text>
+  <circle cx="1390" cy="545" r="11" fill="#2f7544"/>
+  <circle cx="1450" cy="515" r="11" fill="#2f7544"/>
+  <circle cx="1500" cy="568" r="11" fill="#2f7544"/>
+  <text x="1352" y="580" class="point">tree</text>
+  <text x="1457" y="500" class="point">wood</text>
+  <text x="1508" y="600" class="point">forest</text>
+  <circle cx="1510" cy="645" r="11" fill="#a26d05"/>
+  <circle cx="1582" cy="610" r="11" fill="#a26d05"/>
+  <circle cx="1630" cy="662" r="11" fill="#a26d05"/>
+  <text x="1452" y="675" class="point">invoice</text>
+  <text x="1590" y="596" class="point">payment</text>
+  <text x="1638" y="695" class="point">tax</text>
+  <text x="1260" y="752" class="small">The flat drawing is only an analogy.</text>
+
+  <!-- Arrows between panels -->
+  <path d="M 580 508 H 640" stroke="#8091a1" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M 1150 508 H 1210" stroke="#8091a1" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="95" y="910" class="small">The model learns and transforms these numerical patterns. It does not store a human-readable dictionary of meanings.</text>
+</svg>
