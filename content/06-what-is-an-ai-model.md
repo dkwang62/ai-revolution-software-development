@@ -26,6 +26,10 @@ An AI model is not a huge database, a search engine, or millions of handwritten 
 
 I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a plausible result.
 
+![The Radix phrase-extraction feature: a language model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Radix Phrase Extraction and Prompt.png>)
+
+_The Radix phrase-extraction feature. The model proposes candidates from Chinese text and instructions; the surrounding application still determines what is valid enough to save._
+
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
 ## A Map, Not the Territory
