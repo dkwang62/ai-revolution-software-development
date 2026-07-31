@@ -112,6 +112,77 @@ When I ask Codex to alter the language-learning application, learned relationshi
 
 That surrounding evidence matters because code can be syntactically correct yet educationally wrong. A quiz may compile and still teach the wrong distinction. A button may work while covering another control on an iPhone. The model shortens the distance from intention to implementation; it does not remove the need to judge the destination.
 
+## Natural Language, Computer Language, and Why Code Is Special
+
+At first sight, translating English into Spanish and translating English into Python seem like the same kind of task. In both cases, one language goes in and another comes out.
+
+The basic learning mechanism is indeed similar. English, Spanish, Swift, Python, and other forms of text can all be divided into tokens. A model learns patterns in sequences of those tokens. It is not normally taught English and computer languages as two completely separate school subjects. It learns from a mixture of books, conversations, source code, documentation, tutorials, bug reports, tests, and examples of people explaining software to one another.
+
+That mixture is why a model can connect an ordinary request such as “show my saved characters in a list” with likely software structures: stored data, a screen, navigation, state, and tests.
+
+But producing code has a harder job than translating between human languages.
+
+### Meaning Is Not Enough
+
+A Spanish translation succeeds when a Spanish reader understands the intended idea. There may be several good ways to say the same thing. A slightly awkward phrase can still communicate successfully.
+
+Code must preserve the intended idea **and** make the computer behave correctly. A program is not judged only by whether it looks sensible to a programmer. It must work for real inputs and situations that may never have been mentioned in the original request.
+
+This is the first important distinction:
+
+```text
+Natural-language translation: preserve meaning.
+
+English-to-code translation: preserve meaning,
+then make the system behave correctly.
+```
+
+### Human Language Can Leave Things Unsaid
+
+Suppose somebody says, “Sort the list.” A person may regard that as a complete request. But code needs more decisions:
+
+- Sort by name, date, score, or some other field?
+- Ascending or descending?
+- What happens if the list is empty?
+- What happens if an item has no value to sort by?
+- How should two equal items be ordered?
+- Should the original list change, or should a new sorted list be created?
+
+Natural language tolerates these gaps because people use shared experience and can ask a follow-up question. A programming language has no such tolerance. The model must ask for clarification, find the relevant product rule in the project, or make a guess. Every silent guess is a possible mismatch between what the person meant and what the program does.
+
+### Code Has an Exacting Second Reader
+
+The first reader of a Spanish translation is a person. The second reader of generated code is the computer itself.
+
+A person can usually understand a sentence with a minor grammatical mistake. A computer may reject a program because of one misplaced bracket, comma, indentation mark, or misspelled name. Even code that passes this first test may fail because it refers to a function that does not exist, gives a library the wrong kind of data, or handles an unusual case incorrectly.
+
+This is why code benefits from forms of evidence that ordinary language does not have:
+
+- a **compiler** can check whether source code follows the language's rules;
+- a **test** can check whether known examples produce the expected result;
+- a running application can reveal whether a feature works in practice; and
+- a screenshot or a human user can reveal whether the result is actually usable.
+
+These checks do not prove that a program is perfect. They turn some important questions from opinion into evidence.
+
+### Code Must Join an Existing World
+
+Translating one English sentence into Spanish rarely requires knowledge of every other sentence ever written. New code almost always has to fit into a system that already exists.
+
+For Radix, a small screen change may need to respect existing data models, navigation, saved learner records, naming conventions, accessibility settings, iPhone and iPad layouts, and the expectations built into other screens. A change that works alone may still break the application when it meets this surrounding context.
+
+The model must therefore gather or be given project context: relevant files, existing functions, data definitions, design decisions, tests, and the purpose of the feature. This is why an AI coding agent is more useful when it can search the repository, inspect the running application, and use tools rather than receiving one isolated prompt.
+
+### Errors Can Travel Far
+
+If one sentence in a translated paragraph is slightly imperfect, the rest of the paragraph will often remain understandable. In software, one subtle error can travel far. A wrong value may be stored, passed through several functions, used in a report, and cause trouble only under a rare condition days later.
+
+Correctness therefore compounds. The code must work not only along the path imagined when the request was written, but across the paths that real users, unusual data, failed networks, and future changes will create.
+
+This is why “AI can write code” does not automatically mean “software is cheap to build.” AI can reduce the cost of producing a first draft. The remaining cost lies in discovering unstated requirements, gathering context, integrating with the existing system, testing behaviour, checking security, and deciding whether the result serves its users.
+
+Verification is where much of that remaining cost lives—and where agentic AI, deterministic tools, and human judgement must work together.
+
 ## When an AI Model Can See and Hear
 
 Models increasingly work across text, images, audio, video, diagrams, screens, and code. For software development, this matters because important requirements and defects are not always expressed well in prose.
