@@ -26,6 +26,10 @@ Agentic AI describes AI systems that can pursue an objective through a sequence 
 
 An agentic loop is the repeated cycle through which an agent understands a task, chooses an action, uses a tool, observes the result, and decides what to do next. It differs from a single AI response because evidence from one action influences the next.
 
+## AI Adoption
+
+AI adoption is the process of making an AI capability part of normal work. It includes choosing a useful problem, preparing information, designing the workflow, training people, setting boundaries, measuring results, and maintaining the system. A successful demonstration is not yet adoption.
+
 ## AI Accelerator and Tensor Processing Unit (TPU)
 
 An AI accelerator is a processor designed especially for the mathematical operations used by AI. A Tensor Processing Unit, or TPU, is Google's name for its family of AI accelerators. GPUs can also accelerate AI, but they began as more general processors for graphics and parallel calculation. The different names matter less than the common purpose: perform large amounts of AI mathematics quickly and efficiently.
@@ -136,9 +140,17 @@ The context window is the amount of information a model can consider at one time
 
 A data centre is a building or site filled with networked computers, storage equipment, power systems, cooling, and security. Cloud services and large AI models often run in data centres.
 
+## Data Drift
+
+Data drift is a change in the patterns of real-world information after an AI system has been tested or deployed. For example, customer behaviour may change after a new product launch. A system that once worked well can then become less reliable, so its results need monitoring and sometimes updating.
+
 ## Data Model
 
 A data model describes the kinds of information a system stores and how they relate. In a school system, it might describe students, teachers, classes, and the connections among them.
+
+## Data Provenance
+
+Data provenance is a record of where information came from, when it was collected or changed, and how it was processed. It helps people judge whether information is current, authorised, and suitable for an AI-assisted decision.
 
 ## Database
 
@@ -179,6 +191,14 @@ An enterprise resource planning system is shared business software that connects
 ## Evaluation and Evaluation Suite
 
 Evaluation measures how well an AI system performs across a collection of examples. An evaluation suite is the organised set of test cases, expected qualities, scoring rules, and sometimes human judgements used for that measurement. Evaluation shows general performance; verification asks whether a particular result or system is dependable for its intended use.
+
+## Generalisation and Overfitting
+
+Generalisation is an AI system's ability to work well on new cases it has not seen before. Overfitting is the opposite problem: the system matches its training or test examples so closely that it performs poorly in real situations. A model that looks good in a demonstration may still be overfitted.
+
+## Human-Centred Design
+
+Human-centred design means designing a system around the needs, knowledge, time pressure, ability to correct errors, and rights of the people who use it or are affected by it. In AI, this includes showing useful evidence, making uncertainty visible, and providing a clear route for human correction or appeal.
 
 ## Explainability
 

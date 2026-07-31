@@ -24,6 +24,16 @@ Used in “The Enterprise Intelligence Layer” for the estimate that generative
 
 Used in “The Enterprise Intelligence Layer” as a public curriculum reference for the distinction among descriptive, predictive, and prescriptive analytics; experimentation; responsible AI; and organisational decision-making. The book's explanation and examples are original. The course description is evidence of the topics commonly treated as part of executive business-analytics education, not evidence that the course endorses this book's arguments or wording.
 
+## From AI demonstration to organisational adoption
+
+- MIT Sloan Executive Education. [“Artificial Intelligence: Implications for Business Strategy.”](https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html) Accessed 31 July 2026.
+- Harvard Business School Online. [“AI for Leaders” syllabus.](https://online.hbs.edu/documents/AIEL-syllabus.pdf) Accessed 31 July 2026.
+- Duke University, via Coursera. [“AI Product Management Specialization.”](https://www.coursera.org/specializations/ai-product-management-duke) Accessed 31 July 2026.
+- Google for Developers. [“Datasets, generalization, and overfitting.”](https://developers.google.com/machine-learning/crash-course/overfitting) Accessed 31 July 2026.
+- DeepLearning.AI. [“Generative AI for Everyone.”](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) Accessed 31 July 2026.
+
+Used in “From Demonstration to Daily Work” as public evidence of the practical themes taught across management and technical AI education: business strategy, organisational adoption, human-centred product design, data quality, evaluation, responsible use, and the limits of generative AI. The book's narrative, framework, examples, and seven-question completeness test are original; these sources do not endorse the book or supply its wording.
+
 ## AI-assisted developer productivity
 
 - Peng, Sida, et al. [“The Impact of AI on Developer Productivity: Evidence from GitHub Copilot.”](https://arxiv.org/abs/2302.06590) arXiv preprint, 2023.
