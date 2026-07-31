@@ -24,6 +24,8 @@ revise
 verify or stop
 ```
 
+![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow.png)
+
 The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and use the system's response as feedback for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
 
 Reasoning becomes more valuable here because the agent is not merely composing an answer. It must decide what evidence to inspect, which authorised action to try, what the result means, and whether to continue. It also becomes more costly: each search, tool call, test, failure, and revision can add inference, waiting time, and verification work. Heavy reasoning is justified when those extra steps reduce the chance of a costly mistake; it is wasteful when a simple, well-specified action would do.
@@ -154,6 +156,8 @@ Agentic systems are uneven. They can solve complicated logic and still miss an o
 
 This happened repeatedly while building the language-learning application and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
+![Crowded controls in the Radix iPhone interface](<figures/CASE-14-01 Radix Crowded iPhone Controls.png>)
+
 Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing step was not simply intelligence. The workflow had stopped before the agent rendered and inspected its own output.
 
 The future workflow is straightforward in principle. An agent working on an iPhone application can build the project, run it in the iPhone Simulator, capture screens at realistic sizes, inspect the images, compare them with the intended design, and revise the code. The loop is:
@@ -191,6 +195,8 @@ An agent can fail at any step, and early errors can create later state. Trust ca
 During one data-recovery task, the AI coding agent identified nineteen missing files. It recovered one exact file from an archive containing 253 files, compared its digital fingerprint with the expected fingerprint, and confirmed that the missing count had fallen to eighteen. The value was not eloquence. Each claim corresponded to evidence the system could expose.
 
 The same principle applies to ordinary development. A credible completion report should identify what changed and what was checked. Builds, tests, records of the changed lines, digital fingerprints of files, screenshots, and activity logs turn an agent's work into something a person can inspect.
+
+Return to the small [[08-how-ai-converts-english-into-software#a-worked-example-english-to-python|average-function example]]. A compiler can check whether the Python is written correctly. A test can check that `[2, 4]` produces `3`. Neither check can decide whether returning `0` for an empty list was the business rule the user intended. Verification combines deterministic checks with a person who can judge the remaining requirement.
 
 This also explains why agents will not sweep traditional software engineering away. Compilers check code; schemas define permitted data; version control records changes; test suites check behaviour; security scanners find known risks; and permission systems limit access. Tools that reveal what a running system is doing provide **observability**. These narrow tools gain precision from their narrowness. The strongest system combines the model's breadth with their certainty.
 

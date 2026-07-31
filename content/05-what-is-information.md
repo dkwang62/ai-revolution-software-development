@@ -107,6 +107,8 @@ A is related to B in this context, with this degree of likelihood.
 
 That difference is profound.
 
+![Rules versus learned relationships](<figures/FIG-06-01 Rules Versus Relationships.png>)
+
 A model trained on language sees that words appear near other words, ideas occur in certain contexts, explanations have structure, code follows patterns, error messages relate to fixes, and questions relate to answers. Over enormous numbers of examples, the system learns relationships among symbols, concepts, structures, and procedures.
 
 This does not mean it possesses human understanding. It means it has learned a mathematical structure rich enough to transform information in useful ways.

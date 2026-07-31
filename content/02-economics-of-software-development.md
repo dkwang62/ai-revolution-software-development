@@ -26,7 +26,7 @@ Every handoff consumed time and introduced loss. The person closest to the probl
 
 The economic bottleneck was human expertise coordinated across that gap.
 
-![The human expertise bottleneck in traditional software development](figures/FIG-01-02-Human-Expertise-Bottleneck.png)
+![The human expertise bottleneck in traditional software development](<figures/FIG-01-02 Human Expertise Bottleneck.png>)
 
 The scale is visible in one national snapshot. The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) counted about 1.9 million software developers, quality-assurance analysts, and testers in 2024. Their median annual wage was \$131,450, with roughly 129,200 openings projected each year over the following decade. These numbers cover only three occupations in one country; they exclude product managers, designers, security specialists, operations staff, domain experts, and the cost of delay. They do not prove that software is inefficient. They show how much specialised human capacity society already devotes to turning knowledge into dependable machine behaviour.
 
