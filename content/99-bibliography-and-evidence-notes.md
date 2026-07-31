@@ -107,6 +107,14 @@ Used in “The Economics of Models.” Epoch's figures are modelled estimates, N
 
 These provider documents use different controls and labels, but support the same limited conclusion: additional reasoning can improve difficult work while increasing token use, latency, or cost. They also recommend matching effort to the task and evaluating the trade-off on representative work. Product names, defaults, and available levels change, so the main text describes light, balanced, heavy, and maximum reasoning as durable categories rather than instructions for one interface.
 
+## Frontier training: from model to collaborator
+
+- OpenAI. [“Agent Post-Training, Connectors Research.”](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/) Accessed 31 July 2026.
+- Anthropic. [“Claude's Constitution.”](https://www.anthropic.com/research/claudes-constitution) updated 21 January 2026.
+- Google DeepMind. [“Gemini 3.1 Pro Model Card.”](https://deepmind.google/models/model-cards/gemini-3-1-pro) Accessed 31 July 2026.
+
+Used in “From Text Predictor to Agentic Collaborator.” These primary sources show the public direction of frontier development: post-training for coding, tool and computer use, long-horizon execution, factuality, reasoning, safety, multimodal capability, long context, and evaluation. They do not disclose the complete training recipe of any model release. Accordingly, the chapter describes a shared direction rather than claiming that a named version improved for one specific public reason.
+
 ## Capital allocation as evidence of belief
 
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.

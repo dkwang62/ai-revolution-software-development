@@ -130,6 +130,80 @@ This is why model names are not interchangeable. It also explains why an upgrade
 
 Model behaviour thus becomes a dependency of every application built around it.
 
+## From Text Predictor to Agentic Collaborator
+
+When a company announces a newer model—whether it is a new version of GPT, Claude, Gemini, Grok, or another frontier model—it is tempting to imagine a simple upgrade: the same system, but with more facts inside it.
+
+That is not the main long-term direction.
+
+The exact recipe for any particular version is private. The companies do not publish all their training data, model designs, experiments, or the contribution of each change. We therefore cannot honestly say that one named version is better than its predecessor because of one known training technique.
+
+But the direction across frontier labs is visible. Models are being developed from broad pattern predictors into more reliable, multimodal, tool-using collaborators.
+
+```text
+learn broad patterns from data
+↓
+learn to be helpful, accurate, and safe
+↓
+learn to work longer on difficult problems
+↓
+learn to use tools and inspect results
+↓
+learn from evaluation failures
+↓
+become a more capable collaborator
+```
+
+### The Training Journey in Plain English
+
+The first stage is usually called **pre-training**. The model is exposed to very large collections of text, code, images, audio, and other material, then repeatedly learns to predict missing or next pieces. This gives it broad general capability: language, programming patterns, visual relationships, facts, styles, and examples of how people solve problems.
+
+Pre-training alone does not make a good assistant. A model may be able to continue a passage of text without knowing how to help a person responsibly. The next stage, often called **post-training**, teaches behaviour after the broad model has been created.
+
+In plain language, post-training is like giving a very knowledgeable but inexperienced graduate a series of examples, corrections, practice tasks, and examinations. The system is shown better and worse answers, taught to follow instructions, and rewarded when its responses are more useful, accurate, safe, and well judged. Technical names include **supervised fine-tuning**—learning from worked examples—and **preference learning** or **reinforcement learning**—adjusting behaviour using feedback about which outcome is better.
+
+For reasoning models, the practice tasks increasingly reward more than a fluent first answer. They reward checking assumptions, working through difficult steps, using evidence, noticing uncertainty, and reaching a correct result. This is why a user can sometimes choose a higher reasoning setting: the system is allowed to spend more computation exploring and checking before it responds. It may improve a hard task, but it also costs more and takes longer.
+
+The next frontier is **agent training**. Instead of judging the model only on one answer in a chat window, researchers place it in an environment with a goal and tools. The model may need to search files, edit code, run a build, read an error, use a browser, inspect a screenshot, or decide that it needs more evidence. Its work is assessed not only on its words but on whether it completes the task safely and correctly.
+
+OpenAI describes work on agent post-training in terms of coding, tool use, computer use, long-horizon execution, factuality, calibrated reasoning, and evaluation environments. Anthropic's Constitutional AI work is one example of a different emphasis: using explicit principles, critique, and feedback to teach a model to be more helpful and safer. Google evaluates its frontier Gemini models across reasoning, multimodality, long context, and agentic tool use. The methods differ, but the destination is similar: a system that can take part in a longer, evidence-based workflow rather than merely produce a persuasive paragraph. [OpenAI, _Agent Post-Training, Connectors Research_](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/); [Anthropic, _Claude's Constitution_](https://www.anthropic.com/research/claudes-constitution); [Google DeepMind, _Gemini 3.1 Pro Model Card_](https://deepmind.google/models/model-cards/gemini-3-1-pro)
+
+### A Concrete Example: Improving Radix
+
+Consider a request in the Radix language-learning application:
+
+> When a learner enters a character's origin, the iPhone keyboard covers the lower fields. Fix it without spoiling the iPad layout.
+
+A less capable coding model may find one likely SwiftUI screen, add a `ScrollView` or some padding, make the code compile, and announce that the task is finished. The code may be valid while the field remains covered on a small phone, the scrolling feels awkward, or the iPad layout has become unnecessarily stretched.
+
+A more capable agent can approach the same task as a chain of evidence:
+
+```text
+understand the user problem
+↓
+find the relevant Radix screen and layout rules
+↓
+identify the iPhone and iPad differences
+↓
+make a narrow change
+↓
+build the application
+↓
+run it in an iPhone Simulator
+↓
+open the keyboard and inspect the rendered screen
+↓
+revise if the result is still wrong
+↓
+report what changed and what was checked
+```
+
+The improvement is not simply that the newer model knows more Swift. It is better able to keep the objective, the project context, the device differences, compiler feedback, visual evidence, and verification in one working process.
+
+The same distinction applies to Radix's backup export. A weak solution can create a ZIP file. A stronger agent can trace which learner data are essential, find the existing export path, list the included resources, check that important records are not missing, build the application, and compare the result with the expected contents. The useful unit of progress is not “code was generated.” It is “a bounded engineering task was completed and checked.”
+
+This also explains why an upgrade does not automatically solve every problem. The better workflow depends on the system around the model: access to the project, the compiler, tests, the Simulator, screenshots, clear permissions, and human review. A stronger model without those tools is still partly guessing. A model with those tools must still be constrained, because greater ability to act creates greater need for verification and authority boundaries.
+
 ## Capability Has a Cost
 
 Training requires data, specialised hardware, electricity, engineers, experiments, and evaluation. It is a large upfront investment that creates a reusable asset.
