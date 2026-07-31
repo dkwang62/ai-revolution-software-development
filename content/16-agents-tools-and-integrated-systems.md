@@ -24,7 +24,7 @@ revise
 verify or stop
 ```
 
-![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow.png)
+![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow-v2.png)
 
 The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and use the system's response as feedback for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
 
