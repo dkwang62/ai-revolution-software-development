@@ -154,7 +154,7 @@ Agentic systems are uneven. They can solve complicated logic and still miss an o
 
 This happened repeatedly while building an app and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
-![Crowded controls in an iPhone app](<figures/CASE-14-01 Radix Crowded iPhone Controls.png>)
+![Crowded controls in an iPhone app](<figures/CASE-14-01 Crowded iPhone Controls.png>)
 
 Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing step was not simply intelligence. The workflow had stopped before the agent rendered and inspected its own output.
 

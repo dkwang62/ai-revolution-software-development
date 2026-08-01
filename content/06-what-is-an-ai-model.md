@@ -26,7 +26,7 @@ An AI model is not a huge database, a search engine, or millions of handwritten 
 
 I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a plausible result.
 
-![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Radix Phrase Extraction and Prompt.png>)
+![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Phrase Extraction and Prompt.png>)
 
 _An app's phrase-extraction feature. The model proposes candidates from Chinese text and instructions; the surrounding app still determines what is valid enough to save._
 
