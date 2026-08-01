@@ -98,6 +98,23 @@ A flowchart works similarly. Its boxes, arrows, and labels become visual and tex
 
 This is powerful, but it remains evidence rather than proof. A screenshot may be cropped, blurry, outdated, or taken at a different device size. A visual model can miss a small alignment problem or misread a word. For important work, the best loop is still: show the image, inspect the actual screen or error text, test the proposed fix, and look again.
 
+### Side Story: How a Picture Becomes Tokens
+
+A digital image begins as a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: how much red, green, and blue it contains. A model cannot sensibly consider every dot as one separate idea, so one common design breaks the picture into small squares, or **patches**. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
+
+For example, a 224 × 224 image divided into 16 × 16-pixel patches produces 14 × 14 = 196 patches. One patch contains 256 pixels; with red, green, and blue values, that begins as 768 numbers. A small mathematical transformation turns those numbers into a shorter vector. The model also receives information about where the patch came from, because a blue patch at the top of a screen may be sky or a header, while the same blue patch near the bottom may be a button.
+
+```text
+image → small patches → vectors + positions → visual representation
+text  → word pieces   → vectors + positions → language representation
+                                             ↓
+                               model relates the two kinds of evidence
+```
+
+The comparison with text is useful but imperfect. A text token comes from a fixed vocabulary of words or word pieces, such as “cat” or “ing.” An image patch has no fixed visual vocabulary: it is a bundle of colours, edges, textures, and shapes. At first it may capture only a corner of an ear, a piece of blue sky, or part of a button. Through the model’s layers, neighbouring patches and their positions help form a richer interpretation: perhaps a dog, a warning banner, or a button that overlaps its label.
+
+The 16 × 16 and 224 × 224 figures are a teaching example, not a universal recipe. Different models resize images differently, use different patch sizes or variable numbers of visual tokens, and combine vision with language in different ways. The principle is the important part: a picture is converted into numerical evidence that can be related to the user’s words. Modern AI models can accept text and image input, but the detailed architecture inside a particular model is not always public. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
+
 It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
 For text generation, the immediate training task is often to predict the next token. That sounds modest. Consider the unfinished sentence: “The capital of France is ___.” To predict _Paris_, the model needs a learned relationship between France and Paris. In code, predicting the next step after “if the list is empty” may require learned patterns about programming logic. In a screenshot, predicting what a label refers to may require recognising its position, a nearby button, and a visible error message.
