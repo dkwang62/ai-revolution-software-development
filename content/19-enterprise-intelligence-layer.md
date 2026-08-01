@@ -181,6 +181,22 @@ The foundation model supplies general capability. The Enterprise Intelligence La
 
 The strategic question is not whether every company should build its own GPT, Claude, Gemini, or Grok. Most will not. The better question is what knowledge the enterprise must organise so that any capable model can become useful inside the business.
 
+## The Enterprise Edition Has Begun
+
+This direction is no longer only a forecast. Major vendors have already begun building the pieces of an enterprise edition of AI.
+
+The important distinction is that an enterprise edition is usually not a completely different **brain**. It may use the same broad foundation model that serves consumers. What changes is the operating environment around it.
+
+A personal assistant mainly works with one person's chosen conversations, files, preferences, and tools. An enterprise system must work with shared knowledge and shared authority. It needs to know which employee may see which customer record, which agent may connect to which system, which action needs approval, and what evidence must be retained for later review.
+
+Microsoft is perhaps closest to this system-level vision. Its Copilot Studio allows organisations to create agents connected to Microsoft 365, Dynamics, Fabric, and non-Microsoft systems. Its agent identities make an agent's connector permissions visible to administrators, with audit logging and identity-governance controls. [Microsoft, _Extend the Capabilities of Your Agent_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-connectors-in-copilot-studio); [Microsoft, _Automatically Create Microsoft Entra Agent IDs_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities)
+
+OpenAI and Anthropic offer other parts of the same foundation: enterprise workspaces, single sign-on, member and role management, audit or data-retention controls, internal knowledge connections, larger working context, and tools for serious work. [OpenAI, _What Is ChatGPT Enterprise?_](https://help.openai.com/en/articles/8265053-what-is-chatgpt-enterprise); [Anthropic, _What Is the Claude Enterprise Plan?_](https://support.anthropic.com/en/articles/9797531-what-is-the-claude-enterprise-plan)
+
+These products are not yet a finished Enterprise Cognitive Operating System. They are early building blocks: governed chat, enterprise knowledge access, connectors, and bounded agents. The harder unfinished task is to coordinate many business systems and long workflows reliably while preserving permissions, accountability, and human authority.
+
+That is why the term **Enterprise Intelligence Layer** is more useful than “enterprise model.” The model supplies general capability. The layer makes that capability specific to an organisation: it brings the right context, applies the right controls, connects the right systems, and ensures that an action is traceable to the people and rules that authorised it.
+
 ## What the Enterprise Must Own
 
 The enterprise must own its representation of itself. That representation includes code, documents, business rules, policies, contracts, customer knowledge, product knowledge, system architecture, operational history, incident reports, regulatory obligations, security permissions, approval workflows, and audit trails.

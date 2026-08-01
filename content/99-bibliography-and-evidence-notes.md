@@ -174,6 +174,15 @@ The strongest evidence remains workflow-specific. The field experiments and DORA
 
 The “enterprise intelligence layer” remains a hypothesis: if many useful workflows need the same retrieval, permissions, provenance, evaluation, orchestration, and audit infrastructure, organisations may find it economical to build a shared layer. The sources show the component business cases and organisational conditions; they do not prove that every enterprise should build the architecture.
 
+## Enterprise AI platforms and governed agents
+
+- OpenAI. [“What Is ChatGPT Enterprise?”](https://help.openai.com/en/articles/8265053-what-is-chatgpt-enterprise) Accessed 1 August 2026.
+- Anthropic. [“What Is the Claude Enterprise Plan?”](https://support.anthropic.com/en/articles/9797531-what-is-the-claude-enterprise-plan) Accessed 1 August 2026.
+- Microsoft. [“Extend the Capabilities of Your Agent.”](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-connectors-in-copilot-studio) Updated 17 July 2026.
+- Microsoft. [“Automatically Create Microsoft Entra Agent IDs for Copilot Studio Agents.”](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities) Updated 8 July 2026.
+
+Used in “The Enterprise Edition Has Begun.” These vendor documents establish that enterprise workspaces, identity, role-based controls, audit features, internal knowledge connections, connectors, and governed agents are commercially available. They document product capabilities rather than independently proving business value or demonstrating a complete enterprise operating system.
+
 ## Claims discipline
 
 The manuscript separates three kinds of statement:
