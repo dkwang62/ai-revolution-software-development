@@ -44,11 +44,25 @@ AI reduces friction. That is one of its great strengths.
 
 It also means bad ideas can become working prototypes very quickly.
 
-## Side Story: The Magic Is Rapid Iteration
+This makes Requirements Engineering more important, not less. If AI can produce software from a description, the quality of the description matters enormously. The user must define what the system should do, for whom, under which conditions, with which exceptions, using which data, and with which constraints.
+
+The question changes from:
+
+> Can we write the code?
+
+to:
+
+> Have we described the right behaviour clearly enough?
+
+That is a higher-level programming problem.
+
+## Side Story: How Radix Was Built Through Rapid Iteration
 
 The magical feeling of AI-assisted coding is not usually that one sentence creates a perfect product. It is that the distance between an idea and a useful test becomes much shorter.
 
 In the older way of working, a person with an idea often had to plan everything in advance, find someone with the required technical skills, wait for a version to be built, and only then discover whether the idea made sense on a real screen. That made early mistakes expensive. It also meant that many small ideas were never tried.
+
+Radix is the book's practical example. It is an app created to help a learner work with Chinese text: capture material, find useful phrases and characters, and return to them for study. It began with a product idea, not with a complete technical plan. What should a learner see first? How should captured text become useful study material? Which choices should be easy on a small phone screen and which need more room on an iPad? Those questions became clearer by building and using small versions of the app.
 
 With an AI coding agent, the loop can be much faster:
 
@@ -56,19 +70,29 @@ With an AI coding agent, the loop can be much faster:
 idea → small prototype → use it → notice what is wrong → revise it → test again
 ```
 
-For example, while building an app, a person can describe a screen, open it on a phone or tablet, notice that buttons overflow the edge, show the agent a screenshot, and ask for a correction. The next version is not simply a reply in a chat. It can be a changed interface that can be seen and used. Reality joins the conversation sooner.
+Radix was built through that loop from the beginning. One early goal was a short quiz that tested whether a learner could recognise one Chinese character. The first version sounded reasonable in theory, but failed as soon as I used it: the answer was already visible in the question. I could show Codex the screen and describe the experience I wanted instead: a sentence with a blank, four similar-looking character choices, and a focus on useful verbs.
+
+That was not the end of the specification. On the next use, the questions appeared in the same order each time and a supposed “quick” quiz contained one hundred questions. The requirement became clearer only through experience: randomise the questions and choices, ask twenty at a time, and let the learner choose Simplified or Traditional Chinese. Codex could inspect the project, change the quiz rules, and run checks; I could use the result and decide whether it was actually better.
+
+The same pattern applied to the app's structure. As Radix gained more Study areas, separate screens and controls began to duplicate each other and made navigation harder to understand. Codex helped refactor them into related sections controlled by one shared choice, while keeping the important controls visible. *Refactoring* means improving the internal structure of software without changing its intended purpose. Here it made the app easier to extend without asking the user to learn a more complicated route through it.
+
+When a row of controls later overflowed the left and right edges of an iPad screen, I did not need to know the name of the layout rule that had failed. I could show Codex the screenshot, explain what a learner should be able to see, and ask it to investigate. It could find the relevant code, propose a correction, and run checks. I could then decide whether the changed screen actually worked.
+
+The next version was not merely a reply in a chat. It was an app that could be seen and used. That matters because an imagined feature can sound sensible while a real feature can reveal a confusing flow, an awkward label, a missing exception, or a screen that simply does not fit. Reality joined the conversation sooner.
 
 This is **rapid iteration**: improving something through short, repeated cycles of trying, observing, and revising. It changes several parts of software work at once.
 
 - **Rapid prototyping:** A half-formed idea can become a small working example while it is still fresh.
 - **Planning through development:** Planning does not disappear. Instead of pretending that every detail is known at the start, the plan becomes clearer as people see and use each version.
-- **Rapid refactoring:** *Refactoring* means changing the internal structure of code without changing what the user should experience. AI can make such cleanup cheaper, so a temporary early solution need not remain permanent.
+- **Rapid refactoring:** AI can make such cleanup cheaper, so a temporary early solution need not remain permanent.
 - **Learning while doing:** A user can ask why a database choice, security setting, or layout pattern matters at the moment it becomes relevant, rather than studying every tool before beginning.
 - **Results before terminology:** Someone can describe the outcome they need—“make this screen work on an iPad” or “save this record safely”—before they know the formal technical name for the solution.
 
+Radix therefore does not prove that anyone can produce dependable software without knowledge or care. It shows something more useful: a person with a real problem can stay involved from the first idea through each revision. The human supplies the learning goal, examples, priorities, taste, testing on real devices, and the final decision. Codex supplies speed, technical options, and help with the many small steps between intention and a working change.
+
 This is a useful extension of **just-in-time learning**, a familiar workplace idea: learn the knowledge needed for the task when it is needed, rather than build up a large inventory of skills that may never be used. AI can go further. It can provide **just-in-time capability**: not only an explanation, but a proposed implementation, relevant examples, and a way to test the result.
 
-The agent is therefore not the whole consultant. The growing consultant is a system: the model, the project files it can inspect, frameworks with safe defaults, documentation, compilers, tests, security scanners, performance tools, and the records of previous decisions. A framework can prevent common mistakes; a compiler can reject invalid code; a test can reveal a broken feature; a database tool can show a slow query. The model can help connect these pieces, interpret the evidence, and propose the next change.
+The agent is therefore not the whole consultant. The growing consultant is a system: the model, the project files it can inspect, reusable software building blocks called frameworks, documentation, compilers, tests, security scanners, performance tools, and the records of previous decisions. Frameworks often provide sensible defaults for common jobs. A compiler can reject invalid code, a test can reveal a broken feature, and a performance tool can reveal a slow part of an app. The model can help connect this evidence and propose the next change.
 
 ```text
 human: state the outcome and limits
@@ -84,17 +108,7 @@ Some routine technical judgement can therefore be offloaded: using established p
 
 The promise is not that AI removes judgement. It is that a growing body of technical knowledge can arrive at the point where it is needed. AI does not merely provide just-in-time learning; it can provide just-in-time technical judgement, supported by models, tools, frameworks, tests, and best practices.
 
-This makes Requirements Engineering more important, not less. If AI can produce software from a description, the quality of the description matters enormously. The user must define what the system should do, for whom, under which conditions, with which exceptions, using which data, and with which constraints.
-
-The question changes from:
-
-> Can we write the code?
-
-to:
-
-> Have we described the right behaviour clearly enough?
-
-That is a higher-level programming problem.
+The next step is to turn these evolving instructions into specifications that can be inspected and tested.
 
 ## From Prompt to Specification
 
