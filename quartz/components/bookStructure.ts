@@ -64,8 +64,8 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-chapter-the-genie-is-not-all-powerful" as FullSlug,
-        title: "Side Chapter: The Genie Is Not All-Powerful",
-        shortTitle: "Side Chapter: The Genie Has Limits",
+        title: "The Genie Is Not All-Powerful",
+        shortTitle: "The Genie Is Not All-Powerful",
       },
       {
         slug: "08-how-ai-converts-english-into-software" as FullSlug,
