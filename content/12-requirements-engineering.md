@@ -48,36 +48,36 @@ When code was expensive, the main bottleneck was translating requirements into i
 
 ## From a Vague Request to a Testable Specification
 
-Consider the quiz used throughout this book. It begins with an ordinary request:
+Consider a customer-support assistant. It begins with an ordinary request:
 
-> Create a quiz from these Chinese characters.
+> Help customers return unwanted items.
 
-That is a useful prompt for exploration. It is not yet a dependable requirement. The AI could choose any material, show all questions at once, reveal the answer immediately, or return text the application cannot read.
+That is a useful prompt for exploration. It is not yet a dependable requirement. The AI might offer a return that is outside the policy, miss an exception, expose account information, or make a promise the company cannot keep.
 
-The first step is to state the outcome from the learner's point of view:
+The first step is to state the outcome from the customer's point of view:
 
-> The learner can practise the Chinese material they selected, one question at a time, without seeing the answer before responding.
+> A customer with an eligible order can understand the return options and begin the correct process without the AI approving money or changing the order by itself.
 
 Now the team can ask about boundaries and edge cases:
 
-- May the model use material that was not selected?
-- Where may pinyin appear?
-- What happens when there is too little source material?
-- What counts as a correct answer?
-- Can the learner skip a question?
-- What must the app do if the model returns an invalid format?
+- Which return policy applies to this product and country?
+- How does the system identify the correct order without exposing private information?
+- What happens if the return window has expired?
+- Which cases need a human approval?
+- What must happen if the customer provides too little information?
+- What must the system do if the model returns an invalid or unsupported recommendation?
 
 The answers become acceptance criteria—statements that can be checked:
 
 ```text
-Given selected source material,
-when the learner starts a quiz,
-then the system asks one question at a time.
+Given an identified order and the current return policy,
+when a customer asks to return an item,
+then the system explains only the options for which that order is eligible.
 
-The question must not reveal its own answer.
-Pinyin may appear in the explanation but not in the choices.
-Every question must be traceable to the selected material.
-If the response has the wrong structure, the app must reject it safely.
+The AI must not approve a refund or alter the order.
+The response must cite the policy or order facts it used.
+Cases outside the policy must be routed to a person or a defined conventional workflow.
+If the response has the wrong structure, the system must reject it safely.
 ```
 
 Only then should the team decide how to implement the behaviour: which instructions the model receives, what information it may retrieve, what output fields it must return, what deterministic checks the app performs, and when a human must remain in control.

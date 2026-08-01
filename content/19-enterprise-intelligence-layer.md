@@ -8,6 +8,8 @@ The next major enterprise software platform may not begin as a grand AI strategy
 
 This is the enterprise payoff chapter. It gathers several earlier threads—software as accumulated knowledge, context, trust, legacy systems, agents, and cost reduction—and follows them through one practical question: how can a company make its own knowledge usable by AI?
 
+This chapter follows one path from a painful SAP modernisation project to a reusable enterprise capability. It explains why a customised ERP system becomes difficult to change, what an Enterprise Intelligence Layer contributes, why the layer is “superglue” rather than a replacement for systems of record, and how a company can fund it through measurable use cases rather than a vague promise of transformation.
+
 Imagine a large manufacturing company that has used SAP for twenty-five years. SAP is not an abandoned product. The vendor still exists. The software is famous, widely used, and professionally supported. This is not the same as a small vendor disappearing and leaving customers stranded.
 
 The problem is subtler.

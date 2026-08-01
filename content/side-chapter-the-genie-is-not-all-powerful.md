@@ -1,8 +1,10 @@
 ---
-title: "Side Chapter: The Genie Is Not All-Powerful"
+title: "The Genie Is Not All-Powerful"
 ---
 
 Once you have watched an AI model write software, interpret an image, explain biology, and answer questions across many subjects, it is easy to form a dangerous idea.
+
+This is not an optional detour from the book's argument. It is the limit that keeps the argument honest: greater capability does not turn a model into an all-knowing authority.
 
 Perhaps the model can eventually map everything.
 

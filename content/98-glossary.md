@@ -194,6 +194,10 @@ Evaluation measures how well an AI system performs across a collection of exampl
 
 Generalisation is an AI system's ability to work well on new cases it has not seen before. Overfitting is the opposite problem: the system matches its training or test examples so closely that it performs poorly in real situations. A model that looks good in a demonstration may still be overfitted.
 
+## Generative AI
+
+Generative AI produces a new output rather than merely selecting a label from a fixed list. It can continue a sentence, draft a report, translate a passage, generate code, describe an image, or create other material from patterns learned during training. A generated output can be useful without being automatically correct, which is why context and verification still matter.
+
 ## Human-Centred Design
 
 Human-centred design means designing a system around the needs, knowledge, time pressure, ability to correct errors, and rights of the people who use it or are affected by it. In AI, this includes showing useful evidence, making uncertainty visible, and providing a clear route for human correction or appeal.

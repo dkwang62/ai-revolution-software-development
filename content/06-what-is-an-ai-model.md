@@ -32,6 +32,18 @@ _An app's phrase-extraction feature. The model proposes candidates from Chinese 
 
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
+## Side Story: The 2017 Breakthrough That Changed the Trajectory
+
+For many years, AI could recognise patterns, classify pictures, translate short passages, and generate limited text. What was missing was an efficient way to train one model on very large amounts of language and let it keep track of relationships across a long passage.
+
+In 2017, Google researchers published a paper called [_Attention Is All You Need_](https://research.google/pubs/attention-is-all-you-need/). It introduced the **Transformer** architecture. A Transformer is not a particular chatbot. It is a design for a neural network.
+
+Its central idea is **attention**. When a person reads the sentence “The student put the book into her bag because she needed it later,” they can connect “it” with “the book.” Attention gives a model a mathematical way to weigh which earlier pieces of information matter to the piece it is processing now. Unlike older recurrent designs, which largely handled a sequence step by step, Transformers made it practical to process many relationships in parallel during training.
+
+That did not invent language, translation, or generative AI. The important change was scale. If a model can learn from vastly more examples of text, code, images, and explanations, then predicting the next useful piece can become a way to generate a paragraph, a program, an image description, or a translation. **Generative** means producing a new continuation or transformation rather than merely selecting a label from a fixed list.
+
+The result was a new trajectory: larger models could learn broader relationships among human symbols and use them to create. The Transformer did not make an AI model all-knowing, and it did not remove the need for facts, context, or verification. But it made modern large-scale generative models practical enough to become an economic force. Later chapters return to the question now becoming important: how might this architecture evolve as memory, reasoning, tools, and specialised hardware improve?
+
 ## A Map, Not the Territory
 
 The word _model_ did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.

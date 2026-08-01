@@ -6,7 +6,7 @@ title: "Five-Year and Ten-Year Scenarios"
 
 ## A Glimpse of Abundant Intelligence
 
-The preceding chapters described the economic and organisational system forming around AI. What might life look like if that system matures?
+The preceding chapters described the economic and organisational system forming around AI. This chapter offers conditional scenarios, not a promise or a timetable. It asks what might become possible if capability improves, costs fall, and verification, integration, and institutions keep pace.
 
 The morning begins with a teacher worried about one student who understands spoken explanations but struggles with written exercises. The teacher does not search an app store for a product designed for the average learner. She describes the difficulty, shows examples of the student's work and asks for a two-week experiment. An AI system creates a small learning tool, checks it against the school's privacy rules and adapts it as evidence arrives. The software may be discarded when it has served its purpose.
 
@@ -18,7 +18,7 @@ At a small factory, the owner wants to reduce waste from one production line. Th
 
 None of these people asks which model is being used. Intelligence has become infrastructure. Simple work is handled locally and cheaply. Difficult problems receive more reasoning, specialised models and remote computing. The system remembers enough of the task to continue, but access to private information remains controlled.
 
-This is the near-nirvana promised by abundant intelligence. It is not a world without work, disagreement, illness or failure. It is a world in which expertise and the power to create are no longer as tightly constrained by the number of specialists available. Millions of ideas that once died before implementation can be tested. Capabilities once reserved for governments, universities and large corporations become available to small organisations and individuals.
+This is one optimistic scenario for abundant intelligence. It is not a world without work, disagreement, illness or failure. It is a world in which expertise and the power to create are no longer as tightly constrained by the number of specialists available. Millions of ideas that once died before implementation can be tested. Capabilities once reserved for governments, universities and large corporations become available to small organisations and individuals.
 
 The possibility is enormous. So are the obstacles—but they do not all require a scientific miracle.
 

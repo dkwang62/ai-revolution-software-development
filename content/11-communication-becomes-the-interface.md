@@ -34,9 +34,7 @@ Over time, computers, email, word processors, spreadsheets, calendars, and enter
 
 The boss might know exactly what needed to be said, but the secretary knew how to operate the machinery of communication: typing, formatting, filing, routing, scheduling, and retrieving information. The secretary was not valuable because the boss lacked ideas. The secretary was valuable because the office systems required translation.
 
-AI changes software in a similar way. The business user, teacher, doctor, lawyer, engineer, or executive may know what outcome they want, but historically they had to explain that intent to analysts, information-technology (IT) staff, or programmers before the machine could act on it. If AI allows the user to speak more directly to the system, part of that translation layer becomes less necessary.
-
-This does not mean the IT function disappears. It means the valuable work moves upward into architecture, security, integration, governance, verification, and accountability. The old bottleneck was operating the machinery. The new bottleneck is deciding what the machinery should be allowed to do.
+AI changes software in a similar way. The business user, teacher, doctor, lawyer, engineer, or executive may know the desired outcome but historically needed analysts, IT staff, or programmers to translate it before the machine could act. AI can shorten that path. The remaining work is deciding what the system should be allowed to do and building the architecture, security, integration, verification, and accountability around it.
 
 ## Requirements Become More Important
 
@@ -64,26 +62,22 @@ In casual use, a prompt is simply an instruction to an AI system.
 
 In software development, a prompt can become something more serious. It can become a specification: a detailed description of required behaviour that people can inspect and test.
 
-Consider an AI-powered quiz feature inside an app. A casual prompt might say:
+Consider an AI-powered customer-support feature. A casual prompt might say:
 
-> Create a quiz for these Chinese characters.
+> Help this customer understand whether an item can be returned.
 
-That may produce something useful once. It is not enough for a reliable feature.
+That may produce something useful once. It is not enough for a reliable system.
 
 A production prompt may need to specify:
 
 - The role the AI should play.
-- The source material it may use.
-- The question format.
-- The difficulty level.
-- Whether answers should include English.
-- Whether pinyin should be shown.
-- How many questions should appear.
-- When the correct answer should be revealed.
-- What mistakes the AI must avoid.
-- What output format the app expects.
+- The policy and order information it may use.
+- Which cases it may draft a reply for and which must be escalated.
+- What it must never promise, approve, or disclose.
+- How uncertainty should be expressed.
+- What fields the surrounding system expects.
 
-At that point, the prompt is no longer a casual request. It is a behavioural contract.
+At that point, the prompt is no longer a casual request. It is a behavioural contract. The quiz example below shows the same idea in a more personal form.
 
 This is the core idea of **natural-language programming**: some software behaviour can now be expressed through carefully engineered natural-language specifications interpreted by a model.
 
