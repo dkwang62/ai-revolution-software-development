@@ -197,6 +197,16 @@ These products are not yet a finished Enterprise Cognitive Operating System. The
 
 That is why the term **Enterprise Intelligence Layer** is more useful than “enterprise model.” The model supplies general capability. The layer makes that capability specific to an organisation: it brings the right context, applies the right controls, connects the right systems, and ensures that an action is traceable to the people and rules that authorised it.
 
+### The Global Competitive Pattern
+
+As of 2026, Microsoft is arguably best positioned to supply the **enterprise operating layer** because it combines workplace software, collaboration, identity, security, business applications, cloud services, developer tools, and a governed agent platform. Its advantage is not that it necessarily owns the best model for every task. Its advantage is that many organisations already conduct work inside the systems that Microsoft can connect.
+
+Google and Amazon illustrate why this will not be a one-company market. Google combines frontier models with search, data, cloud infrastructure, and an agent platform built around enterprise data and tool governance. Amazon is central to the infrastructure layer: its Bedrock AgentCore offers identity, tool access, observability, evaluations, and managed knowledge services for organisations that want to build agents using different models and frameworks. [Google Cloud, _Gemini Enterprise Agent Platform_](https://cloud.google.com/products/gemini-enterprise-agent-platform); [AWS, _Amazon Bedrock AgentCore_](https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/)
+
+OpenAI and Anthropic remain important because the quality, cost, and reliability of the underlying models still matter. Specialist developer environments also matter because the human interface through which people direct AI can become a strategic position of its own. But these are complementary layers, not proof that one vendor will control the complete enterprise.
+
+The current ranking should therefore be read as supporting a broader trend, not as a permanent league table: **the competition is shifting from who has the smartest model to who can connect intelligence to the data, workflow, permissions, and human interface where work already happens.**
+
 ## What the Enterprise Must Own
 
 The enterprise must own its representation of itself. That representation includes code, documents, business rules, policies, contracts, customer knowledge, product knowledge, system architecture, operational history, incident reports, regulatory obligations, security permissions, approval workflows, and audit trails.

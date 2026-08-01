@@ -180,8 +180,10 @@ The “enterprise intelligence layer” remains a hypothesis: if many useful wor
 - Anthropic. [“What Is the Claude Enterprise Plan?”](https://support.anthropic.com/en/articles/9797531-what-is-the-claude-enterprise-plan) Accessed 1 August 2026.
 - Microsoft. [“Extend the Capabilities of Your Agent.”](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-connectors-in-copilot-studio) Updated 17 July 2026.
 - Microsoft. [“Automatically Create Microsoft Entra Agent IDs for Copilot Studio Agents.”](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities) Updated 8 July 2026.
+- Google Cloud. [“Gemini Enterprise Agent Platform.”](https://cloud.google.com/products/gemini-enterprise-agent-platform) Accessed 1 August 2026.
+- Amazon Web Services. [“Amazon Bedrock AgentCore Is Now Available in AWS GovCloud (US-West).”](https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/) 5 May 2026.
 
-Used in “The Enterprise Edition Has Begun.” These vendor documents establish that enterprise workspaces, identity, role-based controls, audit features, internal knowledge connections, connectors, and governed agents are commercially available. They document product capabilities rather than independently proving business value or demonstrating a complete enterprise operating system.
+Used in “The Enterprise Edition Has Begun” and “The Global Competitive Pattern.” These vendor documents establish that enterprise workspaces, identity, role-based controls, audit features, internal knowledge connections, connectors, and governed agents are commercially available. They document product capabilities rather than independently proving business value or demonstrating a complete enterprise operating system.
 
 ## Claims discipline
 
