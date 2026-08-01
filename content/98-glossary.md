@@ -262,6 +262,10 @@ A hybrid AI architecture combines different methods instead of depending on one 
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
 
+## Just-in-Time Capability
+
+Just-in-time capability means obtaining and applying the technical knowledge needed for a task while doing the task, instead of mastering every tool in advance. In AI-assisted work, a model, framework, documentation, and testing tools can supply explanations, suggestions, working examples, and checks at the point of need. It does not remove the human responsibility to set the goal, grant permission, judge the risk, and accept the result.
+
 ## Latency
 
 Latency is waiting time. In an AI system, it commonly means the delay between sending a request and receiving a usable response.
