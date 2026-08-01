@@ -302,6 +302,35 @@ The next frontier is **agent training**. Instead of judging the model only on on
 
 OpenAI describes work on agent post-training in terms of coding, tool use, computer use, long-horizon execution, factuality, calibrated reasoning, and evaluation environments. Anthropic's Constitutional AI work is one example of a different emphasis: using explicit principles, critique, and feedback to teach a model to be more helpful and safer. Google evaluates its frontier Gemini models across reasoning, multimodality, long context, and agentic tool use. The methods differ, but the destination is similar: a system that can take part in a longer, evidence-based workflow rather than merely produce a persuasive paragraph. [OpenAI, _Agent Post-Training, Connectors Research_](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/); [Anthropic, _Claude's Constitution_](https://www.anthropic.com/research/claudes-constitution); [Google DeepMind, _Gemini 3.1 Pro Model Card_](https://deepmind.google/models/model-cards/gemini-3-1-pro)
 
+### Not Every Upgrade Is the Same Kind of Change
+
+An AI model is not updated in quite the same way as an ordinary application. An ordinary application can often receive one new feature while the rest stays unchanged. A learned model is a large web of mathematical relationships. Changing its training can alter many behaviours at once.
+
+Sometimes a lab continues training or post-training an existing model. This is like renovating a house: it can be faster, less expensive, and preserve useful behaviour. It is especially suitable for improving instruction following, safety, coding practice, tool use, or a particular weakness revealed by testing.
+
+At other times, the desired change is large enough to justify a **new foundation model**. The lab may use a better mixture of training data, a different architecture, a new way of representing images or audio, a more efficient training method, or a different balance between model size and training data. This is closer to constructing a new building than renovating an old one. It permits deeper change, but requires an enormous new training run and fresh evaluation.
+
+Neither approach automatically wins. Continued training can preserve valuable strengths but may struggle to overcome deeper limitations. A new foundation can unlock a better direction but may introduce new weaknesses, so applications must test it rather than assume that a bigger version is compatible with an older one.
+
+### What the Upgrade Trajectory Reveals
+
+We cannot see every unpublished experiment or the complete recipe behind a model release. We can, however, see where companies repeatedly put their public research, product work, evaluation, specialist teams, and computing budgets. The observable pattern is more useful than guessing the secret detail of any one version.
+
+| Visible direction of effort | What the user notices | Why the effort is costly or difficult |
+| --- | --- | --- |
+| Better base training | Broader knowledge, stronger language and code patterns | Requires vast data, computing, engineering, and careful data selection |
+| Post-training and evaluation | Better instruction following, helpfulness, safety, and factual discipline | Good examples, realistic test environments, and reliable feedback are harder to create than raw internet text |
+| Reasoning | More capable planning, mathematics, debugging, and analysis on difficult tasks | The model may use more computation and take longer before answering |
+| Multimodality | It can work with screens, diagrams, images, speech, video, and code as well as prose | Different forms of information must be represented, aligned, and evaluated together |
+| Long context and memory | It can keep track of a larger document, codebase, or task | More context consumes memory and computation; selecting the relevant material remains essential |
+| Tools and agents | It can search, inspect, edit, calculate, run software, and check its work | The system needs permissions, safe environments, task-specific tests, and a way to detect failure |
+
+This is the important long-term trajectory. Earlier systems mainly tried to produce fluent text. Newer systems are being trained and engineered to understand more forms of evidence, spend more effort when a problem warrants it, remember what matters, use tools, and complete longer pieces of work under supervision.
+
+It is not a law of nature or a guaranteed timetable. Different companies will make different choices; a cheaper, smaller model may be the best product for many tasks. But the direction is visible across the industry: from models that answer questions toward systems that can understand, plan, create, check, and act within defined limits.
+
+For the economics of this book, the lesson is crucial. A newer model is not valuable merely because it sounds more fluent. It is valuable when the extra capability lowers the total cost of a **dependable completed task**—after including the cost of reasoning, context, tools, verification, integration, and the consequences of mistakes.
+
 ### A Concrete Example: Improving an App
 
 Consider a request in an app:

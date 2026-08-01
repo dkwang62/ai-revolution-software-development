@@ -197,7 +197,7 @@ That is why the race may shift from largest context to smartest context: better 
 
 ## From Enterprise Knowledge to Working Context
 
-![Enterprise knowledge to context window](<figures/FIG-09-02 Enterprise Knowledge To Context Window.png>)
+![Enterprise knowledge becomes working context](<figures/FIG-09-02 Enterprise Knowledge To Context Window.svg>)
 
 A company holds far more knowledge than any model can use at once: source code, policies, customer complaints, incident reports, workflows, decisions, and undocumented rules. The knowledge may be scattered across databases, documents, code, email, work-tracking systems, and people's memories.
 

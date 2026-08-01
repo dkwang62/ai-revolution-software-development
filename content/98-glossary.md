@@ -318,6 +318,14 @@ A prompt is an instruction, question, specification, or piece of context given t
 
 Prompt engineering is the practice of designing and testing instructions for AI systems. For ordinary users it is often disciplined communication. In production software it may also involve reusable templates, retrieved information, fixed output fields, safety rules, evaluations, and version tracking.
 
+## Post-Training
+
+Post-training is the work done after a broad foundation model has learned general patterns from large datasets. It uses examples, feedback, evaluations, and sometimes reinforcement learning to make the model more useful as an assistant: for example, better at following instructions, reasoning, coding, using tools, or observing safety rules. It changes behaviour; it does not make a model infallible.
+
+## Pre-Training
+
+Pre-training is the large initial learning stage in which a model absorbs broad statistical patterns from material such as text, code, images, audio, or video. A simple description is that it repeatedly learns to predict missing or next pieces. Pre-training creates general capability; post-training shapes how that capability is used in an assistant or agent.
+
 ## Prototype
 
 A prototype is an early version built to explore or demonstrate an idea. It can reveal whether the idea is useful, but it usually lacks some of the reliability, security, testing, performance, and polish required for production use.

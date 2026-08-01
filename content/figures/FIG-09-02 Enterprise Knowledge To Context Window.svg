@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise knowledge becomes working context</title>
+  <desc id="desc">A left-to-right flow: enterprise knowledge, organisation, retrieval, then the context window. The diagram explains that effective context depends on relevance, not just size.</desc>
+  <rect width="1600" height="760" fill="#fbfbf8"/>
+
+  <text x="100" y="110" fill="#202a35" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">Enterprise knowledge becomes working context</text>
+  <text x="100" y="158" fill="#70808f" font-family="Arial, Helvetica, sans-serif" font-size="30">Long-term organisational memory becomes the information available for one task</text>
+
+  <g fill="none" stroke="#25313c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M400 420 H430"/>
+    <path d="M760 420 H790"/>
+    <path d="M1110 420 H1140"/>
+  </g>
+  <g fill="#25313c">
+    <path d="M430 405 L457 420 L430 435 Z"/>
+    <path d="M790 405 L817 420 L790 435 Z"/>
+    <path d="M1140 405 L1167 420 L1140 435 Z"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="50" y="330" width="350" height="180" rx="18" fill="#ffffff" stroke="#3a619c" stroke-width="5"/>
+    <text x="82" y="395" fill="#3a619c" font-size="30" font-weight="700" textLength="286" lengthAdjust="spacingAndGlyphs">Enterprise knowledge</text>
+    <text x="82" y="444" fill="#303a45" font-size="24">Code, policies,</text>
+    <text x="82" y="476" fill="#303a45" font-size="24">documents, incidents</text>
+
+    <rect x="460" y="330" width="300" height="180" rx="18" fill="#ffffff" stroke="#cf9b38" stroke-width="5"/>
+    <text x="492" y="395" fill="#c58f28" font-size="34" font-weight="700">Organisation</text>
+    <text x="492" y="444" fill="#303a45" font-size="24">Index, clean, control</text>
+    <text x="492" y="476" fill="#303a45" font-size="24">access, and govern</text>
+
+    <rect x="820" y="330" width="290" height="180" rx="18" fill="#ffffff" stroke="#2a806f" stroke-width="5"/>
+    <text x="852" y="395" fill="#237665" font-size="34" font-weight="700">Retrieval</text>
+    <text x="852" y="444" fill="#303a45" font-size="24">Select what matters</text>
+    <text x="852" y="476" fill="#303a45" font-size="24">now</text>
+
+    <rect x="1170" y="330" width="380" height="180" rx="18" fill="#ffffff" stroke="#b34f49" stroke-width="5"/>
+    <text x="1202" y="395" fill="#ac4944" font-size="34" font-weight="700">Context window</text>
+    <text x="1202" y="444" fill="#303a45" font-size="24">Working memory for</text>
+    <text x="1202" y="476" fill="#303a45" font-size="24">this task</text>
+  </g>
+
+  <line x1="260" y1="610" x2="1340" y2="610" stroke="#d8ddd9" stroke-width="2"/>
+  <text x="800" y="680" fill="#202a35" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" text-anchor="middle">Effective context depends on relevance, not just size.</text>
+</svg>
