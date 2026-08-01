@@ -36,6 +36,10 @@ An AI accelerator is a processor designed especially for the mathematical operat
 
 An AI model is a mathematical representation of patterns learned from data. It is not a database, search engine, encyclopedia, or collection of hand-written rules. During training, the model's internal parameters are adjusted so that it can later produce useful responses during inference.
 
+## AI System
+
+An AI system is the complete arrangement that makes a model useful in the real world: the model plus its context, retrieval, tools, permissions, tests, records, user interface, and people who supervise it. A powerful model alone is not the same thing as a dependable system.
+
 ## Algorithm
 
 An algorithm is a step-by-step method for solving a problem or completing a task. A recipe is an everyday example. In software, an algorithm might sort names, find the shortest route, or calculate an average.

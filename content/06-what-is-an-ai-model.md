@@ -331,6 +331,27 @@ It is not a law of nature or a guaranteed timetable. Different companies will ma
 
 For the economics of this book, the lesson is crucial. A newer model is not valuable merely because it sounds more fluent. It is valuable when the extra capability lowers the total cost of a **dependable completed task**—after including the cost of reasoning, context, tools, verification, integration, and the consequences of mistakes.
 
+### The Ideal AI Collaborator
+
+The industry is not simply trying to create a model with a higher score on an intelligence test. Its visible ambition is to fill in the abilities that a useful collaborator lacks.
+
+The first generation of public generative AI learned to **speak**: it could produce fluent text. The next generation learned more of how to **think**: follow instructions, reason through difficult questions, work with code, and explain uncertainty. The emerging generation is learning to **act**: use tools, inspect results, remember what matters, and carry a bounded task through to completion.
+
+It is tempting to call the destination one all-powerful model. That is misleading. The defensible ideal is an **AI system**: a capable model working with selected context and memory, specialist tools, permissions, tests, records, and human authority.
+
+| Ability of the ideal collaborator | Plain-language meaning | What keeps it useful rather than dangerous |
+| --- | --- | --- |
+| Perceive | Understand text, code, screens, diagrams, speech, images, and other relevant evidence | The system must identify what it has actually observed and what remains uncertain |
+| Understand and reason | Compare options, detect contradictions, plan steps, and explain its judgement | More reasoning should be used when the task justifies its extra time and cost |
+| Remember selectively | Bring the right history, rules, and project details into the current task | Retrieval, permissions, and updates are safer than trying to place an entire organisation permanently in one prompt |
+| Use tools | Search, calculate, inspect files, run software, query approved systems, and collect evidence | Each tool needs narrow access, logging, and boundaries on what the system may do |
+| Act within authority | Prepare a change, carry out a permitted step, or hand work to another system | A capability to act is not permission to act; consequential actions need approval gates |
+| Verify and report | Test results, show evidence, admit uncertainty, and leave an audit trail | Verification must be independent where possible, with people retaining responsibility for important decisions |
+
+This is not a promise of unlimited memory, perfect coding, or unrestricted autonomy. More information can make a system slower, costlier, less private, and even more confused if the wrong material is retrieved. More power to act increases the importance of permission and review. A model can be extremely capable and still lack the local knowledge, authority, or evidence needed to make a decision.
+
+The aspiration is therefore not an all-knowing genie. It is a general-purpose digital collaborator that can understand, reason, create, and act **within defined limits**. That distinction connects the technical trajectory to the central argument of this book: AI makes it easier for people to direct machines, but dependable results still require context, judgement, verification, integration, and trust.
+
 ### A Concrete Example: Improving an App
 
 Consider a request in an app:
