@@ -73,7 +73,7 @@ That distinction matters because it prevents the argument from becoming unfair t
 
 The existence of those tools proves the point. If migration were trivial, customers would not need custom-code analysis, readiness checks, simplification databases, conversion guides, and years of planning.
 
-## Why This Becomes the Killer App
+## Why This Is a Practical Starting Point
 
 The Enterprise Intelligence Layer can sound abstract if it is introduced as "a company-wide AI brain." No chief financial officer will fund that phrase.
 
@@ -207,19 +207,13 @@ OpenAI and Anthropic remain important because the quality, cost, and reliability
 
 The current ranking should therefore be read as supporting a broader trend, not as a permanent league table: **the competition is shifting from who has the smartest model to who can connect intelligence to the data, workflow, permissions, and human interface where work already happens.**
 
-## What the Enterprise Must Own
+## Enterprise Knowledge, Context, and Control
 
-The enterprise must own its representation of itself. That representation includes code, documents, business rules, policies, contracts, customer knowledge, product knowledge, system architecture, operational history, incident reports, regulatory obligations, security permissions, approval workflows, and audit trails.
+The enterprise must own a usable representation of itself: its code, documents, business rules, policies, contracts, customer and product records, system maps, incident history, regulatory obligations, permissions, approval workflows, and audit trails. This is not merely data. It is institutional memory.
 
-This is not merely data. It is institutional memory.
+When an experienced employee retires, changes job, or forgets why a decision was made, some of that memory disappears. When a system has been modified for decades without complete documentation, business knowledge becomes trapped inside code. AI changes the value of this scattered knowledge. It becomes economically valuable when the organisation can find it, control access to it, interpret it, and reuse it.
 
-When an experienced employee retires, changes job, or forgets why a decision was made, some of that memory disappears. When a system has been modified for decades without complete documentation, business knowledge becomes trapped inside code. When teams work in separate tools, the organisation knows more than any one person can access.
-
-AI changes the value of that memory. Knowledge that was once scattered, buried, or informal becomes economically valuable if it can be retrieved, permissioned, interpreted, and used by AI systems.
-
-## Context Window Versus Enterprise Knowledge
-
-A model's context window is the information it can consider during one reasoning session. Enterprise knowledge is the much larger universe of information held by the organisation. The two are related, but not identical.
+A model's **context window** is the information it can consider during one reasoning session. Enterprise knowledge is the much larger universe of information held by the organisation. The two are related, but not identical.
 
 ```text
 Enterprise Knowledge
@@ -240,25 +234,11 @@ AI Context Window
 Answer or Action
 ```
 
-The context window is working memory. Enterprise knowledge is long-term organisational memory.
+The context window is working memory. Enterprise knowledge is long-term organisational memory. The economic challenge is not simply to buy a model with a larger window. A model can read millions of tokens and still fail if it receives irrelevant, outdated, contradictory, or unauthorised material.
 
-The economic challenge is not simply to buy a model with a larger context window. Larger context helps only if the right information is placed inside it. A model that can read millions of tokens may still fail if it receives irrelevant, outdated, contradictory, or unauthorised material. A model with a smaller context window may perform better if the enterprise retrieves exactly the right information at the right time.
+Think of retrieval as a skilled librarian preparing a small research pack, rather than wheeling the entire library into the meeting. In a customised SAP migration, the useful pack may contain the exact custom program, configuration note, interface definition, test case, and finance policy relevant to one question. This is **effective context**: not the most information, but the most relevant authorised information.
 
-This is the difference between raw context and effective context. Raw context is how much information the model can hold. Effective context is how much relevant information the system can actually use.
-
-In a customised SAP migration, raw context might mean loading thousands of pages of documentation into the model. Effective context means retrieving the exact custom program, configuration note, interface definition, test case, and finance policy relevant to the question being asked.
-
-The future competition may not be won by the organisation with the largest context window. It may be won by the organisation with the best enterprise knowledge architecture.
-
-## Enterprise Knowledge Architecture
-
-An Enterprise Intelligence Layer rests on four foundations: knowledge, organisation, retrieval, and governance.
-
-The organisation first needs knowledge in machine-usable form: code, documents, decisions, policies, logs, contracts, diagrams, process descriptions, tickets, messages, meeting transcripts, and structured data. It then needs to organise that knowledge so AI systems do not reason from noise. Material must be cleaned, indexed, tagged, permissioned, updated, deduplicated, summarised, and connected.
-
-Retrieval is the next foundation. The system must decide which knowledge matters for each task, because the AI should not receive everything. It should receive what is relevant, current, authorised, and useful.
-
-Governance turns this into an enterprise system rather than a clever search tool. The organisation must control who can ask what, which systems may be touched, which answers require verification, what must be logged, and where human approval is required.
+An Enterprise Intelligence Layer therefore needs four foundations. First, knowledge must be in usable form and kept current. Second, it must be organised—cleaned, labelled, linked, and assigned to the right owner—so the AI does not reason from noise. Third, retrieval must select what matters for a particular task. Fourth, governance must control who can ask what, which systems may be touched, what is recorded, and when a person must approve an action.
 
 These controls are not bureaucracy added after the fact. They are what allow AI to enter real work. A system that can suggest changes to finance workflows, procurement rules, production planning, or payment interfaces must be governed. Otherwise it is not enterprise software. It is a risk.
 
@@ -395,15 +375,9 @@ Over time, the organisation discovers that these projects require similar founda
 
 This is how many major enterprise technologies spread. Cloud computing did not always begin as a single company-wide strategy. Often one application moved first, then another, then another. Eventually the platform became obvious. Enterprise AI may follow the same pattern.
 
-There is also a historical irony. The system integrators who once helped enterprises connect mainframes to web applications, ERP systems to data warehouses, and old databases to mobile apps may now be asked to connect those same estates to AI. The work is different, but the pattern is familiar. Enterprises do not adopt new technology in a vacuum. They adopt it through the systems they already own.
+There is a historical irony. The system integrators who once helped enterprises connect mainframes, ERP systems, databases, and web applications may now be asked to connect those same systems to AI. Enterprises do not adopt new technology in a vacuum. They adopt it through the systems they already own.
 
-In that sense, system integrators are not merely building AI. They are translating the past so AI can use it.
-
-This is why the history of middleware matters. In the early 2000s, tools such as Forte, CORBA, enterprise application integration platforms, message brokers, and adapters were used to make heterogeneous enterprise systems communicate. [Forte's own interoperability documentation](https://docs.oracle.com/cd/E19957-01/806-6666-01/806-6666-01.pdf) described CORBA as a way for objects written in different languages and running on different operating systems and hardware to interact.
-
-A bank might have a mainframe, a relational database, a Java application server, a reporting system, and a new web front end. None of these systems naturally understood the others. The system integrator's job was to build the bridges.
-
-The AI version of that problem is similar, but not identical. The old middleware question was:
+Before AI, this connecting work was often called **middleware**: software that carried messages and data between systems that could not otherwise communicate. The old question was:
 
 ```text
 How do we make different systems understand each other?
@@ -415,9 +389,9 @@ The new Enterprise AI question is:
 How do we make a model understand the enterprise?
 ```
 
-The bridges are different. Instead of only message queues, adapters, service buses, and APIs, the new layer also needs retrieval systems, vector indexes, knowledge graphs, permission models, semantic search, prompt workflows, evaluation harnesses, audit logs, and human approval points.
+The new question is broader because a model must understand meaning and business rules as well as move data. The new layer still uses familiar bridges such as APIs—agreed ways for software to request information or an action—but adds retrieval, permission models, semantic search, tests, audit logs, and human approval points.
 
-This can be thought of as intelligence middleware—or, more memorably, enterprise superglue. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
+This is intelligence middleware—or, more memorably, enterprise superglue. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
 
 The work also explains why commodity AI is not enough. A public model can know programming, accounting terminology, or general business practice. It does not automatically know a bank's lending exceptions, a manufacturer's plant-specific maintenance procedures, an airline's reservation integrations, or a company's twenty years of SAP customisations. That knowledge has to be exposed safely, organised carefully, governed properly, and embedded into real workflows.
 
@@ -425,7 +399,7 @@ This is the system integrator's opening. In the ERP era, the SI customised softw
 
 That is why legacy modernisation can become more than an IT clean-up project. It can become the first practical route toward Enterprise Intelligence. Each recovered business rule, dependency map, API wrapper, test suite, permission model, and audit trail makes the next AI project easier to trust.
 
-## The ROI Portfolio
+### A Portfolio of Testable Business Cases
 
 Enterprise AI should not be justified by vague claims that everyone will become more productive. A more serious method is to treat it as a portfolio of use cases.
 
@@ -459,7 +433,7 @@ This is the business equivalent of the agentic loop in the previous chapter: act
 
 Legacy modernisation fits this portfolio well because the benefits are not only labour savings. They include reduced migration risk, faster documentation, fewer missed dependencies, better test coverage, safer integration, lower reliance on scarce specialists, and preservation of accumulated business knowledge.
 
-## A Conservative Cost-Reduction Estimate
+### A Conservative Cost-Reduction Estimate
 
 There is not yet enough independent evidence to say that an Enterprise Intelligence Layer reduces enterprise software-development cost by a precise percentage. The idea is too new, and most enterprise AI deployments are still reported as isolated projects rather than mature shared platforms.
 
@@ -474,7 +448,7 @@ For a large SAP migration, core banking integration, or legacy modernisation pro
 ```text
 Total programme cost:                         US$100 million
 Knowledge-heavy work:                         40% of programme
-AI/EIS productivity improvement:              25% on that work
+AI/EIL productivity improvement:              25% on that work
 Value captured after review/governance cost:  50%
 
 Estimated direct saving:
