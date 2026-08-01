@@ -32,17 +32,7 @@ _An app's phrase-extraction feature. The model proposes candidates from Chinese 
 
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
-## Side Story: The 2017 Breakthrough That Changed the Trajectory
-
-For many years, AI could recognise patterns, classify pictures, translate short passages, and generate limited text. What was missing was an efficient way to train one model on very large amounts of language and let it keep track of relationships across a long passage.
-
-In 2017, Google researchers published a paper called [_Attention Is All You Need_](https://research.google/pubs/attention-is-all-you-need/). It introduced the **Transformer** architecture. A Transformer is not a particular chatbot. It is a design for a neural network.
-
-Its central idea is **attention**. When a person reads the sentence “The student put the book into her bag because she needed it later,” they can connect “it” with “the book.” Attention gives a model a mathematical way to weigh which earlier pieces of information matter to the piece it is processing now. Unlike older recurrent designs, which largely handled a sequence step by step, Transformers made it practical to process many relationships in parallel during training.
-
-That did not invent language, translation, or generative AI. The important change was scale. If a model can learn from vastly more examples of text, code, images, and explanations, then predicting the next useful piece can become a way to generate a paragraph, a program, an image description, or a translation. **Generative** means producing a new continuation or transformation rather than merely selecting a label from a fixed list.
-
-The result was a new trajectory: larger models could learn broader relationships among human symbols and use them to create. The Transformer did not make an AI model all-knowing, and it did not remove the need for facts, context, or verification. But it made modern large-scale generative models practical enough to become an economic force. Later chapters return to the question now becoming important: how might this architecture evolve as memory, reasoning, tools, and specialised hardware improve?
+This chapter first explains how a model learns patterns, then why it can work with language and code, and finally how it can work with images, tools, and longer tasks. The question throughout is practical: where does the model's flexible judgement help, and where must software, evidence, and people take responsibility?
 
 ## A Map, Not the Territory
 
@@ -88,50 +78,21 @@ Those numerical representations are often described as **vectors**—ordered lis
 
 _A simplified picture of tokens, vectors, and high-dimensional space. The final panel is only a two-dimensional shadow: a real model uses far more dimensions than a drawing can show._
 
-### Beyond Text: Screens, Errors, and Diagrams
-
-The same basic idea applies when a user uploads an image instead of typing a message. A modern **multimodal model** can work with text and pictures together. It does not treat a screenshot as a tiny webpage that it can inspect perfectly. It divides the image into small visual patches, converts those patches into numerical representations, and combines them with any visible words and the user's question.
-
-Suppose a user uploads a screenshot of an error message and asks, “Why did this fail?” The model can often recognise the error text, the name of the application, warning symbols, buttons, and the surrounding screen. It can connect those clues with learned patterns from documentation, programming discussions, and previous examples. If the user also supplies the actual error text, that is usually even better: text can be copied, searched, and checked more precisely than a blurry image.
-
-Or suppose a user uploads a phone screen and says, “This button is out of alignment.” The model can use the picture as evidence of relationships that source code alone does not reveal: a label may be cut off, a button may overlap another control, or a row may be too crowded at that screen size. The internal representation is not a literal map with one point labelled “misaligned button.” It is a numerical pattern that helps the model relate shapes, positions, words, colours, and familiar interface conventions.
-
-```text
-screenshot, error message, or flowchart
-↓
-visual patches and visible text become numbers
-↓
-the model relates positions, labels, arrows, and patterns
-↓
-an observation, explanation, or proposed next step
-```
-
-A flowchart works similarly. Its boxes, arrows, and labels become visual and textual evidence from which the model can infer a likely sequence: start here, test this condition, then follow one of two branches. The model is not reading the diagram with human eyes or storing the whole image as one object. It is using learned numerical relationships to form a useful interpretation.
-
-This is powerful, but it remains evidence rather than proof. A screenshot may be cropped, blurry, outdated, or taken at a different device size. A visual model can miss a small alignment problem or misread a word. For important work, the best loop is still: show the image, inspect the actual screen or error text, test the proposed fix, and look again.
-
-### Side Story: How a Picture Becomes Tokens
-
-A digital image begins as a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: how much red, green, and blue it contains. A model cannot sensibly consider every dot as one separate idea, so one common design breaks the picture into small squares, or **patches**. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
-
-For example, a 224 × 224 image divided into 16 × 16-pixel patches produces 14 × 14 = 196 patches. One patch contains 256 pixels; with red, green, and blue values, that begins as 768 numbers. A small mathematical transformation turns those numbers into a shorter vector. The model also receives information about where the patch came from, because a blue patch at the top of a screen may be sky or a header, while the same blue patch near the bottom may be a button.
-
-```text
-image → small patches → vectors + positions → visual representation
-text  → word pieces   → vectors + positions → language representation
-                                             ↓
-                               model relates the two kinds of evidence
-```
-
-The comparison with text is useful but imperfect. A text token comes from a fixed vocabulary of words or word pieces, such as “cat” or “ing.” An image patch has no fixed visual vocabulary: it is a bundle of colours, edges, textures, and shapes. At first it may capture only a corner of an ear, a piece of blue sky, or part of a button. Through the model’s layers, neighbouring patches and their positions help form a richer interpretation: perhaps a dog, a warning banner, or a button that overlaps its label.
-
-The 16 × 16 and 224 × 224 figures are a teaching example, not a universal recipe. Different models resize images differently, use different patch sizes or variable numbers of visual tokens, and combine vision with language in different ways. The principle is the important part: a picture is converted into numerical evidence that can be related to the user’s words. Modern AI models can accept text and image input, but the detailed architecture inside a particular model is not always public. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
-
-It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
-
 For text generation, the immediate training task is often to predict the next token. That sounds modest. Consider the unfinished sentence: “The capital of France is ___.” To predict _Paris_, the model needs a learned relationship between France and Paris. In code, predicting the next step after “if the list is empty” may require learned patterns about programming logic. In a screenshot, predicting what a label refers to may require recognising its position, a nearby button, and a visible error message.
 
 Training gives the model billions of these small prediction-and-correction exercises. Across books, code, diagrams, conversations, and worked examples, it gradually learns reusable patterns: facts often associated with one another, grammar, cause and effect, software conventions, visual layouts, and common ways people solve problems. This can produce surprisingly broad behaviour. But it is still pattern-based prediction, not human experience or a guarantee that every answer is correct.
+
+## Side Story: The 2017 Breakthrough That Changed the Trajectory
+
+For many years, AI could recognise patterns, classify pictures, translate short passages, and generate limited text. What was missing was an efficient way to train one model on very large amounts of language and let it keep track of relationships across a long passage.
+
+In 2017, Google researchers published a paper called [_Attention Is All You Need_](https://research.google/pubs/attention-is-all-you-need/). It introduced the **Transformer** architecture. A Transformer is not a particular chatbot. It is a design for a neural network.
+
+Its central idea is **attention**. When a person reads the sentence “The student put the book into her bag because she needed it later,” they can connect “it” with “the book.” Attention gives a model a mathematical way to weigh which earlier pieces of information matter to the piece it is processing now. Unlike older recurrent designs, which largely handled a sequence step by step, Transformers made it practical to process many relationships in parallel during training.
+
+That did not invent language, translation, or generative AI. The important change was scale. If a model can learn from vastly more examples of text, code, images, and explanations, then predicting the next useful piece can become a way to generate a paragraph, a program, an image description, or a translation. **Generative** means producing a new continuation or transformation rather than merely selecting a label from a fixed list.
+
+The result was a new trajectory: larger models could learn broader relationships among human symbols and use them to create. The Transformer did not make an AI model all-knowing, and it did not remove the need for facts, context, or verification. But it made modern large-scale generative models practical enough to become an economic force. Later chapters return to the question now becoming important: how might this architecture evolve as memory, reasoning, tools, and specialised hardware improve?
 
 ## Inference Uses the Finished Model
 
@@ -157,7 +118,7 @@ Traditional software and learned models therefore have complementary strengths:
 | Strong where rules are clear   | Strong where variation makes exhaustive rules costly      |
 | Changed mainly by editing code | Changed by training, tuning, prompting, and configuration |
 
-Real applications combine both. AI suggests; software decides.
+Real applications combine both. AI can propose, interpret, and, when permitted, act; deterministic software, permissions, tests, and people determine what is allowed and what is accepted.
 
 ## Why a Model Can Produce Software
 
@@ -224,15 +185,13 @@ This is why code benefits from forms of evidence that ordinary language does not
 
 These checks do not prove that a program is perfect. They turn some important questions from opinion into evidence.
 
-### Code Must Join an Existing World
+### Code Must Join an Existing World—and Errors Can Travel Far
 
 Translating one English sentence into Spanish rarely requires knowledge of every other sentence ever written. New code almost always has to fit into a system that already exists.
 
 For an app, a small screen change may need to respect existing data models, navigation, saved records, naming conventions, accessibility settings, iPhone and iPad layouts, and the expectations built into other screens. A change that works alone may still break the app when it meets this surrounding context.
 
 The model must therefore gather or be given project context: relevant files, existing functions, data definitions, design decisions, tests, and the purpose of the feature. This is why an AI coding agent is more useful when it can search the repository, inspect the running application, and use tools rather than receiving one isolated prompt.
-
-### Errors Can Travel Far
 
 If one sentence in a translated paragraph is slightly imperfect, the rest of the paragraph will often remain understandable. In software, one subtle error can travel far. A wrong value may be stored, passed through several functions, used in a report, and cause trouble only under a rare condition days later.
 
@@ -247,6 +206,45 @@ Verification is where much of that remaining cost lives—and where agentic AI, 
 Models increasingly work across text, images, audio, video, diagrams, screens, and code. For software development, this matters because important requirements and defects are not always expressed well in prose.
 
 A screenshot can expose overflowing text that the source code does not make obvious. A screen recording can show a navigation sequence. A sketch can communicate an intended layout. A spoken explanation can capture domain knowledge from someone who would never write a formal specification. The model can translate these inputs into observations, requirements, code changes, or tests.
+
+### Screens, Errors, and Diagrams as Evidence
+
+When a user uploads an image instead of typing a message, a modern **multimodal model** can work with the picture and the user's words together. It does not treat a screenshot as a tiny webpage that it can inspect perfectly. It divides the image into small visual patches, converts those patches into numerical representations, and relates them to visible words and the question.
+
+Suppose a user uploads a screenshot of an error message and asks, “Why did this fail?” The model can often recognise the error text, the name of the application, warning symbols, buttons, and the surrounding screen. If the user also supplies the actual error text, that is usually even better: text can be copied, searched, and checked more precisely than a blurry image.
+
+Or suppose a user uploads a phone screen and says, “This button is out of alignment.” The model can use the picture as evidence of relationships that source code alone does not reveal: a label may be cut off, a button may overlap another control, or a row may be too crowded at that screen size. A flowchart works similarly. Its boxes, arrows, and labels become visual and textual evidence from which the model can infer a likely sequence.
+
+```text
+screenshot, error message, or flowchart
+↓
+visual patches and visible text become numbers
+↓
+the model relates positions, labels, arrows, and patterns
+↓
+an observation, explanation, or proposed next step
+```
+
+This is powerful, but it remains evidence rather than proof. A screenshot may be cropped, blurry, outdated, or taken at a different device size. A visual model can miss a small alignment problem or misread a word. For important work, the best loop is still: show the image, inspect the actual screen or error text, test the proposed fix, and look again.
+
+### Side Story: How a Picture Becomes Tokens
+
+A digital image begins as a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: how much red, green, and blue it contains. A model cannot sensibly consider every dot as one separate idea, so one common design breaks the picture into small squares, or **patches**. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
+
+For example, a 224 × 224 image divided into 16 × 16-pixel patches produces 14 × 14 = 196 patches. One patch contains 256 pixels; with red, green, and blue values, that begins as 768 numbers. A small mathematical transformation turns those numbers into a shorter vector. The model also receives information about where the patch came from, because a blue patch at the top of a screen may be sky or a header, while the same blue patch near the bottom may be a button.
+
+```text
+image → small patches → vectors + positions → visual representation
+text  → word pieces   → vectors + positions → language representation
+                                             ↓
+                               model relates the two kinds of evidence
+```
+
+The comparison with text is useful but imperfect. A text token comes from a fixed vocabulary of words or word pieces, such as “cat” or “ing.” An image patch has no fixed visual vocabulary: it is a bundle of colours, edges, textures, and shapes. At first it may capture only a corner of an ear, a piece of blue sky, or part of a button. Through the model’s layers, neighbouring patches and their positions help form a richer interpretation: perhaps a dog, a warning banner, or a button that overlaps its label.
+
+The 16 × 16 and 224 × 224 figures are a teaching example, not a universal recipe. Different models resize images differently, use different patch sizes or variable numbers of visual tokens, and combine vision with language in different ways. The principle is the important part: a picture is converted into numerical evidence that can be related to the user’s words. Modern AI models can accept text and image input, but the detailed architecture inside a particular model is not always public. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
+
+It is tempting to say that meaning becomes location. That is a useful analogy, not a complete account of human meaning. The geometry captures statistical relationships; it does not give the model a human life, purpose, or experience of a Chinese character.
 
 This does not guarantee spatial judgement. While building the application and producing this book, I sometimes had to show Codex a rendered screen before it recognised that words had escaped a box or that controls were squeezed into an unusable space. Source code describes constraints; the rendered picture reveals their combined result. The practical solution is a feedback loop: generate, render, inspect at relevant sizes, test, and revise. Visual regression tools and established interface frameworks can automate much of that loop, while human review remains important where taste or purpose is involved.
 
@@ -263,6 +261,8 @@ Different training choices create different models. They may vary in data, archi
 This is why model names are not interchangeable. It also explains why an upgrade can change behaviour unexpectedly. In traditional software, developers try to add features while preserving old behaviour. A change in training or model architecture may shift many responses at once. A prompt that worked with one version may need to be tested again with its successor.
 
 Model behaviour thus becomes a dependency of every application built around it.
+
+So far, this chapter has explained how a model learns broad patterns and why it must be surrounded by context and checks. The next question is how newer generations are trained to become more useful collaborators.
 
 ## From Text Predictor to Agentic Collaborator
 
