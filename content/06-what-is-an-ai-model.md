@@ -238,11 +238,9 @@ A screenshot can expose overflowing text that the source code does not make obvi
 
 This does not guarantee spatial judgement. While building the application and producing this book, I sometimes had to show Codex a rendered screen before it recognised that words had escaped a box or that controls were squeezed into an unusable space. Source code describes constraints; the rendered picture reveals their combined result. The practical solution is a feedback loop: generate, render, inspect at relevant sizes, test, and revise. Visual regression tools and established interface frameworks can automate much of that loop, while human review remains important where taste or purpose is involved.
 
-These two diagrams are real examples from this book. The source files were valid enough to publish, but a rendered inspection showed that their text had escaped its intended place. The problem was visible only in the finished image.
+The screenshot below shows a real app layout problem. The controls exist, the screen can render, and the code may compile. Yet in the finished iPad view, the interface overflows the left and right edges. The problem is not obvious from a single line of code. It becomes obvious when the system is rendered at the size a user will actually see.
 
-![Text escaping its intended box in the English-to-software diagram](<figures/CASE-14-02 Diagram Overflow English To Software.png>)
-
-![A blank label in the AI-model diagram](<figures/CASE-14-03 Diagram Overflow AI Model.png>)
+![An iPad app screen whose controls overflow the left and right borders](<figures/CASE-05-01 App Layout Overflow iPad.png>)
 
 Multimodality therefore expands the AI model's inputs, not its authority. It gives the system more evidence from which to reason. The same rule still applies: successful generation is not successful rendering, and a convincing appearance is not proof of correct behaviour.
 
