@@ -48,7 +48,7 @@ When code was expensive, the main bottleneck was translating requirements into i
 
 ## From a Vague Request to a Testable Specification
 
-Consider the language-learning quiz used throughout this book. It begins with an ordinary request:
+Consider the quiz used throughout this book. It begins with an ordinary request:
 
 > Create a quiz from these Chinese characters.
 

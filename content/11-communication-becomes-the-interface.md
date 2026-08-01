@@ -64,7 +64,7 @@ In casual use, a prompt is simply an instruction to an AI system.
 
 In software development, a prompt can become something more serious. It can become a specification: a detailed description of required behaviour that people can inspect and test.
 
-Consider an AI-powered quiz feature inside a language-learning app. A casual prompt might say:
+Consider an AI-powered quiz feature inside an app. A casual prompt might say:
 
 > Create a quiz for these Chinese characters.
 
@@ -89,13 +89,13 @@ This is the core idea of **natural-language programming**: some software behavio
 
 The language is English, but the discipline resembles programming.
 
-## A Language-Learning Example
+## A Quiz Example
 
 ![Instructions for creating a Chinese-language quiz](figures/chinese-quiz-instructions.png)
 
 The quiz instructions are useful because they show natural language becoming operational.
 
-The prompt does not merely ask the AI to be helpful. It defines a task: create a language-learning quiz. It defines constraints: use the captured material, include Chinese and English appropriately, avoid revealing the answer too early, control pinyin usage, ask one question at a time, and follow a sequence.
+The prompt does not merely ask the AI to be helpful. It defines a task: create a quiz. It defines constraints: use the captured material, include Chinese and English appropriately, avoid revealing the answer too early, control pinyin usage, ask one question at a time, and follow a sequence.
 
 That is software behaviour expressed in ordinary language.
 

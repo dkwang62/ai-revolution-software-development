@@ -43,7 +43,7 @@ This is why trust sits at the boundary between experimental AI and production AI
 
 ## A Small-Application Example
 
-The same principle appears even in a small language-learning application.
+The same principle appears even in a small app.
 
 For the AI-generated quiz feature, I did not need the model to be trusted with everything. I needed it to be trusted within a boundary. It could generate quiz questions from captured Chinese material, choose varied practice styles, explain answers, and adapt the interaction to the learner. But it should not reveal the answer too early, ignore the source material, put pinyin in the wrong place, invent unsupported content, or produce output the app could not handle.
 

@@ -378,7 +378,7 @@ Reliable software requires independent checks.
 
 In some AI-driven features, the prompt is not just a request for code. It becomes part of the running system.
 
-For example, a language-learning application might contain an AI quiz feature. Instead of writing every quiz rule in Swift or Python, the developer may write a detailed prompt describing how the AI should behave: what kinds of questions to ask, how difficult they should be, which language to use, when to reveal answers, what format to follow, and which mistakes to avoid.
+For example, an app might contain an AI quiz feature. Instead of writing every quiz rule in Swift or Python, the developer may write a detailed prompt describing how the AI should behave: what kinds of questions to ask, how difficult they should be, which language to use, when to reveal answers, what format to follow, and which mistakes to avoid.
 
 That prompt is not casual conversation. It is a behavioural specification.
 
@@ -386,7 +386,7 @@ This is Natural Language Programming. The prompt functions like a high-level pro
 
 ## Field Note: The Prompt Became the Program
 
-This became obvious while building a quiz feature for the language-learning application.
+This became obvious while building a quiz feature for an app.
 
 The feature looked simple from the outside: choose captured Chinese material and ask the AI to create a practice quiz. But the real behaviour was not simple at all. The quiz had to draw from the learner's material, use Chinese and English in controlled ways, avoid giving away the answer too early, manage pinyin carefully, ask one question at a time, and keep the interaction moving like a patient teacher rather than a generic chatbot.
 

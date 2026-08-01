@@ -4,7 +4,7 @@ title: "What Is an AI Model?"
 
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
-When a language-learning application displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the application, that character is also a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
+When an app displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the app, that character is also a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
 
 These are different **representations** of the same thing. Software has always moved information among representations:
 
@@ -26,9 +26,9 @@ An AI model is not a huge database, a search engine, or millions of handwritten 
 
 I encountered this distinction while building a feature that finds useful phrases in captured Chinese text. The application could send the same passage and instructions to a language model and receive useful phrase candidates, but not necessarily an identical list every time. The model was not looking up one authorised answer in a database. It was using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a plausible result.
 
-![The Radix phrase-extraction feature: a language model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Radix Phrase Extraction and Prompt.png>)
+![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Radix Phrase Extraction and Prompt.png>)
 
-_The Radix phrase-extraction feature. The model proposes candidates from Chinese text and instructions; the surrounding application still determines what is valid enough to save._
+_An app's phrase-extraction feature. The model proposes candidates from Chinese text and instructions; the surrounding app still determines what is valid enough to save._
 
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
@@ -155,7 +155,7 @@ A model trained across code, explanations, tutorials, bug reports, and technical
 
 The model is not executing a complete hidden program that it retrieves from memory. It generates a proposal token by token, conditioned on the request, its learned parameters, the available project context, and what it has already generated.
 
-When I ask Codex to alter the language-learning application, learned relationships help it locate likely screen-layout patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether those relationships produced a change worth keeping.
+When I ask Codex to alter an app, learned relationships help it locate likely screen-layout patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether those relationships produced a change worth keeping.
 
 That surrounding evidence matters because code can be syntactically correct yet educationally wrong. A quiz may compile and still teach the wrong distinction. A button may work while covering another control on an iPhone. The model shortens the distance from intention to implementation; it does not remove the need to judge the destination.
 
@@ -216,7 +216,7 @@ These checks do not prove that a program is perfect. They turn some important qu
 
 Translating one English sentence into Spanish rarely requires knowledge of every other sentence ever written. New code almost always has to fit into a system that already exists.
 
-For Radix, a small screen change may need to respect existing data models, navigation, saved learner records, naming conventions, accessibility settings, iPhone and iPad layouts, and the expectations built into other screens. A change that works alone may still break the application when it meets this surrounding context.
+For an app, a small screen change may need to respect existing data models, navigation, saved records, naming conventions, accessibility settings, iPhone and iPad layouts, and the expectations built into other screens. A change that works alone may still break the app when it meets this surrounding context.
 
 The model must therefore gather or be given project context: relevant files, existing functions, data definitions, design decisions, tests, and the purpose of the feature. This is why an AI coding agent is more useful when it can search the repository, inspect the running application, and use tools rather than receiving one isolated prompt.
 
@@ -292,9 +292,9 @@ The next frontier is **agent training**. Instead of judging the model only on on
 
 OpenAI describes work on agent post-training in terms of coding, tool use, computer use, long-horizon execution, factuality, calibrated reasoning, and evaluation environments. Anthropic's Constitutional AI work is one example of a different emphasis: using explicit principles, critique, and feedback to teach a model to be more helpful and safer. Google evaluates its frontier Gemini models across reasoning, multimodality, long context, and agentic tool use. The methods differ, but the destination is similar: a system that can take part in a longer, evidence-based workflow rather than merely produce a persuasive paragraph. [OpenAI, _Agent Post-Training, Connectors Research_](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/); [Anthropic, _Claude's Constitution_](https://www.anthropic.com/research/claudes-constitution); [Google DeepMind, _Gemini 3.1 Pro Model Card_](https://deepmind.google/models/model-cards/gemini-3-1-pro)
 
-### A Concrete Example: Improving Radix
+### A Concrete Example: Improving an App
 
-Consider a request in the Radix language-learning application:
+Consider a request in an app:
 
 > When a learner enters a character's origin, the iPhone keyboard covers the lower fields. Fix it without spoiling the iPad layout.
 
@@ -305,7 +305,7 @@ A more capable agent can approach the same task as a chain of evidence:
 ```text
 understand the user problem
 ↓
-find the relevant Radix screen and layout rules
+find the relevant screen and layout rules
 ↓
 identify the iPhone and iPad differences
 ↓
@@ -324,7 +324,7 @@ report what changed and what was checked
 
 The improvement is not simply that the newer model knows more Swift. It is better able to keep the objective, the project context, the device differences, compiler feedback, visual evidence, and verification in one working process.
 
-The same distinction applies to Radix's backup export. A weak solution can create a ZIP file. A stronger agent can trace which learner data are essential, find the existing export path, list the included resources, check that important records are not missing, build the application, and compare the result with the expected contents. The useful unit of progress is not “code was generated.” It is “a bounded engineering task was completed and checked.”
+The same distinction applies to an app's backup export. A weak solution can create a ZIP file. A stronger agent can trace which records are essential, find the existing export path, list the included resources, check that important records are not missing, build the app, and compare the result with the expected contents. The useful unit of progress is not “code was generated.” It is “a bounded engineering task was completed and checked.”
 
 This also explains why an upgrade does not automatically solve every problem. The better workflow depends on the system around the model: access to the project, the compiler, tests, the Simulator, screenshots, clear permissions, and human review. A stronger model without those tools is still partly guessing. A model with those tools must still be constrained, because greater ability to act creates greater need for verification and authority boundaries.
 

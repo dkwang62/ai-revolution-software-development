@@ -18,7 +18,7 @@ An agent is an AI system that does more than answer a question. It can use tools
 
 ## Agentic AI
 
-Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building a language-learning application, the AI coding agent displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
+Agentic AI describes AI systems that can pursue an objective through a sequence of decisions and actions. While building an app, the AI coding agent displayed agentic behaviour when it inspected the project, changed code, ran a build, interpreted a failure, revised the change, and checked again.
 
 ## Agentic Loop
 

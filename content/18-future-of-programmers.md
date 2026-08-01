@@ -2,7 +2,7 @@
 title: "The Future of Programmers"
 ---
 
-My first attempt to move the language-learning application from a simple web framework into native Apple software failed.
+My first attempt to move an app from a simple web framework into native Apple software failed.
 
 The AI could generate fragments and explain what ought to happen, but it could not hold the whole migration together. A proposed fix would fail to build; the next proposal would remain too close to the first. Although I was the non-programmer in the partnership, I sometimes had to suggest the technical escape route.
 

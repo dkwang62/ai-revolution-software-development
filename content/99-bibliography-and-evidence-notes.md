@@ -180,7 +180,7 @@ The manuscript separates three kinds of statement:
 
 ```text
 Observed or measured
-= supported by a cited source or documented experience building the language-learning application.
+= supported by a cited source or documented experience building an app.
 
 Inferred
 = an interpretation of evidence, economics, or technical direction.

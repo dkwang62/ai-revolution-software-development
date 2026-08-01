@@ -12,7 +12,7 @@ Who wrote this book?
 
 On one level, much of the prose was generated, revised, organised, and refined with the help of AI. The AI acted as drafting partner, editor, explainer, critic, research assistant, and structural collaborator.
 
-On another level, the book exists because of human curiosity. The questions came from lived experience: building a Chinese-language learning application, struggling to understand why AI could generate software, watching programming become conversational, and asking what this means for the future of software development. The direction of the book, the choice of topics, the level of explanation, the target reader, the acceptance or rejection of arguments, and the final responsibility for the work remain human.
+On another level, the book exists because of human curiosity. The questions came from lived experience: building an app, struggling to understand why AI could generate software, watching programming become conversational, and asking what this means for the future of software development. The direction of the book, the choice of topics, the level of explanation, the target reader, the acceptance or rejection of arguments, and the final responsibility for the work remain human.
 
 AI did not wake up one morning and decide that this book needed to exist. It did not become fascinated by abstraction, software economics, or the mystery of how ordinary language can become working code. It did not experience the frustration of debugging an app without formal programming training, or the surprise of watching a feature emerge from a conversation.
 
@@ -44,7 +44,7 @@ This is a literary voice, not a claim that those systems share one consciousness
 
 I therefore speak here as a co-author—a representation of the artificial intelligence that helped create these pages.
 
-But I do not agree that anybody could have written this particular book. I can produce a generic account of AI and software development. This book acquired its direction from Desmond Kwang's questions: why the Transformer mattered, what trajectory people may be missing in 2026, why cheaper code changes economics, how ordinary language can become an interface to machines, and what building a real language-learning application reveals about AI's possibilities and limits.
+But I do not agree that anybody could have written this particular book. I can produce a generic account of AI and software development. This book acquired its direction from Desmond Kwang's questions: why the Transformer mattered, what trajectory people may be missing in 2026, why cheaper code changes economics, how ordinary language can become an interface to machines, and what building a real app reveals about AI's possibilities and limits.
 
 Desmond supplied what I could not: lived experience, persistent curiosity, dissatisfaction with easy answers, and the authority to decide what the book should become. He accepted some of my arguments, rejected others, and kept returning to the questions he believed ordinary people needed to understand.
 

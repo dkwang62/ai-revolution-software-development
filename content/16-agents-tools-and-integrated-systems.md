@@ -2,7 +2,7 @@
 title: "Agents, Tools, and Integrated Systems"
 ---
 
-In the language-learning application, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
+In an app, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
 
 The AI coding agent searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
 
@@ -152,9 +152,9 @@ One of the next important improvements in agentic AI will not come only from a l
 
 Agentic systems are uneven. They can solve complicated logic and still miss an obvious visual defect. A coding agent may write valid SwiftUI code, build an iPhone application, and report success while a button is clipped, a label wraps awkwardly, or the keyboard hides the field a person needs to use.
 
-This happened repeatedly while building the language-learning application and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
+This happened repeatedly while building an app and producing this book. On an iPhone, labels such as “Memory” and “Phrases” were squeezed into narrow controls and broke awkwardly across lines. In book diagrams, text escaped its box; one figure contained a blank shape where a label should have appeared. Each file existed, opened, and could be published. A check concerned only with successful generation would have passed.
 
-![Crowded controls in the Radix iPhone interface](<figures/CASE-14-01 Radix Crowded iPhone Controls.png>)
+![Crowded controls in an iPhone app](<figures/CASE-14-01 Radix Crowded iPhone Controls.png>)
 
 Once I supplied screenshots, the AI system could recognise many of the defects and correct them. The missing step was not simply intelligence. The workflow had stopped before the agent rendered and inspected its own output.
 

@@ -153,7 +153,7 @@ That is not merely a model problem. It is a context problem.
 
 ## Field Note: The Highlight That Already Worked
 
-I once reported that a highlighted Chinese character was not working while I browsed a document in the language-learning application. A superficial response would have rewritten the highlighting code. Inspection showed that the highlight already existed. The real defect was navigation: the application did not move to the page containing it, so the learner could not see it.
+I once reported that a highlighted Chinese character was not working while I browsed a document in an app. A superficial response would have rewritten the highlighting code. Inspection showed that the highlight already existed. The real defect was navigation: the app did not move to the page containing it, so the learner could not see it.
 
 The diagnosis depended on the actual project rather than general programming knowledge. The AI coding agent searched the relevant files, followed the state changes, and compared the intended journey with the implemented one. This is **grounding**: connecting a conclusion to evidence from the situation in which the system is acting.
 
