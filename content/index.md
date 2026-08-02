@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 47**
+**Version 1.0.0 · Build 48**
 
 ![Book cover](figures/cover.png)
 
@@ -47,7 +47,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 
 - [[11-communication-becomes-the-interface|Chapter 9: Communication Becomes the Interface]]
 - [[12-requirements-engineering|Chapter 10: Requirements Engineering]]
-- [[side-chapter-building-radix-with-codex|Case Study: Building Radix with Codex]]
+- [[side-chapter-building-radix-with-codex|Case Study: Radix Began with One Search Box]]
 - [[13-precision-and-probabilistic-ai|Chapter 11: Precision and Probabilistic AI]]
 - [[14-economics-of-trust|Chapter 12: The Economics of Trust]]
 - [[15-legacy-problem|Chapter 13: The Legacy Problem]]

@@ -74,7 +74,7 @@ The next version was not merely a reply in a chat. It was an app that could be s
 
 This is **rapid iteration**: improving something through short, repeated cycles of trying, observing, and revising. It changes several parts of software work at once.
 
-The fuller story, including the Streamlit prototype, the database decisions, the move to native Swift, and the later refactors, appears in [[side-chapter-building-radix-with-codex|Case Study: Building Radix with Codex]].
+The fuller story, beginning with one search box and growing through Streamlit, native Swift, and later refactors, appears in [[side-chapter-building-radix-with-codex|Case Study: Radix Began with One Search Box]].
 
 - **Rapid prototyping:** A half-formed idea can become a small working example while it is still fresh.
 - **Planning through development:** Planning does not disappear. Instead of pretending that every detail is known at the start, the plan becomes clearer as people see and use each version.
