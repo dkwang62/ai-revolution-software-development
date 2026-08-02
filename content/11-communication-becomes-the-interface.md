@@ -56,13 +56,11 @@ to:
 
 That is a higher-level programming problem.
 
-## Side Story: How Radix Was Built Through Rapid Iteration
+## A Short Example: Radix
 
 The magical feeling of AI-assisted coding is not usually that one sentence creates a perfect product. It is that the distance between an idea and a useful test becomes much shorter.
 
-In the older way of working, a person with an idea often had to plan everything in advance, find someone with the required technical skills, wait for a version to be built, and only then discover whether the idea made sense on a real screen. That made early mistakes expensive. It also meant that many small ideas were never tried.
-
-Radix is the book's practical example. It is an app created to help a learner work with Chinese text: capture material, find useful phrases and characters, and return to them for study. It began with a product idea, not with a complete technical plan. What should a learner see first? How should captured text become useful study material? Which choices should be easy on a small phone screen and which need more room on an iPad? Those questions became clearer by building and using small versions of the app.
+Radix is the book's practical example. It is an app created to help a learner work with Chinese text: capture material, find useful phrases and characters, and return to them for study. It began with a product idea, not with a complete technical plan. The questions became clearer by building and using small versions of the app.
 
 With an AI coding agent, the loop can be much faster:
 
@@ -70,17 +68,13 @@ With an AI coding agent, the loop can be much faster:
 idea → small prototype → use it → notice what is wrong → revise it → test again
 ```
 
-Radix was built through that loop from the beginning. One early goal was a short quiz that tested whether a learner could recognise one Chinese character. The first version sounded reasonable in theory, but failed as soon as I used it: the answer was already visible in the question. I could show Codex the screen and describe the experience I wanted instead: a sentence with a blank, four similar-looking character choices, and a focus on useful verbs.
+One early quiz showed why this matters. It was meant to test character recognition, but the first version revealed the answer in the question. The next version used a sentence with a blank and similar-looking choices. Later trials revealed that the questions needed to be random, the quiz needed to be shorter, and the learner needed a Simplified or Traditional display choice. Codex could inspect the project, make and check each revision; I could use the result and decide whether it was actually better.
 
-That was not the end of the specification. On the next use, the questions appeared in the same order each time and a supposed “quick” quiz contained one hundred questions. The requirement became clearer only through experience: randomise the questions and choices, ask twenty at a time, and let the learner choose Simplified or Traditional Chinese. Codex could inspect the project, change the quiz rules, and run checks; I could use the result and decide whether it was actually better.
-
-The same pattern applied to the app's structure. As Radix gained more Study areas, separate screens and controls began to duplicate each other and made navigation harder to understand. Codex helped refactor them into related sections controlled by one shared choice, while keeping the important controls visible. *Refactoring* means improving the internal structure of software without changing its intended purpose. Here it made the app easier to extend without asking the user to learn a more complicated route through it.
-
-When a row of controls later overflowed the left and right edges of an iPad screen, I did not need to know the name of the layout rule that had failed. I could show Codex the screenshot, explain what a learner should be able to see, and ask it to investigate. It could find the relevant code, propose a correction, and run checks. I could then decide whether the changed screen actually worked.
-
-The next version was not merely a reply in a chat. It was an app that could be seen and used. That matters because an imagined feature can sound sensible while a real feature can reveal a confusing flow, an awkward label, a missing exception, or a screen that simply does not fit. Reality joined the conversation sooner.
+The next version was not merely a reply in a chat. It was an app that could be seen and used. A real screen can reveal a confusing flow, an awkward label, a missing exception, or a row of controls that overflows an iPad. Reality joins the conversation sooner.
 
 This is **rapid iteration**: improving something through short, repeated cycles of trying, observing, and revising. It changes several parts of software work at once.
+
+The fuller story, including the Streamlit prototype, the database decisions, the move to native Swift, and the later refactors, appears in [[side-chapter-building-radix-with-codex|Case Study: Building Radix with Codex]].
 
 - **Rapid prototyping:** A half-formed idea can become a small working example while it is still fresh.
 - **Planning through development:** Planning does not disappear. Instead of pretending that every detail is known at the start, the plan becomes clearer as people see and use each version.
