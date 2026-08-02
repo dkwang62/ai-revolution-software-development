@@ -12,7 +12,7 @@ I did not know what language to program in. I did not know what a database was f
 
 Radix grew from that picture.
 
-By the time it reached its present form, Radix had become a full personal Chinese-learning workspace. A learner can capture Chinese from a photograph, file, clipboard image, or typed text; keep the original reading; use AI to check uncertain OCR; turn a saved page into linked sentences and phrases; and then inspect individual characters through pinyin, meanings, component analysis, variants, stroke animation, pronunciation, and related examples. The same material can become personal notes, favourites, searches, quizzes, conversation practice, and a learning history that can be backed up and moved between devices.
+By the time it reached its present form, Radix had become a serious rival to the best Chinese-learning apps on the App Store. It had become a full personal Chinese-learning workspace. A learner can capture Chinese from a photograph, file, clipboard image, or typed text; keep the original reading; use AI to check uncertain OCR; turn a saved page into linked sentences and phrases; and then inspect individual characters through pinyin, meanings, component analysis, variants, stroke animation, pronunciation, and related examples. The same material can become personal notes, favourites, searches, quizzes, conversation practice, and a learning history that can be backed up and moved between devices.
 
 That combination is unusual. Established Chinese-learning apps are powerful, but they commonly centre on one main job: a dictionary and reference tool, a curated reading library, or a handwriting and review system. Radix joins the whole learner's journey around material encountered in daily life:
 
