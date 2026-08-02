@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 48**
+**Version 1.0.0 · Build 49**
 
 ![Book cover](figures/cover.png)
 
@@ -23,18 +23,19 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 ### Front Matter
 
 - [[00-author-and-ai-note|Author and AI Note]]
+- [[00-preface|Preface: Why This Book Matters]]
 - [[01-introduction|Introduction]]
 
-### Part I - The Economics of Software
+### Part I · The Economics of Software
 
 - [[02-economics-of-software-development|Chapter 1: The Economics of Software Development]]
 
-### Part II - The History of Abstraction
+### Part II · The History of Abstraction
 
 - [[03-hidden-engine-of-computing|Chapter 2: The Hidden Engine of Computing]]
 - [[04-programming-as-representation|Chapter 3: Programming as Representation]]
 
-### Part III - The Economics of Intelligence
+### Part III · The Economics of Intelligence
 
 - [[05-what-is-information|Chapter 4: What Is Information?]]
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
@@ -43,7 +44,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 - [[09-economics-of-models|Chapter 7: The Economics of Models]]
 - [[10-context-what-the-model-knows-right-now|Chapter 8: Context: What the Model Knows Right Now]]
 
-### Part IV - Engineering with AI
+### Part IV · Engineering with AI
 
 - [[11-communication-becomes-the-interface|Chapter 9: Communication Becomes the Interface]]
 - [[12-requirements-engineering|Chapter 10: Requirements Engineering]]
@@ -57,7 +58,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 
 - [[interlude-a-machine-from-2026-arrives-in-1981|A Machine From 2026 Arrives in 1981]]
 
-### Part V - The Future
+### Part V · The Future
 
 - [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 15: What Becomes Scarce When Code Becomes Cheap?]]
 - [[18-future-of-programmers|Chapter 16: The Future of Programmers]]

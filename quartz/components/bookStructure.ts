@@ -13,13 +13,18 @@ export type BookSection = {
 
 export const bookSections: BookSection[] = [
   {
-    title: "Front matter",
+    title: "Front Matter",
     entries: [
       { slug: "index" as FullSlug, title: "Book Home", shortTitle: "Book Home" },
       {
         slug: "00-author-and-ai-note" as FullSlug,
         title: "Author and AI Note",
         shortTitle: "Author and AI Note",
+      },
+      {
+        slug: "00-preface" as FullSlug,
+        title: "Preface: Why This Book Matters",
+        shortTitle: "Preface: Why This Book Matters",
       },
       { slug: "01-introduction" as FullSlug, title: "Introduction", shortTitle: "Introduction" },
     ],
@@ -98,6 +103,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "10. Requirements Engineering",
       },
       {
+        slug: "side-chapter-building-radix-with-codex" as FullSlug,
+        title: "Case Study: Radix Began with One Search Box",
+        shortTitle: "Case Study: Radix Began with One Search Box",
+      },
+      {
         slug: "13-precision-and-probabilistic-ai" as FullSlug,
         title: "Chapter 11: Precision and Probabilistic AI",
         shortTitle: "11. Precision and Probabilistic AI",
@@ -146,6 +156,11 @@ export const bookSections: BookSection[] = [
         slug: "19-enterprise-intelligence-layer" as FullSlug,
         title: "Chapter 17: The Enterprise Intelligence Layer",
         shortTitle: "17. The Enterprise Intelligence Layer",
+      },
+      {
+        slug: "side-chapter-from-demonstration-to-daily-work" as FullSlug,
+        title: "Side Chapter: From Demonstration to Daily Work",
+        shortTitle: "Side Chapter: From Demonstration to Daily Work",
       },
       {
         slug: "20-five-year-and-ten-year-scenarios" as FullSlug,
