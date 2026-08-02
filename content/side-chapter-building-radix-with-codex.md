@@ -12,6 +12,24 @@ I did not know what language to program in. I did not know what a database was f
 
 Radix grew from that picture.
 
+By the time it reached its present form, Radix had become a full personal Chinese-learning workspace. A learner can capture Chinese from a photograph, file, clipboard image, or typed text; keep the original reading; use AI to check uncertain OCR; turn a saved page into linked sentences and phrases; and then inspect individual characters through pinyin, meanings, component analysis, variants, stroke animation, pronunciation, and related examples. The same material can become personal notes, favourites, searches, quizzes, conversation practice, and a learning history that can be backed up and moved between devices.
+
+That combination is unusual. Established Chinese-learning apps are powerful, but they commonly centre on one main job: a dictionary and reference tool, a curated reading library, or a handwriting and review system. Radix joins the whole learner's journey around material encountered in daily life:
+
+```text
+capture Chinese from the world
+↓
+check and understand it
+↓
+inspect its characters, phrases, and sentences
+↓
+practise it
+↓
+keep what matters
+```
+
+The remarkable point is not that an AI produced the finished application at the click of a button. It is that someone who began with no programming knowledge could grow one personal need into a serious, feature-rich product—one practical improvement at a time. AI did not merely make one screen faster to build. It made it economically possible to keep following the learner's next question until a simple search box became a system.
+
 ## A Morning-by-Morning Project
 
 The development was haphazard in the most honest sense: I did not know the full requirements on day one because I could not yet see the full possibility.
