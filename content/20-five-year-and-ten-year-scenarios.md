@@ -10,10 +10,6 @@ The preceding chapters described the economic and organisational system forming 
 
 Imagine an ordinary morning in this future. A teacher is worried about one student who understands spoken explanations but struggles with written exercises. She does not search an app store for a product designed for the average learner. She describes the difficulty, shows examples of the student's work, and asks for a two-week experiment. An AI system creates a small learning tool, checks it against the school's privacy rules, and adapts it as evidence arrives. The software may be discarded when it has served its purpose.
 
-At a clinic, a doctor prepares for an unusual case. The AI does not replace the diagnosis or carry legal responsibility. It gathers the relevant history, finds comparable research, identifies contradictions and shows where the evidence is weak. Expertise that once required access to a major medical centre becomes available in a smaller community, while the doctor remains responsible for the decision.
-
-In a laboratory, researchers describe the properties they need from a new material. Models explore possibilities, simulations reject weak candidates and robotic equipment tests the most promising. The scientists spend less time searching blindly and more time deciding which questions matter and whether the evidence deserves belief.
-
 At a small factory, the owner wants to reduce waste from one production line. The system studies sensor records, proposes a change, simulates the consequences, generates the software and prepares a bounded trial. Nothing touches the real machinery until safety rules are satisfied and an authorised person approves it.
 
 The scenes share one pattern. AI makes it cheap to propose, explore, and create; evidence, tests, permission, and professional judgement decide what may be trusted or done. Simple work is handled locally and cheaply. Difficult problems receive more reasoning, specialised models, and remote computing. The system remembers enough of the task to continue, but access to private information remains controlled.

@@ -214,8 +214,4 @@ AI may dramatically reduce the cost of producing first drafts, prototypes, expla
 
 This is not a failure of AI. It is the normal economics of reliability.
 
-## Bridge to Trust
-
-Precision is not valuable only because engineers admire correctness. It determines whether people will rely on the system when a mistake has consequences.
-
-Tests, structured outputs, validation, fallbacks, and human escalation turn a model's uncertain proposal into bounded behaviour. The next question is therefore economic as well as technical: when is that surrounding evidence strong enough for an organisation to trust the system?
+Precision is not valuable only because engineers admire correctness. It determines whether people will rely on the system when a mistake has consequences. Tests, structured outputs, validation, fallbacks, and human escalation turn a model's uncertain proposal into bounded behaviour. The next question is therefore economic as well as technical: when is that surrounding evidence strong enough for an organisation to trust the system?

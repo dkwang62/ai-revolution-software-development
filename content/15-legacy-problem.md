@@ -190,23 +190,7 @@ Migrate carefully
 
 In other words, AI is not magic dust sprinkled over an old mainframe. It is a set of tools for reducing the cost of understanding, connecting, testing, and gradually changing software that cannot simply be switched off.
 
-This does not mean AI replaces legacy systems automatically. The more realistic and valuable role is assistance:
-
-```text
-Understand
-↓
-Document
-↓
-Test
-↓
-Wrap
-↓
-Integrate
-↓
-Migrate gradually
-```
-
-AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software.
+AI can reduce the cost of rediscovering what an organisation already knows but has buried inside software. Its role is assistance: understand, document, test, wrap, integrate, and migrate gradually.
 
 Another way to say this is that AI-assisted modernisation is not one action. It is a collection of narrower jobs: code analysis, documentation, test generation, data mapping, API wrapping, security review, cloud preparation, monitoring, and gradual migration. Vendor roadmaps often package these activities under the single phrase "AI-driven legacy modernisation", but readers should hear the phrase carefully. The useful question is always: which part of the modernisation problem is AI helping with?
 

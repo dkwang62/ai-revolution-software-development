@@ -49,25 +49,13 @@ This is where the Enterprise Intelligence Layer becomes real.
 
 ## The Custom SAP Problem
 
-SAP is a useful example because it shows that "legacy" does not always mean obsolete, unsupported, or badly engineered. Sometimes legacy means deeply embedded.
+SAP shows that legacy need not mean obsolete or unsupported; it can mean deeply embedded. In a large company, SAP may carry finance, procurement, inventory, manufacturing, sales, logistics, and reporting while connecting to payroll, banks, suppliers, warehouses, factory systems, customer portals, and smaller applications built over decades. It is closer to a business's nervous system than to an accounting package.
 
-A heavily customised SAP system may run finance, procurement, inventory, manufacturing, sales, logistics, and reporting. It may connect to payroll, banks, suppliers, tax authorities, warehouses, barcode scanners, factory systems, customer portals, business intelligence tools, and dozens of smaller applications built over decades.
-
-To a lay reader, SAP may look like "the accounting system." Inside a large company, it can be closer to the nervous system. Purchase orders, invoices, inventory movements, production plans, approval chains, cost centres, revenue recognition, and management reports all pass through it.
-
-That is why replacing it is hard. The risk is not only that the new software might crash. The greater risk is that the new system might behave almost the same as the old one while quietly losing one rule that matters.
-
-Perhaps a report no longer matches the finance team's reconciliation process. Perhaps an inventory adjustment is posted in the wrong period. Perhaps a factory receives the wrong planning signal. Perhaps a tax field is interpreted differently. Perhaps an interface that nobody remembered still feeds a downstream system every night.
-
-Modernisation fails when the organisation discovers too late that the old system contained knowledge nobody had written down.
+The replacement risk is that a new system behaves almost like the old one while quietly losing a rule that matters: a reconciliation report no longer fits the finance process, an inventory adjustment reaches the wrong period, a tax field is interpreted differently, or a forgotten interface still feeds a downstream system overnight. Modernisation fails when that undocumented knowledge is discovered too late.
 
 ## From the Legacy Problem to the Enterprise Layer
 
-[[15-legacy-problem|Chapter 13]] described several kinds of legacy integration pain: abandoned systems, customised enterprise platforms, core banking and transaction systems, industrial-control systems, data-and-reporting conflicts, and integration sprawl. SAP migration and bank-core modernisation are two anchor examples, but they point to the same deeper problem.
-
-The organisation depends on software that embodies business knowledge, yet that knowledge is scattered across code, configuration, data, interfaces, documents, and people's memories.
-
-This chapter uses the customised SAP case for a different purpose. [[15-legacy-problem|Chapter 13]] asked why legacy systems are hard to replace. This chapter asks what an enterprise must build if it wants AI to help with that class of problem again and again, rather than treating each migration as a one-off rescue project.
+[[15-legacy-problem|Chapter 13]] described the broader kinds of legacy integration pain. This chapter uses customised SAP for a different purpose: it asks what an enterprise must build if AI is to help with this class of problem repeatedly, rather than treating each migration as a one-off rescue project.
 
 That distinction matters because it prevents the argument from becoming unfair to SAP or any other serious enterprise vendor. SAP itself has a real modernisation path. SAP has announced [mainstream maintenance for SAP Business Suite 7 core applications until the end of 2027](https://support.sap.com/en/release-upgrade-maintenance/maintenance-information/maintenance-strategy/s4hana-business-suite7.html), with optional extended maintenance until the end of 2030. SAP also provides S/4HANA conversion guidance covering readiness checks, simplification items, add-on compatibility, sizing, and custom-code analysis.
 
@@ -111,51 +99,9 @@ This is not glamorous AI. It is economically powerful AI.
 
 ## From One Project to Reusable Infrastructure
 
-For a lay reader, the easiest way to understand this is to imagine an old city.
+[[15-legacy-problem|Chapter 13]] explained why a living enterprise system must be changed in stages rather than demolished and rebuilt at once. This chapter begins at the next question: what should a company retain after one carefully managed modernisation project is finished?
 
-The city still works. People live there. Roads, bridges, water pipes, power cables, tunnels, offices, and houses are all connected. But nobody has a complete map. Some records are old. Some changes were made during emergencies. Some pipes pass under buildings that were constructed later.
-
-You cannot demolish the city and rebuild it over a weekend. You need to modernise it while people continue living there.
-
-Enterprise systems are similar. A heavily customised SAP system, a core banking platform, or an old manufacturing system may still process essential work every day. The goal is not to tear it out recklessly. The goal is to understand it well enough to change it safely.
-
-[[15-legacy-problem|Chapter 13]] described the practical AI jobs involved: translate old code, map dependencies, document business rules, wrap old functions behind safer interfaces, and migrate carefully. The enterprise-layer question is what remains after those jobs are done.
-
-If the company treats every modernisation project as isolated consulting work, the knowledge disappears again when the project ends. If it captures the recovered rules, maps, tests, approvals, and integration patterns in reusable form, the project becomes the beginning of an enterprise memory.
-
-The pattern looks like this:
-
-```text
-Legacy System Pain
-        |
-        v
-AI-Assisted Understanding
-        |
-        v
-Business Rule Extraction
-        |
-        v
-Dependency Mapping
-        |
-        v
-API Wrappers and Integration Layers
-        |
-        v
-Tests, Dual Running, and Human Review
-        |
-        v
-Gradual Migration
-        |
-        v
-Reusable Enterprise Knowledge
-        |
-        v
-Enterprise Intelligence Layer
-```
-
-Notice what happens. The company starts with one painful project. But in order to solve it, the company begins building reusable knowledge infrastructure: indexed code, linked documents, permissions, retrieval, testing, audit trails, and business-rule libraries.
-
-That infrastructure is the beginning of the Enterprise Intelligence Layer.
+If the recovered rules, dependency maps, tests, approvals, and integration patterns disappear into a project archive, the next programme pays for discovery all over again. If they are kept in reusable, permissioned form, the project starts to create enterprise memory: indexed code, linked documents, reliable definitions, tests, audit trails, and business-rule libraries. That reusable memory is the beginning of an Enterprise Intelligence Layer.
 
 ## The Model Is Not the Enterprise
 
@@ -226,28 +172,9 @@ The enterprise must own a usable representation of itself: its code, documents, 
 
 When an experienced employee retires, changes job, or forgets why a decision was made, some of that memory disappears. When a system has been modified for decades without complete documentation, business knowledge becomes trapped inside code. AI changes the value of this scattered knowledge. It becomes economically valuable when the organisation can find it, control access to it, interpret it, and reuse it.
 
-A model's **context window** is the information it can consider during one reasoning session. Enterprise knowledge is the much larger universe of information held by the organisation. The two are related, but not identical.
+A model's **context window** is the information it can consider during one reasoning session. Enterprise knowledge is the much larger universe of information held by the organisation. Retrieval selects the small, authorised portion of that larger memory that is relevant to the current task. [[10-context-what-the-model-knows-right-now|Chapter 8]] explains this relationship in detail.
 
-```text
-Enterprise Knowledge
-        |
-        v
-Knowledge Organisation
-        |
-        v
-Retrieval
-        |
-        v
-Relevant Context
-        |
-        v
-AI Context Window
-        |
-        v
-Answer or Action
-```
-
-The context window is working memory. Enterprise knowledge is long-term organisational memory. The economic challenge is not simply to buy a model with a larger window. A model can read millions of tokens and still fail if it receives irrelevant, outdated, contradictory, or unauthorised material.
+The economic challenge is not simply to buy a model with a larger window. A model can read millions of tokens and still fail if it receives irrelevant, outdated, contradictory, or unauthorised material.
 
 Think of retrieval as a skilled librarian preparing a small research pack, rather than wheeling the entire library into the meeting. In a customised SAP migration, the useful pack may contain the exact custom program, configuration note, interface definition, test case, and finance policy relevant to one question. This is **effective context**: not the most information, but the most relevant authorised information.
 
@@ -386,25 +313,9 @@ If AI can reduce the effort required to understand custom code, map dependencies
 
 Over time, the organisation discovers that these projects require similar foundations: identity, retrieval, permissions, logging, evaluation, monitoring, integration, human approval, and audit trails. The shared layer emerges because repeated local investments create a need for common infrastructure.
 
-This is how many major enterprise technologies spread. Cloud computing did not always begin as a single company-wide strategy. Often one application moved first, then another, then another. Eventually the platform became obvious. Enterprise AI may follow the same pattern.
+This is how major enterprise technologies often spread: one funded application moves first, then the common platform becomes visible. The system integrators who once connected mainframes, ERP systems, databases, and web applications may now connect those systems to AI.
 
-There is a historical irony. The system integrators who once helped enterprises connect mainframes, ERP systems, databases, and web applications may now be asked to connect those same systems to AI. Enterprises do not adopt new technology in a vacuum. They adopt it through the systems they already own.
-
-Before AI, this connecting work was often called **middleware**: software that carried messages and data between systems that could not otherwise communicate. The old question was:
-
-```text
-How do we make different systems understand each other?
-```
-
-The new Enterprise AI question is:
-
-```text
-How do we make a model understand the enterprise?
-```
-
-The new question is broader because a model must understand meaning and business rules as well as move data. The new layer still uses familiar bridges such as APIs—agreed ways for software to request information or an action—but adds retrieval, permission models, semantic search, tests, audit logs, and human approval points.
-
-This is intelligence middleware—or, more memorably, enterprise superglue. It does not replace SAP, mainframes, databases, or document repositories. It gives AI a controlled way to see them, retrieve from them, reason over them, and sometimes act through them.
+Before AI, this work was called **middleware**: software that carried messages and data between systems that could not otherwise communicate. Enterprise AI extends it. The new layer still uses APIs—agreed ways for software to request information or an action—but adds retrieval, permission models, semantic search, tests, audit logs, and human approval points. It is intelligence middleware, or enterprise superglue: a controlled way for AI to see, retrieve from, reason over, and sometimes act through the systems the enterprise already owns.
 
 The work also explains why commodity AI is not enough. A public model can know programming, accounting terminology, or general business practice. It does not automatically know a bank's lending exceptions, a manufacturer's plant-specific maintenance procedures, an airline's reservation integrations, or a company's twenty years of SAP customisations. That knowledge has to be exposed safely, organised carefully, governed properly, and embedded into real workflows.
 

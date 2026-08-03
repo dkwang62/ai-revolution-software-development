@@ -205,8 +205,4 @@ Software development is the clearest case study because it is already a knowledg
 
 This is why the book is not simply about AI writing code. It is about the industrialisation of certain forms of cognitive work.
 
-## Bridge to Context
-
-Part III has explained how models acquire capability and why different uses carry different costs. One missing factor determines whether that general capability becomes useful in a real project: what the model can see at the moment it works.
-
-A powerful model without the relevant files, rules, history, or examples may still make a poor decision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines that bridge between general intelligence and a particular task.
+Part III has explained how models acquire capability and why different uses carry different costs. One missing factor determines whether that general capability becomes useful in a real project: what the model can see at the moment it works. A powerful model without the relevant files, rules, history, or examples may still make a poor decision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines that link between general intelligence and a particular task.

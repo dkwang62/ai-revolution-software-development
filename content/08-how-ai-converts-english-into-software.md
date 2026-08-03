@@ -221,10 +221,10 @@ A plausible output becomes:
 You do not need to understand every symbol in the code below. Notice only that the longer request produced code containing each rule the user specified: the name, missing values, the empty-list error, rounding, type information, and a short description.
 
 ```python
-from typing import Iterable
+from typing import Iterable, Optional
 
 
-def average_score(scores: Iterable[float | None]) -> float:
+def average_score(scores: Iterable[Optional[float]]) -> float:
     """Return the average score rounded to two decimal places, ignoring None values."""
     valid_scores = [score for score in scores if score is not None]
     if not valid_scores:
@@ -402,18 +402,4 @@ It may also struggle when the best solution is unusual. Models tend to generate 
 
 This is why human judgement remains central. AI can generate candidate solutions. It can accelerate exploration. It can make expertise more accessible. But someone must still decide whether the result is appropriate.
 
-## Bridge to Model Economics
-
-We now understand the basic mechanism behind AI-generated software.
-
-Software is procedure.
-
-Procedures can be represented in many forms.
-
-AI models learn mathematical relationships among those representations.
-
-Inference uses the model and context to generate a likely useful output.
-
-But this mechanism has costs. Larger models cost more. Longer contexts cost more. Better reasoning may cost more. Multimodal capability costs more. Training is different from inference. Model versions change. Different models behave differently.
-
-[[09-economics-of-models|The Economics of Models]] turns from mechanism to cost.
+We now understand the basic mechanism behind AI-generated software: software is procedure, procedures can be represented in many forms, and a model uses learned relationships and current context to produce a likely useful output. The next question is economic. Models, longer contexts, deliberate reasoning, multimodal input, and verification all have costs. [[09-economics-of-models|The Economics of Models]] turns from mechanism to cost.
