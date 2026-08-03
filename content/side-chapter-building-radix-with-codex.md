@@ -14,6 +14,10 @@ Radix grew from that picture.
 
 By the time it reached its present form, Radix had become a serious rival to the best Chinese-learning apps on the App Store. It had become a full personal Chinese-learning workspace. A learner can capture Chinese from a photograph, file, clipboard image, or typed text; keep the original reading; use AI to check uncertain OCR; turn a saved page into linked sentences and phrases; and then inspect individual characters through pinyin, meanings, component analysis, variants, stroke animation, pronunciation, and related examples. The same material can become personal notes, favourites, searches, quizzes, conversation practice, and a learning history that can be backed up and moved between devices.
 
+![Radix brings capture, browsing, character detail, phrases, and contextual actions into one learning workspace](<figures/CASE-03-01 Radix Learning Workspace.png>)
+
+*Radix on iPad: a learner can move from a captured page to phrases, character detail, meanings, notes, and next actions without losing the original material.*
+
 That combination is unusual. Established Chinese-learning apps are powerful, but they commonly centre on one main job: a dictionary and reference tool, a curated reading library, or a handwriting and review system. Radix joins the whole learner's journey around material encountered in daily life:
 
 ```text
