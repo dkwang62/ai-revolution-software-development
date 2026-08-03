@@ -189,7 +189,7 @@ The important distinction is that an enterprise edition is usually not a complet
 
 A personal assistant mainly works with one person's chosen conversations, files, preferences, and tools. An enterprise system must work with shared knowledge and shared authority. It needs to know which employee may see which customer record, which agent may connect to which system, which action needs approval, and what evidence must be retained for later review.
 
-Microsoft is perhaps closest to this system-level vision. Its Copilot Studio allows organisations to create agents connected to Microsoft 365, Dynamics, Fabric, and non-Microsoft systems. Its agent identities make an agent's connector permissions visible to administrators, with audit logging and identity-governance controls. [Microsoft, _Extend the Capabilities of Your Agent_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-connectors-in-copilot-studio); [Microsoft, _Automatically Create Microsoft Entra Agent IDs_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities)
+Microsoft provides one clear example of this system-level direction. Its Copilot Studio allows organisations to create agents connected to Microsoft 365, Dynamics, Fabric, and non-Microsoft systems. Its agent identities make an agent's connector permissions visible to administrators, with audit logging and identity-governance controls. [Microsoft, _Extend the Capabilities of Your Agent_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-connectors-in-copilot-studio); [Microsoft, _Automatically Create Microsoft Entra Agent IDs_](https://learn.microsoft.com/en-us/microsoft-copilot-studio/admin-use-entra-agent-identities)
 
 OpenAI and Anthropic offer other parts of the same foundation: enterprise workspaces, single sign-on, member and role management, audit or data-retention controls, internal knowledge connections, larger working context, and tools for serious work. [OpenAI, _What Is ChatGPT Enterprise?_](https://help.openai.com/en/articles/8265053-what-is-chatgpt-enterprise); [Anthropic, _What Is the Claude Enterprise Plan?_](https://support.anthropic.com/en/articles/9797531-what-is-the-claude-enterprise-plan)
 
@@ -197,15 +197,28 @@ These products are not yet a finished Enterprise Cognitive Operating System. The
 
 That is why the term **Enterprise Intelligence Layer** is more useful than “enterprise model.” The model supplies general capability. The layer makes that capability specific to an organisation: it brings the right context, applies the right controls, connects the right systems, and ensures that an action is traceable to the people and rules that authorised it.
 
-### The Global Competitive Pattern
+### A Contest Across Layers, Not One League Table
 
-As of 2026, Microsoft is arguably best positioned to supply the **enterprise operating layer** because it combines workplace software, collaboration, identity, security, business applications, cloud services, developer tools, and a governed agent platform. Its advantage is not that it necessarily owns the best model for every task. Its advantage is that many organisations already conduct work inside the systems that Microsoft can connect.
+There is no defensible overall ranking of AI vendors. The companies are strong in different parts of the emerging system, and the eventual enterprise solution may combine several of them.
 
-Google and Amazon illustrate why this will not be a one-company market. Google combines frontier models with search, data, cloud infrastructure, and an agent platform built around enterprise data and tool governance. Amazon is central to the infrastructure layer: its Bedrock AgentCore offers identity, tool access, observability, evaluations, and managed knowledge services for organisations that want to build agents using different models and frameworks. [Google Cloud, _Gemini Enterprise Agent Platform_](https://cloud.google.com/products/gemini-enterprise-agent-platform); [AWS, _Amazon Bedrock AgentCore_](https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/)
+Microsoft has a major **distribution and governance** advantage: many organisations already work inside its collaboration, identity, security, business-application, cloud, and developer-tool ecosystem. That makes it well placed to connect agents to daily work. But this is not exclusive control of the intelligence layer. If an organisation grants the right permissions, Codex, Claude, Cursor, or another approved agent can also work with Microsoft data and tools through APIs, connectors, and emerging common interfaces. Microsoft does not need to own the best model or the most capable coding agent for every task in order to remain important.
 
-OpenAI and Anthropic remain important because the quality, cost, and reliability of the underlying models still matter. Specialist developer environments also matter because the human interface through which people direct AI can become a strategic position of its own. But these are complementary layers, not proof that one vendor will control the complete enterprise.
+Google combines frontier models with search, data, cloud infrastructure, and an agent platform built around enterprise data and tool governance. Amazon is central to the **infrastructure and choice** layer: its Bedrock AgentCore offers identity, tool access, observability, evaluations, and managed knowledge services for organisations that want to build agents using different models and frameworks. [Google Cloud, _Gemini Enterprise Agent Platform_](https://cloud.google.com/products/gemini-enterprise-agent-platform); [AWS, _Amazon Bedrock AgentCore_](https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/)
 
-The current ranking should therefore be read as supporting a broader trend, not as a permanent league table: **the competition is shifting from who has the smartest model to who can connect intelligence to the data, workflow, permissions, and human interface where work already happens.**
+OpenAI and Anthropic matter because the quality, cost, and reliability of the underlying models and agents still matter. Specialist coding environments matter for the same reason: the human interface through which people give intent, inspect work, and iterate can become a strategic position of its own. A powerful model with a poor working environment may lose to a slightly weaker model inside a better one.
+
+The useful map is therefore not “Who is number one?” It is:
+
+| Layer of the future system | The contest |
+| --- | --- |
+| Frontier models and agents | Who can reason, create, use tools, and improve reliably? |
+| Human working environment | Who makes it easiest for people to give intent, inspect results, and iterate? |
+| Enterprise integration and governance | Who can connect data, workflows, permissions, and audit trails safely to any approved agent? |
+| Cloud and computing infrastructure | Who can provide the processors, memory, networks, and operating environment at acceptable cost? |
+
+Different companies can lead different layers. The broader trend is the important point: **competition is shifting from a contest over the smartest isolated model toward a contest over who can connect intelligence to the data, workflow, permissions, tools, and human interface where work actually happens.**
+
+The healthiest Enterprise Intelligence Layer is therefore **model-neutral superglue**. It lets an organisation change or combine models as capability, cost, and trust change, while preserving its own data, business rules, permissions, records, and workflows. A company should not need to replace its enterprise memory merely because it chooses a better agent. This is the opposite of the old enterprise-software bargain: instead of one giant system owning every process, a flexible layer can coordinate a changing collection of systems and intelligences.
 
 ## Enterprise Knowledge, Context, and Control
 

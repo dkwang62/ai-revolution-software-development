@@ -85,10 +85,15 @@ Used in “The Legacy Problem” for broad estimates of accumulated technical de
 ## Public-sector legacy systems
 
 - U.S. Government Accountability Office. [_Information Technology: Agencies Need to Continue Addressing Critical Legacy Systems_.](https://www.gao.gov/products/gao-23-106821) GAO-23-106821, 10 May 2023.
+- U.S. Government Accountability Office. [_Air Traffic Control: FAA Actions Urgently Needed to Modernize Systems_.](https://www.gao.gov/products/gao-25-108162) GAO-25-108162, 4 March 2025.
+- Federal Aviation Administration. [“Next Generation Air Transportation System (NextGen).”](https://www.faa.gov/nextgen) Accessed 3 August 2026.
+- Federal Aviation Administration. [“System Wide Information Management (SWIM) Program Overview.”](https://www.faa.gov/air_traffic/technology/swim/overview) Accessed 3 August 2026.
 - UK Government Digital Service and Central Digital and Data Office. [“Guidance on the Legacy IT Risk Assessment Framework.”](https://www.gov.uk/government/publications/guidance-on-the-legacy-it-risk-assessment-framework) 29 September 2023; updated 13 March 2025.
 - UK National Audit Office. [_Government Cyber Resilience_.](https://www.nao.org.uk/reports/government-cyber-resilience/) 29 January 2025.
 
 Used for the age, operating cost, modernisation planning, and remediation status of government legacy systems. The NAO's data cover 228 recorded systems supplied by 27 departments and do not represent every legacy system in central government.
+
+The air-traffic-control side story uses GAO's independent assessment of the FAA's air-traffic-control systems, including its 51 unsustainable and 54 potentially unsustainable classifications. FAA material documents NextGen and SWIM as incremental modernisation and information-sharing programmes. The case study does not claim that the FAA uses AI to replace air traffic control; it uses a documented safety-critical system to distinguish AI assistance from safety assurance and final authority.
 
 ## Legacy integration and modernisation cases
 
@@ -123,11 +128,14 @@ These provider documents use different controls and labels, but support the same
 
 ## Frontier training: from model to collaborator
 
+- Radford, Alec, et al. [“Learning Transferable Visual Models From Natural Language Supervision.”](https://arxiv.org/abs/2103.00020) 2021.
+- Ouyang, Long, et al. [“Training Language Models to Follow Instructions with Human Feedback.”](https://arxiv.org/abs/2203.02155) 2022.
+- Google DeepMind. [“Gemini: A Family of Highly Capable Multimodal Models.”](https://deepmind.google/gemini/gemini_1_report.pdf) 2023.
 - OpenAI. [“Agent Post-Training, Connectors Research.”](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/) Accessed 31 July 2026.
 - Anthropic. [“Claude's Constitution.”](https://www.anthropic.com/research/claudes-constitution) updated 21 January 2026.
 - Google DeepMind. [“Gemini 3.1 Pro Model Card.”](https://deepmind.google/models/model-cards/gemini-3-1-pro) Accessed 31 July 2026.
 
-Used in “From Text Predictor to Agentic Collaborator.” These primary sources show the public direction of frontier development: post-training for coding, tool and computer use, long-horizon execution, factuality, reasoning, safety, multimodal capability, long context, and evaluation. They do not disclose the complete training recipe of any model release. Accordingly, the chapter describes a shared direction rather than claiming that a named version improved for one specific public reason.
+Used in “What Is an AI Model?” and “From Text Predictor to Agentic Collaborator.” CLIP provides a clear research example of learning visual concepts from text–image pairings; the Gemini report documents joint multimodal training; and the InstructGPT paper documents instruction-following post-training from demonstrations and human feedback. The later primary sources show the continuing public direction of frontier development: post-training for coding, tool and computer use, long-horizon execution, factuality, reasoning, safety, multimodal capability, long context, and evaluation. They do not disclose the complete training recipe of any model release. Accordingly, the chapter describes a shared direction rather than claiming that a named version improved for one specific public reason.
 
 ## Capital allocation as evidence of belief
 

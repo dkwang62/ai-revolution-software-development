@@ -32,7 +32,21 @@ _An app's phrase-extraction feature. The model proposes candidates from Chinese 
 
 The surrounding application then did what the model could not be trusted to do alone. Conventional software checked the format, rejected invalid lengths, removed phrases already present, and waited for the learner to approve what should be saved. The model supplied flexible judgement; the application supplied records, rules, and authority.
 
-This chapter first explains how a model learns patterns, then why it can work with language and code, and finally how it can work with images, tools, and longer tasks. The question throughout is practical: where does the model's flexible judgement help, and where must software, evidence, and people take responsibility?
+Before the detail, the whole mechanism can be pictured like this:
+
+```text
+many examples during training
+↓
+the model learns broad patterns in its numerical settings
+↓
+your request + current context during use
+↓
+the model proposes the next useful words, code, or action
+↓
+tools, tests, and people check what may be trusted or done
+```
+
+This chapter explains each part of that chain. The practical question throughout is: where does the model's flexible judgement help, and where must software, evidence, and people take responsibility?
 
 ## A Map, Not the Territory
 
@@ -65,6 +79,150 @@ repeat
 The dials do not store knowledge like pages in a book. There is no single dial for _dog_, another for Swift syntax, and another for banking regulation. What the model has learned is distributed across many parameters. Its capability is real, but it is not stored in a human-readable rulebook.
 
 Training is therefore different from a programmer entering facts into a database. The programmer chooses the data, architecture, training process, objectives, and evaluations; the learning process finds parameter values that capture useful statistical relationships.
+
+## From Raw Material to a Useful Assistant
+
+The full recipe for any named frontier model is private, and it changes between laboratories and generations. But the broad story is clear. A model first learns broad patterns, then learns how to help people, and finally may learn how to work with tools under supervision:
+
+```text
+build a foundation
+↓
+teach it to be useful
+↓
+teach it to behave and work safely with tools
+```
+
+The first movement begins with data, but not simply by pouring “the internet” into a machine. Teams assemble material such as books, web pages, reference works, scientific papers, source code, technical documentation, mathematical problems, tables, conversations, images, diagrams, audio, and video. They remove duplicates, filter obvious noise or unsafe material, check quality, balance different kinds of content, and decide what may legally and ethically be used. The selection matters: a model can learn only the patterns that its material and training method make available.
+
+Next, each kind of material is converted into a form a neural network can process. Text and code are divided into tokens. An image begins as raw pixel values, then is commonly divided into patches and transformed into visual vectors. Audio may begin as a waveform or a visual-like sound map, then becomes segments and vectors. Video is often treated as a sequence of images with timing information. A multimodal model does not need every kind of input to use exactly the same internal machinery. The important achievement is that it learns to relate them: a picture with its caption, speech with its transcript, a diagram with its labels, or a screenshot with a user's question.
+
+Only then does the large training run begin. The Transformer starts with parameters—sometimes billions or more adjustable numerical values—that are random or otherwise unhelpful. At that point it knows no English, Python, Chinese, mathematics, or visual concepts. It is a huge mathematical structure waiting to be shaped.
+
+### Stage 1: Learn Broad Patterns Without a Teacher Explaining Every Rule
+
+The main foundation exercise is **self-supervised learning**. “Self-supervised” does not mean the model trains itself without people. People prepare the data, choose the task, build the computers, and measure results. It means that the data supplies much of its own answer.
+
+For a language model, the exercise may look like this:
+
+```text
+The Eiffel Tower is in _____
+                         ↓
+                    predict: Paris
+                         ↓
+              compare with the actual next token
+                         ↓
+              adjust many parameters a tiny amount
+```
+
+For code, the missing piece may be a function call, a closing bracket, a test assertion, or the next step in an explanation of a bug. For an image-and-text example, the training task may reward the model when it connects the correct caption with the correct image more strongly than with unrelated images. Research such as OpenAI's CLIP demonstrated this general idea of learning visual concepts from natural-language pairings; modern frontier systems can be trained jointly across text, images, audio, and video. [OpenAI, _CLIP_](https://openai.com/index/clip/); [Google DeepMind, _Gemini Technical Report_](https://deepmind.google/gemini/gemini_1_report.pdf)
+
+No one enters a rule saying, “Paris is the capital of France,” “a loop repeats work,” or “this is a picture of a dog.” Repeated prediction and correction push the numerical parameters towards settings that represent useful regularities. Across an immense number of examples, this can produce grammar, factual associations, programming patterns, visual relationships, and many rough reasoning habits.
+
+### The Astonishing Part: It Learns Code Grammar Too
+
+This is the insight worth pausing over. Nobody gives the model a handbook of English grammar, Python grammar, or Swift grammar and tells it to memorise every rule. It sees enormous numbers of examples, then keeps trying to predict what belongs next.
+
+To predict English well, it must gradually capture patterns such as which words can follow one another and how a sentence holds together. To predict Python well, it must capture that indentation begins a block, that a function call needs the expected inputs, and that a closing bracket must match an opening one. To predict Swift well, it must capture patterns involving types, functions, state, user-interface components, and the conventions programmers use to organise an app.
+
+```text
+English, Python, Swift, and source code explanations
+↓
+all become token sequences
+↓
+the model repeatedly predicts the next useful piece
+↓
+it gradually learns the statistical grammar of each form
+```
+
+That does not mean the model has learned a perfect formal rulebook. A compiler can still reject code that looks plausible; a test can still expose logic that is wrong for this particular application. The model learns the patterns of working software. The compiler, tests, and human judgement determine whether a proposed program actually works.
+
+### Why Code Is Valuable Training Material—and Why It Is Not Enough
+
+The question is not simply, “Have we fed the model enough code?” There is already an enormous public supply of source code, documentation, tutorials, bug reports, and questions answered by programmers. It is enough to give a frontier model broad skill with common languages, familiar frameworks, standard interface patterns, and ordinary refactoring. That is one reason an AI coding assistant can be so useful so quickly.
+
+Code is especially rich material because it carries several kinds of repeated evidence at once. A program shows its syntax, its structure, its names, and often a written explanation of its purpose. It may also come with a compiler, linter, test suite, error report, code review, or later correction. In simple terms, the model does not only see people *talking* about how code should work; it can often see whether a machine accepted it and whether known checks passed.
+
+```text
+raw code alone
+↓
+useful patterns, but many guesses remain
+
+requirement + code + tests + error + correction
+↓
+far stronger evidence about how useful software is actually produced
+```
+
+For the next improvement, more copied public code is not necessarily the most valuable ingredient. Better examples connect a real goal to an existing project, the change made, the tests run, the failure found, the correction, and a human review. This is why tool-using coding agents are important: they can learn and be evaluated in a loop closer to real engineering, rather than merely completing a code fragment.
+
+Even that is not enough to know what *your* app should do. Public training examples cannot automatically reveal a company's private rules, an unusual customer promise, the current state of its database, or whether a screen feels wrong on a particular iPad. Those details must enter through current project context, tools, tests, and people who understand the problem.
+
+The broader lesson is simple:
+
+> Data volume helps only when it contains repeated, relevant, and checkable relationships.
+
+### A Boundary on What Patterns Can Reveal
+
+The comparison with biology matters here for one reason only: it shows the limit of discovery from patterns alone. Human language and DNA are both long sequences with recurring patterns. A model can learn much of the “grammar” of each. In language, it can learn that certain word orders and phrases belong together. In DNA, it can learn recurring biological patterns such as sequences associated with genes or gene regulation.
+
+Language gives a model unusually rich clues about its own structure. It was made for communication, so the same grammatical relationships reappear across billions of sentences: “the cat,” “the dog,” and “the boy” leave visible statistical fingerprints. Its immediate output is usually more language: earlier words help predict later words.
+
+DNA is different. A raw sequence does not label its own equivalent of a noun, a verb, or a sentence. Its meaning is spread across a living chain:
+
+```text
+DNA → RNA → proteins → cells → tissues → organism
+```
+
+A sequence may affect that chain differently in a liver cell, a brain cell, a developing child, or a person under environmental stress. There are also far fewer complete observations that connect a genome to all those later outcomes than there are sentences showing how language is used. A DNA pattern can therefore be valuable evidence without revealing the full chain of causes behind a biological outcome.
+
+Python sits closer to language in one respect: it has a deliberately defined interpreter. It can be run, and its behaviour can often be checked. A genome has no single interpreter or complete, visible rulebook. More DNA letters alone do not automatically reveal the missing causes.
+
+Keep these three principles in mind:
+
+1. **Patterns can be learned from examples.** That is why self-supervised training is so powerful.
+2. **A learned grammar is not a complete explanation.** Predicting what is likely is easier than knowing why it happens.
+3. **Feedback determines reliability.** Compilers, tests, experiments, and real-world observation turn a plausible pattern into something that can be checked.
+
+That is all the biology comparison needs to establish here. The side story [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]] explores the genome example in more detail.
+
+This is the strange power of large-model training. The immediate game is simple—predict what belongs next or which pieces belong together—but doing that well across many kinds of material requires the system to capture a great deal of structure.
+
+### Stage 2: Turn a Foundation Model into an Assistant
+
+A foundation model can continue text or code, but it is not automatically a helpful assistant. It may imitate the tone of its input, give an unstructured answer, or continue an unsafe request because that is statistically plausible.
+
+The next stage is usually **post-training**. Humans and sometimes other carefully checked systems provide worked examples: a request and a good answer, a bug report and a helpful diagnosis, a coding task and a correct solution, an unsafe request and a safe refusal. This is **supervised fine-tuning**. It teaches the model the kind of response that a user is meant to receive.
+
+Then reviewers may compare several possible answers and decide which is clearer, more correct, safer, or more useful. A separate learning step teaches the model to prefer the kinds of answers people repeatedly choose. This is often called **preference learning** or **reinforcement learning from human feedback**. It does not make the model morally perfect or factually infallible. It makes the broad capability learned in pre-training easier to direct. [OpenAI, _Training Language Models to Follow Instructions with Human Feedback_](https://arxiv.org/abs/2203.02155)
+
+Safety training is part of this work, not a magic shield added at the end. It can teach a model to recognise dangerous requests, protect privacy, decline some actions, express uncertainty, and follow policies. It cannot guarantee that every harmful or false output disappears. The surrounding software still needs permissions, filters, logging, tests, and human authority.
+
+### Stage 3: Teach It to Work, Not Only to Answer
+
+For an AI coding agent, a fluent answer is not enough. The system must learn when it should inspect a project, search for a file, run a compiler, use a test, look at a screenshot, or ask for clarification. This is partly training and partly engineering around the model.
+
+Researchers therefore evaluate models inside realistic environments with tools and goals. A coding task may require the agent to read an issue, inspect an existing codebase, edit only relevant files, run a build, interpret an error, revise its plan, and leave evidence of what it checked. The model may learn better habits from such examples and feedback; the product also gives it actual tools, narrow permissions, and tests. The result is not one all-powerful model. It is a model inside a supervised working system.
+
+```text
+user's goal
+↓
+model plans and proposes
+↓
+tools inspect, calculate, build, search, or test
+↓
+results become new evidence
+↓
+model revises or reports uncertainty
+↓
+software and people decide what may be accepted or executed
+```
+
+### What Actually Changes—and What Does Not
+
+During training, the main thing that changes is the model's **parameters**, also called weights: the enormous collection of adjustable numbers introduced earlier. A training example slightly changes many of them. Over a long run, those tiny changes create the trained model.
+
+When you use a deployed model, its weights normally do **not** change because of your one conversation. Your prompt, uploaded image, project files, and tool results enter its temporary working context; they influence the answer now, but they are not automatically written permanently into the model. Providers may later study permitted feedback, failures, and evaluations and use them to design another training or post-training cycle. That is continuous improvement of the product, not a model secretly learning every fact from every user in real time.
+
+This distinction matters for software development. Pre-training gives a model a broad library of learned patterns from code, documentation, tests, and explanations. Post-training teaches it to be more useful and careful. Tools and agent environments let it gather local evidence. But none of these steps gives it the private knowledge of a particular app automatically. That must still be supplied through project context, retrieval, tests, and the people responsible for the result.
 
 ## Neural Networks Learn the Relationships
 
@@ -100,6 +258,8 @@ The result was a new trajectory: larger models could learn broader relationships
 
 When I ask an AI model to write a Swift function, explain a legal clause, translate a sentence, or generate a quiz, it is not retraining itself from the beginning. It combines my input with its current context and constructs an output from the patterns encoded in its parameters.
 
+In practical terms, an answer can draw on four things: broad patterns learned during training; the words, files, or image supplied for this task; the conversation or project material still in its current context; and, if the product allows them, the results of tools such as search, a compiler, or a database query. It does not reopen and search its original training collection whenever it answers.
+
 This explains why AI can answer a question it has never seen word for word. It also explains why it can be wrong. Prediction is not truth. A model may generate something plausible but outdated, unsafe, logically weak, or inappropriate for the user's actual situation.
 
 ## What AI Reasoning Means
@@ -120,17 +280,17 @@ Traditional software and learned models therefore have complementary strengths:
 
 Real applications combine both. AI can propose, interpret, and, when permitted, act; deterministic software, permissions, tests, and people determine what is allowed and what is accepted.
 
-## Why a Model Can Produce Software
+## Why This Becomes Powerful for Software Development
 
-Programs contain recurring patterns: conditions, loops, functions, data structures, APIs, tests, error handling, interface conventions, and architectures. Documentation and software discussions also connect ordinary requests with these structures.
+Software is unusually promising because its patterns are both plentiful and useful. Programs repeatedly use conditions, loops, functions, data structures, APIs, tests, error handling, interface conventions, and architectures. Documentation, tutorials, bug reports, and technical discussions connect those technical structures with the ordinary problems people are trying to solve.
 
-A model trained across code, explanations, tutorials, bug reports, and technical conversations can learn many of those relationships. It can connect “sort this list” with a library operation, or associate “build a login screen” with fields, validation, state, navigation, and security concerns.
+A model trained across that mixture can connect “sort this list” with a likely library operation, or “build a login screen” with fields, validation, state, navigation, and security concerns. It does not need to have seen the exact request before. It can combine nearby learned patterns with the context it has been given now.
 
-The model is not executing a complete hidden program that it retrieves from memory. It generates a proposal token by token, conditioned on the request, its learned parameters, the available project context, and what it has already generated.
+This is the source of the apparent magic. A person with domain knowledge can describe an outcome in ordinary language; the model can turn that description into a concrete proposal for screens, data, code, tests, and next steps. It is not retrieving one complete hidden program from memory. It generates a proposal piece by piece, guided by its learned patterns, the request, the available project context, and what it has already generated.
 
-When I ask Codex to alter an app, learned relationships help it locate likely screen-layout patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether those relationships produced a change worth keeping.
+When I ask Codex to alter an app, those learned relationships help it locate likely screen-layout patterns, files, and data structures. The compiler, tests, application framework, screenshots, and my inspection determine whether that proposal becomes a change worth keeping.
 
-That surrounding evidence matters because code can be syntactically correct yet educationally wrong. A quiz may compile and still teach the wrong distinction. A button may work while covering another control on an iPhone. The model shortens the distance from intention to implementation; it does not remove the need to judge the destination.
+That surrounding evidence matters because code can be syntactically correct yet educationally wrong. A quiz may compile and still teach the wrong distinction. A button may work while covering another control on an iPhone. The model shortens the distance from intention to implementation; it does not remove the need to judge the destination. The next section explains why that final gap is the hard part.
 
 ## Natural Language, Computer Language, and Why Code Is Special
 
@@ -254,7 +414,7 @@ The screenshot below shows a real app layout problem. The controls exist, the sc
 
 Multimodality therefore expands the AI model's inputs, not its authority. It gives the system more evidence from which to reason. The same rule still applies: successful generation is not successful rendering, and a convincing appearance is not proof of correct behaviour.
 
-## Why There Are Many Models
+## Why Models—and Their Upgrades—Differ
 
 Different training choices create different models. They may vary in data, architecture, size, optimisation, safety tuning, tool use, context length, multimodal capability, deployment environment, and intended use. One may excel at coding, another at writing, and another may be small enough to run on a phone.
 
@@ -288,19 +448,13 @@ learn from evaluation failures
 become a more capable collaborator
 ```
 
-### The Training Journey in Plain English
+### Where the Upgrade Effort Goes
 
-The first stage is usually called **pre-training**. The model is exposed to very large collections of text, code, images, audio, and other material, then repeatedly learns to predict missing or next pieces. This gives it broad general capability: language, programming patterns, visual relationships, facts, styles, and examples of how people solve problems.
+The earlier training journey described the basic stages: pre-training creates broad capability; post-training makes it easier to direct; tool environments teach and test longer work. A new model can improve any combination of those stages. The important shift is that labs are no longer judging a model only on whether it writes a convincing answer. They increasingly judge whether it can use evidence, keep working through a difficult task, and complete it safely.
 
-Pre-training alone does not make a good assistant. A model may be able to continue a passage of text without knowing how to help a person responsibly. The next stage, often called **post-training**, teaches behaviour after the broad model has been created.
+For reasoning models, practice tasks reward more than a fluent first response. They reward checking assumptions, working through difficult steps, using evidence, noticing uncertainty, and reaching a correct result. This is why a user can sometimes choose a higher reasoning setting: the system is allowed to spend more computation exploring and checking before responding. It may improve a hard task, but it costs more and takes longer.
 
-In plain language, post-training is like giving a very knowledgeable but inexperienced graduate a series of examples, corrections, practice tasks, and examinations. The system is shown better and worse answers, taught to follow instructions, and rewarded when its responses are more useful, accurate, safe, and well judged. Technical names include **supervised fine-tuning**—learning from worked examples—and **preference learning** or **reinforcement learning**—adjusting behaviour using feedback about which outcome is better.
-
-For reasoning models, the practice tasks increasingly reward more than a fluent first answer. They reward checking assumptions, working through difficult steps, using evidence, noticing uncertainty, and reaching a correct result. This is why a user can sometimes choose a higher reasoning setting: the system is allowed to spend more computation exploring and checking before it responds. It may improve a hard task, but it also costs more and takes longer.
-
-The next frontier is **agent training**. Instead of judging the model only on one answer in a chat window, researchers place it in an environment with a goal and tools. The model may need to search files, edit code, run a build, read an error, use a browser, inspect a screenshot, or decide that it needs more evidence. Its work is assessed not only on its words but on whether it completes the task safely and correctly.
-
-OpenAI describes work on agent post-training in terms of coding, tool use, computer use, long-horizon execution, factuality, calibrated reasoning, and evaluation environments. Anthropic's Constitutional AI work is one example of a different emphasis: using explicit principles, critique, and feedback to teach a model to be more helpful and safer. Google evaluates its frontier Gemini models across reasoning, multimodality, long context, and agentic tool use. The methods differ, but the destination is similar: a system that can take part in a longer, evidence-based workflow rather than merely produce a persuasive paragraph. [OpenAI, _Agent Post-Training, Connectors Research_](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/); [Anthropic, _Claude's Constitution_](https://www.anthropic.com/research/claudes-constitution); [Google DeepMind, _Gemini 3.1 Pro Model Card_](https://deepmind.google/models/model-cards/gemini-3-1-pro)
+Agent training goes one step further. Instead of assessing a single chat answer, researchers put a model in an environment with a goal and tools. It may need to search files, edit code, run a build, read an error, use a browser, inspect a screenshot, or decide that it needs more evidence. OpenAI, Anthropic, and Google describe different methods and priorities, but the shared direction is a system that takes part in a longer, evidence-based workflow rather than merely producing a persuasive paragraph. [OpenAI, _Agent Post-Training, Connectors Research_](https://openai.com/careers/agent-post-training-connectors-research-san-francisco/); [Anthropic, _Claude's Constitution_](https://www.anthropic.com/research/claudes-constitution); [Google DeepMind, _Gemini 3.1 Pro Model Card_](https://deepmind.google/models/model-cards/gemini-3-1-pro)
 
 ### Not Every Upgrade Is the Same Kind of Change
 
@@ -335,7 +489,7 @@ For the economics of this book, the lesson is crucial. A newer model is not valu
 
 The industry is not simply trying to create a model with a higher score on an intelligence test. Its visible ambition is to fill in the abilities that a useful collaborator lacks.
 
-The first generation of public generative AI learned to **speak**: it could produce fluent text. The next generation learned more of how to **think**: follow instructions, reason through difficult questions, work with code, and explain uncertainty. The emerging generation is learning to **act**: use tools, inspect results, remember what matters, and carry a bounded task through to completion.
+The first widely visible wave of generative AI made one ability obvious: it could **speak** fluently. The next wave is being trained to do more of the work around an answer: follow instructions, reason through difficult questions, work with code, and recognise uncertainty. The emerging effort is to let systems **act** within bounds: use tools, inspect results, remember what matters, and carry a defined task through to completion.
 
 It is tempting to call the destination one all-powerful model. That is misleading. The defensible ideal is an **AI system**: a capable model working with selected context and memory, specialist tools, permissions, tests, records, and human authority.
 

@@ -227,6 +227,30 @@ Humans remain accountable.
 
 That is the realistic version of AI in legacy modernisation.
 
+## Side Story: Replacing a System That Cannot Stop
+
+The United States air-traffic-control system is a useful test of this chapter's argument because it is a legacy system in which a careless replacement is unthinkable.
+
+The Federal Aviation Administration (FAA) manages the National Airspace System: the connected people, procedures, communications, surveillance, weather, navigation, and computer systems that help controllers guide aircraft. Controllers rely on it to manage more than 45,000 flights a day. This is not one old computer that can be unplugged on Friday and replaced on Monday. It is a safety-critical network of many systems, facilities, aircraft operators, and trained people that must continue operating throughout every change.
+
+The legacy risk is real, not a metaphor. In 2025, the U.S. Government Accountability Office (GAO) reported that the FAA had assessed 138 air-traffic-control systems: 51 were unsustainable and another 54 were potentially unsustainable. Some of those systems have critical effects on the safety and efficiency of the national airspace. The GAO also found that planned investments for several especially concerning systems were still at least six to ten years from completion as of May 2024. [This does not mean aircraft are controlled by one failing machine.](https://www.gao.gov/products/gao-25-108162) It means the replacement problem is large, urgent, and difficult to organise safely.
+
+The FAA's **NextGen** programme shows what responsible modernisation looks like. It has introduced newer communications, navigation, surveillance, automation, and information-management capabilities over many years. One especially relevant component is **System Wide Information Management (SWIM)**: a data-sharing backbone designed to let diverse aviation systems publish information once and allow approved users to obtain it through a common connection. The FAA describes the earlier problem plainly: some legacy systems were unconnected or depended on custom point-to-point interfaces. In other words, even before modern AI, the practical answer was not to replace every system at once. It was to create safer ways for systems to share information while selected components were improved or replaced. [FAA NextGen](https://www.faa.gov/nextgen) and [FAA SWIM overview](https://www.faa.gov/air_traffic/technology/swim/overview).
+
+AI is not the FAA's replacement strategy, and this book does not claim that an AI model should autonomously run air traffic control. The case is useful for a different reason: it shows where AI could lower the cost of a carefully supervised replacement programme.
+
+| Replacement work | How AI could assist | What still requires evidence and human authority |
+| --- | --- | --- |
+| Understand old systems | Summarise code, interfaces, incident reports, operating procedures, and dependency maps | Controllers and engineers confirm what the system actually does |
+| Specify a new component | Turn recovered knowledge into draft requirements, diagrams, and test cases | Safety specialists decide the required behaviour and safety boundaries |
+| Build and integrate | Help write adapters, data transformations, tools, and parts of new software | Engineers review the design, cybersecurity, performance, and failure modes |
+| Prove equivalence | Generate test scenarios; compare old and new outputs; flag unexpected differences | Formal testing, simulation, certification, and operational acceptance establish safety |
+| Move into service | Help prepare rollout notes, monitoring rules, and rollback plans | Authorised operators decide when, where, and whether a change may go live |
+
+The important word is **assist**. AI can make the hidden work of replacement more visible and less expensive. It can help a team find an obscure dependency, translate a decades-old rule into a test, or compare thousands of records during a migration. It cannot supply proof that a new safety-critical system will behave safely in every operational condition. That proof comes from engineering discipline, simulation, testing, staged deployment, monitoring, and accountable human decisions.
+
+Air traffic control therefore sharpens—not weakens—the book's claim. AI changes the economics of replacement by reducing the cost of understanding, specifying, building, testing, and migrating. It does not abolish the duty to replace physical equipment, certify critical functions, or protect people when a system is wrong.
+
 ## Gradual Migration
 
 The safest path for many organisations is gradual migration: moving from an old system to a new one in controlled stages.
