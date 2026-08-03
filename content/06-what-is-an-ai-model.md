@@ -201,57 +201,13 @@ Earlier recurrent designs mostly handled a sequence step by step. Transformers m
 
 **Generative** means producing a new continuation or transformation, rather than selecting a label from a fixed list. Once a model could predict the next useful piece at enough scale, it could generate a paragraph, a program, a translation, or an image description. The Transformer did not make a model all-knowing. It made modern generative models economically significant.
 
-## Why Software Is Such a Powerful Use Case
+## A Bridge to Software
 
-Software is unusually promising because it contains many repeated, checkable patterns. Programs use conditions, loops, functions, data structures, APIs, error handling, interface conventions, and architectures. Documentation, tutorials, bug reports, code reviews, compilers, and tests connect those structures to real problems.
+Software is an especially promising use case because it contains repeated, checkable patterns: code, documentation, errors, tests, interfaces, and corrections. That material can give a model broad skill with familiar programming languages and common development tasks.
 
-Code is therefore more valuable than raw text alone. A program may be accompanied by a requirement, an implementation, a compiler result, a failing test, an error report, a correction, and a review:
+But turning English into code is not the same as translating English into another human language. Code must preserve the intended meaning *and* make a computer behave correctly inside an existing system. A model can propose; compilers, tests, rendered screens, and people provide the evidence that decides whether the proposal should be kept.
 
-```text
-raw code
-↓
-useful patterns, but many guesses remain
-
-goal + code + tests + errors + corrections
-↓
-much stronger evidence about how dependable software is produced
-```
-
-There is already an enormous public supply of source code and technical discussion. It is enough to give frontier models broad skill with common languages, familiar frameworks, and ordinary refactoring. The harder missing ingredient is local evidence: what this product needs, what its users expect, and which existing behaviour must not break.
-
-### English-to-Code Is Not Ordinary Translation
-
-Translating English into Spanish and translating English into Python look similar: one form of language enters and another comes out. The learning mechanism is similar too. Both can be represented as token sequences, and a model can learn their recurring patterns from examples.
-
-But code faces an additional test. A Spanish translation succeeds if a Spanish reader understands the intended meaning. Code must preserve intended meaning **and** make a computer behave correctly.
-
-```text
-Natural-language translation: preserve meaning.
-
-English-to-code translation: preserve meaning,
-then make the system behave correctly.
-```
-
-Natural language leaves much unsaid. “Sort the list” may sound complete to a person, but code needs to know what to sort by, which direction, what happens to an empty list, how missing values behave, and whether the original list should change. The model must find an existing product rule, ask a question, or make a guess. Each silent guess is a possible mismatch with the user's intention.
-
-Code also has an exacting second reader: the computer. One misplaced bracket, wrong type, absent function, or unsuitable library call can stop it from running. And even code that compiles can behave wrongly when it meets unusual data, a failed network, a security boundary, or the rest of an existing application.
-
-This is why good software work needs several forms of evidence:
-
-- a **compiler** checks whether code follows the programming language's rules;
-- **tests** check known behaviours;
-- a running app reveals whether the feature works in practice; and
-- screenshots and human use reveal whether the result is actually usable.
-
-The model shortens the distance from intention to implementation. It does not remove the need to judge the destination.
-
-### Reasoning Is Extra Work, Not Magic
-
-In this book, **reasoning** means connecting a goal to a conclusion or action through several intermediate steps: compare requirements, find dependencies, consider alternatives, choose a next action, inspect a result, and revise after failure.
-
-Some models or settings allow more computation before an answer. That can help with difficult debugging, design, mathematics, or migration planning because the system has more opportunity to check assumptions and explore alternatives. It also takes longer and costs more. For a small formatting change, heavy reasoning may be wasteful; for a database migration or security-sensitive change, it can be cheap compared with a mistake.
-
-Reasoning does not make a model's explanation a reliable transcript of hidden thought. Its explanation is also generated output. Important conclusions still need evidence.
+That is where this chapter stops. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows the next stage in detail: how a human request becomes requirements, code, tool use, revision, and a verified change.
 
 ## When a Model Can See and Hear
 

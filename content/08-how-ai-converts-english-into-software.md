@@ -184,25 +184,9 @@ verified change
 
 That difference matters. An AI coding agent is not merely a model producing text. It is an AI model connected to tools, context, and feedback.
 
-### From Tokens to Code
+### From Learned Patterns to Code
 
-The model first breaks the request into tokens—pieces that may be words, parts of words, punctuation, or code fragments. Each token becomes numbers representing relationships learned during training. Through many network layers, those representations are combined into patterns that support the task: Python, a function, a list of numbers, and an average.
-
-The following description is a teaching aid, not English notes hidden inside the model:
-
-```text
-prompt tokens
-↓
-numerical representations
-↓
-learned relationships among task, language, and code patterns
-↓
-predicted output tokens
-↓
-Python program
-```
-
-The model generates the answer one token at a time, using the request and everything it has produced so far. It may predict `def`, then a likely function name, parameters, and a body using `sum` and `len`. The finished text becomes a symbolic program that Python can execute.
+[[06-what-is-an-ai-model|Chapter 5]] explains the underlying mechanics: text and code become numerical representations, and the model generates a likely next piece from learned patterns. For this chapter, the practical point is simpler. Given the request, the model can propose a familiar Python structure: a function, a parameter, a check for an empty list, and an average calculation. The finished text becomes a symbolic program that Python can execute.
 
 The output still contains an unstated decision: an empty list returns `0`. The user might instead want an error, a missing value, or a special message. The model filled a gap with a plausible assumption. This is why generation must lead to requirements and verification, not directly to trust.
 
@@ -322,7 +306,7 @@ summarise result
 
 Each loop consumes more tokens and compute.
 
-This is why "reasoning" has an economic meaning. It is not a magic quantity called intelligence. It is additional work performed while the model connects constraints, explores possible steps, uses tools, checks results, and revises. That work may improve the chance of success, but it also consumes time and computation.
+The economic consequences of this extra work—context, tool use, checking, and revision—are the subject of [[09-economics-of-models|The Economics of Models]]. Here, the important point is that a difficult request becomes a workflow, not a single act of code generation.
 
 ## The Role of Context
 
