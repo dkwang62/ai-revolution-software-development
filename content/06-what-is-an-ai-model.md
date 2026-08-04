@@ -4,43 +4,35 @@ title: "What Is an AI Model?"
 
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
-When an app displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the app, the same character can be a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
+An **AI model is a system that has learned patterns from many examples**. Give it a new input—a question, a passage, an image, or a request for software—and it uses those learned patterns to predict a useful response.
 
-These are different **representations** of the same thing. Software has always moved information among representations:
+For a text model, the underlying task is surprisingly simple: predict what piece of text should come next. During training, the model makes this prediction across an enormous amount of text, code, and other material. Each error slightly adjusts its numerical settings. Repeated at vast scale, this process teaches the model patterns of language, explanation, programming, and reasoning without anyone writing a separate rule for every possible request.
 
-```text
-human purpose
-↓
-requirements and diagrams
-↓
-source code
-↓
-machine instructions
-↓
-changes in the world
-```
+When you later use the finished model, it does not search a catalogue containing one authorised answer to every question. It combines the patterns learned during training with the information available in your current request. It then generates a response piece by piece.
 
-Traditional software mainly follows procedures that people specify. An AI model adds a different mechanism: it learns numerical relationships from examples. That is why it can handle variation that would be tedious to describe with thousands of rules—and why it can sometimes make a plausible but wrong suggestion.
-
-I encountered the distinction while building a feature that finds useful phrases in captured Chinese text. The app can send a passage and instructions to a model, which proposes phrase candidates. But it may not return exactly the same list every time. It is not looking up one authorised answer in a database. It is using learned relationships among characters, phrases, context, pinyin—the spelling of Mandarin sounds with the Latin alphabet—and meaning to generate a likely result.
-
-![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Phrase Extraction and Prompt.png>)
-
-_The model proposes phrase candidates. The surrounding app checks the format, rejects unsuitable results, avoids duplicates, and leaves the learner in control of what is saved._
-
-That is the central bargain of this chapter:
+This distinction explains both the power and the limitation of an AI model:
 
 ```text
 many examples during training
 ↓
-the model learns broad patterns in numerical settings
+patterns captured in numerical settings
 ↓
-your request + current context during use
+your new request and current context
 ↓
-the model proposes words, code, an explanation, or a next step
+the model predicts a useful response
 ↓
-tools, tests, and people decide what can be trusted or done
+the response must still be checked
 ```
+
+Because the model has learned broad patterns, it can handle new wording and situations that nobody specified in advance. Because it is predicting rather than consulting a perfect source of truth, it can also produce an answer that sounds convincing but is incomplete or wrong.
+
+Consider a feature that finds useful phrases in captured Chinese text. The app sends a passage and instructions to a model. The model uses learned relationships among characters, phrases, context, pronunciation, and meaning to propose likely phrases. It can cope with passages it has never seen before, but it may not return exactly the same list every time—and some suggestions may be unsuitable.
+
+![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Phrase Extraction and Prompt.png>)
+
+_The model supplies flexible prediction. The surrounding software supplies fixed checks, and the learner decides what is saved._
+
+That is the central bargain of AI: learned patterns make flexible interpretation and generation possible; tools, tests, conventional software, and people determine what can be trusted or done.
 
 ## A Model Is a Map, Not the World
 
