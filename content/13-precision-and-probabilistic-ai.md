@@ -28,6 +28,8 @@ That means variation in software design is not always failure. Sometimes it is t
 
 ## Two Different Reliability Problems
 
+> **Why it matters:** The question is not whether AI is reliable in general, but which part of a workflow may be probabilistic and which must be exact.
+
 There are two situations that are often confused.
 
 The first is AI creating software. A developer asks AI to write, modify, explain, or test code. The AI participates in development, but the output becomes conventional software. That code can be inspected, compiled, executed, tested, reviewed, and monitored. The AI may be probabilistic, but the resulting program can still be deterministic.
@@ -39,6 +41,8 @@ The second case is harder.
 When AI is part of the running application, software engineering must build reliable boundaries around probabilistic behaviour.
 
 ## AI Suggests; Software Decides
+
+> **Why it matters:** The safest division of labour lets AI propose flexible possibilities while deterministic software enforces the non-negotiable rules.
 
 A useful principle is:
 
@@ -86,6 +90,8 @@ That is why AI precision cannot mean identical output every time. It has to mean
 
 ## Validation
 
+> **Why it matters:** Treating output as untrusted does not make AI less useful; it is what makes useful AI safe enough to deploy.
+
 Every AI output should be treated as an untrusted proposal until validated.
 
 Validation may include:
@@ -107,6 +113,8 @@ The difference is that the AI layer may produce richer, more flexible, and less 
 In the refund example, validation checks that the order exists, the customer is eligible, the permitted period has not expired, and the proposed amount matches the transaction. The AI identifies the kind of request; validation determines whether its proposal is allowed to continue.
 
 ## Tool Use
+
+> **Why it matters:** A model becomes more reliable when it can replace a guess with a check against the real project, system, or calculation.
 
 AI should not be trusted to perform every operation from memory.
 
@@ -145,6 +153,8 @@ Developers may need datasets of representative cases, edge cases, adversarial ex
 Software verification therefore becomes more important in the AI era. Cheap generation increases the need to know whether outputs are correct enough.
 
 ## Versioning Models and Prompts
+
+> **Why it matters:** In AI systems, behaviour is produced by a changing combination of model, prompt, data, tools, and settings—not by source code alone.
 
 In conventional software, teams version code. In AI systems, they must also version models, prompts, tools, retrieval sources, configuration, and evaluation datasets.
 
@@ -185,6 +195,8 @@ Precision therefore means:
 This definition is more useful than demanding identical output from a probabilistic system. The engineering task is to decide which parts of a workflow allow variation and which parts require exactness.
 
 ## Hybrid Systems
+
+> **Why it matters:** The practical future is not AI replacing ordinary software, but AI supplying judgement where rules alone would be too brittle or expensive.
 
 The most reliable AI systems are likely to be hybrid systems.
 

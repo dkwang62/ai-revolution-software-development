@@ -21,6 +21,8 @@ The trained model is reusable. Each request consumes electricity, chip time, and
 
 ## Training as Capital Investment
 
+> **Why it matters:** Training is a large upfront bet that can make a skill available repeatedly; it is closer to building a power station than paying one worker for one job.
+
 Training is the expensive process that creates or improves a model.
 
 It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. [Epoch AI estimates](https://epoch.ai/trends) that frontier-model training compute has grown at roughly 4–5x per year and that frontier language-model training costs have risen about 3.5x per year since 2020. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race.
@@ -34,6 +36,8 @@ This explains why AI companies continue to train new models. They are not doing 
 Training is therefore not just a technical process. It is the industrial production of machine capability.
 
 ## Inference as Operating Cost
+
+> **Why it matters:** A model can be cheap to create an answer with yet expensive to use millions of times, so deployment economics matter as much as model brilliance.
 
 Inference is the use of a trained model. It is an operating cost: a recurring expense created while providing the service, rather than the upfront cost of creating the model.
 
@@ -100,6 +104,8 @@ For software development, the value is obvious in principle. Many software ideas
 
 ## Reasoning
 
+> **Why it matters:** More reasoning should be reserved for tasks where better planning and checking are worth the extra time and cost.
+
 Reasoning is one of the most economically important and difficult AI capabilities. In plain language, it is the work of turning a goal into a sequence of decisions and checks.
 
 Software development requires multi-step reasoning. A model may need to understand a requirement, inspect existing code, infer architecture, identify risks, plan a change, generate code, write tests, interpret failures, and revise. Simple next-token fluency is not enough for reliable engineering.
@@ -145,6 +151,8 @@ The price of one request is therefore a poor measure of value. The better measur
 
 ## Model Evolution and Compatibility
 
+> **Why it matters:** A new model version is not a routine software patch; it can improve one behaviour while quietly changing another.
+
 Model evolution creates a new kind of software maintenance problem.
 
 Traditional software changes when developers edit code. If they are careful, they can preserve backward compatibility. A new version of a library may add features while attempting not to break old behaviour.
@@ -186,6 +194,8 @@ This table is not final research. It is a way of thinking.
 The book should teach readers to ask: what cost is being paid, what capability is being gained, who benefits, and what becomes economically viable as a result?
 
 ## The Economics of Intelligence
+
+> **Why it matters:** Once intelligence is supplied through infrastructure, organisations can choose how much of it to buy, where to apply it, and what level of checking it deserves.
 
 The phrase economics of intelligence means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
 

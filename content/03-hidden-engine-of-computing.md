@@ -30,6 +30,8 @@ Abstraction is the art of making a system usable by hiding details that do not n
 
 ## The Complexity Does Not Disappear
 
+> **Why it matters:** Every layer that makes action easier also makes users more dependent on the tools, people, and rules hidden beneath it.
+
 The most important thing to understand about abstraction is that it does not eliminate complexity. It moves complexity.
 
 When you press a light switch, the electrical system still exists. When you drive a car, the engine still functions. When you use a smartphone, the operating system still schedules processes, manages memory, and communicates with hardware. The complexity has been pushed downward into lower layers maintained by specialists.
@@ -47,6 +49,8 @@ More responsibility in the layer below
 The bargain is worthwhile only when the benefits exceed the costs. That is why abstraction is not merely a technical idea. It is an economic one.
 
 ## Why Abstraction Matters Economically
+
+> **Why it matters:** An abstraction creates value only when the effort it removes is greater than the risk and loss of control it introduces.
 
 Complexity is expensive. It takes time to learn, creates mistakes, slows communication, increases maintenance cost, makes systems harder to change, narrows the number of people capable of contributing, and creates dependency on rare experts.
 
@@ -118,6 +122,8 @@ The question is not whether abstraction is free. It is whether the gain is worth
 
 ## AI as the Next Abstraction Layer
 
+> **Why it matters:** Natural language lowers the barrier to beginning; it does not lower the standard for software that must be correct.
+
 Artificial intelligence fits this history because it raises the level of expression again.
 
 Instead of specifying every table, field, query, error handler, interface, validation rule, and save operation, a person increasingly says:
@@ -135,6 +141,8 @@ Earlier abstraction layers translated one representation into another. Compilers
 This is why AI is not a break from computing history. It is a continuation of its deepest pattern.
 
 ## Is AI Really an Abstraction Layer?
+
+> **Why it matters:** A model becomes dependable only when formal systems around it turn flexible interpretation into checked action.
 
 The strongest objection is that a conventional abstraction offers a stable contract. A compiler has rules for how instructions must be written. An application programming interface specifies what information another piece of software may send and receive. A framework constrains how components behave. Natural language is ambiguous, and a model may respond differently when the wording or context changes. How can something so leaky and probabilistic count as an abstraction?
 
@@ -165,6 +173,8 @@ The economic question is therefore not whether AI makes software creation effort
 That is the same question every abstraction layer has faced.
 
 ## What AI Is Hiding
+
+> **Why it matters:** AI can hide parts of implementation, but it cannot hide responsibility for what the implementation does.
 
 Earlier abstractions hid machine instructions, processor details, repeated code, common application structures, and infrastructure operations. AI begins to hide parts of programming itself: syntax, finding suitable software connections, repetitive supporting code, and some debugging.
 

@@ -40,6 +40,8 @@ Public-sector audits make the problem more concrete. The [U.S. Government Accoun
 
 ## Software as Accumulated Business Knowledge
 
+> **Why it matters:** Replacing a legacy system means preserving thousands of decisions that may never have been written down as requirements.
+
 The most important point is that legacy software is not merely code.
 
 It is accumulated business knowledge.
@@ -56,6 +58,8 @@ This is why rewriting a large system can be more expensive than building it the 
 
 ## Why Rewrites Fail
 
+> **Why it matters:** A clean new design can fail because it omits the awkward exceptions that made the old system valuable in real life.
+
 Executives often ask a reasonable question:
 
 > Why don't we just rewrite it?
@@ -69,6 +73,8 @@ The risk is enormous. If the new system misses a hidden rule, the organisation m
 This is why "big bang" replacement is dangerous. Switching everything at once concentrates risk. Gradual migration spreads risk over time.
 
 ## Integration Becomes the Dominant Cost
+
+> **Why it matters:** When an enterprise cannot stop operating, the challenge is not building the new system but making old and new systems cooperate safely.
 
 Because organisations cannot replace everything overnight, new systems must coexist with old ones.
 
@@ -158,6 +164,8 @@ These examples are vendor and media reports, so they should not be treated as un
 
 ## Where AI Enters
 
+> **Why it matters:** AI's largest legacy opportunity may be to make hidden knowledge visible before anyone tries to replace it.
+
 AI is usually discussed as a way to create new software, but that may not be its largest economic opportunity. It may be extraordinarily valuable because it can help humans understand existing software.
 
 It can analyse source code, explain old functions, generate documentation, identify dependencies, suggest APIs, translate between programming languages, detect dead code, summarise database schemas, compare old and new behaviour, generate tests, and help engineers reason about migration paths.
@@ -237,6 +245,8 @@ Air traffic control therefore sharpens—not weakens—the book's claim. AI chan
 
 ## Gradual Migration
 
+> **Why it matters:** A staged migration turns one enormous gamble into a sequence of smaller changes that can be observed, corrected, and reversed.
+
 The safest path for many organisations is gradual migration: moving from an old system to a new one in controlled stages.
 
 One module. One interface. One database. One workflow. One service. One report.
@@ -254,6 +264,8 @@ The same principle appeared at a much smaller scale while building an app. After
 That is app-scale evidence for the larger enterprise pattern. The safest improvement is often not to replace the whole system, but to understand one boundary, improve it, verify it, and then move to the next. AI made the work faster by inspecting code, suggesting refactors, and running through the change loop, but the discipline came from doing the migration gradually.
 
 ## Capital Preservation
+
+> **Why it matters:** Existing systems are not only technical debt; they are expensive organisational capital that should be understood before it is discarded.
 
 The phrase "capital preservation" usually means protecting money or assets already accumulated. It also applies to software.
 

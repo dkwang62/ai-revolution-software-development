@@ -44,6 +44,8 @@ These ideas are related, but they are not interchangeable. Confusing them leads 
 
 ## Training Knowledge and Working Memory
 
+> **Why it matters:** General knowledge is not a substitute for the specific information needed to make one safe change today.
+
 The first distinction is between what the model has learned and what the model can see right now.
 
 Training gives the model general capability. It has learned patterns involving programming languages, history, physics, law, medicine, economics, literature, databases, software architecture, and countless other subjects. This knowledge is not stored as ordinary documents. It is distributed across the model's parameters as mathematical relationships.
@@ -84,6 +86,8 @@ In software engineering, those details matter enormously.
 
 ## Same Instruction, Different Context
 
+> **Why it matters:** “Make it faster” is not a request a model can safely solve until someone defines what speed, trade-off, and success mean here.
+
 Consider the instruction, "Make it faster."
 
 To a web developer, that might mean reducing page-load time. To a database engineer, it might mean creating a faster way to find records. To a machine-learning engineer, it might mean reducing the waiting time for an AI response, known as **inference latency**. To a product manager, who decides which user problems and features matter, it might mean shortening the steps a user must take. To a finance department, which records and reports an organisation's money, it might mean speeding up the process of closing the accounts at the end of each month.
@@ -95,6 +99,8 @@ Software development is full of instructions like this: make the screen cleaner,
 This is one reason AI-assisted software development is not merely "telling AI what to code." The human must supply enough surrounding information for the model to understand what the instruction means in this particular situation. That is why communication becomes engineering.
 
 ## The Context Window
+
+> **Why it matters:** A model can only reason over information that has been deliberately brought into its working area.
 
 When an AI model is used, it does not automatically have access to everything it has ever been told by a user, every file in a codebase, every document inside a company, or every event in the world. It has access to the information placed into its current working area.
 
@@ -111,6 +117,8 @@ Real software systems are not isolated fragments. A small change may depend on s
 A larger context window can expose more files, requirements, examples, and conversation. It can also add noise. The model may follow stale documentation or miss one decisive constraint among thousands of irrelevant lines. The important question is therefore not only "How much can the model read?" but "Is the right information available at the right moment?"
 
 ## Memory and Retrieval
+
+> **Why it matters:** The goal is not to give AI every document; it is to retrieve the few trustworthy items that matter now.
 
 Because the context window is limited, AI systems often need ways to bring relevant information into context when needed. This is where memory and retrieval systems enter.
 
@@ -161,6 +169,8 @@ The lesson is simple. A strong model with the wrong context can fix the wrong pr
 
 ## Context as an Economic Bottleneck
 
+> **Why it matters:** As general programming knowledge becomes cheap, preparing accurate project knowledge becomes a larger share of the work.
+
 [[02-economics-of-software-development|The Economics of Software Development]] argued that software has been expensive because expertise is scarce. AI changes that by making general software knowledge more available. A person can ask for help with Python, Swift, SQL, architecture, testing, debugging, or refactoring and receive useful assistance immediately.
 
 But as general expertise becomes cheaper, another bottleneck becomes more visible:
@@ -184,6 +194,8 @@ General model capability with high-quality context
 The value is not only in the model. It is in the combination of model and context.
 
 ## Raw Context and Effective Context
+
+> **Why it matters:** A bigger context window is like a bigger desk: useful only if the important papers can still be found.
 
 Raw context is the maximum number of tokens a model can read. Effective context is the amount of relevant information the system can actually use to solve the problem.
 
@@ -236,6 +248,8 @@ Most enterprises need not build their own frontier model. They can rent general 
 > In the AI era, foundation models may become commodities. Enterprise knowledge becomes the competitive advantage.
 
 ## Bad Context Creates Bad Software
+
+> **Why it matters:** A confident answer based on wrong or unauthorised information can be more dangerous than an answer that admits it does not know.
 
 If context is powerful, bad context is dangerous. AI systems can fail because context is missing, incomplete, out of date, contradictory, irrelevant, too broad, too narrow, untrusted, unauthorised, or misleading.
 

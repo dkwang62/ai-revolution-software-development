@@ -16,6 +16,8 @@ That loop—not effortless magic—is the practical meaning of the genie in this
 
 ## The Abstraction Is the Whole System
 
+> **Why it matters:** The useful abstraction is never the model alone; it is the whole system that turns an ambiguous goal into an authorised, checked result.
+
 Every great abstraction in computing allowed people to work further from the machinery. Programmers moved from switches to machine instructions, from machine instructions to languages, and from languages to frameworks that supplied whole structures at once.
 
 AI raises the level again. Ordinary language, images, examples and conversation can now influence software directly. But AI is unlike a conventional compiler. It interprets. That flexibility allows it to work with incomplete human expression; it also makes it sensitive to context and capable of persuasive mistakes.
@@ -39,6 +41,8 @@ The model provides capability. The surrounding system provides evidence and cont
 This is why “AI suggests; software decides” remains useful even as agents learn to act. A model may propose a change and a tool may execute it, but permissions should limit the action and evidence should determine whether it survives.
 
 ## What the Revolution Actually Changes
+
+> **Why it matters:** The central change is economic: more worthwhile ideas can cross the distance from intention to working software.
 
 The revolution is not that machines have learned to type code. It is that the cost and distance between an idea and working software are falling.
 
@@ -65,6 +69,8 @@ The near-nirvana is not a machine that grants every wish. It is a world in which
 That prospect is exciting because it expands human agency. It is sobering because intention may scale faster than wisdom.
 
 ## The Human Part of the Bargain
+
+> **Why it matters:** AI expands what a person can make, but people still decide what matters, what is acceptable, and who answers when the system is wrong.
 
 I began the application because the software I wanted did not exist. I began this book because the explanation I wanted did not exist. In both cases, AI made production possible. It did not decide what was worth producing, notice every mistake or accept responsibility for the result.
 

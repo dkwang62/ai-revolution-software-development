@@ -49,11 +49,15 @@ This is where the Enterprise Intelligence Layer becomes real.
 
 ## The Custom SAP Problem
 
+> **Why it matters:** The largest systems are difficult to change because they are woven into how the enterprise already remembers, decides, and operates.
+
 SAP shows that legacy need not mean obsolete or unsupported; it can mean deeply embedded. In a large company, SAP may carry finance, procurement, inventory, manufacturing, sales, logistics, and reporting while connecting to payroll, banks, suppliers, warehouses, factory systems, customer portals, and smaller applications built over decades. It is closer to a business's nervous system than to an accounting package.
 
 The replacement risk is that a new system behaves almost like the old one while quietly losing a rule that matters: a reconciliation report no longer fits the finance process, an inventory adjustment reaches the wrong period, a tax field is interpreted differently, or a forgotten interface still feeds a downstream system overnight. Modernisation fails when that undocumented knowledge is discovered too late.
 
 ## From the Legacy Problem to the Enterprise Layer
+
+> **Why it matters:** The durable prize is not one successful migration; it is a reusable ability to understand and change the next system more cheaply.
 
 [[15-legacy-problem|Chapter 13]] described the broader kinds of legacy integration pain. This chapter uses customised SAP for a different purpose: it asks what an enterprise must build if AI is to help with this class of problem repeatedly, rather than treating each migration as a one-off rescue project.
 
@@ -105,6 +109,8 @@ If the recovered rules, dependency maps, tests, approvals, and integration patte
 
 ## The Model Is Not the Enterprise
 
+> **Why it matters:** A frontier model brings general ability, but an enterprise becomes intelligent only when its own knowledge, permissions, and evidence are organised around it.
+
 A foundation model contains broad learned patterns from enormous amounts of data. It may know general programming concepts, SQL, Python, accounting vocabulary, REST APIs, software architecture, and the public meaning of ERP.
 
 It does not automatically know the enterprise.
@@ -128,6 +134,8 @@ The foundation model supplies general capability. The Enterprise Intelligence La
 The strategic question is not whether every company should build its own GPT, Claude, Gemini, or Grok. Most will not. The better question is what knowledge the enterprise must organise so that any capable model can become useful inside the business.
 
 ## The Enterprise Edition Has Begun
+
+> **Why it matters:** Enterprise AI will be differentiated less by a secret corporate brain than by the surrounding controls, integrations, memory, and workflow design.
 
 This direction is no longer only a forecast. Major vendors have already begun building the pieces of an enterprise edition of AI.
 
@@ -183,6 +191,8 @@ An Enterprise Intelligence Layer therefore needs four foundations. First, knowle
 These controls are not bureaucracy added after the fact. They are what allow AI to enter real work. A system that can suggest changes to finance workflows, procurement rules, production planning, or payment interfaces must be governed. Otherwise it is not enterprise software. It is a risk.
 
 ## The Superglue: A Federated Enterprise
+
+> **Why it matters:** AI can make a changing collection of systems work together without forcing the business into one giant replacement programme.
 
 For decades, the usual answer to enterprise complexity was to make the enterprise more uniform.
 
@@ -289,6 +299,8 @@ The practical foundations are unglamorous: clear data definitions, reliable iden
 
 ## ERP Digitised Transactions. AI Digitises Knowledge.
 
+> **Why it matters:** The next advantage is not merely recording what happened, but making an organisation's scattered knowledge usable in the next decision.
+
 Enterprise software history provides a useful comparison. ERP systems digitised transactions. They standardised finance, procurement, inventory, manufacturing, sales, and reporting. Their value came from making business processes more visible, consistent, and measurable.
 
 Enterprise AI is different. It does not merely digitise transactions. It digitises knowledge.
@@ -300,6 +312,8 @@ If an organisation can make its knowledge usable by AI, the same layer can suppo
 This is why a customised SAP modernisation project matters beyond SAP. The work required to understand the old system creates knowledge assets that other projects can reuse. Once the finance rules, procurement exceptions, interface maps, approval workflows, and test evidence are organised for one migration, they become useful for reporting, compliance, support, training, auditing, and future development.
 
 ## How It Will Be Funded
+
+> **Why it matters:** Enterprise AI becomes real one verified workflow at a time, when a focused gain pays for the shared capability that follows.
 
 Most large enterprises will not begin by approving a vast Enterprise Intelligence Layer because the concept sounds impressive. Chief financial officers do not buy visions. They buy business cases.
 
@@ -407,6 +421,8 @@ AI may matter most when it clears work that was never being done, not when it me
 
 ## The New Strategic Asset
 
+> **Why it matters:** Organisational knowledge becomes more valuable when it is accurate, governed, and ready to be brought into the context of work.
+
 Historically, companies accumulated capital, factories, machinery, patents, software, brands, customer relationships, and skilled employees. In the AI era, they may also compete by accumulating high-quality machine-readable organisational knowledge.
 
 The strategic asset is not merely documents. It is knowledge that is accurate, current, permissioned, retrievable, interpretable, auditable, and usable by AI.
@@ -426,6 +442,8 @@ The customised SAP example shows the broader future. AI does not create value me
 The frontier model is the engine. The Enterprise Intelligence Layer is the vehicle. A painful legacy modernisation project may be the road that gets the vehicle moving.
 
 ## The Economic Takeaway
+
+> **Why it matters:** The economic opportunity is a lower cost of organisational change—not a cheaper way to produce more software for its own sake.
 
 The technical architecture matters, but the economic conclusion matters more.
 

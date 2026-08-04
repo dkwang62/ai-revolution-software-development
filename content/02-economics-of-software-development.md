@@ -10,6 +10,8 @@ This is why software has historically been expensive.
 
 ## Software Is Accumulated Knowledge
 
+> **Why it matters:** The cost of a software change is governed by the knowledge it must preserve, not by the number of lines it adds.
+
 Code is the visible artefact—the thing produced—but a working system contains more than code. It embodies decisions about customers, products, exceptions, data, sequence, authority, and failure. Some decisions are explicit in requirements or tests. Others are scattered across old files, employee memory, database fields, and behaviour nobody dares to change.
 
 Software can therefore be understood as accumulated knowledge made operational. It is knowledge that causes things to happen repeatedly: a payment is accepted, a student is enrolled, an order is routed, a warning appears, or access is denied.
@@ -17,6 +19,8 @@ Software can therefore be understood as accumulated knowledge made operational. 
 Creating software is expensive because the knowledge must be discovered, negotiated, represented, tested, integrated, and maintained. Programming skill is one part of that work. Domain expertise—deep knowledge of the real subject, such as teaching, banking, or medicine—architecture, coordination, security, and verification are others.
 
 ## The Human Expertise Bottleneck
+
+> **Why it matters:** AI's first economic effect is to shorten the costly hand-offs between the person who knows the problem and the machine that must carry out the solution.
 
 Historically, an idea reached software through scarce specialists. A customer or domain expert explained the need. Analysts and designers refined it. Engineers translated it into structures and procedures a machine could execute. Testers and users exposed the misunderstandings. Operations teams kept it running.
 
@@ -54,6 +58,8 @@ Lower cost does not automatically create proportional demand. The response depen
 
 ## What AI Changes
 
+> **Why it matters:** A domain expert can now test an idea before an organisation has paid for a full translation through a specialist team.
+
 AI makes portions of expert knowledge available on demand. A model can reproduce and adapt patterns associated with programming languages, libraries, common architectures, debugging, tests, documentation, and interface design. A coding agent can connect that capability to files, terminal commands, browsers, and build systems.
 
 This reduces several kinds of cost:
@@ -70,6 +76,8 @@ It did not eliminate the journey. A quiz still needed good educational rules. Ge
 
 ## The New Costs
 
+> **Why it matters:** Cheap generation is irrelevant if the completed task is still expensive to check, integrate, or repair.
+
 AI introduces costs of its own. Organisations pay to use models, prepare the information supplied to them, connect them to other tools, protect data, check results, supervise actions, and review generated work. They also care about waiting time—called **latency** in the industry. An organisation may generate code faster and then spend more time understanding, validating, or maintaining it.
 
 The relevant unit is therefore not the cost of generated tokens or lines of code. It is the **cost per successfully completed task** after correction, integration, and the expected cost of mistakes.
@@ -77,6 +85,8 @@ The relevant unit is therefore not the cost of generated tokens or lines of code
 For a low-stakes prototype, an imperfect first attempt may still be valuable. For a medical, financial, or safety-critical system, verification can dominate the economics. The same model capability has different value depending on the system around it.
 
 ## Why This Changes the Software Economy
+
+> **Why it matters:** When implementation becomes less scarce, the advantage moves to people who can define the right change and make it safe.
 
 When the cost of implementation falls, ideas and domain judgement can move closer to production. Traditional engineers gain leverage. Non-traditional builders can participate. Small organisations can attempt specialised software. Established companies can explore old systems more cheaply.
 

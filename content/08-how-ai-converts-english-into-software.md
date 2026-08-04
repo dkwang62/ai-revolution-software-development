@@ -71,6 +71,8 @@ AI-generated software depends on moving between these forms.
 
 ## The Intermediate Layer Is Not English
 
+> **Why it matters:** The model's output improves when a human request is turned into explicit decisions before it is turned into code.
+
 When readers see AI convert English into code, they may imagine a direct path:
 
 ```text
@@ -102,6 +104,8 @@ Because Swift is one way of expressing a procedure. If the model has learned rel
 This also explains why AI can translate English to Python, English to SQL, code to explanation, error message to fix, or screenshot to interface suggestion. The model is moving through learned relationships among representations.
 
 ## Not Memorisation
+
+> **Why it matters:** The valuable capability is not recalling a past answer; it is adapting familiar patterns to a new combination of constraints.
 
 AI sometimes memorises fragments from training data, but memorisation is not the main explanation for its usefulness.
 
@@ -242,6 +246,8 @@ The cheapest prompt is not always the most economical prompt. If a vague prompt 
 
 ## What Changes With A Harder Prompt?
 
+> **Why it matters:** Difficulty rises not because code becomes longer, but because more unstated decisions can produce the wrong system.
+
 Now imagine a harder request:
 
 ```text
@@ -310,6 +316,8 @@ The economic consequences of this extra work—context, tool use, checking, and 
 
 ## The Role of Context
 
+> **Why it matters:** A model can be technically capable and still fail if it is denied the one file, rule, screen, or exception that gives the request its meaning.
+
 AI uses the prompt together with available context: code, documentation, errors, examples, screenshots, constraints, test output, and earlier conversation. If a vital business rule or source file is missing, a plausible answer can still be wrong.
 
 This is why AI-assisted development works best as an iterative process. The human supplies evidence, examines the proposal, tests it, clarifies the requirement, and asks for revision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines this working memory and its economics in detail.
@@ -344,6 +352,8 @@ This is still programming, but at a higher level of abstraction.
 
 ## Why Code Still Needs Verification
 
+> **Why it matters:** Code has a second reader—the computer—and sounding sensible to a person is no evidence that it will work for the system.
+
 AI can generate code that looks convincing.
 
 That is useful and dangerous.
@@ -359,6 +369,8 @@ AI can help with verification too. It can write tests, explain failures, identif
 Reliable software requires independent checks.
 
 ## Natural Language Programming
+
+> **Why it matters:** When words directly control a model's behaviour, they become production assets rather than disposable chat.
 
 In some AI-driven features, the prompt is not just a request for code. It becomes part of the running system.
 
@@ -384,6 +396,8 @@ The boundary between programming and communication begins to move.
 
 ## Why This Is Economically Important
 
+> **Why it matters:** AI reduces the accumulated cost of moving among requirements, code, tests, bugs, and documentation throughout a project.
+
 The economic significance of AI-generated software is not that machines can produce text that looks like code. The significance is that AI reduces the cost of translation between intent and implementation.
 
 Historically, that translation required scarce experts. A user had to explain a problem to a developer. The developer had to understand it, design a solution, implement it, test it, and revise it. Each handoff introduced cost and delay.
@@ -393,6 +407,8 @@ AI can compress some of those steps. A domain expert—someone who knows the sub
 The cost reduction is uneven. Simple prototypes may become dramatically cheaper. Safety-critical systems may remain expensive because verification dominates. Enterprise systems may still be costly because integration and governance dominate. But even uneven cost reduction matters if it shifts enough projects across the threshold of economic viability.
 
 ## The Limits of the Mechanism
+
+> **Why it matters:** The model's broad training helps most when the task is made specific enough for it to recognise the relevant pattern.
 
 Because AI relies on learned relationships, it is strongest where the problem resembles patterns it has learned and where the user provides enough context.
 

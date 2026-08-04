@@ -36,6 +36,8 @@ The remarkable point is not that an AI produced the finished application at the 
 
 ## A Morning-by-Morning Project
 
+> **Why it matters:** A useful application can emerge through rapid, informed iteration even when no one can describe the finished product on day one.
+
 The development was haphazard in the most honest sense: I did not know the full requirements on day one because I could not yet see the full possibility.
 
 I would wake up with an idea and try to prototype it that morning. A better way to search. A new view of a character. A phrase tool. A quiz. A way to capture a page. The working app made each idea visible quickly enough for me to decide whether it was worth keeping.
@@ -45,6 +47,8 @@ At the same time, I was discovering what AI could do. I did not know how far I c
 If I had known at the beginning what I know now, I might have planned a more ambitious application. But that is not how discovery works. The first version does not need to contain the final vision. It needs to be real enough to teach the creator what to ask for next.
 
 ## The First Question
+
+> **Why it matters:** The right beginning is a small problem you understand well enough to recognise a useful first result.
 
 My first question to ChatGPT was not, “How do I design a software architecture?” It was closer to this:
 
@@ -97,6 +101,8 @@ use the new version
 The plan was not written in advance. It emerged from use.
 
 ## One Extra Feature at a Time
+
+> **Why it matters:** Iteration reduces planning risk because each new feature is chosen after seeing what the previous version made possible.
 
 The project became more capable because each new feature solved a problem I had actually encountered.
 
@@ -168,6 +174,8 @@ Nothing about this was planned at the beginning. The requirement became clearer 
 
 ## The Web Prototype Becomes a Native App
 
+> **Why it matters:** A prototype proves the problem is worth solving; a production app earns the right to solve the harder requirements of real use.
+
 The Streamlit version proved that the idea was useful. But I wanted an app that felt natural on an iPhone and iPad, could use the camera well, could work with Apple sharing and files, and could eventually be distributed through TestFlight.
 
 This led to Swift and Xcode. Swift is the language used to write Apple applications. Xcode is the program used to build, run, test, and prepare them for distribution.
@@ -177,6 +185,8 @@ Again, I did not first become an expert in either. Codex could create and inspec
 The move from Streamlit to Xcode was not a fresh start. It carried the learning from the prototype into a more capable form. The first web app had taught what the product needed to do. The native app gave that product a better home.
 
 ## The Invisible Parts Arrive Later
+
+> **Why it matters:** A beginner need not design the final architecture at the start, but must gradually invest in it as success creates real complexity.
 
 At the beginning, I did not think about databases, backups, performance, or refactoring. That was appropriate. A beginner should not be frightened away from a simple idea by trying to solve every future problem first.
 
@@ -189,6 +199,8 @@ As sentence lists grew, the app also had to avoid doing unnecessary work each ti
 The invisible structure came after the visible value. It was built because the growing app needed it, not because I had imagined every future need on day one.
 
 ## What Codex Changed
+
+> **Why it matters:** AI did not remove the work of building; it made small, uncertain ideas cheap enough to try, inspect, and improve.
 
 Without Codex, each new idea would have faced the same barrier: I would need to describe it to a programmer, wait for an interpretation, pay for the work, and hope the next version matched what I meant. Small ideas might never have been attempted.
 

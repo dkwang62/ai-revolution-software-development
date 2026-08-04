@@ -78,6 +78,8 @@ AI changes the boundary because ordinary language can now participate in the tra
 
 ## English Is Not Enough
 
+> **Why it matters:** AI makes it easier to begin with a vague wish, but the vagueness must still be resolved before it becomes a bug.
+
 It would be tempting to say that natural language simply replaces programming languages. That is too simple.
 
 Ordinary language is powerful because humans use it to express goals, concepts, stories, constraints, and intentions. But it is also ambiguous. The sentence "notify the counsellor if absences become worrying" may be meaningful to a teacher, but it is not precise enough for a machine. What counts as worrying? Which counsellor? Which absences? Over what time period? Should illness be treated differently? Should weekends count? Should parents also be notified? What if the data is missing?
@@ -91,6 +93,8 @@ This is why **natural-language programming** should not be understood as casual 
 The language is English, but the discipline remains engineering.
 
 ## Why AI Can Move Between Representations
+
+> **Why it matters:** AI's advantage is not a mysterious new programming language; it is the ability to connect familiar descriptions, examples, code, and feedback.
 
 The central mystery remains:
 
@@ -126,6 +130,8 @@ This difference explains both AI's power and weakness. Learned relationships let
 AI's ability to write software is therefore not magic. It is movement between representations.
 
 ## Translation Is One Part of Programming
+
+> **Why it matters:** As translation becomes cheaper, discovering what deserves to be translated becomes the more valuable human task.
 
 Programming has always involved translation, but translation is not its whole essence. Before anyone can express a procedure in code, someone must discover the real problem, negotiate competing needs, divide the system into parts, model state, choose an architecture, and decide what failure means.
 
@@ -183,6 +189,8 @@ AI reduces the cost of translation. It does not remove the need for judgement.
 
 ## Natural Language as a Programming Layer
 
+> **Why it matters:** A prompt that controls behaviour is a high-level program and should be designed, tested, and changed with that seriousness.
+
 Natural language becomes powerful in AI-assisted development because it sits above traditional programming languages.
 
 When a person writes:
@@ -199,6 +207,8 @@ This is where the history of abstraction meets the future of engineering. AI let
 
 ## Why Programming Languages Will Not Vanish
 
+> **Why it matters:** Generated code remains the inspectable contract between an uncertain interpretation and a machine that must behave precisely.
+
 If natural language becomes a higher programming layer, why keep programming languages?
 
 Because formal languages still provide precision.
@@ -214,6 +224,8 @@ Humans express intent. AI helps translate intent into formal structures. Determi
 This layered view resolves a false debate. AI does not make programming languages irrelevant. It changes who must write them, how often humans must interact with them directly, and where human expertise is most valuable.
 
 ## Why This Matters Economically
+
+> **Why it matters:** The savings come from reducing many small translations across a project, not merely from producing code faster.
 
 The economic effect of AI-assisted programming comes from reducing translation cost.
 

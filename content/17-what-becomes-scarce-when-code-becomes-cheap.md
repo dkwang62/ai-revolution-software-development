@@ -16,6 +16,8 @@ The future of software will be shaped by those constraints.
 
 ## The Bottleneck Moves Upward
 
+> **Why it matters:** Cheap code does not make software effortless—it makes the earlier decisions about purpose, evidence, and responsibility more visible.
+
 Suppose a teacher has an idea for a tool that would help one class for one term. A clinic needs a small application for an unusual workflow. A business owner is tired of copying the same information between two systems. A language learner wants an application that behaves differently from every product on the market.
 
 In the past, such ideas often failed an economic test before they failed a technical one. They were valuable, but not valuable enough to pay for the programmers, designers, testing, deployment, and maintenance required to make them real.
@@ -46,6 +48,8 @@ Requirements become a higher form of programming. Instead of expressing every ma
 
 ## Keeping Abundant Code Coherent
 
+> **Why it matters:** When creating a feature is cheap, maintaining a coherent whole becomes a more important form of engineering discipline.
+
 A feature can work and still make the whole system worse.
 
 Software needs an overall structure: where one part ends and another begins, how information is represented, which component has authority, what happens when something fails, and how future changes can be made without breaking the past. This is the work of software architecture.
@@ -68,6 +72,8 @@ Those mechanisms can remove much of the mechanical checking. An agent can render
 
 ## Judgement and Taste
 
+> **Why it matters:** Once many solutions are affordable, choosing the one that best serves people becomes a competitive advantage.
+
 When production is difficult, people accept whatever can be made. When alternatives become cheap, choosing among them becomes the work.
 
 Judgement determines whether an answer is useful, safe, excessive, incomplete or wrong. Taste decides what to leave out. It can distinguish a coherent product from a collection of features, a helpful automation from an intrusive one, and a humane interface from a technically functional screen.
@@ -75,6 +81,8 @@ Judgement determines whether an answer is useful, safe, excessive, incomplete or
 AI can produce alternatives and help evaluate them. That increases the range of possible choices; it does not remove the need to choose. In a world overflowing with generated possibilities, restraint may become more valuable than production.
 
 ## The New Software Economy
+
+> **Why it matters:** The scarce resource shifts from the ability to type implementation to the ability to define, connect, verify, and own a useful change.
 
 The first great change is that many more people will be able to attempt software. The deeper change is that value will migrate away from typing code and towards knowing what should be built, supplying the context, designing the system, proving its behaviour and accepting responsibility for the result.
 

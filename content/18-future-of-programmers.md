@@ -14,6 +14,8 @@ That experience offers a better starting point than the familiar question, “Wi
 
 ## Translation Is Becoming Cheaper
 
+> **Why it matters:** The profession is changing because the historic monopoly on translating human needs into machine instructions is weakening.
+
 For decades, programmers have been necessary intermediaries between human intention and machine execution. A teacher understood the classroom problem. A doctor understood the clinical workflow. A business owner understood the process. But the machine required formal instructions, and the programmer supplied the translation.
 
 AI weakens that dependency. A user can describe a workflow, show an example, test a prototype and correct the result without first mastering a programming language. This is a real redistribution of power.
@@ -48,6 +50,8 @@ That is the trajectory. A fixed list of what AI cannot do will age quickly. The 
 
 ## The AI-Assisted Builder
 
+> **Why it matters:** Domain expertise can now enter the building process directly, but it still needs persistence and supervision to become a dependable product.
+
 I am not a professional programmer. I became what might be called an **AI-assisted builder**: someone with a domain problem, product vision, persistence and enough technical curiosity to supervise an AI agent inside a real development loop.
 
 ```text
@@ -67,6 +71,8 @@ This category changes who can initiate a software project. Entrepreneurs, teache
 The tools alone are not enough. My application required months of product decisions, testing, debugging, migration and stubborn refinement. It grew to include stored learning data, text extracted from photographs, animated stroke order, pronunciation search, analysis of character components and AI-assisted learning tasks. Wider access does not eliminate the need to learn; it changes what must be learned first.
 
 ## Programmers Move Upward
+
+> **Why it matters:** The most durable programming skills are increasingly about system judgement—architecture, safety, integration, and verification—rather than recalling syntax.
 
 Routine implementation will not vanish, but less human time may be spent producing its first draft. AI can increasingly generate standard forms, settings screens, tests, scripts and common connections between systems. Remembering the exact syntax of a language becomes less valuable when the answer is immediately available.
 
@@ -95,6 +101,8 @@ AI makes shallow programming easier. It raises the value of deep engineering jud
 
 ## The Labour-Market Question
 
+> **Why it matters:** Productivity evidence is mixed because AI's value depends on the task, the existing system, the user's skill, and the quality of the feedback loop.
+
 The evidence does not support a single, clean productivity number. A controlled GitHub Copilot experiment found that developers completed one bounded JavaScript task 55.8% faster. A [2025 preprint reporting field experiments](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) across Microsoft, Accenture and a Fortune 100 company estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. Yet an [early-2025 METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that sixteen experienced open-source developers working in their own projects took 19% longer when AI tools were allowed.
 
 The evidence continued moving. In [February 2026](https://metr.org/blog/2026-02-24-uplift-update/), METR said its earlier result no longer represented current tools. Late-2025 data suggested possible speed gains, but the size was highly uncertain. Google's DevOps Research and Assessment programme, known as **DORA**, associated greater AI adoption with lower delivery speed and stability in its [2024 report](https://dora.dev/research/2024/dora-report/); its [2025 research](https://dora.dev/research/2025/dora-report/) found higher speed alongside continued instability.
@@ -106,6 +114,8 @@ Economics nevertheless creates adoption pressure. Companies will compare an AI-a
 The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) projects employment of software developers, quality-assurance analysts and testers to grow 15% from 2024 to 2034. That forecast may change, and employment totals can conceal large shifts in tasks and entry routes. The most defensible near-term conclusion is redistribution rather than simple disappearance.
 
 ## A Larger Profession, Differently Shaped
+
+> **Why it matters:** More people may build software, while professional engineers become more important where consequences, scale, and integration are hardest.
 
 The future programmer may be an architect, verifier, integrator, designer of safe boundaries and judge of trade-offs. The future builder may enter through medicine, education, law, science or a problem no software company considered profitable enough to solve.
 

@@ -6,6 +6,8 @@ title: "Five-Year and Ten-Year Scenarios"
 
 ## A Glimpse of Abundant Intelligence
 
+> **Why it matters:** The future depends on several forces improving together; model capability alone does not create a usable revolution.
+
 The preceding chapters described the economic and organisational system forming around AI. This chapter offers conditional scenarios, not a promise or a timetable. It asks what might become possible if capability improves, costs fall, and verification, integration, and institutions keep pace.
 
 Imagine an ordinary morning in this future. A teacher is worried about one student who understands spoken explanations but struggles with written exercises. She does not search an app store for a product designed for the average learner. She describes the difficulty, shows examples of the student's work, and asks for a two-week experiment. An AI system creates a small learning tool, checks it against the school's privacy rules, and adapts it as evidence arrives. The software may be discarded when it has served its purpose.
@@ -19,6 +21,8 @@ This is one optimistic scenario for abundant intelligence. It is not a world wit
 The possibility is enormous. So are the obstacles—but they do not all require a scientific miracle.
 
 ## The Revolution Does Not Require Fusion
+
+> **Why it matters:** A transformational change can arrive through steady falls in the cost of useful tasks, without requiring a miraculous unlimited intelligence.
 
 Abundant intelligence does not mean infinite, free computation. It means that the cost of a dependable answer or completed task falls low enough for vastly more tasks to become worthwhile.
 
@@ -46,6 +50,8 @@ A cheap answer that requires hours of professional repair is expensive intellige
 Once this total cost falls below the value of the result, another use of AI becomes economically possible. That is the mechanism that can carry intelligence from scarcity towards abundance.
 
 ## The Obstacles Are a Road Map
+
+> **Why it matters:** The gaps in today's systems—reliability, memory, tools, cost, and governance—also show where investment and progress are likely to concentrate.
 
 Five barriers stand between today's impressive models and the world just imagined. Each is serious. None is equivalent to demanding a machine that knows everything or an unlimited source of energy.
 
@@ -113,6 +119,8 @@ These signals do not prove the forecast. They show that research, investment, an
 
 ## The Battle to Become the Interface for Enterprise Intent
 
+> **Why it matters:** The eventual winner may be the system that best translates a business need across many existing tools, not the one that owns every tool.
+
 For decades, the centre of enterprise power has been the application in which work is recorded: the ERP system, customer database, payroll system, spreadsheet, document store, email system, or specialised operational tool. People had to learn each system's screens, fields, reports, and procedures. A change in business often required a costly change in several of them.
 
 AI may move the centre of gravity upward. The important question becomes: **where does a person begin when they want the organisation to do something new?** If they begin with an agent that understands the goal, gathers the relevant knowledge, proposes a workflow, and calls approved tools, that agent becomes the new interface to **enterprise intent**—the organisation's stated purpose for a piece of work.
@@ -136,6 +144,8 @@ No vendor is guaranteed either role. Frontier model companies, AI-native coding 
 
 ## Five Years: Intelligence Becomes Ordinary Infrastructure
 
+> **Why it matters:** The most consequential AI may become less visible as it quietly becomes part of everyday work, like databases or cloud services.
+
 By approximately 2031, AI is likely to become less visible precisely because it is used more widely.
 
 People will increasingly begin software projects by describing behaviour, supplying examples and defining tests. Agents will work across files, tools and existing systems. Routine tasks will use inexpensive models and little additional reasoning; difficult or consequential tasks will receive more computation and tighter supervision.
@@ -151,6 +161,8 @@ This future will arrive unevenly. A teacher's temporary learning tool may be gen
 By 2031, the most successful systems may be those that make AI feel least like magic and most like dependable infrastructure.
 
 ## Ten Years: Intention Becomes an Interface
+
+> **Why it matters:** The important trajectory is toward systems that combine memory, tools, and checking around a model—not toward one magical replacement for the Transformer.
 
 By approximately 2036, the underlying model may no longer be described simply as a Transformer. Attention could remain one organ inside a hybrid system with persistent memory, recurrence, specialised reasoning, tools and several models operating at different costs.
 
@@ -175,6 +187,8 @@ Computing began by forcing people to express intention in the language of the ma
 Software would be the first great case because it is already made of information. Science, administration and carefully bounded physical systems could follow. The change would not depend on AI developing consciousness or becoming an all-knowing genie. It would depend on intelligence becoming sufficiently capable, inexpensive and well controlled to coordinate many existing technologies.
 
 ## Where the Story Can Branch
+
+> **Why it matters:** Progress is limited as much by verification and integration as by raw model capability, so institutions will shape the pace of change.
 
 Two variables determine how quickly the promise is realised: the rate of capability improvement and the cost of verification and integration.
 

@@ -38,6 +38,8 @@ AI changes software in a similar way. The business user, teacher, doctor, lawyer
 
 ## Requirements Become More Important
 
+> **Why it matters:** Cheap prototypes expose fuzzy thinking faster, so the cost of an unclear requirement moves from delay into rework and risk.
+
 When software was expensive to build, vague requirements were still dangerous, but the slowness of development sometimes exposed ambiguity before implementation went too far. Meetings, specifications, estimates, and design reviews created friction. Friction is costly, but it can also force thought.
 
 AI reduces friction. That is one of its great strengths.
@@ -106,6 +108,8 @@ The next step is to turn these evolving instructions into specifications that ca
 
 ## From Prompt to Specification
 
+> **Why it matters:** The moment an instruction affects real behaviour, it needs the discipline once reserved for requirements and design documents.
+
 In casual use, a prompt is simply an instruction to an AI system.
 
 In software development, a prompt can become something more serious. It can become a specification: a detailed description of required behaviour that people can inspect and test.
@@ -169,6 +173,8 @@ The interface is still language, but the result is no longer only an answer. It 
 
 ## Communication Is Not Enough
 
+> **Why it matters:** An AI can understand a request yet still need rules, examples, tests, and authority before the request becomes safe action.
+
 Clear communication is necessary, but it is not sufficient.
 
 A well-written prompt can still produce a wrong answer. A precise requirement can still overlook an edge case. A model can still misunderstand context. A generated implementation can still contain bugs.
@@ -199,6 +205,8 @@ This is why domain knowledge becomes more valuable. A doctor, teacher, lawyer, e
 Professional software developers do not disappear in this process. Their role moves upward too. They may spend less time writing routine code and more time shaping requirements, designing systems, reviewing AI output, creating evaluation suites—collections of test cases used to measure AI behaviour—managing integrations, and ensuring reliability.
 
 ## The Economics of Communication
+
+> **Why it matters:** Faster implementation increases the value of saying the right thing early, because misunderstandings can now spread through a system faster too.
 
 Miscommunication has always been expensive in software.
 

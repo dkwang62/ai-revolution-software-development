@@ -44,6 +44,8 @@ tools, tests, and people decide what can be trusted or done
 
 ## A Model Is a Map, Not the World
 
+> **Why it matters:** A model may know broad patterns extremely well while knowing nothing about the private purpose, current facts, or hidden constraints of your particular task.
+
 The word *model* did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.
 
 None is the thing itself. Each simplifies reality in a form that helps somebody reason or act.
@@ -53,6 +55,8 @@ An AI model is likewise not a library, a search engine, or millions of handwritt
 The model is a map, not the territory.
 
 ## How a Model Is Trained
+
+> **Why it matters:** The surprising capability comes from a simple prediction exercise repeated at enormous scale, not from engineers writing down the rules of English or Swift.
 
 The full recipe for any named frontier model is private and changes between laboratories and generations. But the broad process is clear:
 
@@ -178,6 +182,8 @@ The result is not one all-powerful model. It is a model inside a supervised work
 
 ## Using the Finished Model
 
+> **Why it matters:** Training gives a model general skill; current context, tools, and people supply the local truth it needs to act usefully.
+
 **Inference** means using the trained model. When someone asks it to write a Swift function, explain a legal clause, translate a sentence, or generate a quiz, it is not retraining itself from the beginning. It combines the request with information available now and generates an answer one piece at a time.
 
 In practical terms, an answer can draw on four sources:
@@ -192,6 +198,8 @@ Your one conversation normally does not permanently change the model's weights. 
 This distinction is essential for software. Training may give a model broad knowledge of programming patterns. It does not give it the private rules of a particular company, the current contents of a database, an unusual customer promise, or the reason an awkward screen exists. Those details must be supplied through current project context, approved retrieval, tools, and people who understand the work.
 
 ## Why the 2017 Transformer Changed the Trajectory
+
+> **Why it matters:** The Transformer made it practical to learn from far more relationships at once, turning generative AI from an interesting idea into an economic force.
 
 For years, AI could recognise patterns, classify pictures, translate short passages, and generate limited text. In 2017, Google researchers published [_Attention Is All You Need_](https://research.google/pubs/attention-is-all-you-need/), introducing the **Transformer** architecture.
 
@@ -210,6 +218,8 @@ But turning English into code is not the same as translating English into anothe
 That is where this chapter stops. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows the next stage in detail: how a human request becomes requirements, code, tool use, revision, and a verified change.
 
 ## When a Model Can See and Hear
+
+> **Why it matters:** A screenshot or recording adds evidence to a task, but it is still evidence to inspect—not direct knowledge of what the user experiences.
 
 Modern models can increasingly work with text, code, images, diagrams, screens, speech, and video. For software development, this matters because important requirements and defects are not always captured in prose.
 
@@ -242,6 +252,8 @@ This expands the model's inputs, not its authority. Screens can be cropped, blur
 
 ## Why Models Differ—and What Upgrades Are Trying to Improve
 
+> **Why it matters:** A meaningful upgrade is one that completes a checked task more reliably, not merely one that sounds more fluent in conversation.
+
 Different training choices create different models. They may vary in training material, architecture, size, efficiency, safety tuning, context length, multimodal capability, tool use, and intended use. One may be especially good at coding, another at writing, and another small enough to run on a phone.
 
 That is why model names are not interchangeable. It also explains why an upgrade can change behaviour unexpectedly. A traditional application can often add one feature while preserving the rest. A learned model is a large web of relationships: changing its data, training, or architecture can shift many behaviours at once. Applications must test a successor rather than assume it is perfectly compatible.
@@ -266,6 +278,8 @@ The useful unit of progress is not “code was generated.” It is “a bounded 
 The defensible ideal is therefore not an all-powerful model. It is an **AI system**: a capable model working with selected context and memory, specialist tools, permissions, tests, records, and human authority.
 
 ## What Training Cannot Discover by Itself
+
+> **Why it matters:** Data can reveal what tends to happen; proving why it happens still requires theory, experiments, tools, and real-world feedback.
 
 The success of grammar learning invites a reasonable question: if a model can discover the statistical grammar of English or Python from examples, why can it not discover every hidden rule in the world?
 
@@ -292,6 +306,8 @@ Three principles follow:
 The side story [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]] explores the genome example further. Here, its purpose is simply to set a boundary on what training alone can promise.
 
 ## Capability Has a Cost—and Does Not Remove Responsibility
+
+> **Why it matters:** The useful measure is not the price of a model response but the cost of reaching a reliable decision or completed task.
 
 Training requires specialised hardware, electricity, engineers, data preparation, experiments, and evaluation. It is a large upfront investment that creates a reusable capability. **Inference**—each request to a deployed model—is an operating cost. It depends on model size, input length, output length, speed, reasoning effort, multimodal input, and hardware efficiency.
 

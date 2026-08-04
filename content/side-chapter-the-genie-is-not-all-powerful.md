@@ -18,6 +18,8 @@ The genie is powerful because it can work with relationships at enormous scale. 
 
 ## Prediction Is Not Explanation
 
+> **Why it matters:** A good forecast can be useful without revealing the mechanism, but it is not enough to justify a high-consequence intervention.
+
 A model may predict that a customer will stop subscribing, a drug candidate is promising, a mutation may increase disease risk, or a section of code probably contains a defect.
 
 The prediction may be valuable. The next question is harder:
@@ -57,6 +59,8 @@ Biology still matters.
 
 ## Python and DNA
 
+> **Why it matters:** Code is unusually learnable because its behaviour can often be run and checked; biological sequences have consequences spread across far more hidden layers.
+
 A contrast with Python makes the boundary clearer.
 
 Python is a formal language. It has defined syntax and an interpreter. In an ordinary Python environment, this instruction:
@@ -83,6 +87,8 @@ AI can learn patterns in both. The meaning of those patterns is much harder to e
 
 ## Models Compress Reality
 
+> **Why it matters:** A model is valuable because it leaves out detail, yet the missing detail is exactly where a rare, consequential mistake can live.
+
 Every model is a compression.
 
 A map is not the territory. A weather model is not the weather. An economic model is not the economy. An AI model is not the world.
@@ -106,6 +112,8 @@ A model trained on observations from this world inherits those limits. Greater c
 Nor does a larger map become the territory simply because it contains more detail.
 
 ## AI as Microscope, Not Oracle
+
+> **Why it matters:** AI's greatest scientific role may be to help people notice, test, and explain patterns—not to announce final truth.
 
 A better way to think about AI is as a new kind of instrument.
 

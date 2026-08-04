@@ -12,6 +12,8 @@ The gap between those two things explains why an impressive pilot can fail to be
 
 ## The Day-200 Question
 
+> **Why it matters:** A convincing demonstration has no business value unless it can remain useful, trusted, and affordable long after the demonstration ends.
+
 Imagine a customer-service demonstration. An AI reads a customer message and produces a polite, accurate-looking reply. Everyone in the room is impressed.
 
 Now ask a different question: what should be happening on day 200, after thousands of real customers have used it?
@@ -46,6 +48,8 @@ This is the practical meaning of human-in-the-loop. It is not simply a person cl
 
 ## Start With the Work, Not the Technology
 
+> **Why it matters:** Starting from a stubborn, valuable task prevents an organisation from buying an impressive tool with nowhere useful to apply it.
+
 The most productive question is not “Where can we use AI?” It is:
 
 > Which repeated decision, explanation, search, hand-off, or piece of drafting is slow, costly, error-prone, and important enough to improve?
@@ -62,6 +66,8 @@ This is why a narrowly focused assistant often creates more value than a grand p
 
 ## Not Every AI Problem Is a Generative-AI Problem
 
+> **Why it matters:** Choosing the simplest suitable technique is often safer, cheaper, and more useful than putting a generative model into every workflow.
+
 The public conversation often treats AI as one thing. It is better understood as a small family of tools, each suited to a different job.
 
 | Kind of system | Plain-language question | Example | What it should not be confused with |
@@ -75,6 +81,8 @@ The public conversation often treats AI as one thing. It is better understood as
 These tools can be combined. A retailer might use prediction to forecast demand, optimisation to plan replenishment, generative AI to explain the plan to managers, and ordinary software to enforce the ordering rules. This is another reason the future enterprise will be a system of systems, not a single all-powerful model.
 
 ## Data Is Both Fuel and Evidence
+
+> **Why it matters:** The same data that helps an AI answer can also be the evidence used to prove whether the answer improved a real decision.
 
 Data has two different jobs in an AI project.
 
@@ -120,6 +128,8 @@ The appropriate level of autonomy should match the consequence of being wrong:
 [[14-economics-of-trust|Trust]] is therefore not an abstract ethical decoration. It is what determines which useful actions an organisation can safely permit.
 
 ## From Pilot to Everyday Work
+
+> **Why it matters:** Adoption is a continuing learning loop, not a launch date; the system must improve alongside the people and process using it.
 
 The path from a promising demonstration to a durable system is usually a loop, not a single launch.
 

@@ -24,6 +24,8 @@ That is why trust belongs in the economics of AI. An untrusted model can be clev
 
 ## Trust as an Economic Boundary
 
+> **Why it matters:** Trust determines which valuable tasks an organisation will permit AI to touch, and therefore where capability can produce economic value.
+
 Every organisation lives with risk. Banks accept credit risk, hospitals accept operational risk, airlines accept scheduling risk, and software companies accept defect risk. The issue is never whether risk exists. The issue is whether the expected benefit of an action exceeds its expected cost, including the cost of failure.
 
 AI adoption follows the same logic. For any workflow, an organisation is implicitly asking:
@@ -53,6 +55,8 @@ This is bounded reliance. AI was useful because it was given room to be flexible
 
 ## Bounded Reliance
 
+> **Why it matters:** The sensible goal is not to trust an AI everywhere, but to give it useful freedom inside limits that make failure survivable.
+
 The right goal is not blind trust. It is bounded reliance.
 
 An organisation may trust AI to draft a document but not send it, suggest code but not deploy it, classify support tickets but not close high-risk cases, summarise contracts but not approve legal obligations, query internal knowledge but not expose confidential customer records, or recommend a migration plan but not modify a legacy system without review.
@@ -78,6 +82,8 @@ Human approval is not evidence that AI has failed. If AI reduces a five-hour con
 
 ## Trust and Agents
 
+> **Why it matters:** The moment an AI can act, the cost of a mistake includes what it changes—not merely what it says.
+
 Trust becomes especially important when AI moves from answering questions to taking actions. A chatbot can be wrong. An agent can be wrong and do something about it.
 
 An AI agent may open files, modify code, run commands, query databases, create support or work-tracking tickets, send emails, call APIs, update documents, or trigger workflows. Each capability increases usefulness, and each also increases risk. Therefore agentic systems need stronger boundaries than simple assistants: sandboxes, permission levels, human approval gates, tool restrictions, action logs, rollback mechanisms that restore an earlier state, monitoring, and escalation paths that hand difficult cases to a responsible person.
@@ -93,6 +99,8 @@ AI may help explain, document, test, and modernise these systems. But organisati
 Trust is the bridge between AI capability and legacy modernisation. Without it, AI can describe the old system. With it, AI can help change the old system safely.
 
 ## What Raises and Lowers Trust
+
+> **Why it matters:** Trust is built by visible safeguards and accountable ownership, not by persuasive language or a high benchmark score.
 
 Trust is not binary. It grows when useful capability is surrounded by verification, governance, security, and clear accountability. It falls when exposure is unmanaged, actions are invisible, or nobody is clearly responsible.
 
@@ -111,6 +119,8 @@ Model intelligence is only one component. An extremely capable model with poor g
 That is one reason enterprise AI may not be won simply by the smartest model. It may be won by the system that makes AI most trustworthy in valuable workflows.
 
 ## The Economics of Trust
+
+> **Why it matters:** Better trust can unlock more valuable work than a small increase in model cleverness, because it changes the work an organisation is willing to delegate.
 
 Trust changes adoption because it changes expected value. Untrusted AI can only be used where mistakes are cheap. Partially trusted AI can assist humans under supervision. Highly trusted AI, inside bounded workflows, can take on more valuable work.
 

@@ -36,6 +36,8 @@ That is the practical doorway into this chapter. Information can survive a chang
 
 ## Symbols and Meaning
 
+> **Why it matters:** AI does not need one universal form of meaning; it becomes useful when it can preserve what matters while information changes form.
+
 Humans usually handle information symbolically.
 
 We use words, numbers, diagrams, gestures, music, equations, maps, legal clauses, programming languages, and images. Each symbol system has rules. A language has grammar. Mathematics has notation. A programming language has syntax. A map has conventions. A musical score has marks that musicians know how to interpret.
@@ -70,6 +72,8 @@ Once readers understand that, AI-generated software becomes less magical. Softwa
 
 ## The Old Way: Rules
 
+> **Why it matters:** Rules are valuable precisely because they make a system predictable, inspectable, and easy to hold accountable.
+
 Traditional software usually stores knowledge as explicit rules.
 
 If the account balance is below zero, charge a fee. If the password is wrong five times, lock the account. If the user is an administrator, show the admin panel. If the temperature exceeds a threshold, send an alert.
@@ -87,6 +91,8 @@ Old AI often tried to solve intelligence by storing explicit rules. But rules be
 Modern AI works differently.
 
 ## The New Way: Relationships
+
+> **Why it matters:** Learned relationships handle variation that would require too many hand-written rules, but they also replace certainty with judgement and checking.
 
 Modern AI stores learned relationships.
 
@@ -115,6 +121,8 @@ That is why AI can translate English into Chinese, summarise a legal paragraph, 
 
 ## Meaning Becomes Location
 
+> **Why it matters:** A model does not store a concept in one readable place; it represents useful relationships across many numbers, which makes it flexible but difficult to explain exactly.
+
 One useful intuition is that modern AI represents information in mathematical spaces.
 
 The reader does not need linear algebra to understand the basic idea. Imagine concepts arranged not alphabetically but by relationship. Dog, cat, wolf, fox, and animal would be near one another. Democracy, election, voting, constitution, and parliament would form another neighbourhood. Swift, Python, function, variable, class, and compiler would occupy related regions.
@@ -128,6 +136,8 @@ The phrase "AI thinks in mathematics" can be useful as a metaphor, but it must b
 That explanation is less magical, but more durable.
 
 ## Why This Matters for Software
+
+> **Why it matters:** AI can connect a request, a diagram, a screen, and code because each can become related numerical evidence—not because the distinctions no longer matter.
 
 Software development is full of representation changes.
 

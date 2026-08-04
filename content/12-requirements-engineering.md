@@ -42,6 +42,8 @@ The programming language is no longer always the bottleneck. Understanding the p
 
 ## Why Requirements Become More Valuable
 
+> **Why it matters:** AI makes ambiguity executable, which means an omitted rule can become a working mistake before anyone notices.
+
 AI can turn an unclear idea into a working prototype within minutes. That is an achievement, but it also makes ambiguity executable. A missing rule no longer waits quietly in a meeting note; it becomes software that confidently does the wrong thing.
 
 When code was expensive, the main bottleneck was translating requirements into implementation. As generation becomes cheaper, the bottleneck moves upward: defining intended behaviour well enough to build, test, and maintain it. Requirements become an active engineering surface rather than paperwork completed before the real work begins.
@@ -102,6 +104,8 @@ A prompt asks the AI to do something now. A requirement states what the finished
 
 ## Requirements for AI Behaviour
 
+> **Why it matters:** An AI feature needs a specification not only for its answer, but for its evidence, uncertainty, permissions, and right to act.
+
 AI adds questions that ordinary features may not raise. What should the system know or retrieve? What information must it ignore or forget? Must it cite its source? May it take an action, or only recommend one? What happens when it is uncertain? Which decisions require human approval?
 
 These are not separate technical distractions. They are requirements because they change what the user experiences and what risks the organisation accepts. A loan recommendation may require reasons and source evidence. A support agent may be allowed to draft a refund but not approve it. A quiz generator may propose content but never change the learner's stored material without consent.
@@ -110,6 +114,8 @@ The greater the system's authority, the more explicit the boundary must be.
 
 ## Evaluation Is Not Verification
 
+> **Why it matters:** A system can perform well on typical examples and still be unfit for a decision that demands an exact guarantee.
+
 Because an AI may produce several acceptable answers, teams evaluate it across representative examples. An evaluation can show that the quiz usually follows the expected level, source material, and sequence.
 
 Verification asks a narrower question: can this particular output be safely used now? Does it have the required fields? Did it expose the answer? Can the application parse it? Is every question grounded in permitted material?
@@ -117,6 +123,8 @@ Verification asks a narrower question: can this particular output be safely used
 Evaluation measures general performance. Verification checks a particular result or system against its stated rules. Both depend on requirements; without an agreed target, a team can measure activity without knowing whether it succeeded.
 
 ## The New Economics of Definition
+
+> **Why it matters:** Clear definition is now a source of speed: it prevents a cheap first draft from becoming an expensive chain of corrections.
 
 Cheap generation can multiply both good ideas and confused ones. Clear requirements reduce rework because they give the model less room to invent the wrong behaviour and give humans a visible basis for checking the result.
 

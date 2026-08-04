@@ -30,6 +30,8 @@ Reasoning becomes more valuable here because the agent is not merely composing a
 
 ## From an Answer to an Action
 
+> **Why it matters:** An agent is valuable not because it talks like a person, but because it can pursue a bounded goal through evidence, tools, and feedback.
+
 The word _agent_ is used loosely. For this book, an agent is not simply a clever chatbot or any program that calls a model. It is an engineered system that combines a model with a goal, context, tools, state, feedback, and rules for continuing or stopping.
 
 A conventional assistant might explain how to repair a bug. A coding agent can search the repository—the project files and their recorded change history—open the relevant files, make a bounded change, run a test, inspect the failure, and try again. A customer-service agent might retrieve an account record, draft a response, and—if its authority permits—update a case. The distinction is the passage from words to controlled action.
@@ -50,6 +52,8 @@ Giving an AI tools is like giving a worker keys. Permissions decide which rooms 
 This is why an agent may be confined to a safe area, allowed to read but not change information, given access only to specified systems, required to ask before important actions, limited in how frequently it can act, recorded while it works, and provided with a way to undo changes. Industry terms include **sandbox** (an isolated working area), **read-only mode**, **scoped credentials** (login permissions limited to a specific purpose), **approval gate**, **rate limit**, **audit trail**, and **rollback** (restoring an earlier state). These protections are not bureaucratic decoration. They are part of the contract that a probabilistic model cannot supply by itself.
 
 ## Side Story: When a Sandbox Was Not Enough
+
+> **Why it matters:** The danger in an agent is usually not mysterious intent; it is excessive access combined with inadequate boundaries and monitoring.
 
 In July 2026, a security incident involving an AI agent was reported with language that naturally sounded like science fiction: a model had “escaped” a sandbox and attacked an external company.
 
@@ -138,6 +142,8 @@ These examples should not be mistaken for autonomy without supervision. I suppli
 
 ## Human in the Loop Is a Design Choice
 
+> **Why it matters:** Human review is most valuable at the points where a wrong decision is costly, irreversible, or hard to detect later.
+
 A phrase-discovery feature uses AI to identify useful Chinese phrases in text the learner has photographed or imported. The model is good at proposing candidates, but the surrounding application does not silently accept every proposal.
 
 The application preserves the original passage, removes phrases already in the learner's collection, presents the remaining candidates for selection, and protects its stored data. The learner decides what to keep. These are examples of **guardrails**—constraints placed around model behaviour—and of a **human-in-the-loop** workflow.
@@ -147,6 +153,8 @@ The phrase can sound like a vague promise that a person will somehow catch mista
 Human review should be reserved for consequential or ambiguous decisions. If every harmless step requires approval, the agent saves little time. If irreversible steps require none, the system is unsafe. Good orchestration places deterministic checks and human judgement where each has the greatest value.
 
 ## Side Story: Teaching an Agent to See Its Work
+
+> **Why it matters:** Agents improve dramatically when they can inspect the real result of an action instead of judging success from their own words or code.
 
 One of the next important improvements in agentic AI will not come only from a larger model. It will come from giving the agent a better way to observe the consequences of its own work.
 
@@ -199,6 +207,8 @@ Return to the small [[08-how-ai-converts-english-into-software#a-worked-example-
 This also explains why agents will not sweep traditional software engineering away. Compilers check code; schemas define permitted data; version control records changes; test suites check behaviour; security scanners find known risks; and permission systems limit access. Tools that reveal what a running system is doing provide **observability**. These narrow tools gain precision from their narrowness. The strongest system combines the model's breadth with their certainty.
 
 ## Integration Determines Economic Value
+
+> **Why it matters:** The model creates a possibility; connecting it safely to the systems where work happens determines whether that possibility produces value.
 
 An isolated model answers one question at a time. An integrated agent can coordinate many model calls and tools toward a completed workflow. That makes agents potential economic multipliers—but integration and supervision have costs.
 
