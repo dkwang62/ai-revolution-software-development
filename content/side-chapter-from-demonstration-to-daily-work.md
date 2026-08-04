@@ -22,7 +22,7 @@ Now ask a different question: what should be happening on day 200, after thousan
 - Can it see the customer's actual order, while respecting privacy?
 - Does it know when a refund needs a manager's approval?
 - Can a staff member correct a bad draft easily?
-- Is somebody measuring whether replies are faster *and* whether customers are happier?
+- Is somebody measuring whether replies are faster _and_ whether customers are happier?
 - What happens when a new product, a new policy, or an unusual complaint changes the situation?
 
 The first question is about model capability. The second is about an operating system for work.
@@ -33,14 +33,14 @@ That distinction should make readers more optimistic, not less. The model is no 
 
 AI adoption is often described as if a company merely needs an AI department. In practice, useful systems cross several kinds of knowledge.
 
-| Contributor | What that person protects or contributes |
-| --- | --- |
-| Business owner | Chooses a problem worth solving and defines the value of a better outcome. |
-| Domain expert | Explains the exceptions, language, risks, and rules that outsiders do not know. |
-| Users | Reveal whether the workflow is genuinely useful, understandable, and practical. |
-| Data and technology team | Connect the relevant information, systems, and tools safely. |
+| Contributor                              | What that person protects or contributes                                         |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| Business owner                           | Chooses a problem worth solving and defines the value of a better outcome.       |
+| Domain expert                            | Explains the exceptions, language, risks, and rules that outsiders do not know.  |
+| Users                                    | Reveal whether the workflow is genuinely useful, understandable, and practical.  |
+| Data and technology team                 | Connect the relevant information, systems, and tools safely.                     |
 | Security, privacy, and compliance people | Set boundaries for sensitive information, permissions, records, and obligations. |
-| Leaders | Choose priorities, provide time and resources, and decide who is accountable. |
+| Leaders                                  | Choose priorities, provide time and resources, and decide who is accountable.    |
 
 No one group can substitute for the others. A brilliant model cannot discover an unstated business rule reliably. A domain expert cannot make an unsafe system secure by wishing it so. A technology team cannot decide whether a faster process is a better process without the people who live with its consequences.
 
@@ -70,13 +70,13 @@ This is why a narrowly focused assistant often creates more value than a grand p
 
 The public conversation often treats AI as one thing. It is better understood as a small family of tools, each suited to a different job.
 
-| Kind of system | Plain-language question | Example | What it should not be confused with |
-| --- | --- | --- | --- |
-| Rules and conventional software | “What must happen exactly?” | Calculate tax using an approved formula. | A model should not invent a legally fixed calculation. |
-| Predictive AI | “What is likely to happen?” | Estimate which shipment may arrive late. | A prediction does not decide what the company should do. |
-| Optimisation | “Which option is best under these constraints?” | Choose delivery routes while respecting capacity and time. | The “best” answer depends on goals and constraints chosen by people. |
-| Generative AI | “Can you create, explain, summarise, translate, or draft?” | Draft a customer reply or create a first version of code. | Fluent output is not proof of factual correctness. |
-| Perception and robotics | “What is present in the physical world, and how should a machine act?” | Identify a damaged part on a production line or guide a warehouse robot. | A language model alone is not a safe physical-control system. |
+| Kind of system                  | Plain-language question                                                | Example                                                                  | What it should not be confused with                                  |
+| ------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| Rules and conventional software | “What must happen exactly?”                                            | Calculate tax using an approved formula.                                 | A model should not invent a legally fixed calculation.               |
+| Predictive AI                   | “What is likely to happen?”                                            | Estimate which shipment may arrive late.                                 | A prediction does not decide what the company should do.             |
+| Optimisation                    | “Which option is best under these constraints?”                        | Choose delivery routes while respecting capacity and time.               | The “best” answer depends on goals and constraints chosen by people. |
+| Generative AI                   | “Can you create, explain, summarise, translate, or draft?”             | Draft a customer reply or create a first version of code.                | Fluent output is not proof of factual correctness.                   |
+| Perception and robotics         | “What is present in the physical world, and how should a machine act?” | Identify a damaged part on a production line or guide a warehouse robot. | A language model alone is not a safe physical-control system.        |
 
 These tools can be combined. A retailer might use prediction to forecast demand, optimisation to plan replenishment, generative AI to explain the plan to managers, and ordinary software to enforce the ordering rules. This is another reason the future enterprise will be a system of systems, not a single all-powerful model.
 
@@ -118,12 +118,12 @@ Human-centred design does not mean that humans must perform every step forever. 
 
 The appropriate level of autonomy should match the consequence of being wrong:
 
-| Consequence of error | Sensible design |
-| --- | --- |
-| Low | AI can draft, search, classify, or recommend, with light checking. |
-| Moderate | AI proposes an action; a person reviews important cases and exceptions. |
-| High | AI may gather evidence and prepare options, but a clearly accountable human makes the decision. |
-| Safety-critical or legally binding | Use strict rules, specialist review, audit trails, and carefully bounded automation. |
+| Consequence of error               | Sensible design                                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Low                                | AI can draft, search, classify, or recommend, with light checking.                              |
+| Moderate                           | AI proposes an action; a person reviews important cases and exceptions.                         |
+| High                               | AI may gather evidence and prepare options, but a clearly accountable human makes the decision. |
+| Safety-critical or legally binding | Use strict rules, specialist review, audit trails, and carefully bounded automation.            |
 
 [[14-economics-of-trust|Trust]] is therefore not an abstract ethical decoration. It is what determines which useful actions an organisation can safely permit.
 

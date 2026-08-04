@@ -16,7 +16,7 @@ By the time it reached its present form, Radix had become a serious rival to the
 
 ![Radix brings capture, browsing, character detail, phrases, and contextual actions into one learning workspace](<figures/CASE-03-01 Radix Learning Workspace.png>)
 
-*Radix on iPad: a learner can move from a captured page to phrases, character detail, meanings, notes, and next actions without losing the original material.*
+_Radix on iPad: a learner can move from a captured page to phrases, character detail, meanings, notes, and next actions without losing the original material._
 
 That combination is unusual. Established Chinese-learning apps are powerful, but they commonly centre on one main job: a dictionary and reference tool, a curated reading library, or a handwriting and review system. Radix joins the whole learner's journey around material encountered in daily life:
 

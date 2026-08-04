@@ -4,7 +4,7 @@ title: "What Is an AI Model?"
 
 ![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
-When an app displays the Chinese character 木, a learner sees a shape associated with *tree* or *wood*. Inside the app, the same character can be a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
+When an app displays the Chinese character 木, a learner sees a shape associated with _tree_ or _wood_. Inside the app, the same character can be a Unicode number—a standard number computers use to represent written characters—bytes in a file, pixels on a screen, a database record, a pronunciation, and a component inside other characters.
 
 These are different **representations** of the same thing. Software has always moved information among representations:
 
@@ -26,7 +26,7 @@ I encountered the distinction while building a feature that finds useful phrases
 
 ![An app's phrase-extraction feature: a model proposes phrase candidates from text and instructions](<figures/FIG-05-02 Phrase Extraction and Prompt.png>)
 
-*The model proposes phrase candidates. The surrounding app checks the format, rejects unsuitable results, avoids duplicates, and leaves the learner in control of what is saved.*
+_The model proposes phrase candidates. The surrounding app checks the format, rejects unsuitable results, avoids duplicates, and leaves the learner in control of what is saved._
 
 That is the central bargain of this chapter:
 
@@ -46,7 +46,7 @@ tools, tests, and people decide what can be trusted or done
 
 > **Why it matters:** A model may know broad patterns extremely well while knowing nothing about the private purpose, current facts, or hidden constraints of your particular task.
 
-The word *model* did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.
+The word _model_ did not begin with AI. A model airplane represents selected features of an airplane. A weather model represents atmospheric behaviour. An economic model represents relationships among incentives, prices, supply, and demand.
 
 None is the thing itself. Each simplifies reality in a form that helps somebody reason or act.
 
@@ -76,7 +76,7 @@ give it supervised ways to use tools
 
 Teams collect and prepare material such as books, web pages, reference works, scientific papers, source code, documentation, mathematics, tables, conversations, images, diagrams, audio, and video. They remove duplicates, filter obvious noise or unsafe material, check quality, balance different kinds of content, and decide what may legally and ethically be used.
 
-The amount matters, but the *kind* of material matters too. A model can learn only the relationships that appear often enough, clearly enough, and with enough useful feedback in its training material.
+The amount matters, but the _kind_ of material matters too. A model can learn only the relationships that appear often enough, clearly enough, and with enough useful feedback in its training material.
 
 ### 2. Turn Information into Numbers
 
@@ -92,7 +92,7 @@ This phrase can sound mystical. It is not. Think of a normal map: one direction 
 
 ![From text to a mathematical representation: tokens, vectors, and a two-dimensional shadow of a high-dimensional meaning space](<figures/FIG-05-03 Tokens Vectors and Meaning Space.png>)
 
-*The final panel is only a two-dimensional shadow. A real model uses far more dimensions than a drawing can show.*
+_The final panel is only a two-dimensional shadow. A real model uses far more dimensions than a drawing can show._
 
 Words used in similar contexts can end up with related numerical representations. A request for a Chinese-character quiz can activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
 
@@ -128,7 +128,7 @@ The Eiffel Tower is in _____
 
 This is called **self-supervised learning**. It does not mean the model trains itself without people. People choose the data, build the computers, design the exercise, and evaluate the results. “Self-supervised” means that much of the answer is already present in the material: later words in a sentence can teach the model whether its earlier prediction was good.
 
-The parameters do not store facts like pages in a book. There is no one dial for *dog*, another for Swift syntax, and another for banking regulation. What the model has learned is spread across a vast pattern of settings. That pattern can be capable, but it is not a human-readable rulebook.
+The parameters do not store facts like pages in a book. There is no one dial for _dog_, another for Swift syntax, and another for banking regulation. What the model has learned is spread across a vast pattern of settings. That pattern can be capable, but it is not a human-readable rulebook.
 
 ### 4. It Learns Grammar Without Receiving a Grammar Book
 
@@ -154,7 +154,7 @@ A model that can continue text or code is not automatically a helpful assistant.
 
 **Post-training** is the work of shaping that broad capability into useful behaviour. People, and sometimes carefully checked systems, provide examples of a request and a good response: a bug report and helpful diagnosis, a coding task and a checked solution, an unsafe request and a safe refusal. This is often called **supervised fine-tuning**.
 
-Reviewers can also compare several possible answers and select the clearer, safer, or more useful one. Further training teaches the model to prefer the kinds of response that people repeatedly choose. This is often called preference learning or reinforcement learning from human feedback. It does not make the model factually perfect. It makes broad learned capability easier to direct. [OpenAI, *Training Language Models to Follow Instructions with Human Feedback*](https://arxiv.org/abs/2203.02155)
+Reviewers can also compare several possible answers and select the clearer, safer, or more useful one. Further training teaches the model to prefer the kinds of response that people repeatedly choose. This is often called preference learning or reinforcement learning from human feedback. It does not make the model factually perfect. It makes broad learned capability easier to direct. [OpenAI, _Training Language Models to Follow Instructions with Human Feedback_](https://arxiv.org/abs/2203.02155)
 
 Safety training is part of this process. It can teach a model to recognise dangerous requests, protect privacy, decline some actions, and express uncertainty. It is not a magic shield. Important systems still require permissions, filters, logs, tests, and accountable people.
 
@@ -203,7 +203,7 @@ This distinction is essential for software. Training may give a model broad know
 
 For years, AI could recognise patterns, classify pictures, translate short passages, and generate limited text. In 2017, Google researchers published [_Attention Is All You Need_](https://research.google/pubs/attention-is-all-you-need/), introducing the **Transformer** architecture.
 
-A Transformer is not a particular chatbot. It is a design for a neural network. Its central idea is **attention**: a way for the model to weigh which earlier pieces of a sequence matter to the piece it is processing now. In “The student put the book into her bag because she needed it later,” attention helps connect *it* with *the book*.
+A Transformer is not a particular chatbot. It is a design for a neural network. Its central idea is **attention**: a way for the model to weigh which earlier pieces of a sequence matter to the piece it is processing now. In “The student put the book into her bag because she needed it later,” attention helps connect _it_ with _the book_.
 
 Earlier recurrent designs mostly handled a sequence step by step. Transformers made it practical to process many relationships in parallel during training and to scale training far further. That did not invent language, translation, or generative AI. It made it practical to learn from vastly more text, code, images, and explanations.
 
@@ -213,7 +213,7 @@ Earlier recurrent designs mostly handled a sequence step by step. Transformers m
 
 Software is an especially promising use case because it contains repeated, checkable patterns: code, documentation, errors, tests, interfaces, and corrections. That material can give a model broad skill with familiar programming languages and common development tasks.
 
-But turning English into code is not the same as translating English into another human language. Code must preserve the intended meaning *and* make a computer behave correctly inside an existing system. A model can propose; compilers, tests, rendered screens, and people provide the evidence that decides whether the proposal should be kept.
+But turning English into code is not the same as translating English into another human language. Code must preserve the intended meaning _and_ make a computer behave correctly inside an existing system. A model can propose; compilers, tests, rendered screens, and people provide the evidence that decides whether the proposal should be kept.
 
 That is where this chapter stops. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows the next stage in detail: how a human request becomes requirements, code, tool use, revision, and a verified change.
 
@@ -229,7 +229,7 @@ When a user uploads an image, the model does not inspect it perfectly like a per
 
 ### Side Story: How a Picture Becomes Tokens
 
-A digital image is a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: red, green, and blue. One common design divides the picture into small squares, or **patches**, then turns each patch into a vector. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., *An Image is Worth 16×16 Words*](https://arxiv.org/abs/2010.11929)
+A digital image is a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: red, green, and blue. One common design divides the picture into small squares, or **patches**, then turns each patch into a vector. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
 
 For example, a 224 × 224 image divided into 16 × 16-pixel patches produces 14 × 14 = 196 patches. A patch contains 256 pixels; with red, green, and blue values, that begins as 768 numbers. A mathematical transformation turns those numbers into a shorter vector. The model also receives information about the patch's position, because the same blue patch may mean sky at the top of an image but a button near the bottom of a screen.
 
@@ -242,13 +242,13 @@ text  → tokens  → vectors + positions → language representation
 
 The comparison with text is useful but imperfect. A text token comes from a fixed vocabulary of words or word pieces. An image patch begins as colours, edges, textures, and shapes. Through successive layers, neighbouring patches and their positions can become a richer interpretation: perhaps a dog, a warning banner, or a button that overlaps its label.
 
-The figures above are a teaching example, not a universal recipe. Models use different image sizes, patch sizes, and internal designs. The principle is the important part: a picture becomes numerical evidence that can be related to language. [OpenAI, *Models*](https://developers.openai.com/api/docs/models)
+The figures above are a teaching example, not a universal recipe. Models use different image sizes, patch sizes, and internal designs. The principle is the important part: a picture becomes numerical evidence that can be related to language. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
 
 This expands the model's inputs, not its authority. Screens can be cropped, blurry, outdated, or shown at the wrong device size. While building the app and this book, I sometimes had to show Codex a rendered screen before it recognised that text escaped a box or controls were squeezed into an unusable space. The practical loop remains: generate, render, inspect at relevant sizes, test, and revise.
 
 ![An iPad app screen whose controls overflow the left and right borders](<figures/CASE-05-01 App Layout Overflow iPad.png>)
 
-*The code may compile and the screen may render, yet the result can still fail for the person using it.*
+_The code may compile and the screen may render, yet the result can still fail for the person using it._
 
 ## Why Models Differ—and What Upgrades Are Trying to Improve
 
@@ -260,14 +260,14 @@ That is why model names are not interchangeable. It also explains why an upgrade
 
 We cannot see every private experiment behind a model release. We can see the broad, public trajectory: models are being developed from fluent pattern predictors into more reliable, multimodal, tool-using collaborators.
 
-| Direction of effort | What the user notices | Why it is difficult or costly |
-| --- | --- | --- |
-| Better base training | Broader language, code, and general patterns | Vast data, computing, engineering, and careful data selection |
-| Post-training and evaluation | Better instruction following, helpfulness, safety, and factual discipline | Reliable examples and realistic tests are harder to create than raw text |
-| Reasoning | Better planning, debugging, mathematics, and analysis on difficult tasks | More computation can mean more time and cost per answer |
-| Multimodality | Work with screens, diagrams, images, speech, video, and code | Different kinds of information must be aligned and evaluated together |
-| Long context and memory | Follow a larger document, codebase, or task | More context costs memory and computation; relevance still matters |
-| Tools and agents | Search, inspect, edit, calculate, run software, and check work | Needs permissions, safe environments, task-specific tests, and failure detection |
+| Direction of effort          | What the user notices                                                     | Why it is difficult or costly                                                    |
+| ---------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Better base training         | Broader language, code, and general patterns                              | Vast data, computing, engineering, and careful data selection                    |
+| Post-training and evaluation | Better instruction following, helpfulness, safety, and factual discipline | Reliable examples and realistic tests are harder to create than raw text         |
+| Reasoning                    | Better planning, debugging, mathematics, and analysis on difficult tasks  | More computation can mean more time and cost per answer                          |
+| Multimodality                | Work with screens, diagrams, images, speech, video, and code              | Different kinds of information must be aligned and evaluated together            |
+| Long context and memory      | Follow a larger document, codebase, or task                               | More context costs memory and computation; relevance still matters               |
+| Tools and agents             | Search, inspect, edit, calculate, run software, and check work            | Needs permissions, safe environments, task-specific tests, and failure detection |
 
 The improvement is not simply “more facts.” A stronger agent may be better able to keep an objective, project context, compiler feedback, visual evidence, and verification in one working process.
 

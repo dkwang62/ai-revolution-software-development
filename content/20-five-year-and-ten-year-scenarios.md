@@ -107,13 +107,13 @@ Fourth, capital and integration are testing whether the ideas matter. Alphabet i
 
 These companies are examples, not share recommendations. Large bets can produce advantage, waste, or both. Their importance is that mathematics, hardware, distribution, software integration, and physical capability are being pursued together. The direction is visible even though the winners are not. [Alphabet, 2025 Q4 earnings call](https://abc.xyz/investor/events/event-details/2026/2025-Q4-Earnings-Call-2026-Dr_C033hS6/default.aspx); [Microsoft, FY2026 Q3 earnings](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3); [Anthropic, Series G announcement](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation); [SpaceX, “xAI Joins SpaceX”](https://x.ai/news/xai-joins-spacex)
 
-| Visible signal | Possible consequence |
-| --- | --- |
-| Adaptive reasoning | Difficult tasks receive more effort without charging every request the highest cost |
-| Hybrid memory | Agents remain coherent across longer projects |
-| HBM and custom accelerators | Cost and waiting time fall per useful result |
-| Coding agents | Software creation moves from isolated answers towards checked workflows |
-| Capital and integration | AI becomes ordinary infrastructure rather than a separate application |
+| Visible signal              | Possible consequence                                                                |
+| --------------------------- | ----------------------------------------------------------------------------------- |
+| Adaptive reasoning          | Difficult tasks receive more effort without charging every request the highest cost |
+| Hybrid memory               | Agents remain coherent across longer projects                                       |
+| HBM and custom accelerators | Cost and waiting time fall per useful result                                        |
+| Coding agents               | Software creation moves from isolated answers towards checked workflows             |
+| Capital and integration     | AI becomes ordinary infrastructure rather than a separate application               |
 
 These signals do not prove the forecast. They show that research, investment, and commercial integration are already moving in its direction.
 
@@ -192,10 +192,10 @@ Software would be the first great case because it is already made of information
 
 Two variables determine how quickly the promise is realised: the rate of capability improvement and the cost of verification and integration.
 
-|                                   | Verification and integration remain expensive                                                                           | Verification and integration become much cheaper                                                                         |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Capability improves gradually** | **Bounded assistant:** AI remains valuable in well-specified, low-risk tasks, with people carrying most review.         | **Ordinary infrastructure:** AI becomes as routine as compilers, search and version control across much of development.  |
-| **Capability improves rapidly**   | **Generation outruns trust:** output explodes, but security, maintenance and coherence become the bottlenecks.          | **Agentic organisation:** intent-driven creation and coordinated work become plausible under human authority.           |
+|                                   | Verification and integration remain expensive                                                                   | Verification and integration become much cheaper                                                                        |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Capability improves gradually** | **Bounded assistant:** AI remains valuable in well-specified, low-risk tasks, with people carrying most review. | **Ordinary infrastructure:** AI becomes as routine as compilers, search and version control across much of development. |
+| **Capability improves rapidly**   | **Generation outruns trust:** output explodes, but security, maintenance and coherence become the bottlenecks.  | **Agentic organisation:** intent-driven creation and coordinated work become plausible under human authority.           |
 
 Different parts of society can occupy different quadrants simultaneously. The path to abundance is unlikely to be one dramatic crossing. It will be a succession of tasks becoming cheap and dependable enough to move from one quadrant to another.
 

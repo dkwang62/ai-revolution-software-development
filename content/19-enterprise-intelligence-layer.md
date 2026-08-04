@@ -163,12 +163,12 @@ OpenAI and Anthropic matter because the quality, cost, and reliability of the un
 
 The useful map is therefore not “Who is number one?” It is:
 
-| Layer of the future system | The contest |
-| --- | --- |
-| Frontier models and agents | Who can reason, create, use tools, and improve reliably? |
-| Human working environment | Who makes it easiest for people to give intent, inspect results, and iterate? |
-| Enterprise integration and governance | Who can connect data, workflows, permissions, and audit trails safely to any approved agent? |
-| Cloud and computing infrastructure | Who can provide the processors, memory, networks, and operating environment at acceptable cost? |
+| Layer of the future system            | The contest                                                                                     |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Frontier models and agents            | Who can reason, create, use tools, and improve reliably?                                        |
+| Human working environment             | Who makes it easiest for people to give intent, inspect results, and iterate?                   |
+| Enterprise integration and governance | Who can connect data, workflows, permissions, and audit trails safely to any approved agent?    |
+| Cloud and computing infrastructure    | Who can provide the processors, memory, networks, and operating environment at acceptable cost? |
 
 Different companies can lead different layers. The broader trend is the important point: **competition is shifting from a contest over the smartest isolated model toward a contest over who can connect intelligence to the data, workflow, permissions, tools, and human interface where work actually happens.**
 

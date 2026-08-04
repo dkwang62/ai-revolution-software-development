@@ -122,12 +122,12 @@ This suggests that AI software tools may route tasks dynamically. Simple tasks m
 
 The appropriate level is the lowest one that completes the task reliably enough to satisfy its acceptance criteria. More reasoning is not automatically better. It can become slow, expensive, or repetitive when the task is simple.
 
-| Reasoning level | Appropriate tasks | Book-writing examples |
-| --- | --- | --- |
-| **Light** | Direct extraction, classification, formatting, short summaries, or tightly specified changes | Correct spelling, reformat Markdown, change a heading, or update a build number |
-| **Balanced** | Comparing a few alternatives, revising a section, explaining a concept, or debugging a bounded problem | Improve one chapter, compare two passages, check clarity, or strengthen an example |
-| **Heavy** | Many interacting constraints, unfamiliar material, architecture, risk analysis, or work whose errors are costly | Test the whole book's argument, redesign chapter structure, reconcile conflicting reviews, or examine factual weaknesses |
-| **Maximum or extended** | Rare, difficult, quality-first work where an incremental improvement could materially affect the outcome and extra delay is acceptable | A final adversarial review of the entire manuscript or a consequential claim involving many sources |
+| Reasoning level         | Appropriate tasks                                                                                                                      | Book-writing examples                                                                                                    |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Light**               | Direct extraction, classification, formatting, short summaries, or tightly specified changes                                           | Correct spelling, reformat Markdown, change a heading, or update a build number                                          |
+| **Balanced**            | Comparing a few alternatives, revising a section, explaining a concept, or debugging a bounded problem                                 | Improve one chapter, compare two passages, check clarity, or strengthen an example                                       |
+| **Heavy**               | Many interacting constraints, unfamiliar material, architecture, risk analysis, or work whose errors are costly                        | Test the whole book's argument, redesign chapter structure, reconcile conflicting reviews, or examine factual weaknesses |
+| **Maximum or extended** | Rare, difficult, quality-first work where an incremental improvement could materially affect the outcome and extra delay is acceptable | A final adversarial review of the entire manuscript or a consequential claim involving many sources                      |
 
 These are starting points, not laws. A short question can hide a difficult problem, while a long task can sometimes be mostly mechanical. The model, context, tools, and quality standard all matter. The only dependable method is to test representative tasks and compare success, waiting time, token use, human correction, and total cost.
 

@@ -231,13 +231,13 @@ The FAA's **NextGen** programme shows what responsible modernisation looks like.
 
 AI is not the FAA's replacement strategy, and this book does not claim that an AI model should autonomously run air traffic control. The case is useful for a different reason: it shows where AI could lower the cost of a carefully supervised replacement programme.
 
-| Replacement work | How AI could assist | What still requires evidence and human authority |
-| --- | --- | --- |
-| Understand old systems | Summarise code, interfaces, incident reports, operating procedures, and dependency maps | Controllers and engineers confirm what the system actually does |
-| Specify a new component | Turn recovered knowledge into draft requirements, diagrams, and test cases | Safety specialists decide the required behaviour and safety boundaries |
-| Build and integrate | Help write adapters, data transformations, tools, and parts of new software | Engineers review the design, cybersecurity, performance, and failure modes |
-| Prove equivalence | Generate test scenarios; compare old and new outputs; flag unexpected differences | Formal testing, simulation, certification, and operational acceptance establish safety |
-| Move into service | Help prepare rollout notes, monitoring rules, and rollback plans | Authorised operators decide when, where, and whether a change may go live |
+| Replacement work        | How AI could assist                                                                     | What still requires evidence and human authority                                       |
+| ----------------------- | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Understand old systems  | Summarise code, interfaces, incident reports, operating procedures, and dependency maps | Controllers and engineers confirm what the system actually does                        |
+| Specify a new component | Turn recovered knowledge into draft requirements, diagrams, and test cases              | Safety specialists decide the required behaviour and safety boundaries                 |
+| Build and integrate     | Help write adapters, data transformations, tools, and parts of new software             | Engineers review the design, cybersecurity, performance, and failure modes             |
+| Prove equivalence       | Generate test scenarios; compare old and new outputs; flag unexpected differences       | Formal testing, simulation, certification, and operational acceptance establish safety |
+| Move into service       | Help prepare rollout notes, monitoring rules, and rollback plans                        | Authorised operators decide when, where, and whether a change may go live              |
 
 The important word is **assist**. AI can make the hidden work of replacement more visible and less expensive. It can help a team find an obscure dependency, translate a decades-old rule into a test, or compare thousands of records during a migration. It cannot supply proof that a new safety-critical system will behave safely in every operational condition. That proof comes from engineering discipline, simulation, testing, staged deployment, monitoring, and accountable human decisions.
 

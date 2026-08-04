@@ -67,14 +67,14 @@ This is how serious software has always worked. Systems earn trust when their au
 
 Trust is not one property inside the model. It is assembled around the model:
 
-| Component | Plain-language question | Typical mechanism |
-| --- | --- | --- |
-| **Verification** | Did the result satisfy the required rules? | Tests, validation, review, and source checking |
-| **Governance** | Who may use the system, for what, and under whose authority? | Policies, ownership, approval rules, and model records |
-| **Security** | Can information or authority be misused? | Limited permissions, protected data, and isolated execution |
-| **Auditability** | Can we reconstruct what happened? | Activity logs, source records, model versions, and approval history |
-| **Explainability** | Can a responsible person understand the reasons and evidence? | Sources, assumptions, alternatives, and stated limitations |
-| **Human approval** | Where must judgement remain with a person? | Review before consequential or irreversible action |
+| Component          | Plain-language question                                       | Typical mechanism                                                   |
+| ------------------ | ------------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Verification**   | Did the result satisfy the required rules?                    | Tests, validation, review, and source checking                      |
+| **Governance**     | Who may use the system, for what, and under whose authority?  | Policies, ownership, approval rules, and model records              |
+| **Security**       | Can information or authority be misused?                      | Limited permissions, protected data, and isolated execution         |
+| **Auditability**   | Can we reconstruct what happened?                             | Activity logs, source records, model versions, and approval history |
+| **Explainability** | Can a responsible person understand the reasons and evidence? | Sources, assumptions, alternatives, and stated limitations          |
+| **Human approval** | Where must judgement remain with a person?                    | Review before consequential or irreversible action                  |
 
 None is sufficient alone. Generated code may pass tests yet expose private data. A secure system may still produce an unexplained recommendation. A complete audit trail may show exactly how a bad decision was made without preventing it.
 
@@ -105,14 +105,14 @@ Trust is the bridge between AI capability and legacy modernisation. Without it, 
 Trust is not binary. It grows when useful capability is surrounded by verification, governance, security, and clear accountability. It falls when exposure is unmanaged, actions are invisible, or nobody is clearly responsible.
 
 > [!summary] What Affects Trust
-> | What raises trust | What lowers trust      |
+> | What raises trust | What lowers trust |
 > | ----------------- | ---------------------- |
-> | Capability        | Risk                   |
-> | Verification      | Uncertainty            |
-> | Governance        | Unclear accountability |
-> | Security          | Unbounded access       |
-> | Auditability      | Invisible actions      |
-> | Explainability    | Unexplained behaviour  |
+> | Capability | Risk |
+> | Verification | Uncertainty |
+> | Governance | Unclear accountability |
+> | Security | Unbounded access |
+> | Auditability | Invisible actions |
+> | Explainability | Unexplained behaviour |
 
 Model intelligence is only one component. An extremely capable model with poor governance may be less useful than a slightly weaker model inside a well-designed system.
 
