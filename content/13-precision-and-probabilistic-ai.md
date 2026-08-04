@@ -42,7 +42,7 @@ When AI is part of the running application, software engineering must build reli
 
 ## AI Suggests; Software Decides
 
-> **Why it matters:** The safest division of labour lets AI propose flexible possibilities while deterministic software enforces the non-negotiable rules.
+> **Why it matters:** The safest division of labour lets AI propose alternatives while deterministic software enforces the non-negotiable rules.
 
 A useful principle is:
 

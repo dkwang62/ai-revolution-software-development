@@ -174,7 +174,7 @@ Nothing about this was planned at the beginning. The requirement became clearer 
 
 ## The Web Prototype Becomes a Native App
 
-> **Why it matters:** A prototype proves the problem is worth solving; a production app earns the right to solve the harder requirements of real use.
+> **Why it matters:** A prototype establishes that the problem is worth solving; a production app must then meet the harder requirements of real use.
 
 The Streamlit version proved that the idea was useful. But I wanted an app that felt natural on an iPhone and iPad, could use the camera well, could work with Apple sharing and files, and could eventually be distributed through TestFlight.
 

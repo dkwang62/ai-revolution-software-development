@@ -37,7 +37,7 @@ Training is therefore not just a technical process. It is the industrial product
 
 ## Inference as Operating Cost
 
-> **Why it matters:** A model can be cheap to create an answer with yet expensive to use millions of times, so deployment economics matter as much as model brilliance.
+> **Why it matters:** A model can be inexpensive for one request yet costly to use millions of times, so deployment economics matter as much as model brilliance.
 
 Inference is the use of a trained model. It is an operating cost: a recurring expense created while providing the service, rather than the upfront cost of creating the model.
 

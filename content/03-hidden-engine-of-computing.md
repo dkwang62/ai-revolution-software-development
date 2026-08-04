@@ -122,7 +122,7 @@ The question is not whether abstraction is free. It is whether the gain is worth
 
 ## AI as the Next Abstraction Layer
 
-> **Why it matters:** Natural language lowers the barrier to beginning; it does not lower the standard for software that must be correct.
+> **Why it matters:** Natural language makes it easier to start building, but it does not make correct, safe software any easier to prove.
 
 Artificial intelligence fits this history because it raises the level of expression again.
 

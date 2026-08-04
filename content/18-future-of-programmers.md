@@ -115,7 +115,7 @@ The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-infor
 
 ## A Larger Profession, Differently Shaped
 
-> **Why it matters:** More people may build software, while professional engineers become more important where consequences, scale, and integration are hardest.
+> **Why it matters:** More people may build software, while professional engineers become more important when consequences, scale, and integration are hardest.
 
 The future programmer may be an architect, verifier, integrator, designer of safe boundaries and judge of trade-offs. The future builder may enter through medicine, education, law, science or a problem no software company considered profitable enough to solve.
 

@@ -109,7 +109,7 @@ If the recovered rules, dependency maps, tests, approvals, and integration patte
 
 ## The Model Is Not the Enterprise
 
-> **Why it matters:** A frontier model brings general ability, but an enterprise becomes intelligent only when its own knowledge, permissions, and evidence are organised around it.
+> **Why it matters:** A frontier model brings general capability, but an enterprise becomes intelligent only when its own knowledge, permissions, and evidence are organised around it.
 
 A foundation model contains broad learned patterns from enormous amounts of data. It may know general programming concepts, SQL, Python, accounting vocabulary, REST APIs, software architecture, and the public meaning of ERP.
 

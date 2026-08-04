@@ -92,7 +92,7 @@ Modern AI works differently.
 
 ## The New Way: Relationships
 
-> **Why it matters:** Learned relationships handle variation that would require too many hand-written rules, but they also replace certainty with judgement and checking.
+> **Why it matters:** Learned relationships handle variation that would be impractical to describe with hand-written rules, but they also replace certainty with judgement and checking.
 
 Modern AI stores learned relationships.
 
