@@ -2,11 +2,11 @@
 title: "Agents, Tools, and Integrated Systems"
 ---
 
-In an app, the on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis. I knew what was wrong for the user; I did not know which part of Apple's interface framework controlled the screen or how the keyboard should change its layout.
+**Programming with an AI chatbox is mainly a conversation. Programming with an agentic system is a supervised process of action and feedback.**
 
-The AI coding agent searched the project, found the interface, and made the lower fields scrollable. It also added a way to dismiss the keyboard. The first change did not compile. Instead of presenting the failed code as an answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
+A chatbox can explain a bug, suggest code, or draft a solution. But the programmer usually has to bring the technical situation into the conversation: find and paste the relevant code, apply the suggested change, run the compiler or test, copy the error, and ask another question. The AI produces answers; the person carries those answers between the conversation and the software project.
 
-This episode gave me a practical definition of a word that is now everywhere in AI: **agentic**. A chatbot produces a response. An agent pursues an objective through actions and feedback:
+An agentic coding system can work inside the authorised project environment. Given an objective, it can inspect files, search for the relevant code, edit it, run a compiler or test, observe the result, and revise its work. The person still defines the goal, sets the boundaries, reviews consequential choices, and decides whether the result should be kept. The difference is not merely a better answer. It is a controlled loop that connects language to action:
 
 ```text
 understand the objective
@@ -24,7 +24,11 @@ verify or stop
 
 ![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow-v2.png)
 
-The model was still generating language, but language was now connected to files, search, editing, terminal commands, and the compiler. It could affect the system and use the system's response as feedback for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
+Consider a bug in which an on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis: I knew what was wrong for the user, but not which part of Apple's interface framework controlled the screen.
+
+The coding agent searched the project, found the interface, made the lower fields scrollable, and added a way to dismiss the keyboard. Its first change did not compile. Instead of presenting the failed code as its final answer, it read the compiler's objection, revised the implementation, and built the application again. The second build succeeded.
+
+The model was still generating language, but that language was connected to files, search, editing, terminal commands, and the compiler. It could use the system's response as evidence for its next step. Researchers sometimes call this alternation between reasoning and action **ReAct**. The term matters less than the loop.
 
 Reasoning becomes more valuable here because the agent is not merely composing an answer. It must decide what evidence to inspect, which authorised action to try, what the result means, and whether to continue. It also becomes more costly: each search, tool call, test, failure, and revision can add inference, waiting time, and verification work. Heavy reasoning is justified when those extra steps reduce the chance of a costly mistake; it is wasteful when a simple, well-specified action would do.
 
