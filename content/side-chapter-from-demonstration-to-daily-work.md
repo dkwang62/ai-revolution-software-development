@@ -2,11 +2,9 @@
 title: "Side Chapter: From Demonstration to Daily Work"
 ---
 
-An AI demonstration can be astonishing. A model reads a document, drafts a report, writes a program, spots a pattern, or answers a difficult question in seconds. It is natural to assume that the organisation now possesses that capability.
+An AI demonstration proves that a model can perform a task under favourable conditions. It does not prove that an organisation can use that capability reliably in everyday work.
 
-Usually, it does not—at least not yet.
-
-A demonstration proves that a model can do something under favourable conditions. Everyday work requires something larger: the right problem, reliable information, a useful interface, people who know what to do with the result, clear authority, safeguards, and a way to learn whether the system is actually helping.
+Daily use requires something larger: the right problem, current information, a useful interface, people who understand the result, clear authority, safeguards, and evidence that the system is actually helping.
 
 The gap between those two things explains why an impressive pilot can fail to become normal work.
 
@@ -25,9 +23,7 @@ Now ask a different question: what should be happening on day 200, after thousan
 - Is somebody measuring whether replies are faster _and_ whether customers are happier?
 - What happens when a new product, a new policy, or an unusual complaint changes the situation?
 
-The first question is about model capability. The second is about an operating system for work.
-
-That distinction should make readers more optimistic, not less. The model is no longer the only expensive or scarce ingredient. Organisations can build the surrounding system step by step, beginning with a bounded workflow and improving it through evidence.
+The demonstration asks whether the model can draft one reply. The day-200 question asks whether the whole workflow remains useful, safe, and maintainable. Organisations can build that surrounding system step by step, beginning with a bounded workflow and expanding through evidence.
 
 ## An AI Project Is a Team Sport
 
@@ -165,4 +161,6 @@ Before calling an AI initiative successful, ask seven plain questions:
 6. Who is accountable when it fails?
 7. What must be maintained when the business, data, model, or regulations change?
 
-These questions make AI less mystical. They turn it back into what it must become to create economic value: a well-designed part of a larger human system.
+These questions make AI less mystical. They turn it into what it must become to create economic value: a well-designed part of a larger human system.
+
+Once AI can survive day 200, the next question is how far this pattern may spread. [[20-five-year-and-ten-year-scenarios|Five-Year and Ten-Year Scenarios]] explores that future without assuming that capability, trust, cost, and institutions will improve at the same rate.

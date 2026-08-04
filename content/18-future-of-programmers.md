@@ -2,90 +2,92 @@
 title: "The Future of Programmers"
 ---
 
-My first attempt to move an app from a simple web framework into native Apple software failed.
+AI is changing programming in two directions at once. It allows more people to create software, and it moves professional programmers towards the parts of software engineering where mistakes, scale, and long-term consequences matter most.
 
-The AI could generate fragments and explain what ought to happen, but it could not hold the whole migration together. A proposed fix would fail to build; the next proposal would remain too close to the first. Although I was the non-programmer in the partnership, I sometimes had to suggest the technical escape route.
+This is more precise than asking whether AI will replace programmers. Producing a first version of code is only one part of the profession. Software also requires someone to define the problem, fit the change into an existing system, protect data, test behaviour, manage failure, and remain accountable after release.
 
-Roughly a year later, the same class of work had become achievable. A newer Codex workflow could inspect both projects, search across files, create the structure required by an Apple application, read compiler errors, revise its hypothesis, rebuild and continue. The migration still demanded many decisions, but a task that had crossed the earlier system's capability boundary had become tractable.
+As AI takes on more implementation, the boundary moves:
 
-I found this astonishing. The answer had not merely become faster. The range of problems I could reasonably attempt had expanded.
+```text
+more people can begin building
+↓
+more software can be attempted
+↓
+professional value moves towards architecture, integration,
+verification, security, and responsibility
+```
 
-That experience offers a better starting point than the familiar question, “Will AI replace programmers?” The important question is what happens when part of the expertise once locked inside the profession becomes available through an AI system—and when people outside the profession can use it to build.
+The result is not simply fewer programmers or unchanged programmers. It is a larger and differently shaped software-building profession.
 
 ## Translation Is Becoming Cheaper
 
-> **Why it matters:** The profession is changing because the historic monopoly on translating human needs into machine instructions is weakening.
+> **Why it matters:** The historic monopoly on translating human needs into machine instructions is weakening.
 
-For decades, programmers have been necessary intermediaries between human intention and machine execution. A teacher understood the classroom problem. A doctor understood the clinical workflow. A business owner understood the process. But the machine required formal instructions, and the programmer supplied the translation.
+For decades, programmers were necessary intermediaries between human intention and machine execution. A teacher understood the classroom problem. A doctor understood the clinical workflow. A business owner understood the process. But the machine required formal instructions, and a programmer supplied the translation.
 
-AI weakens that dependency. A user can describe a workflow, show an example, test a prototype and correct the result without first mastering a programming language. This is a real redistribution of power.
+AI reduces that dependency. A person can describe a workflow, provide examples, inspect a prototype, and correct the result without first mastering a programming language. Knowledge that once resided mainly in the minds of programmers is increasingly available through models trained on the accumulated work of the software community.
 
-It is not the disappearance of difficulty.
+This redistribution is real, but incomplete. General programming knowledge does not include the private rules of one organisation, the history of one codebase, or the needs of one customer. Nor does a generated answer prove that the software is safe or correct.
 
-Many people can ask AI to generate an application. Far fewer can guide it through months of refinement, recognise subtly wrong behaviour, preserve data, manage security and make the thousands of decisions required by a serious product. AI broadens access to software creation; it does not make everyone equally capable.
+Translation becomes cheaper. Responsibility does not.
 
-The positive change is that programming expertise is being externalised. Knowledge that once resided mainly in the minds of programmers is increasingly represented in models trained on the accumulated work of the software community. Through conversation and tools, a novice can draw on parts of that knowledge without acquiring all of it first.
+## The Boundary Between Builder and Engineer
 
-Yet expertise has another layer: knowledge of this organisation, this codebase, this customer and the reasons earlier decisions were made. Experienced engineers often retain an advantage because they possess that context. The future contest is not simply human expert against AI. It is between people and teams that differ in how effectively they combine general machine capability with local knowledge and human judgement.
+> **Why it matters:** The consequence of a system—not whether AI helped create it—determines how much engineering discipline it needs.
 
-## What Happened in That One Year
+Consider a marketing analyst who wants a private tool that gathers campaign results and drafts a weekly summary. An AI agent can help the analyst connect exported data, generate the report, and revise the layout. If the tool fails, the error is visible and the old process remains available. This is a good setting for an AI-assisted builder.
 
-It would be too simple to say that a better model solved my migration. Several things improved together:
+Now extend the request. The tool will write directly to customer records, allocate advertising spend, serve several countries, and run automatically every night. The code may still be easy to generate, but the system now needs reliable data definitions, permissions, audit trails, failure recovery, integration tests, monitoring, and an accountable owner.
+
+The example supports a simple distinction:
 
 ```text
-a more capable model
-+ a stronger agent environment
-+ better tools and feedback
-+ better project context
-+ a more experienced human supervisor
-↓
-a task crosses from impractical to achievable
+AI-assisted building expands who can create a useful tool.
+Professional engineering manages consequence, scale, and endurance.
 ```
 
-Newer models were better at coding, planning and tool use. The agent had improved access to files, terminal commands, builds, screenshots and persistent project context. The application itself was better organised. I had also become better at describing requirements, preserving information and recognising failure.
-
-This combined system matters more than any model score. Earlier, I had to supply low-level technical directions when the AI became trapped. More recently, the agent usually gathers evidence and finds a route itself. My role has moved towards defining behaviour, noticing when the outcome is wrong and deciding what should be kept.
-
-That is the trajectory. A fixed list of what AI cannot do will age quickly. The more durable question is how the boundary between human intention and machine execution is moving.
+The categories overlap. A domain expert can learn substantial engineering discipline. A professional engineer can use AI to move faster. What changes is the point at which specialist judgement becomes necessary, not the existence of that judgement.
 
 ## The AI-Assisted Builder
 
-> **Why it matters:** Domain expertise can now enter the building process directly, but it still needs persistence and supervision to become a dependable product.
+> **Why it matters:** Domain expertise can now enter the building process directly instead of being handed across a long translation chain.
 
-I am not a professional programmer. I became what might be called an **AI-assisted builder**: someone with a domain problem, product vision, persistence and enough technical curiosity to supervise an AI agent inside a real development loop.
+An **AI-assisted builder** begins with a problem, product idea, or specialised knowledge and uses an AI agent inside a development loop:
 
 ```text
 domain problem
 ↓
-human intention and requirements
+intention, examples, and requirements
 ↓
-AI agent working through tools
+AI agent using project tools
 ↓
-code, tests, builds, screenshots and corrections
+code, tests, builds, screens, and corrections
 ↓
 human judgement
 ```
 
-This category changes who can initiate a software project. Entrepreneurs, teachers, researchers, doctors, consultants, small-business owners and hobbyists can reach further before they need a conventional engineering team. Some will build personal tools. Some will create prototypes. A smaller number, with sufficient discipline and support, will create serious products.
+Entrepreneurs, teachers, researchers, consultants, small-business owners, and hobbyists can now reach further before they need a conventional engineering team. Some will create personal or temporary tools. Some will build prototypes. A smaller number, with sufficient discipline and support, will create durable products.
 
-The tools alone are not enough. My application required months of product decisions, testing, debugging, migration and stubborn refinement. It grew to include stored learning data, text extracted from photographs, animated stroke order, pronunciation search, analysis of character components and AI-assisted learning tasks. Wider access does not eliminate the need to learn; it changes what must be learned first.
+My own application followed this path. I was not a professional programmer, but I understood the learning problem and could judge whether the product helped a learner. AI gave me access to implementation capability. Months of requirements, testing, debugging, migration, and refinement were still required to turn that capability into a coherent application.
 
-## Programmers Move Upward
+Wider access does not eliminate learning. It changes what a new builder must learn first: how to describe behaviour, inspect evidence, recognise failure, and know when the work has exceeded their competence or authority.
 
-> **Why it matters:** The most durable programming skills are increasingly about system judgement—architecture, safety, integration, and verification—rather than recalling syntax.
+## Programmers Move Towards Consequence
 
-Routine implementation will not vanish, but less human time may be spent producing its first draft. AI can increasingly generate standard forms, settings screens, tests, scripts and common connections between systems. Remembering the exact syntax of a language becomes less valuable when the answer is immediately available.
+> **Why it matters:** The most durable professional skills concern the decisions that hold a system together.
 
-Professional work moves towards the decisions that hold a system together:
+AI can increasingly produce standard screens, tests, scripts, database queries, and routine connections between systems. Remembering exact syntax becomes less valuable when a model can supply it immediately.
 
-- architecture—how the parts should be organised;
-- verification—what evidence proves the software behaves correctly;
-- integration—how new capability connects to data, permissions and older systems;
-- domain modelling—how messy reality should be represented;
-- security—what the system must never be allowed to do;
-- judgement—when a generated result is acceptable and when it is not.
+Professional work moves towards:
 
-This continues the history of abstraction. High-level languages reduced the need to think in machine instructions. Frameworks reduced the need to reconstruct common software patterns. AI reduces the need to express every implementation detail manually.
+- **architecture:** how the parts should be organised;
+- **domain modelling:** how messy reality should be represented;
+- **integration:** how new capability connects to data, permissions, and older systems;
+- **verification:** what evidence proves the software behaves correctly;
+- **security and resilience:** what the system must resist and how it recovers; and
+- **judgement:** whether a generated change belongs in the product at all.
+
+This continues the history of abstraction. High-level languages reduced the need to think in machine instructions. Frameworks supplied common software structures. AI reduces the need to express every implementation detail manually.
 
 The programmer does not simply move away from code. The programmer moves closer to consequence.
 
@@ -93,34 +95,30 @@ The programmer does not simply move away from code. The programmer moves closer 
 
 Students should still learn programming, but not because society needs more people who can memorise syntax.
 
-Programming teaches how procedures, data, state and abstraction fit together. It teaches why systems fail, how to divide a problem and how to test whether a solution works. Those abilities become more important when code can be generated by something that may sound confident while being wrong.
+Programming teaches how procedures, data, state, and abstraction fit together. It teaches how to divide a problem, trace failure, and test whether a solution works. Those abilities become more important when code can be generated by a system that may sound confident while being wrong.
 
-Education should place greater weight on problem decomposition, data modelling, system design, testing, security, human-computer interaction and critical use of AI output. Students should learn to read enough code to question it, but they should also learn to express a requirement, design an experiment and decide what evidence is sufficient.
+Education should therefore place greater weight on problem decomposition, data modelling, system design, testing, security, human-computer interaction, and critical use of AI output. Students should learn enough code to question what was generated, while also learning to express a requirement, design an experiment, and decide what evidence is sufficient.
 
 AI makes shallow programming easier. It raises the value of deep engineering judgement.
 
 ## The Labour-Market Question
 
-> **Why it matters:** Productivity evidence is mixed because AI's value depends on the task, the existing system, the user's skill, and the quality of the feedback loop.
+> **Why it matters:** Productivity evidence cannot be reduced to one number because the effect depends on the task, user, system, and quality standard.
 
-The evidence does not support a single, clean productivity number. A controlled GitHub Copilot experiment found that developers completed one bounded JavaScript task 55.8% faster. A [2025 preprint reporting field experiments](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) across Microsoft, Accenture and a Fortune 100 company estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. Yet an [early-2025 METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that sixteen experienced open-source developers working in their own projects took 19% longer when AI tools were allowed.
+Studies already show different results. [Field experiments reported in 2025](https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/) estimated a 26.08% increase in completed tasks among developers using an AI coding assistant. An [early-2025 METR study](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) found that sixteen experienced open-source developers working in their own projects took 19% longer when AI tools were allowed. In [February 2026](https://metr.org/blog/2026-02-24-uplift-update/), METR said a later experiment produced an unreliable estimate because of selection and measurement problems. Its researchers believed developers were probably receiving greater gains than in early 2025, but described the evidence for the size of that change as weak.
 
-The evidence continued moving. In [February 2026](https://metr.org/blog/2026-02-24-uplift-update/), METR said its earlier result no longer represented current tools. Late-2025 data suggested possible speed gains, but the size was highly uncertain. Google's DevOps Research and Assessment programme, known as **DORA**, associated greater AI adoption with lower delivery speed and stability in its [2024 report](https://dora.dev/research/2024/dora-report/); its [2025 research](https://dora.dev/research/2025/dora-report/) found higher speed alongside continued instability.
+These findings measure different work under different conditions. The useful question is always: faster at which task, for whom, under what quality standard, and with what downstream cost?
 
-These findings measure different things: a short task, work in a familiar project, individual perception and organisation-wide delivery. They should not be averaged into one verdict. The useful question is always: faster at which task, for whom, under what quality standard and with what downstream cost?
+Economics nevertheless creates adoption pressure. Companies will compare AI-assisted teams with unaided teams. Some routine roles may shrink if the same work requires fewer people. Falling costs may also make more projects viable, expanding the total demand for software and for people who can supervise consequential systems.
 
-Economics nevertheless creates adoption pressure. Companies will compare an AI-assisted team with an unaided one. If the assisted team produces dependable software faster or more cheaply, competitors will have to respond. Some routine coding roles may shrink. Falling costs may also make more projects viable and increase the total demand for software.
-
-The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) projects employment of software developers, quality-assurance analysts and testers to grow 15% from 2024 to 2034. That forecast may change, and employment totals can conceal large shifts in tasks and entry routes. The most defensible near-term conclusion is redistribution rather than simple disappearance.
+The [U.S. Bureau of Labor Statistics](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) projects employment of software developers, quality-assurance analysts, and testers to grow 15% from 2024 to 2034. Forecasts can change, and employment totals can conceal large shifts in tasks and entry routes. The most defensible near-term conclusion is redistribution rather than simple disappearance.
 
 ## A Larger Profession, Differently Shaped
 
-> **Why it matters:** More people may build software, while professional engineers become more important when consequences, scale, and integration are hardest.
+The future programmer may be an architect, verifier, integrator, designer of safe boundaries, and judge of trade-offs. The future builder may enter through medicine, education, law, science, or a problem no software company considered profitable enough to solve.
 
-The future programmer may be an architect, verifier, integrator, designer of safe boundaries and judge of trade-offs. The future builder may enter through medicine, education, law, science or a problem no software company considered profitable enough to solve.
+These groups will overlap. Domain experts will gain more engineering capability. Professional engineers will spend more time understanding domains and supervising systems that can act. The boundary among user, programmer, and tool will become less distinct.
 
-These groups will overlap. Domain experts will acquire more engineering capability. Professional engineers will spend more time understanding domains and supervising systems that can act. The boundary between user, programmer and tool will become less distinct.
+The danger is to mistake code generation for software engineering. The opportunity is larger: more people can participate in creation while deep expertise concentrates on the decisions with the greatest consequence.
 
-The danger is to mistake code generation for software engineering. The opportunity is much larger: more people can participate in creation while deep expertise is concentrated on the decisions that carry the greatest consequence.
-
-That change will happen first for individuals and small teams. Inside a large organisation, the problem is harder. An AI can bring general programming knowledge, but it still needs access to everything the organisation has learned about itself.
+Individuals and small teams will encounter this shift first. Inside a large organisation, the problem is harder. General model capability must be connected to private knowledge, established systems, permissions, and accountability. [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]] examines that institutional problem.
