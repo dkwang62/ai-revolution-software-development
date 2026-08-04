@@ -17,9 +17,9 @@ This chapter is about that shift in scarcity. As the supply of code increases, v
 - judgement about which possibilities deserve to exist; and
 - accountable ownership of the outcome.
 
-I saw this shift while building the app used throughout this book. During some stages, interface work consumed about 80% of my time—not because the AI coding agent could not produce screens, but because producing a screen was no longer the hard part. Labels overflowed their boxes. Buttons became too narrow. A keyboard covered the field being edited. A layout that worked on one device failed on another. The code existed; the experience was wrong.
+Imagine a factory that wants a small system to read maintenance reports and warn when a machine may need to be stopped. An AI agent could quickly generate forms, connect a database, summarise reports, and display an alert. But the difficult questions would remain: Which combinations of vibration, temperature, noise, and repair history indicate danger? When should the system interrupt production rather than schedule routine maintenance? Who has authority to stop the line? What evidence would show that the warning rules are safe?
 
-That small example contains the chapter's larger economic lesson: **when one important cost falls, the bottleneck moves**. For most of computing history, many useful ideas died because turning them into code cost too much. AI allows more ideas to cross that threshold, but it also exposes the constraints that were waiting behind implementation. Those constraints will shape the next software economy.
+The software can be generated faster than those questions can be answered. The factory's engineers, operators, maintenance records, safety rules, tests, and accountable managers supply what code generation cannot. This is the chapter's economic lesson: **when one important cost falls, the bottleneck moves**. For most of computing history, many useful ideas died because turning them into code cost too much. AI allows more ideas to cross that threshold, but it also exposes the constraints that were waiting behind implementation. Those constraints will shape the next software economy.
 
 ## The Bottleneck Moves Upward
 
