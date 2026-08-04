@@ -4,15 +4,22 @@ title: "What Becomes Scarce When Code Becomes Cheap?"
 
 ![Scarcity shift](<figures/FIG-15-01 Scarcity Shift.png>)
 
-During parts of the app project, I estimate that interface work consumed about 80% of my time. This was not because the AI coding agent could not produce screens. It produced them quickly. The difficulty had moved somewhere else.
+**As AI lowers the cost of producing code, the difficult part of software moves elsewhere.** The scarce resources become knowing which problem matters, defining the right behaviour, keeping the system coherent, proving that it works, and accepting responsibility for the result.
 
-Labels overflowed their boxes. Buttons became too narrow and wrapped words vertically. A keyboard covered the field being edited. A layout that looked acceptable on one device failed on another. The code existed; the experience was wrong.
+This does not mean programming disappears or that software becomes free. It means implementation is less likely to be the only—or even the main—constraint. A team may be able to generate a feature quickly and still struggle to decide whether it is useful, how it should fit the rest of the system, what could go wrong, and what evidence would justify releasing it.
 
-That small frustration contains a large economic lesson. When one important cost falls, the bottleneck moves.
+This chapter is about that shift in scarcity. As the supply of code increases, value moves towards six things:
 
-For most of computing history, translating an idea into code was expensive. Many useful ideas died before anyone attempted them because the likely benefit could not justify a professional software project. AI is lowering that translation cost. It does not make the rest of software creation free. It reveals which other constraints were waiting behind the cost of code.
+- knowledge of the real problem;
+- clear requirements and boundaries;
+- architecture that keeps many changes coherent;
+- evidence that the software works;
+- judgement about which possibilities deserve to exist; and
+- accountable ownership of the outcome.
 
-The future of software will be shaped by those constraints.
+I saw this shift while building the app used throughout this book. During some stages, interface work consumed about 80% of my time—not because the AI coding agent could not produce screens, but because producing a screen was no longer the hard part. Labels overflowed their boxes. Buttons became too narrow. A keyboard covered the field being edited. A layout that worked on one device failed on another. The code existed; the experience was wrong.
+
+That small example contains the chapter's larger economic lesson: **when one important cost falls, the bottleneck moves**. For most of computing history, many useful ideas died because turning them into code cost too much. AI allows more ideas to cross that threshold, but it also exposes the constraints that were waiting behind implementation. Those constraints will shape the next software economy.
 
 ## The Bottleneck Moves Upward
 
