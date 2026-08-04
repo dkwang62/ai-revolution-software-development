@@ -2,15 +2,9 @@
 title: "The Genie Is Not All-Powerful"
 ---
 
-Once you have watched an AI model write software, interpret an image, explain biology, and answer questions across many subjects, it is easy to form a dangerous idea.
+An AI model can write software, interpret images, and answer questions across many subjects. That breadth can create a dangerous impression: perhaps enough data, computing power, and reasoning will eventually let it understand every cause and answer every question.
 
-This is not an optional detour from the book's argument. It is the limit that keeps the argument honest: greater capability does not turn a model into an all-knowing authority.
-
-Perhaps the model can eventually map everything.
-
-Perhaps enough data, computing power, and reasoning will turn it into a kind of Superman: able to see every pattern, understand every cause, and answer every question. In the language of this book, the genie begins to look all-powerful.
-
-That is not what an AI model is.
+Greater capability does not turn a model into an all-knowing authority. This is not a detour from the book's argument. It is the limit that keeps the argument honest.
 
 An AI model is a learned representation of patterns found in data. This makes it extraordinarily useful when the patterns are too numerous, subtle, or widely scattered for a person to inspect directly. It does not give the model a complete view of reality. Its answers remain shaped by its training data, objective, architecture, current context, and the evidence available when it is used.
 
@@ -85,31 +79,15 @@ Python was written deliberately for machines to execute. The genome emerged thro
 
 AI can learn patterns in both. The meaning of those patterns is much harder to establish in biology.
 
-## Models Compress Reality
+## Why Patterns Are Not Everything
 
-> **Why it matters:** A model is valuable because it leaves out detail, yet the missing detail is exactly where a rare, consequential mistake can live.
+> **Why it matters:** Better pattern recognition can reduce uncertainty without turning incomplete observations into a complete account of reality.
 
-Every model is a compression.
+More data, computing power, memory, tools, and reasoning can all improve a model. They cannot guarantee that the world has been measured completely. Data can be wrong or biased. Causes can be entangled. Systems change. Rare events may be missing precisely because they are rare.
 
-A map is not the territory. A weather model is not the weather. An economic model is not the economy. An AI model is not the world.
+Every useful model leaves something out. It captures relationships that help it generalise without storing every fact, cause, exception, hidden variable, and future event. The missing detail may be harmless in an ordinary case and decisive in a rare one.
 
-Compression is what makes a model useful. Instead of storing every possible situation separately, it captures relationships that help it generalise, predict, and generate something new.
-
-Compression also loses information. A model does not contain every fact, cause, exception, hidden variable, and future event. It contains relationships that proved useful during training. This is why the same model can be brilliant in one situation and wrong in another.
-
-The model is not necessarily failing because it is unintelligent. It is behaving like a model: powerful within the representation it has learned and uncertain where that representation does not match reality.
-
-## Why More Data and Computing Power Are Not Enough
-
-More data helps. More computing power helps. Better architectures, memory, tools, and reasoning help.
-
-But some limitations are not merely computing problems. They are reality problems.
-
-The world is incompletely measured. Data can be wrong or biased. Causes are entangled. Systems change over time. Humans behave inconsistently. Organisations contain incentives, politics, and undocumented knowledge. Biology adapts. Rare events may be absent from the data precisely because they are rare.
-
-A model trained on observations from this world inherits those limits. Greater capability may reduce uncertainty. It does not abolish uncertainty.
-
-Nor does a larger map become the territory simply because it contains more detail.
+A model trained on observations inherits the limits of those observations. Greater capability can narrow uncertainty; it cannot abolish it.
 
 ## AI as Microscope, Not Oracle
 

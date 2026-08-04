@@ -2,8 +2,6 @@
 title: "What Is an AI Model?"
 ---
 
-![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
-
 An **AI model is a system that has learned patterns from many examples**. Give it a new input—a question, a passage, an image, or a request for software—and it uses those learned patterns to predict a useful response.
 
 For a text model, the underlying task is surprisingly simple: predict what piece of text should come next. During training, the model makes this prediction across an enormous amount of text, code, and other material. Each error slightly adjusts its numerical settings. Repeated at vast scale, this process teaches the model patterns of language, explanation, programming, and reasoning without anyone writing a separate rule for every possible request.
@@ -23,6 +21,8 @@ the model predicts a useful response
 ↓
 the response must still be checked
 ```
+
+![What is an AI model](<figures/FIG-05-01 What Is An AI Model.png>)
 
 Because the model has learned broad patterns, it can handle new wording and situations that nobody specified in advance. Because it is predicting rather than consulting a perfect source of truth, it can also produce an answer that sounds convincing but is incomplete or wrong.
 
@@ -60,8 +60,6 @@ turn it into numbers
 train the model to predict patterns
 ↓
 teach it to be a useful assistant
-↓
-give it supervised ways to use tools
 ```
 
 ### 1. Prepare the Material
@@ -150,28 +148,6 @@ Reviewers can also compare several possible answers and select the clearer, safe
 
 Safety training is part of this process. It can teach a model to recognise dangerous requests, protect privacy, decline some actions, and express uncertainty. It is not a magic shield. Important systems still require permissions, filters, logs, tests, and accountable people.
 
-### 6. Teach the System to Work with Evidence
-
-For a coding agent, a fluent answer is not enough. The system must learn when it should inspect a project, search for a file, run a compiler, use a test, look at a screenshot, or ask for more information.
-
-That is partly training and partly product design. Researchers evaluate models in realistic environments with goals and tools. A coding task may require an agent to read an issue, inspect an existing codebase, edit only relevant files, run a build, interpret an error, revise its plan, and record what it checked. The product must also provide narrow permissions and actual tools.
-
-```text
-user's goal
-↓
-model proposes a plan or change
-↓
-tools inspect, calculate, build, search, or test
-↓
-the results become new evidence
-↓
-model revises or reports uncertainty
-↓
-software and people decide what may be accepted or executed
-```
-
-The result is not one all-powerful model. It is a model inside a supervised working system.
-
 ## Using the Finished Model
 
 > **Why it matters:** Training gives a model general skill; current context, tools, and people supply the local truth it needs to act usefully.
@@ -201,14 +177,6 @@ Earlier recurrent designs mostly handled a sequence step by step. Transformers m
 
 **Generative** means producing a new continuation or transformation, rather than selecting a label from a fixed list. Once a model could predict the next useful piece at enough scale, it could generate a paragraph, a program, a translation, or an image description. The Transformer did not make a model all-knowing. It made modern generative models economically significant.
 
-## A Bridge to Software
-
-Software is an especially promising use case because it contains repeated, checkable patterns: code, documentation, errors, tests, interfaces, and corrections. That material can give a model broad skill with familiar programming languages and common development tasks.
-
-But turning English into code is not the same as translating English into another human language. Code must preserve the intended meaning _and_ make a computer behave correctly inside an existing system. A model can propose; compilers, tests, rendered screens, and people provide the evidence that decides whether the proposal should be kept.
-
-That is where this chapter stops. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows the next stage in detail: how a human request becomes requirements, code, tool use, revision, and a verified change.
-
 ## When a Model Can See and Hear
 
 > **Why it matters:** A screenshot or recording adds evidence to a task, but it is still evidence to inspect—not direct knowledge of what the user experiences.
@@ -221,9 +189,7 @@ When a user uploads an image, the model does not inspect it perfectly like a per
 
 ### Side Story: How a Picture Becomes Tokens
 
-A digital image is a two-dimensional grid of coloured dots, called **pixels**. Each pixel commonly records three numbers: red, green, and blue. One common design divides the picture into small squares, or **patches**, then turns each patch into a vector. This is the central idea of a **Vision Transformer**: treat patches of an image somewhat like tokens of text. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
-
-For example, a 224 × 224 image divided into 16 × 16-pixel patches produces 14 × 14 = 196 patches. A patch contains 256 pixels; with red, green, and blue values, that begins as 768 numbers. A mathematical transformation turns those numbers into a shorter vector. The model also receives information about the patch's position, because the same blue patch may mean sky at the top of an image but a button near the bottom of a screen.
+A digital image is a grid of coloured dots called **pixels**. One common design divides the picture into small squares, or **patches**, and turns each patch into a vector. A **Vision Transformer** can then relate those visual pieces somewhat as a text Transformer relates tokens. Position also matters: the same blue patch might be sky near the top of a photograph or a button near the bottom of a screen. [Dosovitskiy et al., _An Image is Worth 16×16 Words_](https://arxiv.org/abs/2010.11929)
 
 ```text
 image → patches → vectors + positions → visual representation
@@ -232,9 +198,7 @@ text  → tokens  → vectors + positions → language representation
                          model relates the two kinds of evidence
 ```
 
-The comparison with text is useful but imperfect. A text token comes from a fixed vocabulary of words or word pieces. An image patch begins as colours, edges, textures, and shapes. Through successive layers, neighbouring patches and their positions can become a richer interpretation: perhaps a dog, a warning banner, or a button that overlaps its label.
-
-The figures above are a teaching example, not a universal recipe. Models use different image sizes, patch sizes, and internal designs. The principle is the important part: a picture becomes numerical evidence that can be related to language. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
+The comparison is useful but imperfect. Text tokens come from a vocabulary of word pieces; image patches begin as colours, edges, textures, and shapes. Models also use different image sizes and internal designs. The principle is what matters: a picture becomes numerical evidence that can be related to language. [OpenAI, _Models_](https://developers.openai.com/api/docs/models)
 
 This expands the model's inputs, not its authority. Screens can be cropped, blurry, outdated, or shown at the wrong device size. While building the app and this book, I sometimes had to show Codex a rendered screen before it recognised that text escaped a box or controls were squeezed into an unusable space. The practical loop remains: generate, render, inspect at relevant sizes, test, and revise.
 
@@ -242,73 +206,26 @@ This expands the model's inputs, not its authority. Screens can be cropped, blur
 
 _The code may compile and the screen may render, yet the result can still fail for the person using it._
 
-## Why Models Differ—and What Upgrades Are Trying to Improve
+## Why Models Differ
 
-> **Why it matters:** A meaningful upgrade is one that completes a checked task more reliably, not merely one that sounds more fluent in conversation.
+> **Why it matters:** A model should be judged by how reliably and economically it completes the intended task, not by one universal ranking.
 
-Different training choices create different models. They may vary in training material, architecture, size, efficiency, safety tuning, context length, multimodal capability, tool use, and intended use. One may be especially good at coding, another at writing, and another small enough to run on a phone.
+Training material, architecture, size, post-training, efficiency, context length, and supported media all shape a model's behaviour. One model may excel at coding, another at writing, and another may be small enough to run on a phone. Model names are therefore not interchangeable.
 
-That is why model names are not interchangeable. It also explains why an upgrade can change behaviour unexpectedly. A traditional application can often add one feature while preserving the rest. A learned model is a large web of relationships: changing its data, training, or architecture can shift many behaviours at once. Applications must test a successor rather than assume it is perfectly compatible.
+A newer model can also improve overall while becoming worse for one established prompt or workflow. Learned behaviour is spread across a large web of numerical relationships, so changing the training can shift many behaviours at once. [[09-economics-of-models|The Economics of Models]] examines the cost, capability, and upgrade trade-offs in detail.
 
-We cannot see every private experiment behind a model release. We can see the broad, public trajectory: models are being developed from fluent pattern predictors into more reliable, multimodal, tool-using collaborators.
-
-| Direction of effort          | What the user notices                                                     | Why it is difficult or costly                                                    |
-| ---------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Better base training         | Broader language, code, and general patterns                              | Vast data, computing, engineering, and careful data selection                    |
-| Post-training and evaluation | Better instruction following, helpfulness, safety, and factual discipline | Reliable examples and realistic tests are harder to create than raw text         |
-| Reasoning                    | Better planning, debugging, mathematics, and analysis on difficult tasks  | More computation can mean more time and cost per answer                          |
-| Multimodality                | Work with screens, diagrams, images, speech, video, and code              | Different kinds of information must be aligned and evaluated together            |
-| Long context and memory      | Follow a larger document, codebase, or task                               | More context costs memory and computation; relevance still matters               |
-| Tools and agents             | Search, inspect, edit, calculate, run software, and check work            | Needs permissions, safe environments, task-specific tests, and failure detection |
-
-The improvement is not simply “more facts.” A stronger agent may be better able to keep an objective, project context, compiler feedback, visual evidence, and verification in one working process.
-
-Consider a request: “The iPhone keyboard covers the lower fields. Fix it without spoiling the iPad layout.” A weak coding model may add some padding, make the code compile, and declare success. A stronger agent can find the relevant screen, distinguish iPhone from iPad layout rules, make a narrow change, build the app, open the keyboard in a Simulator, inspect the rendered result, revise if needed, and report what it checked.
-
-The useful unit of progress is not “code was generated.” It is “a bounded engineering task was completed and checked.”
-
-The defensible ideal is therefore not an all-powerful model. It is an **AI system**: a capable model working with selected context and memory, specialist tools, permissions, tests, records, and human authority.
-
-## What Training Cannot Discover by Itself
+## What Training Cannot Guarantee
 
 > **Why it matters:** Data can reveal what tends to happen; proving why it happens still requires theory, experiments, tools, and real-world feedback.
 
-The success of grammar learning invites a reasonable question: if a model can discover the statistical grammar of English or Python from examples, why can it not discover every hidden rule in the world?
+Learning patterns does not guarantee that a model has discovered causes, captured rare exceptions, or received the private facts of the current task. Training data can also contain errors and bias. A confident continuation is still a prediction, not independent evidence that the answer is true.
 
-It can learn some hidden structure. But a learned pattern is not always an explanation of cause.
+Software offers unusually strong feedback because code can often be compiled, run, and tested. Even then, tests cannot reveal a business rule that nobody supplied. [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]] develops this boundary through a scientific example where prediction and causal explanation are especially easy to confuse.
 
-The comparison with biology makes the limit clear. Human language and DNA are both long sequences with recurring patterns. A model can learn much of the “grammar” of each. Language, however, is designed for communication. Across billions of sentences, grammatical relationships leave visible statistical fingerprints: “the cat,” “the dog,” and “the boy” appear in enough contexts to reveal how they behave.
+## A Bridge to Software
 
-DNA has patterns too, but its effects are spread through a much longer physical chain:
+Software is a promising use case because it contains repeated, checkable patterns: code, documentation, errors, tests, interfaces, and corrections. Training can give a model broad programming skill. Current files, requirements, tools, and people must still supply the local truth.
 
-```text
-DNA → RNA → proteins → cells → tissues → organism
-```
+Turning English into code is therefore more than translation between languages. The result must preserve the intended meaning _and_ make a computer behave correctly inside an existing system. The model proposes; compilers, tests, rendered screens, and people determine whether the proposal should be kept.
 
-A sequence can have different effects in a liver cell, a brain cell, a developing child, or a person under environmental stress. There are far fewer complete observations that connect a genome to all those later outcomes than there are sentences showing how language is used. A model can find a DNA pattern associated with disease without discovering the complete biological mechanism that causes it.
-
-Software sits closer to language in one valuable respect: it has an interpreter, a compiler, tests, and often a running system. Many claims can be checked. That makes code unusually fertile training and working material. Even there, no amount of public examples automatically tells a model the private purpose of a particular system.
-
-Three principles follow:
-
-1. **Patterns can be learned from examples.** This is why large-model training is powerful.
-2. **A learned grammar is not a complete explanation.** Predicting what is likely is easier than knowing why it happens.
-3. **Feedback determines reliability.** Compilers, tests, experiments, and real-world observation turn a plausible pattern into something that can be checked.
-
-The side story [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]] explores the genome example further. Here, its purpose is simply to set a boundary on what training alone can promise.
-
-## Capability Has a Cost—and Does Not Remove Responsibility
-
-> **Why it matters:** The useful measure is not the price of a model response but the cost of reaching a reliable decision or completed task.
-
-Training requires specialised hardware, electricity, engineers, data preparation, experiments, and evaluation. It is a large upfront investment that creates a reusable capability. **Inference**—each request to a deployed model—is an operating cost. It depends on model size, input length, output length, speed, reasoning effort, multimodal input, and hardware efficiency.
-
-The economic question is not which model sounds most impressive in isolation. It is which combination of model, context, tools, verification, and human attention completes a valuable task reliably at an acceptable cost.
-
-Training material can contain errors and bias—systematic patterns that favour or disadvantage some answers, groups, or viewpoints. Average performance does not guarantee reliability in a rare or consequential case. Better models can still fabricate references, misunderstand a local purpose, suggest insecure code, or miss an important visual detail.
-
-This is why the phrase-extraction feature at the start of the chapter keeps the original image and OCR text, validates the model's proposed phrases, avoids duplicates, and lets the learner choose what to save. A learned model can handle changing fonts, lighting, camera angles, and image quality that would be difficult to express as exhaustive rules. Conventional software, tests, and human responsibility supply the constraints and evidence the model lacks.
-
-That is the central bargain: AI makes flexible interpretation and generation cheaper; dependable systems still require context, judgement, verification, integration, and trust.
-
-[[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] follows that bargain through one concrete transformation: an ordinary English request becoming executable source code.
+The side chapter that follows sets a firm boundary on what learned patterns can establish. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] then follows one transformation in detail: an ordinary request becoming executable code.

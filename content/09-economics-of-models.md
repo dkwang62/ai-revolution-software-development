@@ -2,13 +2,9 @@
 title: "The Economics of Models"
 ---
 
-[[06-what-is-an-ai-model|What Is an AI Model?]] and [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] explained the mechanism: models learn mathematical relationships that inference can use to transform intent into useful output.
+AI changes the economics of software only if the value of using a model exceeds the cost of creating and operating it. That is the central idea of this chapter.
 
-But this book is not only asking how AI works.
-
-It is asking why AI changes the economics of software.
-
-That means every technical feature of AI must be analysed economically. Larger models, longer context windows, multimodal capability, better reasoning, faster inference, specialised hardware, and model upgrades are not merely engineering facts. They are investments made because someone expects a return.
+[[06-what-is-an-ai-model|What Is an AI Model?]] explained how models acquire capability. [[08-how-ai-converts-english-into-software|How AI Converts English Into Software]] showed that using this capability may require context, reasoning, tools, and verification. Each of those choices has a cost and a possible return.
 
 The economics of AI begins with a simple distinction:
 
@@ -17,7 +13,7 @@ Training builds capability.
 Inference pays the running cost of using it.
 ```
 
-The trained model is reusable. Each request consumes electricity, chip time, and data-centre capacity—not a portion of the model's knowledge.
+Training is paid largely in advance. The trained model is reusable, but every request still consumes electricity, chip time, and data-centre capacity. The first cost resembles building a factory; the second resembles running it.
 
 ## Training as Capital Investment
 
@@ -25,7 +21,7 @@ The trained model is reusable. Each request consumes electricity, chip time, and
 
 Training is the expensive process that creates or improves a model.
 
-It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. [Epoch AI estimates](https://epoch.ai/trends) that frontier-model training compute has grown at roughly 4–5x per year and that frontier language-model training costs have risen about 3.5x per year since 2020. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is a capital-intensive race.
+It requires data, hardware, electricity, specialised chips, engineering teams, research, experimentation, evaluation, and time. The largest models may require extraordinary investment. Epoch AI estimates that frontier-model [training compute grew roughly 4–5x per year](https://epoch.ai/publications/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year) from 2010 to May 2024, while the amortised hardware and energy cost of final frontier training runs [grew about 2.4x per year](https://epoch.ai/publications/how-much-does-it-cost-to-train-frontier-ai-models) from 2016. These are modelled estimates rather than audited disclosures, but they support the central point: frontier model training is capital-intensive.
 
 Economically, training resembles capital investment: spending money now to create an asset expected to provide value for years. A company spends heavily upfront to create a model with useful capabilities. That model can then be deployed to many users, products, tasks, and organisations.
 
@@ -60,13 +56,17 @@ This makes inference different from traditional software in an important way. Ma
 
 This does not mean inference will always be expensive. Hardware improves. Models become more efficient. A system can reuse an earlier result (**caching**), send an easy request to a smaller model (**routing**), train a smaller model to reproduce useful behaviour from a larger one (**distillation**), or store the model's numbers in a more compact form (**quantisation**). All can reduce cost. Inference cost nevertheless remains central to AI product economics because every new interaction uses computing resources.
 
-This is why inference must be analysed separately from training. Training is the upfront creation of capability; inference is the repeated spending of that capability. Epoch AI tracks inference-cost trends separately and reports rapid but uneven declines in the cost of inference at fixed performance levels. The direction matters: if inference becomes cheaper, more AI features become economically viable; if it remains expensive, AI use must be reserved for higher-value tasks.
+This is why inference must be analysed separately from training. Training is the upfront creation of capability; inference is the repeated spending of that capability. Epoch AI reports [rapid but uneven declines in inference prices](https://epoch.ai/data-insights/llm-inference-price-trends) at fixed performance levels. The direction matters: as inference becomes cheaper, more AI features become economically viable; where it remains expensive, use must be reserved for higher-value tasks.
 
 For software development, this matters because AI-assisted tools must be worth the inference they consume. A coding assistant that saves an engineer an hour may easily justify the cost of many model calls. A trivial feature used by millions of people may need much cheaper inference.
 
-## Why Larger Models Exist
+## Paying for Capability
 
-Larger models are not automatically better in every situation, but they often offer broader capability.
+The most capable model is not automatically the most economical one. A useful system matches the capability to the task.
+
+### Larger Models
+
+Larger models are not automatically better in every situation, but they can offer broader capability.
 
 A larger model may capture more patterns, handle more varied tasks, produce better reasoning, follow instructions more reliably, and generalise across domains. That can make it valuable for software development because programming requires language understanding, code generation, architecture awareness, debugging, documentation, and domain reasoning.
 
@@ -78,9 +78,9 @@ The economic question is:
 
 For some tasks, yes. A complex refactoring, legal analysis, medical summarisation, enterprise code migration, or multi-step software design may justify a more capable model. For simpler tasks, a smaller model may be enough.
 
-This is why the future will likely contain many models rather than one universal model for everything. Different tasks have different cost-benefit profiles.
+This is why one system may use several models. Different tasks have different cost-benefit profiles.
 
-## Context Windows as Working Memory
+### Context Windows
 
 The context window is the amount of information a model can consider during inference.
 
@@ -88,9 +88,9 @@ A single function may require little context; a large codebase may require files
 
 The useful distinction is between **raw context**, the maximum amount a model can read, and **effective context**, the relevant information it can actually use. A smaller window supplied by good retrieval can outperform a larger one filled with irrelevant material. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] develops this problem in detail.
 
-## Multimodality
+### Multimodality
 
-Multimodal Models can work across text, images, audio, video, code, and other forms of input or output.
+Multimodal models can work across text, images, audio, video, code, and other forms of input or output.
 
 This matters because software development is not purely textual. Requirements may appear in screenshots, diagrams, whiteboards, mockups, logs, tables, documents, and user recordings. A developer may need to convert a sketch into an interface, a screenshot into a bug report, a chart into code, or a video of a user session into product insight.
 
@@ -102,7 +102,7 @@ The economic question is again cost versus benefit. Multimodality becomes valuab
 
 For software development, the value is obvious in principle. Many software ideas begin visually. Many bugs are seen before they are described. Many workflows are easier to show than explain. A model that can interpret screenshots, diagrams, and code together can reduce communication cost.
 
-## Reasoning
+### Reasoning
 
 > **Why it matters:** More reasoning should be reserved for tasks where better planning and checking are worth the extra time and cost.
 
@@ -118,22 +118,22 @@ For a trivial formatting change, expensive reasoning is wasteful. For a database
 
 This suggests that AI software tools may route tasks dynamically. Simple tasks may go to small fast models using light reasoning. Complex tasks may go to more capable models or heavier multi-step workflows. High-risk tasks may require verification, tool use, and human approval regardless of the reasoning level.
 
-### Choosing the Appropriate Reasoning Level
+#### Choosing the Appropriate Reasoning Level
 
 The appropriate level is the lowest one that completes the task reliably enough to satisfy its acceptance criteria. More reasoning is not automatically better. It can become slow, expensive, or repetitive when the task is simple.
 
-| Reasoning level         | Appropriate tasks                                                                                                                      | Book-writing examples                                                                                                    |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Light**               | Direct extraction, classification, formatting, short summaries, or tightly specified changes                                           | Correct spelling, reformat Markdown, change a heading, or update a build number                                          |
-| **Balanced**            | Comparing a few alternatives, revising a section, explaining a concept, or debugging a bounded problem                                 | Improve one chapter, compare two passages, check clarity, or strengthen an example                                       |
-| **Heavy**               | Many interacting constraints, unfamiliar material, architecture, risk analysis, or work whose errors are costly                        | Test the whole book's argument, redesign chapter structure, reconcile conflicting reviews, or examine factual weaknesses |
-| **Maximum or extended** | Rare, difficult, quality-first work where an incremental improvement could materially affect the outcome and extra delay is acceptable | A final adversarial review of the entire manuscript or a consequential claim involving many sources                      |
+| Reasoning level         | Appropriate tasks                                                                                                                      | Software examples                                                                                               |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Light**               | Direct extraction, classification, formatting, short summaries, or tightly specified changes                                           | Rename a variable, reformat a file, change a label, or update a build number                                    |
+| **Balanced**            | Comparing a few alternatives, revising a bounded component, explaining a concept, or debugging a contained problem                     | Improve one screen, compare two implementations, trace a known error, or strengthen a test                      |
+| **Heavy**               | Many interacting constraints, unfamiliar material, architecture, risk analysis, or work whose errors are costly                        | Redesign a subsystem, plan a migration, diagnose an intermittent failure, or reconcile conflicting requirements |
+| **Maximum or extended** | Rare, difficult, quality-first work where an incremental improvement could materially affect the outcome and extra delay is acceptable | Conduct an adversarial review of a security-critical change or a consequential architecture decision            |
 
 These are starting points, not laws. A short question can hide a difficult problem, while a long task can sometimes be mostly mechanical. The model, context, tools, and quality standard all matter. The only dependable method is to test representative tasks and compare success, waiting time, token use, human correction, and total cost.
 
 The economic comparison must include more than the price of one request. Heavy reasoning may cost more per attempt but reduce failed attempts, human review, or expensive mistakes. Light reasoning may be cheaper per attempt but expensive overall if the work must be repeated. The goal is not the cheapest answer. It is the lowest total cost for a completed and verified task.
 
-## Why Some Tasks Consume More Tokens
+## The Cost of a Completed Task
 
 AI cost grows through four main channels: the information read, the answer generated, the reasoning performed, and the repeated tool calls used to inspect, test, and revise. A short answer can still be expensive if it required a long investigation; a long but mechanical answer may be relatively easy.
 
@@ -147,17 +147,13 @@ AI cost grows through four main channels: the information read, the answer gener
 | Plan a database migration   | Many constraints, risk analysis, tests, rollback planning           |
 | Build an agent workflow     | Repeated inference, tool calls, permissions, monitoring, validation |
 
-The price of one request is therefore a poor measure of value. The better measure is the total cost of reaching a completed, checked result. Future AI systems will compete not only by making tokens cheaper, but by avoiding unnecessary tokens, selecting the right model, and stopping when enough evidence has been gathered.
+The price of one request is therefore a poor measure of value. The better measure is the total cost of reaching a completed, checked result. A more expensive attempt can be economical if it avoids retries, human correction, or failure. A cheap attempt can be expensive if the work must be repeated.
 
 ## Model Evolution and Compatibility
 
 > **Why it matters:** A new model version is not a routine software patch; it can improve one behaviour while quietly changing another.
 
-Model evolution creates a new kind of software maintenance problem.
-
-Traditional software changes when developers edit code. If they are careful, they can preserve backward compatibility. A new version of a library may add features while attempting not to break old behaviour.
-
-AI models are different. A new model is not merely the old model plus a feature. It may have different training data, architecture, alignment, reasoning behaviour, safety policies, tool-use patterns, and response style. The same prompt may produce different results.
+Model evolution creates a new kind of software maintenance problem. A new model is not merely the old model plus a feature. It may have different training data, architecture, alignment, reasoning behaviour, safety policies, tool-use patterns, and response style. The same prompt may produce different results.
 
 This matters for software systems that depend on AI. A prompt template, evaluation suite, workflow, or agent loop may work well with one model and less well with another. Upgrading a model can resemble changing a dependency whose behaviour is difficult to specify fully.
 
@@ -165,54 +161,18 @@ Therefore a model upgrade can make an old workflow worse even while improving th
 
 The economic benefit of upgrading is better capability or lower cost. The cost is testing, adaptation, monitoring, and possible behaviour change. Production systems need model versioning, evaluation, fallback, and change management.
 
-In other words, models become part of the software supply chain. Backward compatibility is difficult because model behaviour is not a small set of explicit rules.
-
-If a conventional function adds two numbers, preserving behaviour is straightforward. If an AI model answers questions, writes code, follows policies, reasons through ambiguity, and interprets context, preserving every behaviour while improving capability is much harder.
-
-A model can become better overall while becoming worse for a particular prompt or workflow. It can become safer but less direct. It can become more creative but less predictable. It can follow instructions better in general while interpreting one old instruction differently.
-
-This is not simply carelessness by model builders. It is a consequence of learned distributed behaviour.
-
-For software engineers, the lesson is clear: model upgrades must be tested like serious dependency changes.
-
-## The Cost-Benefit Pattern
-
-Every major AI improvement should be examined through the same pattern:
-
-| Improvement      | Cost                                       | Benefit                                                        | Future Trend                                                                    |
-| ---------------- | ------------------------------------------ | -------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Larger models    | More training and inference compute        | Broader capability and better reasoning                        | More efficient models may reduce cost per capability                            |
-| Longer context   | More memory and compute                    | Ability to handle larger tasks and codebases                   | Context will likely expand but require better management                        |
-| Multimodality    | More complex data and training             | One system can work across text, image, audio, video, and code | More software workflows will mix modalities                                     |
-| Better reasoning | More inference time or specialised methods | Better planning, debugging, and analysis                       | Systems may route reasoning depth by task                                       |
-| Training         | Large upfront capital cost                 | Creates reusable model capability                              | Cost per useful capability may fall, but frontier training may remain expensive |
-| Inference        | Ongoing operating cost                     | Delivers capability to users                                   | Hardware and model efficiency may lower cost                                    |
-| Model evolution  | Testing and compatibility risk             | Better capability, safety, or cost                             | Model management becomes part of software engineering                           |
-
-This table is not final research. It is a way of thinking.
-
-The book should teach readers to ask: what cost is being paid, what capability is being gained, who benefits, and what becomes economically viable as a result?
+A model can become better overall while becoming worse for a particular prompt or workflow. Models therefore become part of the software supply chain, and model upgrades must be tested like serious dependency changes.
 
 ## The Economics of Intelligence
 
 > **Why it matters:** Once intelligence is supplied through infrastructure, organisations can choose how much of it to buy, where to apply it, and what level of checking it deserves.
 
-The phrase economics of intelligence means that intelligence itself can be analysed as something produced, stored, distributed, consumed, priced, and improved.
-
-Training produces machine capability.
-
-The model stores that capability as learned mathematical relationships.
-
-Inference distributes and uses that capability.
-
-Hardware, data centres, energy, chips, and engineering teams determine cost.
-
-Applications determine value.
+The phrase **economics of intelligence** means that machine capability can be produced, distributed, consumed, priced, and improved. Training produces it. Models make it reusable. Inference applies it. Hardware, data centres, energy, and engineering determine its cost. Applications determine its value.
 
 The hardware shift is visible in company financial reports. [NVIDIA reported](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027) Q1 fiscal 2027 revenue of \$81.6 billion for the quarter ended April 26, 2026, including \$75.2 billion in data-centre revenue. NVIDIA's revenue is not the same as AI model spending, but it is strong evidence that AI demand has shifted enormous value toward specialised computing infrastructure. [Gartner forecast](https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026) worldwide AI spending of \$2.59 trillion in 2026, a broad figure that includes services, software, models, data, development platforms, and infrastructure. It should not be confused with model training alone.
 
 Software development is the clearest case study because it is already a knowledge-intensive activity. If AI lowers the cost of applying software-engineering knowledge, it changes the economics of the software industry.
 
-This is why the book is not simply about AI writing code. It is about the industrialisation of certain forms of cognitive work.
+The chapter's economic test is therefore simple, even when the calculation is not: what is the total cost of the capability, and what useful work does it make possible? This book is not simply about AI writing code. It is about the industrialisation of certain forms of cognitive work.
 
 Part III has explained how models acquire capability and why different uses carry different costs. One missing factor determines whether that general capability becomes useful in a real project: what the model can see at the moment it works. A powerful model without the relevant files, rules, history, or examples may still make a poor decision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines that link between general intelligence and a particular task.

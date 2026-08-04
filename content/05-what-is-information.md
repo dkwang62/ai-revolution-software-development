@@ -2,13 +2,9 @@
 title: "What Is Information?"
 ---
 
-Before we can understand how AI writes software, we need to ask a more basic question.
+Before asking how AI can write software, we need a clear idea of what it works with.
 
-What is information?
-
-That may sound philosophical, but it is the doorway into modern AI. If we begin with neural networks, parameters, tokens, and GPUs, most readers are forced to memorise technical terms before they understand the problem those terms solve. The better path is to begin with something familiar: meaning.
-
-Consider two sentences:
+**Information is meaning or structure that can be represented in different forms.** Consider two sentences:
 
 ```text
 The cat sat on the mat.
@@ -18,139 +14,81 @@ The cat sat on the mat.
 猫坐在垫子上。
 ```
 
-The symbols are different. The sounds are different. The writing systems are different. Yet a person who understands both English and Chinese can recognise that the two sentences carry essentially the same information.
+The symbols, sounds, and writing systems differ. Yet someone who understands both languages can recognise that the sentences carry essentially the same information. English and Chinese are not the information itself. They are ways of encoding it so that it can be communicated, stored, transformed, and acted upon.
 
-That distinction matters. English is not the information itself. Chinese is not the information itself. They are representations of information. They are ways of encoding meaning so it can be communicated, stored, transformed, and acted upon.
+Software also moves information among forms. An intended procedure may begin as a conversation, become requirements and diagrams, appear as source code, and end as machine instructions that change something in the world. Each form serves a different purpose. The software succeeds only if the transformations preserve the behaviour that matters.
 
-The same is true of software.
+An app used throughout this book makes the idea concrete. A Chinese character appears on screen as a shape, but the app may also store its Unicode number, pronunciation, English meaning, components, stroke data, notes, and membership in phrases. None is the character itself. Each representation preserves information needed for a particular task.
 
-A procedure can be described in English, drawn as a flowchart, written as pseudocode, implemented in Python, translated into machine code, and executed by a processor. Each representation is different, but they may all refer to the same underlying procedure.
+When I asked an AI coding agent to change how the app handled a character, it had to follow that information through my description, Swift data structures, database records, and the pixels shown to the learner. The feature worked only when those representations remained consistent.
 
-AI becomes less mysterious once we see that language, code, images, sound, and diagrams are not separate universes. They are different ways of representing information.
+That is the foundation of this chapter: information can change form, but each transformation must preserve the relationships that matter.
 
-An app used as a running example in this book made this visible before I had the vocabulary to describe it. A Chinese character appears on the screen as a shape, but the app may also hold its Unicode representation, pronunciation, English meaning, component relationships, stroke data, frequency, notes, and membership in phrases. None of those forms is the character by itself. Each preserves information needed for a different purpose.
+## Symbols Carry Meaning
 
-When I asked the AI coding agent—the “Genie” in this book—to change how the app handled a character, it often had to follow that information across several representations: my description of the intended behaviour, the Swift structures used by the app, records in a database, and pixels finally displayed on the phone. The feature succeeded only when those representations still agreed about what the character meant and how the user should experience it.
+> **Why it matters:** AI becomes useful when it can relate different representations while preserving the information needed for the task.
 
-That is the practical doorway into this chapter. Information can survive a change of form, but every transformation must preserve the relationships that matter.
+Humans use words, numbers, diagrams, gestures, equations, maps, legal clauses, programming languages, and images. Each symbol system has conventions. Languages have grammar. Mathematics has notation. Programming languages have syntax. Maps have legends and scales.
 
-## Symbols and Meaning
+Symbols let us store and communicate meaning outside our minds, but a symbol is not the thing it represents. The word “dog,” the Chinese character 犬, and a photograph of a dog are different representations connected to the same broad concept.
 
-> **Why it matters:** AI does not need one universal form of meaning; it becomes useful when it can preserve what matters while information changes form.
+This distinction explains why translation requires more than substitution. A translator tries to preserve meaning across languages, including context, tone, culture, and implication. Converting an English procedure into Python likewise requires more than replacing words with code. The sequence, conditions, data, constraints, and intended result must survive the change of form.
 
-Humans usually handle information symbolically.
+Modern AI operates among these representations. It can summarise text, translate languages, describe images, explain errors, and generate code because it has learned patterns connecting one form of information to another.
 
-We use words, numbers, diagrams, gestures, music, equations, maps, legal clauses, programming languages, and images. Each symbol system has rules. A language has grammar. Mathematics has notation. A programming language has syntax. A map has conventions. A musical score has marks that musicians know how to interpret.
+## Rules and Learned Relationships
 
-Symbols let us store and communicate meaning outside our own minds. They make culture possible. They make science possible. They make law, accounting, engineering, medicine, and software possible.
+> **Why it matters:** Explicit rules provide predictability; learned relationships handle variation that would be impractical to describe rule by rule.
 
-But symbols are not meaning itself. The word "dog" is not a dog. The Chinese character 犬 is not a dog. A photograph of a dog is not a dog. A vector drawing of a dog is not a dog. Each is a representation that points toward a concept.
-
-This is why translation is possible. A translator does not merely replace one word with another. They try to preserve information across symbolic systems. Sometimes the translation is straightforward. Sometimes the meaning depends on context, tone, culture, implication, or specialised knowledge.
-
-Software translation is similar. Converting a procedure from English into Python is not word substitution. It requires preserving structure: conditions, sequence, data, constraints, goals, and expected behaviour.
-
-AI operates in this space between representation and meaning.
-
-## Information Can Change Form
-
-Information often moves between forms.
-
-A doctor reads a scan and writes a report. A lawyer reads a contract and summarises the risk. A programmer reads a user request and writes code. A teacher looks at test results and adjusts a lesson plan. A designer hears a product idea and sketches a screen. A musician reads notation and produces sound.
-
-In each case, information changes representation.
-
-Computers have always transformed information too, but traditional software usually required humans to define the transformation explicitly. If the input looks like this, do that. If the record contains this value, calculate that output. If the user clicks this button, run this function.
-
-Modern AI changes the nature of the transformation. It can move between representations without a human writing explicit rules for every case. It can summarise text, translate languages, describe images, generate code, explain errors, classify documents, and answer questions because it has learned patterns among representations.
-
-That is why this idea is central to the book:
-
-> Information is deeper than any particular human language, programming language, image, sound, or symbol system.
-
-Once readers understand that, AI-generated software becomes less magical. Software is information. Code is information. Requirements are information. Error messages are information. Architecture diagrams are information. AI can work with software because software belongs to the same broader world of representable structure.
-
-## The Old Way: Rules
-
-> **Why it matters:** Rules are valuable precisely because they make a system predictable, inspectable, and easy to hold accountable.
-
-Traditional software usually stores knowledge as explicit rules.
-
-If the account balance is below zero, charge a fee. If the password is wrong five times, lock the account. If the user is an administrator, show the admin panel. If the temperature exceeds a threshold, send an alert.
-
-This rule-based approach is powerful when the rules are clear. It is why traditional software is so reliable in domains such as accounting, payroll, databases, compilers, and transaction processing. Given the same input under the same conditions, deterministic software should produce the same output.
-
-But not all knowledge is easy to express as rules.
-
-How do you recognise a cat in a photograph? How do you judge whether a sentence is polite? How do you translate a joke? How do you detect that a paragraph is evasive? How do you decide whether a codebase is poorly structured? How do you infer what a user meant when their request is incomplete?
-
-For decades, many such problems were difficult because humans could often perform them but could not easily write down complete rules. The world contains too much variation.
-
-Old AI often tried to solve intelligence by storing explicit rules. But rules became brittle. There were too many exceptions, too many contexts, too many edge cases.
-
-Modern AI works differently.
-
-## The New Way: Relationships
-
-> **Why it matters:** Learned relationships handle variation that would be impractical to describe with hand-written rules, but they also replace certainty with judgement and checking.
-
-Modern AI stores learned relationships.
-
-This is the distinction between rules and relationships. Traditional software says:
+Traditional software usually represents knowledge through rules:
 
 ```text
-IF A
-THEN B
+IF the password is wrong five times
+THEN lock the account
 ```
 
-AI models learn something closer to:
+Rules are powerful when the required behaviour is clear. They make accounting, databases, compilers, transaction systems, and access controls predictable and inspectable. Given the same input under the same conditions, deterministic software should produce the same output.
+
+Some knowledge is much harder to express this way. How would a programmer write every rule needed to recognise cats in arbitrary photographs, translate jokes, judge whether a sentence is polite, or infer what a user meant by an incomplete request? The number of variations and exceptions becomes unmanageable.
+
+Modern AI learns relationships from examples instead:
 
 ```text
-A is related to B in this context, with this degree of likelihood.
+A is related to B
+in this context
+with this degree of likelihood
 ```
-
-That difference is profound.
 
 ![Rules versus learned relationships](<figures/FIG-06-01 Rules Versus Relationships.png>)
 
-A model trained on language sees that words appear near other words, ideas occur in certain contexts, explanations have structure, code follows patterns, error messages relate to fixes, and questions relate to answers. Over enormous numbers of examples, the system learns relationships among symbols, concepts, structures, and procedures.
+A language model encounters words near other words, questions paired with answers, code beside explanations, and errors followed by fixes. Across enormous numbers of examples, it develops numerical relationships among symbols, structures, and procedures. Those relationships let it respond flexibly to new combinations rather than requiring one rule for every possible case.
 
-This does not mean it possesses human understanding. It means it has learned a mathematical structure rich enough to transform information in useful ways.
+Flexibility changes the nature of reliability. An account-lock rule can be inspected directly. A learned model may produce an excellent interpretation in one case and a plausible but wrong one in another. Learned relationships therefore complement rather than replace deterministic rules. The model handles variation; conventional software and people supply boundaries, checks, and authority.
 
-That is why AI can translate English into Chinese, summarise a legal paragraph, describe an image, explain a programming error, or draft Swift code. It is not switching between unrelated systems. It is operating over learned relationships among representations.
+## Information Becomes Numerical Structure
 
-## Meaning Becomes Location
+> **Why it matters:** A model does not keep each concept in one readable location; it distributes useful relationships across many numerical settings.
 
-> **Why it matters:** A model does not store a concept in one readable place; it represents useful relationships across many numbers, which makes it flexible but difficult to explain exactly.
+To work with words, code, images, or sound, an AI model turns pieces of them into numbers. Training adjusts a vast numerical structure so that related pieces of information influence one another in useful ways.
 
-One useful intuition is that modern AI represents information in mathematical spaces.
+One rough intuition is a map organised by relationship rather than alphabetically. _Dog_, _cat_, _wolf_, and _animal_ would occupy a related region; _Swift_, _Python_, _function_, and _compiler_ would occupy another. A real model uses far more dimensions than a drawing can show, and its internal directions do not carry simple human-readable labels.
 
-The reader does not need linear algebra to understand the basic idea. Imagine concepts arranged not alphabetically but by relationship. Dog, cat, wolf, fox, and animal would be near one another. Democracy, election, voting, constitution, and parliament would form another neighbourhood. Swift, Python, function, variable, class, and compiler would occupy related regions.
+The phrase “AI thinks in mathematics” is therefore too strong. More accurately, an AI model represents learned patterns numerically. Those patterns can connect English, Chinese, code, images, and sound without making the forms identical or giving the model human understanding.
 
-In such a space, meaning becomes partly a matter of location and distance. Similar ideas are closer together. Related concepts cluster. Differences become directions.
-
-This is only an intuition, but it helps explain why the same model can move between domains. If English, Chinese, code, images, and sound can all be represented as mathematical relationships, then translation becomes a movement through that learned structure.
-
-The phrase "AI thinks in mathematics" can be useful as a metaphor, but it must be handled carefully. AI does not think like a human mathematician. More accurately, an AI model represents patterns in data through numerical structures learned during training. Those structures allow it to transform one representation into another.
-
-That explanation is less magical, but more durable.
+The next chapter explains how training creates this numerical structure and how the finished model uses it.
 
 ## Why This Matters for Software
 
-> **Why it matters:** AI can connect a request, a diagram, a screen, and code because each can become related numerical evidence—not because the distinctions no longer matter.
+> **Why it matters:** AI can connect a request, a diagram, code, a test, and a screen because each can provide evidence about the same intended behaviour.
 
-Software development is full of representation changes.
+Software development is a chain of representation changes:
 
-A user describes a need. A developer turns it into requirements. Requirements become architecture. Architecture becomes code. Code becomes tests. Tests become confidence. Error messages become fixes. Old code becomes documentation. Documentation becomes new understanding.
+```text
+need → requirements → design → code → tests → running behaviour
+```
 
-AI can assist because it has learned relationships among many of these representations. It has seen code with comments, documentation with examples, questions with answers, bugs with fixes, designs with implementation patterns, and natural-language tasks with software structures.
+AI has encountered many relationships along this chain: code with comments, documentation with examples, bugs with fixes, tasks with tests, and designs with implementation patterns. It can therefore help move information from one stage to another.
 
-This does not make AI infallible. It can infer wrongly. It can produce plausible nonsense. It can generate code that looks correct but fails. It can misunderstand the business rule. It can use outdated APIs. It can miss a security issue.
+It can also preserve the wrong thing. A request may be misunderstood. Generated code may compile but violate a business rule. A test may confirm the implementation while checking the wrong requirement. The ability to transform information does not guarantee that the intended meaning survived.
 
-But the possibility is clear: if software is information, and AI can transform information, then AI can participate in software creation.
-
-This is the conceptual bridge from abstraction to models.
-
-The next question is: where are these learned relationships stored?
-
-They are stored in an AI model.
+That is the conceptual bridge from information to models. Software is representable structure; AI models learn relationships among representations. [[06-what-is-an-ai-model|What Is an AI Model?]] explains where those relationships come from and how they produce a response.

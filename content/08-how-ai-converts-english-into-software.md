@@ -2,29 +2,33 @@
 title: "How AI Converts English Into Software"
 ---
 
-![English to software](<figures/FIG-07-01 English To Software.png>)
-
-We can now return to the question that motivated this book.
-
 How can an idea expressed in ordinary English become working software?
 
-At first, the experience feels almost magical. A person describes a feature. The AI asks a question, proposes a design, writes code, explains errors, and revises the implementation. A conversation becomes an application. For someone who remembers when programming required strict syntax from the first line, the shift is astonishing.
+The short answer is that an AI model has learned relationships among requests, requirements, designs, source code, tests, errors, and explanations. It can use those relationships to propose code that expresses the requested procedure. But English does not become dependable software in one step. The request must be interpreted, unstated decisions must be exposed, the proposal must fit the existing system, and the result must be checked.
 
-But the point of this book is not to admire the magic. It is to understand how the trick works.
+This chapter follows that transformation:
 
-Codex is the practical doorway into that mystery for this book. A simple chat model can show the reader that English can become code. Codex shows something stronger: English can become a supervised software workflow. The prompt does not merely produce a snippet. It can lead to file inspection, code edits, terminal commands, build errors, revisions, and verification.
+```text
+intent
+↓
+requirements and decisions
+↓
+software structure
+↓
+source code
+↓
+execution and evidence
+```
 
-That is why Codex, the AI coding agent used in this project, matters here. It makes the abstract claim visible.
+![English to software](<figures/FIG-07-01 English To Software.png>)
 
-The explanation is neither memorisation nor secret fluency in Swift, Python, JavaScript, or SQL.
+An AI chatbox may stop after producing a code snippet. A coding agent can continue through project inspection, file edits, builds, errors, revisions, and verification. In both cases the model generates a proposal. The wider workflow determines whether that proposal becomes working software.
 
-The explanation is representation. Software is a representation of procedure, and AI models can learn relationships among different representations of procedure: English, examples, pseudocode, documentation, source code, tests, errors, and explanations.
+## From Intent to Procedure
 
-## Software Is Procedure
+> **Why it matters:** English can describe a goal, but software must turn that goal into explicit data, decisions, and behaviour.
 
-Software tells a machine what to do.
-
-More precisely, software represents procedures precisely enough for a machine to execute them. It defines data, operations, conditions, sequences, permissions, errors, and outputs.
+Software represents procedures precisely enough for a machine to execute them. It defines data, operations, conditions, sequences, permissions, errors, and outputs.
 
 Consider a simple request:
 
@@ -34,17 +38,7 @@ This sentence is not code, but it contains software structure. It implies a user
 
 A human developer hears the request and begins translating. What data model—the organised description of the information and its relationships—is needed? Where should favourites be stored? What happens if the same character is saved twice? How does the user remove one? Should favourites sync across devices? What if the database is unavailable?
 
-AI performs a similar kind of translation, though not in the same way a human does. It uses learned relationships to infer likely structures and generate a representation in code.
-
-## Procedure Can Exist in Many Forms
-
-The same feature can be represented in ordinary English:
-
-```text
-Let the user save favourite Chinese characters and review them later.
-```
-
-It can be represented as requirements:
+A useful first step is to turn the request into requirements:
 
 ```text
 - The user can mark a character as a favourite.
@@ -54,7 +48,7 @@ It can be represented as requirements:
 - Duplicate favourites are not created.
 ```
 
-It can be represented as pseudocode:
+The same behaviour can then be expressed as pseudocode:
 
 ```text
 if user_taps_favourite(character):
@@ -63,61 +57,11 @@ if user_taps_favourite(character):
         save(favourites)
 ```
 
-It can be represented as a data model, a screen design, a database table, a test case, or a Swift function.
+From there it may become a data model, screen design, database table, test case, and Swift function. AI can help move between these forms because it has learned recurring software patterns. The critical intermediate layer is not a hidden programming language. It is the set of decisions that turns a broad intention into behaviour precise enough to implement.
 
-All of these are different forms of the same underlying procedure.
+If those decisions remain unstated, the model fills the gaps with plausible assumptions. Sometimes they are helpful; sometimes they create the wrong system. AI does not remove the need to think clearly. It exposes unclear thinking faster.
 
-AI-generated software depends on moving between these forms.
-
-## The Intermediate Layer Is Not English
-
-> **Why it matters:** The model's output improves when a human request is turned into explicit decisions before it is turned into code.
-
-When readers see AI convert English into code, they may imagine a direct path:
-
-```text
-English
-↓
-Swift
-```
-
-That is too simple.
-
-A better intuition is:
-
-```text
-English
-↓
-learned mathematical representation
-↓
-Swift
-```
-
-The model receives text, represents it internally through numerical structures, and generates output based on learned relationships. Swift is not what the model fundamentally understands. English is not what it fundamentally understands. Both are external symbolic forms.
-
-This helps answer the question from Programming:
-
-> How can a machine that does not think in Swift still produce useful Swift code?
-
-Because Swift is one way of expressing a procedure. If the model has learned relationships among intent, procedural structure, and Swift syntax, it can generate a plausible Swift representation of the requested behaviour.
-
-This also explains why AI can translate English to Python, English to SQL, code to explanation, error message to fix, or screenshot to interface suggestion. The model is moving through learned relationships among representations.
-
-## Not Memorisation
-
-> **Why it matters:** The valuable capability is not recalling a past answer; it is adapting familiar patterns to a new combination of constraints.
-
-AI sometimes memorises fragments from training data, but memorisation is not the main explanation for its usefulness.
-
-If AI-generated programming were only memorisation, it would fail whenever a user asked for a slightly new combination of requirements. But AI can often combine patterns: a mobile interface with a database, an import feature with duplicate handling, a quiz generator with formatting constraints, or a settings screen with cloud sync.
-
-That ability comes from generalisation. The model has learned that certain kinds of requests imply certain structures. It has seen many examples of code, explanations, libraries, documentation, errors, and design patterns. When prompted, it predicts a useful continuation that fits the current context.
-
-This is why precise context matters. If the user gives vague instructions, the model fills gaps with likely assumptions. Sometimes those assumptions are helpful. Sometimes they are wrong. If the user gives clear requirements, examples, constraints, and existing code, the model's transformation becomes better grounded.
-
-AI does not remove the need to think clearly. It rewards clear thinking.
-
-## A Worked Example: English To Python
+## A Worked Example: English to Python
 
 Let us slow the process down and use a tiny example.
 
@@ -136,37 +80,9 @@ def average(numbers):
     return sum(numbers) / len(numbers)
 ```
 
-That looks like a direct translation:
+The code expresses familiar patterns: define a function, accept a collection, handle the empty case, add the values, and divide by the count. The model did not need to retrieve this exact function from a catalogue. It generalised from related examples of language, mathematics, and Python.
 
-```text
-English request
-↓
-Python code
-```
-
-But internally, the process is closer to this:
-
-```text
-English prompt
-↓
-tokens
-↓
-numerical representations
-↓
-layers of learned relationships
-↓
-probable software structure
-↓
-Python output tokens
-↓
-code
-```
-
-This is not the exact private machinery of any particular AI system. Different models use different architectures and implementation details. But this is the right mental model for what is happening.
-
-For a chatbot, this may be where the example ends: prompt in, code out.
-
-For Codex, the more important pattern is larger. A **repository** is the project folder together with its recorded change history:
+For a chatbox, the example may end here: prompt in, code out. A coding agent can place the proposal inside a larger workflow. A **repository** is the project folder together with its recorded change history:
 
 ```text
 English prompt
@@ -186,11 +102,7 @@ revision
 verified change
 ```
 
-That difference matters. An AI coding agent is not merely a model producing text. It is an AI model connected to tools, context, and feedback.
-
-### From Learned Patterns to Code
-
-[[06-what-is-an-ai-model|Chapter 5]] explains the underlying mechanics: text and code become numerical representations, and the model generates a likely next piece from learned patterns. For this chapter, the practical point is simpler. Given the request, the model can propose a familiar Python structure: a function, a parameter, a check for an empty list, and an average calculation. The finished text becomes a symbolic program that Python can execute.
+The model proposes text; the agentic workflow connects that text to tools, project context, and feedback.
 
 The output still contains an unstated decision: an empty list returns `0`. The user might instead want an error, a missing value, or a special message. The model filled a gap with a plausible assumption. This is why generation must lead to requirements and verification, not directly to trust.
 
@@ -244,7 +156,7 @@ This is the trade-off: a short prompt uses fewer tokens and costs less, but leav
 
 The cheapest prompt is not always the most economical prompt. If a vague prompt produces wrong software, the cost returns later as debugging, testing, rework, or failure.
 
-## What Changes With A Harder Prompt?
+## What Changes with a Harder Prompt?
 
 > **Why it matters:** Difficulty rises not because code becomes longer, but because more unstated decisions can produce the wrong system.
 
@@ -318,9 +230,7 @@ The economic consequences of this extra work—context, tool use, checking, and 
 
 > **Why it matters:** A model can be technically capable and still fail if it is denied the one file, rule, screen, or exception that gives the request its meaning.
 
-AI uses the prompt together with available context: code, documentation, errors, examples, screenshots, constraints, test output, and earlier conversation. If a vital business rule or source file is missing, a plausible answer can still be wrong.
-
-This is why AI-assisted development works best as an iterative process. The human supplies evidence, examines the proposal, tests it, clarifies the requirement, and asks for revision. [[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] examines this working memory and its economics in detail.
+The transformation uses more than the prompt. Existing code, documentation, errors, examples, screenshots, constraints, tests, and earlier decisions all shape what the request means here. If a vital business rule or source file is missing, a plausible answer can still be wrong.
 
 The process is not:
 
@@ -350,6 +260,8 @@ Verify
 
 This is still programming, but at a higher level of abstraction.
 
+[[10-context-what-the-model-knows-right-now|Context: What the Model Knows Right Now]] explains how a system selects and supplies this task-specific evidence.
+
 ## Why Code Still Needs Verification
 
 > **Why it matters:** Code has a second reader—the computer—and sounding sensible to a person is no evidence that it will work for the system.
@@ -362,7 +274,7 @@ A generated function may compile but mishandle edge cases. A database query may 
 
 The model's output is a proposal, not a guarantee.
 
-This is why Software Verification becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
+This is why verification becomes more important, not less. If generation becomes cheap, the bottleneck shifts to knowing whether the generated system behaves correctly enough. Tests, type checking, code review, static analysis, runtime monitoring, user feedback, and human judgement all remain essential.
 
 AI can help with verification too. It can write tests, explain failures, identify suspicious code, and suggest edge cases. But AI-generated tests must themselves be reviewed. The system cannot be trusted merely because the same technology generated both the code and the test.
 
