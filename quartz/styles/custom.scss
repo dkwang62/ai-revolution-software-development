@@ -2,6 +2,23 @@
 
 // put your custom CSS here!
 
+// Each narrative section starts with a deliberately scannable promise. The
+// paragraph itself remains intact for readers who continue into the detail.
+article p.section-summary {
+  margin-top: -0.45rem;
+  margin-bottom: 1rem;
+  color: var(--darkgray);
+  font-size: 0.98rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+article .section-summary-label {
+  color: var(--secondary);
+  font-style: normal;
+  font-weight: 700;
+}
+
 article img[alt="The abstraction stack"] {
   display: block;
   width: min(100%, 900px);
