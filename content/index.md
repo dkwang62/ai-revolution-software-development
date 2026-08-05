@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 62**
+**Version 1.0.0 · Build 63**
 
 ![Book cover](figures/cover.png)
 
@@ -18,7 +18,7 @@ The genie is the analogy. Codex is the AI coding agent I used. The book is about
 
 [[00-author-and-ai-note|Start reading]]
 
-If you are preparing for an executive course on agentic AI or organisational transformation, use the [[22-preparing-to-lead-agentic-ai|Executive Pre-Course Guide]] after reading the main argument. It maps the book into eight learning modules with reflection questions, practical exercises, and reusable planning templates.
+If you are preparing for an executive course on agentic AI or organisational transformation, use the [[22-preparing-to-lead-agentic-ai|Executive Pre-Course Guide]] after reading the main argument. It maps the book into eight learning modules with worked answers, a complete organisational example, and reusable planning templates.
 
 ## Table of Contents
 

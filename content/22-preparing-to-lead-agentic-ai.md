@@ -1,6 +1,6 @@
 ---
 title: "Preparing to Lead Agentic AI: An Executive Pre-Course Guide"
-description: "An eight-module reading path, reflection guide, and practical workbook for courses on applied agentic AI and organisational transformation."
+description: "An eight-module reading path, worked-answer guide, and practical workbook for courses on applied agentic AI and organisational transformation."
 ---
 
 This appendix turns the book into preparation for an executive course on applied agentic AI and organisational transformation. It is not a substitute for instructors, discussion with experienced participants, live exercises, or the discipline of completing a real project. Its purpose is to make those experiences more valuable.
@@ -11,16 +11,16 @@ The book supplies that framework. Its central argument is:
 
 > AI lowers the cost of translating human intention into working systems, while moving more of the difficult work into context, requirements, integration, verification, trust, and responsibility.
 
-The eight modules below organise the relevant chapters into a practical preparation path. Each module contains a reading purpose, ideas to understand, questions to consider, and a small exercise. The exercises do not require programming experience. They require knowledge of a real problem and a willingness to make choices explicit.
+The eight modules below organise the relevant chapters into a practical preparation path. Each module contains a reading purpose, ideas to understand, a worked answer, and a practical application note. The application notes do not require programming experience. They require knowledge of a real problem and a willingness to make choices explicit.
 
 ## How to Use This Guide
 
 You can complete one module each week, or use the guide as an intensive preparation programme before a course begins. For each module:
 
 1. Read the recommended chapters for their argument, not to memorise every technical term.
-2. Answer the reflection questions in your own words.
-3. Complete the practical exercise using a real workflow you understand.
-4. Keep the same workflow where possible so that the exercises gradually become one coherent proposal.
+2. Read the worked answer and identify the business, technical, security, and governance choices it makes.
+3. Adapt the same pattern to a real workflow you understand.
+4. Keep the same workflow where possible so that your notes gradually become one coherent proposal.
 
 By the end, you should be able to explain an AI initiative to business, technical, security, and governance colleagues without pretending that they all see the problem in the same way.
 
@@ -43,17 +43,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - An agent combines a model with an objective, context, tools, working state, feedback, permissions, and stopping rules.
 - An AI system includes the model and everything required to make it useful and governable in real work.
 
-**Questions to consider:**
+**Worked answer:** A customer-service chatbot may only need to draft a reply to a complaint. An assistant becomes more useful if it can retrieve the customer's order history, warranty terms, and previous support tickets. It becomes an agent only when it is allowed to prepare a refund, open a replacement order, or update the ticket status. Before doing that, it should check policy limits, customer identity, stock availability, and whether the action requires human approval.
 
-1. Which activity in your organisation only needs a generated draft?
-2. Which activity needs access to current internal information?
-3. Which activity requires the system to use a tool or change another system?
-4. At which point does an assistant become an agent in that workflow?
-5. What would a model need to check rather than merely predict?
-
-**Sample answer:** A customer-service chatbot may only need to draft a reply to a complaint. An assistant becomes more useful if it can retrieve the customer's order history, warranty terms, and previous support tickets. It becomes an agent only when it is allowed to prepare a refund, open a replacement order, or update the ticket status. Before doing that, it should check policy limits, customer identity, stock availability, and whether the action requires human approval.
-
-**Exercise — explain the difference:** Write three short descriptions of the same proposed system: first as a chatbot, then as an assistant with internal knowledge, and finally as an agent allowed to take one bounded action. Underline what changes in its authority at each stage.
+**How to apply it:** Describe one proposed system at three levels: chatbot, assistant with internal knowledge, and agent with one bounded action. The important change is not the tone of the answer. It is the authority the system has been given.
 
 ## Module 2: Choose a Platform Without Starting with a Brand
 
@@ -73,17 +65,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Buying, configuring, integrating, and building are points on a spectrum rather than four completely separate choices.
 - The model is replaceable more easily when business rules, evaluations, data access, and tool interfaces are kept outside it.
 
-**Questions to consider:**
+**Worked answer:** A generic meeting-summary tool may be bought because many vendors already solve that problem. A claims-assessment assistant may be different because it depends on the organisation's policy wording, past decisions, local regulations, and risk appetite. In that case, the platform choice should be judged by how well it connects to internal records, preserves data control, supports audit trails, and allows the organisation to change models without rebuilding the whole workflow.
 
-1. Is the workflow common enough to buy as a finished application?
-2. Is it already centred on an enterprise platform the organisation uses heavily?
-3. Does it depend on distinctive knowledge or processes that create competitive advantage?
-4. Must sensitive data remain in a particular environment or country?
-5. How costly would it be to change the model or vendor later?
-
-**Sample answer:** A generic meeting-summary tool may be bought because many vendors already solve that problem. A claims-assessment assistant may be different because it depends on the organisation's policy wording, past decisions, local regulations, and risk appetite. In that case, the platform choice should be judged by how well it connects to internal records, preserves data control, supports audit trails, and allows the organisation to change models without rebuilding the whole workflow.
-
-**Exercise — compare two approaches:** Select one proprietary service and one open or locally operated alternative. Compare capability, data control, integration effort, operating skill, support, switching cost, security responsibility, and estimated total cost. Do not declare a winner until you have stated the workflow.
+**How to apply it:** Compare a proprietary service with an open or locally operated alternative only after naming the workflow. A platform is good or bad in relation to a task, not in the abstract.
 
 ## Module 3: Connect the Agent to a Digital Ecosystem
 
@@ -104,17 +88,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Existing systems are valuable tools and stores of organisational knowledge; an agent should not assume they must be replaced.
 - A reliable workflow makes each important hand-off visible.
 
-**Questions to consider:**
+**Worked answer:** In a procurement workflow, supplier names may come from the vendor database, purchase limits from finance policy, delivery status from the logistics system, and approvals from the workflow platform. The agent may read all four, but should not change supplier bank details or approve spending above a threshold. If a system is unavailable, the agent should stop and record the missing source rather than guessing. The audit record should show the request, information retrieved, recommendation made, approval received, and final action.
 
-1. Which system contains the source of truth for each important fact?
-2. Which information may the agent read, and which may it change?
-3. How will the agent know that a system is unavailable or a record is incomplete?
-4. Which action requires approval before it is sent to another system?
-5. What record will allow somebody to reconstruct what happened?
-
-**Sample answer:** In a procurement workflow, supplier names may come from the vendor database, purchase limits from finance policy, delivery status from the logistics system, and approvals from the workflow platform. The agent may read all four, but should not change supplier bank details or approve spending above a threshold. If a system is unavailable, the agent should stop and record the missing source rather than guessing. The audit record should show the request, information retrieved, recommendation made, approval received, and final action.
-
-**Exercise — draw the system:** Draw a simple map beginning with the user's request. Add the model, internal information, tools, existing applications, approval point, final action, and feedback. Mark every place where information crosses a boundary.
+**How to apply it:** Draw the workflow as a chain of hand-offs. Mark where the agent reads, recommends, prepares, acts, waits for approval, records evidence, and stops.
 
 ## Module 4: Secure an Agent That Can Act
 
@@ -135,17 +111,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Security is a continuing cycle: govern, identify, protect, detect, respond, and recover.
 - Human training and incident procedures matter because technical controls will sometimes fail.
 
-**Questions to consider:**
+**Worked answer:** A finance agent that can prepare payments should not also be able to approve and release them. Its most damaging action would be changing bank details or sending money to the wrong account. It may read invoices and vendor records, but payment release should require a human approver. A sudden request to change many vendors, bypass approval, or follow instructions embedded inside an invoice should trigger a stop. Finance, security, and operations need named roles for revoking access, restoring records, and notifying affected parties.
 
-1. What is the most damaging action this agent could take with its proposed access?
-2. Can its read and write permissions be separated?
-3. Which outside content could contain misleading or malicious instructions?
-4. What unusual behaviour would trigger an alert or stop?
-5. Who can revoke access, restore data, notify affected people, and approve a return to service?
-
-**Sample answer:** A finance agent that can prepare payments should not also be able to approve and release them. Its most damaging action would be changing bank details or sending money to the wrong account. It may read invoices and vendor records, but payment release should require a human approver. A sudden request to change many vendors, bypass approval, or follow instructions embedded inside an invoice should trigger a stop. Finance, security, and operations need named roles for revoking access, restoring records, and notifying affected parties.
-
-**Exercise — prepare for one failure:** Choose the most credible high-impact failure. Describe how the organisation would prevent it, detect it, contain it, investigate it, restore normal work, and change the system afterward.
+**How to apply it:** Name one serious failure and describe prevention, detection, containment, investigation, recovery, and the change that would stop the same failure recurring.
 
 ## Module 5: Place Agents Inside Business Functions
 
@@ -165,17 +133,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - AI-enabled outsourcing may reduce repetitive labour while leaving ownership of quality, data, customer relationships, and difficult exceptions unresolved.
 - Rapid prototyping lets people discover requirements through use, but successful growth eventually creates a need for architecture and maintenance.
 
-**Questions to consider:**
+**Worked answer:** In HR onboarding, the employee, manager, HR officer, IT team, and payroll team all experience delay. Routine work includes collecting forms, checking required documents, creating accounts, sending standard messages, and tracking missing items. Judgement remains with HR and the manager when immigration, seniority, compensation, or performance-sensitive issues arise. The agent could prepare the checklist, chase missing documents, draft reminders, and create IT requests, but it should not make employment or pay decisions.
 
-1. Who experiences the problem every day?
-2. What does the current workflow require from that person?
-3. Which part is routine, and which part depends on genuine judgement?
-4. Where would the agent save waiting, search, translation, or coordination?
-5. Could the proposed improvement weaken service quality or move work invisibly to somebody else?
-
-**Sample answer:** In HR onboarding, the employee, manager, HR officer, IT team, and payroll team all experience delay. Routine work includes collecting forms, checking required documents, creating accounts, sending standard messages, and tracking missing items. Judgement remains with HR and the manager when immigration, seniority, compensation, or performance-sensitive issues arise. The agent could prepare the checklist, chase missing documents, draft reminders, and create IT requests, but it should not make employment or pay decisions.
-
-**Exercise — redesign one workflow:** Describe the current workflow in no more than ten steps. Then design an AI-assisted version. For every removed human step, state whether it was eliminated, automated, moved to an exception process, or hidden inside another person's work.
+**How to apply it:** Rewrite one current workflow in no more than ten steps, then show which steps are eliminated, automated, moved to exceptions, or still owned by a human.
 
 ## Module 6: Cross the Last Mile from Pilot to Practice
 
@@ -195,17 +155,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Adoption requires training, support, ownership, feedback, maintenance, and a route for people to challenge the system.
 - A project should expand only when evidence supports wider authority or use.
 
-**Questions to consider:**
+**Worked answer:** A pilot that drafts customer replies might reduce average handling time from ten minutes to six minutes. That is useful only if customers still receive accurate answers and fewer cases are reopened. The scorecard should therefore include handling time, first-contact resolution, customer complaints, correction rate, and escalation rate. If speed improves but complaints or incorrect replies rise beyond the agreed limit, the project should pause for redesign instead of expanding.
 
-1. What does the workflow cost today in time, money, delay, or error?
-2. What would become better for the person receiving the service?
-3. Which measure could improve while concealing a worse outcome elsewhere?
-4. Who will monitor complaints, corrections, exceptions, and changing conditions?
-5. What evidence would justify stopping rather than expanding the project?
-
-**Sample answer:** A pilot that drafts customer replies might reduce average handling time from ten minutes to six minutes. That is useful only if customers still receive accurate answers and fewer cases are reopened. The scorecard should therefore include handling time, first-contact resolution, customer complaints, correction rate, and escalation rate. If speed improves but complaints or incorrect replies rise beyond the agreed limit, the project should pause for redesign instead of expanding.
-
-**Exercise — create a scorecard:** Choose three to five measures. Include at least one outcome, one process measure, and one guardrail. Record the baseline, the intended improvement, the source of the evidence, the review period, and the person responsible for acting on the result.
+**How to apply it:** Build a scorecard with at least one outcome measure, one process measure, and one guardrail. A faster workflow is not a success if it quietly creates more errors or complaints.
 
 ## Module 7: Governance, Compliance, Testing, and Ethics
 
@@ -227,17 +179,9 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Fairness and ethical impact concern who benefits, who bears errors, who can appeal, and whether apparent efficiency conceals a transfer of cost or power.
 - A risk–speed assessment helps an organisation experiment quickly where failure is visible and reversible while proceeding deliberately where consequences are serious.
 
-**Questions to consider:**
+**Worked answer:** A loan-screening assistant may be used by bank staff, but applicants are the people most affected. The organisation should consider financial regulation, anti-discrimination rules, privacy obligations, internal credit policy, and appeal rights. The system should retain the data used, recommendation made, human decision, reasons given, and any override. Testing should include borderline cases, protected groups, incomplete records, and attempts to produce unsupported explanations. A named risk owner must be able to stop use immediately.
 
-1. Which people could be affected even though they do not use the system directly?
-2. Which law, regulation, contract, professional duty, or internal policy may apply?
-3. What evidence must be retained for an audit, complaint, or appeal?
-4. Which test would expose the most important failure before deployment?
-5. Who has the authority and duty to stop the system?
-
-**Sample answer:** A loan-screening assistant may be used by bank staff, but applicants are the people most affected. The organisation should consider financial regulation, anti-discrimination rules, privacy obligations, internal credit policy, and appeal rights. The system should retain the data used, recommendation made, human decision, reasons given, and any override. Testing should include borderline cases, protected groups, incomplete records, and attempts to produce unsupported explanations. A named risk owner must be able to stop use immediately.
-
-**Exercise — write a governance page:** Name the purpose, owner, users, affected people, permitted data, prohibited actions, approval points, evaluation method, monitoring measures, incident owner, documentation, and review date. If a field has no owner, the plan is incomplete.
+**How to apply it:** Write a one-page governance note naming the purpose, owner, users, affected people, permitted data, prohibited actions, approval points, evaluation method, incident owner, documentation, and review date.
 
 ## Module 8: Build an Executive AI Road Map
 
@@ -259,15 +203,7 @@ By the end, you should be able to explain an AI initiative to business, technica
 - Five- and ten-year scenarios should distinguish present evidence, visible pressures, plausible trajectories, and speculation.
 - Change management is part of the system: people need time, incentives, authority, training, and evidence before a new workflow becomes normal.
 
-**Questions to consider:**
-
-1. Which business change is currently constrained by the cost or delay of changing information systems?
-2. What narrow workflow could demonstrate value without requiring an enterprise-wide commitment?
-3. Which reusable capability would remain even if the first use case failed or the model changed?
-4. How would employees, customers, partners, or regulators experience the proposed change?
-5. What decision are you asking an executive to make now?
-
-**Sample answer:** After a merger, the business may need faster cross-selling, but customer information sits in separate systems. A narrow first workflow could help account managers prepare a combined customer brief before a meeting. Even if the first pilot is imperfect, the organisation may still gain reusable connectors, permission rules, retrieval methods, evaluation cases, and experience governing AI-assisted work. The executive decision is not to “transform with AI” in general; it is to approve a bounded pilot with named systems, risks, measures, owners, and a review date.
+**Worked answer:** After a merger, the business may need faster cross-selling, but customer information sits in separate systems. A narrow first workflow could help account managers prepare a combined customer brief before a meeting. Even if the first pilot is imperfect, the organisation may still gain reusable connectors, permission rules, retrieval methods, evaluation cases, and experience governing AI-assisted work. The executive decision is not to “transform with AI” in general; it is to approve a bounded pilot with named systems, risks, measures, owners, and a review date.
 
 **Capstone — choose one path:**
 
@@ -275,6 +211,122 @@ By the end, you should be able to explain an AI initiative to business, technica
 2. **Executive presentation:** Prepare a concise case for an agent-based initiative. Explain the problem, economic value, proposed workflow, evidence, risks, controls, investment stages, and what management should approve.
 
 The strongest capstone is not the most ambitious. It is the one in which the connection from business need to system design, evidence, authority, and economic value is easiest to follow.
+
+## Worked Case: HorizonCare Clinics
+
+The same eight-module structure becomes clearer when applied to one imaginary organisation. Suppose **HorizonCare Clinics** is a regional healthcare group with multiple outpatient clinics, a call centre, a scheduling system, a customer-relationship system, billing records, and approved patient-information documents. It wants to improve administrative service without allowing AI to make clinical decisions.
+
+The strategic answer is not simply "add a chatbot". Different AI capabilities create different kinds of value:
+
+| Capability | What it can do for HorizonCare | Control required |
+| --- | --- | --- |
+| Chatbot | Answer approved questions about locations, opening hours, preparation instructions, and billing basics. | Use approved content and avoid medical advice. |
+| Reasoning model | Compare clinic location, specialty, urgency, insurance network, and appointment availability before recommending options. | Check constraints and explain assumptions. |
+| Multimodal AI | Read referral letters, insurance cards, forms, voice transcripts, and uploaded documents. | Validate extraction and protect patient information. |
+| Agentic AI | Check availability, reserve an appointment slot, update a case, and send confirmation. | Limit authority, log actions, and require approval for sensitive steps. |
+
+This gives the organisation a simple rule: informational answers can be automated earlier; recommendations need stronger checking; actions require explicit permission; clinical, financial, or legally significant decisions remain under human authority.
+
+### Cost and Benefit Sketch
+
+A serious proposal should include more than model subscription fees. For HorizonCare, a preliminary estimate might look like this:
+
+| Initial cost category | Estimated cost |
+| --- | ---: |
+| Workflow analysis and requirements | US$40,000 |
+| User-interface development | US$60,000 |
+| Scheduling and customer-system integration | US$120,000 |
+| Data preparation and knowledge base | US$50,000 |
+| Security, privacy, and legal review | US$35,000 |
+| Testing and employee training | US$45,000 |
+| **Estimated implementation cost** | **US$350,000** |
+
+| Annual operating cost category | Estimated annual cost |
+| --- | ---: |
+| Model and API usage | US$90,000 |
+| Cloud infrastructure | US$45,000 |
+| Monitoring and evaluation | US$55,000 |
+| Support and maintenance | US$70,000 |
+| Security and compliance | US$40,000 |
+| **Estimated annual operating cost** | **US$300,000** |
+
+Suppose HorizonCare handles 1.2 million administrative interactions each year at an average labour cost of US$2.50 per interaction. If the system safely resolves 35 percent of those interactions, the released labour capacity is:
+
+```text
+1,200,000 x 35% x US$2.50 = US$1,050,000
+```
+
+After subtracting annual operating costs, the rough annual net benefit is:
+
+```text
+US$1,050,000 - US$300,000 = US$750,000
+```
+
+That would recover the initial US$350,000 implementation cost in roughly six months after successful deployment. But the word **successful** matters. The pilot must test whether 35 percent safe resolution is real, whether staff time is actually released, whether errors remain acceptable, and whether patients experience the service as helpful rather than evasive.
+
+### Platform Answer
+
+For HorizonCare, the strongest answer is likely a **hybrid enterprise AI platform**, not a public chatbot and not a fully autonomous agent. The system would combine:
+
+- a commercially hosted model with enterprise privacy protections;
+- retrieval from approved HorizonCare policies and patient-service documents;
+- a controlled agent layer connected to scheduling and customer-service systems;
+- deterministic software rules for authentication, eligibility, and transaction approval;
+- human review for exceptions and high-risk decisions.
+
+A public chatbot is unsuitable because it lacks current clinic data and should not receive protected patient information. A completely autonomous agent is also unsuitable because healthcare administration contains privacy, safety, financial, and legal risks. The agent should work inside a restricted workflow, use approved tools, and escalate cases that exceed its authority.
+
+The open-source versus proprietary choice should be pragmatic. A proprietary enterprise model may provide faster implementation, strong capability, support, and managed infrastructure. An open or locally operated model may offer greater control and data-location assurance, but HorizonCare would then need the staff, infrastructure, security processes, and evaluation discipline to operate it properly. A sensible first step is to use a proprietary enterprise model behind an abstraction layer, while keeping business rules, retrieval, tests, and tool interfaces separate enough to change models later.
+
+### Landing-Page and User-Experience Answer
+
+If the course asks participants to use AI to generate a landing page or mock-up, the answer should still respect the real service boundary. HorizonCare could describe the system like this:
+
+```text
+Headline:
+Healthcare appointments without the waiting.
+
+Subheading:
+Horizon Assistant helps you find a clinic, prepare for your visit, and request an appointment at any time.
+
+Main benefits:
+- Available 24 hours a day.
+- Find suitable clinics and appointment times.
+- Receive preparation instructions and reminders.
+- Transfer to a staff member whenever necessary.
+
+Safety statement:
+Horizon Assistant provides administrative support only. It does not diagnose conditions or replace medical advice. For emergencies, contact the appropriate emergency service.
+```
+
+The important lesson is not the wording of the page. It is the discipline behind it. The interface must tell users what the AI can do, what it cannot do, when a human will take over, and why the service should be trusted only within its proper boundary.
+
+## Other Industries
+
+The HorizonCare example is only one setting. The same structure can be reused wherever an organisation has repeated information work, fragmented systems, costly hand-offs, and decisions that require different levels of authority.
+
+| Industry | Example organisation | Strong agent use case |
+| --- | --- | --- |
+| Banking | Regional retail bank | Customer-service and loan-document collection agent |
+| Insurance | General insurer | Claims intake, document review, image assessment, and case routing |
+| Hospitality | Hotel or resort group | Reservation, guest-service, service recovery, and upselling agent |
+| Manufacturing | Industrial manufacturer | Maintenance, procurement, and production-support agent |
+| Retail | Omnichannel retailer | Shopping, inventory, delivery, and returns agent |
+| Logistics | Freight and delivery company | Shipment exception and route-coordination agent |
+| Education | University | Student-advising and administrative-services agent |
+| Government | Municipal authority | Citizen-service and permit-processing agent |
+| Legal services | Mid-sized law firm | Matter intake, research, document review, and deadline tracking |
+| Real estate | Property-management company | Tenant-service and maintenance-coordination agent |
+| Telecommunications | Mobile-network operator | Technical-support and customer-retention agent |
+| Energy | Utility company | Outage, billing, and field-service agent |
+| Construction | Main contractor | Project-document and site-coordination agent |
+| Pharmaceuticals | Drug manufacturer | Regulatory-document and medical-information agent |
+| Travel | Airline | Disruption-management and rebooking agent |
+| Accounting | Professional-services firm | Bookkeeping, reconciliation, and client-query agent |
+
+Different industries make different lessons visible. Insurance is especially good for multimodal AI because claims may include forms, photographs, estimates, police reports, voice descriptions, and policy documents. Logistics is strong for agent integration because delays require coordination across carriers, customers, routes, and priorities. Manufacturing shows why probabilistic AI must work beside deterministic safety systems. Government and banking expose governance, fairness, auditability, and public accountability. Hospitality and retail make customer experience and measurable commercial benefit easy to understand.
+
+The point is not to find the most glamorous use case. It is to choose a workflow where the business need is real, the authority boundary is clear, the data and tools can be identified, and the benefit can be measured.
 
 ## Reusable Template 1: Agent Use-Case Card
 
@@ -338,14 +390,14 @@ People who must be notified:
 
 ## Readiness Check
 
-Before beginning an applied agentic-AI course—or asking an organisation to fund an initiative—you should be able to answer these questions without using product slogans:
+Before beginning an applied agentic-AI course—or asking an organisation to fund an initiative—the participant should be able to explain the following without using product slogans:
 
-1. What is the difference between a model, an assistant, an agent, and an AI system?
-2. Which workflow are you trying to improve, and for whom?
-3. What current information and tools does the system require?
-4. What may the agent propose, prepare, or execute?
-5. How will you measure benefit and detect harm?
-6. Who owns security, compliance, operation, and the final decision?
-7. What will remain valuable if the model, vendor, or first use case changes?
+1. The difference between a model, an assistant, an agent, and an AI system.
+2. The workflow being improved and the people who experience the problem.
+3. The current information, tools, and systems the agent requires.
+4. The actions the agent may propose, prepare, or execute.
+5. The evidence that will measure benefit and detect harm.
+6. The people who own security, compliance, operation, and the final decision.
+7. The reusable capability that remains valuable if the model, vendor, or first use case changes.
 
 If those answers are clear, the reader is ready to gain more from a course. The product demonstrations will be easier to judge, the frameworks will attach to a real problem, and the capstone will begin with substance rather than a blank slide.
