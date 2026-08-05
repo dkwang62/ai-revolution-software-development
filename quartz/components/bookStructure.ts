@@ -175,6 +175,16 @@ export const bookSections: BookSection[] = [
     ],
   },
   {
+    title: "Course Preparation",
+    entries: [
+      {
+        slug: "22-preparing-to-lead-agentic-ai" as FullSlug,
+        title: "Preparing to Lead Agentic AI: An Executive Pre-Course Guide",
+        shortTitle: "Executive Pre-Course Guide",
+      },
+    ],
+  },
+  {
     title: "Reference",
     entries: [
       { slug: "98-glossary" as FullSlug, title: "Glossary", shortTitle: "Glossary" },

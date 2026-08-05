@@ -266,6 +266,10 @@ Inference is the process of using a trained model to produce an output. When a u
 
 Just-in-time capability means obtaining and applying the technical knowledge needed for a task while doing the task, instead of mastering every tool in advance. In AI-assisted work, a model, framework, documentation, and testing tools can supply explanations, suggestions, working examples, and checks at the point of need. It does not remove the human responsibility to set the goal, grant permission, judge the risk, and accept the result.
 
+## Key Performance Indicator (KPI)
+
+A key performance indicator is a small, agreed measure used to tell whether an effort is achieving its intended outcome. For an AI support assistant, useful KPIs might include response time, customer satisfaction, the rate of incorrect answers, and the number of cases escalated to a person. A KPI should measure the real result, not merely how often the model was used.
+
 ## Latency
 
 Latency is waiting time. In an AI system, it commonly means the delay between sending a request and receiving a usable response.
@@ -392,7 +396,7 @@ A schema describes the required shape of data: which fields exist, what kind of 
 
 ## Security Terms for AI
 
-**Prompt injection** is a malicious instruction designed to redirect an AI system. **Data leakage** is the unintended exposure of private information. **Excessive permissions** give a person or agent more access than needed. **Model poisoning** attempts to corrupt training or reference material so that the model behaves improperly.
+**Prompt injection** is a malicious instruction designed to redirect an AI system. **Data leakage** is the unintended exposure of private information. **Excessive permissions** give a person or agent more access than needed. **Least privilege** means giving an agent only the access required for its current task. **Model poisoning** attempts to corrupt training or reference material so that the model behaves improperly. Good security also includes the ability to detect unusual behaviour, respond by stopping or limiting the system, and recover from an incident.
 
 ## Software Verification
 

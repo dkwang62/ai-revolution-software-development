@@ -148,6 +148,25 @@ The lesson is not to abandon agents. Hugging Face reported that AI-assisted dete
 
 The danger is treating a powerful system as if it were still a harmless chat window after giving it keys to the building.
 
+## Security Is a Continuing Practice
+
+> **Why it matters:** Security is not a permission setting added at launch; it is the ongoing ability to govern, notice, contain, and recover from an agent's mistakes.
+
+The security question for an AI agent is broader than whether the model can produce unsafe words. It includes the information it can read, the systems it can reach, the instructions it can be tricked into following, the actions it can take, and the organisation's ability to notice and recover when something goes wrong.
+
+The [NIST Cybersecurity Framework 2.0](https://www.nist.gov/news-events/news/2024/02/nist-releases-version-20-landmark-cybersecurity-framework) offers a useful plain-language structure: **govern, identify, protect, detect, respond, and recover**. It is not an AI checklist and it does not guarantee compliance with any law. It is a way to make the conversation complete.
+
+| Question for an agentic system | Practical meaning |
+| --- | --- |
+| **Govern** | Who owns the risk, sets the acceptable boundary, and decides what the agent may do? |
+| **Identify** | Which data, systems, accounts, external services, and failure modes matter? |
+| **Protect** | Use minimum permissions, separate credentials, approved tools, secure data handling, and training for staff. |
+| **Detect** | Keep action logs, monitor unusual behaviour, and alert a person when the agent crosses an expected boundary. |
+| **Respond** | Know who can stop work, revoke access, notify affected people, investigate, and make a decision under pressure. |
+| **Recover** | Restore data or service, learn from the incident, and improve the design before the same failure returns. |
+
+This framework also helps distinguish an ordinary error from a security event. A wrong draft may need correction. An agent that exposes confidential data, follows a malicious instruction hidden in a document, or uses an unintended external connection may require containment, investigation, and recovery. The technical details differ by organisation, but the principle is universal: capability must be paired with preparation for failure.
+
 ## Integration Determines Economic Value
 
 > **Why it matters:** A capable model creates possibilities; connecting it safely to the systems where work happens determines whether those possibilities produce value.

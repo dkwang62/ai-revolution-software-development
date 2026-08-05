@@ -60,6 +60,7 @@ These working papers support the narrower claim that collaboration, review, and 
 ## Evaluation, verification, and agent risk
 
 - National Institute of Standards and Technology. [_Artificial Intelligence Risk Management Framework (AI RMF 1.0)_.](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10) NIST AI 100-1, 26 January 2023.
+- National Institute of Standards and Technology. [“NIST Releases Version 2.0 of Landmark Cybersecurity Framework.”](https://www.nist.gov/news-events/news/2024/02/nist-releases-version-20-landmark-cybersecurity-framework) 26 February 2024.
 - NIST AI Resource Center. [“Valid and Reliable.”](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) Accessed 19 July 2026.
 - OpenAI. [“Evaluation Best Practices.”](https://platform.openai.com/docs/guides/evals) Accessed 19 July 2026.
 - Google Cloud. [“Evaluate Generative AI Models and Applications.”](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview) Accessed 19 July 2026.
