@@ -51,6 +51,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 4. At which point does an assistant become an agent in that workflow?
 5. What would a model need to check rather than merely predict?
 
+**Sample answer:** A customer-service chatbot may only need to draft a reply to a complaint. An assistant becomes more useful if it can retrieve the customer's order history, warranty terms, and previous support tickets. It becomes an agent only when it is allowed to prepare a refund, open a replacement order, or update the ticket status. Before doing that, it should check policy limits, customer identity, stock availability, and whether the action requires human approval.
+
 **Exercise — explain the difference:** Write three short descriptions of the same proposed system: first as a chatbot, then as an assistant with internal knowledge, and finally as an agent allowed to take one bounded action. Underline what changes in its authority at each stage.
 
 ## Module 2: Choose a Platform Without Starting with a Brand
@@ -78,6 +80,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 3. Does it depend on distinctive knowledge or processes that create competitive advantage?
 4. Must sensitive data remain in a particular environment or country?
 5. How costly would it be to change the model or vendor later?
+
+**Sample answer:** A generic meeting-summary tool may be bought because many vendors already solve that problem. A claims-assessment assistant may be different because it depends on the organisation's policy wording, past decisions, local regulations, and risk appetite. In that case, the platform choice should be judged by how well it connects to internal records, preserves data control, supports audit trails, and allows the organisation to change models without rebuilding the whole workflow.
 
 **Exercise — compare two approaches:** Select one proprietary service and one open or locally operated alternative. Compare capability, data control, integration effort, operating skill, support, switching cost, security responsibility, and estimated total cost. Do not declare a winner until you have stated the workflow.
 
@@ -108,6 +112,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 4. Which action requires approval before it is sent to another system?
 5. What record will allow somebody to reconstruct what happened?
 
+**Sample answer:** In a procurement workflow, supplier names may come from the vendor database, purchase limits from finance policy, delivery status from the logistics system, and approvals from the workflow platform. The agent may read all four, but should not change supplier bank details or approve spending above a threshold. If a system is unavailable, the agent should stop and record the missing source rather than guessing. The audit record should show the request, information retrieved, recommendation made, approval received, and final action.
+
 **Exercise — draw the system:** Draw a simple map beginning with the user's request. Add the model, internal information, tools, existing applications, approval point, final action, and feedback. Mark every place where information crosses a boundary.
 
 ## Module 4: Secure an Agent That Can Act
@@ -137,6 +143,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 4. What unusual behaviour would trigger an alert or stop?
 5. Who can revoke access, restore data, notify affected people, and approve a return to service?
 
+**Sample answer:** A finance agent that can prepare payments should not also be able to approve and release them. Its most damaging action would be changing bank details or sending money to the wrong account. It may read invoices and vendor records, but payment release should require a human approver. A sudden request to change many vendors, bypass approval, or follow instructions embedded inside an invoice should trigger a stop. Finance, security, and operations need named roles for revoking access, restoring records, and notifying affected parties.
+
 **Exercise — prepare for one failure:** Choose the most credible high-impact failure. Describe how the organisation would prevent it, detect it, contain it, investigate it, restore normal work, and change the system afterward.
 
 ## Module 5: Place Agents Inside Business Functions
@@ -165,6 +173,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 4. Where would the agent save waiting, search, translation, or coordination?
 5. Could the proposed improvement weaken service quality or move work invisibly to somebody else?
 
+**Sample answer:** In HR onboarding, the employee, manager, HR officer, IT team, and payroll team all experience delay. Routine work includes collecting forms, checking required documents, creating accounts, sending standard messages, and tracking missing items. Judgement remains with HR and the manager when immigration, seniority, compensation, or performance-sensitive issues arise. The agent could prepare the checklist, chase missing documents, draft reminders, and create IT requests, but it should not make employment or pay decisions.
+
 **Exercise — redesign one workflow:** Describe the current workflow in no more than ten steps. Then design an AI-assisted version. For every removed human step, state whether it was eliminated, automated, moved to an exception process, or hidden inside another person's work.
 
 ## Module 6: Cross the Last Mile from Pilot to Practice
@@ -192,6 +202,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 3. Which measure could improve while concealing a worse outcome elsewhere?
 4. Who will monitor complaints, corrections, exceptions, and changing conditions?
 5. What evidence would justify stopping rather than expanding the project?
+
+**Sample answer:** A pilot that drafts customer replies might reduce average handling time from ten minutes to six minutes. That is useful only if customers still receive accurate answers and fewer cases are reopened. The scorecard should therefore include handling time, first-contact resolution, customer complaints, correction rate, and escalation rate. If speed improves but complaints or incorrect replies rise beyond the agreed limit, the project should pause for redesign instead of expanding.
 
 **Exercise — create a scorecard:** Choose three to five measures. Include at least one outcome, one process measure, and one guardrail. Record the baseline, the intended improvement, the source of the evidence, the review period, and the person responsible for acting on the result.
 
@@ -223,6 +235,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 4. Which test would expose the most important failure before deployment?
 5. Who has the authority and duty to stop the system?
 
+**Sample answer:** A loan-screening assistant may be used by bank staff, but applicants are the people most affected. The organisation should consider financial regulation, anti-discrimination rules, privacy obligations, internal credit policy, and appeal rights. The system should retain the data used, recommendation made, human decision, reasons given, and any override. Testing should include borderline cases, protected groups, incomplete records, and attempts to produce unsupported explanations. A named risk owner must be able to stop use immediately.
+
 **Exercise — write a governance page:** Name the purpose, owner, users, affected people, permitted data, prohibited actions, approval points, evaluation method, monitoring measures, incident owner, documentation, and review date. If a field has no owner, the plan is incomplete.
 
 ## Module 8: Build an Executive AI Road Map
@@ -252,6 +266,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 3. Which reusable capability would remain even if the first use case failed or the model changed?
 4. How would employees, customers, partners, or regulators experience the proposed change?
 5. What decision are you asking an executive to make now?
+
+**Sample answer:** After a merger, the business may need faster cross-selling, but customer information sits in separate systems. A narrow first workflow could help account managers prepare a combined customer brief before a meeting. Even if the first pilot is imperfect, the organisation may still gain reusable connectors, permission rules, retrieval methods, evaluation cases, and experience governing AI-assisted work. The executive decision is not to “transform with AI” in general; it is to approve a bounded pilot with named systems, risks, measures, owners, and a review date.
 
 **Capstone — choose one path:**
 
