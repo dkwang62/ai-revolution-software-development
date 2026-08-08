@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 63**
+**Version 1.0.0 · Build 64**
 
 ![Book cover](figures/cover.png)
 
@@ -42,6 +42,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[05-what-is-information|Chapter 4: What Is Information?]]
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
 - [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]]
+- [[side-chapter-from-dna-to-a-machine-native-ai|Exploratory Side Chapter: From DNA to a Machine-Native AI]]
 - [[08-how-ai-converts-english-into-software|Chapter 6: How AI Converts English Into Software]]
 - [[09-economics-of-models|Chapter 7: The Economics of Models]]
 - [[10-context-what-the-model-knows-right-now|Chapter 8: Context: What the Model Knows Right Now]]

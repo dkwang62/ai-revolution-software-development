@@ -73,6 +73,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "The Genie Is Not All-Powerful",
       },
       {
+        slug: "side-chapter-from-dna-to-a-machine-native-ai" as FullSlug,
+        title: "Exploratory Side Chapter: From DNA to a Machine-Native AI",
+        shortTitle: "From DNA to a Machine-Native AI",
+      },
+      {
         slug: "08-how-ai-converts-english-into-software" as FullSlug,
         title: "Chapter 6: How AI Converts English Into Software",
         shortTitle: "6. How AI Converts English Into Software",
