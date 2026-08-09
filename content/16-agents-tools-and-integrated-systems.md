@@ -22,6 +22,73 @@ revise
 verify or stop
 ```
 
+## Codex Is More Than a Model
+
+> **Why it matters:** Codex is powerful not because the model knows everything, but because general model intelligence is connected to project context, tools, feedback, permissions, and human supervision.
+
+Codex can be confusing because people often use the word as if it names one thing. In practice, it is better to think of Codex as a **coding agent system** built around trained AI models.
+
+The model is the part trained on enormous amounts of text, code, documentation, examples, error messages, fixes, and software discussions. That training gives it general knowledge: what Swift looks like, how Python is structured, how web applications are commonly organised, what compiler errors often mean, how tests are written, and how programmers describe problems.
+
+But training does not tell the model everything about the project in front of it. For that, Codex needs **context**. Context is the information available during the task: the files in the repository, the folder structure, previous instructions, build output, test failures, Git history, screenshots, and the specific goal supplied by the human.
+
+This is not the same as retraining. Codex does not normally learn a project by permanently changing the model's internal weights. It reads the project into its working context and uses that temporary knowledge to act on the current task.
+
+The distinction is simple:
+
+```text
+training = what the model has learned in general
+context = what the model can see right now
+agency = what the system is allowed to do
+```
+
+A chatbot may explain a Swift compiler error. Codex can run the compiler, read the actual error, open the relevant file, edit the code, run the compiler again, and revise the fix. That does not make Codex a different species of intelligence. It makes Codex a trained model placed inside a software workshop.
+
+A useful analogy is a software robot:
+
+```text
+AI model = brain
+project files = what it can see
+terminal output and test results = senses
+file editing and command tools = hands
+instructions and permissions = rules of behaviour
+agent loop = observe -> think -> act -> observe again
+Codex = the whole software-working system
+```
+
+This is why Codex has to be good at more than programming syntax. It must understand human intention, inspect a project, edit carefully, use tools, interpret feedback, and respect boundaries. A good coding agent is not merely a fluent code generator. It is a system that can move through a supervised loop:
+
+```text
+read the project
+understand the goal
+find the relevant files
+make a change
+run the build or test
+read the failure
+repair the mistake
+run the check again
+summarise what changed
+ask for permission before consequential action
+```
+
+The model supplies intelligence. Context supplies local knowledge. Tools supply reach. Permissions supply boundaries. Tests supply evidence. Human judgement supplies purpose and final responsibility.
+
+This also explains why two AI products with similar general intelligence can behave differently as coding assistants. The underlying model matters, but so does the surrounding agent system: how well it reads context, how safely it uses tools, how accurately it edits files, how well it responds to test failures, and how naturally it keeps the human in control.
+
+One way to summarise coding-agent performance is:
+
+```text
+coding-agent performance =
+model capability
+x coding-specific training
+x project context
+x tool use
+x verification
+x human supervision
+```
+
+That is the difference between an AI that talks about software and an AI that helps make software.
+
 ![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow-v2.png)
 
 Consider a bug in which an on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis: I knew what was wrong for the user, but not which part of Apple's interface framework controlled the screen.

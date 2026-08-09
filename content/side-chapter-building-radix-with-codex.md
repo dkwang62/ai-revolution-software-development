@@ -172,6 +172,8 @@ Then the next version exposed more needs. The questions appeared in the same ord
 
 Nothing about this was planned at the beginning. The requirement became clearer only because I used the feature. This is why AI-assisted development can feel like developing software with a consultant beside you. The consultant can make changes quickly, but real use tells both of you what should change next.
 
+By this stage, Codex was not functioning like a chatbot giving advice from outside the project. It was acting as a coding agent inside the work. Its trained model supplied general programming knowledge; the project files supplied local context; the terminal, compiler, and tests supplied feedback; file-editing tools gave it hands; and my instructions and approvals supplied boundaries. That combination made the rapid back-and-forth possible.
+
 ## The Web Prototype Becomes a Native App
 
 > **Why it matters:** A prototype establishes that the problem is worth solving; a production app must then meet the harder requirements of real use.
