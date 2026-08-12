@@ -33,6 +33,7 @@ By the end, you should be able to explain an AI initiative to business, technica
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
 - [[09-economics-of-models|Chapter 7: The Economics of Models]]
 - [[16-agents-tools-and-integrated-systems|Chapter 14: Agents, Tools, and Integrated Systems]]
+- [[side-chapter-personal-librarian|Side Chapter: The Personal Librarian]]
 
 **Ideas to understand:**
 
@@ -46,6 +47,8 @@ By the end, you should be able to explain an AI initiative to business, technica
 **Worked answer:** A customer-service chatbot may only need to draft a reply to a complaint. An assistant becomes more useful if it can retrieve the customer's order history, warranty terms, and previous support tickets. It becomes an agent only when it is allowed to prepare a refund, open a replacement order, or update the ticket status. Before doing that, it should check policy limits, customer identity, stock availability, and whether the action requires human approval.
 
 **How to apply it:** Describe one proposed system at three levels: chatbot, assistant with internal knowledge, and agent with one bounded action. The important change is not the tone of the answer. It is the authority the system has been given.
+
+The Personal Librarian case shows why a real project can teach the course terms more effectively than definitions alone. Retrieval, evidence, evaluation, permissions, and observability become concrete when the agent is trying to find, explain, and eventually manage files that actually matter.
 
 ## Module 2: Choose a Platform Without Starting with a Brand
 

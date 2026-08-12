@@ -125,6 +125,8 @@ The model was still generating language, but that language was connected to file
 
 Reasoning becomes more valuable in this loop because the agent must decide what to inspect, which authorised action to try, what the result means, and whether to continue. It also becomes more costly: searches, tool calls, tests, failures, and revisions add inference, waiting time, and verification work. Extra reasoning is worthwhile when it reduces the chance of an expensive mistake; it is wasteful when a simple, well-specified action will do.
 
+A more personal example is the [[side-chapter-personal-librarian|Personal Librarian]], a macOS app built with Codex to index and search files across local and cloud folders. That case is useful because it turns agent terminology into everyday language: perception means examining files, retrieval means finding evidence inside documents, tools mean parsers and search indexes, and human-agent collaboration means asking before anything is moved or deleted.
+
 ## Tools Create Capability; Permissions Limit Authority
 
 > **Why it matters:** An agent is useful because it can act, but safe action requires a clear boundary between what it can do and what it is allowed to do.

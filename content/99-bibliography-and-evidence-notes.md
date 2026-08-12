@@ -146,6 +146,13 @@ Used in “What Is an AI Model?” and “From Text Predictor to Agentic Collabo
 
 Used in “What Is an AI Model?” and “Agents, Tools, and Integrated Systems” to support the claim that AI filmmaking is moving from isolated video demonstrations toward production workflows involving human authorship, model-assisted generation, versioning, continuity, creative judgement, studio partnerships, and business strategy. These sources do not prove that AI can autonomously create a feature film, nor that _Critterz_ will satisfy audiences. They are evidence that the entertainment industry is experimenting with AI-assisted production systems.
 
+## Author case studies: Radix and Personal Librarian
+
+- Author's local Radix development archive and preserved Codex task summaries, inspected during manuscript development.
+- Author's local Personal Librarian project files, including `README.md`, `Docs/Architecture.md`, `Docs/Privacy.md`, Swift source files, tests, and Codex task summaries for “Build Personal Librarian,” inspected 13 August 2026.
+
+Used in the Radix case study, “Agents, Tools, and Integrated Systems,” “The Enterprise Intelligence Layer,” and “The Personal Librarian.” These are first-person case materials rather than independent external evidence. They support the book's lived examples of AI-assisted development, agentic tool use, indexing, retrieval, evidence, permissions, and incremental engineering. They should not be read as proof of general productivity gains across all users or organisations.
+
 ## Capital allocation as evidence of belief
 
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.

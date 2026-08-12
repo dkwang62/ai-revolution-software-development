@@ -132,6 +132,11 @@ export const bookSections: BookSection[] = [
         title: "Chapter 14: Agents, Tools, and Integrated Systems",
         shortTitle: "14. Agents, Tools, and Integrated Systems",
       },
+      {
+        slug: "side-chapter-personal-librarian" as FullSlug,
+        title: "Side Chapter: The Personal Librarian",
+        shortTitle: "Side Chapter: The Personal Librarian",
+      },
     ],
   },
   {

@@ -25,6 +25,8 @@ Enterprise Intelligence Layer
 approved enterprise systems and workflows
 ```
 
+A one-person version appears in the [[side-chapter-personal-librarian|Personal Librarian]] case study. A messy personal filesystem is not an enterprise, but the pattern is the same: scattered knowledge sources, an index, retrieval, evidence, permissions, and human approval before action. The personal example helps make the enterprise argument less abstract.
+
 ## A Painful Project Can Reveal the Need
 
 > **Why it matters:** A concrete modernisation problem can fund reusable enterprise capability more credibly than a vague promise to “become an AI company.”

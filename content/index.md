@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 65**
+**Version 1.0.0 · Build 66**
 
 ![Book cover](figures/cover.png)
 
@@ -56,6 +56,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[14-economics-of-trust|Chapter 12: The Economics of Trust]]
 - [[15-legacy-problem|Chapter 13: The Legacy Problem]]
 - [[16-agents-tools-and-integrated-systems|Chapter 14: Agents, Tools, and Integrated Systems]]
+- [[side-chapter-personal-librarian|Side Chapter: The Personal Librarian]]
 
 ### Interlude
 
