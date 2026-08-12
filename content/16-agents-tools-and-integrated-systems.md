@@ -91,9 +91,13 @@ representations and tools
 finished artefact
 ```
 
+This is the book's broader scope test. The subject is not every possible use of AI. The subject is software-engineered production: work where a desired result depends on software, formal representations, specialised tools, feedback loops, and verification.
+
 Making a film is not merely writing a script. It involves research, storyboards, images, video clips, speech, music, sound effects, editing, continuity, and review. A finished movie is usually digital content rather than executable software, but modern filmmaking is increasingly a form of software-mediated production: human intent is translated through computational representations and specialised tools into a digital artefact.
 
 Building software is likewise not merely writing source code. It involves requirements, interfaces, databases, APIs, compilers, tests, assets, deployment, monitoring, and maintenance.
+
+The same pattern appears in games, robotics, autonomous vehicles, chip design, industrial simulation, and scientific computing. A game combines code, world design, images, animation, physics, sound, story, and interaction. A robot turns perception, planning, software, sensors, and actuators into physical action. A chip design moves through hardware-description languages, simulation, verification, synthesis, and fabrication. These are not side examples because AI happens to be fashionable there. They belong because software engineering is part of the production chain.
 
 The same pattern appears in this book project. My intention became Markdown notes, Obsidian structure, Quartz configuration, HTML, images, Git commits, and a public website. The important shift is not that English has become a replacement for Python or Swift. It is that human intent is moving above the individual representations and tools used to realise it.
 

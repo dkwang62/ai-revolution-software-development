@@ -420,6 +420,10 @@ A schema describes the required shape of data: which fields exist, what kind of 
 
 Semantic reconstruction is the attempt to understand what an old system does well enough to describe its business meaning and build an equivalent modern system. It differs from recovering exact original source code, which may be impossible when names, comments, formatting, and abstractions were lost during compilation.
 
+## Software-Engineered Production
+
+Software-engineered production is work where the final result depends on software, formal representations, tools, feedback loops, and verification. The result may be an application, a website, a game, a film, a chip design, a robot behaviour, or a simulation. The important point is that software engineering is part of the machinery that turns human intent into the result.
+
 ## Software Verification
 
 Software verification is the process of checking whether software behaves correctly. In AI-assisted development, verification includes tests, validation, structured outputs, human review, monitoring, and safeguards around model behaviour.

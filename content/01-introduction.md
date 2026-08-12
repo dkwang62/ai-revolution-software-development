@@ -32,6 +32,12 @@ Software is an unusually revealing place to study AI because the work is digital
 
 Software also sits beneath modern organisations. It contains accumulated decisions about customers, payments, products, risk, logistics, and work. Lowering the cost of changing software can therefore alter more than the software industry. It can change who is able to build, which ideas are attempted, how organisations preserve knowledge, and where economic scarcity moves next.
 
+The book is therefore about software development in a broad but disciplined sense. It is not about every use of AI or every object created with a computer. It is about work where human intent must pass through software, engineering representations, tools, and verification before it becomes a useful result.
+
+That includes applications, websites, enterprise systems, and games. It also includes some fields where the final product is not conventional software: animated films and visual effects, digital publishing, chip design, robotics, autonomous vehicles, scientific simulation, industrial design, and drug or materials discovery. In each case, software engineering is part of the machinery that turns an idea into an outcome.
+
+The test is simple: if producing the result requires humans to translate intent through software, representations, tools, and engineering processes, then AI's movement up that chain belongs in this book. If software engineering is not materially involved, the example may be interesting, but it belongs somewhere else.
+
 An app is the recurring field case because it is where I crossed the boundary this book examines. It is not proof that anyone can safely build any system by talking to AI. It is evidence that a motivated domain expert can participate much more directly in software creation by supplying intent, evaluating behaviour, refining requirements, and supervising an AI engineering collaborator.
 
 The genie is only the book's analogy. The actual system I used most directly was Codex, an AI coding agent, but the argument is not about one vendor. Claude Code, Cursor, GitHub Copilot, and systems still to come belong to the same transition from AI as adviser to AI as supervised actor.
