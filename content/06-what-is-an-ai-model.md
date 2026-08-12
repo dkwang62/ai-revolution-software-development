@@ -242,6 +242,141 @@ This expands the model's inputs, not its authority. Screens can be cropped, blur
 
 _The code may compile and the screen may render, yet the result can still fail for the person using it._
 
+### Video Is Representation Over Time
+
+Video is a useful contrast with text because it makes the representation problem impossible to ignore.
+
+A digital movie is not one object. It is a sequence of images plus sound:
+
+```text
+movie = frames over time + audio over time
+```
+
+A ten-second clip at 30 frames per second contains 300 images. Each image contains many pixels. The audio is another stream of numerical measurements over time. Compared with text, raw video is enormous. A sentence might become a few dozen tokens. A few seconds of high-resolution video can contain millions of pixel values.
+
+This is why a video model does not normally treat every final pixel in every frame as if it were a word token. It needs compression and abstraction:
+
+```text
+pixels over time
+↓
+visual encoder
+↓
+compressed video representation
+↓
+model
+```
+
+For video, there is also the dimension of time. The system must represent not merely:
+
+```text
+There is a person and a ball.
+```
+
+but:
+
+```text
+The person throws the ball.
+The ball moves through the air.
+Another person catches it.
+```
+
+In technical language, video requires **spatiotemporal** representation. _Spatial_ means what exists and where it is. _Temporal_ means how things change through time.
+
+This resembles the machine-code example earlier in the chapter. Raw machine instructions can be lifted into a more useful intermediate representation. Raw pixels over time can likewise be compressed into a latent video representation before the final frames are produced:
+
+```text
+raw machine code → intermediate representation → useful program evidence
+raw video frames → latent video representation → useful visual evidence
+```
+
+The forms differ, but the principle is the same. The model is not fundamentally a word machine. It is learning relationships within and between representations.
+
+### Making a Movie Is Not One Generation
+
+Now imagine a prompt:
+
+```text
+A woman walks along a deserted beach at sunset.
+A red balloon blows past her.
+She notices it, turns around, and starts chasing it.
+```
+
+A video-generation system must turn that language into a sequence of visual states:
+
+```text
+English prompt
+↓
+semantic representation
+↓
+compressed video representation
+↓
+frames
+↓
+video
+```
+
+This is harder than generating one image. A still image of a red Ferrari outside a hotel needs to be internally coherent only once. A video of the Ferrari driving around the hotel must preserve the same car, the same hotel, consistent lighting, changing reflections, plausible wheel movement, physical motion, and continuity from one moment to the next.
+
+Video generation is therefore not simply:
+
+```text
+generate image 1
++ generate image 2
++ generate image 3
+```
+
+If it worked that way, the Ferrari might change model, colour, or shape between frames. The system has to preserve relationships through time.
+
+Longer films are harder still. Generating five seconds of a person walking is one problem. Generating a two-hour film in which the same person keeps the same face, clothes, motivations, relationships, memories, and physical environment is a much larger problem. At that point, the system needs something closer to a model of the movie's world:
+
+```text
+characters
+↓
+world
+↓
+story state
+↓
+scene
+↓
+shots
+↓
+video, dialogue, music, and sound
+```
+
+This is why a convincing ten-minute AI-generated historical video is usually not best imagined as one continuous ten-minute generation. A more practical workflow is closer to filmmaking:
+
+```text
+story
+↓
+script
+↓
+shot list
+↓
+many short generated clips
+↓
+editing
+↓
+voice, music, and sound
+↓
+finished film
+```
+
+Consider a hypothetical video placing a fictional passenger aboard the Hindenburg's final voyage. The creator might use historical photographs, plans, descriptions, and reference images. Instead of asking the model to generate ten uninterrupted minutes, the creator might generate many shorter shots:
+
+```text
+Hindenburg approaching the airfield
+passenger looking through a window
+passengers eating in the dining room
+passenger walking down a corridor
+exterior view over the Atlantic
+```
+
+Each shot is easier than maintaining a perfectly coherent world for ten minutes. Frequent cuts let the system restart the visual problem while the human editor preserves the story.
+
+The economic change is still enormous. Traditionally, recreating such a scene could require actors, costumes, sets, historical consultants, cameras, lighting, visual-effects artists, sound production, and editing. AI can synthesize parts of that chain, allowing a skilled individual to attempt work that previously required a production team.
+
+The lesson for this book is not about movies alone. It is about representation. Text, code, images, audio, video, and machine instructions are different forms. A foundation model is valuable because it can learn relationships within and between those forms.
+
 ## Why Models Differ
 
 > **Why it matters:** A model should be judged by how reliably and economically it completes the intended task, not by one universal ranking.

@@ -75,6 +75,26 @@ The model supplies intelligence. Context supplies local knowledge. Tools supply 
 
 This also explains why two AI products with similar general intelligence can behave differently as coding assistants. The underlying model matters, but so does the surrounding agent system: how well it reads context, how safely it uses tools, how accurately it edits files, how well it responds to test failures, and how naturally it keeps the human in control.
 
+This is also where multimodality and agency meet.
+
+Multimodality expands what AI can represent: text, code, images, audio, video, diagrams, screens, and other evidence. Agency expands what AI can do: use compilers, editors, databases, browsers, APIs, Git, build systems, deployment tools, and other controlled capabilities.
+
+Together, they let AI help construct complex artefacts rather than merely generate one component:
+
+```text
+human intent
+↓
+AI
+↓
+representations and tools
+↓
+finished artefact
+```
+
+Making a film is not merely writing a script. It involves research, storyboards, images, video clips, speech, music, sound effects, editing, continuity, and review. Building software is likewise not merely writing source code. It involves requirements, interfaces, databases, APIs, compilers, tests, assets, deployment, monitoring, and maintenance.
+
+The same pattern appears in this book project. My intention became Markdown notes, Obsidian structure, Quartz configuration, HTML, images, Git commits, and a public website. The important shift is not that English has become a replacement for Python or Swift. It is that human intent is moving above the individual representations and tools used to realise it.
+
 One way to summarise coding-agent performance is:
 
 ```text
