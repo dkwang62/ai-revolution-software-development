@@ -91,7 +91,9 @@ representations and tools
 finished artefact
 ```
 
-Making a film is not merely writing a script. It involves research, storyboards, images, video clips, speech, music, sound effects, editing, continuity, and review. Building software is likewise not merely writing source code. It involves requirements, interfaces, databases, APIs, compilers, tests, assets, deployment, monitoring, and maintenance.
+Making a film is not merely writing a script. It involves research, storyboards, images, video clips, speech, music, sound effects, editing, continuity, and review. A finished movie is usually digital content rather than executable software, but modern filmmaking is increasingly a form of software-mediated production: human intent is translated through computational representations and specialised tools into a digital artefact.
+
+Building software is likewise not merely writing source code. It involves requirements, interfaces, databases, APIs, compilers, tests, assets, deployment, monitoring, and maintenance.
 
 The same pattern appears in this book project. My intention became Markdown notes, Obsidian structure, Quartz configuration, HTML, images, Git commits, and a public website. The important shift is not that English has become a replacement for Python or Swift. It is that human intent is moving above the individual representations and tools used to realise it.
 

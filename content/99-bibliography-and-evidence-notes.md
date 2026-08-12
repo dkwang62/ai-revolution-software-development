@@ -138,6 +138,14 @@ These provider documents use different controls and labels, but support the same
 
 Used in “What Is an AI Model?” and “From Text Predictor to Agentic Collaborator.” CLIP provides a clear research example of learning visual concepts from text–image pairings; the Gemini report documents joint multimodal training; and the InstructGPT paper documents instruction-following post-training from demonstrations and human feedback. The later primary sources show the continuing public direction of frontier development: post-training for coding, tool and computer use, long-horizon execution, factuality, reasoning, safety, multimodal capability, long context, and evaluation. They do not disclose the complete training recipe of any model release. Accordingly, the chapter describes a shared direction rather than claiming that a named version improved for one specific public reason.
 
+## AI filmmaking and multimodal production
+
+- Native Foreign. [“Critterz.”](https://nativeforeign.co/work/critterz) Accessed 12 August 2026.
+- Forbes. [“Why ‘Critterz’ Is The Real Test Of AI Filmmaking.”](https://www.forbes.com/sites/maureenkerr/2026/05/26/why-critterz-is-the-real-test-of-ai-filmmaking/) 26 May 2026; updated 30 May 2026.
+- Runway. [“Runway and Lionsgate Expand Partnership.”](https://runway.com/news/company-news/runway-and-lionsgate-expand-partnership) 11 June 2026.
+
+Used in “What Is an AI Model?” and “Agents, Tools, and Integrated Systems” to support the claim that AI filmmaking is moving from isolated video demonstrations toward production workflows involving human authorship, model-assisted generation, versioning, continuity, creative judgement, studio partnerships, and business strategy. These sources do not prove that AI can autonomously create a feature film, nor that _Critterz_ will satisfy audiences. They are evidence that the entertainment industry is experimenting with AI-assisted production systems.
+
 ## Capital allocation as evidence of belief
 
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.

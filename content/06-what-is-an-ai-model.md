@@ -375,6 +375,10 @@ Each shot is easier than maintaining a perfectly coherent world for ten minutes.
 
 The economic change is still enormous. Traditionally, recreating such a scene could require actors, costumes, sets, historical consultants, cameras, lighting, visual-effects artists, sound production, and editing. AI can synthesize parts of that chain, allowing a skilled individual to attempt work that previously required a production team.
 
+A current industry test makes the point more concrete. Trade coverage in 2026 described _Critterz_ as an AI-assisted animated family feature whose first-look footage was shown to buyers at Cannes, with the team aiming to compress a multi-year animation process into something closer to a year. The important claim is not that AI made an entire film by itself. The useful lesson is that a smaller human team built a production system around AI tools, sketches, characters, scene work, versioning, continuity, and judgement. [Forbes](https://www.forbes.com/sites/maureenkerr/2026/05/26/why-critterz-is-the-real-test-of-ai-filmmaking/) and [Native Foreign](https://nativeforeign.co/work/critterz) describe the project as a test of AI-assisted filmmaking rather than a completed replacement for human direction.
+
+The same movement is visible at the studio level. In June 2026, Runway announced an expanded Lionsgate partnership in which Lionsgate took an equity interest and the companies planned a joint development programme for new AI-assisted content and IP. [Runway's announcement](https://runway.com/news/company-news/runway-and-lionsgate-expand-partnership) matters here because it treats AI filmmaking not as a single prompt-to-video trick, but as a production environment involving tools, rights, creators, workflow, and business strategy.
+
 The lesson for this book is not about movies alone. It is about representation. Text, code, images, audio, video, and machine instructions are different forms. A foundation model is valuable because it can learn relationships within and between those forms.
 
 ## Why Models Differ
