@@ -86,6 +86,42 @@ _The final panel is only a two-dimensional shadow. A real model uses far more di
 
 Words used in similar contexts can end up with related numerical representations. A request for a Chinese-character quiz can activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
 
+Text and code are the easiest starting point because they are already made of symbols. English sentences, Python functions, Swift files, punctuation, and indentation can all be divided into tokens. Those tokens are then converted into vectors the model can process.
+
+Images and audio take a different route. A photograph is not first translated into English before a computer can process it. It begins as pixels: tiny coloured dots arranged in a grid. A sound recording begins as a signal: changing pressure represented as numbers over time. Vision and audio systems convert those signals into numerical representations too, but the pieces are patches, frames, waveforms, or other learned features rather than ordinary word tokens.
+
+```text
+text or code → tokens → vectors → model
+image        → pixels or patches → visual vectors → model
+audio        → sound signal pieces → audio vectors → model
+```
+
+Older AI systems often handled these forms separately. One model might classify images. Another might transcribe speech. Another might translate text. The output of one system could become the input to another, but the systems were specialised.
+
+Modern multimodal models try to bring these forms into a more shared space of representation. The image does not literally become text. The voice does not literally become text. Instead, the system learns ways to relate visual, audio, and symbolic evidence so that a screenshot, a spoken instruction, a diagram, and a code file can contribute to the same task.
+
+Machine code adds one more useful case. It may sound mysterious, but machine code is already digital information. It is made of bytes, usually written in hexadecimal notation by tools that inspect executables. A tiny fragment might look like this:
+
+```text
+B8 2A 00 00 00 C3
+```
+
+To a human reader, this looks meaningless. To the right processor and the right analysis tool, those bytes can be interpreted as low-level instructions. Conceptually, an AI system can be given a representation of that material:
+
+```text
+machine code
+↓
+bytes and instructions
+↓
+tokens or structured representations
+↓
+embeddings
+↓
+model
+```
+
+This does not mean the model understands the original programmer's intention perfectly. It means machine code, like English, Python, pixels, and sound waves, can become numerical evidence. That idea becomes important later, when the book returns to legacy software whose source code, documentation, or original developers may no longer be available.
+
 ### 3. Adjust the Model Through Prediction
 
 The neural network begins as a huge mathematical structure with numerical settings called **parameters**, or weights. You can imagine each parameter as a tiny adjustable dial. Before training, the settings are random or otherwise unhelpful. The model knows no English, Python, Chinese, mathematics, or visual concepts.

@@ -180,6 +180,10 @@ An edge case is an unusual or extreme situation that software must still handle 
 
 Effective context is the useful information actually available to the model for solving a task. It depends not only on context-window size, but also on retrieval quality, summarisation, organisation, permissions, and whether the right information is supplied at the right time.
 
+## Embedding
+
+An embedding is a numerical representation of a piece of information, such as a word, code fragment, image patch, sound segment, or machine instruction. Related pieces of information can have related embeddings, which helps a model connect different forms of evidence.
+
 ## Enterprise Context
 
 Enterprise context is the knowledge an organisation possesses: code, documents, policies, systems, customers, regulations, decisions, meetings, incidents, workflows, and business rules. It is much larger than any one context window.
@@ -195,6 +199,10 @@ An enterprise resource planning system is shared business software that connects
 ## Evaluation and Evaluation Suite
 
 Evaluation measures how well an AI system performs across a collection of examples. An evaluation suite is the organised set of test cases, expected qualities, scoring rules, and sometimes human judgements used for that measurement. Evaluation shows general performance; verification asks whether a particular result or system is dependable for its intended use.
+
+## Executable
+
+An executable is a program file that a computer can run, such as an `.exe` file on Windows. It usually contains machine code and supporting resources rather than the original human-readable source code.
 
 ## Generalisation and Overfitting
 
@@ -399,6 +407,10 @@ A schema describes the required shape of data: which fields exist, what kind of 
 ## Security Terms for AI
 
 **Prompt injection** is a malicious instruction designed to redirect an AI system. **Data leakage** is the unintended exposure of private information. **Excessive permissions** give a person or agent more access than needed. **Least privilege** means giving an agent only the access required for its current task. **Model poisoning** attempts to corrupt training or reference material so that the model behaves improperly. Good security also includes the ability to detect unusual behaviour, respond by stopping or limiting the system, and recover from an incident.
+
+## Semantic Reconstruction
+
+Semantic reconstruction is the attempt to understand what an old system does well enough to describe its business meaning and build an equivalent modern system. It differs from recovering exact original source code, which may be impossible when names, comments, formatting, and abstractions were lost during compilation.
 
 ## Software Verification
 

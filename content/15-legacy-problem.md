@@ -219,6 +219,241 @@ Humans remain accountable.
 
 That is the realistic version of AI in legacy modernisation.
 
+## From Machine Code to Meaning
+
+> **Why it matters:** Some legacy knowledge may survive only as executable behaviour, not as readable source code or documentation.
+
+So far this chapter has mostly discussed source code: COBOL programs, SAP customisations, stored procedures, scripts, and configuration. Source code is the form programmers can read and edit.
+
+But old organisations may not always have complete source code. They may have an executable program, an old library, a compiled component, or a running system whose original development environment has vanished. To understand why AI might help, we need one more representation change.
+
+Source code is not what the machine ultimately runs. A compiler transforms source code into lower-level instructions:
+
+```text
+source code
+↓
+compiler
+↓
+machine code
+↓
+processor executes instructions
+```
+
+Machine code is made of bytes. Tools may show those bytes as hexadecimal numbers, such as:
+
+```text
+B8 2A 00 00 00 C3
+```
+
+On its own, this is not meaningful to most people. With the correct processor architecture and analysis tool, the bytes can be interpreted as instructions: move a value, compare two values, jump to another instruction, read memory, call a function, return a result.
+
+For an AI system, the important point is that machine code is still information. It can be represented as bytes, instructions, control-flow graphs, function boundaries, strings, library calls, or embeddings:
+
+```text
+machine code
+↓
+bytes and instructions
+↓
+tokens or structured representations
+↓
+embeddings
+↓
+model
+```
+
+This suggests a powerful possibility. AI may not need to translate every low-level instruction into a line of Python. It may try to infer the higher-level behaviour represented by many instructions.
+
+For example, hundreds of low-level operations might correspond to something a human would write as:
+
+```python
+total = sum(prices)
+```
+
+The low-level instructions may load values from memory, loop through them, add numbers, update a register, check whether the loop is finished, and store a result. A literal translation would be long and ugly. A useful reconstruction might say: this part of the program totals a collection of prices.
+
+That distinction matters. The objective is not always:
+
+```text
+Recover every original line.
+```
+
+It may be:
+
+```text
+Understand the behaviour well enough to build an equivalent modern system.
+```
+
+This is the difference between literal translation and **semantic reconstruction**.
+
+## Why Exact Source Code May Be Gone Forever
+
+> **Why it matters:** AI can infer missing meaning, but it cannot recover information that compilation has destroyed with certainty.
+
+Compilation throws away information.
+
+A programmer may have written:
+
+```python
+annual_customer_discount = price * 0.9
+```
+
+After compilation, the executable may preserve the multiplication by `0.9`, but not the words `annual`, `customer`, `discount`, or `price`. Comments disappear. Formatting disappears. Helpful function names may disappear. Some abstractions are flattened or rearranged. Compiler optimisations may change the structure of the program while preserving its behaviour.
+
+The machine code may reveal:
+
+```text
+take this value
+multiply it by 0.9
+store the result
+```
+
+It may not reveal why.
+
+The missing meaning could be a customer discount, a salary adjustment, a fuel calculation, a tax rule, a probability estimate, or something else. If surrounding parts of the application contain words such as `Customer`, `Invoice`, `Price`, and `Discount`, the model has evidence. If the user interface says "Apply annual discount," the evidence becomes stronger. If the database contains a `customer_discount_rate` column, stronger again.
+
+But the AI is no longer merely recovering information. It is probabilistically reconstructing information that may have been lost.
+
+That is why legacy reconstruction must remain cautious. A model may make an excellent guess. It may also attach the wrong business meaning to a mathematically similar operation. The organisation needs evidence, review, tests, runtime observation, and domain experts who can confirm whether the recovered interpretation is right.
+
+It helps to separate three objectives:
+
+| Objective | Meaning | Plausibility |
+| --- | --- | --- |
+| A. Determine what the machine instructions do | Analyse the low-level behaviour | Often possible with tools and expertise |
+| B. Generate understandable high-level code implementing that behaviour | Produce modern code that behaves the same way | Increasingly plausible with AI assistance and verification |
+| C. Recover the exact original source code | Recreate names, comments, formatting, and original structure | Often impossible if the information was destroyed |
+
+The economically important goal is usually B, not C. A bank does not necessarily need the exact lost source file from 1997. It needs to understand what the system does well enough to preserve required behaviour in a safer modern form.
+
+## The `app.exe` Thought Experiment
+
+> **Why it matters:** The future of legacy modernisation may be less about reading code line by line and more about reconstructing system behaviour from every available clue.
+
+Imagine that a company possesses an old executable called:
+
+```text
+app.exe
+```
+
+The source code is incomplete. The original developer is gone. The program still runs on an old machine and performs a business function nobody wants to lose.
+
+A future AI-assisted reconstruction system would not simply paste the whole executable into a chatbot. A realistic workflow would combine deterministic analysis tools with AI reasoning:
+
+```text
+app.exe
+↓
+executable analysis
+↓
+machine instructions
+↓
+functions and control flow
+↓
+data structures and external calls
+↓
+inferred program behaviour
+↓
+inferred business logic
+↓
+modern specification
+↓
+newly generated implementation
+```
+
+The system would not rely only on raw instructions. It could gather evidence from many sources:
+
+- machine code
+- embedded strings
+- menus, forms, icons, and images
+- database schemas
+- files read and written by the program
+- API calls
+- operating-system calls
+- network protocols
+- configuration files
+- logs
+- observed runtime behaviour
+- inputs and outputs from real examples
+
+This is much more powerful than instruction-by-instruction decompilation. A traditional decompiler may help produce low-level readable code. Semantic reconstruction asks a larger question: what role does this program appear to play in the business?
+
+For example, an executable may contain strings such as `Invoice Number`, `Customer ID`, `Late Fee`, and `Statement Date`. It may read a table containing invoices, call a printing function, and write a file sent nightly to another system. Even if the source code is gone, these clues help reconstruct meaning.
+
+The reconstructed specification might say:
+
+```text
+This program calculates late fees for unpaid invoices,
+generates monthly statements,
+and exports a reconciliation file for finance.
+```
+
+That specification can then guide a modern implementation. The new system would still need tests, sample data, business-owner review, parallel runs against the old program, and careful rollout. AI can accelerate understanding. It does not remove the need to prove equivalence.
+
+## How Such Models Could Be Trained
+
+> **Why it matters:** Legacy reconstruction is speculative at the frontier, but the training signal is not mysterious.
+
+One reason this idea is technically plausible is that training examples can be generated automatically.
+
+Start with source code:
+
+```text
+def add_tax(price):
+    return price * 1.08
+```
+
+Compile it:
+
+```text
+source code → compiler → machine code
+```
+
+Now the source and the compiled output form a training pair. The same program can be compiled with different compilers, optimisation settings, operating systems, and processor architectures such as x86, ARM, or RISC-V:
+
+```text
+source program
+↓
+many compilers and settings
+↓
+many machine-code versions
+↓
+training pairs for reconstruction
+```
+
+This does not require a human to label every instruction manually. The labels come from the fact that the source and compiled output are related by the compiler. A specialised system could learn many relationships among source code, machine instructions, function boundaries, library calls, control flow, and higher-level behaviour.
+
+That does not mean a company would train an entirely new frontier model from nothing. More likely, a strong existing coding and reasoning model would be specialised with tools, data, and workflows for binary analysis and software reconstruction. Deterministic tools would do the cheap mechanical work first: identify functions, strings, libraries, resources, control flow, and known patterns. AI reasoning would then be concentrated on interpretation, abstraction, explanation, and proposed modern equivalents.
+
+```text
+deterministic analysis tools
+↓
+structured evidence
+↓
+AI interpretation where meaning is uncertain
+↓
+human review and verification
+```
+
+This architecture matters economically. Analysing a large application may be expensive, but the entire executable does not have to be handed to the most expensive model all at once. Cheaper tools can prepare the evidence. Retrieval can select relevant parts. The model can focus on the sections where judgement and reconstruction are valuable.
+
+The comparison is not:
+
+```text
+AI reconstruction cost versus zero
+```
+
+It is:
+
+```text
+AI reconstruction cost
+versus
+months or years of programmers, analysts, consultants,
+testers, and domain experts rediscovering the system by hand
+```
+
+Even tens or hundreds of thousands of dollars of compute and tooling could be attractive if it reduces the cost, duration, or risk of a multimillion-dollar modernisation programme.
+
+This is another version of the book's central economic argument. AI does not have to make legacy reconstruction free. It only has to make the translation from existing knowledge to working modern software cheaper, faster, or safer than the human-intensive alternative.
+
 ## Side Story: Replacing a System That Cannot Stop
 
 The United States air-traffic-control system is a useful test of this chapter's argument because it is a legacy system in which a careless replacement is unthinkable.
