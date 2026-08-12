@@ -261,6 +261,47 @@ embeddings
 model
 ```
 
+The first representation given to the model does not have to be raw bytes. A better architecture may use deterministic tools to lift machine code into a common **intermediate representation**, often shortened to IR. The purpose is to reduce hardware-specific clutter before asking AI to reason about meaning.
+
+Different processors express similar behaviour differently:
+
+```text
+x86-64 instructions
+ARM64 instructions
+RISC-V instructions
+```
+
+A direct model would have to learn that several different instruction patterns can mean roughly the same computation. A reconstruction system can instead use specialised tools first:
+
+```text
+x86-64 machine code ──┐
+ARM64 machine code  ──┼──→ common IR → AI model
+RISC-V machine code ──┘
+```
+
+The IR may describe control flow, arithmetic, memory operations, function calls, and data movement in a more hardware-independent form. That does not solve the entire problem. It may tell the system that a value is multiplied by `0.9`, but not whether the value represents a customer discount, fuel estimate, or salary adjustment.
+
+That suggests three layers:
+
+```text
+Layer 1: Machine
+x86-64, ARM64, RISC-V instructions
+↓
+deterministic lifting
+
+Layer 2: Common IR
+control flow, memory operations, arithmetic, function calls
+↓
+AI reasoning
+
+Layer 3: Semantic representation
+customer, invoice, discount, price, business rule, workflow
+↓
+modern source code
+```
+
+Layer 3 is where AI may add something different from a conventional compiler or decompiler. A compiler moves from meaning toward implementation. AI reconstruction tries to move from implementation back toward probable meaning.
+
 This suggests a powerful possibility. AI may not need to translate every low-level instruction into a line of Python. It may try to infer the higher-level behaviour represented by many instructions.
 
 For example, hundreds of low-level operations might correspond to something a human would write as:

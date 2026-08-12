@@ -116,7 +116,7 @@ Codex is the AI coding agent used as the recurring concrete example in this book
 
 ## Compiler and Interpreter
 
-A compiler translates source code into a form a computer can run, often before the program starts. An interpreter commonly reads and executes instructions while the program runs. Both bridge the gap between a programming language and machine operations.
+A compiler translates source code into a form a computer can run, often before the program starts. It understands both a source language, such as C++ or Swift, and a target platform, such as x86-64 or ARM64. An interpreter commonly reads and executes instructions while the program runs. Both bridge the gap between a programming language and machine operations.
 
 ## Compliance
 
@@ -163,6 +163,10 @@ A database stores organised information so software can find, add, change, and r
 ## Deployment and Production
 
 Deployment is the process of releasing software into an environment where it can be used. Production is the live environment in which real users and real data depend on the software. A feature can work on a developer's computer yet still fail after deployment to production.
+
+## Decompiler
+
+A decompiler is a tool that tries to turn machine code or another compiled form back into more readable code. It can help people understand old software, but it usually cannot recover the exact original source code because compilation may have removed names, comments, formatting, and higher-level structure.
 
 ## Deterministic Software
 
@@ -271,6 +275,10 @@ A hybrid AI architecture combines different methods instead of depending on one 
 ## Inference
 
 Inference is the process of using a trained model to produce an output. When a user asks a question and the model answers, that is inference. Training creates the model; inference uses it.
+
+## Intermediate Representation (IR)
+
+An intermediate representation is a form used inside compiler and analysis tools between source code and final machine code. It describes program behaviour in a way that is less tied to one programming language or one processor. In legacy reconstruction, IR can help AI reason about what code does without learning every hardware instruction pattern directly.
 
 ## Just-in-Time Capability
 

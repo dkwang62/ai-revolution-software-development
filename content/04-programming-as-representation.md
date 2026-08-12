@@ -72,6 +72,41 @@ A compiler or interpreter performs translation. A compiler usually translates a 
 
 This is another form of abstraction. Humans write in a language closer to their thinking; tools translate downward toward the machine.
 
+A compiler is important because it is not merely replacing one word with another. It transforms the program into the simpler instructions a processor can execute. If a programmer writes:
+
+```text
+total = price * quantity
+```
+
+the processor does not understand `total`, `price`, or `quantity` as business ideas. At the lower level, the work becomes something closer to:
+
+```text
+load one value from memory
+load another value
+multiply them
+store the result
+```
+
+Eventually those instructions are represented as binary numbers: the machine language of a particular processor. A compiled program for an Intel or AMD processor may differ from a compiled program for Apple Silicon, even if both began from the same C++ source code. The human-facing procedure can remain the same while the machine-facing representation changes.
+
+Modern compilers often separate this job into layers:
+
+```text
+source language
+↓
+front end
+↓
+intermediate representation
+↓
+back end
+↓
+machine code
+```
+
+The front end understands the programming language, such as C++, Rust, or Swift. The back end understands the target processor, such as x86-64, ARM64, or RISC-V. The intermediate representation sits between them: a more abstract description of the computation that is less tied to the original language or the final hardware.
+
+This matters later because AI-assisted legacy reconstruction is, in a sense, trying to travel in the opposite direction. Normal development moves from meaning to implementation. Reconstruction tries to move from implementation back toward probable meaning.
+
 For decades, becoming a programmer meant learning one or more of these formal symbolic languages. A programmer had to adapt to the computer's grammar. They had to learn how to express loops, conditions, variables, functions, data structures, errors, and interfaces in the precise forms the system would accept.
 
 AI changes the boundary because ordinary language can now participate in the translation.
