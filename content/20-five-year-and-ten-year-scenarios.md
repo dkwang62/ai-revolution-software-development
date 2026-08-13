@@ -98,6 +98,24 @@ Reasoning is becoming adaptive: simple tasks can receive fast, inexpensive treat
 
 Coding agents provide an early commercial signal. They increasingly work across files, builds, tests, screenshots, and deployment rather than stopping at an isolated answer. This does not establish a ten-year forecast. It shows the direction of travel from model responses towards completed, checked workflows.
 
+Recent model releases make that direction more visible. xAI described [Grok 4.6](https://x.ai/news/grok-4-6) as focused on long-running agents, complex multi-step tasks, codebases, interactive work, and turning product ideas into working artifacts; the same announcement says xAI observed more self-testing and verification during longer trajectories. OpenAI's [GPT-5.6](https://openai.com/index/gpt-5-6/) announcement emphasised performance per dollar, tool coordination, multiple agents in its highest-capability mode, and ready-to-use results, while [GPT-5.3-Codex](https://openai.com/index/introducing-gpt-5-3-codex/) was positioned around long-running tasks involving research, tool use, complex execution, and professional work on a computer. Anthropic's model documentation describes Claude Fable 5 as next-generation intelligence for long-running agents and Claude Opus 5 for complex agentic coding and enterprise work.
+
+The point is not that any named model proves the future. Product announcements are marketing documents as well as technical disclosures. The useful signal is convergence. Major laboratories are no longer competing only over who answers questions best. They are increasingly competing over who can complete longer units of work at acceptable cost, speed, and reliability.
+
+That suggests a progression:
+
+```text
+Answer my question.
+↓
+Write this code.
+↓
+Complete this task.
+↓
+Achieve this objective, and return when you need a decision.
+```
+
+This is the practical meaning of the autonomy frontier introduced in [[09-economics-of-models|The Economics of Models]]. A future model matters not simply because it scores higher. It matters when it moves another class of work from uneconomic to economic.
+
 ## Five Years: Intelligence Becomes Ordinary Infrastructure
 
 > **Why it matters:** The most consequential AI may become less visible as it becomes part of routine work.

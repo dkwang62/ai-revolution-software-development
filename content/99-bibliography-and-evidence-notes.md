@@ -138,6 +138,16 @@ These provider documents use different controls and labels, but support the same
 
 Used in “What Is an AI Model?” and “From Text Predictor to Agentic Collaborator.” CLIP provides a clear research example of learning visual concepts from text–image pairings; the Gemini report documents joint multimodal training; and the InstructGPT paper documents instruction-following post-training from demonstrations and human feedback. The later primary sources show the continuing public direction of frontier development: post-training for coding, tool and computer use, long-horizon execution, factuality, reasoning, safety, multimodal capability, long context, and evaluation. They do not disclose the complete training recipe of any model release. Accordingly, the chapter describes a shared direction rather than claiming that a named version improved for one specific public reason.
 
+## Frontier releases and the autonomy frontier
+
+- xAI. [“Introducing Grok 4.6.”](https://x.ai/news/grok-4-6) 12 August 2026.
+- xAI. [“Introducing Grok Bot.”](https://x.ai/news/introducing-grok-bot) 12 August 2026.
+- OpenAI. [“GPT-5.6: Frontier Intelligence That Scales With Your Ambition.”](https://openai.com/index/gpt-5-6/) 9 July 2026; updated 30 July 2026.
+- OpenAI. [“Introducing GPT-5.3-Codex.”](https://openai.com/index/introducing-gpt-5-3-codex/) 5 February 2026.
+- Anthropic. [“Models Overview.”](https://platform.claude.com/docs/en/about-claude/models/overview) Accessed 13 August 2026.
+
+Used in “The Economics of Models” and “Five-Year and Ten-Year Scenarios.” These sources support the claim that major AI providers are publicly emphasising long-running agents, tool use, computer use, coding, professional workflows, multi-agent coordination, efficiency, and verification. They are provider announcements and documentation, not independent proof of productivity or future dominance. The book treats them as evidence of strategic direction, not as neutral measurement.
+
 ## AI filmmaking and multimodal production
 
 - Native Foreign. [“Critterz.”](https://nativeforeign.co/work/critterz) Accessed 12 August 2026.

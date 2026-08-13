@@ -149,6 +149,71 @@ AI cost grows through four main channels: the information read, the answer gener
 
 The price of one request is therefore a poor measure of value. The better measure is the total cost of reaching a completed, checked result. A more expensive attempt can be economical if it avoids retries, human correction, or failure. A cheap attempt can be expensive if the work must be repeated.
 
+## The Capability Frontier and the Autonomy Frontier
+
+> **Why it matters:** A model can become economically more valuable without merely becoming "smarter" in the abstract.
+
+There are now two frontiers in AI progress.
+
+The first is the **capability frontier**:
+
+```text
+How difficult a problem can the model solve?
+```
+
+This is the familiar frontier measured by many benchmarks. Can the model write better code? Can it answer harder questions? Can it reason through more complex material?
+
+The second is the **autonomy frontier**:
+
+```text
+How large a piece of useful work can the system complete before a human must intervene?
+```
+
+For software development, this second frontier may matter even more economically. An assistant that can answer one question is useful. An agent that can inspect a codebase, plan a change, edit files, run tests, interpret failures, revise its work, and return when it needs a decision changes the cost of an entire workflow.
+
+The direction can be described as a movement in the unit of work:
+
+```text
+tokens
+↓
+answers
+↓
+tasks
+↓
+projects
+↓
+objectives
+```
+
+As the unit of work moves upward, the human interface moves upward too:
+
+```text
+code
+↓
+prompt
+↓
+specification
+↓
+intent
+```
+
+This does not mean humans disappear. It means human effort moves toward deciding what objective matters, supplying context, setting constraints, approving risky actions, and judging whether the result is good enough.
+
+The economic value of a future model is therefore not only:
+
+```text
+How intelligent is it?
+```
+
+It is:
+
+```text
+How much dependable work can it complete
+per unit of time, compute cost, and human supervision?
+```
+
+This explains why verification becomes part of model value rather than a separate afterthought. A model that writes code but leaves all checking to people is less economically powerful than a system that writes, tests, detects problems, repairs, and presents evidence. Verification remains necessary because AI is fallible. But as agents improve, some verification work itself becomes something AI can help perform.
+
 ## Model Evolution and Compatibility
 
 > **Why it matters:** A new model version is not a routine software patch; it can improve one behaviour while quietly changing another.
