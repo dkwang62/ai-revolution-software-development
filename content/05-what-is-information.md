@@ -51,7 +51,7 @@ Rules are powerful when the required behaviour is clear. They make accounting, d
 
 Some knowledge is much harder to express this way. How would a programmer write every rule needed to recognise cats in arbitrary photographs, translate jokes, judge whether a sentence is polite, or infer what a user meant by an incomplete request? The number of variations and exceptions becomes unmanageable.
 
-Modern AI learns relationships from examples instead:
+Modern AI models learn relationships from examples instead:
 
 ```text
 A is related to B

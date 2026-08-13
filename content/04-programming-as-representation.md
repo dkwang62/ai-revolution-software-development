@@ -139,9 +139,9 @@ The answer begins with the distinction between procedure and representation.
 
 Swift is one representation of a procedure. Python is another. Pseudocode is another. English can be another, if it is precise enough. A flowchart is another. Machine code is another. The underlying procedure can remain stable while the representation changes.
 
-AI systems are trained on enormous amounts of text, code, documentation, examples, explanations, questions, answers, and structured data. During training, they learn patterns and relationships among these representations. They see natural-language descriptions paired with code. They see code paired with comments. They see error messages paired with fixes. They see documentation paired with examples. They see many ways humans describe the same or similar procedures.
+AI models are trained on enormous amounts of text, code, documentation, examples, explanations, questions, answers, and structured data. During training, they learn patterns and relationships among these representations. They see natural-language descriptions paired with code. They see code paired with comments. They see error messages paired with fixes. They see documentation paired with examples. They see many ways humans describe the same or similar procedures.
 
-The AI is not simply memorising one correct answer. It is learning relationships.
+The model is not simply memorising one correct answer. It is learning relationships.
 
 This connects to Rules vs Relationships. Traditional software stores explicit rules written by humans. AI models store learned mathematical relationships discovered from examples. Traditional software says:
 
@@ -156,13 +156,13 @@ AI models learn something more like:
 A is related to B in this context.
 ```
 
-That difference allows AI to generalise. When asked for a Swift function, it can draw on learned relationships among intent, programming patterns, syntax, data structures, APIs, and examples. It can infer that an attendance rule requires counting records, comparing a threshold, and triggering a notification. It can express that inferred procedure in Swift because Swift is one of the symbolic systems whose patterns it has learned.
+That difference allows the model to generalise. When asked for a Swift function, it can draw on learned relationships among intent, programming patterns, syntax, data structures, APIs, and examples. It can infer that an attendance rule requires counting records, comparing a threshold, and triggering a notification. It can express that inferred procedure in Swift because Swift is one of the symbolic systems whose patterns it has learned.
 
-This does not mean the AI understands software in the way a human engineer does. It means the model has learned enough statistical and structural relationships to produce useful transformations between representations.
+This does not mean the model understands software in the way a human engineer does. It means the model has learned enough statistical and structural relationships to produce useful transformations between representations.
 
 This difference explains both AI's power and weakness. Learned relationships let it handle variation without a hand-written rule for every case. They also let it produce plausible mistakes: a wrong requirement, an unsuitable pattern, a non-existent API, or code that looks right but fails. [[13-precision-and-probabilistic-ai|Precision and Probabilistic AI]] later explains how engineering contains that uncertainty.
 
-AI's ability to write software is therefore not magic. It is movement between representations.
+A model's ability to help write software is therefore not magic. It is movement between representations.
 
 ## Translation Is One Part of Programming
 

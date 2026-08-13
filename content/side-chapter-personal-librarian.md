@@ -83,7 +83,7 @@ The current working milestone can:
 - compute hashes as a foundation for exact duplicate detection; and
 - avoid modifying original files during indexing.
 
-That list may sound technical, but each item answers a plain human need. Search must be fast. Results must show why they matched. The catalogue must survive rebuilding the app. Cloud files should not be silently downloaded. Private content should not leave the Mac without explicit disclosure. Original files should not be changed merely because the system is learning what exists.
+That list may sound technical, but each item answers a plain human need. Search must be fast. Results must show why they matched. The catalogue must survive rebuilding the app. Cloud files should not be silently downloaded. Private content should not leave the Mac without explicit disclosure. Original files should not be changed merely because the system is cataloguing what exists.
 
 At one point, the early catalogue existed as a very large JSON file. The app appeared to have lost the index after rebuilds because loading that file was fragile. Codex found the catalogue, preserved it, and migrated the design to SQLite. The lesson is important: AI did not remove engineering. It made engineering accessible at the moment the problem appeared.
 

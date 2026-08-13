@@ -77,7 +77,7 @@ general software engineering knowledge
 + project-specific context
 ```
 
-AI has broad access to the first layer through training. The second belongs to a particular organisation, product, and history. When an AI makes a poor change, the failure may be lack of model capability. But often it is more precise: the AI did not see the business rule, test, product constraint, migration history, or evidence that made this system different.
+AI models acquire broad patterns from the first layer during training. The second belongs to a particular organisation, product, and history. When an AI-assisted system makes a poor change, the failure may be lack of model capability. But often it is more precise: the agent did not have the business rule, test, product constraint, migration history, or evidence that made this system different in its current context.
 
 ### Field Note: The Highlight That Already Worked
 

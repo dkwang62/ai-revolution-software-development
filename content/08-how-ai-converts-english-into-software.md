@@ -57,7 +57,7 @@ if user_taps_favourite(character):
         save(favourites)
 ```
 
-From there it may become a data model, screen design, database table, test case, and Swift function. AI can help move between these forms because it has learned recurring software patterns. The critical intermediate layer is not a hidden programming language. It is the set of decisions that turns a broad intention into behaviour precise enough to implement.
+From there it may become a data model, screen design, database table, test case, and Swift function. AI can help move between these forms because the trained model has learned recurring software patterns. The critical intermediate layer is not a hidden programming language. It is the set of decisions that turns a broad intention into behaviour precise enough to implement.
 
 If those decisions remain unstated, the model fills the gaps with plausible assumptions. Sometimes they are helpful; sometimes they create the wrong system. AI does not remove the need to think clearly. It exposes unclear thinking faster.
 
@@ -322,7 +322,7 @@ The cost reduction is uneven. Simple prototypes may become dramatically cheaper.
 
 > **Why it matters:** The model's broad training helps most when the task is made specific enough for it to recognise the relevant pattern.
 
-Because AI relies on learned relationships, it is strongest where the problem resembles patterns it has learned and where the user provides enough context.
+Because the model relies on learned relationships, it is strongest where the problem resembles patterns it has learned and where the user provides enough context.
 
 It is weaker when requirements are ambiguous, the domain is highly specialised, the codebase is large and poorly documented, the task depends on hidden business rules, or correctness requires exact reasoning that the model cannot verify alone.
 
