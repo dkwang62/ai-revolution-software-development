@@ -490,7 +490,7 @@ Training is the process by which an AI model learns patterns from data. It requi
 
 ## Transformer
 
-A Transformer is a neural-network architecture introduced in the 2017 paper _Attention Is All You Need_. It uses attention to learn which parts of an input relate to one another and can process many parts in parallel during training. Transformers did not invent generative AI, but they made it practical to build much larger and more capable language models and became a foundation of the current AI revolution.
+A Transformer is a neural-network architecture introduced in the 2017 paper _Attention Is All You Need_. It uses attention to learn which parts of an input relate to one another and can process many parts in parallel during training. Its deeper power is that relationships can build on earlier relationships: the connection between two tokens can be influenced by the context created by other tokens and previous layers. Transformers did not invent generative AI, but they made it practical to build much larger and more capable language models and became a foundation of the current AI revolution.
 
 ## Trust
 

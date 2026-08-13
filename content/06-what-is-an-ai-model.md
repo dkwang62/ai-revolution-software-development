@@ -209,6 +209,12 @@ For years, AI could recognise patterns, classify pictures, translate short passa
 
 A Transformer is not a particular chatbot. It is a design for a neural network. Its central idea is **attention**: a way for the model to weigh which earlier pieces of a sequence matter to the piece it is processing now. In “The student put the book into her bag because she needed it later,” attention helps connect _it_ with _the book_.
 
+The deeper idea is that a Transformer does not merely compare two tokens in isolation. It allows the relationship between two tokens to be influenced by relationships established among other tokens in earlier layers. Consider:
+
+> The bank raised its interest rate because it feared inflation.
+
+When the model processes _it_, attention can connect _it_ with _bank_. But that connection is shaped by the surrounding words: _raised_, _interest rate_, _feared_, and _inflation_. A simple word-matching system might only notice that _bank_ and _it_ both appear in the sentence. A Transformer can build a richer chain of relationships: _interest_ belongs with _rate_; _bank_ can raise interest rates; the entity that raises rates may also fear inflation. Later layers work with these already-contextualised meanings, so the model can build relationships upon relationships.
+
 Earlier recurrent designs mostly handled a sequence step by step. Transformers made it practical to process many relationships in parallel during training and to scale training far further. That did not invent language, translation, or generative AI. It made it practical to learn from vastly more text, code, images, and explanations.
 
 **Generative** means producing a new continuation or transformation, rather than selecting a label from a fixed list. Once a model could predict the next useful piece at enough scale, it could generate a paragraph, a program, a translation, or an image description. The Transformer did not make a model all-knowing. It made modern generative models economically significant.
