@@ -4,6 +4,12 @@ title: "Who Is the Author? Me or AI?"
 
 This book was developed through a collaboration between Desmond Kwang and artificial intelligence systems including ChatGPT, Codex, and other AI tools.
 
+Although this book is publicly readable, its first audience is one person: me.
+
+I did not begin this project because I wanted to write a commercially polished AI book for a market category. I began it because short conversations were no longer enough. Each chat could explain one piece of AI, software, abstraction, models, context, agents, or economics, but the pieces kept floating separately. I needed a structure strong enough to hang new ideas on, revise them, connect them, and return to them as my understanding changed.
+
+In that sense, the book is a personal knowledge architecture before it is a publication. It is a way of building a framework for understanding AI in software development while the subject is still moving. If other readers find it useful, that is welcome. But the primary test is whether it helps me think more clearly about what AI is doing, what remains difficult, and where the abstraction boundary may move next.
+
 Codex deserves special mention because it became more than a drafting assistant in this project. It is an AI coding agent that could operate inside the working environment, inspect files, edit text and code, run commands, report failures, and help turn intention into a verified artefact. The book's genie-in-the-bottle language is an analogy for that experience, not the name of the software or a technical category.
 
 That collaboration raises an honest question:
