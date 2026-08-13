@@ -84,9 +84,13 @@ This phrase can sound mystical. It is not. Think of a normal map: one direction 
 
 _The final panel is only a two-dimensional shadow. A real model uses far more dimensions than a drawing can show._
 
-Words used in similar contexts can end up with related numerical representations. A request for a Chinese-character quiz can activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
+The fruit example makes this less abstract. "Apple" and "orange" tend to land near one another because they appear in similar situations: grocery lists, recipes, school lunches, fruit bowls, nutrition advice, and everyday comparisons. The model is not given a human-written rule saying, "put apples beside oranges." It learns from use.
 
-Text and code are the easiest starting point because they are already made of symbols. English sentences, Python functions, Swift files, punctuation, and indentation can all be divided into tokens. Those tokens are then converted into vectors the model can process.
+There is one timing detail worth being clear about. At the start of training, each token points to a row in an embedding table, and that row contains a vector. Those vectors are not fixed labels. During self-supervised training, the model repeatedly tries to predict missing or next pieces of text, compares its prediction with the actual text, and adjusts its internal numbers. The embedding vectors change along with the rest of the network's weights. Over many examples, words and fragments that help make similar predictions acquire related representations. Later layers then refine those representations according to the surrounding context, which is why the same word can behave differently in different sentences.
+
+A request for a Chinese-character quiz can then activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
+
+That is the text path: symbols become tokens, and tokens become vectors the model can process.
 
 Images and audio take a different route. A photograph is not first translated into English before a computer can process it. It begins as pixels: tiny coloured dots arranged in a grid. A sound recording begins as a signal: changing pressure represented as numbers over time. Vision and audio systems convert those signals into numerical representations too, but the pieces are patches, frames, waveforms, or other learned features rather than ordinary word tokens.
 
