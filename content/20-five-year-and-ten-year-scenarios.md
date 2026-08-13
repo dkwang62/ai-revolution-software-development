@@ -120,6 +120,8 @@ Codex-like systems show what that may look like in software. The future is proba
 
 That suggests the future of Codex, Claude Code, Cursor, Copilot, and similar systems may be less about replacing the text editor and more about replacing the lonely development session. The human will increasingly state an objective, supply constraints, review evidence, approve consequential actions, and supervise parallel lines of work. The agent system will increasingly gather context, edit code, use tools, test results, maintain memory, coordinate specialised skills, and return when judgement is needed.
 
+The same architecture could eventually appear outside software. A future "Codex for filmmaking" would not simply turn a prompt into ten seconds of video. It would coordinate script, characters, storyboards, shots, voices, music, editing, continuity, and revision. A future "Codex for product design" might coordinate sketches, materials, simulations, manufacturing constraints, cost estimates, and safety tests. The common pattern is not code. It is intent passing through a hidden stack of representations, tools, agents, checks, and feedback until a useful artefact emerges.
+
 The economic question is therefore not "Can Codex write code?" It already can. The deeper question is: how much of the expensive surrounding work of software creation can a Codex-like system absorb while remaining controllable, auditable, and trustworthy?
 
 ## Five Years: Intelligence Becomes Ordinary Infrastructure

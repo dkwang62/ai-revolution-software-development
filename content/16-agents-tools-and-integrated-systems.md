@@ -137,6 +137,31 @@ This is the book's broader scope test. The subject is not every possible use of 
 
 Making a film is not merely writing a script. It involves research, storyboards, images, video clips, speech, music, sound effects, editing, continuity, and review. A finished movie is usually digital content rather than executable software, but modern filmmaking is increasingly a form of software-mediated production: human intent is translated through computational representations and specialised tools into a digital artefact.
 
+This points to a natural next question: what would a **Codex for filmmaking** look like?
+
+It would not merely be a better video generator. A video generator can create a beautiful shot. A filmmaking agent would have to manage the whole production: script breakdown, character design, storyboards, shot lists, camera movement, lighting, dialogue, voices, sound effects, music, editing, visual effects, continuity, rendering, feedback, and revision.
+
+The user should not need to decide which image model creates the character reference, which video model generates the shot, which tool synchronises dialogue, which system preserves clothing continuity, or which agent repairs a bad edit. The user should be able to say something closer to:
+
+> Make a ten-minute historically accurate film about the Hindenburg disaster, seen mainly through the eyes of one passenger. Keep the same characters, clothing, emotional tone, and physical layout throughout. Make it cinematic but not sensationalised.
+
+The hidden system would then decide how many models, agents, tools, renders, checks, and correction passes are needed:
+
+```text
+human intent
+↓
+hidden production stack
+script + assets + video + audio + editing + continuity checks
+↓
+finished film
+```
+
+This is the filmmaking equivalent of the Codex pattern in software. A code generator is not the same as Codex. Likewise, a video generator is not yet an AI filmmaker. The breakthrough comes when the system can remember the whole artefact, preserve decisions across time, detect continuity failures, regenerate only what needs fixing, and keep iterating until the result satisfies the objective.
+
+The bottleneck is therefore not only image quality. It is coherence. A movie-length system needs persistent world memory, precise control, long-horizon planning, reliable multimodal agents, efficient editing, and some way to verify that the result still matches the story. Software has compilers and tests. Films need continuity checks, narrative checks, visual checks, audio checks, rights checks, and human taste.
+
+That is why this example strengthens the book's larger argument. AI does not merely automate a craft by generating isolated pieces. It moves the human upward from manipulating production machinery to specifying the intended result, while the system absorbs more of the machinery underneath.
+
 Building software is likewise not merely writing source code. It involves requirements, interfaces, databases, APIs, compilers, tests, assets, deployment, monitoring, and maintenance.
 
 The same pattern appears in games, robotics, autonomous vehicles, chip design, industrial simulation, and scientific computing. A game combines code, world design, images, animation, physics, sound, story, and interaction. A robot turns perception, planning, software, sensors, and actuators into physical action. A chip design moves through hardware-description languages, simulation, verification, synthesis, and fabrication. These are not side examples because AI happens to be fashionable there. They belong because software engineering is part of the production chain.
