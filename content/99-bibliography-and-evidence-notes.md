@@ -163,6 +163,15 @@ Used in “What Is an AI Model?” and “Agents, Tools, and Integrated Systems�
 
 Used in the Radix case study, “Agents, Tools, and Integrated Systems,” “The Enterprise Intelligence Layer,” and “The Personal Librarian.” These are first-person case materials rather than independent external evidence. They support the book's lived examples of AI-assisted development, agentic tool use, indexing, retrieval, evidence, permissions, and incremental engineering. They should not be read as proof of general productivity gains across all users or organisations.
 
+## Codex, software-engineering practice, and architectural coherence
+
+- OpenAI. [“Introducing Codex.”](https://openai.com/index/introducing-codex/) 16 May 2025; updated 3 June 2025.
+- OpenAI. [“Introducing Upgrades to Codex.”](https://openai.com/index/introducing-upgrades-to-codex/) 15 September 2025.
+- OpenAI. [“Harness Engineering: Leveraging Codex in an Agent-First World.”](https://openai.com/index/harness-engineering/) 2026.
+- OpenAI Developers. [“Modernizing Your Codebase With Codex.”](https://developers.openai.com/cookbook/examples/codex/code_modernization) 19 November 2025.
+
+Used in “Agents, Tools, and Integrated Systems,” “What Becomes Scarce When Code Becomes Cheap?” and the legacy-modernisation discussion. These official sources support three limited claims: Codex-style systems are trained and engineered for real software-engineering tasks, they benefit from tests, linters, documentation, repository instructions, and tool use, and fast agentic development can create architectural drift unless coherence is encoded and maintained continuously. They do not prove that AI-generated code is automatically well designed or that human architectural judgement is obsolete.
+
 ## Capital allocation as evidence of belief
 
 - Microsoft Corporation. [_2025 Annual Report_.](https://www.microsoft.com/investor/reports/ar25/index.html) Fiscal year ended 30 June 2025.

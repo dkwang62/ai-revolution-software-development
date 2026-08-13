@@ -50,6 +50,47 @@ A feature can work and still make the system worse. Software needs an overall st
 
 When implementation was expensive, the effort of producing code limited the rate of change. When AI generates changes rapidly, a weak architecture accumulates disorder just as rapidly. Someone—or some carefully supervised system—must decide where each change belongs, how it interacts with existing systems, and whether it should survive the next revision.
 
+Radix exposed this problem in miniature. Each requested feature could be locally sensible: add image extraction, add overlays, improve search, add backup, refine study tools, connect AI prompts. But a sequence of locally reasonable changes can still produce global sprawl. The agent often optimises for the task I asked for: make this feature work without breaking existing behaviour. It does not automatically reconsider the whole architecture every time, and usually should not. Large refactors introduce risk. Preserving the existing structure is often the right local choice, even while many such choices slowly create technical debt.
+
+This is not only a hobby-project problem. OpenAI described a similar issue in an agent-generated codebase: Codex can reproduce patterns already present in a repository, including uneven or suboptimal ones, creating architectural drift over time. Their response was not to assume the model would magically know the perfect architecture. They encoded “golden principles” into the repository, enforced rules with tooling, and used recurring Codex tasks to scan for deviations and open targeted refactoring pull requests. OpenAI compared this to garbage collection: pay down small pieces of technical debt continuously instead of waiting for a painful cleanup. [OpenAI, _Harness engineering: leveraging Codex in an agent-first world_](https://openai.com/index/harness-engineering/)
+
+This leads to a broader form of the scarcity shift:
+
+```text
+When code becomes cheap,
+maintaining coherence becomes expensive.
+```
+
+The mature loop is not:
+
+```text
+build
+↓
+build
+↓
+build
+↓
+emergency refactor
+```
+
+It is:
+
+```text
+build
+↓
+test
+↓
+review architecture
+↓
+refactor where there is a reason
+↓
+test again
+↓
+build more
+```
+
+In the long run, some of that review and refactoring will also be performed by agents. But the principle remains: cheap generation must be paired with continuous coherence work.
+
 ## Proving That It Works
 
 Plausible output is not dependable behaviour.
