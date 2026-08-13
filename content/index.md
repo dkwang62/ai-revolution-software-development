@@ -8,13 +8,15 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 75**
+**Version 1.0.0 · Build 76**
 
 ![Book cover](figures/cover.png)
 
 This is the public reading edition of a book about why artificial intelligence is transforming software development. The argument is not that AI is magic, or that programmers disappear. The argument is that AI changes the economics of turning human intent into working software.
 
 The genie is the analogy. Codex is the AI coding agent I used. The book is about what that experience reveals.
+
+This public edition is the working book. I am not maintaining a separate draft version; useful changes go directly into the published reading edition.
 
 [[00-author-and-ai-note|Start reading]]
 
