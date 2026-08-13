@@ -116,6 +116,12 @@ Achieve this objective, and return when you need a decision.
 
 This is the practical meaning of the autonomy frontier introduced in [[09-economics-of-models|The Economics of Models]]. A future model matters not simply because it scores higher. It matters when it moves another class of work from uneconomic to economic.
 
+Codex-like systems show what that may look like in software. The future is probably not one omniscient assistant that replaces every developer in a single jump. A more plausible direction is a software workbench made of models, agents, tools, project memory, browsers, terminals, tests, permissions, and audit trails. OpenAI's Codex app already points in this direction by presenting Codex as a way to manage multiple agents, run work in parallel, review diffs, use skills, and delegate repetitive work. Later Codex updates extend the same pattern beyond code into computer use, in-app browsing, image generation, memory, plugins, and repeatable work. [OpenAI, _Introducing the Codex App_](https://openai.com/index/introducing-the-codex-app/) [OpenAI, _Codex for Almost Everything_](https://openai.com/index/codex-for-almost-everything/)
+
+That suggests the future of Codex, Claude Code, Cursor, Copilot, and similar systems may be less about replacing the text editor and more about replacing the lonely development session. The human will increasingly state an objective, supply constraints, review evidence, approve consequential actions, and supervise parallel lines of work. The agent system will increasingly gather context, edit code, use tools, test results, maintain memory, coordinate specialised skills, and return when judgement is needed.
+
+The economic question is therefore not "Can Codex write code?" It already can. The deeper question is: how much of the expensive surrounding work of software creation can a Codex-like system absorb while remaining controllable, auditable, and trustworthy?
+
 ## Five Years: Intelligence Becomes Ordinary Infrastructure
 
 > **Why it matters:** The most consequential AI may become less visible as it becomes part of routine work.

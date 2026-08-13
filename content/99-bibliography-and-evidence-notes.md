@@ -165,12 +165,19 @@ Used in the Radix case study, “Agents, Tools, and Integrated Systems,” “Th
 
 ## Codex, software-engineering practice, and architectural coherence
 
+- Chen, Mark, et al. [“Evaluating Large Language Models Trained on Code.”](https://arxiv.org/abs/2107.03374) arXiv preprint, 2021.
 - OpenAI. [“Introducing Codex.”](https://openai.com/index/introducing-codex/) 16 May 2025; updated 3 June 2025.
 - OpenAI. [“Introducing Upgrades to Codex.”](https://openai.com/index/introducing-upgrades-to-codex/) 15 September 2025.
+- OpenAI. [“Codex Is Now Generally Available.”](https://openai.com/index/codex-now-generally-available/) 6 October 2025.
+- OpenAI. [“Building More With GPT-5.1-Codex-Max.”](https://openai.com/index/gpt-5-1-codex-max/) 19 November 2025.
+- OpenAI. [“Introducing GPT-5.2-Codex.”](https://openai.com/index/introducing-gpt-5-2-codex/) 15 December 2025.
+- OpenAI. [“Introducing the Codex App.”](https://openai.com/index/introducing-the-codex-app/) 5 February 2026; updated 4 March 2026.
+- OpenAI. [“Unrolling the Codex Agent Loop.”](https://openai.com/index/unrolling-the-codex-agent-loop/) 2026.
+- OpenAI. [“Codex for Almost Everything.”](https://openai.com/index/codex-for-almost-everything/) 2026.
 - OpenAI. [“Harness Engineering: Leveraging Codex in an Agent-First World.”](https://openai.com/index/harness-engineering/) 2026.
 - OpenAI Developers. [“Modernizing Your Codebase With Codex.”](https://developers.openai.com/cookbook/examples/codex/code_modernization) 19 November 2025.
 
-Used in “Agents, Tools, and Integrated Systems,” “What Becomes Scarce When Code Becomes Cheap?” and the legacy-modernisation discussion. These official sources support three limited claims: Codex-style systems are trained and engineered for real software-engineering tasks, they benefit from tests, linters, documentation, repository instructions, and tool use, and fast agentic development can create architectural drift unless coherence is encoded and maintained continuously. They do not prove that AI-generated code is automatically well designed or that human architectural judgement is obsolete.
+Used in “Agents, Tools, and Integrated Systems,” “Five-Year and Ten-Year Scenarios,” “What Becomes Scarce When Code Becomes Cheap?” and the legacy-modernisation discussion. The 2021 Codex paper supports the historical distinction between Codex as a code-focused model and later Codex as an agentic product family. The official OpenAI sources support limited claims about Codex-style systems: they are trained and engineered for real software-engineering tasks; they benefit from tests, linters, documentation, repository instructions, and tool use; they increasingly emphasise long-running work, code review, refactors, migrations, context management, multiple agents, computer use, memory, plugins, and supervised workflows. These sources are product and research materials from OpenAI, not neutral proof that Codex will dominate the category. They support analysis of product direction and architecture, not a guarantee that AI-generated code is automatically well designed or that human architectural judgement is obsolete.
 
 ## Capital allocation as evidence of belief
 

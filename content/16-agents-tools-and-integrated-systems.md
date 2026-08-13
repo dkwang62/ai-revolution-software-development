@@ -60,6 +60,44 @@ agent loop = observe -> think -> act -> observe again
 Codex = the whole software-working system
 ```
 
+## Why the History of Codex Matters
+
+> **Why it matters:** The word _Codex_ marks the shift from AI as a code-completion model to AI as a supervised software-working system.
+
+Codex has a useful history because the same name has meant different things at different stages of AI software development.
+
+In 2021, Codex referred mainly to a model. OpenAI's original Codex research described a GPT model further trained on public code from GitHub. The breakthrough was simple to state and astonishing to experience: a person could describe a small programming task in English, and the model could generate code. The original paper reported that Codex solved 28.8% of HumanEval programming problems, while the GPT-3 model tested solved 0%. It also noted that a production version of Codex powered GitHub Copilot. [Chen et al., _Evaluating Large Language Models Trained on Code_](https://arxiv.org/abs/2107.03374)
+
+That first stage was essentially:
+
+```text
+English instruction
+↓
+code-generation model
+↓
+source code
+```
+
+GitHub Copilot then placed that capability inside the programmer's normal workflow. The programmer still wrote code, managed the files, ran the application, interpreted errors, and decided what to accept. The AI suggested. The human drove.
+
+ChatGPT moved the interface upward again. Instead of receiving only autocomplete suggestions, people could discuss code: explain this error, rewrite this function, compare two designs, add tests, or translate this Python idea into Swift. But a chat assistant still did not usually own the development environment. The human carried information back and forth between the conversation, the editor, the terminal, and the application.
+
+Modern Codex represents a different stage. OpenAI's 2025 Codex release described a cloud-based software-engineering agent that could work on repository tasks in sandboxed environments: writing features, answering questions about a codebase, fixing bugs, running tests, and proposing pull requests. [OpenAI, _Introducing Codex_](https://openai.com/index/introducing-codex/) Later OpenAI writing describes Codex as a suite of software-agent offerings, including the CLI, cloud agent, and editor extension, built around an agent loop that passes prompts to a model, executes tool calls, observes results, and continues. [OpenAI, _Unrolling the Codex Agent Loop_](https://openai.com/index/unrolling-the-codex-agent-loop/)
+
+That is a profound change:
+
+```text
+2021: Complete my code.
+2023: Explain and revise my code.
+2025: Work on my repository.
+2026: Help me supervise multiple agents and tools.
+Future: Build, verify, and maintain software from intent.
+```
+
+This history also prevents a common misunderstanding. Codex is not "the model learning my project" every time it works. The model was trained before the task. The agent system supplies context, tools, permissions, and feedback during the task. OpenAI's later Codex releases make that direction explicit: GPT-5-Codex was described as optimised for real-world software engineering, code review, long tasks, refactors, and debugging, while the Codex app was described as a command centre for agents that helps people supervise multiple long-running agents. [OpenAI, _Introducing Upgrades to Codex_](https://openai.com/index/introducing-upgrades-to-codex/) [OpenAI, _Introducing the Codex App_](https://openai.com/index/introducing-the-codex-app/)
+
+For this book, the lesson is larger than one product. Codex is the recurring concrete example because I used it to build software, repair mistakes, organise this manuscript, and publish the public website. But the important trajectory is broader: AI programming is moving from answer generation to supervised software work.
+
 This is why Codex has to be good at more than programming syntax. It must understand human intention, inspect a project, edit carefully, use tools, interpret feedback, and respect boundaries. A good coding agent is not merely a fluent code generator. It is a system that can move through a supervised loop:
 
 ```text
