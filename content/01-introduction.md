@@ -70,4 +70,20 @@ Not because every reader must become an AI engineer. The point is to understand 
 
 That is the real reason this book looks beneath the interface. It is not teaching readers how to wire together today's agentic-AI plumbing. Much of that plumbing may disappear. It is teaching readers how to think about the movement of the abstraction boundary itself.
 
+## The Tree of the Book
+
+The structure matters because this is not meant to be a pile of AI observations. It is meant to be a framework.
+
+The first branch is **software economics**. Before we can understand why AI matters, we need to understand why software has been expensive: human expertise, requirements, debugging, testing, integration, maintenance, and the accumulated knowledge embedded in long-lived systems.
+
+The second branch is **abstraction**. Computing has repeatedly advanced by hiding complexity: machine code behind assembly, assembly behind high-level languages, repeated patterns behind libraries and frameworks, infrastructure behind cloud services. AI belongs in that history because it hides more of the translation between human intent and machine-executable behaviour.
+
+The third branch is **information and models**. AI can write code only because language, code, images, diagrams, and examples can all be represented as information. Models learn relationships among those representations. This is where tokens, neural networks, training, inference, context, multimodality, and reasoning belong.
+
+The fourth branch is **engineering with AI**. Once AI can generate useful outputs, the practical question becomes how to make those outputs dependable: requirements, specifications, structured output, validation, testing, tool use, permissions, audit trails, human review, and trust.
+
+The fifth branch is **the future**. If implementation becomes cheaper, scarcity moves. Domain knowledge, architecture, verification, enterprise context, organisational memory, and judgement become more important. Codex-like agents, enterprise intelligence layers, and multimodal production systems are not separate topics; they are examples of the same abstraction boundary moving upward.
+
+That is the tree. Individual stories—Radix, Personal Librarian, legacy systems, AI filmmaking, Macrohard, frontier models, or enterprise AI—matter because they attach to one of those branches. If an example does not help clarify the tree, it does not belong in the book.
+
 We begin where the practical mystery begins: with the historical cost of software. Until we understand why turning knowledge into reliable systems was expensive, we cannot understand what it means for AI to make part of that translation cheaper.

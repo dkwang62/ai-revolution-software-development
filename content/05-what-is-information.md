@@ -36,6 +36,40 @@ This distinction explains why translation requires more than substitution. A tra
 
 Modern AI operates among these representations. It can summarise text, translate languages, describe images, explain errors, and generate code because it has learned patterns connecting one form of information to another.
 
+## Information Can Change Form
+
+> **Why it matters:** AI feels mysterious because it moves information across forms that humans usually treat as separate.
+
+A doctor reads a scan and writes a report. A lawyer reads a contract and summarises the risk. A programmer reads a request and writes code. A teacher looks at test results and changes a lesson. A designer hears an idea and sketches a screen. A musician reads notation and produces sound.
+
+In each case, information changes representation.
+
+The important question is not whether the surface form changed. It is what survived the change. Did the doctor's report preserve what mattered in the scan? Did the legal summary preserve the obligation in the contract? Did the programmer's code preserve the behaviour the user needed?
+
+Software development is full of these transformations:
+
+```text
+conversation
+↓
+requirements
+↓
+architecture
+↓
+source code
+↓
+tests
+↓
+running behaviour
+```
+
+Each step can lose information. A user may describe the problem poorly. A requirement may omit an exception. Code may implement the normal case but not the dangerous edge case. A test may verify the wrong behaviour. This is why AI-generated software can be both impressive and wrong: the model may successfully transform the representation while preserving the wrong relationship.
+
+The central insight is therefore simple:
+
+> Information is deeper than any particular human language, programming language, image, sound, or symbol system.
+
+Once that is understood, AI-generated software becomes less magical. Software is information. Requirements are information. Code is information. Error messages are information. Screenshots are information. AI can participate in software creation because software belongs to the broader world of representable structure.
+
 ## Rules and Learned Relationships
 
 > **Why it matters:** Explicit rules provide predictability; learned relationships handle variation that would be impractical to describe rule by rule.
@@ -75,7 +109,11 @@ One rough intuition is a map organised by relationship rather than alphabeticall
 
 The phrase “AI thinks in mathematics” is therefore too strong. More accurately, an AI model represents learned patterns numerically. Those patterns can connect English, Chinese, code, images, and sound without making the forms identical or giving the model human understanding.
 
-The next chapter explains how training creates this numerical structure and how the finished model uses it.
+Another way to imagine this is that meaning becomes partly a matter of location. Not physical location, but position inside a learned space of relationships. _Dog_, _cat_, _wolf_, and _animal_ are related. _Swift_, _Python_, _function_, and _compiler_ are related. _Refund_, _receipt_, _return window_, and _customer order_ are related. A model does not store these relationships in neat labelled drawers. It distributes them across many numerical settings.
+
+This is why the same model can appear to move between subjects. It is not opening a separate English engine, Chinese engine, Swift engine, and image engine. It is using learned relationships among many representations. The mechanism is not human understanding, but it is rich enough to transform information in useful ways.
+
+The final connection to software is now easier to see.
 
 ## Why This Matters for Software
 

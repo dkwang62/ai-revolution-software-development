@@ -135,3 +135,5 @@ The progression looks like this:
 > | Institutional trust | High-value enterprise adoption |
 
 This is why the future of AI in software development will not be determined by capability alone. It will be determined by the relationship between capability and trust. The more an AI system can be verified, governed, secured, audited, and explained, the more valuable work it can perform.
+
+The next chapter applies that idea to one of the hardest places in enterprise software: legacy systems. These systems are valuable precisely because they already work, but dangerous precisely because no one fully understands them. AI may be able to explain and modernise them, but only if trust, evidence, staged migration, and human accountability surround the process.
