@@ -86,7 +86,23 @@ _The final panel is only a two-dimensional shadow. A real model uses far more di
 
 The fruit example makes this less abstract. "Apple" and "orange" tend to land near one another because they appear in similar situations: grocery lists, recipes, school lunches, fruit bowls, nutrition advice, and everyday comparisons. The model is not given a human-written rule saying, "put apples beside oranges." It learns from use.
 
-There is one timing detail worth being clear about. At the start of training, each token points to a row in an embedding table, and that row contains a vector. Those vectors are not fixed labels. During self-supervised training, the model repeatedly tries to predict missing or next pieces of text, compares its prediction with the actual text, and adjusts its internal numbers. The embedding vectors change along with the rest of the network's weights. Over many examples, words and fragments that help make similar predictions acquire related representations. Later layers then refine those representations according to the surrounding context, which is why the same word can behave differently in different sentences.
+The spreadsheet analogy makes this more concrete.
+
+Imagine an embedding table as a very large spreadsheet. Each row has a fixed address for one token. One row may represent the token for "apple". Another row may represent the token for "orange". The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent each token, then the spreadsheet has 4,096 columns. The row address stays fixed. "Apple" does not physically move from row 1,234 to row 5,000 during training.
+
+What changes are the numbers inside the cells.
+
+Before training, those cell values are random or otherwise unhelpful. The spreadsheet has a shape, but not yet useful meaning. During self-supervised training, the model repeatedly tries to predict missing or next pieces of text, compares its prediction with the actual text, and adjusts many numbers slightly. That includes the numbers in the embedding table, along with many other weights in the network. The grid's size stays the same. The row addresses stay the same. But the cell values are rewritten again and again.
+
+After enough examples, the row for "apple" and the row for "orange" develop similar patterns of numbers because they help the model make similar predictions in similar contexts. Their row numbers do not need to be next to each other. They are "near" in a mathematical sense because the patterns across their columns point in related directions.
+
+Post-training uses the same basic idea at a different scale. Once pre-training has produced a broadly capable model, later training can adjust the numbers further so the model follows instructions better, refuses some unsafe requests, formats answers more usefully, or behaves more like an assistant. The spreadsheet's structure still does not change. The values inside it are refined.
+
+Context is different. When you type a prompt, the model does not permanently rewrite its core spreadsheet. Your words are placed into a temporary working area: more like a live worksheet opened for this conversation. Each token in the current prompt is converted into a vector with the width the model expects, so the temporary worksheet has compatible columns. Its number of rows depends on the length of the current context: a short prompt uses few rows; a long conversation, document, or codebase excerpt uses many more.
+
+The Transformer then performs calculations across this temporary worksheet. Attention lets the model compare one row of the current context with other rows, so a later word can be interpreted in light of an earlier sentence. The permanent trained weights shape these calculations, but the ordinary conversation does not alter those weights. The model's answer is generated into the same temporary context, token by token. When the session is gone, that temporary working area is gone too, unless a separate product feature saves notes, history, or memory outside the model and supplies them again later as fresh context.
+
+The analogy has limits. A real model is not literally one spreadsheet. It contains many matrices, layers, attention operations, nonlinear transformations, and other learned parameters. But the spreadsheet image captures the most important beginner's distinction: training changes the durable numbers inside the model, while prompting supplies temporary rows for the current task.
 
 A request for a Chinese-character quiz can then activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
 
