@@ -46,4 +46,28 @@ This book introduces technical language because readers will encounter it in cou
 
 This is also not a manual of prompt tricks. Products and interfaces will change too quickly. The durable questions concern abstraction, representation, models, context, requirements, verification, integration, and economics.
 
+## Why Look Beneath the Interface?
+
+If AI succeeds as an abstraction, most users should not need to understand its internal machinery. When I ask Codex to improve Radix or help publish this book, I do not particularly want to manage every model call, tool call, agent thread, context summary, test run, or internal planning step. I want to express the objective clearly and judge whether the result serves the purpose.
+
+That is how successful abstraction usually feels. A Python programmer does not think about CPU registers. A smartphone user does not think about radio protocols. A driver does not manually control fuel injection. The best technology often becomes invisible.
+
+The same may happen with agentic AI. The public conversation is full of terms such as agents, orchestration, retrieval, tool use, memory, and context windows. Some of those terms matter greatly to engineers building AI systems. But for most users, the destination is simpler:
+
+```text
+human intent
+↓
+AI system
+↓
+useful outcome
+```
+
+The user's expertise should remain in the problem: what should happen, why it matters, what constraints apply, what must never be allowed, and how success should be recognised. The AI system should increasingly absorb the implementation layer.
+
+So why read a book about models, tokens, agents, context, verification, and software engineering?
+
+Not because every reader must become an AI engineer. The point is to understand the direction of travel. If we understand what the machinery can already hide, what it still cannot hide, and which limitations are economic rather than fundamental, we can make better judgements about the future. We can ask whether today's weaknesses are permanent barriers or temporary engineering problems. We can see why intent, requirements, domain knowledge, verification, and judgement become more valuable as implementation becomes cheaper.
+
+That is the real reason this book looks beneath the interface. It is not teaching readers how to wire together today's agentic-AI plumbing. Much of that plumbing may disappear. It is teaching readers how to think about the movement of the abstraction boundary itself.
+
 We begin where the practical mystery begins: with the historical cost of software. Until we understand why turning knowledge into reliable systems was expensive, we cannot understand what it means for AI to make part of that translation cheaper.
