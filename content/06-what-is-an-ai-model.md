@@ -86,23 +86,7 @@ _The final panel is only a two-dimensional shadow. A real model uses far more di
 
 The fruit example makes this less abstract. "Apple" and "orange" tend to land near one another because they appear in similar situations: grocery lists, recipes, school lunches, fruit bowls, nutrition advice, and everyday comparisons. The model is not given a human-written rule saying, "put apples beside oranges." It learns from use.
 
-The spreadsheet analogy makes this more concrete.
-
-Imagine an embedding table as a very large spreadsheet. Each row has a fixed address for one token. One row may represent the token for "apple". Another row may represent the token for "orange". The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent each token, then the spreadsheet has 4,096 columns. The row address stays fixed. "Apple" does not physically move from row 1,234 to row 5,000 during training.
-
-What changes are the numbers inside the cells.
-
-Before training, those cell values are random or otherwise unhelpful. The spreadsheet has a shape, but not yet useful meaning. During self-supervised training, the model repeatedly tries to predict missing or next pieces of text, compares its prediction with the actual text, and adjusts many numbers slightly. That includes the numbers in the embedding table, along with many other weights in the network. The grid's size stays the same. The row addresses stay the same. But the cell values are rewritten again and again.
-
-After enough examples, the row for "apple" and the row for "orange" develop similar patterns of numbers because they help the model make similar predictions in similar contexts. Their row numbers do not need to be next to each other. They are "near" in a mathematical sense because the patterns across their columns point in related directions.
-
-Post-training uses the same basic idea at a different scale. Once pre-training has produced a broadly capable model, later training can adjust the numbers further so the model follows instructions better, refuses some unsafe requests, formats answers more usefully, or behaves more like an assistant. The spreadsheet's structure still does not change. The values inside it are refined.
-
-Context is different. When you type a prompt, the model does not permanently rewrite its core spreadsheet. Your words are placed into a temporary working area: more like a live worksheet opened for this conversation. Each token in the current prompt is converted into a vector with the width the model expects, so the temporary worksheet has compatible columns. Its number of rows depends on the length of the current context: a short prompt uses few rows; a long conversation, document, or codebase excerpt uses many more.
-
-The Transformer then performs calculations across this temporary worksheet. Attention lets the model compare one row of the current context with other rows, so a later word can be interpreted in light of an earlier sentence. The permanent trained weights shape these calculations, but the ordinary conversation does not alter those weights. The model's answer is generated into the same temporary context, token by token. When the session is gone, that temporary working area is gone too, unless a separate product feature saves notes, history, or memory outside the model and supplies them again later as fresh context.
-
-The analogy has limits. A real model is not literally one spreadsheet. It contains many matrices, layers, attention operations, nonlinear transformations, and other learned parameters. But the spreadsheet image captures the most important beginner's distinction: training changes the durable numbers inside the model, while prompting supplies temporary rows for the current task.
+At the start of training, each token points to a row in an embedding table, and that row contains a vector. The token's row address stays fixed, but the numbers inside the row can change during training. Apples and oranges do not become neighbours because someone drags rows around a table. They become near in a mathematical sense because their vectors develop related patterns of numbers.
 
 A request for a Chinese-character quiz can then activate patterns involving Chinese characters, questions, plausible wrong answers, interface design, stored progress, and tests—even if the model has never encountered that exact sentence before.
 
@@ -153,9 +137,12 @@ present an example
 ↓
 make a prediction
 ↓
-compare it with the known answer
+measure the error
 ↓
-adjust many numerical settings slightly
+backpropagation calculates
+how parameters contributed to the error
+↓
+the optimizer adjusts parameters
 ↓
 repeat an enormous number of times
 ```
@@ -169,12 +156,53 @@ The Eiffel Tower is in _____
                          ↓
               compare with the next token in the text
                          ↓
-              adjust many parameters a tiny amount
+              calculate which parameters should move
+                         ↓
+              adjust them a tiny amount
 ```
 
 This is called **self-supervised learning**. It does not mean the model trains itself without people. People choose the data, build the computers, design the exercise, and evaluate the results. “Self-supervised” means that much of the answer is already present in the material: later words in a sentence can teach the model whether its earlier prediction was good.
 
 The parameters do not store facts like pages in a book. There is no one dial for _dog_, another for Swift syntax, and another for banking regulation. What the model has learned is spread across a vast pattern of settings. That pattern can be capable, but it is not a human-readable rulebook.
+
+### Side Story: The Model as a Spreadsheet Workbook
+
+For readers who know spreadsheets, the analogy can go one level deeper. Do not imagine one simple sheet. Imagine an enormous workbook with many interconnected sheets, millions or billions of numerical cells, and formulas that pass calculated tables from one sheet to the next.
+
+The first sheet to picture is the embedding table. It is like a vocabulary sheet. Each row has a fixed address for one token: perhaps one row for _cat_, another for _run_, another for _-ing_, and another for _the_. The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent a token, then each row has 4,096 numerical cells.
+
+Before training, those cells contain random or otherwise unhelpful values. The sheet has a structure, but it does not yet contain useful language relationships. Training changes the values inside the cells. It does not move the row address. The token _cat_ does not jump to a different row because it becomes more related to _dog_. Instead, the pattern of numbers inside the _cat_ row changes until it becomes mathematically more similar to patterns that help the model use _cat_ appropriately.
+
+The training step is not just "try and adjust." It has a more precise rhythm:
+
+```text
+make a prediction
+↓
+measure the error
+↓
+backpropagation calculates
+how learned numbers contributed to the error
+↓
+the optimizer nudges those numbers
+```
+
+Suppose the training text says:
+
+```text
+the cat sat on the ___
+```
+
+and the next token is _mat_. Early in training, the model might put too much probability on _floor_ and too little on _mat_. The error is measured as a number. Backpropagation then works backward through the workbook, using calculus to estimate how learned numbers across the model contributed to that error. The optimizer nudges many of those numbers slightly. It is not trying every possible cell change one at a time. It is calculating a direction of improvement efficiently, then taking a small step. Repeated over enormous amounts of material, the workbook becomes useful.
+
+The rest of the model is not only the embedding sheet. It is more like many calculation sheets stacked together. Each layer receives a table of numbers, transforms it, and passes a new table to the next layer. A common misunderstanding is to imagine that layer one predicts a word, layer two predicts a sentence, and layer three predicts a paragraph. That is not how the layers work. The layers are successive transformations of representation. Each one reshapes the numbers so later layers can work with richer contextual relationships.
+
+Attention is one kind of calculation inside this workbook. It lets rows in the current context compare themselves with other rows. In a sentence such as "The bank raised its interest rate because it feared inflation," attention helps the row for _it_ draw on information from _bank_, _raised_, _interest rate_, and _inflation_. Later layers then transform those already-contextualised representations again.
+
+When you type a prompt, the model does not rewrite the permanent workbook. It opens a temporary worksheet for the current context. Your prompt becomes rows on that temporary worksheet, one token after another. The width of each row must match the model's internal vector width, but the number of rows depends on the length of the prompt, conversation, document, or code excerpt.
+
+Generation is repeated recalculation. After the prompt has been processed, the model produces probabilities for the next token. It may assign high probability to _mat_, lower probability to _floor_, and tiny probabilities to thousands of other tokens. It chooses or samples one token, appends that token to the temporary worksheet, and calculates again for the next token. Conceptually, a paragraph or subroutine is produced this way: one token, one update to the temporary context, one new prediction, repeated many times. Efficient systems can reuse some previous calculations, but the beginner's picture is still right: the visible answer emerges from a loop, not from retrieving a stored paragraph.
+
+The analogy has limits. A real model is not literally an Excel workbook. The formulas are not human-authored spreadsheet formulas, the columns are not readable labels such as "fruitness" or "formality," and the model contains many matrices, nonlinear transformations, normalisation steps, and implementation details. But the workbook image preserves the useful distinction: training changes durable learned numbers; prompting creates temporary working rows; generation is repeated calculation over the current context.
 
 ### 4. It Learns Grammar Without Receiving a Grammar Book
 
