@@ -226,11 +226,45 @@ When you type a prompt, the model looks up the relevant token rows from the voca
 
 The **calculation sheets** are the model's layers. They are not copies of the vocabulary sheet, and they are not lists of words. Each layer receives the current table of numbers, transforms it, and passes a new table onward. The rows still correspond to positions in the current context, but their contents become more processed at each stage.
 
+For example, imagine you type:
+
+```text
+Draft a polite reply.
+```
+
+By itself, that prompt is too thin. The product may also inject surrounding context:
+
+```text
+System instruction: answer briefly and professionally.
+Previous message from Anna: Can we move tomorrow's meeting to 3 pm?
+User prompt: Draft a polite reply.
+```
+
+In a toy version, suppose this combined context becomes 24 tokens after tokenisation. The temporary context sheet now has 24 rows: one row for each token position in the system instruction, Anna's message, and your prompt. If the model's internal vector width is 4,096, each of those 24 rows has 4,096 numbers. The calculation sheets do not add a new row for "politeness" or a new row for "Anna." They receive the same 24-row table and keep transforming it. Layer 1 outputs 24 processed rows. Layer 2 receives those 24 rows and outputs another 24 rows. If the model has many layers, the table keeps the same row count while the values inside the cells become more contextualised.
+
+After the final layer, the output probability sheet might say that the most likely next tokens are something like:
+
+```text
+Sure      31%
+Of        14%
+Happy     11%
+Yes        8%
+Sorry      3%
+```
+
+If the model chooses _Sure_, that token is appended to the temporary context. The sheet now has 25 rows. The workbook runs again and may choose the next token, perhaps a comma. Then it runs again, and again, until the final visible answer becomes:
+
+```text
+Sure, 3 pm works for me. Thanks for letting me know.
+```
+
+During all of this, the firmed workbook has not learned Anna's schedule permanently. It has used the injected context temporarily to calculate this answer.
+
 A common misunderstanding is to imagine that layer one predicts a word, layer two predicts a sentence, and layer three predicts a paragraph. That is not how the layers work. The layers are successive transformations of representation. Each one reshapes the numbers so later layers can work with richer contextual relationships.
 
 Attention is one kind of calculation inside these layers. It lets rows in the temporary context sheet compare themselves with other rows. In a sentence such as "The bank raised its interest rate because it feared inflation," attention helps the row for _it_ draw on information from _bank_, _raised_, _interest rate_, and _inflation_. Later layers then transform those already-contextualised rows again.
 
-Finally, the model produces something like an **output probability sheet**. After the current context has passed through the layers, the model assigns probabilities to possible next tokens. It may assign high probability to _mat_, lower probability to _floor_, and tiny probabilities to thousands of other tokens. It chooses or samples one token, appends that token to the temporary context, and calculates again for the next token.
+In general, the model produces something like an **output probability sheet** after the current context has passed through the layers. It assigns probabilities to possible next tokens, chooses or samples one token, appends that token to the temporary context, and calculates again for the next token.
 
 That repeated loop is how a paragraph, answer, or code subroutine appears. The model is not retrieving a stored function in one piece. It is generating one token, adding that token to the current temporary sheet, and using the enlarged context to predict the next token. Efficient systems can reuse some previous calculations, but the beginner's picture is still right: the visible answer emerges from repeated calculation over a growing temporary context.
 
