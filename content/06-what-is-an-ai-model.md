@@ -165,11 +165,29 @@ This is called **self-supervised learning**. It does not mean the model trains i
 
 The parameters do not store facts like pages in a book. There is no one dial for _dog_, another for Swift syntax, and another for banking regulation. What the model has learned is spread across a vast pattern of settings. That pattern can be capable, but it is not a human-readable rulebook.
 
+The next section is optional, but useful if you have ever built a complicated spreadsheet. It takes the same idea one step deeper: not just a table of numbers, but a workbook whose sheets pass calculated tables to one another.
+
 ### Side Story: The Model as a Spreadsheet Workbook
 
-For readers who know spreadsheets, the analogy can go one level deeper. Do not imagine one simple sheet. Imagine an enormous workbook with many interconnected sheets, millions or billions of numerical cells, and formulas that pass calculated tables from one sheet to the next.
+If you do not live in spreadsheets, skip to the next section. But if you have ever built a workbook where one tab feeds another, formulas cascade, and a small change ripples through the whole file, you already have a useful mental model for part of what an AI model is doing.
 
-The first sheet to picture is the embedding table. It is like a vocabulary sheet. Each row has a fixed address for one token: perhaps one row for _cat_, another for _run_, another for _-ing_, and another for _the_. The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent a token, then each row has 4,096 numerical cells.
+The important shift is this: do not imagine one giant sheet. Imagine a workbook with different kinds of sheets.
+
+```text
+vocabulary sheet
+↓
+temporary context sheet
+↓
+calculation sheets
+↓
+attention calculations
+↓
+output probability sheet
+```
+
+These sheets are related, but they are not all the same sheet.
+
+The **vocabulary sheet** is the easiest one to picture. In technical language, it is the embedding table. Each row has a fixed address for one token: perhaps one row for _cat_, another for _run_, another for _-ing_, and another for _the_. The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent a token, then each row has 4,096 numerical cells.
 
 Before training, those cells contain random or otherwise unhelpful values. The sheet has a structure, but it does not yet contain useful language relationships. Training changes the values inside the cells. It does not move the row address. The token _cat_ does not jump to a different row because it becomes more related to _dog_. Instead, the pattern of numbers inside the _cat_ row changes until it becomes mathematically more similar to patterns that help the model use _cat_ appropriately.
 
@@ -194,15 +212,19 @@ the cat sat on the ___
 
 and the next token is _mat_. Early in training, the model might put too much probability on _floor_ and too little on _mat_. The error is measured as a number. Backpropagation then works backward through the workbook, using calculus to estimate how learned numbers across the model contributed to that error. The optimizer nudges many of those numbers slightly. It is not trying every possible cell change one at a time. It is calculating a direction of improvement efficiently, then taking a small step. Repeated over enormous amounts of material, the workbook becomes useful.
 
-The rest of the model is not only the embedding sheet. It is more like many calculation sheets stacked together. Each layer receives a table of numbers, transforms it, and passes a new table to the next layer. A common misunderstanding is to imagine that layer one predicts a word, layer two predicts a sentence, and layer three predicts a paragraph. That is not how the layers work. The layers are successive transformations of representation. Each one reshapes the numbers so later layers can work with richer contextual relationships.
+The **temporary context sheet** is different from the vocabulary sheet. When you type a prompt, the model looks up the relevant token rows from the vocabulary sheet and uses them to create rows in a temporary working sheet for this conversation. If your prompt has ten tokens, the temporary sheet has ten rows. If the current context contains thousands of tokens, it has thousands of rows. The width of those rows must match the model's internal vector width, but the length grows and shrinks with the current context.
 
-Attention is one kind of calculation inside this workbook. It lets rows in the current context compare themselves with other rows. In a sentence such as "The bank raised its interest rate because it feared inflation," attention helps the row for _it_ draw on information from _bank_, _raised_, _interest rate_, and _inflation_. Later layers then transform those already-contextualised representations again.
+The **calculation sheets** are the model's layers. They are not copies of the vocabulary sheet, and they are not lists of words. Each layer receives the current table of numbers, transforms it, and passes a new table onward. The rows still correspond to positions in the current context, but their contents become more processed at each stage.
 
-When you type a prompt, the model does not rewrite the permanent workbook. It opens a temporary worksheet for the current context. Your prompt becomes rows on that temporary worksheet, one token after another. The width of each row must match the model's internal vector width, but the number of rows depends on the length of the prompt, conversation, document, or code excerpt.
+A common misunderstanding is to imagine that layer one predicts a word, layer two predicts a sentence, and layer three predicts a paragraph. That is not how the layers work. The layers are successive transformations of representation. Each one reshapes the numbers so later layers can work with richer contextual relationships.
 
-Generation is repeated recalculation. After the prompt has been processed, the model produces probabilities for the next token. It may assign high probability to _mat_, lower probability to _floor_, and tiny probabilities to thousands of other tokens. It chooses or samples one token, appends that token to the temporary worksheet, and calculates again for the next token. Conceptually, a paragraph or subroutine is produced this way: one token, one update to the temporary context, one new prediction, repeated many times. Efficient systems can reuse some previous calculations, but the beginner's picture is still right: the visible answer emerges from a loop, not from retrieving a stored paragraph.
+Attention is one kind of calculation inside these layers. It lets rows in the temporary context sheet compare themselves with other rows. In a sentence such as "The bank raised its interest rate because it feared inflation," attention helps the row for _it_ draw on information from _bank_, _raised_, _interest rate_, and _inflation_. Later layers then transform those already-contextualised rows again.
 
-The analogy has limits. A real model is not literally an Excel workbook. The formulas are not human-authored spreadsheet formulas, the columns are not readable labels such as "fruitness" or "formality," and the model contains many matrices, nonlinear transformations, normalisation steps, and implementation details. But the workbook image preserves the useful distinction: training changes durable learned numbers; prompting creates temporary working rows; generation is repeated calculation over the current context.
+Finally, the model produces something like an **output probability sheet**. After the current context has passed through the layers, the model assigns probabilities to possible next tokens. It may assign high probability to _mat_, lower probability to _floor_, and tiny probabilities to thousands of other tokens. It chooses or samples one token, appends that token to the temporary context, and calculates again for the next token.
+
+That repeated loop is how a paragraph, answer, or code subroutine appears. The model is not retrieving a stored function in one piece. It is generating one token, adding that token to the current temporary sheet, and using the enlarged context to predict the next token. Efficient systems can reuse some previous calculations, but the beginner's picture is still right: the visible answer emerges from repeated calculation over a growing temporary context.
+
+The analogy has limits. A real model is not literally an Excel workbook. The formulas are not human-authored spreadsheet formulas, the columns are not readable labels such as "fruitness" or "formality," and the model contains many matrices, nonlinear transformations, normalisation steps, and implementation details. But the workbook image preserves the useful distinction: training changes durable learned numbers; prompting creates temporary working rows; layers transform those rows; generation is repeated calculation over the current context.
 
 ### 4. It Learns Grammar Without Receiving a Grammar Book
 
