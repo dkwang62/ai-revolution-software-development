@@ -174,22 +174,26 @@ If you do not live in spreadsheets, skip to the next section. But if you have ev
 The important shift is this: do not imagine one giant sheet. Imagine a workbook with different kinds of sheets.
 
 ```text
-vocabulary sheet
-↓
-temporary context sheet
-↓
-calculation sheets
-↓
-attention calculations
-↓
-output probability sheet
+training phase:
+  vocabulary sheet + learned calculation sheets are edited
+
+inference phase:
+  firmed workbook + temporary context sheet
+  ↓
+  calculation sheets
+  ↓
+  attention calculations
+  ↓
+  output probability sheet
 ```
 
 These sheets are related, but they are not all the same sheet.
 
 The **vocabulary sheet** is the easiest one to picture. In technical language, it is the embedding table. Each row has a fixed address for one token: perhaps one row for _cat_, another for _run_, another for _-ing_, and another for _the_. The columns hold the numbers in that token's vector. If the model uses 4,096 numbers to represent a token, then each row has 4,096 numerical cells.
 
-Before training, those cells contain random or otherwise unhelpful values. The sheet has a structure, but it does not yet contain useful language relationships. Training changes the values inside the cells. It does not move the row address. The token _cat_ does not jump to a different row because it becomes more related to _dog_. Instead, the pattern of numbers inside the _cat_ row changes until it becomes mathematically more similar to patterns that help the model use _cat_ appropriately.
+Before training, those cells contain random or otherwise unhelpful values. The sheet has a structure, but it does not yet contain useful language relationships.
+
+**Pre-training is the first major editing phase.** During pre-training, the model reads enormous amounts of text, code, and other material. It predicts what should come next, measures the error, and updates learned numbers. The vocabulary sheet changes during this phase. So do many other learned matrices in the calculation sheets. The row address does not move: the token _cat_ does not jump to a different row because it becomes more related to _dog_. Instead, the pattern of numbers inside the _cat_ row changes until it becomes mathematically more similar to patterns that help the model use _cat_ appropriately.
 
 The training step is not just "try and adjust." It has a more precise rhythm:
 
@@ -212,7 +216,11 @@ the cat sat on the ___
 
 and the next token is _mat_. Early in training, the model might put too much probability on _floor_ and too little on _mat_. The error is measured as a number. Backpropagation then works backward through the workbook, using calculus to estimate how learned numbers across the model contributed to that error. The optimizer nudges many of those numbers slightly. It is not trying every possible cell change one at a time. It is calculating a direction of improvement efficiently, then taking a small step. Repeated over enormous amounts of material, the workbook becomes useful.
 
-The **temporary context sheet** is different from the vocabulary sheet. When you type a prompt, the model looks up the relevant token rows from the vocabulary sheet and uses them to create rows in a temporary working sheet for this conversation. If your prompt has ten tokens, the temporary sheet has ten rows. If the current context contains thousands of tokens, it has thousands of rows. The width of those rows must match the model's internal vector width, but the length grows and shrinks with the current context.
+**Post-training and fine-tuning are later editing phases.** By this point, the workbook already contains broad language and code patterns. The next rounds do not usually teach the model what _cat_ means from scratch. They adjust the learned numbers so the model behaves more usefully: following instructions, formatting answers, refusing some unsafe requests, admitting uncertainty, or preferring answers people judge to be better. The embedding values and other weights may still change, but the work is more like refining an already built workbook than filling a blank one.
+
+After these training phases, a model version is produced. For ordinary use, its learned values are now firmed for that version. They are not sacred or permanent forever: the provider may later train a new version, fine-tune a specialised copy, or update a model through another controlled training process. But when a user opens a normal chat, the model is not rewriting its embedding sheet or calculation sheets in response to that conversation.
+
+**Inference is the use phase, not the editing phase.** The firmed workbook is used to calculate an answer. The **temporary context sheet** is different from the vocabulary sheet. When you type a prompt, the model looks up the relevant token rows from the vocabulary sheet and uses them to create rows in a temporary working sheet for this conversation. If your prompt has ten tokens, the temporary sheet has ten rows. If the current context contains thousands of tokens, it has thousands of rows. The width of those rows must match the model's internal vector width, but the length grows and shrinks with the current context.
 
 The **calculation sheets** are the model's layers. They are not copies of the vocabulary sheet, and they are not lists of words. Each layer receives the current table of numbers, transforms it, and passes a new table onward. The rows still correspond to positions in the current context, but their contents become more processed at each stage.
 
@@ -224,7 +232,7 @@ Finally, the model produces something like an **output probability sheet**. Afte
 
 That repeated loop is how a paragraph, answer, or code subroutine appears. The model is not retrieving a stored function in one piece. It is generating one token, adding that token to the current temporary sheet, and using the enlarged context to predict the next token. Efficient systems can reuse some previous calculations, but the beginner's picture is still right: the visible answer emerges from repeated calculation over a growing temporary context.
 
-The analogy has limits. A real model is not literally an Excel workbook. The formulas are not human-authored spreadsheet formulas, the columns are not readable labels such as "fruitness" or "formality," and the model contains many matrices, nonlinear transformations, normalisation steps, and implementation details. But the workbook image preserves the useful distinction: training changes durable learned numbers; prompting creates temporary working rows; layers transform those rows; generation is repeated calculation over the current context.
+The analogy has limits. A real model is not literally an Excel workbook. The formulas are not human-authored spreadsheet formulas, the columns are not readable labels such as "fruitness" or "formality," and the model contains many matrices, nonlinear transformations, normalisation steps, and implementation details. But the workbook image preserves the useful distinction: pre-training and post-training edit durable learned numbers; inference uses the firmed workbook; prompting creates temporary working rows; layers transform those rows; generation is repeated calculation over the current context.
 
 ### 4. It Learns Grammar Without Receiving a Grammar Book
 
