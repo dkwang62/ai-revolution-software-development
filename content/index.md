@@ -71,6 +71,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[19-enterprise-intelligence-layer|Chapter 17: The Enterprise Intelligence Layer]]
 - [[side-chapter-from-demonstration-to-daily-work|Side Chapter: From Demonstration to Daily Work]]
 - [[20-five-year-and-ten-year-scenarios|Chapter 18: Five-Year and Ten-Year Scenarios]]
+- [[side-story-what-would-it-take-rethinking-agi|Side Story: What Would It Take? Rethinking Artificial General Intelligence from First Principles]]
 - [[21-conclusion-when-intent-becomes-software|Conclusion: When Intent Becomes Software]]
 
 ### Course Preparation

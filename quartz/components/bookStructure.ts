@@ -178,6 +178,12 @@ export const bookSections: BookSection[] = [
         shortTitle: "18. Five-Year and Ten-Year Scenarios",
       },
       {
+        slug: "side-story-what-would-it-take-rethinking-agi" as FullSlug,
+        title:
+          "Side Story: What Would It Take? Rethinking Artificial General Intelligence from First Principles",
+        shortTitle: "Side Story: What Would It Take?",
+      },
+      {
         slug: "21-conclusion-when-intent-becomes-software" as FullSlug,
         title: "Conclusion: When Intent Becomes Software",
         shortTitle: "Conclusion: When Intent Becomes Software",
