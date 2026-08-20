@@ -178,6 +178,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "18. Five-Year and Ten-Year Scenarios",
       },
       {
+        slug: "side-story-when-intelligence-acquires-agency" as FullSlug,
+        title: "Side Story: When Intelligence Acquires Agency",
+        shortTitle: "Side Story: When Intelligence Acquires Agency",
+      },
+      {
         slug: "side-story-what-would-it-take-rethinking-agi" as FullSlug,
         title:
           "Side Story: What Would It Take? Rethinking Artificial General Intelligence from First Principles",
