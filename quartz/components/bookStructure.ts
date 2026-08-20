@@ -68,6 +68,16 @@ export const bookSections: BookSection[] = [
         shortTitle: "5. What Is an AI Model?",
       },
       {
+        slug: "side-story-cnn-vs-transformer-intuition" as FullSlug,
+        title: "Side Story: CNNs and Transformers: Two Different Ways of Finding Meaning",
+        shortTitle: "Side Story: CNNs and Transformers, Intuition",
+      },
+      {
+        slug: "side-story-cnn-vs-transformer-engineering" as FullSlug,
+        title: "Side Story: CNNs and Transformers, Engineering",
+        shortTitle: "Side Story: CNNs and Transformers, Engineering",
+      },
+      {
         slug: "side-chapter-the-genie-is-not-all-powerful" as FullSlug,
         title: "The Genie Is Not All-Powerful",
         shortTitle: "The Genie Is Not All-Powerful",
