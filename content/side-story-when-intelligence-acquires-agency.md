@@ -1,3 +1,7 @@
+---
+title: "Side Story: When Intelligence Acquires Agency"
+---
+
 # Side Story — When Intelligence Acquires Agency
 ## The Coming Robotics Revolution
 
