@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 76**
+**Version 1.0.0 · Build 77**
 
 ![Book cover](figures/cover.png)
 
@@ -43,6 +43,8 @@ If you are preparing for an executive course on agentic AI or organisational tra
 
 - [[05-what-is-information|Chapter 4: What Is Information?]]
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
+- [[side-story-cnn-vs-transformer-intuition|Side Story: CNNs and Transformers, Intuition]]
+- [[side-story-cnn-vs-transformer-engineering|Side Story: CNNs and Transformers, Engineering]]
 - [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]]
 - [[side-chapter-from-dna-to-a-machine-native-ai|Exploratory Side Chapter: From DNA to a Machine-Native AI]]
 - [[08-how-ai-converts-english-into-software|Chapter 6: How AI Converts English Into Software]]
@@ -71,6 +73,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[19-enterprise-intelligence-layer|Chapter 17: The Enterprise Intelligence Layer]]
 - [[side-chapter-from-demonstration-to-daily-work|Side Chapter: From Demonstration to Daily Work]]
 - [[20-five-year-and-ten-year-scenarios|Chapter 18: Five-Year and Ten-Year Scenarios]]
+- [[side-story-when-intelligence-acquires-agency|Side Story: When Intelligence Acquires Agency]]
 - [[side-story-what-would-it-take-rethinking-agi|Side Story: What Would It Take? Rethinking Artificial General Intelligence from First Principles]]
 - [[21-conclusion-when-intent-becomes-software|Conclusion: When Intent Becomes Software]]
 
