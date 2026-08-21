@@ -45,6 +45,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[06-what-is-an-ai-model|Chapter 5: What Is an AI Model?]]
 - [[side-story-cnn-vs-transformer-intuition|Side Story: CNNs and Transformers, Intuition]]
 - [[side-story-cnn-vs-transformer-engineering|Side Story: CNNs and Transformers, Engineering]]
+- [[side-story-transformers|Side Story: Understanding Transformers]]
 - [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]]
 - [[side-chapter-from-dna-to-a-machine-native-ai|Exploratory Side Chapter: From DNA to a Machine-Native AI]]
 - [[08-how-ai-converts-english-into-software|Chapter 6: How AI Converts English Into Software]]
