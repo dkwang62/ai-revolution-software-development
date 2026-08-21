@@ -83,6 +83,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "Side Story: Understanding Transformers",
       },
       {
+        slug: "side-story-reasoning-in-transformers" as FullSlug,
+        title: "Side Story: Where Does Reasoning Actually Happen in a Transformer?",
+        shortTitle: "Side Story: Reasoning in Transformers",
+      },
+      {
         slug: "side-chapter-the-genie-is-not-all-powerful" as FullSlug,
         title: "The Genie Is Not All-Powerful",
         shortTitle: "The Genie Is Not All-Powerful",
