@@ -98,6 +98,8 @@ Multimodality extends the range of information AI can process.
 
 But it also increases complexity. Training across multiple modalities requires different kinds of data and alignment among representations. Serving multimodal models may require more compute and more sophisticated product design. Verifying multimodal outputs can be harder than verifying text.
 
+Scientific AI makes this cost especially visible. A DNA model working one base at a time preserves fine detail but must process a very long sequence; grouping bases into k-mers shortens the sequence but changes what the model can easily notice. A molecular graph preserves atoms and bonds directly but requires machinery suited to graphs. A medical pipeline may use separate models for genomic scanning, peptide-HLA prediction, mRNA optimisation and delivery, then connect them with conventional software and laboratory tests. The cost lies not only in running each model, but also in translating between representations and validating each hand-off.
+
 The economic question is again cost versus benefit. Multimodality becomes valuable when it reduces enough human translation work to justify the added complexity.
 
 For software development, the value is obvious in principle. Many software ideas begin visually. Many bugs are seen before they are described. Many workflows are easier to show than explain. A model that can interpret screenshots, diagrams, and code together can reduce communication cost.

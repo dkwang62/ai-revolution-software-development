@@ -104,6 +104,30 @@ Older AI systems often handled these forms separately. One model might classify 
 
 Modern multimodal models try to bring these forms into a more shared space of representation. The image does not literally become text. The voice does not literally become text. Instead, the system learns ways to relate visual, audio, and symbolic evidence so that a screenshot, a spoken instruction, a diagram, and a code file can contribute to the same task.
 
+### Beyond Words: Biology Has Its Own Units
+
+The word _token_ can make an AI model sound more language-specific than it is. A token is simply a unit the system has been designed to work with. The useful unit depends on the structure of the information and the task.
+
+| Domain and task | Possible input unit | What the model is trying to learn |
+| --- | --- | --- |
+| DNA or RNA scanning | One nucleotide base, a fixed-length **k-mer**, or a learned variable-length chunk | Patterns associated with mutations, genes, regulation, or candidate targets |
+| Protein and neoantigen analysis | One amino acid at a time | Which short protein fragments may be biologically important |
+| Immune-response prioritisation | Amino-acid sequences for both a peptide and the patient's HLA molecules | Whether that particular HLA is likely to present that particular peptide |
+| mRNA sequence optimisation | Nucleotides or three-base **codons** | Which synonymous sequence may produce the same protein more effectively |
+| Lipid design for delivery | A molecular graph of atoms and bonds, or a tokenised chemical string such as SMILES | How molecular structure may affect useful properties |
+
+A **k-mer** is merely a short run of _k_ bases. If _k_ is three, `ACG` is one 3-mer. Different genome models make different choices: some process one base at a time, some use fixed-length k-mers, and some learn variable-length chunks, much as text models learn common word pieces. There is no universal biological token. The representation is an engineering choice. [Sanabria et al., _DNA language model GROVER learns sequence context in the human genome_](https://www.nature.com/articles/s42256-024-00872-0)
+
+Proteins offer a different natural alphabet. Most proteins are built from 20 standard amino acids, so a protein model can treat each amino acid rather like a text model treats a token. In cancer research, a mutation may produce a new short protein fragment called a **neoantigen**. Models can help rank candidate fragments by considering the amino-acid sequence of the fragment together with the patient's HLA molecules, which display selected fragments to immune cells. [Liu et al., _Towards designing improved cancer immunotherapy targets with a peptide-MHC-I presentation model, HLApollo_](https://www.nature.com/articles/s41467-024-54887-7)
+
+The representation can change again later in the same workflow. Designing an mRNA sequence may focus on codons, the three-base groups that specify amino acids. Designing a lipid used to deliver that mRNA is less naturally a sequence problem: an individual lipid molecule may be represented as a graph of atoms and bonds. A chemical string such as SMILES can flatten that graph into text-like symbols for a sequence model, but that is a convenient encoding, not evidence that the molecule is naturally a sentence.
+
+The larger lesson is simple:
+
+> An AI model is not necessarily a language model. It is a learned system operating on a chosen representation of information.
+
+Nor would one model necessarily perform an entire medical workflow. In practice, specialised models, conventional software, patient data and laboratory tests may form a pipeline. Each stage changes the representation and asks a different question. The output remains a prediction until it is checked against biological and clinical evidence.
+
 Machine code adds one more useful case. It may sound mysterious, but machine code is already digital information. It is made of bytes, usually written in hexadecimal notation by tools that inspect executables. A tiny fragment might look like this:
 
 ```text

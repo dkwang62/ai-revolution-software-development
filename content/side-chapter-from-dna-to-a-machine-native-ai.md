@@ -67,6 +67,57 @@ The genome emerged through evolution. Its structures reflect selection, duplicat
 
 For this reason, DNA is a powerful test of the boundary between pattern and understanding. If a model becomes good at predicting DNA, what has it learned? Has it learned only which bases commonly appear together? Has it learned the boundaries of genes? Has it learned regulatory motifs? Has it learned something about protein structure? Has it learned enough to propose a sequence that functions? At what point should any of this be called understanding?
 
+## One Medical Workflow, Several Machine Representations
+
+A personalised cancer vaccine provides a concrete example of why “an AI model” should not be imagined only as a language model, or even as one enormous model doing everything.
+
+The broad workflow can be simplified like this:
+
+```text
+patient's tumour and healthy DNA/RNA
+↓
+find tumour-specific changes
+↓
+derive candidate protein fragments
+↓
+estimate which fragments the patient's HLA may present
+↓
+prioritise candidates for immune response
+↓
+design an mRNA sequence encoding selected candidates
+↓
+design and test a delivery formulation
+```
+
+At each arrow, both the scientific question and the useful representation change.
+
+| Stage | What enters the model or system | Natural or useful unit | Example output |
+| --- | --- | --- | --- |
+| Find tumour-specific changes | DNA and RNA sequence data from tumour and healthy samples | Individual bases, k-mers, or learned nucleotide chunks | A list of candidate mutations |
+| Derive candidate neoantigens | Mutations interpreted in protein-coding regions | Amino acids | Short mutated peptide sequences |
+| Estimate presentation | A candidate peptide plus the patient's HLA sequence | Amino acids in both sequences | A predicted peptide-HLA presentation score |
+| Prioritise immune targets | Presentation scores plus expression and other biological evidence | A mixture of sequences and measured features | A ranked shortlist for further testing |
+| Optimise mRNA | The chosen protein sequence and possible synonymous RNA sequences | Nucleotides or codons | A candidate mRNA sequence encoding the same protein fragments |
+| Develop delivery | Lipid structures, formulation ratios, particle measurements and experimental results | Molecular graphs, chemical strings and numerical features | Candidate lipids or formulations to test |
+
+The first stage begins with the four-letter alphabet of DNA (A, C, G and T), or RNA, which uses U in place of T. A model might process one base at a time. It might group bases into fixed-length **k-mers**, such as 3-mers or 6-mers. It might instead learn a vocabulary of frequently useful chunks. These are alternative engineering choices, not different biological alphabets. Research comparing genome language models shows that tokenisation can materially affect what a model learns and how efficiently it processes long sequences. [Sanabria et al., “DNA language model GROVER learns sequence context in the human genome,” _Nature Machine Intelligence_, 2024](https://www.nature.com/articles/s42256-024-00872-0).
+
+Once a mutation is translated into a possible protein fragment, the representation changes. Proteins are commonly described as sequences drawn from 20 standard amino acids. A **peptide** is a short chain of amino acids. A **neoantigen** is a tumour-associated peptide created by a mutation and potentially recognisable as foreign by the immune system.
+
+The peptide alone is not enough. HLA molecules display selected peptides to immune cells, and people inherit different HLA variants. A model may therefore compare two amino-acid sequences: the candidate peptide and the patient's HLA molecule. For HLA class I, candidate peptides are commonly about 8–11 amino acids long, although other presentation pathways can involve longer peptides. Modern prediction systems can combine peptide sequence, HLA sequence, source-protein context and other evidence to estimate presentation. [Liu et al., “Towards designing improved cancer immunotherapy targets with a peptide-MHC-I presentation model, HLApollo,” _Nature Communications_, 2024](https://www.nature.com/articles/s41467-024-54887-7).
+
+If candidates survive prioritisation and experimental review, the problem may change again: how should an mRNA encode them? Biology already supplies a meaningful three-base grouping. A **codon** is a triplet of nucleotides that specifies an amino acid or a stop signal. Because several codons can specify the same amino acid, many mRNA sequences can encode the same protein. Optimisation can explore those alternatives while preserving the intended amino-acid sequence, seeking better translation or stability. Codon-level input is natural for some systems, but it is not mandatory; other models work directly with nucleotide sequences or combine learned models with established optimisation methods. [Li et al., “Deep generative optimization of mRNA codon sequences for enhanced mRNA translation and therapeutic efficacy,” _Nature Communications_, 2025](https://www.nature.com/articles/s41467-025-64894-x).
+
+Delivery is the useful exception to the sequence story. A lipid molecule is naturally described by atoms and bonds, which form a graph rather than a line. It can be flattened into a text-like chemical notation called **SMILES** and tokenised for a sequence model, but a graph model can preserve the bond structure directly. The complete nanoparticle formulation is more than one molecular graph: proportions of different lipids, particle properties, manufacturing conditions and experimental delivery results may all matter. A current lipid-nanoparticle database therefore combines molecular structures with formulation and assay data rather than pretending the entire delivery problem is one sentence-shaped input. [Lipid Nanoparticle Database, _Nature Communications_, 2026](https://www.nature.com/articles/s41467-026-68818-1).
+
+This example carries three lessons beyond medicine.
+
+First, the “token” is not always a word. It is a chosen computational unit.
+
+Second, one real objective may require several specialised models and representations connected in a pipeline.
+
+Third, a prediction is not a physical result. Candidate neoantigens, mRNA sequences and delivery formulations still require conventional analysis, laboratory experiments, safety assessment and clinical validation. The models help search an enormous space of possibilities. Biology supplies the verdict.
+
 ## What Genome Models Have Already Learned
 
 This is not merely a philosophical exercise. Genome models already demonstrate that sequence prediction can produce representations containing biologically useful structure.
