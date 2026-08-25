@@ -8,7 +8,7 @@ socialImage: "figures/cover.png"
 
 **Desmond Kwang, written with artificial intelligence**
 
-**Version 1.0.0 · Build 77**
+**Version 1.0.0 · Build 78**
 
 ![Book cover](figures/cover.png)
 
@@ -48,6 +48,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-transformers|Side Story: Understanding Transformers]]
 - [[side-story-reasoning-in-transformers|Side Story: Where Does Reasoning Actually Happen in a Transformer?]]
 - [[side-story-fossil-record-of-thought|Side Story: The Fossil Record of Thought]]
+- [[side-story-the-jagged-frontier|Side Story: The Jagged Frontier]]
 - [[side-chapter-the-genie-is-not-all-powerful|The Genie Is Not All-Powerful]]
 - [[side-chapter-from-dna-to-a-machine-native-ai|Exploratory Side Chapter: From DNA to a Machine-Native AI]]
 - [[08-how-ai-converts-english-into-software|Chapter 6: How AI Converts English Into Software]]

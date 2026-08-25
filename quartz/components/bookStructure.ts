@@ -93,6 +93,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "Side Story: The Fossil Record of Thought",
       },
       {
+        slug: "side-story-the-jagged-frontier" as FullSlug,
+        title: "Side Story: The Jagged Frontier: Why AI Is Brilliant and Baffling in the Same Breath",
+        shortTitle: "Side Story: The Jagged Frontier",
+      },
+      {
         slug: "side-chapter-the-genie-is-not-all-powerful" as FullSlug,
         title: "The Genie Is Not All-Powerful",
         shortTitle: "The Genie Is Not All-Powerful",
