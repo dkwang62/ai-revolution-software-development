@@ -5,6 +5,8 @@ A sentence is a sequence. A genome is a sequence. A computer program, at the lev
 
 That question is why biology has become more than a convenient metaphor for what's happening in AI. It's turning into a natural experiment in what intelligence looks like when it's trained directly on a complex system, rather than on human descriptions of that system.
 
+[![From language and DNA through virtual cells and machine code to machine-native AI](<figures/FIG-SC-01 From DNA to Machine-Native AI.png>)](<figures/FIG-SC-01 From DNA to Machine-Native AI.png>)
+
 ## From Language to DNA
 
 The modern language model began with a deceptively simple training problem: show it part of a sequence, ask it to predict what comes next, and repeat that across an enormous quantity of text. To get better at that narrow task, the model has to discover regularities — some local, some stretching across sentences, documents, and entire bodies of knowledge — without ever being handed a dictionary of the concepts hiding inside the data. It learns representations instead of being given them.
