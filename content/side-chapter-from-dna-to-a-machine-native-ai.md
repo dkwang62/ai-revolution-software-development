@@ -1,720 +1,112 @@
----
-title: "From DNA to a Machine-Native AI"
-description: "An unrestricted exploratory side chapter about whether AI models can discover their own abstraction layers from biology, machine code, execution, and feedback."
----
-
 # From DNA to a Machine-Native AI
-
 ## Can a Model Discover Its Own Abstraction Layer?
 
-Date begun: 8 August 2026  
-Status: Unrestrained exploratory draft  
-Purpose: Deepen the author's understanding of what an AI model is  
-Tags: #draft #side-chapter #ai-models #biology #machine-code #abstraction #thought-experiment
+A sentence is a sequence. A genome is a sequence. A computer program, at the level a processor actually reads it, is a sequence too. It's tempting to stop there and call it a tidy analogy — three different alphabets, one underlying trick. But there's a fourth thing sitting between the genome and the organism that the sequence-to-sequence comparison skips over entirely: a cell is a system that *executes* biological information. Once that's on the table, the interesting question stops being whether an AI can learn the patterns in DNA — genome models are already doing that, and doing it well — and becomes something harder: can an AI learn the rules by which DNA becomes a living system? And if it can, a still more ambitious question follows it: can the model discover abstractions nobody explicitly gave it?
 
-> **Working note:** This is intentionally much larger and more speculative than a normal book chapter. It is a laboratory for thought, not an approved part of the manuscript. Established results, interpretations, hypotheses, and speculation are labelled separately so that the argument can later be tested, compressed, divided, or abandoned.
+That question is why biology has become more than a convenient metaphor for what's happening in AI. It's turning into a natural experiment in what intelligence looks like when it's trained directly on a complex system, rather than on human descriptions of that system.
 
-## The Strange Similarity Between a Sentence, a Genome, and a Program
+## From Language to DNA
 
-A sentence is a sequence.
+The modern language model began with a deceptively simple training problem: show it part of a sequence, ask it to predict what comes next, and repeat that across an enormous quantity of text. To get better at that narrow task, the model has to discover regularities — some local, some stretching across sentences, documents, and entire bodies of knowledge — without ever being handed a dictionary of the concepts hiding inside the data. It learns representations instead of being given them.
 
-A genome is a sequence.
+Swap words for DNA bases and the broad idea survives remarkably intact. A genome is a sequence built from four symbols — A, C, G, and T — and genome models such as Evo have already shown that predicting the next base in that sequence causes a model to learn representations that correspond to real biological structure, not just statistical noise.
 
-A computer program is a sequence.
+But the analogy has a limit, and it's worth being precise about where it sits. A computer program is interpreted by a defined computational system. DNA is interpreted by a living one, and a DNA sequence doesn't carry one fixed meaning independent of context. The same stretch of sequence can do something different depending on the cell type it's in, its regulatory state, the three-dimensional structure of the genome around it, which other genes and proteins happen to be active nearby, the environment the cell is sitting in, and the evolutionary history that shaped all of the above. The genome, in other words, is not the whole program. It's closer to a program embedded inside a massively complicated runtime environment — and that runtime environment is the cell.
 
-That superficial resemblance is easy to overstate. A sentence, a genome, and a program do not mean things in the same way. They were not created for the same purpose. They do not have the same kind of interpreter. Yet all three contain relationships distributed across ordered symbols. That makes them suitable for an unusually powerful kind of machine: a model that learns by trying to predict what belongs in a sequence.
+## The Cell Is the Missing Layer
 
-The modern language model began with a deceptively simple training problem. Show the model part of a sequence and ask it to predict what comes next. Repeat this across an enormous collection of text. To improve its predictions, the model must learn regularities. Some are local: which words commonly follow other words. Some extend across a sentence: whether a verb agrees with its subject. Some extend across entire documents: which claim is being defended, which character knows a secret, or which function a piece of code is meant to perform.
+This is where the idea of a *virtual cell* becomes genuinely interesting, because it forces a question the DNA-as-sequence framing lets you avoid: if DNA is the information, what's the computer that actually executes it?
 
-The model is not handed a dictionary of every relationship it will need. Training alters millions or billions of parameters until the system becomes better at prediction. Those parameters collectively form a learned representation of the data. The representation is not a database of complete sentences. It is a compressed mathematical structure that makes some continuations likely and others unlikely.
+The honest answer isn't simply "the cell," because that undersells how much work the cell is doing. It's simultaneously the processor, the memory, the operating environment, the chemical factory, the communication network, the error-correction system, the feedback system, and the physical environment the whole program runs inside. Genes switch on and off. RNA is produced and degraded. Proteins are assembled, modified, and shipped to wherever they're needed. Molecules interact with each other in enormous numbers. Signals propagate. Resources run short. The cell responds to its environment, and the whole system shifts state as a result — and the genome doesn't specify most of that as a simple list of instructions. Much of it emerges from the interactions among the components themselves.
 
-Replace the words with DNA bases and the same broad idea becomes a genome model.
+That's a genuinely useful parallel to computing, and it's worth taking seriously rather than treating as a cute turn of phrase. A machine-code program isn't just a sequence of instructions either; its behavior depends on the processor, the memory hierarchy, the operating system, the libraries it calls into, its inputs, its timing, and its environment. DNA doesn't explain the cell any more completely than machine code explains the full behavior of a running computer system. In both cases, the real object of interest isn't the sequence alone. It's the combination of information, interpreter, state, environment, and feedback together. That combination is exactly where the analogy between biological intelligence and machine intelligence starts to earn its keep.
 
-Replace the words with computer instructions and it becomes a machine-code model.
+## The Virtual Cell Experiment
 
-The representations are different. The physical systems are different. The tests of success are different. But the underlying research question is shared:
+This is no longer only a thought experiment. Silvana Konermann, co-founder and executive director of the Arc Institute — and, before that, a CRISPR researcher whose work on tools like CRISPRa and CRISPR-Cas13d helped make precise, programmable control of gene and RNA expression possible in the first place — is pursuing an ambitious version of it directly.
 
-> How much structure can a model recover from a sequence without being explicitly taught the high-level concepts that produced it?
+Arc's Virtual Cell Initiative aims to build AI models that predict how a cell's behavior changes when its biological state is deliberately perturbed — genetically, chemically, or environmentally — across many different cell types, with the eventual goal of learning how a diseased cell might be nudged back toward a healthy one. The project received a $1.03 billion Audacious Project grant in 2025 specifically to scale this effort, and the plan behind it is to run more than a billion individual cell experiments to build what the Institute calls the most comprehensive, causal, and credible dataset of its kind, purpose-built for training increasingly capable virtual-cell models.
 
-That question reaches into the heart of what an AI model is.
+The comparison to a language model is deliberate, and it's worth taking at face value: an LLM learns patterns in human language; a virtual cell model is attempting to learn patterns in the language of cells. But there's an important difference underneath the analogy. Arc's project isn't interested only in predicting what a cell looks like in a given snapshot. It wants to predict what happens when something about that cell is changed. That's a considerably deeper problem, and it's the one this chapter actually cares about.
 
-## Begin With Biology
+## From Observation to Intervention
 
-DNA seems, at first, almost absurdly simple. Its familiar alphabet contains four bases:
+Suppose you observe a cell and measure the expression of a few thousand genes. A conventional model might notice that when gene A runs high, genes B, C, and D also tend to run high. That's useful — and it's correlation.
 
-- A
-- C
-- G
-- T
+Now run an actual experiment. Suppress gene A, and measure the cell again. Maybe B falls, C rises, and D barely moves at all. You've just begun to learn something causal, rather than merely coincidental. Now suppress the same gene in a different type of cell, and the response might look completely different. Change two genes at once, and the combined effect might not simply be the sum of the two individual effects. This is the real difficulty biology presents: the number of possible interventions, across cell types, combinations, doses, and timings, explodes far past anything that could ever be tested experimentally one at a time. The virtual-cell approach is to learn the underlying structure of those responses from a large enough set of real experiments that the model can start predicting the outcome of interventions nobody has actually run yet.
 
-From combinations of those four symbols emerge the instructions and regulatory structures involved in building, maintaining, reproducing, and adapting living systems. The compact alphabet creates an irresistible analogy with language and code. People speak of the genetic code, genes as instructions, and the genome as the source code of life.
+The scale Arc is aiming for is the point. A billion cellular experiments aren't being generated to describe biology in the way a textbook does — they're being generated specifically to create cause-and-effect data at a scale suitable for training a model that has to generalize across interventions it's never seen. That's a fundamentally different kind of training material from feeding an AI a stack of scientific papers. A paper might say gene X is associated with disease Y — a description of the world as observed. An intervention experiment asks what happens if you deliberately change gene X — an interrogation of the world, with an answer that has to be measured rather than asserted.
 
-The analogy is useful. It is also dangerous.
+## A Biological Simulator, Not Just a Biological Encyclopedia
 
-A Python instruction was deliberately designed to have an agreed operational meaning. Consider:
+That reframes what a virtual cell actually is. An LLM learns a model of language. A virtual cell is attempting to learn a model of cellular state *transitions* — not the cell as a static object, but the relationship between a current state, an intervention, and the state that follows it. Loosely: current state, then an intervention, then a predicted state, then an experimental measurement to check the prediction, then a correction to the model based on how far off it was. That loop is much closer in spirit to reinforcement learning than to ordinary next-word prediction. The model isn't just absorbing a description of a system — it's learning something about how the system actually moves through time when it's disturbed, which is why this idea belongs earlier in the argument than the usual jump straight from DNA to machine code. It's the bridge that makes the rest of the chapter make sense.
 
-```python
-print(2 + 2)
-```
+## A Billion Experiments as Biology's Training Corpus
 
-In a normal Python environment, the expression is interpreted according to a defined language specification and produces `4`. The program can still fail because of its environment, dependencies, hardware, permissions, or bugs elsewhere, but the language is intended to provide stable formal rules.
+There's another difference between language and biology worth sitting with, because it changes what "training data" even means in this context. A language model has an enormous amount of human-generated text available to it because people have been talking, writing, and recording for thousands of years. Biology doesn't come with an equivalent corpus of labeled explanations. Nature never wrote a textbook explaining why one gene regulates another; scientists have to generate that data themselves, one experiment at a time.
 
-DNA is not Python written with four letters. Its effects depend on a living system. A sequence may be active in one cell and silent in another. A regulatory element can influence a distant gene because the genome folds in three-dimensional space. One genetic change may have no visible consequence, cause disease, protect against disease, or matter only in combination with other genes and environmental conditions. The organism changes over time. Cells respond to stress. Molecules interact. Random events occur.
+That makes building a virtual cell partly a data-generation problem before it's a modeling problem — and it creates a genuinely interesting feedback loop once a model is actually in the mix. The model can be used to identify where its own uncertainty is highest, propose the experiment most likely to resolve that uncertainty, have a laboratory actually run it, feed the result back into the training data, and improve — at which point the model identifies a new gap in its own knowledge, and the cycle repeats. At that point AI isn't merely analyzing science after the fact. It's starting to influence which experiments science chooses to run in the first place, which is a considerably bigger idea than "AI reads papers faster than humans do."
 
-There is no single biological interpreter applying one complete rulebook from the first base to the last.
+## What a Model Doesn't Need to Simulate
 
-The genome emerged through evolution. Its structures reflect selection, duplication, mutation, historical accident, reuse, competition, cooperation, and constraints accumulated across deep time. Biology did not begin with a clean architecture document.
+The virtual-cell idea also clarifies something important about models in general that's easy to lose track of: a model doesn't have to reproduce every detail of reality to be useful. A weather model doesn't simulate every molecule in the atmosphere. A flight simulator doesn't simulate every electron moving through an aircraft's wiring. A processor simulator doesn't reproduce every physical particle inside a transistor. What a model needs to preserve is whatever aspect of reality actually matters for the question being asked of it.
 
-For this reason, DNA is a powerful test of the boundary between pattern and understanding. If a model becomes good at predicting DNA, what has it learned? Has it learned only which bases commonly appear together? Has it learned the boundaries of genes? Has it learned regulatory motifs? Has it learned something about protein structure? Has it learned enough to propose a sequence that functions? At what point should any of this be called understanding?
+That points at a genuinely interesting possibility: intelligence may be, in part, the ability to discover the right abstraction of a system. A perfect simulation of a cell would be impossibly complicated to build and impossibly expensive to run. A *useful* virtual cell doesn't need to simulate every molecule — it needs to preserve enough of the causal structure to answer the questions people actually want answered. That's precisely what an abstraction is for.
 
-## One Medical Workflow, Several Machine Representations
+## Where the Virtual Cell Meets Machine-Native AI
 
-A personalised cancer vaccine provides a concrete example of why “an AI model” should not be imagined only as a language model, or even as one enormous model doing everything.
+This is where the two halves of the argument finally come together. Look at the two systems side by side. Biology runs from DNA to RNA to proteins to molecular interactions to cellular state to, eventually, the whole organism. Computing runs from source code to a compiler's internal representation to machine code to processor state to the behavior a program actually exhibits. In both cases, the high-level description a human would recognize is separated from the physical execution by several layers of representation nobody experiences directly. Humans designed most of the layers on the computing side. Evolution designed the layers on the biological side. Neither set of layers was built with the *other* kind of mind — human or machine — specifically in view.
 
-The broad workflow can be simplified like this:
+That sets up a genuine experiment, not just a metaphor. If you train an AI on DNA, does it discover biological abstractions on its own? If you train an AI on cellular perturbations, does it discover causal abstractions? If you train an AI on machine code and its execution, does it discover computational abstractions? These may not be three separate questions so much as three instances of the same deeper one: given a low-level sequence and a system that produces real consequences from that sequence, can a learning system discover, for itself, the abstractions that make those consequences predictable? That question, more than any specific technique discussed in this chapter, is the one worth carrying forward.
 
-```text
-patient's tumour and healthy DNA/RNA
-↓
-find tumour-specific changes
-↓
-derive candidate protein fragments
-↓
-estimate which fragments the patient's HLA may present
-↓
-prioritise candidates for immune response
-↓
-design an mRNA sequence encoding selected candidates
-↓
-design and test a delivery formulation
-```
+## Prediction Is Not Yet Understanding
 
-At each arrow, both the scientific question and the useful representation change.
+It's worth pausing on a real limitation here rather than letting the argument run ahead of itself. A model can predict something correctly without possessing anything a scientist would recognize as causal understanding, and Arc's own work is designed, deliberately, to test exactly that distinction. Its 2026 Virtual Cell Challenge asks models to predict perturbation responses in cell types they were never trained on being perturbed at all — generalization to a genuinely unseen context, not memorization dressed up as prediction.
 
-| Stage | What enters the model or system | Natural or useful unit | Example output |
-| --- | --- | --- | --- |
-| Find tumour-specific changes | DNA and RNA sequence data from tumour and healthy samples | Individual bases, k-mers, or learned nucleotide chunks | A list of candidate mutations |
-| Derive candidate neoantigens | Mutations interpreted in protein-coding regions | Amino acids | Short mutated peptide sequences |
-| Estimate presentation | A candidate peptide plus the patient's HLA sequence | Amino acids in both sequences | A predicted peptide-HLA presentation score |
-| Prioritise immune targets | Presentation scores plus expression and other biological evidence | A mixture of sequences and measured features | A ranked shortlist for further testing |
-| Optimise mRNA | The chosen protein sequence and possible synonymous RNA sequences | Nucleotides or codons | A candidate mRNA sequence encoding the same protein fragments |
-| Develop delivery | Lipid structures, formulation ratios, particle measurements and experimental results | Molecular graphs, chemical strings and numerical features | Candidate lipids or formulations to test |
+That's exactly the right experiment to run, because success and failure both tell you something important. If a model is handed the unperturbed state of a new cell type, told to suppress a specific gene, and correctly predicts what the cell looks like afterward, it has done something more interesting than pattern-matching inside a familiar dataset — it has transferred biological structure into a genuinely new context. But even a clean success there doesn't prove the model has discovered the underlying causal mechanism in any sense a biologist would recognize. It may simply have learned a highly effective approximation that happens to generalize well. That distinction is worth keeping in view through the rest of this chapter: prediction can precede explanation, and it's possible that useful intelligence can precede any abstraction a human would find legible at all.
 
-The first stage begins with the four-letter alphabet of DNA (A, C, G and T), or RNA, which uses U in place of T. A model might process one base at a time. It might group bases into fixed-length **k-mers**, such as 3-mers or 6-mers. It might instead learn a vocabulary of frequently useful chunks. These are alternative engineering choices, not different biological alphabets. Research comparing genome language models shows that tokenisation can materially affect what a model learns and how efficiently it processes long sequences. [Sanabria et al., “DNA language model GROVER learns sequence context in the human genome,” _Nature Machine Intelligence_, 2024](https://www.nature.com/articles/s42256-024-00872-0).
+## Biology May Be Showing Us What Machine-Native Intelligence Looks Like
 
-Once a mutation is translated into a possible protein fragment, the representation changes. Proteins are commonly described as sequences drawn from 20 standard amino acids. A **peptide** is a short chain of amino acids. A **neoantigen** is a tumour-associated peptide created by a mutation and potentially recognisable as foreign by the immune system.
+This reframes the question this chapter eventually has to ask about machine code. It's not quite "what happens if we train an AI on machine code," which treats code the way an early genome model treats DNA — as a sequence to be pattern-matched. The sharper question, borrowed directly from the virtual-cell framing, is: what happens when we train an AI directly on the relationship between machine instructions and machine behavior? DNA alone wasn't enough to explain the cell. Machine code alone may not be enough either. In both cases the powerful training signal isn't the sequence in isolation — it's intervention followed by consequence: change the gene, then observe the cell; change the program, then execute it and measure what happens.
 
-The peptide alone is not enough. HLA molecules display selected peptides to immune cells, and people inherit different HLA variants. A model may therefore compare two amino-acid sequences: the candidate peptide and the patient's HLA molecule. For HLA class I, candidate peptides are commonly about 8–11 amino acids long, although other presentation pathways can involve longer peptides. Modern prediction systems can combine peptide sequence, HLA sequence, source-protein context and other evidence to estimate presentation. [Liu et al., “Towards designing improved cancer immunotherapy targets with a peptide-MHC-I presentation model, HLApollo,” _Nature Communications_, 2024](https://www.nature.com/articles/s41467-024-54887-7).
+The computing version of that loop has one enormous advantage the biological version doesn't: it's dramatically cheaper and faster to run. That asymmetry is worth taking seriously, because it may make computation an unusually favorable environment for discovering machine-native abstractions — arguably a better one, in practical terms, than biology itself, even though biology is what first made the idea concrete.
 
-If candidates survive prioritisation and experimental review, the problem may change again: how should an mRNA encode them? Biology already supplies a meaningful three-base grouping. A **codon** is a triplet of nucleotides that specifies an amino acid or a stop signal. Because several codons can specify the same amino acid, many mRNA sequences can encode the same protein. Optimisation can explore those alternatives while preserving the intended amino-acid sequence, seeking better translation or stability. Codon-level input is natural for some systems, but it is not mandatory; other models work directly with nucleotide sequences or combine learned models with established optimisation methods. [Li et al., “Deep generative optimization of mRNA codon sequences for enhanced mRNA translation and therapeutic efficacy,” _Nature Communications_, 2025](https://www.nature.com/articles/s41467-025-64894-x).
+## The Environment Becomes the Teacher
 
-Delivery is the useful exception to the sequence story. A lipid molecule is naturally described by atoms and bonds, which form a graph rather than a line. It can be flattened into a text-like chemical notation called **SMILES** and tokenised for a sequence model, but a graph model can preserve the bond structure directly. The complete nanoparticle formulation is more than one molecular graph: proportions of different lipids, particle properties, manufacturing conditions and experimental delivery results may all matter. A current lipid-nanoparticle database therefore combines molecular structures with formulation and assay data rather than pretending the entire delivery problem is one sentence-shaped input. [Lipid Nanoparticle Database, _Nature Communications_, 2026](https://www.nature.com/articles/s41467-026-68818-1).
+Traditional AI training has mostly meant learning from a fixed dataset assembled in advance. But a system connected to a live environment can learn from consequences instead, and the same basic loop shows up almost unchanged across very different domains. A programming model can generate code, compile it, execute it, test it, measure its speed or memory or energy use, and revise. A biological model can propose an intervention, predict the cell's response, have the experiment actually run, measure what really happened, and update. A robot can propose an action, move, observe the result, and adjust its policy. An engineering system can design a component, simulate it, test it, measure the outcome, and redesign. Strip away the domain-specific vocabulary and the underlying structure is the same in each case: generate, intervene, observe, learn. That loop may turn out to matter more to the future of AI than the traditional boundaries between language models, vision models, and biological models — because it's a claim about *how* a system learns, not about which kind of data it happens to be learning from.
 
-This example carries three lessons beyond medicine.
+## The Great Advantage of Computation
 
-First, the “token” is not always a word. It is a chosen computational unit.
+This is where the story can circle back to machine code specifically, because biology's version of that loop carries a real cost computing doesn't. Biological experiments are slow, expensive, and sometimes ethically impossible to run at all. A cell may take hours or days to respond to a perturbation. An organism may take years. A clinical trial can take longer still. Computers don't share that constraint. A candidate program can be executed millions of times in an afternoon. A compiler can test thousands of transformations against a benchmark before lunch. A simulator can explore billions of states without anyone waiting on a lab result.
 
-Second, one real objective may require several specialised models and representations connected in a pipeline.
+That makes computation an extraordinarily fertile environment for exactly the kind of machine-native learning this chapter has been building toward. Imagine a model generating ten thousand candidate versions of a sorting routine. Each one can be compiled and executed immediately. The versions that don't work are simply discarded. The ones that survive can be measured for speed, memory use, and energy consumption, and the best of those become training examples for the next round. Run that cycle enough times, and the model is no longer learning primarily from human descriptions of what a good program looks like. It's learning from programs that actually work, verified the same way an engineer verifies anything — by running it and checking.
 
-Third, a prediction is not a physical result. Candidate neoantigens, mRNA sequences and delivery formulations still require conventional analysis, laboratory experiments, safety assessment and clinical validation. The models help search an enormous space of possibilities. Biology supplies the verdict.
+## Human Abstraction Versus Machine-Discovered Abstraction
 
-## What Genome Models Have Already Learned
+This brings the argument back to its central hypothesis. Human civilization has spent centuries constructing abstraction layers for computing — programming languages, compilers, operating systems, APIs, databases, frameworks, algorithms, instruction sets — and those abstractions are extraordinarily powerful. They let people control machines without understanding every transistor underneath. But they were designed around human cognitive limits, for human hands and human short-term memory, not around whatever representation would actually be most efficient for a machine to reason in. A machine doesn't necessarily need them in the same form. A sufficiently capable AI might discover representations that are difficult for a person to read but extremely effective for prediction, optimization, and design.
 
-This is not merely a philosophical exercise. Genome models already demonstrate that sequence prediction can produce representations containing biologically useful structure.
+The question worth asking, then, isn't whether AI will replace programming languages. It's whether AI could discover computational abstractions that are better suited to machines than the ones humans built for ourselves. Biology gives real reason to take that possibility seriously, because evolution never designed cells for human comprehension — it produced mechanisms that simply work, evaluated purely by whether they helped something survive and reproduce, with zero regard for whether a person could later make sense of them. The abstractions embedded inside biological systems were never obligated to be the ones a human engineer would have chosen to invent.
 
-Evo 2 is a biological foundation model trained at single-nucleotide resolution on more than nine trillion DNA bases drawn from across the domains of life. Its context can extend to one million tokens. The published work reports that internal representations correspond with features including exon–intron boundaries, transcription-factor binding sites, protein structural elements, and regions associated with bacteriophages. It can predict effects of genetic variation and generate long biological sequences. [Brixi et al., “Genome modelling and design across all domains of life with Evo 2,” _Nature_, 2026](https://www.nature.com/articles/s41586-026-10176-5).
+## Three Kinds of Intelligence
 
-That result matters conceptually. Nobody had to provide the model with an English lecture before every sequence explaining what an exon was. The training process encouraged the model to learn regularities useful for predicting biological sequences. Some of those regularities align with biological structures that scientists can name.
+It's useful, at this point, to separate three increasingly ambitious forms this kind of learning can take.
 
-AlphaGenome approaches a related problem from another direction. Given a long DNA sequence, it predicts thousands of molecular measurements connected with gene expression, splicing, chromatin state, accessibility, transcription-factor binding, and physical DNA contacts. In its published evaluations it matched or outperformed external models across most reported variant-effect benchmarks. Its authors also state a critical limitation: predictions of molecular effects do not directly establish the consequences for a whole organism or person. [Avsec et al., “Advancing regulatory variant effect prediction with AlphaGenome,” _Nature_, 2026](https://www.nature.com/articles/s41586-025-10014-0).
+The first is **language-native AI** — a model that learns from human representations of the world and produces human-readable output in return. This is the world today's large language models mostly live in: human descriptions in, human-legible answers out.
 
-The distinction is essential. A model can become increasingly good at mapping:
+The second is **domain-native AI** — a model that learns directly from the structure of a domain rather than from human descriptions of it, and produces a domain-specific prediction or design as a result. Genome models like Evo, and virtual-cell models like Arc's, are early examples of this direction: the training signal is the domain itself, not a human's account of the domain.
 
-> sequence → predicted molecular effect
+The third, and the more radical possibility, is **reality-native AI** — a model that learns continuously from intervention and consequence rather than from a fixed dataset at all: it acts, the world responds, the response is measured, the model updates, and it acts again, in a loop that never has to stop. Here the model isn't primarily learning what humans have written about the world. It's learning what the world actually does when it's touched.
 
-without possessing a complete model of:
+## The Ultimate AI May Need All Three
 
-> sequence → cell → tissue → organ → organism → environment → lifetime outcome
+It would be a mistake to end this chapter by declaring that machine-native AI will simply replace language models — the more interesting possibility is that the three eventually work together, each supplying something the other two can't. Language supplies the answer to what humans actually want. Domain-native representations supply an understanding of how the underlying system works. Reality supplies the only honest answer to whether a given attempt actually worked. An architecture built from all three might run roughly like this: human intent expressed in language, translated by a language model into learned abstractions, which are handed off to domain-specific models — genomic, cellular, computational, whichever fits the problem — that reason in whatever representation is native to that domain, produce an action or a design, and then submit it to reality itself as the final judge, with the outcome fed back to correct every layer above it. The language model becomes the interface to human goals. The domain models become the engines of specialized reasoning. The physical or computational environment becomes the arbiter that decides whether any of it actually worked.
 
-Prediction can expand faster than causal understanding.
+## From DNA to Machine-Native AI
 
-But prediction is no longer the entire story.
+That brings the title back into focus. The story starts with DNA because DNA demonstrates something genuinely striking on its own: a four-letter alphabet can encode staggering complexity. But DNA alone doesn't explain life — life emerges from DNA interacting with an elaborate physical system built around it, which is exactly why the virtual cell belongs in the story next. It represents a serious attempt to learn that system directly: not just the sequence, but the transitions the sequence produces when it's deliberately disturbed. Only after that does it make sense to turn to machine code, where the environment is far more tractable and a model can execute candidate designs millions of times over and get back a precise, immediate measurement of what happened — an unusually powerful laboratory for an AI that might, given the chance, discover abstractions of its own.
 
-## When a Genome Model Began to Design
+The progression, then, runs from DNA to the cell to the virtual cell to machine code to whatever an AI trained natively on consequences rather than descriptions eventually becomes. And the question underneath all four steps stays the same throughout: how much structure can a learning system discover for itself, once we stop handing it our abstractions and instead give it sequences, environments, and consequences?
 
-Researchers used Evo 1 and Evo 2 to generate complete genomes modelled on the bacteriophage ΦX174. A bacteriophage is a virus that infects bacteria. ΦX174 was a tractable experimental target: its genome is only 5,386 nucleotides long and contains 11 genes, yet those genes and regulatory elements must cooperate for the virus to assemble, infect a suitable bacterium, reproduce, and propagate.
+Perhaps the answer turns out to be very little, and human-designed abstractions prove indispensable after all. Or perhaps this is an early stage of a genuine transition — one in which machines begin constructing representations that aren't merely translations of human thought into a form a computer can process, but native to the systems they're actually trying to understand and control. Humans spent thousands of years building abstractions to make the world legible to ourselves. The next stage of AI may not be doing that at all. It may be building systems that construct their own abstractions because those abstractions make the world predictable and controllable to the machine itself — whether or not a human being could ever read them.
 
-The researchers did not simply ask a general chatbot to invent a useful virus. They created a pipeline. They specialised genome models using related phage sequences. They constrained host-related features. They built annotation and filtering systems. They generated candidates, synthesised DNA, introduced it into bacteria, and tested what happened.
-
-Of 285 assembled and tested designs, 16 produced viable phages. Some demonstrated favourable laboratory performance relative to the reference phage. [King et al., “Generative design of novel bacteriophages with genome language models,” _bioRxiv_, 2025](https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1).
-
-As of 8 August 2026, this phage-design report remained identifiable as a preprint. It should not be confused with the peer-reviewed publication of the original Evo model in _Science_ or Evo 2 in _Nature_. The result is impressive, but its publication status and later evaluations must remain visible.
-
-What did the experiment prove?
-
-It did not prove that the model understood life.
-
-It did not prove that the model could design a safe treatment.
-
-It did not prove that the model could predict every effect of its generated sequences.
-
-It proved something narrower and still extraordinary:
-
-> A model trained on genomic sequences could learn enough of their distributed constraints to propose complete DNA sequences from which some functioning biological entities emerged after synthesis and experimental testing.
-
-The approximately 94 per cent failure rate is not an embarrassment to be hidden. It reveals the structure of the achievement. The model generated possibilities. Biology selected among them.
-
-The model's output was not self-validating. It could not stare more confidently at a sequence and make the phage real. The sequence had to enter a physical causal system. The bacteria, molecular machinery, experimental conditions, and measurements supplied the verdict.
-
-An independent 2026 preprint analysing the designs argued that Evo substantially enriched for viable sequences compared with random mutation while remaining largely within known evolutionary territory. It characterised the model as a powerful but bounded evolutionary optimiser rather than an unconstrained inventor of radically new biology. It also warned against extrapolating from a compact phage to larger viruses or more complex genomes. [“Quantifying evolutionary novelty and design efficiency in generative genome design,” _bioRxiv_, 2026](https://www.biorxiv.org/content/10.64898/2026.06.12.731871v1.full).
-
-This qualification makes the result more informative, not less. The model does not need magic. It can be valuable by searching a vast design space far more intelligently than random variation.
-
-## Competence Without a Complete Theory
-
-The phage experiment exposes an uncomfortable possibility for anyone who equates intelligence with verbal explanation.
-
-A system may become capable of producing successful designs without possessing a complete causal theory that it can express to a scientist.
-
-That sounds strange only because humans often learn through explanation. A student is asked to show the working. An engineer is expected to justify a design. A scientist proposes a mechanism. Language makes reasoning visible and allows other people to criticise it.
-
-But nature does not require a verbal explanation before something works. Evolution produced wings without writing an account of aerodynamics. It produced immune systems without a textbook of immunology. Selection retained variations that survived and reproduced.
-
-A model trained on sequences and outcomes may find regularities that support successful prediction or generation without translating those regularities into human concepts. Its competence may be real even when its explanation is incomplete.
-
-This does not make explanation unnecessary. Explanation helps people determine when a result will generalise, which causal variables matter, what could go wrong, and whether an intervention is safe. It allows knowledge to transfer beyond one collection of examples. But explanation and performance are not identical.
-
-The deeper lesson is:
-
-> Models can acquire operationally useful structure before humans know whether the model has recovered the correct causal structure.
-
-That gap between capability and understanding is one of the defining features of modern AI.
-
-## Human Language Gives a Model a Head Start
-
-Why, then, have general language models become so broadly capable?
-
-Human language is not merely a stream of arbitrary symbols. It is a culturally accumulated compression of human experience. Words name objects, actions, roles, emotions, institutions, quantities, relationships, and abstractions. Sentences connect causes with effects, agents with intentions, evidence with claims, and present actions with imagined futures.
-
-Consider:
-
-> The king was killed, so the prince inherited the throne.
-
-The sentence is short, but it invokes people, death, time, causality, kinship, political institutions, succession rules, and assumptions about a society. A language model trained across vast amounts of human text receives repeated exposure to these compressed conceptual structures.
-
-Language was not consciously designed once and for all as a perfect representation of thought. It was shaped through biological and cultural evolution to support communication among people. It therefore offers a model an enormous head start in abstraction space.
-
-DNA offers a different head start. It exposes the sequences on which biological processes depend, but it does not label their significance in the terms humans use. Machine code offers yet another. It exposes executable operations, but concepts such as “sorting,” “database,” or “user intention” may be distributed across thousands or millions of instructions and runtime states.
-
-This produces a plausible hypothesis:
-
-> The higher the abstraction level of the training representation, the easier it may be for a model to acquire the high-level concepts already encoded in that representation.
-
-The qualification matters. Easier is not the same as ultimately better.
-
-## The Advantage of the Lower Level
-
-Human language is semantically rich but operationally ambiguous.
-
-Machine code is semantically sparse from a human perspective but operationally precise.
-
-DNA is operationally consequential but interpreted through a changing, context-dependent living system.
-
-The low-level representation has a special advantage: it can be connected directly to outcomes.
-
-A paragraph describing a fast algorithm may be persuasive and wrong. A program claiming to be fast can be executed. Its output can be checked. Its time can be measured. Its memory consumption can be recorded. Its energy use can be estimated or measured. Its crashes can be observed.
-
-This creates a training loop that text alone cannot supply:
-
-> generate → execute → measure → modify → execute again
-
-The environment becomes a teacher.
-
-Suppose three candidate implementations all produce the correct output:
-
-```text
-Program A → 1.42 milliseconds
-Program B → 1.17 milliseconds
-Program C → 0.94 milliseconds
-```
-
-For the narrow objective of speed under specified conditions, the result is not a matter of eloquence. Candidate C is faster.
-
-Reality gives the model an objective signal.
-
-But even here, human judgement has not vanished. Who selected the input distribution? What counts as correct? Is numerical precision preserved? Did the program exploit the benchmark? Does it remain secure? Does it use more energy to save time? Does it work on other machines? Has it moved cost outside the measured boundary?
-
-Verifiability does not eliminate specification. It makes parts of the specification enforceable.
-
-## From DNA to Machine Code
-
-DNA is sometimes compared with machine code for biology. The analogy is imperfect, but it reveals a useful parallel.
-
-In biology:
-
-> genome sequence → molecular interactions → cell behaviour → experimental outcome
-
-In computing:
-
-> machine instructions → processor state transitions → program behaviour → measured outcome
-
-The computational loop is generally cheaper and faster. A candidate program can be executed millions of times without synthesising DNA or culturing cells. Processor state can often be inspected with far greater precision than the internal state of a living organism. Tests can sometimes prove properties across bounded input spaces.
-
-If genome models can learn enough from DNA to produce viable candidates, what might a model learn from the representation in which computation actually runs?
-
-## Three AIs
-
-Imagine asking three systems to work with addition.
-
-The first is a language model. It has seen sentences such as:
-
-> John has 25 apples and buys 37 more.
-
-It learns addition through human explanations, examples, symbols, textbooks, conversations, and code.
-
-The second is a conventional machine-code model. It sees recurring instruction patterns:
-
-> load → add → store → compare → jump
-
-It becomes good at predicting which instructions tend to follow others.
-
-The third receives programs compiled for several different processors. It sees x86, ARM64, and RISC-V implementations of the same underlying tasks. Nobody gives it one universal language in which all programs have already been translated.
-
-Eventually, it may detect:
-
-> These different sequences of instructions perform the same computation.
-
-That is the crucial step. The system has begun separating what is computed from how a particular machine computes it.
-
-## Discovering an Esperanto for Computation
-
-Consider three human sentences:
-
-> **English:** The cat is on the table.  
-> **French:** Le chat est sur la table.  
-> **Chinese:** 猫在桌子上。
-
-Their surface forms differ, but they communicate approximately the same situation. A multilingual model can learn a representation that connects them.
-
-Now replace the languages with instruction sets:
-
-- x86-64
-- ARM64
-- RISC-V
-- GPU instructions
-- WebAssembly
-
-Different instructions, register systems, memory rules, and architectural effects can participate in programs that implement the same algorithm.
-
-Today, engineers often normalise these differences through an intermediate representation such as LLVM IR or through binary lifting. In informal terms, the analysis system is given an Esperanto into which the different machine languages can be translated.
-
-The thought experiment asks:
-
-> Could a model discover its own Esperanto for computation?
-
-The phrase is deliberately loose. The learned representation might not resemble a readable language. It might be a distributed geometry inside a neural network. It might combine program structure, state transitions, invariants, data flow, memory behaviour, and predictions of execution.
-
-The model might internally compress ten thousand instructions into something functioning like:
-
-> SORT
-
-or:
-
-> SEARCH
-
-or:
-
-> CACHE-FRIENDLY MATRIX OPERATION FOR THIS HARDWARE
-
-Those labels are human approximations. The model's internal concepts could divide computation differently from us.
-
-## Has Anything Like This Happened?
-
-Parts of the idea already exist.
-
-AlphaDev treated assembly-level algorithm discovery as a reinforcement-learning problem. The system constructed instruction sequences, executed them on test inputs, and received rewards connected with correctness and latency. It discovered faster small sorting algorithms, including instruction sequences incorporated into the LLVM C++ sorting library. Its representation combined a transformer over assembly instructions with encoded processor register and memory state. [Mankowitz et al., “Faster sorting algorithms discovered using deep reinforcement learning,” _Nature_, 2023](https://www.nature.com/articles/s41586-023-06004-9).
-
-AlphaDev did not become a universal machine-code intelligence. It operated in tightly defined environments with constrained action spaces, carefully designed rewards, extensive computation, and specific tasks. But it established a crucial fact:
-
-> A learning-and-search system can operate at the assembly level, use execution as feedback, and discover improvements beyond established human implementations.
-
-AlphaTensor addressed a different computational level. It treated the discovery of matrix-multiplication algorithms as a game involving tensor decomposition. The system found efficient algorithms without beginning from ordinary linguistic descriptions of how matrix multiplication should be performed. [Fawzi et al., “Discovering faster matrix multiplication algorithms with reinforcement learning,” _Nature_, 2022](https://www.nature.com/articles/s41586-022-05172-4).
-
-AlphaChip used reinforcement learning for chip floorplanning. It learned to place circuit components under interacting design constraints, and versions of the approach have been used in Google's TPU design process. [Google DeepMind, “How AlphaChip transformed computer chip design,” 2024](https://deepmind.google/blog/how-alphachip-transformed-computer-chip-design/).
-
-Superoptimisation predates these systems. STOKE used stochastic search over x86-64 binaries to find functionally equivalent programs that could match or outperform compiler-generated or expert assembly in bounded settings. Later work has explored neural superoptimisation, execution-guided program synthesis, and repair based on observed failures.
-
-These projects do not prove the grand hypothesis. They demonstrate that computation offers unusually strong feedback and that useful discoveries can occur below the level of ordinary human-written source code.
-
-## What Does “Without High-Level Reasoning” Mean?
-
-The phrase sounds simple but hides several different propositions.
-
-First, a model might work without producing a natural-language chain of thought. That does not mean it lacks intermediate computation. It may transform internal representations across many layers while never expressing those transformations in words.
-
-Second, a model might work without being given human concepts such as sorting, caching, or recursion. It could learn recurring structures from examples and outcomes.
-
-Third, a specialised model might outperform a general language model within one domain without possessing broad conceptual knowledge.
-
-Fourth, and most radically, a model might succeed without forming any hierarchical abstraction at all—through local pattern matching alone.
-
-The first three are plausible. The fourth is much less clear. A system may look as though it operates without high-level reasoning while actually developing latent structures that serve the same functional purpose.
-
-This suggests a more precise question:
-
-> Can a model become highly capable without human-language reasoning and without human-supplied abstractions, by learning its own domain-specific abstractions from low-level sequences and verifiable outcomes?
-
-That is different from asking whether it can succeed without internal abstraction of any kind.
-
-The ultimate model may not think in English. It may still think—if that word is appropriate—in hierarchical representations learned from the structure of its environment.
-
-## The Abstraction-Head-Start Hypothesis
-
-Language models begin halfway up a ladder constructed by civilisation.
-
-Human language already contains names for algorithms, intentions, causes, programs, objects, institutions, and values. Textbooks explain abstraction. Code repositories pair requirements with implementations. Scientific papers connect observations with theories. Discussion records disagreement and correction.
-
-A language model inherits this organised conceptual residue.
-
-A raw machine-code model begins lower. It sees operations and state changes. To become general, it may have to rediscover structures that humans supplied to language models explicitly.
-
-This is the abstraction-head-start hypothesis:
-
-> High-level representations make general learning efficient because previous intelligences have already compressed the world into reusable concepts.
-
-It helps explain why language models can discuss thousands of domains after one broad training process.
-
-## The Domain-Native-Discovery Hypothesis
-
-The rival hypothesis begins from a different observation.
-
-Human abstractions were designed for human cognitive limits and communication needs. They may not be the best possible representations for every task. A model learning directly from DNA may discover biological regularities that scientists have never formulated in language. A model learning from machine execution may discover computational structures that do not align with functions, classes, compiler passes, or instruction sets created by engineers.
-
-This is the domain-native-discovery hypothesis:
-
-> Given sufficient data, capacity, interaction, search, and verifiable feedback, a model can develop internal abstractions better suited to a specialised domain than the abstractions inherited from human language.
-
-Evo's phages provide early, bounded evidence consistent with this possibility. AlphaDev provides another. Neither establishes that high-level reasoning is unnecessary. Both show that useful design can emerge from specialised representations connected to selection or verification.
-
-The two hypotheses may both be true.
-
-Language gives a model a head start.
-
-Domain-native learning may give it a higher specialised ceiling.
-
-## Why Multiple Architectures Matter
-
-A model trained only on ARM64 may become an excellent ARM64 specialist. It could learn instruction patterns, pipeline behaviour, calling conventions, and common optimisations. But much of its knowledge could remain tied to ARM.
-
-Training across x86-64, ARM64, RISC-V, GPUs, WebAssembly, and compiler representations creates a different pressure. The model repeatedly sees different implementations of equivalent computations.
-
-If it organises its internal representation only by instruction set, it may fail to transfer.
-
-If it begins grouping programs by behaviour, it has learned something above the instruction set.
-
-An informative experiment would train on x86 and ARM, then test on RISC-V. A more demanding one would provide the specification and simulator for a previously unseen processor. Could the model learn to compile or optimise for it with little additional experience?
-
-Success would not prove that the model understood computation universally. It would demonstrate transferable structure not reducible to memorising one architecture.
-
-The hardware running the AI need not be the hardware it targets. A model on a GPU cluster can generate code for an iPhone, just as a conventional compiler can run on one architecture while targeting another.
-
-> AI execution hardware is not target hardware.
-
-The requirement is access to a reliable compiler, emulator, simulator, or physical machine that can return evidence.
-
-## The Ultimate Model Is Not Trapped in Machine Code
-
-The most powerful design would probably not use only machine code.
-
-Raw instructions provide precise connection to execution, but they throw away or obscure useful high-level structure. Natural language provides goals and explanations but is far removed from processor behaviour. Source code, compiler intermediate representations, control-flow graphs, data-flow structures, traces, and hardware descriptions each reveal something different.
-
-The ultimate model would move among them:
-
-> human intention  
-> ↓  
-> natural language and conceptual knowledge  
-> ↓  
-> learned internal abstractions  
-> ↓  
-> algorithms and source code  
-> ↓  
-> compiler representations  
-> ↓  
-> machine instructions  
-> ↓  
-> processor and memory state  
-> ↓  
-> execution measurements  
-> ↓  
-> learning and the next design
-
-Each representation supplies an advantage.
-
-Natural language connects the system to human purposes.
-
-Source code exposes named structure.
-
-Compiler representations make transformations tractable.
-
-Machine code connects to actual hardware behaviour.
-
-Execution supplies evidence.
-
-Learned latent representations allow the model to compress relationships in ways no human language designer anticipated.
-
-The system is not language-native or machine-code-native. It is representation-flexible.
-
-## What Would We Ask It to Do?
-
-The first serious experiment should not be “become generally intelligent.” It should be bounded, measurable, and difficult.
-
-For example:
-
-> Take this existing piece of software and make it twice as fast or twice as energy efficient without changing its required behaviour.
-
-That simple sentence hides the real experimental work. The system would need a frozen specification, extensive tests, held-out inputs, security constraints, numerical tolerances, resource boundaries, and repeatable measurements. It would be compared with expert programmers, optimising compilers, conventional search, and existing AI coding tools.
-
-It must not receive credit for deleting work, lowering output quality, exploiting the test harness, caching the answer improperly, shifting cost to another machine, or tuning only for one public benchmark.
-
-If a system repeatedly achieved large improvements across unseen workloads and hardware while preserving behaviour, it would deserve attention. It would show that learning and search connected directly to execution can recover optimisations beyond ordinary language-mediated programming.
-
-## The Highest-Payoff Use: Improving Computing Itself
-
-The largest payoff may not be writing ordinary applications. It may be improving the computational substrate.
-
-Imagine assigning this objective:
-
-> Minimise the energy required for this workload while preserving correctness, required performance, and safety.
-
-The system could search across:
-
-- algorithms
-- data structures
-- compiler strategies
-- memory layouts
-- cache use
-- vectorisation
-- parallelisation
-- GPU kernels
-- runtimes
-- operating-system mechanisms
-- processor instructions
-- accelerator designs
-- chip layouts
-
-Then it could run or simulate candidates and measure the results.
-
-The long-term loop is tempting:
-
-> better optimiser → better code → better hardware → more efficient compute → better optimiser
-
-This is not an automatic explosion. Fabrication takes time and capital. Energy and physical law impose boundaries. Simulation can be wrong. Security and verification grow harder as the optimiser controls more layers. Improvements face diminishing returns. An optimiser can exploit a reward function instead of improving the intended system.
-
-But even a bounded version could matter enormously. Computing consumes resources across nearly every modern industry. Small improvements in widely used algorithms or hardware can propagate into billions of executions.
-
-## Beyond Computing
-
-The same structure extends to domains with reliable simulators or experiments:
-
-> candidate molecule → simulation or assay → measured property → revised molecule
-
-> candidate wing → aerodynamic simulation → drag and lift → revised wing
-
-> candidate protein → structural prediction and experiment → measured function → revised sequence
-
-> control policy → robot action → observed result → revised policy
-
-The crucial ingredient is not machine code. It is the closed loop between representation, intervention, and evidence.
-
-Where the simulator is accurate, learning can proceed rapidly.
-
-Where the simulator omits decisive aspects of reality, the model may optimise the simulation rather than the world.
-
-Biology reminds us of that difference. A genome model can propose a candidate, but the living system remains the final test.
-
-## What Is the Model Actually Learning?
-
-After this journey, the original question returns in a sharper form.
-
-An AI model is not simply a collection of facts.
-
-It is not merely an imitation of language.
-
-It is not necessarily a transparent theory.
-
-It is a learned transformation: a parameterised system shaped by data and objectives so that inputs lead to useful predictions, generations, decisions, or actions.
-
-What it learns depends on at least five things:
-
-1. **Representation:** words, DNA bases, source code, machine instructions, images, sensor readings, graphs, or combinations.
-2. **Objective:** predict the next token, reconstruct missing data, classify a function, minimise error, win a game, preserve correctness, reduce latency, or maximise experimental success.
-3. **Environment:** a static corpus, a compiler, a simulator, a processor, a laboratory, a market, or the physical world.
-4. **Feedback:** human demonstrations, labels, test results, rewards, failures, measurements, or selection.
-5. **Architecture and search:** the computational machinery that determines what relationships the model can efficiently represent and how candidate solutions are explored.
-
-Change any of these and the resulting intelligence may change.
-
-A language model trained on human text learns relationships useful for modelling human expression and the knowledge embedded within it.
-
-A genome model trained on DNA learns relationships useful for modelling biological sequences.
-
-A machine-code system trained through execution learns relationships useful for producing computational outcomes.
-
-None is automatically universal. Each sees the world through a chosen interface.
-
-## Is a Learned Representation Understanding?
-
-The word “understanding” creates endless confusion because people use it for several different achievements.
-
-A model may distinguish two kinds of input.
-
-It may predict what happens next.
-
-It may generalise to unfamiliar cases.
-
-It may construct a working design.
-
-It may explain the design in language.
-
-It may identify causal variables.
-
-It may know when its knowledge is insufficient.
-
-It may adapt through experimentation.
-
-These are not the same capability.
-
-Rather than asking whether the model simply “understands,” ask:
-
-- What distinctions does its representation preserve?
-- Which transformations can it perform?
-- What outcomes can it predict?
-- Can it intervene successfully?
-- Does it transfer beyond its training distribution?
-- Can it explain or expose its evidence?
-- Can independent tests verify its result?
-- Does it recognise uncertainty and failure?
-
-Evo may possess enough operational understanding of compact phage genomes to enrich for viable designs without possessing a complete causal understanding of virology.
-
-AlphaDev may possess enough operational understanding of assembly-level sorting to discover faster instruction sequences without possessing the general understanding of a computer scientist.
-
-Capability is layered.
-
-Understanding, if we use the word at all, should be described by its scope.
-
-## The Risk of Invisible Abstractions
-
-If models learn their own internal abstractions, performance may improve faster than interpretability.
-
-A human-designed abstraction such as a function has a name, an interface, documentation, and intended semantics. A learned abstraction may be distributed across parameters. It may be difficult to inspect. It may work reliably on familiar inputs and fail for reasons no engineer anticipates.
-
-This creates a paradox.
-
-The system may discover representations better suited to the domain precisely because they are not constrained by human concepts. But the less its reasoning resembles ours, the harder it may be to verify through explanation.
-
-The answer cannot be to demand that every internal operation be translated into a persuasive paragraph. A fluent explanation can be fabricated after the fact. Nor can the answer be blind trust in performance.
-
-The stronger response is layered assurance:
-
-- formal constraints where possible
-- exhaustive tests for bounded spaces
-- diverse held-out evaluations
-- adversarial testing
-- independent implementations
-- interpretable probes
-- causal experiments
-- sandboxed deployment
-- limited authority
-- monitoring and rollback
-- physical validation where models meet the world
-
-The more powerful the model becomes, the more important the surrounding system becomes.
-
-## A Research Programme, Not a Single Model
-
-The ultimate thought experiment could be investigated step by step.
-
-Begin with equivalent small programs compiled to x86-64, ARM64, and RISC-V.
-
-Train one model on a single architecture and another across architectures.
-
-Ask each to retrieve equivalent programs, classify what they do, and transfer to a held-out architecture.
-
-Compare them with a model given LLVM IR. If the raw-code model fails, the result shows the value of human-designed abstraction. If it succeeds, inspect whether it learned behaviour rather than compiler fingerprints or superficial patterns.
-
-Then add execution.
-
-Ask the model to generate equivalent implementations. Run them. Reject incorrect outputs. Measure speed, memory, and energy. Test unseen inputs. Compare with compilers and human experts.
-
-Then add a new architecture.
-
-Provide its specification and emulator. Measure how quickly the model adapts.
-
-Then move across layers.
-
-Allow changes to algorithms, compiler transformations, and hardware configurations while tightening verification.
-
-At every stage, retain the possibility that the hypothesis is wrong. Perhaps language and compiler abstractions are indispensable. Perhaps learned latent representations fail to generalise. Perhaps search cost overwhelms the gains. Perhaps the model rediscovers familiar ideas inefficiently. A negative result would still teach us what abstraction contributes.
-
-## The Ultimate Question
-
-Human civilisation advances partly by constructing abstraction layers.
-
-We hide transistors behind instructions, instructions behind programming languages, languages behind frameworks, and frameworks behind applications. Each layer allows people to control more complexity without thinking about every detail below.
-
-Language models entered at the top of this stack. They learned from the representation closest to human intention.
-
-Genome models entered another ancient stack. They learned from the sequences shaped by biological evolution.
-
-A machine-native model would begin nearer the bottom of computation and learn from execution itself.
-
-The deepest possibility is not that one representation defeats the others. It is that an AI system learns to move across all of them—and constructs new abstractions between them.
-
-Then the history of abstraction changes direction.
-
-Until now, humans have designed abstraction layers so that humans can control machines.
-
-In the future, machines may learn abstraction layers that allow them to control complexity more effectively than human-designed representations alone.
-
-That possibility leads to the question this side chapter exists to explore:
-
-> Must intelligence inherit the abstractions encoded in human language, or can a model discover better abstractions directly from the structure and consequences of the world?
-
-Biology suggests that useful design can emerge without a complete verbal theory.
-
-Machine execution offers an environment in which candidate abstractions can be tested at extraordinary speed.
-
-Human language remains the interface through which we express what we want and why it matters.
-
-The ultimate AI model may combine all three:
-
-> language for intention  
-> domain-native representations for design  
-> reality for verification
-
-That is not yet a finished model.
-
-It is a direction for understanding what models could become.
-
-## Questions to Pursue Next
-
-1. Do cross-architecture binary models already learn representations organised by function rather than instruction set?
-2. How much of their transfer comes from compiler fingerprints, shared constants, or dataset leakage?
-3. What changes when explicit intermediate representations are withheld?
-4. Can execution-trained models invent stable reusable abstractions, or only local optimisations?
-5. How does a learned computational representation compare with LLVM IR?
-6. Can a model adapt efficiently to a genuinely unseen instruction set?
-7. Does natural-language reasoning improve search, or merely make the result easier to communicate?
-8. Can a non-verbal specialised model outperform a reasoning model while remaining controllable?
-9. Which objectives produce genuine improvements rather than reward hacking?
-10. How should semantic equivalence be established for stateful, concurrent, networked, or probabilistic programs?
-11. Can learned abstractions transfer between software optimisation and hardware design?
-12. What interpretability is necessary when success can be tested independently?
-13. Where do simulations become unreliable substitutes for physical reality?
-14. Does domain-native learning create a specialised ceiling higher than language-mediated learning?
-15. What would falsify the claim that models can discover their own useful abstraction layers?
-
-## Research Status
-
-This is an exploratory argument, not a settled forecast. Its established examples are linked to their sources; its larger claims about machine-native and representation-flexible AI remain hypotheses to investigate. Further work should include a primary-source literature review of cross-architecture binary representation learning, program synthesis, superoptimisation, learned compiler optimisation, reinforcement learning from execution, hardware–software co-design, latent reasoning, interpretability, and reward hacking.
+If that turns out to be true, the question worth asking isn't *can AI think like a human*. It's a stranger and, in the long run, probably more important one: what does thinking look like when the intelligence doing it is free to choose its own representation of the world?
