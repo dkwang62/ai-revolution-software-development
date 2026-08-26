@@ -6,6 +6,10 @@ Transformers, like CNNs, are built from layers: information enters, gets transfo
 
 Take: "The bank raised its interest rate because it feared inflation." The word "it," alone, carries almost no information about what it refers to — we resolve it by relationship, "it" to "bank," "bank" to "interest rate," "interest rate" to "inflation." Discovering exactly these relationships is what attention does.
 
+[![How a Transformer turns input text into repeated attention, computation, and next-token prediction](<figures/FIG-SC-04 Transformer Communicate Compute Predict.png>)](<figures/FIG-SC-04 Transformer Communicate Compute Predict.png>)
+
+_A conceptual map of the main path. Exact Transformer architectures differ in details such as layer arrangement and normalisation._
+
 ## Attention and Context
 
 Text first gets broken into **tokens** — a whole word, part of one, punctuation — and each becomes a vector, a list of numbers, through **embedding**. Through attention, every token weighs how relevant every other token is to its own meaning. "Bank" in "I deposited my money at the bank" leans on "deposited" and "money"; "bank" in "We sat on the bank of the river" leans on "river." Same word, two different representations, built entirely from context.

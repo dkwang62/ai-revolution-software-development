@@ -10,6 +10,8 @@ A book about bridge engineering is not really "about words." It is the residue o
 
 When a model trains on text, it is learning from a record of human encounters with the world. It is not reading reality directly. It is trying to infer recurring structure from what people chose to record about reality. That distinction matters, and it's worth tracing carefully, because it's easy to overstate in both directions — to treat the record as a hollowed-out echo of reality, or to treat what a model recovers from it as equivalent to reality itself.
 
+[![Language as the accumulated fossil record of human encounters with reality](<figures/FIG-SC-03 Fossil Record of Thought.png>)](<figures/FIG-SC-03 Fossil Record of Thought.png>)
+
 ## Every record is a filter
 
 Reality happens. A subset of it is perceived by a human nervous system built for survival, not perfect fidelity. A subset of what is perceived gets attention. A subset of what receives attention gets encoded in memory, already shaped by prior belief. A subset of memory gets written down, shaped again by language, audience, genre, and convention. And of everything ever written, only a fraction survives, gets digitized, and enters a training corpus:

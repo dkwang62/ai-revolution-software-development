@@ -22,6 +22,10 @@ revise
 verify or stop
 ```
 
+[![A conceptual map of a 2026 AI system connecting multimodal context, a Transformer-based model, memory, tools, feedback, and action](<figures/FIG-AGENT-01 2026 AI System.png>)](<figures/FIG-AGENT-01 2026 AI System.png>)
+
+_A conceptual architecture, not a universal blueprint. Implementations vary, and not every system uses every model, memory, or tool component shown._
+
 ## Codex Is More Than a Model
 
 > **Why it matters:** Codex is powerful not because the model knows everything, but because general model intelligence is connected to project context, tools, feedback, permissions, and human supervision.
