@@ -15,6 +15,8 @@ This is the same argument this book has been making about software, extended int
 
 Three questions run underneath everything that follows, and it's worth keeping them in view as the chapter widens out into history, hardware, industry, and economics: Why couldn't machines do this before? What has AI actually changed? And what becomes possible once cheap intelligence acquires agency in the physical world?
 
+[![The progression from programmed movement through perception and intervention to networked intelligence](<figures/FIG-SC-05 Intelligence Acquires Agency.png>)](<figures/FIG-SC-05 Intelligence Acquires Agency.png>)
+
 ---
 
 # Movement 1 — We Automated Movement
