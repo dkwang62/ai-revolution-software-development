@@ -198,6 +198,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "17. The Enterprise Intelligence Layer",
       },
       {
+        slug: "side-story-intelligence-that-does-not-need-to-be-fast" as FullSlug,
+        title: "Side Story: The Intelligence That Does Not Need to Be Fast",
+        shortTitle: "Side Story: Latency-Indifferent Intelligence",
+      },
+      {
         slug: "side-chapter-from-demonstration-to-daily-work" as FullSlug,
         title: "Side Chapter: From Demonstration to Daily Work",
         shortTitle: "Side Chapter: From Demonstration to Daily Work",

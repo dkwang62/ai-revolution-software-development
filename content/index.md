@@ -75,6 +75,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 15: What Becomes Scarce When Code Becomes Cheap?]]
 - [[18-future-of-programmers|Chapter 16: The Future of Programmers]]
 - [[19-enterprise-intelligence-layer|Chapter 17: The Enterprise Intelligence Layer]]
+- [[side-story-intelligence-that-does-not-need-to-be-fast|Side Story: The Intelligence That Does Not Need to Be Fast]]
 - [[side-chapter-from-demonstration-to-daily-work|Side Chapter: From Demonstration to Daily Work]]
 - [[20-five-year-and-ten-year-scenarios|Chapter 18: Five-Year and Ten-Year Scenarios]]
 - [[side-story-when-intelligence-acquires-agency|Side Story: When Intelligence Acquires Agency]]
