@@ -1,6 +1,8 @@
 # From DNA to a Machine-Native AI
 ## Can a Model Discover Its Own Abstraction Layer?
 
+![From DNA to a Machine-Native AI](<figures/Machine abstractions.png>)
+
 ## The Representation We Didn't Program
 
 Nobody hands a baby a definition of "dog." Nobody writes out a rule — four legs, fur, a tail, a bark — and installs it in a child's head. The child just sees dogs. Different sizes, different colors, from different angles, running, sleeping, barking, sometimes photographed, sometimes real. And at some point, without anyone teaching it directly, something remarkable happens: the child has a working concept of "dog." Show her an animal she's never seen before, some odd, scruffy breed, and she'll usually get it right anyway.
