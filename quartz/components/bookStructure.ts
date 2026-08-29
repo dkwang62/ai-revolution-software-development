@@ -241,6 +241,31 @@ export const bookSections: BookSection[] = [
     ],
   },
   {
+    title: "Addendum: Articles in Development",
+    entries: [
+      {
+        slug: "side-story-addendum-dna-to-machine-native-ai" as FullSlug,
+        title: "From DNA to a Machine-Native AI",
+        shortTitle: "From DNA to a Machine-Native AI",
+      },
+      {
+        slug: "side-story-fossil-record-of-thought" as FullSlug,
+        title: "The Fossil Record of Thought",
+        shortTitle: "The Fossil Record of Thought",
+      },
+      {
+        slug: "side-story-addendum-decade-ahead" as FullSlug,
+        title: "The Decade Ahead: AI and the Remaking of Civilization",
+        shortTitle: "The Decade Ahead",
+      },
+      {
+        slug: "side-story-addendum-ai-discovers-biology" as FullSlug,
+        title: "AI Discovers Biology Beyond Human Intuition",
+        shortTitle: "AI Discovers Biology Beyond Human Intuition",
+      },
+    ],
+  },
+  {
     title: "Reference",
     entries: [
       { slug: "98-glossary" as FullSlug, title: "Glossary", shortTitle: "Glossary" },

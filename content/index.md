@@ -86,6 +86,13 @@ If you are preparing for an executive course on agentic AI or organisational tra
 
 - [[22-preparing-to-lead-agentic-ai|Preparing to Lead Agentic AI: An Executive Pre-Course Guide]]
 
+### Addendum: Articles in Development
+
+- [[side-story-addendum-dna-to-machine-native-ai|From DNA to a Machine-Native AI]]
+- [[side-story-fossil-record-of-thought|The Fossil Record of Thought]]
+- [[side-story-addendum-decade-ahead|The Decade Ahead: AI and the Remaking of Civilization]]
+- [[side-story-addendum-ai-discovers-biology|AI Discovers Biology Beyond Human Intuition]]
+
 ### Reference
 
 - [[98-glossary|Glossary]]
