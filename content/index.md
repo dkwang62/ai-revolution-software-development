@@ -91,6 +91,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-dna-to-machine-native-ai|From DNA to a Machine-Native AI]]
 - [[side-story-addendum-decade-ahead|The Decade Ahead: AI and the Remaking of Civilization]]
 - [[side-story-addendum-ai-discovers-biology|AI Discovers Biology Beyond Human Intuition]]
+- [[side-story-addendum-cio-field-guide-agentic-ai|A CIO's Field Guide to Agentic AI]]
 
 ### Reference
 

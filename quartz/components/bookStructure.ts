@@ -258,6 +258,11 @@ export const bookSections: BookSection[] = [
         title: "AI Discovers Biology Beyond Human Intuition",
         shortTitle: "AI Discovers Biology Beyond Human Intuition",
       },
+      {
+        slug: "side-story-addendum-cio-field-guide-agentic-ai" as FullSlug,
+        title: "A CIO's Field Guide to Agentic AI",
+        shortTitle: "A CIO's Field Guide to Agentic AI",
+      },
     ],
   },
   {
