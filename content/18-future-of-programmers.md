@@ -121,4 +121,4 @@ These groups will overlap. Domain experts will gain more engineering capability.
 
 The danger is to mistake code generation for software engineering. The opportunity is larger: more people can participate in creation while deep expertise concentrates on the decisions with the greatest consequence.
 
-Individuals and small teams will encounter this shift first. Inside a large organisation, the problem is harder. General model capability must be connected to private knowledge, established systems, permissions, and accountability. [[19-enterprise-intelligence-layer|The Enterprise Intelligence Layer]] examines that institutional problem.
+Individuals and small teams will encounter this shift first. Inside a large organisation, the problem is harder. General model capability must be connected to private knowledge, established systems, permissions, and accountability. [[19-when-ai-becomes-an-enterprise-system|When AI Becomes an Enterprise System]] begins that institutional problem.

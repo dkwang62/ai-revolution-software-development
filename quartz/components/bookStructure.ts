@@ -193,9 +193,14 @@ export const bookSections: BookSection[] = [
         shortTitle: "16. The Future of Programmers",
       },
       {
+        slug: "19-when-ai-becomes-an-enterprise-system" as FullSlug,
+        title: "Chapter 17: When AI Becomes an Enterprise System",
+        shortTitle: "17. When AI Becomes an Enterprise System",
+      },
+      {
         slug: "19-enterprise-intelligence-layer" as FullSlug,
-        title: "Chapter 17: The Enterprise Intelligence Layer",
-        shortTitle: "17. The Enterprise Intelligence Layer",
+        title: "Chapter 18: The Enterprise Intelligence Layer",
+        shortTitle: "18. The Enterprise Intelligence Layer",
       },
       {
         slug: "side-story-intelligence-that-does-not-need-to-be-fast" as FullSlug,
@@ -209,8 +214,8 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "20-five-year-and-ten-year-scenarios" as FullSlug,
-        title: "Chapter 18: Five-Year and Ten-Year Scenarios",
-        shortTitle: "18. Five-Year and Ten-Year Scenarios",
+        title: "Chapter 19: Five-Year and Ten-Year Scenarios",
+        shortTitle: "19. Five-Year and Ten-Year Scenarios",
       },
       {
         slug: "side-story-when-intelligence-acquires-agency" as FullSlug,
