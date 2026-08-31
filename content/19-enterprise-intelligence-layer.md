@@ -6,6 +6,8 @@ An **Enterprise Intelligence Layer** is the controlled bridge between a general 
 
 The model alone is not the enterprise. A foundation model may know programming, accounting vocabulary, and common business processes. It does not automatically know why one company changed an approval rule in 2008, which warehouse still depends on an old report, or which customer promise must survive a system migration.
 
+[[19-when-ai-becomes-an-enterprise-system|The previous chapter]] explained the operating problem: how an organisation measures, limits, observes, stops, and takes responsibility for AI-enabled work. Those controls answer how AI may act. They do not give the AI the knowledge required to act intelligently inside a particular company.
+
 The central claim of this chapter is:
 
 > An enterprise gains durable value from AI when each project improves the organisation's reusable memory instead of paying to rediscover the same knowledge again.

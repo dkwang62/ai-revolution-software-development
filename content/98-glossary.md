@@ -140,6 +140,14 @@ These meanings are related but not identical.
 
 The context window is the amount of information a model can consider at one time during inference. It is like working memory. A larger context window can help the model consider more documents, code, or conversation, but relevance matters as much as size.
 
+## Containment
+
+Containment means limiting what an AI system or agent can reach, change, spend, or trigger. It is different from observation. Logs help an organisation see what happened; containment limits what can happen in the first place.
+
+## Cost Per Verified Outcome
+
+Cost per verified outcome is the total cost of an AI-enabled workflow divided by the number of useful outcomes that were completed and checked. It includes model use, tools, integration, monitoring, human review, correction, and the expected cost of failures.
+
 ## Data Centre
 
 A data centre is a building or site filled with networked computers, storage equipment, power systems, cooling, and security. Cloud services and large AI models often run in data centres.
@@ -195,6 +203,10 @@ Enterprise context is the knowledge an organisation possesses: code, documents, 
 ## Enterprise Intelligence Layer
 
 The Enterprise Intelligence Layer is the shared architecture that connects AI models to enterprise knowledge, retrieval systems, permissions, workflows, validation, audit trails, and applications. It allows general AI capability to become useful inside a specific organisation.
+
+## Enterprise Operating Layer
+
+An enterprise operating layer is the shared set of controls that governs how AI-enabled systems act inside an organisation. It covers identity, permissions, budgets, action limits, monitoring, evaluation, audit records, shutdown, and recovery. In this book, the operating layer controls how AI may act; the Enterprise Intelligence Layer supplies the organisational knowledge AI uses to act intelligently.
 
 ## Enterprise Resource Planning (ERP) System
 
@@ -291,6 +303,10 @@ A key performance indicator is a small, agreed measure used to tell whether an e
 ## Latency
 
 Latency is waiting time. In an AI system, it commonly means the delay between sending a request and receiving a usable response.
+
+## Least Privilege
+
+Least privilege is the security principle that a person, service, or AI agent should receive only the access needed for the task, and only for as long as it is needed. It limits damage when a system behaves incorrectly or is misused.
 
 ## Legacy System
 

@@ -68,7 +68,7 @@ The model proposes. Deterministic software checks what can be checked. People re
 
 A general model does not arrive knowing a child's learning history, a hospital's procedures, or why an old bank routine changes at quarter-end. Organisations must keep their knowledge current, connect it to sources, retrieve what matters, and control who may use it.
 
-This is the practical work of the [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]].
+This is the practical work of the [[19-enterprise-intelligence-layer|Enterprise Intelligence Layer]], built on the operating controls described in [[19-when-ai-becomes-an-enterprise-system|When AI Becomes an Enterprise System]].
 
 ### 4. The Physical World Moves More Slowly
 

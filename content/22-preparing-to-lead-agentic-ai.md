@@ -81,7 +81,8 @@ The Personal Librarian case shows why a real project can teach the course terms 
 - [[10-context-what-the-model-knows-right-now|Chapter 8: Context: What the Model Knows Right Now]]
 - [[15-legacy-problem|Chapter 13: The Legacy Problem]]
 - [[16-agents-tools-and-integrated-systems|Chapter 14: Agents, Tools, and Integrated Systems]]
-- [[19-enterprise-intelligence-layer|Chapter 17: The Enterprise Intelligence Layer]]
+- [[19-when-ai-becomes-an-enterprise-system|Chapter 17: When AI Becomes an Enterprise System]]
+- [[19-enterprise-intelligence-layer|Chapter 18: The Enterprise Intelligence Layer]]
 
 **Ideas to understand:**
 
@@ -194,8 +195,9 @@ The Personal Librarian case shows why a real project can teach the course terms 
 
 - [[17-what-becomes-scarce-when-code-becomes-cheap|Chapter 15: What Becomes Scarce When Code Becomes Cheap?]]
 - [[18-future-of-programmers|Chapter 16: The Future of Programmers]]
-- [[19-enterprise-intelligence-layer|Chapter 17: The Enterprise Intelligence Layer]]
-- [[20-five-year-and-ten-year-scenarios|Chapter 18: Five-Year and Ten-Year Scenarios]]
+- [[19-when-ai-becomes-an-enterprise-system|Chapter 17: When AI Becomes an Enterprise System]]
+- [[19-enterprise-intelligence-layer|Chapter 18: The Enterprise Intelligence Layer]]
+- [[20-five-year-and-ten-year-scenarios|Chapter 19: Five-Year and Ten-Year Scenarios]]
 - [[21-conclusion-when-intent-becomes-software|Conclusion: When Intent Becomes Software]]
 
 **Ideas to understand:**
