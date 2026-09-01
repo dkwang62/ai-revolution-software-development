@@ -17,6 +17,8 @@ Three questions run underneath everything that follows, and it's worth keeping t
 
 [![The progression from programmed movement through perception and intervention to networked intelligence](<figures/FIG-SC-05 Intelligence Acquires Agency.png>)](<figures/FIG-SC-05 Intelligence Acquires Agency.png>)
 
+![When Intelligence Acquires Agency: From Programmed Movement to Networked Intelligence Across Many Machines](<figures/FIG-SC-07 Intelligence Acquires Agency Networked Intelligence.png>)
+
 ---
 
 # Movement 1 — We Automated Movement
