@@ -18,6 +18,8 @@ If the experiment succeeds, other departments may adopt similar systems. Custome
 
 At that point, the company does not merely have an AI tool. It has a growing population of AI-enabled systems using company knowledge, company money, and company authority.
 
+Those systems also become a new class of user. Enterprise software was historically designed for people operating screens and for conventional programs calling predefined interfaces. An agent sits between those categories: it can interpret an objective, choose among permitted actions, operate several applications, and adapt its next step to what happened. That makes it an organisational actor in the practical engineering sense, even though it is not a person and cannot carry accountability by itself.
+
 That is the moment AI becomes an enterprise system.
 
 The change is easy to miss because it often happens gradually. One useful assistant becomes one automated workflow. One workflow becomes ten. Ten workflows begin sharing models, documents, identities, tools, budgets, and security controls. What began as a productivity experiment becomes part of the organisation's operating infrastructure.
@@ -227,6 +229,32 @@ In plain language, the centre supplies the roads, traffic rules, identity system
 
 Authority may be distributed. Accountability cannot be absent.
 
+## An Agent Needs an Identity
+
+As long as an AI only drafts text for a person to review, the person's account may be enough. Once an agent acts across systems, the organisation needs to distinguish the human who requested the work from the software that performed each action.
+
+An agent identity should answer ordinary operational questions:
+
+- What is this agent, and what purpose is it approved to serve?
+- Which person or team owns it?
+- Is it acting on behalf of a particular user or under its own limited service identity?
+- Which credentials, data, tools, and applications may it use?
+- Who approved its creation, and when should its access expire?
+- How can its permissions be suspended and its identity retired?
+
+This creates a rough parallel with the management of human and service accounts:
+
+```text
+employee account        agent identity
+named manager           named sponsor or owner
+job-based permissions   task-based permissions
+access review           capability and credential review
+departure process       suspension and retirement
+audit trail             action and delegation trail
+```
+
+The parallel has limits. An agent does not accept responsibility, understand employment duties, or deserve trust merely because it has an identity. The identity exists so that people can grant narrow authority, trace action, separate agents from one another, and hold the responsible human owners accountable.
+
 ## From Experiment to Infrastructure
 
 Enterprises rarely design the complete system at the beginning. Adoption usually grows in stages.
@@ -272,6 +300,24 @@ Before moving to a more consequential stage, the organisation should be able to 
 - Is one person or role accountable for the whole workflow?
 
 If those answers are unclear, adding more autonomy usually increases exposure faster than value.
+
+## From Human-Operated to AI-Operated Software
+
+The largest consequence of agentic AI may not be that AI writes more of the software. It may be that AI begins operating more of the world's existing software on our behalf.
+
+For decades, a business process often meant a person moving through several applications: reading an email, checking a customer record, consulting a policy, entering information into a finance system, and asking a colleague to approve the result. The software held the records, but the human supplied the interpretation and carried the work from one system to the next.
+
+An agent can increasingly perform part of that navigation. A person states an objective and constraints; the agent retrieves evidence, chooses approved tools, coordinates specialist agents, and prepares or performs authorised actions. The applications remain important underneath as systems of record and execution. They are simply no longer the only interface through which work must be done.
+
+```text
+Earlier:
+person → application → application → application
+
+Emerging:
+human objective → governed agents → applications, data, and tools
+```
+
+This does not remove human responsibility. It moves people away from routine operation and towards specifying outcomes, setting boundaries, resolving ambiguity, and judging consequences. The shift is valuable only when the surrounding system can prove what happened and stop when judgement is required.
 
 ## The Enterprise Operating Layer
 
@@ -319,7 +365,9 @@ The Enterprise Intelligence Layer determines what organisational knowledge it ca
 - Enterprises must be able to see what happened, contain what can happen, and recover when something goes wrong.
 - Human review should be placed according to consequence, reversibility, ambiguity, and available evidence.
 - Technical responsibility may be shared, but accountability for each workflow must be explicit.
+- Agents acting across systems need distinct identities, named owners, limited credentials, audit trails, and lifecycle controls.
 - Adoption should advance only when value, cost, authority, evidence, and recovery are understood at the current stage.
+- The larger transition is from software that people must operate step by step to software that governed agents can operate on their behalf.
 - A shared operating layer governs how AI works; the Enterprise Intelligence Layer supplies the organisational knowledge that makes the work useful.
 
 ## Source Notes Used

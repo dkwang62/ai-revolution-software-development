@@ -142,9 +142,41 @@ The layer acts as superglue. It can:
 - monitor disagreement or failure; and
 - preserve why a connection or rule exists.
 
+For decades, employees have been the hidden integration layer between systems that do not speak to one another. A person reads a number from one screen, decides what it means, and types it into another. A clerk checks a purchase order against an invoice. A support agent copies a complaint from a ticketing system into a customer record. A warehouse supervisor reconciles a physical count with a database. Each person is doing integration work that the software was never built to do.
+
+The Enterprise Intelligence Layer can take over part of that mechanical bridging. It does not remove the need for someone to decide which record is authoritative when systems disagree. It removes the need for a person to be the wire connecting them in the first place.
+
 The metaphor has limits. Glue does not decide which of two conflicting records is correct. AI can identify the conflict, assemble evidence, and suggest a resolution. It should not silently invent the official answer or alter a consequential record without the required checks and authority.
 
 ERP and other established systems therefore do not disappear. They continue to provide transaction discipline, specialised functions, shared records, and controls. The intelligence layer makes them easier to understand and use together.
+
+## When the Application Is No Longer the Front Door
+
+> **Why it matters:** The application may remain essential while ceasing to be the primary interface between people and computing.
+
+Traditional enterprise work is organised around applications. A person opens the finance system to perform a finance task, the customer system to investigate a customer, and the service portal to request help. The person must understand which application owns each part of the process and manually carry purpose and context between them.
+
+An intelligence layer makes another arrangement possible:
+
+```text
+human intent
+↓
+AI front door
+↓
+orchestration among specialised agents
+↓
+approved tools, interfaces, knowledge, and systems of record
+↓
+action, evidence, and measured outcome
+```
+
+The user may ask for an outcome—resolve this billing dispute, prepare this supplier payment, investigate this production delay—without first deciding which application must be opened. A coordinating agent can delegate parts of the work to specialised agents, and those agents can use different models and systems according to capability, cost, privacy, speed, and reliability.
+
+This does not mean one universal agent replaces every application. Specialised systems still enforce transactions, preserve official records, and embody domain-specific controls. Nor does it mean one magnificent model should do everything. A more plausible architecture is a governed network: one coherent interface for the person, several specialised agents behind it, and explicit boundaries around every tool and system they can reach.
+
+Around that network sit identity, policy, security, monitoring, verification, approval, and recovery. These are not separate concerns added after the intelligence works. They are what make it possible for intelligence to act across an enterprise without dissolving accountability.
+
+The application therefore moves down the stack. It remains vital as machinery, but the human relationship with computing moves upward—from navigating software interfaces towards expressing objectives, constraints, and judgement.
 
 ## From Data to Decisions
 

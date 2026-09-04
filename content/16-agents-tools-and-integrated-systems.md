@@ -186,6 +186,31 @@ x human supervision
 
 That is the difference between an AI that talks about software and an AI that helps make software.
 
+## From Agent Harness to Enterprise Control Plane
+
+> **Why it matters:** The model supplies general intelligence, the harness turns that intelligence into useful work, and the control plane governs many such systems across an organisation.
+
+It helps to separate three layers that are often bundled together under the word _AI_.
+
+The **model** interprets information, generates possibilities, and reasons about what to do next. The **agent harness** surrounds the model with an objective, working context, memory, tools, permissions, feedback, and rules for continuing or stopping. An **enterprise control plane** sits around many agents and governs them as a population.
+
+```text
+model
+general capability and reasoning
+↓
+agent harness
+objective, context, memory, tools, and feedback
+↓
+enterprise control plane
+identity, policy, orchestration, budgets, monitoring, and recovery
+```
+
+This distinction explains why access to a powerful model is not the same as having a dependable operational system. The same model can behave very differently when one harness retrieves better evidence, exposes safer tools, preserves state more reliably, or verifies results more carefully. At enterprise scale, another problem appears: the organisation must know which agents exist, who owns them, which systems they may use, how much they may spend, and how they can be stopped or retired.
+
+Agents therefore become a new class of software user. They may open records, call application interfaces, prepare transactions, and delegate work to other agents. They are not employees or legal persons, but enterprise systems increasingly need to manage their identities and actions with some of the discipline already applied to human accounts and software services.
+
+The deeper shift is not that applications vanish. It is that the agent can begin operating applications on a person's behalf. Human intention moves to the front of the system; models, agents, tools, and applications become part of the machinery underneath.
+
 ![The agentic workflow: objective, tools, feedback, revision, and verification](figures/fig-14-01-codex-agent-workflow-v2.png)
 
 Consider a bug in which an on-screen keyboard covered the field where a learner records a character's origin. That was my entire diagnosis: I knew what was wrong for the user, but not which part of Apple's interface framework controlled the screen.
