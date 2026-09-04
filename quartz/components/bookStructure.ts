@@ -268,6 +268,11 @@ export const bookSections: BookSection[] = [
         title: "A CIO's Field Guide to Agentic AI",
         shortTitle: "A CIO's Field Guide to Agentic AI",
       },
+      {
+        slug: "side-story-addendum-agentic-enterprise-convergence" as FullSlug,
+        title: "When the Software Industry Converged on the Agentic Enterprise",
+        shortTitle: "Agentic Enterprise Convergence",
+      },
     ],
   },
   {
