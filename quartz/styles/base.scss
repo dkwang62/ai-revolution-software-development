@@ -356,10 +356,6 @@ a {
     transform: translateX(0);
   }
 
-  .page > #quartz-body > .tablet-sidebar-toggle:checked + .tablet-sidebar-button {
-    left: calc(min(#{$sidePanelWidth}, 86vw) + 1rem);
-  }
-
   .page
     > #quartz-body
     > .tablet-sidebar-toggle:checked
