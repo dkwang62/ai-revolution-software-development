@@ -238,6 +238,10 @@ export function renderPage(
       <body data-slug={slug}>
         <div id="quartz-root" class="page">
           <Body {...componentData}>
+            <input id="tablet-sidebar-toggle" class="tablet-sidebar-toggle" type="checkbox" />
+            <label class="tablet-sidebar-button" for="tablet-sidebar-toggle">
+              Contents
+            </label>
             {LeftComponent}
             <div class="center">
               <div class="page-header">
