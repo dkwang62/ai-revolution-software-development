@@ -94,6 +94,8 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-ai-discovers-biology|AI Discovers Biology Beyond Human Intuition]]
 - [[side-story-addendum-cio-field-guide-agentic-ai|A CIO's Field Guide to Agentic AI]]
 - [[side-story-addendum-agentic-enterprise-convergence|When the Software Industry Converged on the Agentic Enterprise]]
+- [[side-story-addendum-many-intelligences-of-ai|The Many Intelligences of AI]]
+- [[side-story-addendum-retrieval-augmented-generation|Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents]]
 
 ### Reference
 
