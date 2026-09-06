@@ -240,8 +240,7 @@ export function renderPage(
           <Body {...componentData}>
             <input id="tablet-sidebar-toggle" class="tablet-sidebar-toggle" type="checkbox" />
             <label class="tablet-sidebar-button" for="tablet-sidebar-toggle">
-              <span class="tablet-sidebar-label-contents">Contents</span>
-              <span class="tablet-sidebar-label-toc">TOC</span>
+              <span>TOC</span>
             </label>
             {LeftComponent}
             <div class="center">
@@ -265,6 +264,7 @@ export function renderPage(
                 ))}
               </div>
             </div>
+            <label class="tablet-sidebar-dismiss" for="tablet-sidebar-toggle" aria-label="Close table of contents" />
             {RightComponent}
             <Footer {...componentData} />
           </Body>
