@@ -156,6 +156,10 @@ a {
   display: none;
 }
 
+.tablet-sidebar-label-toc {
+  display: none;
+}
+
 .page {
   max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
   margin: 0 auto;
@@ -350,6 +354,26 @@ a {
 
   .page > #quartz-body > .tablet-sidebar-toggle:checked ~ .sidebar.left {
     transform: translateX(0);
+  }
+
+  .page > #quartz-body > .tablet-sidebar-toggle:checked + .tablet-sidebar-button {
+    left: calc(min(#{$sidePanelWidth}, 86vw) + 1rem);
+  }
+
+  .page
+    > #quartz-body
+    > .tablet-sidebar-toggle:checked
+    + .tablet-sidebar-button
+    .tablet-sidebar-label-contents {
+    display: none;
+  }
+
+  .page
+    > #quartz-body
+    > .tablet-sidebar-toggle:checked
+    + .tablet-sidebar-button
+    .tablet-sidebar-label-toc {
+    display: inline;
   }
 }
 
