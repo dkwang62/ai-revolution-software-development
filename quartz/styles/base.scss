@@ -348,7 +348,7 @@ a {
     font-weight: $semiBoldWeight;
   }
 
-  .tablet-sidebar-toggle:checked ~ .sidebar.left {
+  .page > #quartz-body > .tablet-sidebar-toggle:checked ~ .sidebar.left {
     transform: translateX(0);
   }
 }

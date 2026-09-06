@@ -273,6 +273,16 @@ export const bookSections: BookSection[] = [
         title: "When the Software Industry Converged on the Agentic Enterprise",
         shortTitle: "Agentic Enterprise Convergence",
       },
+      {
+        slug: "side-story-addendum-many-intelligences-of-ai" as FullSlug,
+        title: "The Many Intelligences of AI",
+        shortTitle: "The Many Intelligences of AI",
+      },
+      {
+        slug: "side-story-addendum-retrieval-augmented-generation" as FullSlug,
+        title: "Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents",
+        shortTitle: "Retrieval-Augmented Generation",
+      },
     ],
   },
   {
