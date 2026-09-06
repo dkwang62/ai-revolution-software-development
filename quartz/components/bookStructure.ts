@@ -283,6 +283,11 @@ export const bookSections: BookSection[] = [
         title: "Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents",
         shortTitle: "Retrieval-Augmented Generation",
       },
+      {
+        slug: "side-story-addendum-beyond-scaling" as FullSlug,
+        title: "Beyond Scaling: What a Body Might Teach a Mind",
+        shortTitle: "Beyond Scaling",
+      },
     ],
   },
   {
