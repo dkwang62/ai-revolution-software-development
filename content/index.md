@@ -97,6 +97,8 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-many-intelligences-of-ai|The Many Intelligences of AI]]
 - [[side-story-addendum-retrieval-augmented-generation|Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents]]
 - [[side-story-addendum-beyond-scaling|Beyond Scaling: What a Body Might Teach a Mind]]
+- [[side-story-addendum-astra-and-ai-2027|From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario]]
+- [[side-story-addendum-kokotajlo-argument|Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty]]
 
 ### Reference
 

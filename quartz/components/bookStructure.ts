@@ -288,6 +288,18 @@ export const bookSections: BookSection[] = [
         title: "Beyond Scaling: What a Body Might Teach a Mind",
         shortTitle: "Beyond Scaling",
       },
+      {
+        slug: "side-story-addendum-astra-and-ai-2027" as FullSlug,
+        title:
+          "From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario",
+        shortTitle: "GPT-6 Astra and AI 2027",
+      },
+      {
+        slug: "side-story-addendum-kokotajlo-argument" as FullSlug,
+        title:
+          "Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty",
+        shortTitle: "Kokotajlo's Superintelligence Argument",
+      },
     ],
   },
   {
