@@ -240,7 +240,7 @@ export function renderPage(
           <Body {...componentData}>
             <input id="tablet-sidebar-toggle" class="tablet-sidebar-toggle" type="checkbox" />
             <label class="tablet-sidebar-button" for="tablet-sidebar-toggle">
-              <span>TOC</span>
+              <span>Table of Contents</span>
             </label>
             {LeftComponent}
             <div class="center">

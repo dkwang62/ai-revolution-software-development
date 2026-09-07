@@ -15,4 +15,25 @@ function focusCurrentChapter() {
   }
 }
 
+function closeTabletSidebar() {
+  const toggle = document.querySelector<HTMLInputElement>("#tablet-sidebar-toggle")
+
+  if (toggle) {
+    toggle.checked = false
+  }
+}
+
+function setupTabletSidebarDismiss() {
+  const contents = document.querySelectorAll(".book-contents")
+
+  for (const content of contents) {
+    const links = content.querySelectorAll("a")
+
+    for (const link of links) {
+      link.addEventListener("click", closeTabletSidebar)
+    }
+  }
+}
+
 document.addEventListener("nav", focusCurrentChapter)
+document.addEventListener("nav", setupTabletSidebarDismiss)
