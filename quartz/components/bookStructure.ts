@@ -300,6 +300,11 @@ export const bookSections: BookSection[] = [
           "Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty",
         shortTitle: "Kokotajlo's Superintelligence Argument",
       },
+      {
+        slug: "side-story-addendum-ai-market-landscape-report" as FullSlug,
+        title: "When Intelligence Becomes Cheap",
+        shortTitle: "When Intelligence Becomes Cheap",
+      },
     ],
   },
   {
