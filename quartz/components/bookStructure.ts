@@ -307,7 +307,7 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-story-addendum-the-long-delegation" as FullSlug,
-        title: "AI Apocalypse: Possible Pathway",
+        title: "AI Apocalypse: A Plausible Path to Armageddon",
         shortTitle: "AI Apocalypse",
       },
     ],

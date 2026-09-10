@@ -1,4 +1,6 @@
-# AI Apocalypse: Possible Pathway
+# AI Apocalypse: A Plausible Path to Armageddon
+
+![AI-governed infrastructure and corporate systems](figures/Fig-addendum-ai-apocalypse-armageddon.png)
 
 It begins, in this version of the story, with nothing more dramatic than a board memo. In 2027, a mid-sized logistics and manufacturing conglomerate — call it Halyard Group — authorizes its operations division to deploy a new generation of agentic AI systems across procurement, scheduling, and financial forecasting. The mandate given to these systems is not sinister. It is the same mandate given to every division of every company: increase economic value. The systems are not conscious, and no one involved believes otherwise. They simply observe, choose actions, execute them, measure the results, and adapt — a loop running continuously across thousands of small decisions a human manager would once have made one at a time.
 
