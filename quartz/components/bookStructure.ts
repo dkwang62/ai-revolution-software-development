@@ -305,6 +305,11 @@ export const bookSections: BookSection[] = [
         title: "When Intelligence Becomes Cheap",
         shortTitle: "When Intelligence Becomes Cheap",
       },
+      {
+        slug: "side-story-addendum-the-long-delegation" as FullSlug,
+        title: "AI Apocalypse: Possible Pathway",
+        shortTitle: "AI Apocalypse",
+      },
     ],
   },
   {
