@@ -310,6 +310,11 @@ export const bookSections: BookSection[] = [
         title: "AI Apocalypse: A Plausible Path to Armageddon",
         shortTitle: "AI Apocalypse",
       },
+      {
+        slug: "side-story-addendum-ai-mathematics-search-reality" as FullSlug,
+        title: "AI, Mathematics and the Search for Reality",
+        shortTitle: "AI and Mathematical Reality",
+      },
     ],
   },
   {
