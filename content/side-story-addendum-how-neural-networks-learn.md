@@ -30,9 +30,9 @@ In 1943, neurophysiologist Warren McCulloch and mathematician Walter Pitts publi
 
 In modern notation, the central idea can be written as:
 
-\[
+$$
 z = \sum_i w_i x_i + b
-\]
+$$
 
 followed by an activation rule that decides whether the neuron should produce an output.
 
@@ -60,9 +60,9 @@ Imagine a crude camera consisting of a grid of light sensors. Each sensor produc
 
 The perceptron calculates a weighted sum:
 
-\[
+$$
 z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b.
-\]
+$$
 
 If the total crosses a threshold, the perceptron produces one answer; otherwise it produces another.
 
@@ -72,9 +72,9 @@ Suppose the system is being trained to distinguish two classes of patterns. It s
 
 A simplified form of the update is:
 
-\[
+$$
 w_i \leftarrow w_i + \eta (y-\hat y)x_i,
-\]
+$$
 
 where \(y\) is the desired answer, \(\hat y\) the prediction, and \(\eta\) the learning rate controlling how large each correction should be.
 
@@ -145,9 +145,9 @@ Consider a simple multi-layer network. An input enters the first layer. Each neu
 
 The forward calculation can be viewed as a composition of functions:
 
-\[
+$$
 x \rightarrow f_1(x) \rightarrow f_2(f_1(x)) \rightarrow \cdots \rightarrow \hat y.
-\]
+$$
 
 The system then compares its prediction \(\hat y\) with the correct answer \(y\) using a **loss function**. The loss is a numerical measure of how wrong the network is.
 
@@ -161,17 +161,17 @@ Start at the output, where the error is observable. Calculus tells us how much t
 
 For every weight \(w\), backpropagation calculates a gradient:
 
-\[
+$$
 \frac{\partial L}{\partial w},
-\]
+$$
 
 which means, approximately: *if this weight changed a tiny amount, how would the overall loss change?*
 
 Once the gradient is known, the weight can be nudged in the direction that reduces the loss:
 
-\[
+$$
 w \leftarrow w - \eta \frac{\partial L}{\partial w}.
-\]
+$$
 
 This is gradient descent.
 
@@ -215,9 +215,9 @@ Instead of giving every neuron access to the entire image, a convolutional filte
 
 Conceptually, the filter slides across the image:
 
-\[
+$$
 \text{small patch} \rightarrow \text{weighted sum} \rightarrow \text{feature response}.
-\]
+$$
 
 Different filters can learn to detect different local patterns. Early layers may respond to edges and simple textures. Later layers can combine those signals into curves, shapes, parts, and eventually whole objects.
 
@@ -245,9 +245,9 @@ To understand it, consider the activation function commonly used at the time: th
 
 The sigmoid has the familiar S-shaped form:
 
-\[
+$$
 \sigma(z)=\frac{1}{1+e^{-z}}.
-\]
+$$
 
 It maps any input to a value between 0 and 1. It is smooth, differentiable, and loosely resembles the idea of a biological neuron transitioning from inactive to active.
 
@@ -255,9 +255,9 @@ But its derivative is small. The maximum slope of a standard sigmoid is 0.25, an
 
 Backpropagation repeatedly multiplies derivatives as it moves backward through layers. If the signal is multiplied by 0.25 through ten layers, its scale becomes approximately:
 
-\[
+$$
 0.25^{10} \approx 0.00000095.
-\]
+$$
 
 The learning signal has nearly disappeared.
 
@@ -291,9 +291,9 @@ One of the most important advances was almost embarrassingly simple.
 
 Instead of using the sigmoid activation function, researchers increasingly adopted the **rectified linear unit**, or ReLU:
 
-\[
+$$
 \text{ReLU}(z)=\max(0,z).
-\]
+$$
 
 If the input is negative, the output is zero. If the input is positive, it passes through unchanged.
 
@@ -399,15 +399,15 @@ Kaiming He and colleagues at Microsoft Research introduced an elegant solution i
 
 Instead of asking a block of layers to learn a complete mapping \(H(x)\), the block learns only the residual difference:
 
-\[
+$$
 F(x)=H(x)-x.
-\]
+$$
 
 The output then becomes:
 
-\[
+$$
 H(x)=F(x)+x.
-\]
+$$
 
 The input \(x\) is carried around the block by a shortcut, or skip connection.
 
@@ -435,9 +435,9 @@ The early neural approach was the **recurrent neural network**, or RNN.
 
 An RNN processes the sequence one step at a time. At each position, it combines the new input with a hidden state representing information carried forward from previous positions:
 
-\[
+$$
 h_t=f(x_t,h_{t-1}).
-\]
+$$
 
 The hidden state is intended to act as a running summary of what has been seen so far.
 
@@ -513,9 +513,9 @@ These vectors are produced by learned matrix multiplications. The attention mech
 
 In simplified matrix form:
 
-\[
+$$
 \text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V.
-\]
+$$
 
 The dot products \(QK^T\) measure compatibility. Softmax converts the resulting scores into normalized weights. Those weights are then used to combine the value vectors.
 
