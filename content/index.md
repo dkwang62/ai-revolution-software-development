@@ -102,6 +102,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-ai-market-landscape-report|When Intelligence Becomes Cheap]]
 - [[side-story-addendum-the-long-delegation|AI Apocalypse: A Plausible Path to Armageddon]]
 - [[side-story-addendum-ai-mathematics-search-reality|AI, Mathematics and the Search for Reality]]
+- [[side-story-addendum-how-neural-networks-learn|How Neural Networks Learn: From Error Correction to Intelligence at Scale]]
 
 ### Reference
 

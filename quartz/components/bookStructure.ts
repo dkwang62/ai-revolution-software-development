@@ -315,6 +315,11 @@ export const bookSections: BookSection[] = [
         title: "AI, Mathematics and the Search for Reality",
         shortTitle: "AI and Mathematical Reality",
       },
+      {
+        slug: "side-story-addendum-how-neural-networks-learn" as FullSlug,
+        title: "How Neural Networks Learn: From Error Correction to Intelligence at Scale",
+        shortTitle: "How Neural Networks Learn",
+      },
     ],
   },
   {
