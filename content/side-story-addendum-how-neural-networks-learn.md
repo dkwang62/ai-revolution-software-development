@@ -36,7 +36,7 @@ $$
 
 followed by an activation rule that decides whether the neuron should produce an output.
 
-Here, \(x_i\) represents the inputs, \(w_i\) the strength or importance of each input, and \(b\) a bias or threshold term. The equation is simple, but conceptually important. It says that computation can be represented as many signals being weighted, combined, and transformed.
+Here, $x_i$ represents the inputs, $w_i$ the strength or importance of each input, and $b$ a bias or threshold term. The equation is simple, but conceptually important. It says that computation can be represented as many signals being weighted, combined, and transformed.
 
 McCulloch and Pitts showed that networks of such simplified neurons could implement logical operations. Properly connected, they could behave like AND, OR, and NOT gates. In principle, sufficiently large networks of these units could carry out general computation.
 
@@ -76,7 +76,7 @@ $$
 w_i \leftarrow w_i + \eta (y-\hat y)x_i,
 $$
 
-where \(y\) is the desired answer, \(\hat y\) the prediction, and \(\eta\) the learning rate controlling how large each correction should be.
+where $y$ is the desired answer, $\hat y$ the prediction, and $\eta$ the learning rate controlling how large each correction should be.
 
 The key idea is that the system does not need to know the final rule in advance. It only needs examples and a signal indicating whether it was wrong.
 
@@ -149,7 +149,7 @@ $$
 x \rightarrow f_1(x) \rightarrow f_2(f_1(x)) \rightarrow \cdots \rightarrow \hat y.
 $$
 
-The system then compares its prediction \(\hat y\) with the correct answer \(y\) using a **loss function**. The loss is a numerical measure of how wrong the network is.
+The system then compares its prediction $\hat y$ with the correct answer $y$ using a **loss function**. The loss is a numerical measure of how wrong the network is.
 
 The learning problem becomes:
 
@@ -159,7 +159,7 @@ Backpropagation answers this by working backward.
 
 Start at the output, where the error is observable. Calculus tells us how much the loss would change if the output changed slightly. The chain rule then allows that sensitivity to be propagated backward through each mathematical operation that produced the output.
 
-For every weight \(w\), backpropagation calculates a gradient:
+For every weight $w$, backpropagation calculates a gradient:
 
 $$
 \frac{\partial L}{\partial w},
@@ -175,7 +175,7 @@ $$
 
 This is gradient descent.
 
-The learning rate \(\eta\) determines the size of the step. If it is too small, training may be painfully slow. If it is too large, the system may overshoot useful solutions or become unstable.
+The learning rate $\eta$ determines the size of the step. If it is too small, training may be painfully slow. If it is too large, the system may overshoot useful solutions or become unstable.
 
 One way to visualize the process is as a landscape. Every possible setting of all the weights corresponds to a point in an enormous multidimensional space. The height of the landscape is the error. Training is an attempt to move downhill toward a region where the error is lower.
 
@@ -397,7 +397,7 @@ In practice, however, learning an exact identity transformation through many non
 
 Kaiming He and colleagues at Microsoft Research introduced an elegant solution in 2015: the **residual network**, or ResNet.
 
-Instead of asking a block of layers to learn a complete mapping \(H(x)\), the block learns only the residual difference:
+Instead of asking a block of layers to learn a complete mapping $H(x)$, the block learns only the residual difference:
 
 $$
 F(x)=H(x)-x.
@@ -409,9 +409,9 @@ $$
 H(x)=F(x)+x.
 $$
 
-The input \(x\) is carried around the block by a shortcut, or skip connection.
+The input $x$ is carried around the block by a shortcut, or skip connection.
 
-If the optimal behavior is simply to preserve the input, the learned layers do not need to reconstruct the identity mapping. They only need to drive \(F(x)\) toward zero.
+If the optimal behavior is simply to preserve the input, the learned layers do not need to reconstruct the identity mapping. They only need to drive $F(x)$ toward zero.
 
 This seemingly minor structural change had a major effect. ResNet made it practical to train networks hundreds of layers deep. A 152-layer ResNet won the 2015 ImageNet competition with a top-five error rate around 3.6 percent.
 
@@ -517,7 +517,7 @@ $$
 \text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V.
 $$
 
-The dot products \(QK^T\) measure compatibility. Softmax converts the resulting scores into normalized weights. Those weights are then used to combine the value vectors.
+The dot products $QK^T$ measure compatibility. Softmax converts the resulting scores into normalized weights. Those weights are then used to combine the value vectors.
 
 For the pronoun *it*, attention may assign a high weight to *cat* and lower weights to unrelated words. The resulting representation of *it* therefore incorporates information about the likely referent.
 
