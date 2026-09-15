@@ -320,6 +320,11 @@ export const bookSections: BookSection[] = [
         title: "How Neural Networks Learn: From Error Correction to Intelligence at Scale",
         shortTitle: "How Neural Networks Learn",
       },
+      {
+        slug: "side-story-addendum-experience-scaling" as FullSlug,
+        title: "From Reading the World to Acting in It: How AI Is Learning to Gain Experience",
+        shortTitle: "How AI Gains Experience",
+      },
     ],
   },
   {
