@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+  <title id="title">Gradient descent follows the downhill slope of loss</title>
+  <desc id="desc">A loss curve with a current weight on its left slope, a negative gradient arrow pointing downhill, and the lowest-loss weight at the valley.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#2266a8"/></marker></defs>
+  <rect width="960" height="460" rx="24" fill="#f7fafc"/>
+  <text x="58" y="58" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#18324b">Gradient descent: use the local slope to step downhill</text>
+  <line x1="115" y1="375" x2="870" y2="375" stroke="#526777" stroke-width="3"/>
+  <line x1="115" y1="375" x2="115" y2="100" stroke="#526777" stroke-width="3"/>
+  <text x="842" y="414" font-family="Arial, sans-serif" font-size="21" fill="#263d50">weight, w</text>
+  <text x="28" y="108" font-family="Arial, sans-serif" font-size="21" fill="#263d50">loss, L</text>
+  <path d="M145 132 C250 155, 310 270, 430 332 C510 373, 604 353, 657 292 C728 210, 770 135, 850 115" fill="none" stroke="#eb7f3a" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="295" cy="246" r="11" fill="#172f46"/>
+  <text x="211" y="222" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172f46">current w</text>
+  <line x1="306" y1="255" x2="397" y2="310" stroke="#2266a8" stroke-width="6" marker-end="url(#arrow)"/>
+  <text x="262" y="294" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#2266a8">step −η∂L/∂w</text>
+  <circle cx="505" cy="355" r="11" fill="#2c9964"/>
+  <line x1="505" y1="355" x2="505" y2="375" stroke="#2c9964" stroke-width="3"/>
+  <text x="456" y="410" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#20794e">lowest loss</text>
+  <text x="566" y="221" font-family="Arial, sans-serif" font-size="19" fill="#526777">The gradient points uphill.</text>
+  <text x="566" y="249" font-family="Arial, sans-serif" font-size="19" fill="#526777">Training moves in the opposite direction.</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" role="img" aria-labelledby="title desc">
+  <title id="title">Forward pass and backward pass through a neural network</title>
+  <desc id="desc">Input flows left to right through hidden layers to prediction and loss. Gradient information flows from loss back to the early layers.</desc>
+  <defs><marker id="forward" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#2266a8"/></marker><marker id="back" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#d25555"/></marker></defs>
+  <rect width="1120" height="440" rx="24" fill="#f7fafc"/>
+  <text x="50" y="56" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#18324b">Backpropagation runs the error signal backward through the same chain</text>
+  <g font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+    <rect x="55" y="145" width="150" height="82" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="130" y="194" fill="#18324b">Input</text>
+    <rect x="285" y="145" width="150" height="82" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="360" y="185" fill="#18324b">Hidden</text><text x="360" y="210" fill="#18324b">layer 1</text>
+    <rect x="515" y="145" width="150" height="82" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="590" y="185" fill="#18324b">Hidden</text><text x="590" y="210" fill="#18324b">layer 2</text>
+    <rect x="745" y="145" width="150" height="82" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="820" y="194" fill="#18324b">Prediction</text>
+    <rect x="955" y="145" width="110" height="82" rx="15" fill="#ffeadc" stroke="#d66b29" stroke-width="3"/><text x="1010" y="194" fill="#6f3212">Loss</text>
+  </g>
+  <g stroke="#2266a8" stroke-width="5" marker-end="url(#forward)"><line x1="207" y1="186" x2="278" y2="186"/><line x1="437" y1="186" x2="508" y2="186"/><line x1="667" y1="186" x2="738" y2="186"/><line x1="897" y1="186" x2="948" y2="186"/></g>
+  <text x="550" y="118" font-family="Arial, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#2266a8">Forward pass: make a prediction</text>
+  <path d="M1010 275 C900 345, 270 345, 125 275" fill="none" stroke="#d25555" stroke-width="6" marker-end="url(#back)"/>
+  <text x="562" y="378" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#b33e3e">Backward pass: carry gradients from loss to every earlier weight</text>
+  <text x="1010" y="255" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" fill="#b33e3e">how wrong?</text>
+</svg>

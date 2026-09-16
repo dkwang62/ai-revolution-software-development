@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">A single neuron as a chain of differentiable operations</title>
+  <desc id="desc">Input x and parameters w and b form z equals wx plus b, which passes through a sigmoid activation to prediction a, then compares with target y to form loss L.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10z" fill="#2266a8"/></marker></defs>
+  <rect width="1100" height="390" rx="24" fill="#f7fafc"/>
+  <text x="50" y="58" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#18324b">One neuron is a short chain — so the chain rule can trace each weight's effect</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle"><rect x="65" y="145" width="170" height="100" rx="15" fill="#eaf1f6" stroke="#526777" stroke-width="3"/><text x="150" y="184" font-size="22" font-weight="700" fill="#18324b">weighted sum</text><text x="150" y="215" font-size="22" fill="#18324b">z = wx + b</text>
+  <rect x="330" y="145" width="180" height="100" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="420" y="184" font-size="22" font-weight="700" fill="#18324b">activation</text><text x="420" y="215" font-size="22" fill="#18324b">a = σ(z)</text>
+  <rect x="605" y="145" width="180" height="100" rx="15" fill="#dbeeff" stroke="#2266a8" stroke-width="3"/><text x="695" y="184" font-size="22" font-weight="700" fill="#18324b">prediction</text><text x="695" y="215" font-size="22" fill="#18324b">a</text>
+  <rect x="875" y="145" width="160" height="100" rx="15" fill="#ffeadc" stroke="#d66b29" stroke-width="3"/><text x="955" y="184" font-size="22" font-weight="700" fill="#6f3212">loss</text><text x="955" y="215" font-size="22" fill="#6f3212">L = ½(a−y)²</text></g>
+  <g stroke="#2266a8" stroke-width="5" marker-end="url(#arrow)"><line x1="238" y1="195" x2="323" y2="195"/><line x1="513" y1="195" x2="598" y2="195"/><line x1="788" y1="195" x2="868" y2="195"/></g>
+  <text x="150" y="125" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" fill="#526777">inputs: x; parameters: w, b</text><text x="955" y="125" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" fill="#526777">target: y</text>
+  <text x="550" y="314" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#b33e3e">Backpropagation multiplies the local derivatives from right to left.</text>
+</svg>

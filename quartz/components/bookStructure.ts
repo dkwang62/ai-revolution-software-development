@@ -317,8 +317,8 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-story-addendum-how-neural-networks-learn" as FullSlug,
-        title: "How Neural Networks Learn: From Error Correction to Intelligence at Scale",
-        shortTitle: "How Neural Networks Learn",
+        title: "Calculus and Backpropagation: How AI Learns from Its Mistakes",
+        shortTitle: "Calculus and Backpropagation",
       },
       {
         slug: "side-story-addendum-experience-scaling" as FullSlug,
