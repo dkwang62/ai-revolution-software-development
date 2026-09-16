@@ -325,6 +325,11 @@ export const bookSections: BookSection[] = [
         title: "From Reading the World to Acting in It: How AI Is Learning to Gain Experience",
         shortTitle: "How AI Gains Experience",
       },
+      {
+        slug: "side-story-addendum-how-large-language-models-work" as FullSlug,
+        title: "How Large Language Models Work",
+        shortTitle: "How LLMs Work",
+      },
     ],
   },
   {
