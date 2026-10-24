@@ -330,6 +330,11 @@ export const bookSections: BookSection[] = [
         title: "How Large Language Models Work",
         shortTitle: "How LLMs Work",
       },
+      {
+        slug: "side-story-addendum-coding-agent-revolution" as FullSlug,
+        title: "The Coding Agent Revolution: From Software Tools to a New Competitive Moat",
+        shortTitle: "The Coding Agent Revolution",
+      },
     ],
   },
   {

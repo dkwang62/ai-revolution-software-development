@@ -105,6 +105,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-how-neural-networks-learn|Calculus and Backpropagation: How AI Learns from Its Mistakes]]
 - [[side-story-addendum-experience-scaling|From Reading the World to Acting in It: How AI Is Learning to Gain Experience]]
 - [[side-story-addendum-how-large-language-models-work|How Large Language Models Work]]
+- [[side-story-addendum-coding-agent-revolution|The Coding Agent Revolution: From Software Tools to a New Competitive Moat]]
 
 ### Reference
 
