@@ -51,7 +51,33 @@ The same test applies to the leading laboratories. Both OpenAI and Anthropic can
 
 Chinese companies such as Alibaba and ByteDance are also building coding products and agent platforms, which shows that this is not an exclusively American contest. Open-weight models and widely distributed tools can attract developers quickly and cultivate ecosystems of their own. Competition is therefore not simply proprietary versus open. It is a contest between different ways of converting technological capability into sustained adoption, economic returns and cumulative learning.
 
-## 4. Coding Agents Are Still in an Early Growth Phase
+## 4. The Market Is Already Pricing This In: Claude Code and Anthropic's Valuation
+
+Anthropic's valuation offers one of the clearest tests of how seriously investors take coding agents. A substantial part of it can reasonably be attributed to Claude Code's success, though not the whole of it. Coding agents have become one of the clearest demonstrations that Anthropic can turn frontier AI into a commercially valuable product with strong customer demand.
+
+The financial evidence is striking. Anthropic's February 2026 funding announcement valued the company at $380 billion, with reported annualised revenue of $14 billion. The company said Claude Code alone had exceeded $2.5 billion in annualised revenue, and that business subscriptions had quadrupled since the start of 2026. Claude Code was therefore not merely a popular developer tool. It had become a significant business in its own right.
+
+### Why Claude Code matters more than its direct revenue
+
+The direct revenue is only part of the story. Claude Code has helped demonstrate three things that investors care about:
+
+1. **Willingness to pay.** Developers and businesses will pay substantial sums for AI that performs consequential work, not merely AI that generates conversational answers.
+2. **Enterprise expansion.** A company may adopt Claude Code for software engineering and then extend its use of Claude to other business functions. Anthropic reported this pattern in its February funding announcement.
+3. **A broader AI platform opportunity.** Coding is a demanding test of an AI system's ability to plan, use tools, work through complex tasks and verify outcomes. Those capabilities may transfer to finance, legal work, research and other knowledge-intensive activities.
+
+The third point is particularly important. Investors are not necessarily valuing Anthropic as a coding-software company. They are valuing the possibility that coding is the first large commercial market in which Anthropic has demonstrated the economic potential of increasingly capable AI agents.
+
+### Is the valuation justified?
+
+As of October 2026, the valuation story has become even more extraordinary. Anthropic was reportedly valued at $965 billion in its May funding round, and Reuters reported in August that its annualised revenue run rate had exceeded $65 billion. More recent reporting puts third-quarter revenue at $16.8 billion, while noting that growth has slowed relative to the previous quarter.
+
+Investors are therefore betting on more than Claude Code's current earnings. They are betting that Anthropic can sustain rapid growth, extend AI agents into additional markets and eventually generate profits commensurate with the enormous capital required to train and operate frontier models.
+
+The risks are substantial. Competition is intensifying, model capabilities may become more interchangeable, and Anthropic's infrastructure commitments are enormous. Its valuation also depends heavily on expectations about future revenue rather than current profits. These are the same pressures that make the moat question in the earlier sections so important: if models converge, the durable advantage must come from adoption, integration and organisational learning.
+
+Claude Code is the proof point. The much larger bet is that Anthropic can become an indispensable provider of AI capabilities across the economy.
+
+## 5. Coding Agents Are Still in an Early Growth Phase
 
 Coding agents have moved beyond the experimental stage, but the market is far from mature. The technology can be thought of as a ladder of increasing autonomy:
 
@@ -72,7 +98,7 @@ Even so, the competitive pressure is hard to escape. If one engineer can deliver
 
 The right measure of progress is not lines of code generated. Agents can produce code in abundance, and abundance is not the point. What matters is reliable, maintainable software delivered per unit of time and cost.
 
-## 5. Commitment Matters More Than Occasional Use
+## 6. Commitment Matters More Than Occasional Use
 
 A particularly important consequence emerges when a project is designed around coding agents from its inception.
 
@@ -84,7 +110,7 @@ This does not mean human involvement disappears. People must still set objective
 
 Once an organisation commits to this model, its tools, practices and accumulated experience become increasingly specialised, and that specialisation is a source of differentiation. Two companies using equally capable models may achieve very different results because their development environments, evaluation systems and working habits differ. The advantage lies not in owning a better model alone, but in having learned how to extract more useful work from the model than competitors can.
 
-## 6. The Composition of Project Teams Will Change
+## 7. The Composition of Project Teams Will Change
 
 Agent-oriented development also changes who is needed on a software project and what they do.
 
@@ -106,7 +132,7 @@ The productivity gains could be substantial, though they will vary with project 
 
 The more fundamental transformation is organisational. Hiring criteria, performance measures, management practices and career paths will increasingly be built around an agent-centred process rather than around individual output.
 
-## 7. Risks and Counterarguments
+## 8. Risks and Counterarguments
 
 A fair assessment must consider what could prevent this vision from materialising.
 
@@ -122,7 +148,7 @@ A fair assessment must consider what could prevent this vision from materialisin
 
 None of these points refutes the thesis. Together they show that the advantage is contingent and must be earned through execution.
 
-## 8. The Ultimate Competitive Advantage
+## 9. The Ultimate Competitive Advantage
 
 These developments reinforce one another. Proprietary tools raise internal productivity. An integrated agent-oriented workflow makes those tools more effective. Greater productivity speeds up experimentation and product development. Successful products attract users, deepen customer relationships and create further opportunities to learn.
 
@@ -143,6 +169,8 @@ For observers, a few signals are worth tracking: whether retention among agent u
 The coding agent revolution is not merely a story about automating programming. It is a potential transformation in the economics and organisation of software development.
 
 Building proprietary tools can reduce dependence on third-party vendors, but its greatest value lies in enabling an integrated system that improves a company's ability to develop AI. Agent-oriented workflows can change the composition of teams, the skills organisations require and the amount of reliable software that a given investment can produce. External adoption then determines whether these capabilities become durable commercial strength.
+
+The market's verdict so far is consistent with this reading. Claude Code's revenue, and the valuation attached to Anthropic, suggest that investors see coding agents both as proof that frontier AI can become a commercial product with strong demand and as a first step towards a broader enterprise AI platform. Whether that bet pays off depends on the factors discussed above: durable adoption, the speed of execution and the difficulty of reproducing the system behind it.
 
 The ultimate moat may therefore belong not to the company with the best individual model or the most popular coding agent, but to the one that builds the most effective system for developing, deploying and continuously improving AI.
 
