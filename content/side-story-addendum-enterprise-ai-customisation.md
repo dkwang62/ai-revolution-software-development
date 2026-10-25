@@ -1,5 +1,7 @@
 # Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?
 
+![Enterprise AI customisation infographic](figures/fig-addendum-enterprise-ai-customisation.png)
+
 The rapid advancement of artificial intelligence has handed large enterprises a strategic dilemma. They can post-train existing foundation models into specialised systems of their own, or they can rely on the increasingly capable general-purpose models built by the leading AI laboratories. Customisation is technically feasible and already being pursued commercially. Its long-term economics are another matter.
 
 The central issue is not whether a company can customise a model. It is whether the company can recover its investment before technological progress erodes the advantage that the model provides. A model can keep working perfectly well and still stop being worth what it cost.

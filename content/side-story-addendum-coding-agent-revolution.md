@@ -1,5 +1,7 @@
 # The Coding Agent Revolution: From Software Tools to a New Competitive Moat
 
+![The Coding Agent Revolution infographic](figures/fig-addendum-coding-agent-revolution.png)
+
 *Why the decisive advantage in AI may belong not to the best model, but to the best system for improving it.*
 
 ## 1. The Strategic Opportunity
