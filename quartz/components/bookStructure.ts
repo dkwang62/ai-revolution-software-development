@@ -340,6 +340,11 @@ export const bookSections: BookSection[] = [
         title: "Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?",
         shortTitle: "Enterprise AI Customisation",
       },
+      {
+        slug: "side-story-addendum-five-throttles-of-intelligence" as FullSlug,
+        title: "The Five Throttles of Intelligence",
+        shortTitle: "The Five Throttles",
+      },
     ],
   },
   {
