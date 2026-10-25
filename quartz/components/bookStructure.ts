@@ -335,6 +335,11 @@ export const bookSections: BookSection[] = [
         title: "The Coding Agent Revolution: From Software Tools to a New Competitive Moat",
         shortTitle: "The Coding Agent Revolution",
       },
+      {
+        slug: "side-story-addendum-enterprise-ai-customisation" as FullSlug,
+        title: "Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?",
+        shortTitle: "Enterprise AI Customisation",
+      },
     ],
   },
   {
