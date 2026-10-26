@@ -108,6 +108,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-coding-agent-revolution|The Coding Agent Revolution: From Software Tools to a New Competitive Moat]]
 - [[side-story-addendum-enterprise-ai-customisation|Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?]]
 - [[side-story-addendum-five-throttles-of-intelligence|The Five Throttles of Intelligence]]
+- [[side-story-addendum-ai-age-fewer-constraints|The AI Age: A World of Fewer Constraints and More Choices]]
 
 ### Reference
 

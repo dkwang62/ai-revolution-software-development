@@ -345,6 +345,11 @@ export const bookSections: BookSection[] = [
         title: "The Five Throttles of Intelligence",
         shortTitle: "The Five Throttles",
       },
+      {
+        slug: "side-story-addendum-ai-age-fewer-constraints" as FullSlug,
+        title: "The AI Age: A World of Fewer Constraints and More Choices",
+        shortTitle: "The AI Age",
+      },
     ],
   },
   {
