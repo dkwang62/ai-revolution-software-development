@@ -109,6 +109,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-enterprise-ai-customisation|Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?]]
 - [[side-story-addendum-five-throttles-of-intelligence|The Five Throttles of Intelligence]]
 - [[side-story-addendum-ai-age-fewer-constraints|The AI Age: A World of Fewer Constraints and More Choices]]
+- [[side-story-addendum-ai-by-2051|AI by 2051: When Survival Becomes the Business Case]]
 
 ### Reference
 

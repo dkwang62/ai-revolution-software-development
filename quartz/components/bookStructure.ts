@@ -350,6 +350,11 @@ export const bookSections: BookSection[] = [
         title: "The AI Age: A World of Fewer Constraints and More Choices",
         shortTitle: "The AI Age",
       },
+      {
+        slug: "side-story-addendum-ai-by-2051" as FullSlug,
+        title: "AI by 2051: When Survival Becomes the Business Case",
+        shortTitle: "AI by 2051",
+      },
     ],
   },
   {
