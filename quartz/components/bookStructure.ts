@@ -360,6 +360,11 @@ export const bookSections: BookSection[] = [
         title: "The Future of Software Is No Longer About Software",
         shortTitle: "The Future of Software",
       },
+      {
+        slug: "side-story-addendum-glorious-pursuit-being-dumb" as FullSlug,
+        title: "The Glorious Pursuit of Being Dumb",
+        shortTitle: "The Glorious Pursuit",
+      },
     ],
   },
   {
