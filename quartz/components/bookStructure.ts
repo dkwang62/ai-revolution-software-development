@@ -355,6 +355,11 @@ export const bookSections: BookSection[] = [
         title: "AI by 2051: When Survival Becomes the Business Case",
         shortTitle: "AI by 2051",
       },
+      {
+        slug: "side-story-addendum-future-of-software" as FullSlug,
+        title: "The Future of Software Is No Longer About Software",
+        shortTitle: "The Future of Software",
+      },
     ],
   },
   {
