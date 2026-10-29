@@ -352,7 +352,7 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-story-addendum-ai-by-2051" as FullSlug,
-        title: "AI by 2051: When Survival Becomes the Business Case",
+        title: "AI by 2051: The Problems We Cannot Solve Any Other Way",
         shortTitle: "AI by 2051",
       },
       {
