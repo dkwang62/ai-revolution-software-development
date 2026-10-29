@@ -1,4 +1,6 @@
-# The Glorious Pursuit of Being Dumb
+---
+title: "The Glorious Pursuit of Being Dumb"
+---
 
 ![MUSE and the agent-driven future of computing](figures/fig-addendum-glorious-pursuit-being-dumb.png)
 

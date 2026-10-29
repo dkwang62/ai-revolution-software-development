@@ -1,4 +1,6 @@
-# AI, Mathematics and the Search for Reality
+---
+title: "AI, Mathematics and the Search for Reality"
+---
 
 ![AI discovery engine linking rationalist and empiricist search](figures/Fig-addendum-ai-mathematics-search-reality.png)
 

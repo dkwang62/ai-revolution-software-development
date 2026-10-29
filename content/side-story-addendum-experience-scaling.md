@@ -1,4 +1,6 @@
-# From Reading the World to Acting in It: How AI Is Learning to Gain Experience
+---
+title: "From Reading the World to Acting in It: How AI Is Learning to Gain Experience"
+---
 
 ## Introduction
 

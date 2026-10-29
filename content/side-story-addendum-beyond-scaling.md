@@ -1,4 +1,6 @@
-# Beyond Scaling: What a Body Might Teach a Mind
+---
+title: "Beyond Scaling: What a Body Might Teach a Mind"
+---
 
 ## The Central Question
 

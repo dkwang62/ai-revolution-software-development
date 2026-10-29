@@ -1,4 +1,6 @@
-# The Coding Agent Revolution: From Software Tools to a New Competitive Moat
+---
+title: "The Coding Agent Revolution: From Software Tools to a New Competitive Moat"
+---
 
 ![The Coding Agent Revolution infographic](figures/fig-addendum-coding-agent-revolution.png)
 
@@ -57,7 +59,7 @@ Chinese companies such as Alibaba and ByteDance are also building coding product
 
 Anthropic's valuation offers one of the clearest tests of how seriously investors take coding agents. A substantial part of it can reasonably be attributed to Claude Code's success, though not the whole of it. Coding agents have become one of the clearest demonstrations that Anthropic can turn frontier AI into a commercially valuable product with strong customer demand.
 
-The financial evidence is striking. Anthropic's February 2026 funding announcement valued the company at $380 billion, with reported annualised revenue of $14 billion. The company said Claude Code alone had exceeded $2.5 billion in annualised revenue, and that business subscriptions had quadrupled since the start of 2026. Claude Code was therefore not merely a popular developer tool. It had become a significant business in its own right.
+The financial evidence is striking. Anthropic's February 2026 funding announcement valued the company at \$380 billion, with reported annualised revenue of \$14 billion. The company said Claude Code alone had exceeded \$2.5 billion in annualised revenue, and that business subscriptions had quadrupled since the start of 2026. Claude Code was therefore not merely a popular developer tool. It had become a significant business in its own right.
 
 ### Why Claude Code matters more than its direct revenue
 
@@ -71,7 +73,7 @@ The third point is particularly important. Investors are not necessarily valuing
 
 ### Is the valuation justified?
 
-As of October 2026, the valuation story has become even more extraordinary. Anthropic was reportedly valued at $965 billion in its May funding round, and Reuters reported in August that its annualised revenue run rate had exceeded $65 billion. More recent reporting puts third-quarter revenue at $16.8 billion, while noting that growth has slowed relative to the previous quarter.
+As of October 2026, the valuation story has become even more extraordinary. Anthropic was reportedly valued at \$965 billion in its May funding round, and Reuters reported in August that its annualised revenue run rate had exceeded \$65 billion. More recent reporting puts third-quarter revenue at \$16.8 billion, while noting that growth has slowed relative to the previous quarter.
 
 Investors are therefore betting on more than Claude Code's current earnings. They are betting that Anthropic can sustain rapid growth, extend AI agents into additional markets and eventually generate profits commensurate with the enormous capital required to train and operate frontier models.
 

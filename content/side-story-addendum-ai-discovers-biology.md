@@ -1,4 +1,6 @@
-# Can AI Discover Biology Beyond Human Intuition?
+---
+title: "Can AI Discover Biology Beyond Human Intuition?"
+---
 
 ## Randomness is not the same as an absence of structure
 

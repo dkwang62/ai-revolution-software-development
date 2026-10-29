@@ -1,4 +1,6 @@
-# The Future of Software Is No Longer About Software
+---
+title: "The Future of Software Is No Longer About Software"
+---
 
 ![The shift from application-centric software to an agent-driven future](figures/fig-addendum-future-of-software-agent-driven.png)
 
@@ -55,7 +57,7 @@ The most direct economic consequence is on price. Per-seat pricing assumed that 
 Vendors are responding in several ways:
 
 - **Usage-based pricing** charges for what is consumed, such as tasks, tokens or workflow runs.
-- **Outcome-based pricing** charges only when a defined result is delivered. Zendesk began billing per automated resolution in 2024, and Intercom’s Fin agent is priced at $0.99 per resolved conversation.
+- **Outcome-based pricing** charges only when a defined result is delivered. Zendesk began billing per automated resolution in 2024, and Intercom’s Fin agent is priced at \$0.99 per resolved conversation.
 - **Hybrid pricing** combines a base subscription with usage or outcome components. This is where most of the market appears to be landing, rather than at pure outcome pricing.
 
 Forecasts point the same way. Gartner predicts that by 2030 at least 40 per cent of enterprise SaaS spending will move from per-seat pricing towards usage, agent or outcome models. Other industry estimates suggest hybrid models already account for a large minority of SaaS vendors, though the precise shares differ between sources.

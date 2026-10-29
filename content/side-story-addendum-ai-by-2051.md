@@ -1,4 +1,6 @@
-# AI by 2051: The Problems We Cannot Solve Any Other Way
+---
+title: "AI by 2051: The Problems We Cannot Solve Any Other Way"
+---
 
 ![AI supporting essential services by 2051](figures/Fig-addendum-ai-by-2051-survival-business-case.png)
 

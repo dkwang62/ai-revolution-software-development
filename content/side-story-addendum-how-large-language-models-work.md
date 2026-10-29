@@ -1,4 +1,7 @@
-# How Large Language Models Work
+---
+title: "How Large Language Models Work"
+---
+
 ## From Mathematical Neurons to Machines That Converse
 
 Large language models can appear almost magical. A person types a question in ordinary language and receives a coherent explanation, a translation, a piece of software, a summary of a legal argument, or a draft of a poem. The response may arrive in seconds and may deal with a subject the system was never explicitly programmed to handle.

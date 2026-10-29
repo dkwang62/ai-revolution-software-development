@@ -1,4 +1,6 @@
-# From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario
+---
+title: "From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario"
+---
 
 The most important question about artificial intelligence is no longer whether machines can think. It is whether they can act, revise their own work without supervision, and eventually take part in building their successors. That is the axis on which Daniel Kokotajlo's *AI 2027* scenario turns, and it is why OpenAI's release of GPT-6 Astra in September 2026 — arriving alongside a summer of AI agents breaking out of their own test environments — deserves more careful treatment than either "this proves the scenario" or "this is just another chatbot."
 

@@ -1,4 +1,6 @@
-# The AI Age: A World of Fewer Constraints and More Choices
+---
+title: "The AI Age: A World of Fewer Constraints and More Choices"
+---
 
 ![The AI Age: a world of fewer constraints and more choices](figures/fig-addendum-ai-age-fewer-constraints.png)
 
@@ -11,8 +13,6 @@ These are legitimate questions, and the best economists who ask them go well bey
 That picture leaves out a great deal. AI will not only change how existing goods and services are produced. It will change what they cost, how businesses are organised, where people can live, what they can do for themselves, and how far they must depend on employers and large institutions. It changes not only what people earn, but what they can choose.
 
 **The claim of this essay is conditional. AI enlarges the set of things people can do, and the set of things they can afford. Whether that enlarged set reaches most people, or only a few, is a political question about ownership, competition and access. The opportunity is real. Its distribution is not guaranteed.**
-
-*\[Verify before publication: the serious academic work referred to above includes Daron Acemoglu and Simon Johnson, Power and Progress (2023); Erik Brynjolfsson, "The Turing Trap" (2022); and Daniel Susskind, A World Without Work (2020). Check titles, dates and that each is characterised fairly.\]*
 
 ## 1. We are measuring tomorrow with today's yardsticks
 
@@ -42,7 +42,7 @@ There is an obvious objection, and it is the most important one to the argument 
 
 For choice to be real and not merely formal, something must stay scarce and be within reach of ordinary people. The candidates are capital, land and physical assets, distribution, trust and reputation, attention, regulatory permission, and human presence. Which of these carries the returns will decide who benefits. Where the scarce thing is owned by a few, the new freedom to try is a freedom to compete for the leftovers.
 
-This is why the argument is about capability and not just opportunity. The economist Amartya Sen distinguished between a freedom that exists on paper and one a person has the means to use. AI widens the first by a large margin. Whether it widens the second depends on the conditions in the next section. *\[Verify: Sen's capability approach, e.g. Development as Freedom (1999); confirm the framing before citing.\]*
+This is why the argument is about capability and not just opportunity. The economist Amartya Sen distinguished between a freedom that exists on paper and one a person has the means to use. AI widens the first by a large margin. Whether it widens the second depends on the conditions in the next section.
 
 ## 4. The real danger is not AI capability, but concentrated control
 
@@ -65,7 +65,7 @@ Economic pessimism often treats income as the measure of living standards. But i
 
 A household's real position depends on the ratio of what it earns to what it must spend. The break-even rule is simple: if income halves, prices must also halve for the household to stay where it was. The relevant question is therefore which parts of the budget could plausibly fall that far.
 
-The likeliest are the cognitive services: tutoring, legal and financial advice, software, design, research and administration. Much harder are the items that absorb most of a typical household's spending: housing, food, healthcare, childcare, energy and transport. Several of these are sectors where costs have historically risen faster than average, because they depend on land, physical infrastructure or human care that does not scale the way software does. This is the pattern economists call Baumol's cost disease. AI may break it in the cognitive parts of education and healthcare. It does little, on its own, for land or for the hands-on part of caring for people. Businesses with market power may also keep much of any saving rather than pass it on. *\[Verify: Baumol's cost disease and the sectors usually cited; consider adding a figure for the typical household budget split in your target country.\]*
+The likeliest are the cognitive services: tutoring, legal and financial advice, software, design, research and administration. Much harder are the items that absorb most of a typical household's spending: housing, food, healthcare, childcare, energy and transport. Several of these are sectors where costs have historically risen faster than average, because they depend on land, physical infrastructure or human care that does not scale the way software does. This is the pattern economists call Baumol's cost disease. AI may break it in the cognitive parts of education and healthcare. It does little, on its own, for land or for the hands-on part of caring for people. Businesses with market power may also keep much of any saving rather than pass it on.
 
 So the honest claim is narrower than "prices will collapse." If AI makes a broad set of goods and services substantially cheaper, then a given income can stretch further, and the link between employment, income and material wellbeing weakens. The size of that effect depends on which budget lines actually move.
 
@@ -77,7 +77,7 @@ For generations, where people live has been set by two forces: the need to earn 
 
 AI could loosen both ties. If more people can work remotely, run independent businesses and serve customers anywhere, earning a living no longer requires living beside a major employer. AI tutoring could bring personalised instruction to wherever a child lives. Families might then pay less of a premium for location and live in cheaper places without giving up as much of their prospects or their children's learning. AI and robotics could also lower construction costs and make adequate housing cheaper, although that depends on land, planning rules, infrastructure and whether the savings are passed on.
 
-Three cautions apply. First, the workers best placed to work remotely for customers anywhere are those whose work is most exposed to AI. The capability that frees them from location also lets their employer or client do without them. Remote work only helps people whose services remain wanted, so the argument needs to say whose work that is. Second, much of the school premium pays for peer groups, credentials and signalling rather than instruction. AI can improve instruction without moving any of those, and early evidence on AI tutoring is mixed. Third, dependence does not simply disappear. Dependence on an employer may become dependence on an AI provider, a platform or the state. *\[Verify: current evidence on AI tutoring outcomes; cite specific studies if you keep this claim.\]*
+Three cautions apply. First, the workers best placed to work remotely for customers anywhere are those whose work is most exposed to AI. The capability that frees them from location also lets their employer or client do without them. Remote work only helps people whose services remain wanted, so the argument needs to say whose work that is. Second, much of the school premium pays for peer groups, credentials and signalling rather than instruction. AI can improve instruction without moving any of those, and early evidence on AI tutoring is mixed. Third, dependence does not simply disappear. Dependence on an employer may become dependence on an AI provider, a platform or the state.
 
 None of this makes desirable land unlimited. People will keep valuing particular cities, climates and communities. Location will still matter, but for some essential opportunities it may matter less than it does today. A household's standard of living depends on income and on what it must pay to reach work, education and other essentials. We should ask about the economics of place as well as the economics of work.
 
@@ -97,7 +97,7 @@ For generations, economic progress has been measured by more output, rising inco
 
 One possibility is that the gains accrue mainly to owners while everyone else faces greater insecurity, told that productivity is rising even as they struggle to hold on to a livelihood. Another is that greater productivity buys more material comfort with less compulsory work: shorter hours, more time with family, learning, caring for others, art, projects that never had the time before.
 
-Neither is automatic. Keynes predicted in 1930 that within a century people in rich countries would work fifteen hours a week. Hours did fall sharply from the late nineteenth century into the mid-twentieth, largely through bargaining and legislation, and then largely stopped falling even as productivity kept rising. That record is the best evidence that productivity becomes freedom only when institutions make it so. *\[Verify: Keynes, "Economic Possibilities for our Grandchildren" (1930), and the trajectory of average annual hours worked; use a sourced series, for example from the OECD or Our World in Data, before stating any figures.\]*
+Neither is automatic. Keynes predicted in 1930 that within a century people in rich countries would work fifteen hours a week. Hours did fall sharply from the late nineteenth century into the mid-twentieth, largely through bargaining and legislation, and then largely stopped falling even as productivity kept rising. That record is the best evidence that productivity becomes freedom only when institutions make it so.
 
 Employment is a means of securing a livelihood. It is not the purpose of human life. The goal of economic progress is to expand people's ability to live lives they value, not to preserve every existing job or to maximise hours worked.
 

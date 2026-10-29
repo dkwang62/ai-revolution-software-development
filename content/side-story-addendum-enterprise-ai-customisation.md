@@ -1,4 +1,6 @@
-# Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?
+---
+title: "Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?"
+---
 
 ![Enterprise AI customisation infographic](figures/fig-addendum-enterprise-ai-customisation.png)
 
@@ -35,15 +37,15 @@ The first two are performance advantages, and general models can erode them. The
 
 Enterprise model customisation is no longer theoretical. Two recent, well-documented examples show both the ambition and the uncertainty.
 
-**Thomson Reuters** announced Thomson on 24 August 2026, describing it as the company's first proprietary large language model. According to press coverage of the launch, it was built on an open-weight base *\[verify: the base model is reported as Qwen 3.5 in one trade outlet; the company says only "open-source"\]* and trained on material from Westlaw, Practical Law, Checkpoint and Reuters, with refinement by in-house experts. Trade reports put the cost at about $40 million over roughly two years *\[verify: reported by several outlets; confirm whether the company stated the figure itself\]*. The company's own benchmarks show a narrow lead over leading general-purpose models on legal, tax and news tasks, and it says it has so far used less than 10% of its proprietary content in training. Independent benchmarks were not yet public at the time of writing.
+**Thomson Reuters** announced Thomson on 24 August 2026, describing it as the company's first proprietary large language model. According to press coverage of the launch, it was built on an open-weight base and trained on material from Westlaw, Practical Law, Checkpoint and Reuters, with refinement by in-house experts. Trade reports put the cost at about \$40 million over roughly two years. The company's own benchmarks show a narrow lead over leading general-purpose models on legal, tax and news tasks, and it says it has so far used less than 10% of its proprietary content in training. Independent benchmarks were not yet public at the time of writing.
 
 **Salesforce** announced Koa on 15 September 2026, a reasoning model for its Agentforce platform. It was built by post-training NVIDIA's open-weight Nemotron 3 Super, a model of roughly 120 billion parameters, using supervised fine-tuning and reinforcement learning on synthetic scenarios modelled on CRM workflows across more than a dozen industries. Salesforce says no customer data was used in training. Koa was in pilot at announcement, with general availability expected in winter 2026.
 
-These cases illustrate an important point: enterprises do not need to compete with frontier laboratories by building enormous models. They can concentrate on narrower domains where proprietary knowledge, specialised requirements and large volumes of repeated transactions may justify customisation. Telecommunications and retail groups have reportedly pursued similar projects *\[verify or cut: the original draft gave no named examples\]*.
+These cases illustrate an important point: enterprises do not need to compete with frontier laboratories by building enormous models. They can concentrate on narrower domains where proprietary knowledge, specialised requirements and large volumes of repeated transactions may justify customisation. Telecommunications and retail groups have reportedly pursued similar projects.
 
-But the evidence is thinner than the headlines suggest, and the two companies themselves are hedging. Thomson Reuters says its CoCounsel platform will remain multi-model, using Thomson where it performs best and frontier models elsewhere, and its first deployment is a single feature. In Salesforce's case, one independent analysis of the company's technical report found that Koa scored only marginally above its own base model on the Tau2Bench customer-service benchmark, that a checkpoint trained with supervised fine-tuning alone scored slightly higher, and that Koa trailed the newest general-purpose frontier model by a wide margin on that test. Salesforce's stronger claims rest on its own CRM benchmark *\[verify against the technical report before quoting any figures\]*.
+But the evidence is thinner than the headlines suggest, and the two companies themselves are hedging. Thomson Reuters says its CoCounsel platform will remain multi-model, using Thomson where it performs best and frontier models elsewhere, and its first deployment is a single feature. In Salesforce's case, one independent analysis of the company's technical report found that Koa scored only marginally above its own base model on the Tau2Bench customer-service benchmark, that a checkpoint trained with supervised fine-tuning alone scored slightly higher, and that Koa trailed the newest general-purpose frontier model by a wide margin on that test. Salesforce's stronger claims rest on its own CRM benchmark.
 
-There is also a cautionary precedent. Bloomberg trained BloombergGPT on its financial archive in 2023, and within months general-purpose models were reported to match or beat it on many financial-language tasks *\[verify: cite the comparison study directly\]*. Technical success is not the same as a good return.
+There is also a cautionary precedent. Bloomberg trained BloombergGPT on its financial archive in 2023, and within months general-purpose models were reported to match or beat it on many financial-language tasks. Technical success is not the same as a good return.
 
 Both the Thomson and Koa projects are only weeks old. Neither has yet faced the test this essay is about: whether the advantage survives the next generation of foundation models.
 
@@ -98,15 +100,15 @@ None of this eliminates migration costs. New models interpret instructions diffe
 
 Ultimately, enterprise AI customisation is a capital-allocation decision. It is viable only if the incremental benefits exceed the cost of developing, operating, maintaining and eventually replacing the specialised model.
 
-Consider an enterprise that spends US$10 million on customisation. If the model delivers an incremental net benefit of US$500,000 a month over the best available alternative, the simple payback period is 20 months. If the advantage disappears after six months, the investment is not recovered by that benefit alone.
+Consider an enterprise that spends US\$10 million on customisation. If the model delivers an incremental net benefit of US\$500,000 a month over the best available alternative, the simple payback period is 20 months. If the advantage disappears after six months, the investment is not recovered by that benefit alone.
 
 **Payback period = Initial customisation investment ÷ Monthly incremental net benefit.**
 
 The figures are illustrative, but they expose the underlying problem: an expensive model is not necessarily a long-lived one. The simple formula, however, flatters the investment in three ways.
 
-**The benefit rarely ends in a cliff.** In practice an advantage tends to erode gradually as general models improve. Using the same US$10 million and US$500,000 a month, the lifetime the advantage must reach before the project breaks even depends heavily on the shape of the decline:
+**The benefit rarely ends in a cliff.** In practice an advantage tends to erode gradually as general models improve. Using the same US\$10 million and US\$500,000 a month, the lifetime the advantage must reach before the project breaks even depends heavily on the shape of the decline:
 
-| How the advantage fades | What is needed to recover US$10 million |
+| How the advantage fades | What is needed to recover US\$10 million |
 | --- | --- |
 | Constant, then ends abruptly | At least 20 months |
 | Declines steadily to zero | At least 40 months |
@@ -114,7 +116,7 @@ The figures are illustrative, but they expose the underlying problem: an expensi
 
 These figures ignore discounting; discounting future benefits lengthens each requirement. The gradual-decline cases show why a project that looks acceptable on a 20-month payback can be much weaker than it appears.
 
-**Not all of the investment is lost when the model is replaced.** If, say, US$4 million of the US$10 million went into reusable data, evaluations and infrastructure, only US$6 million is model-specific, and each later cycle may need to recover only that amount. Against the same US$500,000 monthly benefit, the break-even period per generation falls from 20 months to 12. This is the economic case for the modular approach described above.
+**Not all of the investment is lost when the model is replaced.** If, say, US\$4 million of the US\$10 million went into reusable data, evaluations and infrastructure, only US\$6 million is model-specific, and each later cycle may need to recover only that amount. Against the same US\$500,000 monthly benefit, the break-even period per generation falls from 20 months to 12. This is the economic case for the modular approach described above.
 
 **The denominator is harder to measure than it looks.** It must capture the advantage over the best *realistic* alternative, not the total value generated by using AI. That alternative keeps getting better and cheaper, so the benchmark moves. The calculation should also include inference costs, maintenance, evaluation, retraining, security and compliance work, and the staff needed to run the pipeline. And it should separate benefit streams by durability: accuracy gains are the most exposed to general-model improvement, while cost-per-token savings, data control and reduced supplier dependence may persist.
 

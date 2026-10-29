@@ -1,4 +1,6 @@
-# Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty
+---
+title: "Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty"
+---
 
 Daniel Kokotajlo spent several years as a researcher at OpenAI before leaving in 2024, reportedly over disagreements about whether the company would behave responsibly as it approached more powerful systems. Since then, through the AI Futures Project, he has become one of the most detailed and widely discussed voices arguing that artificial general intelligence — and potentially superintelligence — could arrive within this decade, not in some indefinite future. His scenario, *AI 2027*, is the fullest public statement of that argument. This essay is about that argument: what it actually claims, why it's more carefully constructed than the headline number attached to it suggests, and where current evidence supports or complicates it.
 

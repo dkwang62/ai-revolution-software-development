@@ -1,4 +1,6 @@
-# From DNA to a Machine-Native AI
+---
+title: "From DNA to a Machine-Native AI"
+---
 
 ## Can a Model Discover Its Own Abstraction Layer?
 

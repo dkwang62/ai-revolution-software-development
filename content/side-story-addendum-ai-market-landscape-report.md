@@ -1,4 +1,6 @@
-# When Intelligence Becomes Cheap
+---
+title: "When Intelligence Becomes Cheap"
+---
 
 MARKET LANDSCAPE REPORT
 
@@ -135,7 +137,7 @@ Technological progress can destroy scarcity — and therefore pricing power — 
 
 The IBM lesson: new technologies typically begin with lower prices and worse margins than the incumbent product they eventually replace. Protecting today's high-margin business while a cheaper alternative gains volume, developer mindshare, and customer relationships is how incumbents lose strategic control even while remaining profitable in the short run. This applies as much to AI labs and cloud providers as it once did to enterprise computing.
 
-Expect frontier-lab self-cannibalization: smaller specialist and edge models do not threaten frontier labs that build them; they threaten labs that refuse to. A rational lab will sell a $10-per-task model, then its own $1 replacement, then the ten-cent version, rather than let a competitor do so.
+Expect frontier-lab self-cannibalization: smaller specialist and edge models do not threaten frontier labs that build them; they threaten labs that refuse to. A rational lab will sell a \$10-per-task model, then its own \$1 replacement, then the ten-cent version, rather than let a competitor do so.
 
 Workflow ownership and proprietary context become scarcer as generic intelligence becomes abundant. The economically relevant unit shifts from "model" to "model + proprietary data + memory + tools + workflow + evaluation," which favors incumbents who already sit inside enterprise data and process flows over point-solution model vendors.
 
@@ -185,15 +187,15 @@ Point-solution model vendors without proprietary data or workflow lock-in. These
 
 ## 8. Three Questions to Monitor Going Forward
 
-#### 1. How fast does the cost of useful intelligence actually fall?
+### 1. How fast does the cost of useful intelligence actually fall?
 
 Track semiconductor and memory capacity additions, algorithmic efficiency gains, and the degree to which AI-automated research measurably compounds — not headline model benchmark scores.
 
-#### 2. How much demand does cheap intelligence create, and how much of it is machine-generated?
+### 2. How much demand does cheap intelligence create, and how much of it is machine-generated?
 
 Track enterprise agent deployment counts and utilization (agents per employee, agent-to-agent task volume) rather than human seat counts, which understate the shift this report describes.
 
-#### 3. Where is value accruing this quarter, and has that layer changed from last quarter?
+### 3. Where is value accruing this quarter, and has that layer changed from last quarter?
 
 Track margin trends layer-by-layer across the value chain in Section 4.1 rather than assuming today's scarce layer (currently accelerators and frontier models) remains scarce through the investment horizon.
 

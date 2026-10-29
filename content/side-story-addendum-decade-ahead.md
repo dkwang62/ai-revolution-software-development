@@ -1,4 +1,6 @@
-# The Decade Ahead: AI and the Remaking of Civilization
+---
+title: "The Decade Ahead: AI and the Remaking of Civilization"
+---
 
 ## Introduction
 

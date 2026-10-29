@@ -1,4 +1,6 @@
-# The Five Throttles of Intelligence
+---
+title: "The Five Throttles of Intelligence"
+---
 
 ![The Five Throttles of Intelligence infographic](figures/fig-addendum-five-throttles-of-intelligence.png)
 

@@ -1,4 +1,6 @@
-# Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents
+---
+title: "Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents"
+---
 
 ## Introduction
 
@@ -10,7 +12,7 @@ Answering these questions reveals something more interesting than RAG itself. RA
 
 ---
 
-# 1. A Real RAG Application: The AI Legal Assistant
+## 1. A Real RAG Application: The AI Legal Assistant
 
 Consider a large law firm representing a company in a commercial dispute. The case concerns allegations that a supplier knowingly sold defective components while assuring its customer that there were no significant reliability problems. The litigation has generated an enormous collection of information: contracts and amendments, hundreds of thousands of emails, engineering reports, test results, meeting minutes, witness statements, invoices, internal memoranda, depositions, statutes and regulations, and previous court decisions. Suppose this amounts to two million pages.
 
@@ -20,7 +22,7 @@ Somewhere among those two million pages might be an email written three months b
 
 ---
 
-# 2. The Basic RAG Process
+## 2. The Basic RAG Process
 
 The process can be represented simply: the lawyer's question leads to retrieving relevant information, which is given to the LLM, which generates a grounded answer.
 
@@ -32,7 +34,7 @@ This same pattern applies whether the underlying collection is two million pages
 
 ---
 
-# 3. What Does "Retrieval-Augmented Generation" Actually Mean?
+## 3. What Does "Retrieval-Augmented Generation" Actually Mean?
 
 The terminology becomes less intimidating when separated into its three components. Retrieval means finding information relevant to the current task. Augmented means supplying that retrieved information to the model as additional context. Generation means the model uses that information when generating its response. Retrieval plus LLM generation together make up Retrieval-Augmented Generation.
 
@@ -42,7 +44,7 @@ This distinction matters practically. When a RAG system gives a wrong answer, it
 
 ---
 
-# 4. Why Can't We Simply Give the Model All the Documents?
+## 4. Why Can't We Simply Give the Model All the Documents?
 
 If the law firm has two million pages, why not simply let the model read everything? Because the amount of potentially available information can vastly exceed what is sensible or economical to place into the model's working context, and more importantly, most of it is irrelevant to any particular question. If the lawyer asks "Did the supplier know about the defect before signing?", the model probably does not need thousands of invoices concerning unrelated products, correspondence about employee holidays, or years of irrelevant accounting records. The system needs to reduce two million pages to perhaps twenty highly relevant passages before asking the model to reason. This is why retrieval is not merely about obtaining information — it is about obtaining the right information.
 
@@ -50,13 +52,13 @@ Two distinct constraints are at work here, and it helps to name them separately.
 
 ---
 
-# 5. Keyword Search Is Not Always Enough
+## 5. Keyword Search Is Not Always Enough
 
 Traditional search might look for words such as "defect," "component failure," "reliability," and "contract." That will find some useful documents. But imagine the critical email instead says: "The new units continue to fail thermal cycling. Engineering recommends delaying production release." The word "defect" never appears. A good retrieval system should nevertheless understand that the passage may be highly relevant to a question about whether the supplier knew the product was defective.
 
 This is why modern RAG systems frequently combine different retrieval techniques. Traditional keyword search remains useful, particularly for exact names, product numbers, legal citations and technical terms. Semantic retrieval attempts to find passages with similar meaning, even when they use different words. More sophisticated systems may retrieve a larger set of candidates and then rerank them to determine which are most relevant. A possible pipeline runs from the question through keyword and semantic search to candidate passages, then reranking, then the best evidence, and finally the LLM. These are important implementation techniques, but they should not obscure the underlying requirement: find the evidence the model needs in order to answer correctly.
 
-## 5.1 A Closer Look at How Semantic Retrieval Actually Works
+### 5.1 A Closer Look at How Semantic Retrieval Actually Works
 
 It is worth pausing on how a computer can search by meaning rather than by exact words, since this is the part of RAG that feels most like magic until it is unpacked.
 
@@ -68,7 +70,7 @@ Reranking exists because semantic and keyword search are typically fast but some
 
 ---
 
-# 6. Real-Time and Contextualized Data
+## 6. Real-Time and Contextualized Data
 
 RAG is often discussed alongside the phrase "real-time, contextualized data." The two concepts should be distinguished. Real-time refers to freshness; contextualized refers to relevance. Suppose the lawyer asks, "Has the defendant produced the engineering documents we requested?" The answer may depend on documents uploaded this morning, and an index last updated three days ago is insufficient — the AI needs current information.
 
@@ -78,7 +80,7 @@ Freshness has a hidden engineering cost. Keeping an index perfectly current mean
 
 ---
 
-# 7. Haven't Enterprise Systems Always Done This?
+## 7. Haven't Enterprise Systems Always Done This?
 
 This is where RAG should be placed in historical perspective. Enterprise applications have retrieved information from other systems for decades. Traditional enterprise architecture frequently looked something like an application connected through an adapter or connector to an enterprise information system. Adapters connected applications to systems such as databases, ERP systems, CRM systems, mainframes and document repositories, and they handled matters such as authentication, protocols, schemas, APIs, data formats, and transactions.
 
@@ -86,7 +88,7 @@ Modern AI systems still require these capabilities. A contemporary architecture 
 
 ---
 
-# 8. So What Is Actually New?
+## 8. So What Is Actually New?
 
 The genuinely interesting development is not that computers can retrieve information — they have done that for generations. The more important change is increasingly who determines what should be retrieved. Traditional applications generally have predetermined information flows: a programmer might write logic that takes a customer number, retrieves the account record, retrieves the orders, and displays specified fields. The programmer determines the path beforehand.
 
@@ -94,7 +96,7 @@ Now return to our lawyer, who asks: "Did the supplier know about the defect befo
 
 ---
 
-# 9. The Harness Is the Bigger Concept
+## 9. The Harness Is the Bigger Concept
 
 RAG becomes easier to place once we distinguish the model from the harness surrounding it. The model provides general capabilities: language, reasoning, interpretation, and planning. The harness allows that intelligence to operate in a real environment. A modern harness might sit beneath the model and provide retrieval, context management, memory, tools, connectors, permissions, execution, verification, logging, and error handling.
 
@@ -102,7 +104,7 @@ The model might determine, "I need all engineering reports produced before the c
 
 ---
 
-# 10. Is the Harness General, or Must Every Project Build One?
+## 10. Is the Harness General, or Must Every Project Build One?
 
 Ideally, much of the harness is general-purpose. There is little reason for every law firm, bank, hospital or manufacturer to independently reinvent basic mechanisms for tool invocation, retrieval, authentication, context management, memory, retries, logging, error handling, and verification. These capabilities increasingly belong in reusable platforms and agent harnesses.
 
@@ -110,13 +112,13 @@ What changes between applications is the environment. For the law firm, a genera
 
 ---
 
-# 11. Is RAG an Industry Standard?
+## 11. Is RAG an Industry Standard?
 
 No. RAG is not an industry-standard specification comparable to HTTP, SQL or OAuth. There is no document defining a universal set of requirements that every "RAG-compliant" application must satisfy. RAG is an architectural pattern. Different RAG systems may use completely different databases, search engines, embedding models, indexing strategies, chunk sizes, ranking algorithms, and context-management systems — RAG describes an architectural pattern, not a technical standard. This means that saying "implement RAG" is not a sufficient project specification. The project still needs to define the required behavior.
 
 ---
 
-# 12. Does Every Project Need a RAG Specialist?
+## 12. Does Every Project Need a RAG Specialist?
 
 Not necessarily. The basic architecture is increasingly conventional. A project specification might say: index all documents belonging to a legal matter, support exact and semantic search, retrieve the most relevant evidence for each question, preserve document identity and page references, enforce existing matter-level permissions, cite every factual assertion back to its source, and test retrieval against a set of known questions and evidence. A capable coding agent can implement much of this using established software components, following a pipeline that runs from documents through extraction, indexing, retrieval, ranking, and context, into the LLM.
 
@@ -124,13 +126,13 @@ But there is an important qualification: basic RAG is relatively straightforward
 
 ---
 
-# 13. Retrieval Must Be Evaluated
+## 13. Retrieval Must Be Evaluated
 
 Suppose the lawyer asks, "What evidence establishes that management knew about the defect?" The RAG system returns ten documents containing the words "management" and "defect." Technically, retrieval succeeded. But perhaps the decisive evidence is an email saying, "I briefed the executive committee yesterday on the thermal cycling failures." The system has failed if it doesn't find that email. Therefore the important question isn't "does the RAG run?" It is whether it reliably retrieves the evidence required to perform the task.
 
 A good project should therefore contain evaluation cases. For example, given the test question "Did senior management know about the thermal failures before the contract was signed?", the system should be expected to discover an engineering report dated March 12, an email to the vice-president dated March 15, and executive committee minutes dated March 19. Now the retrieval system can be tested. This illustrates a broader change brought about by AI-assisted programming: as implementation becomes easier, specifying and testing the intended outcome becomes more important.
 
-## 13.1 Vocabulary for Evaluating Retrieval
+### 13.1 Vocabulary for Evaluating Retrieval
 
 Two concepts borrowed from information retrieval are worth knowing by name, because they capture two different ways a system can fail. Recall asks: of all the passages that were actually relevant, how many did the system find? A system with poor recall misses evidence, such as failing to surface the executive committee minutes above — missed evidence is often the more dangerous failure in a legal or medical context, because the system and the user may never know what was overlooked. Precision asks the opposite question: of all the passages the system returned, how many were actually relevant? A system with poor precision buries the model, and the human reviewer, in noise, such as ten documents about "management" and "defect" that have nothing to do with the actual question.
 
@@ -140,7 +142,7 @@ Groundedness is a related but distinct concept, this time about generation rathe
 
 ---
 
-# 14. Then Why Take a Course to Learn RAG?
+## 14. Then Why Take a Course to Learn RAG?
 
 The answer depends upon what the student intends to become. Someone planning to specialize in AI information retrieval should understand embeddings, vector databases, semantic similarity, hybrid search, chunking, reranking, retrieval metrics, latency, and context-window management. Those subjects remain technically valuable.
 
@@ -148,7 +150,7 @@ But someone intending to design applications using coding agents has a different
 
 ---
 
-# 15. A Useful Counterexample: The Personal Librarian
+## 15. A Useful Counterexample: The Personal Librarian
 
 It is equally important to understand what should not automatically be called RAG. Consider a Personal Librarian designed primarily to synchronize software projects through GitHub and iCloud between a MacBook and Mac mini, and to allow a user to tidy and organize Gmail using natural-language instructions.
 
@@ -160,7 +162,7 @@ This distinction is important. Not every AI system that retrieves information is
 
 ---
 
-# 16. Search, RAG and Agentic Retrieval
+## 16. Search, RAG and Agentic Retrieval
 
 We can now distinguish three related architectures. In plain search, a query goes to a search engine and comes back with results, which the user interprets. In RAG, retrieved information is supplied to the model: the question is retrieved against, the results become context, and the LLM produces a grounded answer, which it interprets and synthesizes itself. In agentic retrieval, the AI can repeatedly decide what information it needs, moving through cycles of reasoning, retrieving, reasoning again, retrieving again, deciding, and acting. The retrieval process becomes part of an ongoing reasoning-and-action loop, which is increasingly important because AI is moving beyond answering questions toward accomplishing objectives.
 
@@ -168,7 +170,7 @@ It is tempting to think of these three as competing technologies, but a cleaner 
 
 ---
 
-# 17. Why the Fancy Terminology?
+## 17. Why the Fancy Terminology?
 
 There was a legitimate historical reason to give RAG a name. Early LLM applications were largely a simple chain from prompt to model to response. Adding external retrieval substantially changed what these applications could do, and researchers and engineers needed terminology to describe the architecture.
 
@@ -178,7 +180,7 @@ A practical diagnostic habit follows from this. When a learner is debugging a RA
 
 ---
 
-# 18. RAG May Eventually Disappear into the Harness
+## 18. RAG May Eventually Disappear into the Harness
 
 This leads to an interesting prediction. Many technologies begin as specialist capabilities and eventually become ordinary infrastructure. As agent harnesses mature, a developer may no longer explicitly construct a RAG pipeline for every project. Instead, the developer might specify: the agent has authorized access to these case documents, legal databases and correspondence; when answering substantive questions, retrieve the most relevant authoritative information, verify its currency, preserve client permissions, cite the evidence used, and search again when the available evidence is insufficient.
 
@@ -186,7 +188,7 @@ The harness could determine which retrieval technique to use, which sources to s
 
 ---
 
-# 19. The Broader Lesson for Software Development
+## 19. The Broader Lesson for Software Development
 
 RAG illustrates a larger transformation occurring in software engineering. Traditionally, a human programmer encoded much of the procedure: the human specified how. Increasingly, the human can specify what instead. For the legal assistant, the requirement might be: determine whether there is evidence that the supplier knew about the defect before contracting, use only authorized sources, identify contradictory evidence, cite every material conclusion, and do not assert anything that cannot be traced to the evidentiary record.
 
@@ -194,7 +196,7 @@ The AI system increasingly determines which repositories to search, which search
 
 ---
 
-# Conclusion: RAG in Its Proper Place
+## Conclusion: RAG in Its Proper Place
 
 Retrieval-Augmented Generation is neither magic nor merely meaningless jargon. It solved an important limitation of standalone language models: a model cannot reason about information it does not have. RAG gives the model relevant external information when that information is needed. The legal assistant provides a clear example. General legal intelligence is insufficient when the answer depends upon a particular email buried among two million pages of evidence. The system must find that email, provide it to the model, and allow the model to reason about it alongside the relevant law and other evidence.
 
@@ -208,7 +210,7 @@ Seen from this perspective, RAG is neither mysterious nor trivial. It is one imp
 
 ---
 
-# Glossary
+## Glossary
 
 **Chunking** — Splitting a long document into smaller passages before indexing, so each passage can be searched and embedded individually.
 

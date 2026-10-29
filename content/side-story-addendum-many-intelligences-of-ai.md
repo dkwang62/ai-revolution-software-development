@@ -1,4 +1,7 @@
-# The Many Intelligences of AI
+---
+title: "The Many Intelligences of AI"
+---
+
 ## What Machines Must Learn — and What That Means for the Human Jobs That Remain
 
 ### A note to the reader

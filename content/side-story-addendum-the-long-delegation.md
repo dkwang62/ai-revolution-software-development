@@ -1,4 +1,6 @@
-# AI Apocalypse: A Plausible Path to Armageddon
+---
+title: "AI Apocalypse: A Plausible Path to Armageddon"
+---
 
 ![AI-governed infrastructure and corporate systems](figures/Fig-addendum-ai-apocalypse-armageddon.png)
 
