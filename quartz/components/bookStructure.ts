@@ -365,6 +365,11 @@ export const bookSections: BookSection[] = [
         title: "The Glorious Pursuit of Being Dumb",
         shortTitle: "The Glorious Pursuit",
       },
+      {
+        slug: "side-story-addendum-future-of-ai-engineering" as FullSlug,
+        title: "The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever",
+        shortTitle: "The Future of AI Engineering",
+      },
     ],
   },
   {
