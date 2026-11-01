@@ -370,6 +370,11 @@ export const bookSections: BookSection[] = [
         title: "The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever",
         shortTitle: "The Future of AI Engineering",
       },
+      {
+        slug: "side-story-addendum-fundamentals-data-science" as FullSlug,
+        title: "The Fundamentals of Data Science",
+        shortTitle: "Data Science Fundamentals",
+      },
     ],
   },
   {

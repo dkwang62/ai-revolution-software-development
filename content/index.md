@@ -113,6 +113,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-future-of-software|The Future of Software Is No Longer About Software]]
 - [[side-story-addendum-glorious-pursuit-being-dumb|The Glorious Pursuit of Being Dumb]]
 - [[side-story-addendum-future-of-ai-engineering|The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever]]
+- [[side-story-addendum-fundamentals-data-science|The Fundamentals of Data Science]]
 
 ### Reference
 
