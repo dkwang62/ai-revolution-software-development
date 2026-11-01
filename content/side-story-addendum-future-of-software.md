@@ -2,7 +2,7 @@
 title: "The Future of Software Is No Longer About Software"
 ---
 
-![The shift from application-centric software to an agent-driven future](figures/fig-addendum-future-of-software-agent-driven.png)
+![The shift from application-centric software to an agent-driven future](figures/fig-future-of-software-agent-driven-clearer-v2.png)
 
 *How AI agents are rewriting the economics of SaaS in 2026 and 2027*
 
