@@ -1,0 +1,6 @@
+(?d)node_modules
+(?d)**/node_modules
+(?d).build
+(?d)**/.build
+(?d)DerivedData
+(?d)**/DerivedData
