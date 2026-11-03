@@ -30,6 +30,20 @@ The practical choice for many students is not between AI and an ideal teacher. I
 
 That ratio does not prove that AI teaches well. It establishes the opportunity. The scarcity that reserved excellent individual instruction for the few is no longer technically inevitable. The question is whether we can remove it without sacrificing independent thought.
 
+## When Education Can Travel to the Child
+
+The larger implication reaches beyond the reform of any one school system. For the first time, a determined child may be able to pursue an excellent education without admission to an excellent school, wealthy parents, or proximity to a rare teacher. A phone or inexpensive tablet can carry the world's accumulated knowledge. A capable tutor can explain a difficult idea patiently, in the student's own language, generate practice, diagnose a misconception, adjust the next explanation and remain available when the question finally arrives.
+
+Imagine a fifteen-year-old in a poor village with a device, reliable connectivity and the will to learn. That student need not wait for a teacher to become available, for a school to add physics or programming, or for a curriculum committee to approve a new subject. They can move through mathematics, biology, economics and code at their own pace. Coding agents make the point especially vividly: a young person can turn an idea into a working project long before they would previously have had access to the formal training, specialist software or mentor required to do so.
+
+This does not abolish the importance of schools. Children still need foundational literacy, devices, electricity, connectivity, practical facilities, peers, care, protection and reasons to persist. An AI tutor cannot perform a laboratory experiment on its own behalf, substitute for a safe home or confer a trusted qualification simply because it has produced persuasive answers. Self-directed learning also demands discipline that many children will need help to develop. Those are reasons to build the surrounding infrastructure and human support, not reasons to preserve scarcity in instruction.
+
+Historically, a child's education has been constrained by four accidents: the wealth of the family, the quality of the local school, the availability of good teachers, and the curriculum and pace imposed by an institution. AI weakens each constraint. It lowers the cost of delivering personal instruction over distance; unlike a recorded lecture or a conventional online course, it can respond, adapt and return to the precise point at which understanding failed. One tutor can potentially serve millions without requiring millions of tutors.
+
+> A child's intellectual potential should no longer be determined by the wealth of their parents or the quality of the school they happen to attend. With access to AI and enough determination, a child anywhere in the world should have the opportunity to educate themselves to an extraordinary level.
+
+For centuries, we built schools so that education could be brought to children. AI may allow much of an excellent education to travel to the child instead. The obligation of governments and institutions is therefore not merely to add AI to already advantaged classrooms. It is to make that opportunity real for the children who have historically been furthest from it.
+
 ## Three Ceilings
 
 Consider a student spending a term learning Python. Outside the classroom, coding agents can already build substantial parts of the software she is learning to build. The skill still matters, but it is no longer the only route to the outcome. The fastest route does not necessarily run through the conventional classroom sequence.
