@@ -15,7 +15,11 @@ export const bookSections: BookSection[] = [
   {
     title: "Front Matter",
     entries: [
-      { slug: "index" as FullSlug, title: "Book Home", shortTitle: "Book Home" },
+      {
+        slug: "index" as FullSlug,
+        title: "Book Home",
+        shortTitle: "Book Home",
+      },
       {
         slug: "00-author-and-ai-note" as FullSlug,
         title: "Author and AI Note",
@@ -26,7 +30,11 @@ export const bookSections: BookSection[] = [
         title: "Preface: Why This Book Matters",
         shortTitle: "Preface: Why This Book Matters",
       },
-      { slug: "01-introduction" as FullSlug, title: "Introduction", shortTitle: "Introduction" },
+      {
+        slug: "01-introduction" as FullSlug,
+        title: "Introduction",
+        shortTitle: "Introduction",
+      },
     ],
   },
   {
@@ -36,6 +44,27 @@ export const bookSections: BookSection[] = [
         slug: "02-economics-of-software-development" as FullSlug,
         title: "Chapter 1: The Economics of Software Development",
         shortTitle: "1. The Economics of Software Development",
+      },
+      {
+        slug: "side-story-addendum-ai-enterprise-market" as FullSlug,
+        title: "The AI Enterprise Market Explained: Companies, Technologies and Opportunities",
+        shortTitle: "The AI Enterprise Market",
+      },
+      {
+        slug: "side-story-addendum-future-of-software" as FullSlug,
+        title: "The Future of Software Is No Longer About Software",
+        shortTitle: "The Future of Software",
+      },
+      {
+        slug: "side-story-addendum-coding-agent-revolution" as FullSlug,
+        title: "The Coding Agent Revolution: From Software Tools to a New Competitive Moat",
+        shortTitle: "The Coding Agent Revolution",
+      },
+      {
+        slug: "side-story-addendum-enterprise-ai-customisation" as FullSlug,
+        title:
+          "Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?",
+        shortTitle: "Enterprise AI Customisation",
       },
     ],
   },
@@ -51,6 +80,11 @@ export const bookSections: BookSection[] = [
         slug: "04-programming-as-representation" as FullSlug,
         title: "Chapter 3: Programming as Representation",
         shortTitle: "3. Programming as Representation",
+      },
+      {
+        slug: "side-story-addendum-dna-to-machine-native-ai" as FullSlug,
+        title: "From DNA to a Machine-Native AI",
+        shortTitle: "From DNA to a Machine-Native AI",
       },
     ],
   },
@@ -79,7 +113,8 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-story-transformers" as FullSlug,
-        title: "Side Story: Understanding Transformers: From Layers to Context and Coherent Language",
+        title:
+          "Side Story: Understanding Transformers: From Layers to Context and Coherent Language",
         shortTitle: "Side Story: Understanding Transformers",
       },
       {
@@ -94,7 +129,8 @@ export const bookSections: BookSection[] = [
       },
       {
         slug: "side-story-the-jagged-frontier" as FullSlug,
-        title: "Side Story: The Jagged Frontier: Why AI Is Brilliant and Baffling in the Same Breath",
+        title:
+          "Side Story: The Jagged Frontier: Why AI Is Brilliant and Baffling in the Same Breath",
         shortTitle: "Side Story: The Jagged Frontier",
       },
       {
@@ -121,6 +157,41 @@ export const bookSections: BookSection[] = [
         slug: "10-context-what-the-model-knows-right-now" as FullSlug,
         title: "Chapter 8: Context: What the Model Knows Right Now",
         shortTitle: "8. Context: What the Model Knows Right Now",
+      },
+      {
+        slug: "side-story-addendum-how-large-language-models-work" as FullSlug,
+        title: "How Large Language Models Work",
+        shortTitle: "How LLMs Work",
+      },
+      {
+        slug: "side-story-addendum-how-neural-networks-learn" as FullSlug,
+        title: "Calculus and Backpropagation: How AI Learns from Its Mistakes",
+        shortTitle: "Calculus and Backpropagation",
+      },
+      {
+        slug: "side-story-addendum-many-intelligences-of-ai" as FullSlug,
+        title: "The Many Intelligences of AI",
+        shortTitle: "The Many Intelligences of AI",
+      },
+      {
+        slug: "side-story-addendum-beyond-scaling" as FullSlug,
+        title: "Beyond Scaling: What a Body Might Teach a Mind",
+        shortTitle: "Beyond Scaling",
+      },
+      {
+        slug: "side-story-addendum-experience-scaling" as FullSlug,
+        title: "From Reading the World to Acting in It: How AI Is Learning to Gain Experience",
+        shortTitle: "How AI Gains Experience",
+      },
+      {
+        slug: "side-story-addendum-five-throttles-of-intelligence" as FullSlug,
+        title: "The Five Throttles of Intelligence",
+        shortTitle: "The Five Throttles",
+      },
+      {
+        slug: "side-story-addendum-ai-market-landscape-report" as FullSlug,
+        title: "When Intelligence Becomes Cheap",
+        shortTitle: "When Intelligence Becomes Cheap",
       },
     ],
   },
@@ -166,6 +237,23 @@ export const bookSections: BookSection[] = [
         slug: "side-chapter-personal-librarian" as FullSlug,
         title: "Side Chapter: The Personal Librarian",
         shortTitle: "Side Chapter: The Personal Librarian",
+      },
+      {
+        slug: "side-story-addendum-retrieval-augmented-generation" as FullSlug,
+        title:
+          "Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents",
+        shortTitle: "Retrieval-Augmented Generation",
+      },
+      {
+        slug: "side-story-addendum-cio-field-guide-agentic-ai" as FullSlug,
+        title: "A CIO's Field Guide to Agentic AI",
+        shortTitle: "A CIO's Field Guide to Agentic AI",
+      },
+      {
+        slug: "side-story-addendum-future-of-ai-engineering" as FullSlug,
+        title:
+          "The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever",
+        shortTitle: "The Future of AI Engineering",
       },
     ],
   },
@@ -233,6 +321,43 @@ export const bookSections: BookSection[] = [
         title: "Conclusion: When Intent Becomes Software",
         shortTitle: "Conclusion: When Intent Becomes Software",
       },
+      {
+        slug: "side-story-addendum-agentic-enterprise-convergence" as FullSlug,
+        title: "When the Software Industry Converged on the Agentic Enterprise",
+        shortTitle: "Agentic Enterprise Convergence",
+      },
+      {
+        slug: "side-story-addendum-astra-and-ai-2027" as FullSlug,
+        title:
+          "From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario",
+        shortTitle: "GPT-6 Astra and AI 2027",
+      },
+      {
+        slug: "side-story-addendum-kokotajlo-argument" as FullSlug,
+        title:
+          "Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty",
+        shortTitle: "Kokotajlo's Superintelligence Argument",
+      },
+      {
+        slug: "side-story-addendum-the-long-delegation" as FullSlug,
+        title: "AI Apocalypse: A Plausible Path to Armageddon",
+        shortTitle: "AI Apocalypse",
+      },
+      {
+        slug: "side-story-addendum-decade-ahead" as FullSlug,
+        title: "The Decade Ahead: AI and the Remaking of Civilization",
+        shortTitle: "The Decade Ahead",
+      },
+      {
+        slug: "side-story-addendum-ai-age-fewer-constraints" as FullSlug,
+        title: "The AI Age: A World of Fewer Constraints and More Choices",
+        shortTitle: "The AI Age",
+      },
+      {
+        slug: "side-story-addendum-ai-by-2051" as FullSlug,
+        title: "AI by 2051: The Problems We Cannot Solve Any Other Way",
+        shortTitle: "AI by 2051",
+      },
     ],
   },
   {
@@ -249,71 +374,9 @@ export const bookSections: BookSection[] = [
     title: "Addendum: Articles in Development",
     entries: [
       {
-        slug: "side-story-addendum-dna-to-machine-native-ai" as FullSlug,
-        title: "From DNA to a Machine-Native AI",
-        shortTitle: "From DNA to a Machine-Native AI",
-      },
-      {
-        slug: "side-story-addendum-decade-ahead" as FullSlug,
-        title: "The Decade Ahead: AI and the Remaking of Civilization",
-        shortTitle: "The Decade Ahead",
-      },
-      {
         slug: "side-story-addendum-ai-discovers-biology" as FullSlug,
         title: "AI Discovers Biology Beyond Human Intuition",
         shortTitle: "AI Discovers Biology Beyond Human Intuition",
-      },
-      {
-        slug: "side-story-addendum-cio-field-guide-agentic-ai" as FullSlug,
-        title: "A CIO's Field Guide to Agentic AI",
-        shortTitle: "A CIO's Field Guide to Agentic AI",
-      },
-      {
-        slug: "side-story-addendum-agentic-enterprise-convergence" as FullSlug,
-        title: "When the Software Industry Converged on the Agentic Enterprise",
-        shortTitle: "Agentic Enterprise Convergence",
-      },
-      {
-        slug: "side-story-addendum-many-intelligences-of-ai" as FullSlug,
-        title: "The Many Intelligences of AI",
-        shortTitle: "The Many Intelligences of AI",
-      },
-      {
-        slug: "side-story-addendum-retrieval-augmented-generation" as FullSlug,
-        title: "Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents",
-        shortTitle: "Retrieval-Augmented Generation",
-      },
-      {
-        slug: "side-story-addendum-beyond-scaling" as FullSlug,
-        title: "Beyond Scaling: What a Body Might Teach a Mind",
-        shortTitle: "Beyond Scaling",
-      },
-      {
-        slug: "side-story-addendum-astra-and-ai-2027" as FullSlug,
-        title:
-          "From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario",
-        shortTitle: "GPT-6 Astra and AI 2027",
-      },
-      {
-        slug: "side-story-addendum-kokotajlo-argument" as FullSlug,
-        title:
-          "Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty",
-        shortTitle: "Kokotajlo's Superintelligence Argument",
-      },
-      {
-        slug: "side-story-addendum-ai-market-landscape-report" as FullSlug,
-        title: "When Intelligence Becomes Cheap",
-        shortTitle: "When Intelligence Becomes Cheap",
-      },
-      {
-        slug: "side-story-addendum-ai-enterprise-market" as FullSlug,
-        title: "The AI Enterprise Market Explained: Companies, Technologies and Opportunities",
-        shortTitle: "The AI Enterprise Market",
-      },
-      {
-        slug: "side-story-addendum-the-long-delegation" as FullSlug,
-        title: "AI Apocalypse: A Plausible Path to Armageddon",
-        shortTitle: "AI Apocalypse",
       },
       {
         slug: "side-story-addendum-ai-mathematics-search-reality" as FullSlug,
@@ -321,71 +384,30 @@ export const bookSections: BookSection[] = [
         shortTitle: "AI and Mathematical Reality",
       },
       {
-        slug: "side-story-addendum-how-neural-networks-learn" as FullSlug,
-        title: "Calculus and Backpropagation: How AI Learns from Its Mistakes",
-        shortTitle: "Calculus and Backpropagation",
-      },
-      {
-        slug: "side-story-addendum-experience-scaling" as FullSlug,
-        title: "From Reading the World to Acting in It: How AI Is Learning to Gain Experience",
-        shortTitle: "How AI Gains Experience",
-      },
-      {
-        slug: "side-story-addendum-how-large-language-models-work" as FullSlug,
-        title: "How Large Language Models Work",
-        shortTitle: "How LLMs Work",
-      },
-      {
-        slug: "side-story-addendum-coding-agent-revolution" as FullSlug,
-        title: "The Coding Agent Revolution: From Software Tools to a New Competitive Moat",
-        shortTitle: "The Coding Agent Revolution",
-      },
-      {
-        slug: "side-story-addendum-enterprise-ai-customisation" as FullSlug,
-        title: "Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?",
-        shortTitle: "Enterprise AI Customisation",
-      },
-      {
-        slug: "side-story-addendum-five-throttles-of-intelligence" as FullSlug,
-        title: "The Five Throttles of Intelligence",
-        shortTitle: "The Five Throttles",
-      },
-      {
-        slug: "side-story-addendum-ai-age-fewer-constraints" as FullSlug,
-        title: "The AI Age: A World of Fewer Constraints and More Choices",
-        shortTitle: "The AI Age",
-      },
-      {
-        slug: "side-story-addendum-ai-by-2051" as FullSlug,
-        title: "AI by 2051: The Problems We Cannot Solve Any Other Way",
-        shortTitle: "AI by 2051",
-      },
-      {
-        slug: "side-story-addendum-future-of-software" as FullSlug,
-        title: "The Future of Software Is No Longer About Software",
-        shortTitle: "The Future of Software",
-      },
-      {
         slug: "side-story-addendum-glorious-pursuit-being-dumb" as FullSlug,
         title: "The Glorious Pursuit of Being Dumb",
         shortTitle: "The Glorious Pursuit",
-      },
-      {
-        slug: "side-story-addendum-future-of-ai-engineering" as FullSlug,
-        title: "The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever",
-        shortTitle: "The Future of AI Engineering",
       },
       {
         slug: "side-story-addendum-fundamentals-data-science" as FullSlug,
         title: "The Fundamentals of Data Science",
         shortTitle: "Data Science Fundamentals",
       },
+      {
+        slug: "side-story-addendum-best-teachers-may-not-be-human" as FullSlug,
+        title: "The Best Teachers May Not Be Human",
+        shortTitle: "The Best Teachers May Not Be Human",
+      },
     ],
   },
   {
     title: "Reference",
     entries: [
-      { slug: "98-glossary" as FullSlug, title: "Glossary", shortTitle: "Glossary" },
+      {
+        slug: "98-glossary" as FullSlug,
+        title: "Glossary",
+        shortTitle: "Glossary",
+      },
       {
         slug: "99-bibliography-and-evidence-notes" as FullSlug,
         title: "Bibliography and Evidence Notes",

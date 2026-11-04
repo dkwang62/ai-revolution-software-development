@@ -24,6 +24,8 @@ If you are preparing for an executive course on agentic AI or organisational tra
 
 ## Table of Contents
 
+The articles collected at the end of each Part extend its theme. The addendum contains broader essays on science, education and intellectual life.
+
 ### Front Matter
 
 - [[00-author-and-ai-note|Author and AI Note]]
@@ -34,10 +36,21 @@ If you are preparing for an executive course on agentic AI or organisational tra
 
 - [[02-economics-of-software-development|Chapter 1: The Economics of Software Development]]
 
+#### Further Reading
+
+- [[side-story-addendum-ai-enterprise-market|The AI Enterprise Market Explained: Companies, Technologies and Opportunities]]
+- [[side-story-addendum-future-of-software|The Future of Software Is No Longer About Software]]
+- [[side-story-addendum-coding-agent-revolution|The Coding Agent Revolution: From Software Tools to a New Competitive Moat]]
+- [[side-story-addendum-enterprise-ai-customisation|Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?]]
+
 ### Part II · The History of Abstraction
 
 - [[03-hidden-engine-of-computing|Chapter 2: The Hidden Engine of Computing]]
 - [[04-programming-as-representation|Chapter 3: Programming as Representation]]
+
+#### Further Reading
+
+- [[side-story-addendum-dna-to-machine-native-ai|From DNA to a Machine-Native AI]]
 
 ### Part III · The Economics of Intelligence
 
@@ -55,6 +68,16 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[09-economics-of-models|Chapter 7: The Economics of Models]]
 - [[10-context-what-the-model-knows-right-now|Chapter 8: Context: What the Model Knows Right Now]]
 
+#### Further Reading
+
+- [[side-story-addendum-how-large-language-models-work|How Large Language Models Work]]
+- [[side-story-addendum-how-neural-networks-learn|Calculus and Backpropagation: How AI Learns from Its Mistakes]]
+- [[side-story-addendum-many-intelligences-of-ai|The Many Intelligences of AI]]
+- [[side-story-addendum-beyond-scaling|Beyond Scaling: What a Body Might Teach a Mind]]
+- [[side-story-addendum-experience-scaling|From Reading the World to Acting in It: How AI Is Learning to Gain Experience]]
+- [[side-story-addendum-five-throttles-of-intelligence|The Five Throttles of Intelligence]]
+- [[side-story-addendum-ai-market-landscape-report|When Intelligence Becomes Cheap]]
+
 ### Part IV · Engineering with AI
 
 - [[11-communication-becomes-the-interface|Chapter 9: Communication Becomes the Interface]]
@@ -65,6 +88,12 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[15-legacy-problem|Chapter 13: The Legacy Problem]]
 - [[16-agents-tools-and-integrated-systems|Chapter 14: Agents, Tools, and Integrated Systems]]
 - [[side-chapter-personal-librarian|Side Chapter: The Personal Librarian]]
+
+#### Further Reading
+
+- [[side-story-addendum-retrieval-augmented-generation|Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents]]
+- [[side-story-addendum-cio-field-guide-agentic-ai|A CIO's Field Guide to Agentic AI]]
+- [[side-story-addendum-future-of-ai-engineering|The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever]]
 
 ### Interlude
 
@@ -83,38 +112,27 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-what-would-it-take-rethinking-agi|Side Story: What Would It Take? Rethinking Artificial General Intelligence from First Principles]]
 - [[21-conclusion-when-intent-becomes-software|Conclusion: When Intent Becomes Software]]
 
+#### Further Reading
+
+- [[side-story-addendum-agentic-enterprise-convergence|When the Software Industry Converged on the Agentic Enterprise]]
+- [[side-story-addendum-astra-and-ai-2027|From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario]]
+- [[side-story-addendum-kokotajlo-argument|Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty]]
+- [[side-story-addendum-the-long-delegation|AI Apocalypse: A Plausible Path to Armageddon]]
+- [[side-story-addendum-decade-ahead|The Decade Ahead: AI and the Remaking of Civilization]]
+- [[side-story-addendum-ai-age-fewer-constraints|The AI Age: A World of Fewer Constraints and More Choices]]
+- [[side-story-addendum-ai-by-2051|AI by 2051: The Problems We Cannot Solve Any Other Way]]
+
 ### Course Preparation
 
 - [[22-preparing-to-lead-agentic-ai|Preparing to Lead Agentic AI: An Executive Pre-Course Guide]]
 
 ### Addendum: Articles in Development
 
-- [[side-story-addendum-dna-to-machine-native-ai|From DNA to a Machine-Native AI]]
-- [[side-story-addendum-decade-ahead|The Decade Ahead: AI and the Remaking of Civilization]]
 - [[side-story-addendum-ai-discovers-biology|AI Discovers Biology Beyond Human Intuition]]
-- [[side-story-addendum-cio-field-guide-agentic-ai|A CIO's Field Guide to Agentic AI]]
-- [[side-story-addendum-agentic-enterprise-convergence|When the Software Industry Converged on the Agentic Enterprise]]
-- [[side-story-addendum-many-intelligences-of-ai|The Many Intelligences of AI]]
-- [[side-story-addendum-retrieval-augmented-generation|Retrieval-Augmented Generation: Understanding RAG, Harnesses, Connectors and AI Agents]]
-- [[side-story-addendum-beyond-scaling|Beyond Scaling: What a Body Might Teach a Mind]]
-- [[side-story-addendum-astra-and-ai-2027|From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario]]
-- [[side-story-addendum-kokotajlo-argument|Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty]]
-- [[side-story-addendum-ai-market-landscape-report|When Intelligence Becomes Cheap]]
-- [[side-story-addendum-ai-enterprise-market|The AI Enterprise Market Explained: Companies, Technologies and Opportunities]]
-- [[side-story-addendum-the-long-delegation|AI Apocalypse: A Plausible Path to Armageddon]]
 - [[side-story-addendum-ai-mathematics-search-reality|AI, Mathematics and the Search for Reality]]
-- [[side-story-addendum-how-neural-networks-learn|Calculus and Backpropagation: How AI Learns from Its Mistakes]]
-- [[side-story-addendum-experience-scaling|From Reading the World to Acting in It: How AI Is Learning to Gain Experience]]
-- [[side-story-addendum-how-large-language-models-work|How Large Language Models Work]]
-- [[side-story-addendum-coding-agent-revolution|The Coding Agent Revolution: From Software Tools to a New Competitive Moat]]
-- [[side-story-addendum-enterprise-ai-customisation|Enterprise AI Customisation: Can Companies Recover Their Investment Before Their Models Become Obsolete?]]
-- [[side-story-addendum-five-throttles-of-intelligence|The Five Throttles of Intelligence]]
-- [[side-story-addendum-ai-age-fewer-constraints|The AI Age: A World of Fewer Constraints and More Choices]]
-- [[side-story-addendum-ai-by-2051|AI by 2051: The Problems We Cannot Solve Any Other Way]]
-- [[side-story-addendum-future-of-software|The Future of Software Is No Longer About Software]]
 - [[side-story-addendum-glorious-pursuit-being-dumb|The Glorious Pursuit of Being Dumb]]
-- [[side-story-addendum-future-of-ai-engineering|The Future of AI Engineering: Why Human Skills, Critical Thinking and Judgment Matter More Than Ever]]
 - [[side-story-addendum-fundamentals-data-science|The Fundamentals of Data Science]]
+- [[side-story-addendum-best-teachers-may-not-be-human|The Best Teachers May Not Be Human]]
 
 ### Reference
 
