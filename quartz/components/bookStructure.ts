@@ -306,6 +306,11 @@ export const bookSections: BookSection[] = [
         shortTitle: "When Intelligence Becomes Cheap",
       },
       {
+        slug: "side-story-addendum-ai-enterprise-market" as FullSlug,
+        title: "The AI Enterprise Market Explained: Companies, Technologies and Opportunities",
+        shortTitle: "The AI Enterprise Market",
+      },
+      {
         slug: "side-story-addendum-the-long-delegation" as FullSlug,
         title: "AI Apocalypse: A Plausible Path to Armageddon",
         shortTitle: "AI Apocalypse",

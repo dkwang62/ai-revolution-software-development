@@ -100,6 +100,7 @@ If you are preparing for an executive course on agentic AI or organisational tra
 - [[side-story-addendum-astra-and-ai-2027|From ChatGPT to Artificial Superintelligence: What GPT-6 Astra Actually Tells Us About the AI 2027 Scenario]]
 - [[side-story-addendum-kokotajlo-argument|Daniel Kokotajlo's Case for Near-Term Superintelligence: The Argument, the Evidence, and the Uncertainty]]
 - [[side-story-addendum-ai-market-landscape-report|When Intelligence Becomes Cheap]]
+- [[side-story-addendum-ai-enterprise-market|The AI Enterprise Market Explained: Companies, Technologies and Opportunities]]
 - [[side-story-addendum-the-long-delegation|AI Apocalypse: A Plausible Path to Armageddon]]
 - [[side-story-addendum-ai-mathematics-search-reality|AI, Mathematics and the Search for Reality]]
 - [[side-story-addendum-how-neural-networks-learn|Calculus and Backpropagation: How AI Learns from Its Mistakes]]
